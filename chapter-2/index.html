@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>Writing is nice · Apex Trigger Intermediate</title>
+    <title>Chapter I · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="generator" content="HonKit 3.5.2" />
@@ -41,9 +41,9 @@
       type="image/x-icon"
     />
 
-    <link rel="next" href="../acknowledgment/" />
+    <link rel="next" href="./" />
 
-    <link rel="prev" href="./" />
+    <link rel="prev" href="../chapter-1/" />
   </head>
   <body>
     <div class="book">
@@ -84,7 +84,7 @@
 
             <li class="header">Lv. 2</li>
 
-            <li class="chapter" data-level="3.1" data-path="./">
+            <li class="chapter active" data-level="3.1" data-path="./">
               <a href="./">
                 Chapter I
               </a>
@@ -102,11 +102,7 @@
 
             <li class="header">Chapter II</li>
 
-            <li
-              class="chapter active"
-              data-level="5.1"
-              data-path="something.html"
-            >
+            <li class="chapter" data-level="5.1" data-path="something.html">
               <a href="something.html">
                 Writing is nice
               </a>
@@ -141,7 +137,7 @@
             <!-- Title -->
             <h1>
               <i class="fa fa-circle-o-notch fa-spin"></i>
-              <a href="..">Writing is nice</a>
+              <a href="..">Chapter I</a>
             </h1>
           </div>
 
@@ -150,7 +146,14 @@
               <div id="book-search-results">
                 <div class="search-noresults">
                   <section class="normal markdown-section">
-                    <h1 id="the-content-of-my-page">The content of my page</h1>
+                    <h1 id="title-of-the-chapter">Title of the chapter</h1>
+                    <p>This is a great introduction.</p>
+                    <h2 id="section-1">Section 1</h2>
+                    <p>
+                      Markdown will dictates <em>most</em> of your
+                      <strong>book&apos;s structure</strong>
+                    </p>
+                    <h2 id="section-2">Section 2</h2>
                   </section>
                 </div>
                 <div class="search-results">
@@ -173,7 +176,7 @@
         </div>
 
         <a
-          href="./#writing"
+          href="../chapter-1/#writing"
           class="navigation navigation-prev"
           aria-label="Previous page: Writing is nice"
         >
@@ -181,9 +184,9 @@
         </a>
 
         <a
-          href="../acknowledgment/"
+          href="./#writing"
           class="navigation navigation-next"
-          aria-label="Next page: Acknowledgment"
+          aria-label="Next page: Writing is nice"
         >
           <i class="fa fa-angle-right"></i>
         </a>
@@ -194,24 +197,25 @@
         gitbook.push(function () {
           gitbook.page.hasChanged({
             page: {
-              title: 'Writing is nice',
-              level: '5.1',
+              title: 'Chapter I',
+              level: '3.1',
               depth: 1,
               next: {
-                title: 'Acknowledgment',
-                level: '6.1',
-                depth: 1,
-                path: 'acknowledgment/README.md',
-                ref: 'acknowledgment/README.md',
-                articles: []
-              },
-              previous: {
                 title: 'Writing is nice',
                 level: '3.1.1',
                 depth: 2,
                 anchor: '#writing',
                 path: 'chapter-2/README.md',
                 ref: 'chapter-2/README.md#writing',
+                articles: []
+              },
+              previous: {
+                title: 'Writing is nice',
+                level: '2.1.1',
+                depth: 2,
+                anchor: '#writing',
+                path: 'chapter-1/README.md',
+                ref: 'chapter-1/README.md#writing',
                 articles: []
               },
               dir: 'ltr'
@@ -281,8 +285,8 @@
               'pdf.pageNumbers': 'true'
             },
             file: {
-              path: 'chapter-2/something.md',
-              mtime: '2020-07-30T14:12:40.183Z',
+              path: 'chapter-2/README.md',
+              mtime: '2020-07-30T14:11:52.755Z',
               type: 'markdown'
             },
             gitbook: { version: '3.5.2', time: '2020-07-30T14:35:57.418Z' },

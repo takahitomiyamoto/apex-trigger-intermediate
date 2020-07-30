@@ -9,12 +9,22 @@
     "ref": "url",
     "documentStore": {
       "store": {
-        "chapter-1/something.html": ["content", "nice", "page", "write"],
-        "chapter-2/something.html": ["content", "nice", "page", "write"],
-        "acknowledgment/": [
+        "chapter-1/": [
           "1",
           "2",
-          "acknowledg",
+          "book'",
+          "chapter",
+          "dictat",
+          "great",
+          "introduction.",
+          "markdown",
+          "section",
+          "structur",
+          "titl"
+        ],
+        "chapter-2/": [
+          "1",
+          "2",
           "book'",
           "chapter",
           "dictat",
@@ -26,56 +36,49 @@
           "titl"
         ]
       },
-      "length": 3
+      "length": 2
     },
     "tokenStore": {
       "root": {
         "1": {
           "docs": {
-            "acknowledgment/": {
-              "ref": "acknowledgment/",
-              "tf": 0.08333333333333333
-            }
+            "chapter-1/": { "ref": "chapter-1/", "tf": 0.08333333333333333 },
+            "chapter-2/": { "ref": "chapter-2/", "tf": 0.08333333333333333 }
           }
         },
         "2": {
           "docs": {
-            "acknowledgment/": {
-              "ref": "acknowledgment/",
-              "tf": 0.08333333333333333
-            }
+            "chapter-1/": { "ref": "chapter-1/", "tf": 0.08333333333333333 },
+            "chapter-2/": { "ref": "chapter-2/", "tf": 0.08333333333333333 }
           }
         },
         "docs": {},
-        "c": {
+        "b": {
           "docs": {},
           "o": {
             "docs": {},
-            "n": {
+            "o": {
               "docs": {},
-              "t": {
+              "k": {
                 "docs": {},
-                "e": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "chapter-1/something.html": {
-                          "ref": "chapter-1/something.html",
-                          "tf": 0.5
-                        },
-                        "chapter-2/something.html": {
-                          "ref": "chapter-2/something.html",
-                          "tf": 0.5
-                        }
-                      }
+                "'": {
+                  "docs": {
+                    "chapter-1/": {
+                      "ref": "chapter-1/",
+                      "tf": 0.08333333333333333
+                    },
+                    "chapter-2/": {
+                      "ref": "chapter-2/",
+                      "tf": 0.08333333333333333
                     }
                   }
                 }
               }
             }
-          },
+          }
+        },
+        "c": {
+          "docs": {},
           "h": {
             "docs": {},
             "a": {
@@ -88,132 +91,15 @@
                     "docs": {},
                     "r": {
                       "docs": {
-                        "acknowledgment/": {
-                          "ref": "acknowledgment/",
-                          "tf": 0.08333333333333333
+                        "chapter-1/": {
+                          "ref": "chapter-1/",
+                          "tf": 10.083333333333334
+                        },
+                        "chapter-2/": {
+                          "ref": "chapter-2/",
+                          "tf": 10.083333333333334
                         }
                       }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "n": {
-          "docs": {},
-          "i": {
-            "docs": {},
-            "c": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "chapter-1/something.html": {
-                    "ref": "chapter-1/something.html",
-                    "tf": 5
-                  },
-                  "chapter-2/something.html": {
-                    "ref": "chapter-2/something.html",
-                    "tf": 5
-                  }
-                }
-              }
-            }
-          }
-        },
-        "p": {
-          "docs": {},
-          "a": {
-            "docs": {},
-            "g": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "chapter-1/something.html": {
-                    "ref": "chapter-1/something.html",
-                    "tf": 0.5
-                  },
-                  "chapter-2/something.html": {
-                    "ref": "chapter-2/something.html",
-                    "tf": 0.5
-                  }
-                }
-              }
-            }
-          }
-        },
-        "w": {
-          "docs": {},
-          "r": {
-            "docs": {},
-            "i": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "e": {
-                  "docs": {
-                    "chapter-1/something.html": {
-                      "ref": "chapter-1/something.html",
-                      "tf": 5
-                    },
-                    "chapter-2/something.html": {
-                      "ref": "chapter-2/something.html",
-                      "tf": 5
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "a": {
-          "docs": {},
-          "c": {
-            "docs": {},
-            "k": {
-              "docs": {},
-              "n": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "w": {
-                    "docs": {},
-                    "l": {
-                      "docs": {},
-                      "e": {
-                        "docs": {},
-                        "d": {
-                          "docs": {},
-                          "g": {
-                            "docs": {
-                              "acknowledgment/": {
-                                "ref": "acknowledgment/",
-                                "tf": 10
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "b": {
-          "docs": {},
-          "o": {
-            "docs": {},
-            "o": {
-              "docs": {},
-              "k": {
-                "docs": {},
-                "'": {
-                  "docs": {
-                    "acknowledgment/": {
-                      "ref": "acknowledgment/",
-                      "tf": 0.08333333333333333
                     }
                   }
                 }
@@ -233,8 +119,12 @@
                   "docs": {},
                   "t": {
                     "docs": {
-                      "acknowledgment/": {
-                        "ref": "acknowledgment/",
+                      "chapter-1/": {
+                        "ref": "chapter-1/",
+                        "tf": 0.08333333333333333
+                      },
+                      "chapter-2/": {
+                        "ref": "chapter-2/",
                         "tf": 0.08333333333333333
                       }
                     }
@@ -254,8 +144,12 @@
                 "docs": {},
                 "t": {
                   "docs": {
-                    "acknowledgment/": {
-                      "ref": "acknowledgment/",
+                    "chapter-1/": {
+                      "ref": "chapter-1/",
+                      "tf": 0.08333333333333333
+                    },
+                    "chapter-2/": {
+                      "ref": "chapter-2/",
                       "tf": 0.08333333333333333
                     }
                   }
@@ -290,8 +184,12 @@
                                 "docs": {},
                                 ".": {
                                   "docs": {
-                                    "acknowledgment/": {
-                                      "ref": "acknowledgment/",
+                                    "chapter-1/": {
+                                      "ref": "chapter-1/",
+                                      "tf": 0.08333333333333333
+                                    },
+                                    "chapter-2/": {
+                                      "ref": "chapter-2/",
                                       "tf": 0.08333333333333333
                                     }
                                   }
@@ -324,8 +222,12 @@
                       "docs": {},
                       "n": {
                         "docs": {
-                          "acknowledgment/": {
-                            "ref": "acknowledgment/",
+                          "chapter-1/": {
+                            "ref": "chapter-1/",
+                            "tf": 0.08333333333333333
+                          },
+                          "chapter-2/": {
+                            "ref": "chapter-2/",
                             "tf": 0.08333333333333333
                           }
                         }
@@ -351,8 +253,12 @@
                     "docs": {},
                     "n": {
                       "docs": {
-                        "acknowledgment/": {
-                          "ref": "acknowledgment/",
+                        "chapter-1/": {
+                          "ref": "chapter-1/",
+                          "tf": 0.16666666666666666
+                        },
+                        "chapter-2/": {
+                          "ref": "chapter-2/",
                           "tf": 0.16666666666666666
                         }
                       }
@@ -376,8 +282,12 @@
                       "docs": {},
                       "r": {
                         "docs": {
-                          "acknowledgment/": {
-                            "ref": "acknowledgment/",
+                          "chapter-1/": {
+                            "ref": "chapter-1/",
+                            "tf": 0.08333333333333333
+                          },
+                          "chapter-2/": {
+                            "ref": "chapter-2/",
                             "tf": 0.08333333333333333
                           }
                         }
@@ -397,8 +307,12 @@
               "docs": {},
               "l": {
                 "docs": {
-                  "acknowledgment/": {
-                    "ref": "acknowledgment/",
+                  "chapter-1/": {
+                    "ref": "chapter-1/",
+                    "tf": 0.08333333333333333
+                  },
+                  "chapter-2/": {
+                    "ref": "chapter-2/",
                     "tf": 0.08333333333333333
                   }
                 }
@@ -407,46 +321,33 @@
           }
         }
       },
-      "length": 20
+      "length": 22
     },
     "corpusTokens": [
       "1",
       "2",
-      "acknowledg",
       "book'",
       "chapter",
-      "content",
       "dictat",
       "great",
       "introduction.",
       "markdown",
-      "nice",
-      "page",
       "section",
       "structur",
-      "titl",
-      "write"
+      "titl"
     ],
     "pipeline": ["stopWordFilter", "stemmer"]
   },
   "store": {
-    "chapter-1/something.html": {
-      "url": "chapter-1/something.html",
-      "title": "Writing is nice",
-      "summary": "This is a short description of my page",
+    "chapter-1/": {
+      "url": "chapter-1/",
+      "title": "Chapter I",
       "keywords": "",
-      "body": "The content of my page\n"
+      "body": "Title of the chapter\nThis is a great introduction.\nSection 1\nMarkdown will dictates most of your book's structure\nSection 2\n"
     },
-    "chapter-2/something.html": {
-      "url": "chapter-2/something.html",
-      "title": "Writing is nice",
-      "summary": "This is a short description of my page",
-      "keywords": "",
-      "body": "The content of my page\n"
-    },
-    "acknowledgment/": {
-      "url": "acknowledgment/",
-      "title": "Acknowledgment",
+    "chapter-2/": {
+      "url": "chapter-2/",
+      "title": "Chapter I",
       "keywords": "",
       "body": "Title of the chapter\nThis is a great introduction.\nSection 1\nMarkdown will dictates most of your book's structure\nSection 2\n"
     }
