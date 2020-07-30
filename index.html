@@ -118,10 +118,16 @@
           gitbook.page.hasChanged({
             page: { title: 'Introduction', level: '1.1', depth: 1, dir: 'ltr' },
             config: {
-              gitbook: '*',
-              theme: 'default',
-              variables: {},
               plugins: [],
+              root: './docs',
+              styles: {
+                website: 'styles/website.css',
+                pdf: 'styles/pdf.css',
+                epub: 'styles/epub.css',
+                mobi: 'styles/mobi.css',
+                ebook: 'styles/ebook.css',
+                print: 'styles/print.css'
+              },
               pluginsConfig: {
                 highlight: {},
                 search: {},
@@ -139,12 +145,7 @@
                   showLevel: false
                 }
               },
-              structure: {
-                langs: 'LANGS.md',
-                readme: 'README.md',
-                glossary: 'GLOSSARY.md',
-                summary: 'SUMMARY.md'
-              },
+              theme: 'default',
               pdf: {
                 pageNumbers: true,
                 fontSize: 12,
@@ -155,21 +156,21 @@
                 margin: { right: 62, left: 62, top: 56, bottom: 56 },
                 embedFonts: false
               },
-              styles: {
-                website: 'styles/website.css',
-                pdf: 'styles/pdf.css',
-                epub: 'styles/epub.css',
-                mobi: 'styles/mobi.css',
-                ebook: 'styles/ebook.css',
-                print: 'styles/print.css'
-              }
+              structure: {
+                langs: 'LANGS.md',
+                readme: 'README.md',
+                glossary: 'GLOSSARY.md',
+                summary: 'SUMMARY.md'
+              },
+              variables: {},
+              gitbook: '*'
             },
             file: {
               path: 'README.md',
-              mtime: '2020-07-30T08:36:54.127Z',
+              mtime: '2020-07-30T09:12:11.784Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.5.2', time: '2020-07-30T09:08:17.348Z' },
+            gitbook: { version: '3.5.2', time: '2020-07-30T09:12:24.102Z' },
             basePath: '.',
             book: { language: '' }
           });
