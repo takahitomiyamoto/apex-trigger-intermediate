@@ -2,7 +2,9 @@
 
 ### Introduction
 
-- [はじめに](README.md)
+- [はじめに](README.md#はじめに)
+- [Common Values](README.md#common-values)
+- [Curriculum](README.md#curriculum)
 
 ### Lv. 1
 
@@ -22,4 +24,5 @@
 
 ---
 
-- [Acknowledgment](acknowledgment/README.md)
+- [Appendix](README.md#appendix)
+- [Acknowledgment](README.md#acknowledgment)
