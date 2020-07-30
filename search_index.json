@@ -8,11 +8,18 @@
     ],
     "ref": "url",
     "documentStore": {
-      "store": { "./": ["apex", "introduct", "トリガのワークショップ"] },
-      "length": 1
+      "store": {
+        "chapter-1/": ["1", "apex", "chapter", "トリガのワークショップ"],
+        "chapter-1/something.html": ["nice", "write"],
+        "chapter-2/": ["2", "apex", "chapter", "ii", "トリガのワークショップ"],
+        "chapter-2/something.html": ["nice", "write"]
+      },
+      "length": 4
     },
     "tokenStore": {
       "root": {
+        "1": { "docs": { "chapter-1/": { "ref": "chapter-1/", "tf": 0.25 } } },
+        "2": { "docs": { "chapter-2/": { "ref": "chapter-2/", "tf": 0.25 } } },
         "docs": {},
         "a": {
           "docs": {},
@@ -21,32 +28,30 @@
             "e": {
               "docs": {},
               "x": {
-                "docs": { "./": { "ref": "./", "tf": 0.3333333333333333 } }
+                "docs": {
+                  "chapter-1/": { "ref": "chapter-1/", "tf": 0.25 },
+                  "chapter-2/": { "ref": "chapter-2/", "tf": 0.25 }
+                }
               }
             }
           }
         },
-        "i": {
+        "c": {
           "docs": {},
-          "n": {
+          "h": {
             "docs": {},
-            "t": {
+            "a": {
               "docs": {},
-              "r": {
+              "p": {
                 "docs": {},
-                "o": {
+                "t": {
                   "docs": {},
-                  "d": {
+                  "e": {
                     "docs": {},
-                    "u": {
-                      "docs": {},
-                      "c": {
-                        "docs": {},
-                        "t": {
-                          "docs": {
-                            "./": { "ref": "./", "tf": 10.333333333333334 }
-                          }
-                        }
+                    "r": {
+                      "docs": {
+                        "chapter-1/": { "ref": "chapter-1/", "tf": 10.25 },
+                        "chapter-2/": { "ref": "chapter-2/", "tf": 5.25 }
                       }
                     }
                   }
@@ -77,7 +82,14 @@
                             "docs": {},
                             "プ": {
                               "docs": {
-                                "./": { "ref": "./", "tf": 0.3333333333333333 }
+                                "chapter-1/": {
+                                  "ref": "chapter-1/",
+                                  "tf": 0.25
+                                },
+                                "chapter-2/": {
+                                  "ref": "chapter-2/",
+                                  "tf": 0.25
+                                }
                               }
                             }
                           }
@@ -89,19 +101,95 @@
               }
             }
           }
+        },
+        "n": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "chapter-1/something.html": {
+                    "ref": "chapter-1/something.html",
+                    "tf": 5
+                  },
+                  "chapter-2/something.html": {
+                    "ref": "chapter-2/something.html",
+                    "tf": 5
+                  }
+                }
+              }
+            }
+          }
+        },
+        "w": {
+          "docs": {},
+          "r": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "e": {
+                  "docs": {
+                    "chapter-1/something.html": {
+                      "ref": "chapter-1/something.html",
+                      "tf": 5
+                    },
+                    "chapter-2/something.html": {
+                      "ref": "chapter-2/something.html",
+                      "tf": 5
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "i": {
+          "docs": {},
+          "i": { "docs": { "chapter-2/": { "ref": "chapter-2/", "tf": 5 } } }
         }
       },
-      "length": 3
+      "length": 13
     },
-    "corpusTokens": ["apex", "introduct", "トリガのワークショップ"],
+    "corpusTokens": [
+      "1",
+      "2",
+      "apex",
+      "chapter",
+      "ii",
+      "nice",
+      "write",
+      "トリガのワークショップ"
+    ],
     "pipeline": ["stopWordFilter", "stemmer"]
   },
   "store": {
-    "./": {
-      "url": "./",
-      "title": "Introduction",
+    "chapter-1/": {
+      "url": "chapter-1/",
+      "title": "Chapter I",
       "keywords": "",
-      "body": "Introduction\nApex トリガのワークショップ\n"
+      "body": "Chapter 1\nApex トリガのワークショップ\n"
+    },
+    "chapter-1/something.html": {
+      "url": "chapter-1/something.html",
+      "title": "Writing is nice",
+      "keywords": "",
+      "body": ""
+    },
+    "chapter-2/": {
+      "url": "chapter-2/",
+      "title": "Chapter II",
+      "keywords": "",
+      "body": "Chapter 2\nApex トリガのワークショップ\n"
+    },
+    "chapter-2/something.html": {
+      "url": "chapter-2/something.html",
+      "title": "Writing is nice",
+      "keywords": "",
+      "body": ""
     }
   }
 }
