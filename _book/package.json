@@ -2,13 +2,6 @@
   "name": "apex-trigger-intermediate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "honkit build",
-    "deploy": "yarn prettier && gh-pages -d _book",
-    "serve": "honkit serve",
-    "prettier": "prettier \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\" --write --loglevel log"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/takahitomiyamoto/apex-trigger-intermediate.git"
@@ -22,7 +15,13 @@
   "bugs": {
     "url": "https://github.com/takahitomiyamoto/apex-trigger-intermediate/issues"
   },
-  "homepage": "https://github.com/takahitomiyamoto/apex-trigger-intermediate#readme",
+  "homepage": "https://takahitomiyamoto.github.io/apex-trigger-intermediate",
+  "scripts": {
+    "build": "honkit build",
+    "deploy": "yarn build && yarn prettier && gh-pages -d _book",
+    "serve": "honkit serve",
+    "prettier": "prettier \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\" --write --loglevel log"
+  },
   "devDependencies": {
     "@prettier/plugin-xml": "0.10.0",
     "gh-pages": "3.1.0",
