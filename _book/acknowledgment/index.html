@@ -52,29 +52,61 @@
 
         <nav role="navigation">
           <ul class="summary">
+            <li class="header">Introduction</li>
+
             <li class="chapter" data-level="1.1" data-path="../">
               <a href="../">
-                Introduction
+                はじめに
               </a>
             </li>
 
-            <li class="header">Chapter I</li>
+            <li class="header">Lv. 1</li>
 
-            <li
-              class="chapter"
-              data-level="2.1"
-              data-path="../chapter-1/something.html"
-            >
-              <a href="../chapter-1/something.html">
-                Writing is nice
+            <li class="chapter" data-level="2.1" data-path="../chapter-1/">
+              <a href="../chapter-1/">
+                Chapter I
               </a>
+
+              <ul class="articles">
+                <li
+                  class="chapter"
+                  data-level="2.1.1"
+                  data-path="../chapter-1/"
+                >
+                  <a href="../chapter-1/#writing">
+                    Writing is nice
+                  </a>
+                </li>
+              </ul>
             </li>
+
+            <li class="header">Lv. 2</li>
+
+            <li class="chapter" data-level="3.1" data-path="../chapter-2/">
+              <a href="../chapter-2/">
+                Chapter I
+              </a>
+
+              <ul class="articles">
+                <li
+                  class="chapter"
+                  data-level="3.1.1"
+                  data-path="../chapter-2/"
+                >
+                  <a href="../chapter-2/#writing">
+                    Writing is nice
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="header">Lv. 3</li>
 
             <li class="header">Chapter II</li>
 
             <li
               class="chapter"
-              data-level="3.1"
+              data-level="5.1"
               data-path="../chapter-2/something.html"
             >
               <a href="../chapter-2/something.html">
@@ -84,7 +116,7 @@
 
             <li class="divider"></li>
 
-            <li class="chapter active" data-level="4.1" data-path="./">
+            <li class="chapter active" data-level="6.1" data-path="./">
               <a href="./">
                 Acknowledgment
               </a>
@@ -164,11 +196,11 @@
           gitbook.page.hasChanged({
             page: {
               title: 'Acknowledgment',
-              level: '4.1',
+              level: '6.1',
               depth: 1,
               previous: {
                 title: 'Writing is nice',
-                level: '3.1',
+                level: '5.1',
                 depth: 1,
                 path: 'chapter-2/something.md',
                 ref: 'chapter-2/something.md',
@@ -245,7 +277,7 @@
               mtime: '2020-07-30T14:11:39.747Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.5.2', time: '2020-07-30T14:28:55.380Z' },
+            gitbook: { version: '3.5.2', time: '2020-07-30T14:35:57.418Z' },
             basePath: '..',
             book: { language: '' }
           });
