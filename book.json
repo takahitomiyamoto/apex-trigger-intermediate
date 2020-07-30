@@ -1,7 +1,7 @@
 {
   "root": "./docs",
   "title": "Apex Trigger Intermediate",
-  "description": "Apex トリガの中級レベルのハンズオンワークショップです。",
+  "description": "Apex トリガの中級レベルのチュートリアルです。",
   "author": "Takahito Miyamoto",
   "language": "ja",
   "structure.readme": "docs/README.md",

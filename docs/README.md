@@ -1,4 +1,4 @@
-# Apex Trigger 中級
+# Apex トリガ 中級
 
 ## はじめに
 
