@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>Introduction · HonKit</title>
+    <title>Introduction · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="generator" content="HonKit 3.5.2" />
+    <meta name="author" content="Takahito Miyamoto" />
 
     <link rel="stylesheet" href="gitbook/style.css" />
 
@@ -40,13 +41,13 @@
       type="image/x-icon"
     />
 
-    <link rel="next" href="chapter-1/" />
+    <link rel="next" href="chapter-1/something.html" />
   </head>
   <body>
     <div class="book">
       <div class="book-summary">
         <div id="book-search-input" role="search">
-          <input type="text" placeholder="Type to search" />
+          <input type="text" placeholder="検索ワードを入力" />
         </div>
 
         <nav role="navigation">
@@ -57,40 +58,36 @@
               </a>
             </li>
 
-            <li class="chapter" data-level="1.2" data-path="chapter-1/">
-              <a href="chapter-1/">
-                Chapter I
-              </a>
+            <li class="header">Chapter I</li>
 
-              <ul class="articles">
-                <li
-                  class="chapter"
-                  data-level="1.2.1"
-                  data-path="chapter-1/something.html"
-                >
-                  <a href="chapter-1/something.html">
-                    Writing is nice
-                  </a>
-                </li>
-              </ul>
+            <li
+              class="chapter"
+              data-level="2.1"
+              data-path="chapter-1/something.html"
+            >
+              <a href="chapter-1/something.html">
+                Writing is nice
+              </a>
             </li>
 
-            <li class="chapter" data-level="1.3" data-path="chapter-2/">
-              <a href="chapter-2/">
-                Chapter II
-              </a>
+            <li class="header">Chapter II</li>
 
-              <ul class="articles">
-                <li
-                  class="chapter"
-                  data-level="1.3.1"
-                  data-path="chapter-2/something.html"
-                >
-                  <a href="chapter-2/something.html">
-                    Writing is nice
-                  </a>
-                </li>
-              </ul>
+            <li
+              class="chapter"
+              data-level="3.1"
+              data-path="chapter-2/something.html"
+            >
+              <a href="chapter-2/something.html">
+                Writing is nice
+              </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li class="chapter" data-level="4.1" data-path="acknowledgment/">
+              <a href="acknowledgment/">
+                Acknowledgment
+              </a>
             </li>
 
             <li class="divider"></li>
@@ -101,7 +98,7 @@
                 target="blank"
                 class="gitbook-link"
               >
-                Published with HonKit
+                HonKitで公開
               </a>
             </li>
           </ul>
@@ -150,9 +147,9 @@
         </div>
 
         <a
-          href="chapter-1/"
+          href="chapter-1/something.html"
           class="navigation navigation-next navigation-unique"
-          aria-label="Next page: Chapter I"
+          aria-label="Next page: Writing is nice"
         >
           <i class="fa fa-angle-right"></i>
         </a>
@@ -167,21 +164,12 @@
               level: '1.1',
               depth: 1,
               next: {
-                title: 'Chapter I',
-                level: '1.2',
+                title: 'Writing is nice',
+                level: '2.1',
                 depth: 1,
-                path: 'chapter-1/README.md',
-                ref: 'chapter-1/README.md',
-                articles: [
-                  {
-                    title: 'Writing is nice',
-                    level: '1.2.1',
-                    depth: 2,
-                    path: 'chapter-1/something.md',
-                    ref: 'chapter-1/something.md',
-                    articles: []
-                  }
-                ]
+                path: 'chapter-1/something.md',
+                ref: 'chapter-1/something.md',
+                articles: []
               },
               dir: 'ltr'
             },
@@ -213,7 +201,17 @@
                   showLevel: false
                 }
               },
+              'pdf.embedFonts': 'false',
               theme: 'default',
+              'structure.readme': 'docs/README.md',
+              'pdf.margin.left': '62',
+              author: 'Takahito Miyamoto',
+              'structure.summary': 'docs/SUMMARY.md',
+              'pdf.fontSize': '12',
+              'pdf.margin.bottom': '56',
+              'pdf.fontFamily': 'Arial',
+              'pdf.paperSize': 'a4',
+              'pdf.margin.top': '56',
               pdf: {
                 pageNumbers: true,
                 fontSize: 12,
@@ -231,14 +229,20 @@
                 summary: 'SUMMARY.md'
               },
               variables: {},
-              gitbook: '*'
+              'pdf.margin.right': '62',
+              title: 'Apex Trigger Intermediate',
+              language: 'ja',
+              gitbook: '*',
+              description:
+                'Apex トリガの中級レベルのハンズオンワークショップです。',
+              'pdf.pageNumbers': 'true'
             },
             file: {
               path: 'README.md',
               mtime: '2020-07-30T09:12:11.784Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.5.2', time: '2020-07-30T09:14:57.956Z' },
+            gitbook: { version: '3.5.2', time: '2020-07-30T14:28:55.380Z' },
             basePath: '.',
             book: { language: '' }
           });
