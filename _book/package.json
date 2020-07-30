@@ -1,0 +1,26 @@
+{
+  "name": "apex-trigger-intermediate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takahitomiyamoto/apex-trigger-intermediate.git"
+  },
+  "keywords": [
+    "Salesforce",
+    "Apex"
+  ],
+  "author": "Takahito Miyamoto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takahitomiyamoto/apex-trigger-intermediate/issues"
+  },
+  "homepage": "https://github.com/takahitomiyamoto/apex-trigger-intermediate#readme",
+  "devDependencies": {
+    "honkit": "^3.5.2"
+  }
+}
