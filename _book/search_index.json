@@ -7,10 +7,2636 @@
       { "name": "body", "boost": 1 }
     ],
     "ref": "url",
-    "documentStore": { "store": {}, "length": 0 },
-    "tokenStore": { "root": { "docs": {} }, "length": 0 },
-    "corpusTokens": [],
+    "documentStore": {
+      "store": {
+        "prerequisite/beginner.html": [
+          "admin",
+          "apex",
+          "autom",
+          "basic",
+          "bug",
+          "busi",
+          "code",
+          "debugg",
+          "find",
+          "fix",
+          "lightn",
+          "platform",
+          "process",
+          "replay",
+          "salesforc",
+          "soql",
+          "studio",
+          "test",
+          "trailhead",
+          "unit",
+          "us",
+          "visual",
+          "の基本",
+          "の基礎とデータベース",
+          "クイックスタート:",
+          "コーディング",
+          "システム管理者のための",
+          "システム管理者のためのオブジェクト指向プログラミング",
+          "テスト",
+          "トリガ",
+          "プラットフォーム開発の基礎",
+          "初級者向けコンテンツ",
+          "基礎",
+          "検索ソリューションの基礎",
+          "開発のための",
+          "開発者コンソールの基礎"
+        ],
+        "next-step/": [
+          ".net",
+          "alway",
+          "apex",
+          "api",
+          "app",
+          "appendix",
+          "autom",
+          "basic",
+          "big",
+          "blog",
+          "certif",
+          "cloud",
+          "code",
+          "convent",
+          "custom",
+          "databas",
+          "debug",
+          "deploy",
+          "design",
+          "develop",
+          "fundamentals,",
+          "interfac",
+          "learning!!",
+          "lifestyl",
+          "lightn",
+          "limit",
+          "logic",
+          "manag",
+          "metadata",
+          "model",
+          "object",
+          "platform",
+          "prep:",
+          "process",
+          "programmat",
+          "queri",
+          "salesforc",
+          "soql",
+          "sql",
+          "success",
+          "tech",
+          "testing,",
+          "trailhead",
+          "trailmix",
+          "transform",
+          "type",
+          "user",
+          "without",
+          "お疲れ様でした。これで大抵の",
+          "と",
+          "の基本",
+          "の基礎",
+          "アプリケーションロジックの脆弱性防止",
+          "インジェクションの脆弱性防止",
+          "インスタント通知アプリケーションの作成",
+          "インテグレーションサービス",
+          "エンタープライズパターン:",
+          "カスタムメタデータ型",
+          "サービスレイヤ",
+          "デベロッパー",
+          "データベースと",
+          "データ漏洩の防止",
+          "トリガは怖いものなしですね。",
+          "ドメインおよびセレクタレイヤ",
+          "プラットフォーム",
+          "プラットフォームイベント",
+          "プラットフォームイベントの基礎",
+          "全部入り",
+          "更に高みを目指すために、今回利用した機能に習熟したり、細かい制約を開発者ガイドでおさえたりしていきましょう。",
+          "次のステップ",
+          "秘密の保存場所の保護",
+          "認定",
+          "開発者ガイド",
+          "非同期"
+        ]
+      },
+      "length": 2
+    },
+    "tokenStore": {
+      "root": {
+        "docs": {},
+        "a": {
+          "docs": {},
+          "d": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "n": {
+                  "docs": {
+                    "prerequisite/beginner.html": {
+                      "ref": "prerequisite/beginner.html",
+                      "tf": 0.02
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "p": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "x": {
+                "docs": {
+                  "prerequisite/beginner.html": {
+                    "ref": "prerequisite/beginner.html",
+                    "tf": 0.2
+                  },
+                  "next-step/": {
+                    "ref": "next-step/",
+                    "tf": 0.06481481481481481
+                  }
+                }
+              }
+            },
+            "i": {
+              "docs": {
+                "next-step/": {
+                  "ref": "next-step/",
+                  "tf": 0.009259259259259259
+                }
+              }
+            },
+            "p": {
+              "docs": {
+                "next-step/": {
+                  "ref": "next-step/",
+                  "tf": 0.018518518518518517
+                }
+              },
+              "e": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "d": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "x": {
+                        "docs": {
+                          "next-step/": { "ref": "next-step/", "tf": 10 }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "m": {
+                  "docs": {
+                    "prerequisite/beginner.html": {
+                      "ref": "prerequisite/beginner.html",
+                      "tf": 0.02
+                    },
+                    "next-step/": {
+                      "ref": "next-step/",
+                      "tf": 0.009259259259259259
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "l": {
+            "docs": {},
+            "w": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "y": {
+                  "docs": {
+                    "next-step/": {
+                      "ref": "next-step/",
+                      "tf": 0.009259259259259259
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "b": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "c": {
+                  "docs": {
+                    "prerequisite/beginner.html": {
+                      "ref": "prerequisite/beginner.html",
+                      "tf": 0.02
+                    },
+                    "next-step/": {
+                      "ref": "next-step/",
+                      "tf": 0.009259259259259259
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "g": {
+              "docs": {
+                "prerequisite/beginner.html": {
+                  "ref": "prerequisite/beginner.html",
+                  "tf": 0.02
+                }
+              }
+            },
+            "s": {
+              "docs": {},
+              "i": {
+                "docs": {
+                  "prerequisite/beginner.html": {
+                    "ref": "prerequisite/beginner.html",
+                    "tf": 0.02
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "g": {
+              "docs": {
+                "next-step/": {
+                  "ref": "next-step/",
+                  "tf": 0.009259259259259259
+                }
+              }
+            }
+          },
+          "l": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "g": {
+                "docs": {
+                  "next-step/": {
+                    "ref": "next-step/",
+                    "tf": 0.018518518518518517
+                  }
+                }
+              }
+            }
+          }
+        },
+        "c": {
+          "docs": {},
+          "o": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "prerequisite/beginner.html": {
+                    "ref": "prerequisite/beginner.html",
+                    "tf": 0.02
+                  },
+                  "next-step/": {
+                    "ref": "next-step/",
+                    "tf": 0.009259259259259259
+                  }
+                }
+              }
+            },
+            "n": {
+              "docs": {},
+              "v": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "next-step/": {
+                          "ref": "next-step/",
+                          "tf": 0.009259259259259259
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "f": {
+                    "docs": {
+                      "next-step/": {
+                        "ref": "next-step/",
+                        "tf": 0.037037037037037035
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "l": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "d": {
+                  "docs": {
+                    "next-step/": {
+                      "ref": "next-step/",
+                      "tf": 0.009259259259259259
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "m": {
+                    "docs": {
+                      "next-step/": {
+                        "ref": "next-step/",
+                        "tf": 0.018518518518518517
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "d": {
+          "docs": {},
+          "e": {
+            "docs": {},
+            "b": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "g": {
+                  "docs": {
+                    "next-step/": {
+                      "ref": "next-step/",
+                      "tf": 0.009259259259259259
+                    }
+                  },
+                  "g": {
+                    "docs": {
+                      "prerequisite/beginner.html": {
+                        "ref": "prerequisite/beginner.html",
+                        "tf": 0.02
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "p": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "y": {
+                    "docs": {
+                      "next-step/": {
+                        "ref": "next-step/",
+                        "tf": 0.009259259259259259
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "s": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "g": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "next-step/": {
+                        "ref": "next-step/",
+                        "tf": 0.009259259259259259
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "v": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "l": {
+                  "docs": {},
+                  "o": {
+                    "docs": {},
+                    "p": {
+                      "docs": {
+                        "next-step/": {
+                          "ref": "next-step/",
+                          "tf": 0.05555555555555555
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "b": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "s": {
+                      "docs": {
+                        "next-step/": {
+                          "ref": "next-step/",
+                          "tf": 0.009259259259259259
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "f": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "d": {
+                "docs": {
+                  "prerequisite/beginner.html": {
+                    "ref": "prerequisite/beginner.html",
+                    "tf": 0.02
+                  }
+                }
+              }
+            },
+            "x": {
+              "docs": {
+                "prerequisite/beginner.html": {
+                  "ref": "prerequisite/beginner.html",
+                  "tf": 0.02
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "d": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "m": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "t": {
+                          "docs": {},
+                          "a": {
+                            "docs": {},
+                            "l": {
+                              "docs": {},
+                              "s": {
+                                "docs": {},
+                                ",": {
+                                  "docs": {
+                                    "next-step/": {
+                                      "ref": "next-step/",
+                                      "tf": 0.009259259259259259
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "l": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "g": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "prerequisite/beginner.html": {
+                        "ref": "prerequisite/beginner.html",
+                        "tf": 0.02
+                      },
+                      "next-step/": {
+                        "ref": "next-step/",
+                        "tf": 0.018518518518518517
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "f": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    "y": {
+                      "docs": {},
+                      "l": {
+                        "docs": {
+                          "next-step/": {
+                            "ref": "next-step/",
+                            "tf": 0.009259259259259259
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "m": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "next-step/": {
+                      "ref": "next-step/",
+                      "tf": 0.018518518518518517
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "n": {
+                      "docs": {},
+                      "g": {
+                        "docs": {},
+                        "!": {
+                          "docs": {},
+                          "!": {
+                            "docs": {
+                              "next-step/": {
+                                "ref": "next-step/",
+                                "tf": 0.009259259259259259
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "g": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "c": {
+                  "docs": {
+                    "next-step/": {
+                      "ref": "next-step/",
+                      "tf": 0.009259259259259259
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "p": {
+          "docs": {},
+          "l": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "f": {
+                  "docs": {},
+                  "o": {
+                    "docs": {},
+                    "r": {
+                      "docs": {},
+                      "m": {
+                        "docs": {
+                          "prerequisite/beginner.html": {
+                            "ref": "prerequisite/beginner.html",
+                            "tf": 0.02
+                          },
+                          "next-step/": {
+                            "ref": "next-step/",
+                            "tf": 0.046296296296296294
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "s": {
+                    "docs": {},
+                    "s": {
+                      "docs": {
+                        "prerequisite/beginner.html": {
+                          "ref": "prerequisite/beginner.html",
+                          "tf": 0.02
+                        },
+                        "next-step/": {
+                          "ref": "next-step/",
+                          "tf": 0.018518518518518517
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "g": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "m": {
+                      "docs": {},
+                      "m": {
+                        "docs": {},
+                        "a": {
+                          "docs": {},
+                          "t": {
+                            "docs": {
+                              "next-step/": {
+                                "ref": "next-step/",
+                                "tf": 0.009259259259259259
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "e": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                ":": {
+                  "docs": {
+                    "next-step/": {
+                      "ref": "next-step/",
+                      "tf": 0.037037037037037035
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "r": {
+          "docs": {},
+          "e": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "y": {
+                    "docs": {
+                      "prerequisite/beginner.html": {
+                        "ref": "prerequisite/beginner.html",
+                        "tf": 0.02
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "s": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "f": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "r": {
+                        "docs": {},
+                        "c": {
+                          "docs": {
+                            "prerequisite/beginner.html": {
+                              "ref": "prerequisite/beginner.html",
+                              "tf": 0.02
+                            },
+                            "next-step/": {
+                              "ref": "next-step/",
+                              "tf": 0.009259259259259259
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "q": {
+              "docs": {},
+              "l": {
+                "docs": {
+                  "prerequisite/beginner.html": {
+                    "ref": "prerequisite/beginner.html",
+                    "tf": 0.02
+                  },
+                  "next-step/": {
+                    "ref": "next-step/",
+                    "tf": 0.009259259259259259
+                  }
+                }
+              }
+            }
+          },
+          "t": {
+            "docs": {},
+            "u": {
+              "docs": {},
+              "d": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "o": {
+                    "docs": {
+                      "prerequisite/beginner.html": {
+                        "ref": "prerequisite/beginner.html",
+                        "tf": 0.02
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "q": {
+            "docs": {},
+            "l": {
+              "docs": {
+                "next-step/": {
+                  "ref": "next-step/",
+                  "tf": 0.009259259259259259
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "s": {
+                    "docs": {},
+                    "s": {
+                      "docs": {
+                        "next-step/": {
+                          "ref": "next-step/",
+                          "tf": 0.009259259259259259
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "t": {
+          "docs": {},
+          "e": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "prerequisite/beginner.html": {
+                    "ref": "prerequisite/beginner.html",
+                    "tf": 0.02
+                  }
+                },
+                "i": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "g": {
+                      "docs": {},
+                      ",": {
+                        "docs": {
+                          "next-step/": {
+                            "ref": "next-step/",
+                            "tf": 0.009259259259259259
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "c": {
+              "docs": {},
+              "h": {
+                "docs": {
+                  "next-step/": {
+                    "ref": "next-step/",
+                    "tf": 0.009259259259259259
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "l": {
+                  "docs": {},
+                  "h": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "a": {
+                        "docs": {},
+                        "d": {
+                          "docs": {
+                            "prerequisite/beginner.html": {
+                              "ref": "prerequisite/beginner.html",
+                              "tf": 0.04
+                            },
+                            "next-step/": {
+                              "ref": "next-step/",
+                              "tf": 0.009259259259259259
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "m": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "x": {
+                        "docs": {
+                          "next-step/": {
+                            "ref": "next-step/",
+                            "tf": 0.009259259259259259
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "n": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "f": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "r": {
+                        "docs": {},
+                        "m": {
+                          "docs": {
+                            "next-step/": {
+                              "ref": "next-step/",
+                              "tf": 0.009259259259259259
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "y": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "next-step/": {
+                    "ref": "next-step/",
+                    "tf": 0.018518518518518517
+                  }
+                }
+              }
+            }
+          }
+        },
+        "u": {
+          "docs": {},
+          "n": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "prerequisite/beginner.html": {
+                    "ref": "prerequisite/beginner.html",
+                    "tf": 0.02
+                  }
+                }
+              }
+            }
+          },
+          "s": {
+            "docs": {
+              "prerequisite/beginner.html": {
+                "ref": "prerequisite/beginner.html",
+                "tf": 0.02
+              }
+            },
+            "e": {
+              "docs": {},
+              "r": {
+                "docs": {
+                  "next-step/": {
+                    "ref": "next-step/",
+                    "tf": 0.009259259259259259
+                  }
+                }
+              }
+            }
+          }
+        },
+        "v": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "l": {
+                    "docs": {
+                      "prerequisite/beginner.html": {
+                        "ref": "prerequisite/beginner.html",
+                        "tf": 0.02
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "の": {
+          "docs": {},
+          "基": {
+            "docs": {},
+            "本": {
+              "docs": {
+                "prerequisite/beginner.html": {
+                  "ref": "prerequisite/beginner.html",
+                  "tf": 0.04
+                },
+                "next-step/": {
+                  "ref": "next-step/",
+                  "tf": 0.018518518518518517
+                }
+              }
+            },
+            "礎": {
+              "docs": {
+                "next-step/": {
+                  "ref": "next-step/",
+                  "tf": 0.018518518518518517
+                }
+              },
+              "と": {
+                "docs": {},
+                "デ": {
+                  "docs": {},
+                  "ー": {
+                    "docs": {},
+                    "タ": {
+                      "docs": {},
+                      "ベ": {
+                        "docs": {},
+                        "ー": {
+                          "docs": {},
+                          "ス": {
+                            "docs": {
+                              "prerequisite/beginner.html": {
+                                "ref": "prerequisite/beginner.html",
+                                "tf": 0.02
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ク": {
+          "docs": {},
+          "イ": {
+            "docs": {},
+            "ッ": {
+              "docs": {},
+              "ク": {
+                "docs": {},
+                "ス": {
+                  "docs": {},
+                  "タ": {
+                    "docs": {},
+                    "ー": {
+                      "docs": {},
+                      "ト": {
+                        "docs": {},
+                        ":": {
+                          "docs": {
+                            "prerequisite/beginner.html": {
+                              "ref": "prerequisite/beginner.html",
+                              "tf": 0.06
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "コ": {
+          "docs": {},
+          "ー": {
+            "docs": {},
+            "デ": {
+              "docs": {},
+              "ィ": {
+                "docs": {},
+                "ン": {
+                  "docs": {},
+                  "グ": {
+                    "docs": {
+                      "prerequisite/beginner.html": {
+                        "ref": "prerequisite/beginner.html",
+                        "tf": 0.02
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "シ": {
+          "docs": {},
+          "ス": {
+            "docs": {},
+            "テ": {
+              "docs": {},
+              "ム": {
+                "docs": {},
+                "管": {
+                  "docs": {},
+                  "理": {
+                    "docs": {},
+                    "者": {
+                      "docs": {},
+                      "の": {
+                        "docs": {},
+                        "た": {
+                          "docs": {},
+                          "め": {
+                            "docs": {},
+                            "の": {
+                              "docs": {
+                                "prerequisite/beginner.html": {
+                                  "ref": "prerequisite/beginner.html",
+                                  "tf": 0.04
+                                }
+                              },
+                              "オ": {
+                                "docs": {},
+                                "ブ": {
+                                  "docs": {},
+                                  "ジ": {
+                                    "docs": {},
+                                    "ェ": {
+                                      "docs": {},
+                                      "ク": {
+                                        "docs": {},
+                                        "ト": {
+                                          "docs": {},
+                                          "指": {
+                                            "docs": {},
+                                            "向": {
+                                              "docs": {},
+                                              "プ": {
+                                                "docs": {},
+                                                "ロ": {
+                                                  "docs": {},
+                                                  "グ": {
+                                                    "docs": {},
+                                                    "ラ": {
+                                                      "docs": {},
+                                                      "ミ": {
+                                                        "docs": {},
+                                                        "ン": {
+                                                          "docs": {},
+                                                          "グ": {
+                                                            "docs": {
+                                                              "prerequisite/beginner.html": {
+                                                                "ref": "prerequisite/beginner.html",
+                                                                "tf": 0.02
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "テ": {
+          "docs": {},
+          "ス": {
+            "docs": {},
+            "ト": {
+              "docs": {
+                "prerequisite/beginner.html": {
+                  "ref": "prerequisite/beginner.html",
+                  "tf": 0.02
+                }
+              }
+            }
+          }
+        },
+        "ト": {
+          "docs": {},
+          "リ": {
+            "docs": {},
+            "ガ": {
+              "docs": {
+                "prerequisite/beginner.html": {
+                  "ref": "prerequisite/beginner.html",
+                  "tf": 0.02
+                }
+              },
+              "は": {
+                "docs": {},
+                "怖": {
+                  "docs": {},
+                  "い": {
+                    "docs": {},
+                    "も": {
+                      "docs": {},
+                      "の": {
+                        "docs": {},
+                        "な": {
+                          "docs": {},
+                          "し": {
+                            "docs": {},
+                            "で": {
+                              "docs": {},
+                              "す": {
+                                "docs": {},
+                                "ね": {
+                                  "docs": {},
+                                  "。": {
+                                    "docs": {
+                                      "next-step/": {
+                                        "ref": "next-step/",
+                                        "tf": 0.009259259259259259
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "プ": {
+          "docs": {},
+          "ラ": {
+            "docs": {},
+            "ッ": {
+              "docs": {},
+              "ト": {
+                "docs": {},
+                "フ": {
+                  "docs": {},
+                  "ォ": {
+                    "docs": {},
+                    "ー": {
+                      "docs": {},
+                      "ム": {
+                        "docs": {
+                          "next-step/": {
+                            "ref": "next-step/",
+                            "tf": 0.009259259259259259
+                          }
+                        },
+                        "開": {
+                          "docs": {},
+                          "発": {
+                            "docs": {},
+                            "の": {
+                              "docs": {},
+                              "基": {
+                                "docs": {},
+                                "礎": {
+                                  "docs": {
+                                    "prerequisite/beginner.html": {
+                                      "ref": "prerequisite/beginner.html",
+                                      "tf": 0.02
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "イ": {
+                          "docs": {},
+                          "ベ": {
+                            "docs": {},
+                            "ン": {
+                              "docs": {},
+                              "ト": {
+                                "docs": {
+                                  "next-step/": {
+                                    "ref": "next-step/",
+                                    "tf": 0.009259259259259259
+                                  }
+                                },
+                                "の": {
+                                  "docs": {},
+                                  "基": {
+                                    "docs": {},
+                                    "礎": {
+                                      "docs": {
+                                        "next-step/": {
+                                          "ref": "next-step/",
+                                          "tf": 0.009259259259259259
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "初": {
+          "docs": {},
+          "級": {
+            "docs": {},
+            "者": {
+              "docs": {},
+              "向": {
+                "docs": {},
+                "け": {
+                  "docs": {},
+                  "コ": {
+                    "docs": {},
+                    "ン": {
+                      "docs": {},
+                      "テ": {
+                        "docs": {},
+                        "ン": {
+                          "docs": {},
+                          "ツ": {
+                            "docs": {
+                              "prerequisite/beginner.html": {
+                                "ref": "prerequisite/beginner.html",
+                                "tf": 10.02
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "基": {
+          "docs": {},
+          "礎": {
+            "docs": {
+              "prerequisite/beginner.html": {
+                "ref": "prerequisite/beginner.html",
+                "tf": 0.02
+              }
+            }
+          }
+        },
+        "検": {
+          "docs": {},
+          "索": {
+            "docs": {},
+            "ソ": {
+              "docs": {},
+              "リ": {
+                "docs": {},
+                "ュ": {
+                  "docs": {},
+                  "ー": {
+                    "docs": {},
+                    "シ": {
+                      "docs": {},
+                      "ョ": {
+                        "docs": {},
+                        "ン": {
+                          "docs": {},
+                          "の": {
+                            "docs": {},
+                            "基": {
+                              "docs": {},
+                              "礎": {
+                                "docs": {
+                                  "prerequisite/beginner.html": {
+                                    "ref": "prerequisite/beginner.html",
+                                    "tf": 0.02
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "開": {
+          "docs": {},
+          "発": {
+            "docs": {},
+            "の": {
+              "docs": {},
+              "た": {
+                "docs": {},
+                "め": {
+                  "docs": {},
+                  "の": {
+                    "docs": {
+                      "prerequisite/beginner.html": {
+                        "ref": "prerequisite/beginner.html",
+                        "tf": 0.02
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "者": {
+              "docs": {},
+              "コ": {
+                "docs": {},
+                "ン": {
+                  "docs": {},
+                  "ソ": {
+                    "docs": {},
+                    "ー": {
+                      "docs": {},
+                      "ル": {
+                        "docs": {},
+                        "の": {
+                          "docs": {},
+                          "基": {
+                            "docs": {},
+                            "礎": {
+                              "docs": {
+                                "prerequisite/beginner.html": {
+                                  "ref": "prerequisite/beginner.html",
+                                  "tf": 0.02
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ガ": {
+                "docs": {},
+                "イ": {
+                  "docs": {},
+                  "ド": {
+                    "docs": {
+                      "next-step/": {
+                        "ref": "next-step/",
+                        "tf": 0.009259259259259259
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        ".": {
+          "docs": {},
+          "n": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "next-step/": {
+                    "ref": "next-step/",
+                    "tf": 0.018518518518518517
+                  }
+                }
+              }
+            }
+          }
+        },
+        "i": {
+          "docs": {},
+          "n": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "f": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "c": {
+                        "docs": {
+                          "next-step/": {
+                            "ref": "next-step/",
+                            "tf": 0.009259259259259259
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "m": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "g": {
+                  "docs": {
+                    "next-step/": {
+                      "ref": "next-step/",
+                      "tf": 0.009259259259259259
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "d": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "t": {
+                      "docs": {},
+                      "a": {
+                        "docs": {
+                          "next-step/": {
+                            "ref": "next-step/",
+                            "tf": 0.018518518518518517
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "next-step/": {
+                      "ref": "next-step/",
+                      "tf": 0.009259259259259259
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "o": {
+          "docs": {},
+          "b": {
+            "docs": {},
+            "j": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "c": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "next-step/": {
+                        "ref": "next-step/",
+                        "tf": 0.009259259259259259
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "q": {
+          "docs": {},
+          "u": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "i": {
+                  "docs": {
+                    "next-step/": {
+                      "ref": "next-step/",
+                      "tf": 0.018518518518518517
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "w": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "u": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "next-step/": {
+                          "ref": "next-step/",
+                          "tf": 0.018518518518518517
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "お": {
+          "docs": {},
+          "疲": {
+            "docs": {},
+            "れ": {
+              "docs": {},
+              "様": {
+                "docs": {},
+                "で": {
+                  "docs": {},
+                  "し": {
+                    "docs": {},
+                    "た": {
+                      "docs": {},
+                      "。": {
+                        "docs": {},
+                        "こ": {
+                          "docs": {},
+                          "れ": {
+                            "docs": {},
+                            "で": {
+                              "docs": {},
+                              "大": {
+                                "docs": {},
+                                "抵": {
+                                  "docs": {},
+                                  "の": {
+                                    "docs": {
+                                      "next-step/": {
+                                        "ref": "next-step/",
+                                        "tf": 0.009259259259259259
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "と": {
+          "docs": {
+            "next-step/": { "ref": "next-step/", "tf": 0.009259259259259259 }
+          }
+        },
+        "ア": {
+          "docs": {},
+          "プ": {
+            "docs": {},
+            "リ": {
+              "docs": {},
+              "ケ": {
+                "docs": {},
+                "ー": {
+                  "docs": {},
+                  "シ": {
+                    "docs": {},
+                    "ョ": {
+                      "docs": {},
+                      "ン": {
+                        "docs": {},
+                        "ロ": {
+                          "docs": {},
+                          "ジ": {
+                            "docs": {},
+                            "ッ": {
+                              "docs": {},
+                              "ク": {
+                                "docs": {},
+                                "の": {
+                                  "docs": {},
+                                  "脆": {
+                                    "docs": {},
+                                    "弱": {
+                                      "docs": {},
+                                      "性": {
+                                        "docs": {},
+                                        "防": {
+                                          "docs": {},
+                                          "止": {
+                                            "docs": {
+                                              "next-step/": {
+                                                "ref": "next-step/",
+                                                "tf": 0.009259259259259259
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "イ": {
+          "docs": {},
+          "ン": {
+            "docs": {},
+            "ジ": {
+              "docs": {},
+              "ェ": {
+                "docs": {},
+                "ク": {
+                  "docs": {},
+                  "シ": {
+                    "docs": {},
+                    "ョ": {
+                      "docs": {},
+                      "ン": {
+                        "docs": {},
+                        "の": {
+                          "docs": {},
+                          "脆": {
+                            "docs": {},
+                            "弱": {
+                              "docs": {},
+                              "性": {
+                                "docs": {},
+                                "防": {
+                                  "docs": {},
+                                  "止": {
+                                    "docs": {
+                                      "next-step/": {
+                                        "ref": "next-step/",
+                                        "tf": 0.009259259259259259
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "ス": {
+              "docs": {},
+              "タ": {
+                "docs": {},
+                "ン": {
+                  "docs": {},
+                  "ト": {
+                    "docs": {},
+                    "通": {
+                      "docs": {},
+                      "知": {
+                        "docs": {},
+                        "ア": {
+                          "docs": {},
+                          "プ": {
+                            "docs": {},
+                            "リ": {
+                              "docs": {},
+                              "ケ": {
+                                "docs": {},
+                                "ー": {
+                                  "docs": {},
+                                  "シ": {
+                                    "docs": {},
+                                    "ョ": {
+                                      "docs": {},
+                                      "ン": {
+                                        "docs": {},
+                                        "の": {
+                                          "docs": {},
+                                          "作": {
+                                            "docs": {},
+                                            "成": {
+                                              "docs": {
+                                                "next-step/": {
+                                                  "ref": "next-step/",
+                                                  "tf": 0.009259259259259259
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "テ": {
+              "docs": {},
+              "グ": {
+                "docs": {},
+                "レ": {
+                  "docs": {},
+                  "ー": {
+                    "docs": {},
+                    "シ": {
+                      "docs": {},
+                      "ョ": {
+                        "docs": {},
+                        "ン": {
+                          "docs": {},
+                          "サ": {
+                            "docs": {},
+                            "ー": {
+                              "docs": {},
+                              "ビ": {
+                                "docs": {},
+                                "ス": {
+                                  "docs": {
+                                    "next-step/": {
+                                      "ref": "next-step/",
+                                      "tf": 0.009259259259259259
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "エ": {
+          "docs": {},
+          "ン": {
+            "docs": {},
+            "タ": {
+              "docs": {},
+              "ー": {
+                "docs": {},
+                "プ": {
+                  "docs": {},
+                  "ラ": {
+                    "docs": {},
+                    "イ": {
+                      "docs": {},
+                      "ズ": {
+                        "docs": {},
+                        "パ": {
+                          "docs": {},
+                          "タ": {
+                            "docs": {},
+                            "ー": {
+                              "docs": {},
+                              "ン": {
+                                "docs": {},
+                                ":": {
+                                  "docs": {
+                                    "next-step/": {
+                                      "ref": "next-step/",
+                                      "tf": 0.018518518518518517
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "カ": {
+          "docs": {},
+          "ス": {
+            "docs": {},
+            "タ": {
+              "docs": {},
+              "ム": {
+                "docs": {},
+                "メ": {
+                  "docs": {},
+                  "タ": {
+                    "docs": {},
+                    "デ": {
+                      "docs": {},
+                      "ー": {
+                        "docs": {},
+                        "タ": {
+                          "docs": {},
+                          "型": {
+                            "docs": {
+                              "next-step/": {
+                                "ref": "next-step/",
+                                "tf": 0.009259259259259259
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "サ": {
+          "docs": {},
+          "ー": {
+            "docs": {},
+            "ビ": {
+              "docs": {},
+              "ス": {
+                "docs": {},
+                "レ": {
+                  "docs": {},
+                  "イ": {
+                    "docs": {},
+                    "ヤ": {
+                      "docs": {
+                        "next-step/": {
+                          "ref": "next-step/",
+                          "tf": 0.009259259259259259
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "デ": {
+          "docs": {},
+          "ベ": {
+            "docs": {},
+            "ロ": {
+              "docs": {},
+              "ッ": {
+                "docs": {},
+                "パ": {
+                  "docs": {},
+                  "ー": {
+                    "docs": {
+                      "next-step/": {
+                        "ref": "next-step/",
+                        "tf": 0.009259259259259259
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ー": {
+            "docs": {},
+            "タ": {
+              "docs": {},
+              "ベ": {
+                "docs": {},
+                "ー": {
+                  "docs": {},
+                  "ス": {
+                    "docs": {},
+                    "と": {
+                      "docs": {
+                        "next-step/": {
+                          "ref": "next-step/",
+                          "tf": 0.009259259259259259
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "漏": {
+                "docs": {},
+                "洩": {
+                  "docs": {},
+                  "の": {
+                    "docs": {},
+                    "防": {
+                      "docs": {},
+                      "止": {
+                        "docs": {
+                          "next-step/": {
+                            "ref": "next-step/",
+                            "tf": 0.009259259259259259
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ド": {
+          "docs": {},
+          "メ": {
+            "docs": {},
+            "イ": {
+              "docs": {},
+              "ン": {
+                "docs": {},
+                "お": {
+                  "docs": {},
+                  "よ": {
+                    "docs": {},
+                    "び": {
+                      "docs": {},
+                      "セ": {
+                        "docs": {},
+                        "レ": {
+                          "docs": {},
+                          "ク": {
+                            "docs": {},
+                            "タ": {
+                              "docs": {},
+                              "レ": {
+                                "docs": {},
+                                "イ": {
+                                  "docs": {},
+                                  "ヤ": {
+                                    "docs": {
+                                      "next-step/": {
+                                        "ref": "next-step/",
+                                        "tf": 0.009259259259259259
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "全": {
+          "docs": {},
+          "部": {
+            "docs": {},
+            "入": {
+              "docs": {},
+              "り": {
+                "docs": {
+                  "next-step/": {
+                    "ref": "next-step/",
+                    "tf": 0.009259259259259259
+                  }
+                }
+              }
+            }
+          }
+        },
+        "更": {
+          "docs": {},
+          "に": {
+            "docs": {},
+            "高": {
+              "docs": {},
+              "み": {
+                "docs": {},
+                "を": {
+                  "docs": {},
+                  "目": {
+                    "docs": {},
+                    "指": {
+                      "docs": {},
+                      "す": {
+                        "docs": {},
+                        "た": {
+                          "docs": {},
+                          "め": {
+                            "docs": {},
+                            "に": {
+                              "docs": {},
+                              "、": {
+                                "docs": {},
+                                "今": {
+                                  "docs": {},
+                                  "回": {
+                                    "docs": {},
+                                    "利": {
+                                      "docs": {},
+                                      "用": {
+                                        "docs": {},
+                                        "し": {
+                                          "docs": {},
+                                          "た": {
+                                            "docs": {},
+                                            "機": {
+                                              "docs": {},
+                                              "能": {
+                                                "docs": {},
+                                                "に": {
+                                                  "docs": {},
+                                                  "習": {
+                                                    "docs": {},
+                                                    "熟": {
+                                                      "docs": {},
+                                                      "し": {
+                                                        "docs": {},
+                                                        "た": {
+                                                          "docs": {},
+                                                          "り": {
+                                                            "docs": {},
+                                                            "、": {
+                                                              "docs": {},
+                                                              "細": {
+                                                                "docs": {},
+                                                                "か": {
+                                                                  "docs": {},
+                                                                  "い": {
+                                                                    "docs": {},
+                                                                    "制": {
+                                                                      "docs": {},
+                                                                      "約": {
+                                                                        "docs": {},
+                                                                        "を": {
+                                                                          "docs": {},
+                                                                          "開": {
+                                                                            "docs": {},
+                                                                            "発": {
+                                                                              "docs": {},
+                                                                              "者": {
+                                                                                "docs": {},
+                                                                                "ガ": {
+                                                                                  "docs": {},
+                                                                                  "イ": {
+                                                                                    "docs": {},
+                                                                                    "ド": {
+                                                                                      "docs": {},
+                                                                                      "で": {
+                                                                                        "docs": {},
+                                                                                        "お": {
+                                                                                          "docs": {},
+                                                                                          "さ": {
+                                                                                            "docs": {},
+                                                                                            "え": {
+                                                                                              "docs": {},
+                                                                                              "た": {
+                                                                                                "docs": {},
+                                                                                                "り": {
+                                                                                                  "docs": {},
+                                                                                                  "し": {
+                                                                                                    "docs": {},
+                                                                                                    "て": {
+                                                                                                      "docs": {},
+                                                                                                      "い": {
+                                                                                                        "docs": {},
+                                                                                                        "き": {
+                                                                                                          "docs": {},
+                                                                                                          "ま": {
+                                                                                                            "docs": {},
+                                                                                                            "し": {
+                                                                                                              "docs": {},
+                                                                                                              "ょ": {
+                                                                                                                "docs": {},
+                                                                                                                "う": {
+                                                                                                                  "docs": {},
+                                                                                                                  "。": {
+                                                                                                                    "docs": {
+                                                                                                                      "next-step/": {
+                                                                                                                        "ref": "next-step/",
+                                                                                                                        "tf": 0.009259259259259259
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "次": {
+          "docs": {},
+          "の": {
+            "docs": {},
+            "ス": {
+              "docs": {},
+              "テ": {
+                "docs": {},
+                "ッ": {
+                  "docs": {},
+                  "プ": {
+                    "docs": {
+                      "next-step/": {
+                        "ref": "next-step/",
+                        "tf": 0.009259259259259259
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "秘": {
+          "docs": {},
+          "密": {
+            "docs": {},
+            "の": {
+              "docs": {},
+              "保": {
+                "docs": {},
+                "存": {
+                  "docs": {},
+                  "場": {
+                    "docs": {},
+                    "所": {
+                      "docs": {},
+                      "の": {
+                        "docs": {},
+                        "保": {
+                          "docs": {},
+                          "護": {
+                            "docs": {
+                              "next-step/": {
+                                "ref": "next-step/",
+                                "tf": 0.009259259259259259
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "認": {
+          "docs": {},
+          "定": {
+            "docs": {
+              "next-step/": { "ref": "next-step/", "tf": 0.009259259259259259 }
+            }
+          }
+        },
+        "非": {
+          "docs": {},
+          "同": {
+            "docs": {},
+            "期": {
+              "docs": {
+                "next-step/": {
+                  "ref": "next-step/",
+                  "tf": 0.009259259259259259
+                }
+              }
+            }
+          }
+        }
+      },
+      "length": 110
+    },
+    "corpusTokens": [
+      ".net",
+      "admin",
+      "alway",
+      "apex",
+      "api",
+      "app",
+      "appendix",
+      "autom",
+      "basic",
+      "big",
+      "blog",
+      "bug",
+      "busi",
+      "certif",
+      "cloud",
+      "code",
+      "convent",
+      "custom",
+      "databas",
+      "debug",
+      "debugg",
+      "deploy",
+      "design",
+      "develop",
+      "find",
+      "fix",
+      "fundamentals,",
+      "interfac",
+      "learning!!",
+      "lifestyl",
+      "lightn",
+      "limit",
+      "logic",
+      "manag",
+      "metadata",
+      "model",
+      "object",
+      "platform",
+      "prep:",
+      "process",
+      "programmat",
+      "queri",
+      "replay",
+      "salesforc",
+      "soql",
+      "sql",
+      "studio",
+      "success",
+      "tech",
+      "test",
+      "testing,",
+      "trailhead",
+      "trailmix",
+      "transform",
+      "type",
+      "unit",
+      "us",
+      "user",
+      "visual",
+      "without",
+      "お疲れ様でした。これで大抵の",
+      "と",
+      "の基本",
+      "の基礎",
+      "の基礎とデータベース",
+      "アプリケーションロジックの脆弱性防止",
+      "インジェクションの脆弱性防止",
+      "インスタント通知アプリケーションの作成",
+      "インテグレーションサービス",
+      "エンタープライズパターン:",
+      "カスタムメタデータ型",
+      "クイックスタート:",
+      "コーディング",
+      "サービスレイヤ",
+      "システム管理者のための",
+      "システム管理者のためのオブジェクト指向プログラミング",
+      "テスト",
+      "デベロッパー",
+      "データベースと",
+      "データ漏洩の防止",
+      "トリガ",
+      "トリガは怖いものなしですね。",
+      "ドメインおよびセレクタレイヤ",
+      "プラットフォーム",
+      "プラットフォームイベント",
+      "プラットフォームイベントの基礎",
+      "プラットフォーム開発の基礎",
+      "全部入り",
+      "初級者向けコンテンツ",
+      "基礎",
+      "更に高みを目指すために、今回利用した機能に習熟したり、細かい制約を開発者ガイドでおさえたりしていきましょう。",
+      "検索ソリューションの基礎",
+      "次のステップ",
+      "秘密の保存場所の保護",
+      "認定",
+      "開発のための",
+      "開発者ガイド",
+      "開発者コンソールの基礎",
+      "非同期"
+    ],
     "pipeline": ["stopWordFilter", "stemmer"]
   },
-  "store": {}
+  "store": {
+    "prerequisite/beginner.html": {
+      "url": "prerequisite/beginner.html",
+      "title": "初級者向けコンテンツ",
+      "keywords": "",
+      "body": "初級者向けコンテンツ\nApex 基礎\n\napex-basic\n\nTrailhead\n\nTrailhead の基本\nプラットフォーム開発の基礎\nクイックスタート: Salesforce 開発のための Visual Studio Code\nクイックスタート: Apex\nクイックスタート: システム管理者のための Apex コーディング\nシステム管理者のための Apex の基本\nシステム管理者のためのオブジェクト指向プログラミング\nSOQL for Admins\n検索ソリューションの基礎\nUse Apex to Automate Business Processes\nApex の基礎とデータベース\nApex トリガ\nApex テスト\nUnit Testing on the Lightning Platform\n開発者コンソールの基礎\nFind and Fix Bugs with Apex Replay Debugger\n\n"
+    },
+    "next-step/": {
+      "url": "next-step/",
+      "title": "Appendix",
+      "keywords": "",
+      "body": "次のステップ\nお疲れ様でした。これで大抵の Apex トリガは怖いものなしですね。\n更に高みを目指すために、今回利用した機能に習熟したり、細かい制約を開発者ガイドでおさえたりしていきましょう。\nAlways Be Learning!!\nTrailhead\n\n全部入り Trailmix\n\nApex\n\nデータベースと .NET の基本\nTransform SQL Queries to SOQL Queries in a Lightning App\nApex と .NET の基本\nLightning プラットフォーム API の基礎\nApex インテグレーションサービス\n非同期 Apex\nApex エンタープライズパターン: サービスレイヤ\nApex エンタープライズパターン: ドメインおよびセレクタレイヤ\nProcess Design Without Limits\nApp Development Without Limits\nSuccess Cloud Coding Conventions\nインジェクションの脆弱性防止\nアプリケーションロジックの脆弱性防止\nデータ漏洩の防止\n秘密の保存場所の保護\nBig Object の基礎\n\nカスタムメタデータ型\n\nCustom Metadata Types Basics\nProgrammatic Development with Custom Metadata Types\n\nプラットフォームイベント\n\nプラットフォームイベントの基礎\nインスタント通知アプリケーションの作成\n\n認定 Platform デベロッパー\n\nPlatform Developer I Certification Prep: Salesforce Fundamentals, Database Modeling and Management\nPlatform Developer I Certification Prep: Process Automation and Logic\nPlatform Developer I Certification Prep: User Interface\nPlatform Developer I Certification Prep: Testing, Debugging and Deployment\n\n開発者ガイド\n\n\n\n\n\nAbout me\n\nTech Blog\nLifestyle Blog\n\n"
+    }
+  }
 }
