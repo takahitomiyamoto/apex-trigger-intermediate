@@ -48,11 +48,13 @@ Always Be Learning!!
 
 ## 開発者ガイド
 
-- []()
-- []()
-- []()
-
-## About me
-
-- [Tech Blog](https://qiita.com/takahito0508)
-- [Lifestyle Blog](https://medium.com/takahitomiyamoto)
+- [Apex 開発者ガイド](https://developer.salesforce.com/docs/atlas.ja-jp.apexcode.meta/apexcode/apex_dev_guide.htm)
+- [SOQL および SOSL リファレンス](https://developer.salesforce.com/docs/atlas.ja-jp.soql_sosl.meta/soql_sosl/sforce_api_calls_soql_sosl_intro.htm)
+- [Salesforce Field Reference Guide](https://developer.salesforce.com/docs/atlas.en-us.sfFieldRef.meta/sfFieldRef/salesforce_field_reference.htm)
+- [Large-Scale Apex Development](https://developer.salesforce.com/docs/atlas.en-us.salesforce_limits_practices.meta/salesforce_limits_practices/limits_large_apex.htm#limits_large_apex)
+- [Secure Coding Guide](https://developer.salesforce.com/docs/atlas.en-us.secure_coding_guide.meta/secure_coding_guide/secure_coding_guidelines.htm)
+- [Apex および Visualforce 開発のセキュリティガイドライン](https://developer.salesforce.com/docs/atlas.ja-jp.securityImplGuide.meta/securityImplGuide/review_and_certification.htm)
+- [Salesforce Developer の制限および割り当てクイックリファレンス](https://developer.salesforce.com/docs/atlas.ja-jp.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_overview.htm)
+- [リモートプロセスの呼び出し — ファイアアンドフォーゲット](https://developer.salesforce.com/docs/atlas.ja-jp.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_remote_process_invocation_fire_forget.htm)
+- [プラットフォームイベント開発者ガイド](https://developer.salesforce.com/docs/atlas.ja-jp.platform_events.meta/platform_events/platform_events_intro.htm)
+- [大量のデータを使用するリリースのベストプラクティス](https://developer.salesforce.com/docs/atlas.ja-jp.salesforce_large_data_volumes_bp.meta/salesforce_large_data_volumes_bp/ldv_deployments_introduction.htm)

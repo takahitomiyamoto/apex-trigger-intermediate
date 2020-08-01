@@ -20,3 +20,7 @@
 ---
 
 - [Acknowledgment](README.md#acknowledgment)
+
+---
+
+- [Author](README.md#author)

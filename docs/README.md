@@ -27,14 +27,18 @@ Apex トリガの中級レベルのチュートリアルです。
 - [演習問題]()
 - [次のステップ]()
 
-## Appendix
-
-- Trailhead
-- Developer Guide
-- About me
-
 ## Acknowledgment
 
 - [flexible-apex-trigger](https://github.com/takahitomiyamoto/flexible-apex-trigger#flexible-apex-trigger)
 - [SFDC trigger framework](https://github.com/kevinohara80/sfdc-trigger-framework)
 - [Advanced Logging with Platform Events](https://github.com/afawcett/eventlogging)
+
+## Author
+
+Takahito Miyamoto [@takahito0508](https://twitter.com/takahito0508)
+
+- Accenture Japan Ltd (2011 - )
+- Salesforce Einstein Champion (2019 - )
+- Salesforce MVP (2020 - )
+- [Tech Blog](https://qiita.com/takahito0508)
+- [Lifestyle Blog](https://medium.com/takahitomiyamoto)
