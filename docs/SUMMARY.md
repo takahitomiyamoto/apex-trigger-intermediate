@@ -3,6 +3,10 @@
 ### Apex トリガ 中級
 
 - [はじめに](README.md#はじめに)
+- [Common Values](README.md#common-values)
+- [Curriculum](README.md#curriculum)
+
+---
 
 ### 事前準備
 

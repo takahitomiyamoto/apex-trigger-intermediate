@@ -47,10 +47,10 @@
           "テストがしやすくて、将来の変更に強い、一歩進んだ",
           "トリガ",
           "トリガの中級レベルのチュートリアルです。",
-          "ログと戯れよう",
+          "ログと戯れよ",
           "中級",
           "事前準備",
-          "写経しよう",
+          "写経せよ",
           "次のステップ",
           "準備運動",
           "演習問題",
@@ -968,11 +968,8 @@
                 "れ": {
                   "docs": {},
                   "よ": {
-                    "docs": {},
-                    "う": {
-                      "docs": {
-                        "./": { "ref": "./", "tf": 0.018518518518518517 }
-                      }
+                    "docs": {
+                      "./": { "ref": "./", "tf": 0.018518518518518517 }
                     }
                   }
                 }
@@ -1002,13 +999,10 @@
           "docs": {},
           "経": {
             "docs": {},
-            "し": {
+            "せ": {
               "docs": {},
               "よ": {
-                "docs": {},
-                "う": {
-                  "docs": { "./": { "ref": "./", "tf": 0.018518518518518517 } }
-                }
+                "docs": { "./": { "ref": "./", "tf": 0.018518518518518517 } }
               }
             }
           }
@@ -1295,10 +1289,10 @@
       "テストがしやすくて、将来の変更に強い、一歩進んだ",
       "トリガ",
       "トリガの中級レベルのチュートリアルです。",
-      "ログと戯れよう",
+      "ログと戯れよ",
       "中級",
       "事前準備",
-      "写経しよう",
+      "写経せよ",
       "次のステップ",
       "準備運動",
       "演習問題",
@@ -1314,7 +1308,7 @@
       "url": "./",
       "title": "はじめに",
       "keywords": "",
-      "body": "Apex トリガ 中級\nはじめに\nApex トリガの中級レベルのチュートリアルです。\nテストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。\n\nCommon Values\n習うより慣れよ\n\n理解してから書くのではなく、書いてから理解しましょう。\n\n写経しよう\n\nお手本を見ながら書き写すことが上達の近道です。コピペは禁止。\n\nログと戯れよう\n\nエラーが発生しても焦らないでください。落ち着いてログを 1 行ずつ読みましょう。\n\n\nCurriculum\n\n事前準備\n準備運動\n演習問題\n次のステップ\n\n\nAcknowledgment\n\nflexible-apex-trigger\nSFDC trigger framework\nAdvanced Logging with Platform Events\n\n\nAuthor\nTakahito Miyamoto @takahito0508\n\nAccenture Japan Ltd, 2011-\nSalesforce Einstein Champion, 2019-\nSalesforce MVP, 2020-\nTech Blog\nLifestyle Blog\n\n"
+      "body": "Apex トリガ 中級\nはじめに\nApex トリガの中級レベルのチュートリアルです。\nテストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。\n\nCommon Values\n習うより慣れよ\n\n理解してから書くのではなく、書いてから理解しましょう。\n\n写経せよ\n\nお手本を見ながら書き写すことが上達の近道です。コピペは禁止。\n\nログと戯れよ\n\nエラーが発生しても焦らないでください。落ち着いてログを 1 行ずつ読みましょう。\n\n\nCurriculum\n\n事前準備\n準備運動\n演習問題\n次のステップ\n\n\nAcknowledgment\n\nflexible-apex-trigger\nSFDC trigger framework\nAdvanced Logging with Platform Events\n\n\nAuthor\nTakahito Miyamoto @takahito0508\n\nAccenture Japan Ltd, 2011-\nSalesforce Einstein Champion, 2019-\nSalesforce MVP, 2020-\nTech Blog\nLifestyle Blog\n\n"
     }
   }
 }
