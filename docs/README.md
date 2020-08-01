@@ -6,6 +6,8 @@ Apex トリガの中級レベルのチュートリアルです。
 
 テストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。
 
+---
+
 ## Common Values
 
 ### 習うより慣れよ
@@ -20,6 +22,8 @@ Apex トリガの中級レベルのチュートリアルです。
 
 > エラーが発生しても焦らないでください。落ち着いてログを 1 行ずつ読みましょう。
 
+---
+
 ## Curriculum
 
 - [事前準備]()
@@ -27,11 +31,15 @@ Apex トリガの中級レベルのチュートリアルです。
 - [演習問題]()
 - [次のステップ]()
 
+---
+
 ## Acknowledgment
 
 - [flexible-apex-trigger](https://github.com/takahitomiyamoto/flexible-apex-trigger#flexible-apex-trigger)
 - [SFDC trigger framework](https://github.com/kevinohara80/sfdc-trigger-framework)
 - [Advanced Logging with Platform Events](https://github.com/afawcett/eventlogging)
+
+---
 
 ## Author
 
