@@ -41,7 +41,7 @@
       type="image/x-icon"
     />
 
-    <link rel="next" href="chapter-1/" />
+    <link rel="next" href="prerequisite/" />
   </head>
   <body>
     <div class="book">
@@ -52,7 +52,7 @@
 
         <nav role="navigation">
           <ul class="summary">
-            <li class="header">Introduction</li>
+            <li class="header">Apex トリガ 中級</li>
 
             <li class="chapter" data-level="1.1" data-path="./">
               <a href="./#はじめに">
@@ -62,14 +62,28 @@
 
             <li class="header">事前準備</li>
 
-            <li class="chapter" data-level="2.1" data-path="chapter-1/">
-              <a href="chapter-1/">
-                Chapter I
+            <li class="chapter" data-level="2.1" data-path="prerequisite/">
+              <a href="prerequisite/">
+                事前準備
               </a>
 
               <ul class="articles">
-                <li class="chapter" data-level="2.1.1" data-path="chapter-1/">
-                  <a href="chapter-1/#writing">
+                <li
+                  class="chapter"
+                  data-level="2.1.1"
+                  data-path="prerequisite/beginner.html"
+                >
+                  <a href="prerequisite/beginner.html">
+                    初級者向けコンテンツ
+                  </a>
+                </li>
+
+                <li
+                  class="chapter"
+                  data-level="2.1.2"
+                  data-path="prerequisite/"
+                >
+                  <a href="prerequisite/#writing">
                     Writing is nice
                   </a>
                 </li>
@@ -78,40 +92,12 @@
 
             <li class="header">準備運動</li>
 
-            <li class="chapter" data-level="3.1" data-path="chapter-1/">
-              <a href="chapter-1/">
-                Chapter I
-              </a>
-
-              <ul class="articles">
-                <li class="chapter" data-level="3.1.1" data-path="chapter-1/">
-                  <a href="chapter-1/#writing">
-                    Writing is nice
-                  </a>
-                </li>
-              </ul>
-            </li>
-
             <li class="header">演習問題</li>
-
-            <li class="chapter" data-level="4.1" data-path="chapter-1/">
-              <a href="chapter-1/">
-                Chapter I
-              </a>
-
-              <ul class="articles">
-                <li class="chapter" data-level="4.1.1" data-path="chapter-1/">
-                  <a href="chapter-1/#writing">
-                    Writing is nice
-                  </a>
-                </li>
-              </ul>
-            </li>
 
             <li class="header">次のステップ</li>
 
-            <li class="chapter" data-level="5.1" data-path="./">
-              <a href="./#appendix">
+            <li class="chapter" data-level="5.1" data-path="next-step/">
+              <a href="next-step/">
                 Appendix
               </a>
             </li>
@@ -202,10 +188,14 @@
                     </blockquote>
                     <h2 id="curriculum">Curriculum</h2>
                     <ul>
-                      <li>&#x4E8B;&#x524D;&#x6E96;&#x5099;</li>
-                      <li>&#x6E96;&#x5099;&#x904B;&#x52D5;</li>
-                      <li>&#x6F14;&#x7FD2;&#x554F;&#x984C;</li>
-                      <li>&#x6B21;&#x306E;&#x30B9;&#x30C6;&#x30C3;&#x30D7;</li>
+                      <li><a href>&#x4E8B;&#x524D;&#x6E96;&#x5099;</a></li>
+                      <li><a href>&#x6E96;&#x5099;&#x904B;&#x52D5;</a></li>
+                      <li><a href>&#x6F14;&#x7FD2;&#x554F;&#x984C;</a></li>
+                      <li>
+                        <a href
+                          >&#x6B21;&#x306E;&#x30B9;&#x30C6;&#x30C3;&#x30D7;</a
+                        >
+                      </li>
                     </ul>
                     <h2 id="appendix">Appendix</h2>
                     <ul>
@@ -227,6 +217,13 @@
                           href="https://github.com/kevinohara80/sfdc-trigger-framework"
                           target="_blank"
                           >SFDC trigger framework</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://github.com/afawcett/eventlogging"
+                          target="_blank"
+                          >Advanced Logging with Platform Events</a
                         >
                       </li>
                     </ul>
@@ -252,9 +249,9 @@
         </div>
 
         <a
-          href="chapter-1/"
+          href="prerequisite/"
           class="navigation navigation-next navigation-unique"
-          aria-label="Next page: Chapter I"
+          aria-label="Next page: 事前準備"
         >
           <i class="fa fa-angle-right"></i>
         </a>
@@ -269,19 +266,27 @@
               level: '1.1',
               depth: 1,
               next: {
-                title: 'Chapter I',
+                title: '事前準備',
                 level: '2.1',
                 depth: 1,
-                path: 'chapter-1/README.md',
-                ref: 'chapter-1/README.md',
+                path: 'prerequisite/README.md',
+                ref: 'prerequisite/README.md',
                 articles: [
                   {
-                    title: 'Writing is nice',
+                    title: '初級者向けコンテンツ',
                     level: '2.1.1',
                     depth: 2,
+                    path: 'prerequisite/beginner.md',
+                    ref: 'prerequisite/beginner.md',
+                    articles: []
+                  },
+                  {
+                    title: 'Writing is nice',
+                    level: '2.1.2',
+                    depth: 2,
                     anchor: '#writing',
-                    path: 'chapter-1/README.md',
-                    ref: 'chapter-1/README.md#writing',
+                    path: 'prerequisite/README.md',
+                    ref: 'prerequisite/README.md#writing',
                     articles: []
                   }
                 ]
@@ -353,10 +358,10 @@
             },
             file: {
               path: 'README.md',
-              mtime: '2020-07-30T15:08:21.750Z',
+              mtime: '2020-08-01T05:35:11.928Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.5.2', time: '2020-07-30T15:10:03.681Z' },
+            gitbook: { version: '3.5.2', time: '2020-08-01T07:07:59.872Z' },
             basePath: '.',
             book: { language: '' }
           });
