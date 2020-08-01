@@ -37,8 +37,8 @@ Apex トリガの中級レベルのチュートリアルです。
 
 Takahito Miyamoto [@takahito0508](https://twitter.com/takahito0508)
 
-- Accenture Japan Ltd (2011 - )
-- Salesforce Einstein Champion (2019 - )
-- Salesforce MVP (2020 - )
+- Accenture Japan Ltd, 2011-
+- Salesforce Einstein Champion, 2019-
+- Salesforce MVP, 2020-
 - [Tech Blog](https://qiita.com/takahito0508)
 - [Lifestyle Blog](https://medium.com/takahitomiyamoto)
