@@ -22,10 +22,10 @@ Apex トリガの中級レベルのチュートリアルです。
 
 ## Curriculum
 
-- 事前準備
-- 準備運動
-- 演習問題
-- 次のステップ
+- [事前準備]()
+- [準備運動]()
+- [演習問題]()
+- [次のステップ]()
 
 ## Appendix
 
@@ -37,3 +37,4 @@ Apex トリガの中級レベルのチュートリアルです。
 
 - [flexible-apex-trigger](https://github.com/takahitomiyamoto/flexible-apex-trigger#flexible-apex-trigger)
 - [SFDC trigger framework](https://github.com/kevinohara80/sfdc-trigger-framework)
+- [Advanced Logging with Platform Events](https://github.com/afawcett/eventlogging)
