@@ -14,7 +14,8 @@
   - [準備運動]()
   - [演習問題]()
   - [次のステップ]()
-    - [Appendix](next-step/README.md)
+    - [Trailhead](next-step/README.md#trailhead)
+    - [開発者ガイド](next-step/README.md#開発者ガイド)
 
 ---
 
