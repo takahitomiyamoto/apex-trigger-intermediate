@@ -19,14 +19,12 @@
     - [演習問題]()
     - [演習問題]()
     - [演習問題]()
-  - [次のステップ]()
+  - [次のステップ](next-step/README.md)
     - [Trailhead](next-step/README.md#trailhead)
     - [開発者ガイド](next-step/README.md#開発者ガイド)
 
 ---
 
-- [Acknowledgment](README.md#acknowledgment)
-
----
-
-- [Author](README.md#author)
+- :book: [Acknowledgment](README.md#acknowledgment)
+- :book: [Author](README.md#author)
+- :book: [View on GitHub](https://github.com/takahitomiyamoto/apex-trigger-intermediate)
