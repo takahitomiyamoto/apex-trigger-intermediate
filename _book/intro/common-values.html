@@ -42,8 +42,6 @@
     />
 
     <link rel="next" href="curriculum.html" />
-
-    <link rel="prev" href="../" />
   </head>
   <body>
     <div class="book">
@@ -54,32 +52,22 @@
 
         <nav role="navigation">
           <ul class="summary">
-            <li class="chapter" data-level="1.1" data-path="../">
-              <a href="../">
-                はじめに
+            <li class="header">はじめに</li>
+
+            <li
+              class="chapter active"
+              data-level="1.1"
+              data-path="common-values.html"
+            >
+              <a href="common-values.html">
+                Common Values
               </a>
+            </li>
 
-              <ul class="articles">
-                <li
-                  class="chapter active"
-                  data-level="1.1.1"
-                  data-path="common-values.html"
-                >
-                  <a href="common-values.html">
-                    Common Values
-                  </a>
-                </li>
-
-                <li
-                  class="chapter"
-                  data-level="1.1.2"
-                  data-path="curriculum.html"
-                >
-                  <a href="curriculum.html">
-                    Curriculum
-                  </a>
-                </li>
-              </ul>
+            <li class="chapter" data-level="1.2" data-path="curriculum.html">
+              <a href="curriculum.html">
+                Curriculum
+              </a>
             </li>
 
             <li class="header">Curriculum</li>
@@ -311,16 +299,8 @@
         </div>
 
         <a
-          href="../"
-          class="navigation navigation-prev"
-          aria-label="Previous page: はじめに"
-        >
-          <i class="fa fa-angle-left"></i>
-        </a>
-
-        <a
           href="curriculum.html"
-          class="navigation navigation-next"
+          class="navigation navigation-next navigation-unique"
           aria-label="Next page: Curriculum"
         >
           <i class="fa fa-angle-right"></i>
@@ -333,40 +313,15 @@
           gitbook.page.hasChanged({
             page: {
               title: 'Common Values',
-              level: '1.1.1',
-              depth: 2,
+              level: '1.1',
+              depth: 1,
               next: {
                 title: 'Curriculum',
-                level: '1.1.2',
-                depth: 2,
+                level: '1.2',
+                depth: 1,
                 path: 'intro/curriculum.md',
                 ref: 'intro/curriculum.md',
                 articles: []
-              },
-              previous: {
-                title: 'はじめに',
-                level: '1.1',
-                depth: 1,
-                path: 'README.md',
-                ref: 'README.md',
-                articles: [
-                  {
-                    title: 'Common Values',
-                    level: '1.1.1',
-                    depth: 2,
-                    path: 'intro/common-values.md',
-                    ref: 'intro/common-values.md',
-                    articles: []
-                  },
-                  {
-                    title: 'Curriculum',
-                    level: '1.1.2',
-                    depth: 2,
-                    path: 'intro/curriculum.md',
-                    ref: 'intro/curriculum.md',
-                    articles: []
-                  }
-                ]
               },
               dir: 'ltr'
             },
@@ -438,7 +393,7 @@
               mtime: '2020-08-02T03:43:15.850Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.5.2', time: '2020-08-04T13:58:43.598Z' },
+            gitbook: { version: '3.5.2', time: '2020-08-04T14:00:17.838Z' },
             basePath: '..',
             book: { language: '' }
           });

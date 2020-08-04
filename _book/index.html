@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>はじめに · Apex Trigger Intermediate</title>
+    <title>Acknowledgment · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="generator" content="HonKit 3.5.2" />
@@ -41,7 +41,9 @@
       type="image/x-icon"
     />
 
-    <link rel="next" href="intro/common-values.html" />
+    <link rel="next" href="./" />
+
+    <link rel="prev" href="next-step/" />
   </head>
   <body>
     <div class="book">
@@ -52,32 +54,26 @@
 
         <nav role="navigation">
           <ul class="summary">
-            <li class="chapter active" data-level="1.1" data-path="./">
-              <a href="./">
-                はじめに
+            <li class="header">はじめに</li>
+
+            <li
+              class="chapter"
+              data-level="1.1"
+              data-path="intro/common-values.html"
+            >
+              <a href="intro/common-values.html">
+                Common Values
               </a>
+            </li>
 
-              <ul class="articles">
-                <li
-                  class="chapter"
-                  data-level="1.1.1"
-                  data-path="intro/common-values.html"
-                >
-                  <a href="intro/common-values.html">
-                    Common Values
-                  </a>
-                </li>
-
-                <li
-                  class="chapter"
-                  data-level="1.1.2"
-                  data-path="intro/curriculum.html"
-                >
-                  <a href="intro/curriculum.html">
-                    Curriculum
-                  </a>
-                </li>
-              </ul>
+            <li
+              class="chapter"
+              data-level="1.2"
+              data-path="intro/curriculum.html"
+            >
+              <a href="intro/curriculum.html">
+                Curriculum
+              </a>
             </li>
 
             <li class="header">Curriculum</li>
@@ -240,7 +236,7 @@
             <!-- Title -->
             <h1>
               <i class="fa fa-circle-o-notch fa-spin"></i>
-              <a href=".">はじめに</a>
+              <a href=".">Acknowledgment</a>
             </h1>
           </div>
 
@@ -252,9 +248,6 @@
                     <h1 id="apex-&#x30C8;&#x30EA;&#x30AC;-&#x4E2D;&#x7D1A;">
                       Apex &#x30C8;&#x30EA;&#x30AC; &#x4E2D;&#x7D1A;
                     </h1>
-                    <h2 id="&#x306F;&#x3058;&#x3081;&#x306B;">
-                      &#x306F;&#x3058;&#x3081;&#x306B;
-                    </h2>
                     <p>
                       Apex
                       &#x30C8;&#x30EA;&#x30AC;&#x306E;&#x4E2D;&#x7D1A;&#x30EC;&#x30D9;&#x30EB;&#x306E;&#x30C1;&#x30E5;&#x30FC;&#x30C8;&#x30EA;&#x30A2;&#x30EB;&#x3067;&#x3059;&#x3002;
@@ -334,9 +327,17 @@
         </div>
 
         <a
-          href="intro/common-values.html"
-          class="navigation navigation-next navigation-unique"
-          aria-label="Next page: Common Values"
+          href="next-step/#開発者ガイド"
+          class="navigation navigation-prev"
+          aria-label="Previous page: 開発者ガイド"
+        >
+          <i class="fa fa-angle-left"></i>
+        </a>
+
+        <a
+          href="./#author"
+          class="navigation navigation-next"
+          aria-label="Next page: Author"
         >
           <i class="fa fa-angle-right"></i>
         </a>
@@ -347,15 +348,25 @@
         gitbook.push(function () {
           gitbook.page.hasChanged({
             page: {
-              title: 'はじめに',
-              level: '1.1',
+              title: 'Acknowledgment',
+              level: '3.1',
               depth: 1,
               next: {
-                title: 'Common Values',
-                level: '1.1.1',
+                title: 'Author',
+                level: '3.2',
+                depth: 1,
+                anchor: '#author',
+                path: 'README.md',
+                ref: 'README.md#author',
+                articles: []
+              },
+              previous: {
+                title: '開発者ガイド',
+                level: '2.4.2',
                 depth: 2,
-                path: 'intro/common-values.md',
-                ref: 'intro/common-values.md',
+                anchor: '#開発者ガイド',
+                path: 'next-step/README.md',
+                ref: 'next-step/README.md#開発者ガイド',
                 articles: []
               },
               dir: 'ltr'
@@ -425,10 +436,10 @@
             },
             file: {
               path: 'README.md',
-              mtime: '2020-08-02T03:46:03.465Z',
+              mtime: '2020-08-04T14:00:03.158Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.5.2', time: '2020-08-04T13:58:43.598Z' },
+            gitbook: { version: '3.5.2', time: '2020-08-04T14:00:17.838Z' },
             basePath: '.',
             book: { language: '' }
           });

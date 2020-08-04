@@ -1,8 +1,9 @@
 # Summary
 
-- [はじめに](README.md)
-  - [Common Values](intro/common-values.md)
-  - [Curriculum](intro/curriculum.md)
+### はじめに
+
+- [Common Values](intro/common-values.md)
+- [Curriculum](intro/curriculum.md)
 
 ### Curriculum
 
