@@ -4,11 +4,7 @@
   - [Common Values](intro/common-values.md)
   - [Curriculum](intro/curriculum.md)
 
-## Curriculum
-
 ### Curriculum
-
-#### Curriculum
 
 - [事前準備](prerequisite/README.md)
   - [初級者向けコンテンツ](prerequisite/beginner.md)
