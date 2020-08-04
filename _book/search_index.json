@@ -11,33 +11,18 @@
       "store": {
         "intro/curriculum.html": [
           "curriculum",
+          "trailhead",
           "up",
           "warm",
           "事前準備",
           "初級者向けコンテンツ",
           "次のステップ",
           "演習問題",
-          "開発ツール"
-        ],
-        "prerequisite/dev-tools.html": [
-          "\b",
-          "develop",
-          "edit",
-          "extens",
-          "ide（統合開発環境）",
-          "java",
-          "node",
-          "remot",
-          "salesforc",
-          "trailhead",
-          "オプション",
-          "実は、最初の難関はここにあります。ここで挫折するかたが多いですので、じっくり取り組みましょう。",
-          "必須",
-          "環境",
-          "開発ツール"
+          "開発ツール",
+          "開発者ガイド"
         ]
       },
-      "length": 2
+      "length": 1
     },
     "tokenStore": {
       "root": {
@@ -64,347 +49,8 @@
                             "docs": {
                               "intro/curriculum.html": {
                                 "ref": "intro/curriculum.html",
-                                "tf": 10.0625
+                                "tf": 10.055555555555555
                               }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "u": {
-          "docs": {},
-          "p": {
-            "docs": {
-              "intro/curriculum.html": {
-                "ref": "intro/curriculum.html",
-                "tf": 0.3125
-              }
-            }
-          }
-        },
-        "w": {
-          "docs": {},
-          "a": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "m": {
-                "docs": {
-                  "intro/curriculum.html": {
-                    "ref": "intro/curriculum.html",
-                    "tf": 0.3125
-                  }
-                }
-              }
-            }
-          }
-        },
-        "事": {
-          "docs": {},
-          "前": {
-            "docs": {},
-            "準": {
-              "docs": {},
-              "備": {
-                "docs": {
-                  "intro/curriculum.html": {
-                    "ref": "intro/curriculum.html",
-                    "tf": 0.0625
-                  }
-                }
-              }
-            }
-          }
-        },
-        "初": {
-          "docs": {},
-          "級": {
-            "docs": {},
-            "者": {
-              "docs": {},
-              "向": {
-                "docs": {},
-                "け": {
-                  "docs": {},
-                  "コ": {
-                    "docs": {},
-                    "ン": {
-                      "docs": {},
-                      "テ": {
-                        "docs": {},
-                        "ン": {
-                          "docs": {},
-                          "ツ": {
-                            "docs": {
-                              "intro/curriculum.html": {
-                                "ref": "intro/curriculum.html",
-                                "tf": 0.0625
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "次": {
-          "docs": {},
-          "の": {
-            "docs": {},
-            "ス": {
-              "docs": {},
-              "テ": {
-                "docs": {},
-                "ッ": {
-                  "docs": {},
-                  "プ": {
-                    "docs": {
-                      "intro/curriculum.html": {
-                        "ref": "intro/curriculum.html",
-                        "tf": 0.0625
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "演": {
-          "docs": {},
-          "習": {
-            "docs": {},
-            "問": {
-              "docs": {},
-              "題": {
-                "docs": {
-                  "intro/curriculum.html": {
-                    "ref": "intro/curriculum.html",
-                    "tf": 0.0625
-                  }
-                }
-              }
-            }
-          }
-        },
-        "開": {
-          "docs": {},
-          "発": {
-            "docs": {},
-            "ツ": {
-              "docs": {},
-              "ー": {
-                "docs": {},
-                "ル": {
-                  "docs": {
-                    "intro/curriculum.html": {
-                      "ref": "intro/curriculum.html",
-                      "tf": 0.0625
-                    },
-                    "prerequisite/dev-tools.html": {
-                      "ref": "prerequisite/dev-tools.html",
-                      "tf": 10.0625
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "\b": {
-          "docs": {
-            "prerequisite/dev-tools.html": {
-              "ref": "prerequisite/dev-tools.html",
-              "tf": 0.0625
-            }
-          }
-        },
-        "d": {
-          "docs": {},
-          "e": {
-            "docs": {},
-            "v": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "l": {
-                  "docs": {},
-                  "o": {
-                    "docs": {},
-                    "p": {
-                      "docs": {
-                        "prerequisite/dev-tools.html": {
-                          "ref": "prerequisite/dev-tools.html",
-                          "tf": 0.125
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "e": {
-          "docs": {},
-          "d": {
-            "docs": {},
-            "i": {
-              "docs": {},
-              "t": {
-                "docs": {
-                  "prerequisite/dev-tools.html": {
-                    "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.0625
-                  }
-                }
-              }
-            }
-          },
-          "x": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "n": {
-                  "docs": {},
-                  "s": {
-                    "docs": {
-                      "prerequisite/dev-tools.html": {
-                        "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.0625
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "i": {
-          "docs": {},
-          "d": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "（": {
-                "docs": {},
-                "統": {
-                  "docs": {},
-                  "合": {
-                    "docs": {},
-                    "開": {
-                      "docs": {},
-                      "発": {
-                        "docs": {},
-                        "環": {
-                          "docs": {},
-                          "境": {
-                            "docs": {},
-                            "）": {
-                              "docs": {
-                                "prerequisite/dev-tools.html": {
-                                  "ref": "prerequisite/dev-tools.html",
-                                  "tf": 0.0625
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "j": {
-          "docs": {},
-          "a": {
-            "docs": {},
-            "v": {
-              "docs": {},
-              "a": {
-                "docs": {
-                  "prerequisite/dev-tools.html": {
-                    "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.0625
-                  }
-                }
-              }
-            }
-          }
-        },
-        "n": {
-          "docs": {},
-          "o": {
-            "docs": {},
-            "d": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "prerequisite/dev-tools.html": {
-                    "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.0625
-                  }
-                }
-              }
-            }
-          }
-        },
-        "r": {
-          "docs": {},
-          "e": {
-            "docs": {},
-            "m": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "prerequisite/dev-tools.html": {
-                      "ref": "prerequisite/dev-tools.html",
-                      "tf": 0.0625
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "s": {
-          "docs": {},
-          "a": {
-            "docs": {},
-            "l": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "s": {
-                  "docs": {},
-                  "f": {
-                    "docs": {},
-                    "o": {
-                      "docs": {},
-                      "r": {
-                        "docs": {},
-                        "c": {
-                          "docs": {
-                            "prerequisite/dev-tools.html": {
-                              "ref": "prerequisite/dev-tools.html",
-                              "tf": 0.0625
                             }
                           }
                         }
@@ -434,9 +80,9 @@
                         "docs": {},
                         "d": {
                           "docs": {
-                            "prerequisite/dev-tools.html": {
-                              "ref": "prerequisite/dev-tools.html",
-                              "tf": 0.0625
+                            "intro/curriculum.html": {
+                              "ref": "intro/curriculum.html",
+                              "tf": 0.05555555555555555
                             }
                           }
                         }
@@ -448,160 +94,74 @@
             }
           }
         },
-        "オ": {
+        "u": {
           "docs": {},
-          "プ": {
+          "p": {
+            "docs": {
+              "intro/curriculum.html": {
+                "ref": "intro/curriculum.html",
+                "tf": 0.2777777777777778
+              }
+            }
+          }
+        },
+        "w": {
+          "docs": {},
+          "a": {
             "docs": {},
-            "シ": {
+            "r": {
               "docs": {},
-              "ョ": {
-                "docs": {},
-                "ン": {
-                  "docs": {
-                    "prerequisite/dev-tools.html": {
-                      "ref": "prerequisite/dev-tools.html",
-                      "tf": 0.0625
-                    }
+              "m": {
+                "docs": {
+                  "intro/curriculum.html": {
+                    "ref": "intro/curriculum.html",
+                    "tf": 0.2777777777777778
                   }
                 }
               }
             }
           }
         },
-        "実": {
+        "事": {
           "docs": {},
-          "は": {
+          "前": {
             "docs": {},
-            "、": {
+            "準": {
               "docs": {},
-              "最": {
+              "備": {
+                "docs": {
+                  "intro/curriculum.html": {
+                    "ref": "intro/curriculum.html",
+                    "tf": 0.05555555555555555
+                  }
+                }
+              }
+            }
+          }
+        },
+        "初": {
+          "docs": {},
+          "級": {
+            "docs": {},
+            "者": {
+              "docs": {},
+              "向": {
                 "docs": {},
-                "初": {
+                "け": {
                   "docs": {},
-                  "の": {
+                  "コ": {
                     "docs": {},
-                    "難": {
+                    "ン": {
                       "docs": {},
-                      "関": {
+                      "テ": {
                         "docs": {},
-                        "は": {
+                        "ン": {
                           "docs": {},
-                          "こ": {
-                            "docs": {},
-                            "こ": {
-                              "docs": {},
-                              "に": {
-                                "docs": {},
-                                "あ": {
-                                  "docs": {},
-                                  "り": {
-                                    "docs": {},
-                                    "ま": {
-                                      "docs": {},
-                                      "す": {
-                                        "docs": {},
-                                        "。": {
-                                          "docs": {},
-                                          "こ": {
-                                            "docs": {},
-                                            "こ": {
-                                              "docs": {},
-                                              "で": {
-                                                "docs": {},
-                                                "挫": {
-                                                  "docs": {},
-                                                  "折": {
-                                                    "docs": {},
-                                                    "す": {
-                                                      "docs": {},
-                                                      "る": {
-                                                        "docs": {},
-                                                        "か": {
-                                                          "docs": {},
-                                                          "た": {
-                                                            "docs": {},
-                                                            "が": {
-                                                              "docs": {},
-                                                              "多": {
-                                                                "docs": {},
-                                                                "い": {
-                                                                  "docs": {},
-                                                                  "で": {
-                                                                    "docs": {},
-                                                                    "す": {
-                                                                      "docs": {},
-                                                                      "の": {
-                                                                        "docs": {},
-                                                                        "で": {
-                                                                          "docs": {},
-                                                                          "、": {
-                                                                            "docs": {},
-                                                                            "じ": {
-                                                                              "docs": {},
-                                                                              "っ": {
-                                                                                "docs": {},
-                                                                                "く": {
-                                                                                  "docs": {},
-                                                                                  "り": {
-                                                                                    "docs": {},
-                                                                                    "取": {
-                                                                                      "docs": {},
-                                                                                      "り": {
-                                                                                        "docs": {},
-                                                                                        "組": {
-                                                                                          "docs": {},
-                                                                                          "み": {
-                                                                                            "docs": {},
-                                                                                            "ま": {
-                                                                                              "docs": {},
-                                                                                              "し": {
-                                                                                                "docs": {},
-                                                                                                "ょ": {
-                                                                                                  "docs": {},
-                                                                                                  "う": {
-                                                                                                    "docs": {},
-                                                                                                    "。": {
-                                                                                                      "docs": {
-                                                                                                        "prerequisite/dev-tools.html": {
-                                                                                                          "ref": "prerequisite/dev-tools.html",
-                                                                                                          "tf": 0.0625
-                                                                                                        }
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
+                          "ツ": {
+                            "docs": {
+                              "intro/curriculum.html": {
+                                "ref": "intro/curriculum.html",
+                                "tf": 0.05555555555555555
                               }
                             }
                           }
@@ -614,54 +174,97 @@
             }
           }
         },
-        "必": {
+        "次": {
           "docs": {},
-          "須": {
-            "docs": {
-              "prerequisite/dev-tools.html": {
-                "ref": "prerequisite/dev-tools.html",
-                "tf": 0.0625
+          "の": {
+            "docs": {},
+            "ス": {
+              "docs": {},
+              "テ": {
+                "docs": {},
+                "ッ": {
+                  "docs": {},
+                  "プ": {
+                    "docs": {
+                      "intro/curriculum.html": {
+                        "ref": "intro/curriculum.html",
+                        "tf": 0.05555555555555555
+                      }
+                    }
+                  }
+                }
               }
             }
           }
         },
-        "環": {
+        "演": {
           "docs": {},
-          "境": {
-            "docs": {
-              "prerequisite/dev-tools.html": {
-                "ref": "prerequisite/dev-tools.html",
-                "tf": 0.0625
+          "習": {
+            "docs": {},
+            "問": {
+              "docs": {},
+              "題": {
+                "docs": {
+                  "intro/curriculum.html": {
+                    "ref": "intro/curriculum.html",
+                    "tf": 0.05555555555555555
+                  }
+                }
+              }
+            }
+          }
+        },
+        "開": {
+          "docs": {},
+          "発": {
+            "docs": {},
+            "ツ": {
+              "docs": {},
+              "ー": {
+                "docs": {},
+                "ル": {
+                  "docs": {
+                    "intro/curriculum.html": {
+                      "ref": "intro/curriculum.html",
+                      "tf": 0.05555555555555555
+                    }
+                  }
+                }
+              }
+            },
+            "者": {
+              "docs": {},
+              "ガ": {
+                "docs": {},
+                "イ": {
+                  "docs": {},
+                  "ド": {
+                    "docs": {
+                      "intro/curriculum.html": {
+                        "ref": "intro/curriculum.html",
+                        "tf": 0.05555555555555555
+                      }
+                    }
+                  }
+                }
               }
             }
           }
         }
       },
-      "length": 23
+      "length": 10
     },
     "corpusTokens": [
-      "\b",
       "curriculum",
-      "develop",
-      "edit",
-      "extens",
-      "ide（統合開発環境）",
-      "java",
-      "node",
-      "remot",
-      "salesforc",
       "trailhead",
       "up",
       "warm",
-      "オプション",
       "事前準備",
       "初級者向けコンテンツ",
-      "実は、最初の難関はここにあります。ここで挫折するかたが多いですので、じっくり取り組みましょう。",
-      "必須",
       "次のステップ",
       "演習問題",
-      "環境",
-      "開発ツール"
+      "開発ツール",
+      "開発者ガイド"
     ],
     "pipeline": ["stopWordFilter", "stemmer"]
   },
@@ -670,13 +273,7 @@
       "url": "intro/curriculum.html",
       "title": "Curriculum",
       "keywords": "",
-      "body": "Curriculum\n事前準備\n\n初級者向けコンテンツ\n開発ツール\n\n演習問題\n\nWarm-up\nWarm-up\nWarm-up\nWarm-up\nWarm-up\n\n次のステップ\n"
-    },
-    "prerequisite/dev-tools.html": {
-      "url": "prerequisite/dev-tools.html",
-      "title": "開発ツール",
-      "keywords": "",
-      "body": "開発ツール\n実は、最初の難関はここにあります。ここで挫折するかたが多いですので、じっくり取り組みましょう。\n必須\n\b- Developer edition 環境\n\nTrailhead\n\nSalesforce IDE（統合開発環境）\n\nExtensions\n\nJava\n\nNode\n\n\nオプション\n\nRemote Development\n\n"
+      "body": "Curriculum\n事前準備\n\n初級者向けコンテンツ\n開発ツール\n\n演習問題\n\nWarm-up\nWarm-up\nWarm-up\nWarm-up\nWarm-up\n\n次のステップ\n\nTrailhead\n開発者ガイド\n\n"
     }
   }
 }
