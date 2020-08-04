@@ -1,5 +1,7 @@
 # Curriculum
 
+Step by Step で学んでいきましょう。
+
 ## 事前準備
 
 - [初級者向けコンテンツ](../prerequisite/beginner.md)

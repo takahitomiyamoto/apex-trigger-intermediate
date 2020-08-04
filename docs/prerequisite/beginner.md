@@ -1,5 +1,9 @@
 # 初級者向けコンテンツ
 
+本チュートリアルを進めるにあたり、前提となるコンテンツを紹介します。
+
+まだやったことのないものがあれば、先に取り組んでおくことをおすすめします。
+
 ## Apex 基礎
 
 - [apex-basic](https://takahitomiyamoto.github.io/apex-basic/)
