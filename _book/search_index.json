@@ -35,37 +35,12 @@
           "必須",
           "環境",
           "開発ツール"
-        ],
-        "exercises/": [
-          "1",
-          "2",
-          "book'",
-          "chapter",
-          "dictat",
-          "great",
-          "introduction.",
-          "markdown",
-          "section",
-          "structur",
-          "titl",
-          "演習問題"
-        ],
-        "exercises/warm-up.html": ["content", "page", "up", "warm"]
+        ]
       },
-      "length": 4
+      "length": 2
     },
     "tokenStore": {
       "root": {
-        "1": {
-          "docs": {
-            "exercises/": { "ref": "exercises/", "tf": 0.08333333333333333 }
-          }
-        },
-        "2": {
-          "docs": {
-            "exercises/": { "ref": "exercises/", "tf": 0.08333333333333333 }
-          }
-        },
         "docs": {},
         "c": {
           "docs": {},
@@ -89,56 +64,10 @@
                             "docs": {
                               "intro/curriculum.html": {
                                 "ref": "intro/curriculum.html",
-                                "tf": 10.055555555555555
+                                "tf": 10.0625
                               }
                             }
                           }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "h": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "p": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "r": {
-                      "docs": {
-                        "exercises/": {
-                          "ref": "exercises/",
-                          "tf": 0.08333333333333333
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "o": {
-            "docs": {},
-            "n": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "exercises/warm-up.html": {
-                          "ref": "exercises/warm-up.html",
-                          "tf": 0.5
                         }
                       }
                     }
@@ -154,11 +83,7 @@
             "docs": {
               "intro/curriculum.html": {
                 "ref": "intro/curriculum.html",
-                "tf": 0.3333333333333333
-              },
-              "exercises/warm-up.html": {
-                "ref": "exercises/warm-up.html",
-                "tf": 5
+                "tf": 0.3125
               }
             }
           }
@@ -173,11 +98,7 @@
                 "docs": {
                   "intro/curriculum.html": {
                     "ref": "intro/curriculum.html",
-                    "tf": 0.3333333333333333
-                  },
-                  "exercises/warm-up.html": {
-                    "ref": "exercises/warm-up.html",
-                    "tf": 5
+                    "tf": 0.3125
                   }
                 }
               }
@@ -194,7 +115,7 @@
                 "docs": {
                   "intro/curriculum.html": {
                     "ref": "intro/curriculum.html",
-                    "tf": 0.05555555555555555
+                    "tf": 0.0625
                   }
                 }
               }
@@ -223,7 +144,7 @@
                             "docs": {
                               "intro/curriculum.html": {
                                 "ref": "intro/curriculum.html",
-                                "tf": 0.05555555555555555
+                                "tf": 0.0625
                               }
                             }
                           }
@@ -250,7 +171,7 @@
                     "docs": {
                       "intro/curriculum.html": {
                         "ref": "intro/curriculum.html",
-                        "tf": 0.05555555555555555
+                        "tf": 0.0625
                       }
                     }
                   }
@@ -269,9 +190,8 @@
                 "docs": {
                   "intro/curriculum.html": {
                     "ref": "intro/curriculum.html",
-                    "tf": 0.05555555555555555
-                  },
-                  "exercises/": { "ref": "exercises/", "tf": 10 }
+                    "tf": 0.0625
+                  }
                 }
               }
             }
@@ -289,7 +209,7 @@
                   "docs": {
                     "intro/curriculum.html": {
                       "ref": "intro/curriculum.html",
-                      "tf": 0.05555555555555555
+                      "tf": 0.0625
                     },
                     "prerequisite/dev-tools.html": {
                       "ref": "prerequisite/dev-tools.html",
@@ -327,26 +247,6 @@
                           "ref": "prerequisite/dev-tools.html",
                           "tf": 0.125
                         }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "i": {
-            "docs": {},
-            "c": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "exercises/": {
-                        "ref": "exercises/",
-                        "tf": 0.08333333333333333
                       }
                     }
                   }
@@ -417,47 +317,6 @@
                                 "prerequisite/dev-tools.html": {
                                   "ref": "prerequisite/dev-tools.html",
                                   "tf": 0.0625
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "n": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "r": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "d": {
-                    "docs": {},
-                    "u": {
-                      "docs": {},
-                      "c": {
-                        "docs": {},
-                        "t": {
-                          "docs": {},
-                          "i": {
-                            "docs": {},
-                            "o": {
-                              "docs": {},
-                              "n": {
-                                "docs": {},
-                                ".": {
-                                  "docs": {
-                                    "exercises/": {
-                                      "ref": "exercises/",
-                                      "tf": 0.08333333333333333
-                                    }
-                                  }
                                 }
                               }
                             }
@@ -555,55 +414,6 @@
                 }
               }
             }
-          },
-          "e": {
-            "docs": {},
-            "c": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "o": {
-                    "docs": {},
-                    "n": {
-                      "docs": {
-                        "exercises/": {
-                          "ref": "exercises/",
-                          "tf": 0.16666666666666666
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "t": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "u": {
-                "docs": {},
-                "c": {
-                  "docs": {},
-                  "t": {
-                    "docs": {},
-                    "u": {
-                      "docs": {},
-                      "r": {
-                        "docs": {
-                          "exercises/": {
-                            "ref": "exercises/",
-                            "tf": 0.08333333333333333
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
           }
         },
         "t": {
@@ -632,20 +442,6 @@
                         }
                       }
                     }
-                  }
-                }
-              }
-            }
-          },
-          "i": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "l": {
-                "docs": {
-                  "exercises/": {
-                    "ref": "exercises/",
-                    "tf": 0.08333333333333333
                   }
                 }
               }
@@ -839,120 +635,21 @@
               }
             }
           }
-        },
-        "b": {
-          "docs": {},
-          "o": {
-            "docs": {},
-            "o": {
-              "docs": {},
-              "k": {
-                "docs": {},
-                "'": {
-                  "docs": {
-                    "exercises/": {
-                      "ref": "exercises/",
-                      "tf": 0.08333333333333333
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "g": {
-          "docs": {},
-          "r": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "exercises/": {
-                      "ref": "exercises/",
-                      "tf": 0.08333333333333333
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "m": {
-          "docs": {},
-          "a": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "k": {
-                "docs": {},
-                "d": {
-                  "docs": {},
-                  "o": {
-                    "docs": {},
-                    "w": {
-                      "docs": {},
-                      "n": {
-                        "docs": {
-                          "exercises/": {
-                            "ref": "exercises/",
-                            "tf": 0.08333333333333333
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "p": {
-          "docs": {},
-          "a": {
-            "docs": {},
-            "g": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "exercises/warm-up.html": {
-                    "ref": "exercises/warm-up.html",
-                    "tf": 0.5
-                  }
-                }
-              }
-            }
-          }
         }
       },
-      "length": 39
+      "length": 23
     },
     "corpusTokens": [
       "\b",
-      "1",
-      "2",
-      "book'",
-      "chapter",
-      "content",
       "curriculum",
       "develop",
-      "dictat",
       "edit",
       "extens",
-      "great",
       "ide（統合開発環境）",
-      "introduction.",
       "java",
-      "markdown",
       "node",
-      "page",
       "remot",
       "salesforc",
-      "section",
-      "structur",
-      "titl",
       "trailhead",
       "up",
       "warm",
@@ -973,26 +670,13 @@
       "url": "intro/curriculum.html",
       "title": "Curriculum",
       "keywords": "",
-      "body": "Curriculum\n事前準備\n\n初級者向けコンテンツ\n開発ツール\n\n演習問題\n\nWarm-up\nWarm-up\nWarm-up\nWarm-up\nWarm-up\nWarm-up\n\n次のステップ\n"
+      "body": "Curriculum\n事前準備\n\n初級者向けコンテンツ\n開発ツール\n\n演習問題\n\nWarm-up\nWarm-up\nWarm-up\nWarm-up\nWarm-up\n\n次のステップ\n"
     },
     "prerequisite/dev-tools.html": {
       "url": "prerequisite/dev-tools.html",
       "title": "開発ツール",
       "keywords": "",
-      "body": "開発ツール\n実は、最初の難関はここにあります。ここで挫折するかたが多いですので、じっくり取り組みましょう。\n必須\n　\n\b- Developer edition 環境\n\nTrailhead\n\nSalesforce IDE（統合開発環境）\n\nExtensions\n\nJava\n\nNode\n\n\nオプション\n\nRemote Development\n\n"
-    },
-    "exercises/": {
-      "url": "exercises/",
-      "title": "演習問題",
-      "keywords": "",
-      "body": "Title of the chapter\nThis is a great introduction.\nSection 1\nMarkdown will dictates most of your book's structure\nSection 2\n"
-    },
-    "exercises/warm-up.html": {
-      "url": "exercises/warm-up.html",
-      "title": "Warm-up",
-      "summary": "This is a short description of my page",
-      "keywords": "",
-      "body": "The content of my page\n"
+      "body": "開発ツール\n実は、最初の難関はここにあります。ここで挫折するかたが多いですので、じっくり取り組みましょう。\n必須\n\b- Developer edition 環境\n\nTrailhead\n\nSalesforce IDE（統合開発環境）\n\nExtensions\n\nJava\n\nNode\n\n\nオプション\n\nRemote Development\n\n"
     }
   }
 }
