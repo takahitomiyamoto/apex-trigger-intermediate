@@ -202,7 +202,6 @@
           "必要な情報を入力してサインアップする。",
           "必須",
           "手順",
-          "拡張機能の追加",
           "括弧のペアを色付きで把握できる",
           "最後に",
           "最後に「ステップを確認」のセクションがあるので、後続の手順で使うために",
@@ -235,7 +234,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.003076923076923077
+                "tf": 0.003067484662576687
               }
             }
           },
@@ -243,7 +242,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.003076923076923077
+                "tf": 0.003067484662576687
               }
             }
           },
@@ -251,14 +250,14 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.003076923076923077
+                "tf": 0.003067484662576687
               }
             }
           },
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.003076923076923077
+              "tf": 0.003067484662576687
             }
           }
         },
@@ -266,7 +265,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.003076923076923077
+              "tf": 0.003067484662576687
             }
           }
         },
@@ -274,7 +273,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.003076923076923077
+              "tf": 0.003067484662576687
             }
           }
         },
@@ -282,7 +281,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.003076923076923077
+              "tf": 0.003067484662576687
             }
           }
         },
@@ -290,7 +289,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.003076923076923077
+              "tf": 0.003067484662576687
             }
           }
         },
@@ -298,7 +297,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.003076923076923077
+              "tf": 0.003067484662576687
             }
           }
         },
@@ -306,7 +305,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.003076923076923077
+              "tf": 0.003067484662576687
             }
           }
         },
@@ -314,7 +313,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.003076923076923077
+              "tf": 0.003067484662576687
             }
           }
         },
@@ -322,7 +321,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.003076923076923077
+              "tf": 0.003067484662576687
             }
           }
         },
@@ -337,7 +336,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.003076923076923077
+                    "tf": 0.003067484662576687
                   }
                 }
               }
@@ -348,7 +347,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.006153846153846154
+              "tf": 0.006134969325153374
             }
           }
         },
@@ -386,7 +385,7 @@
                                         "docs": {
                                           "prerequisite/dev-tools.html": {
                                             "ref": "prerequisite/dev-tools.html",
-                                            "tf": 0.003076923076923077
+                                            "tf": 0.003067484662576687
                                           }
                                         }
                                       }
@@ -409,7 +408,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.006153846153846154
+              "tf": 0.006134969325153374
             }
           }
         },
@@ -417,7 +416,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.006153846153846154
+              "tf": 0.006134969325153374
             }
           }
         },
@@ -447,7 +446,7 @@
                                 "docs": {
                                   "prerequisite/dev-tools.html": {
                                     "ref": "prerequisite/dev-tools.html",
-                                    "tf": 0.003076923076923077
+                                    "tf": 0.003067484662576687
                                   }
                                 }
                               }
@@ -471,7 +470,7 @@
                                     "docs": {
                                       "prerequisite/dev-tools.html": {
                                         "ref": "prerequisite/dev-tools.html",
-                                        "tf": 0.003076923076923077
+                                        "tf": 0.003067484662576687
                                       }
                                     }
                                   }
@@ -515,7 +514,7 @@
                                     "docs": {
                                       "prerequisite/dev-tools.html": {
                                         "ref": "prerequisite/dev-tools.html",
-                                        "tf": 0.003076923076923077
+                                        "tf": 0.003067484662576687
                                       }
                                     }
                                   }
@@ -529,7 +528,7 @@
                               "docs": {
                                 "prerequisite/dev-tools.html": {
                                   "ref": "prerequisite/dev-tools.html",
-                                  "tf": 0.003076923076923077
+                                  "tf": 0.003067484662576687
                                 }
                               }
                             }
@@ -547,7 +546,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.006153846153846154
+              "tf": 0.006134969325153374
             }
           }
         },
@@ -555,7 +554,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.015384615384615385
+              "tf": 0.015337423312883436
             }
           }
         },
@@ -569,7 +568,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.009230769230769232
+                    "tf": 0.009202453987730062
                   }
                 },
                 ".": {
@@ -592,7 +591,7 @@
                                   "docs": {
                                     "prerequisite/dev-tools.html": {
                                       "ref": "prerequisite/dev-tools.html",
-                                      "tf": 0.003076923076923077
+                                      "tf": 0.003067484662576687
                                     }
                                   }
                                 }
@@ -624,7 +623,7 @@
                       "docs": {
                         "prerequisite/dev-tools.html": {
                           "ref": "prerequisite/dev-tools.html",
-                          "tf": 0.003076923076923077
+                          "tf": 0.003067484662576687
                         }
                       }
                     }
@@ -648,7 +647,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.003076923076923077
+                        "tf": 0.003067484662576687
                       }
                     }
                   }
@@ -662,7 +661,7 @@
               "docs": {
                 "prerequisite/dev-tools.html": {
                   "ref": "prerequisite/dev-tools.html",
-                  "tf": 0.006153846153846154
+                  "tf": 0.006134969325153374
                 }
               }
             }
@@ -675,14 +674,14 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.024615384615384615
+                    "tf": 0.027607361963190184
                   }
                 },
                 "y": {
                   "docs": {
                     "prerequisite/dev-tools.html": {
                       "ref": "prerequisite/dev-tools.html",
-                      "tf": 0.006153846153846154
+                      "tf": 0.006134969325153374
                     }
                   }
                 },
@@ -692,7 +691,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.003076923076923077
+                        "tf": 0.003067484662576687
                       }
                     }
                   }
@@ -727,7 +726,7 @@
                                             "docs": {
                                               "prerequisite/dev-tools.html": {
                                                 "ref": "prerequisite/dev-tools.html",
-                                                "tf": 0.003076923076923077
+                                                "tf": 0.003067484662576687
                                               }
                                             }
                                           }
@@ -754,7 +753,7 @@
                   "docs": {
                     "prerequisite/dev-tools.html": {
                       "ref": "prerequisite/dev-tools.html",
-                      "tf": 0.006153846153846154
+                      "tf": 0.006134969325153374
                     }
                   }
                 }
@@ -772,7 +771,7 @@
                       "docs": {
                         "prerequisite/dev-tools.html": {
                           "ref": "prerequisite/dev-tools.html",
-                          "tf": 0.003076923076923077
+                          "tf": 0.003067484662576687
                         }
                       }
                     }
@@ -789,7 +788,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.003076923076923077
+                    "tf": 0.003067484662576687
                   }
                 }
               }
@@ -812,7 +811,7 @@
                       "docs": {
                         "prerequisite/dev-tools.html": {
                           "ref": "prerequisite/dev-tools.html",
-                          "tf": 0.009230769230769232
+                          "tf": 0.009202453987730062
                         }
                       }
                     }
@@ -832,7 +831,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.009230769230769232
+                    "tf": 0.009202453987730062
                   }
                 }
               }
@@ -850,7 +849,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.003076923076923077
+                        "tf": 0.003067484662576687
                       }
                     }
                   }
@@ -870,7 +869,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.003076923076923077
+                        "tf": 0.003067484662576687
                       }
                     }
                   }
@@ -887,7 +886,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.015384615384615385
+                        "tf": 0.015337423312883436
                       }
                     }
                   }
@@ -912,7 +911,7 @@
                       "docs": {
                         "prerequisite/dev-tools.html": {
                           "ref": "prerequisite/dev-tools.html",
-                          "tf": 0.003076923076923077
+                          "tf": 0.003067484662576687
                         }
                       }
                     }
@@ -935,7 +934,7 @@
                       "docs": {
                         "prerequisite/dev-tools.html": {
                           "ref": "prerequisite/dev-tools.html",
-                          "tf": 0.003076923076923077
+                          "tf": 0.003067484662576687
                         }
                       }
                     }
@@ -953,7 +952,7 @@
               "docs": {
                 "prerequisite/dev-tools.html": {
                   "ref": "prerequisite/dev-tools.html",
-                  "tf": 0.006153846153846154
+                  "tf": 0.006134969325153374
                 }
               },
               "l": {
@@ -964,7 +963,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.003076923076923077
+                        "tf": 0.003067484662576687
                       }
                     }
                   }
@@ -982,7 +981,7 @@
                   "docs": {
                     "prerequisite/dev-tools.html": {
                       "ref": "prerequisite/dev-tools.html",
-                      "tf": 0.003076923076923077
+                      "tf": 0.003067484662576687
                     }
                   }
                 }
@@ -1007,7 +1006,7 @@
                           "docs": {
                             "prerequisite/dev-tools.html": {
                               "ref": "prerequisite/dev-tools.html",
-                              "tf": 0.003076923076923077
+                              "tf": 0.003067484662576687
                             }
                           }
                         }
@@ -1029,7 +1028,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.003076923076923077
+                    "tf": 0.003067484662576687
                   }
                 }
               }
@@ -1043,7 +1042,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.006153846153846154
+                    "tf": 0.006134969325153374
                   }
                 }
               }
@@ -1124,7 +1123,7 @@
                                                                                       "docs": {
                                                                                         "prerequisite/dev-tools.html": {
                                                                                           "ref": "prerequisite/dev-tools.html",
-                                                                                          "tf": 0.003076923076923077
+                                                                                          "tf": 0.003067484662576687
                                                                                         }
                                                                                       }
                                                                                     }
@@ -1172,7 +1171,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.015384615384615385
+                "tf": 0.015337423312883436
               }
             },
             "e": {
@@ -1211,7 +1210,7 @@
                                               "docs": {
                                                 "prerequisite/dev-tools.html": {
                                                   "ref": "prerequisite/dev-tools.html",
-                                                  "tf": 0.003076923076923077
+                                                  "tf": 0.003067484662576687
                                                 }
                                               }
                                             }
@@ -1244,7 +1243,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.003076923076923077
+                        "tf": 0.003067484662576687
                       }
                     }
                   }
@@ -1263,7 +1262,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.009230769230769232
+                    "tf": 0.009202453987730062
                   }
                 }
               }
@@ -1277,7 +1276,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.003076923076923077
+                    "tf": 0.003067484662576687
                   }
                 }
               }
@@ -1294,7 +1293,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.006153846153846154
+                    "tf": 0.006134969325153374
                   }
                 }
               }
@@ -1304,7 +1303,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.003076923076923077
+                "tf": 0.003067484662576687
               }
             }
           }
@@ -1319,7 +1318,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.003076923076923077
+                    "tf": 0.003067484662576687
                   }
                 }
               }
@@ -1341,7 +1340,7 @@
                         "docs": {
                           "prerequisite/dev-tools.html": {
                             "ref": "prerequisite/dev-tools.html",
-                            "tf": 0.003076923076923077
+                            "tf": 0.003067484662576687
                           }
                         }
                       }
@@ -1360,7 +1359,7 @@
               "docs": {
                 "prerequisite/dev-tools.html": {
                   "ref": "prerequisite/dev-tools.html",
-                  "tf": 0.003076923076923077
+                  "tf": 0.003067484662576687
                 }
               }
             },
@@ -1370,7 +1369,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.003076923076923077
+                    "tf": 0.003067484662576687
                   }
                 },
                 ".": {
@@ -1379,7 +1378,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.009230769230769232
+                        "tf": 0.009202453987730062
                       }
                     }
                   }
@@ -1392,7 +1391,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.003076923076923077
+                    "tf": 0.003067484662576687
                   }
                 }
               }
@@ -1404,7 +1403,7 @@
               "docs": {
                 "prerequisite/dev-tools.html": {
                   "ref": "prerequisite/dev-tools.html",
-                  "tf": 0.003076923076923077
+                  "tf": 0.003067484662576687
                 }
               }
             }
@@ -1416,7 +1415,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.003076923076923077
+                "tf": 0.003067484662576687
               }
             }
           },
@@ -1432,7 +1431,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.003076923076923077
+                        "tf": 0.003067484662576687
                       }
                     }
                   }
@@ -1451,7 +1450,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.009230769230769232
+                    "tf": 0.009202453987730062
                   }
                 },
                 "a": {
@@ -1472,7 +1471,7 @@
                                 "docs": {
                                   "prerequisite/dev-tools.html": {
                                     "ref": "prerequisite/dev-tools.html",
-                                    "tf": 0.003076923076923077
+                                    "tf": 0.003067484662576687
                                   }
                                 }
                               }
@@ -1491,7 +1490,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.003076923076923077
+                    "tf": 0.003067484662576687
                   }
                 }
               }
@@ -1517,7 +1516,7 @@
                             "docs": {
                               "prerequisite/dev-tools.html": {
                                 "ref": "prerequisite/dev-tools.html",
-                                "tf": 0.018461538461538463
+                                "tf": 0.018404907975460124
                               }
                             }
                           }
@@ -1535,7 +1534,7 @@
               "docs": {
                 "prerequisite/dev-tools.html": {
                   "ref": "prerequisite/dev-tools.html",
-                  "tf": 0.003076923076923077
+                  "tf": 0.003067484662576687
                 }
               }
             }
@@ -1556,7 +1555,7 @@
                         "docs": {
                           "prerequisite/dev-tools.html": {
                             "ref": "prerequisite/dev-tools.html",
-                            "tf": 0.009230769230769232
+                            "tf": 0.009202453987730062
                           }
                         }
                       }
@@ -1574,7 +1573,7 @@
                       "docs": {
                         "prerequisite/dev-tools.html": {
                           "ref": "prerequisite/dev-tools.html",
-                          "tf": 0.003076923076923077
+                          "tf": 0.003067484662576687
                         }
                       }
                     }
@@ -1594,7 +1593,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.003076923076923077
+                    "tf": 0.003067484662576687
                   }
                 }
               }
@@ -1615,7 +1614,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.003076923076923077
+                        "tf": 0.003067484662576687
                       }
                     }
                   }
@@ -1644,7 +1643,7 @@
                           "docs": {
                             "prerequisite/dev-tools.html": {
                               "ref": "prerequisite/dev-tools.html",
-                              "tf": 0.033846153846153845
+                              "tf": 0.03374233128834356
                             }
                           },
                           "e": {
@@ -1655,7 +1654,7 @@
                                 "docs": {
                                   "prerequisite/dev-tools.html": {
                                     "ref": "prerequisite/dev-tools.html",
-                                    "tf": 0.003076923076923077
+                                    "tf": 0.003067484662576687
                                   }
                                 }
                               }
@@ -1675,7 +1674,7 @@
               "docs": {
                 "prerequisite/dev-tools.html": {
                   "ref": "prerequisite/dev-tools.html",
-                  "tf": 0.006153846153846154
+                  "tf": 0.006134969325153374
                 }
               },
               "t": {
@@ -1700,7 +1699,7 @@
                                   "docs": {
                                     "prerequisite/dev-tools.html": {
                                       "ref": "prerequisite/dev-tools.html",
-                                      "tf": 0.006153846153846154
+                                      "tf": 0.006134969325153374
                                     }
                                   }
                                 }
@@ -1725,7 +1724,7 @@
                   "docs": {
                     "prerequisite/dev-tools.html": {
                       "ref": "prerequisite/dev-tools.html",
-                      "tf": 0.003076923076923077
+                      "tf": 0.003067484662576687
                     }
                   }
                 }
@@ -1742,7 +1741,7 @@
                   "docs": {
                     "prerequisite/dev-tools.html": {
                       "ref": "prerequisite/dev-tools.html",
-                      "tf": 0.003076923076923077
+                      "tf": 0.003067484662576687
                     }
                   }
                 }
@@ -1761,7 +1760,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.015384615384615385
+                        "tf": 0.015337423312883436
                       }
                     }
                   }
@@ -1789,7 +1788,7 @@
                             "docs": {
                               "prerequisite/dev-tools.html": {
                                 "ref": "prerequisite/dev-tools.html",
-                                "tf": 0.003076923076923077
+                                "tf": 0.003067484662576687
                               }
                             }
                           }
@@ -1812,7 +1811,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.006153846153846154
+                    "tf": 0.006134969325153374
                   }
                 }
               }
@@ -1828,7 +1827,7 @@
                   "docs": {
                     "prerequisite/dev-tools.html": {
                       "ref": "prerequisite/dev-tools.html",
-                      "tf": 0.003076923076923077
+                      "tf": 0.003067484662576687
                     }
                   },
                   "h": {
@@ -1841,7 +1840,7 @@
                           "docs": {
                             "prerequisite/dev-tools.html": {
                               "ref": "prerequisite/dev-tools.html",
-                              "tf": 0.036923076923076927
+                              "tf": 0.03680981595092025
                             }
                           }
                         }
@@ -1857,7 +1856,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.003076923076923077
+                    "tf": 0.003067484662576687
                   }
                 }
               }
@@ -1872,7 +1871,7 @@
               "docs": {
                 "prerequisite/dev-tools.html": {
                   "ref": "prerequisite/dev-tools.html",
-                  "tf": 0.003076923076923077
+                  "tf": 0.003067484662576687
                 }
               }
             }
@@ -1882,7 +1881,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.009230769230769232
+              "tf": 0.009202453987730062
             }
           },
           "i": {
@@ -1897,7 +1896,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.015384615384615385
+                        "tf": 0.015337423312883436
                       }
                     }
                   }
@@ -1909,7 +1908,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.009230769230769232
+                "tf": 0.012269938650306749
               }
             },
             "c": {
@@ -1922,7 +1921,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.003076923076923077
+                        "tf": 0.003067484662576687
                       }
                     }
                   }
@@ -1945,7 +1944,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.003076923076923077
+                        "tf": 0.003067484662576687
                       }
                     }
                   }
@@ -1958,7 +1957,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.018461538461538463
+              "tf": 0.018404907975460124
             }
           },
           "a": {
@@ -1969,7 +1968,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.018461538461538463
+                    "tf": 0.018404907975460124
                   }
                 }
               }
@@ -1992,7 +1991,7 @@
                       "docs": {
                         "prerequisite/dev-tools.html": {
                           "ref": "prerequisite/dev-tools.html",
-                          "tf": 0.003076923076923077
+                          "tf": 0.003067484662576687
                         }
                       }
                     }
@@ -2009,7 +2008,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.003076923076923077
+                    "tf": 0.003067484662576687
                   }
                 }
               }
@@ -2020,7 +2019,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.003076923076923077
+              "tf": 0.003067484662576687
             }
           }
         },
@@ -2140,7 +2139,7 @@
                                                                                                                           "docs": {
                                                                                                                             "prerequisite/dev-tools.html": {
                                                                                                                               "ref": "prerequisite/dev-tools.html",
-                                                                                                                              "tf": 0.003076923076923077
+                                                                                                                              "tf": 0.003067484662576687
                                                                                                                             }
                                                                                                                           }
                                                                                                                         }
@@ -2235,7 +2234,7 @@
                                                                                                                                 "docs": {
                                                                                                                                   "prerequisite/dev-tools.html": {
                                                                                                                                     "ref": "prerequisite/dev-tools.html",
-                                                                                                                                    "tf": 0.003076923076923077
+                                                                                                                                    "tf": 0.003067484662576687
                                                                                                                                   }
                                                                                                                                 }
                                                                                                                               }
@@ -2323,7 +2322,7 @@
                                   "docs": {
                                     "prerequisite/dev-tools.html": {
                                       "ref": "prerequisite/dev-tools.html",
-                                      "tf": 0.003076923076923077
+                                      "tf": 0.003067484662576687
                                     }
                                   }
                                 }
@@ -2368,7 +2367,7 @@
                                       "docs": {
                                         "prerequisite/dev-tools.html": {
                                           "ref": "prerequisite/dev-tools.html",
-                                          "tf": 0.003076923076923077
+                                          "tf": 0.003067484662576687
                                         }
                                       }
                                     }
@@ -2465,7 +2464,7 @@
                                                                                         "docs": {
                                                                                           "prerequisite/dev-tools.html": {
                                                                                             "ref": "prerequisite/dev-tools.html",
-                                                                                            "tf": 0.003076923076923077
+                                                                                            "tf": 0.003067484662576687
                                                                                           }
                                                                                         }
                                                                                       }
@@ -2535,7 +2534,7 @@
                                     "docs": {
                                       "prerequisite/dev-tools.html": {
                                         "ref": "prerequisite/dev-tools.html",
-                                        "tf": 0.003076923076923077
+                                        "tf": 0.003067484662576687
                                       }
                                     }
                                   }
@@ -2575,7 +2574,7 @@
                                 "docs": {
                                   "prerequisite/dev-tools.html": {
                                     "ref": "prerequisite/dev-tools.html",
-                                    "tf": 0.003076923076923077
+                                    "tf": 0.003067484662576687
                                   }
                                 }
                               }
@@ -2613,7 +2612,7 @@
                                 "docs": {
                                   "prerequisite/dev-tools.html": {
                                     "ref": "prerequisite/dev-tools.html",
-                                    "tf": 0.003076923076923077
+                                    "tf": 0.003067484662576687
                                   }
                                 }
                               }
@@ -2651,7 +2650,7 @@
                                 "docs": {
                                   "prerequisite/dev-tools.html": {
                                     "ref": "prerequisite/dev-tools.html",
-                                    "tf": 0.006153846153846154
+                                    "tf": 0.006134969325153374
                                   }
                                 }
                               }
@@ -2672,7 +2671,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.003076923076923077
+                "tf": 0.003067484662576687
               }
             }
           }
@@ -2733,7 +2732,7 @@
                                                               "docs": {
                                                                 "prerequisite/dev-tools.html": {
                                                                   "ref": "prerequisite/dev-tools.html",
-                                                                  "tf": 0.003076923076923077
+                                                                  "tf": 0.003067484662576687
                                                                 }
                                                               }
                                                             }
@@ -2809,7 +2808,7 @@
                                                     "docs": {
                                                       "prerequisite/dev-tools.html": {
                                                         "ref": "prerequisite/dev-tools.html",
-                                                        "tf": 0.003076923076923077
+                                                        "tf": 0.003067484662576687
                                                       }
                                                     }
                                                   }
@@ -2844,7 +2843,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.003076923076923077
+                    "tf": 0.003067484662576687
                   }
                 }
               }
@@ -2879,7 +2878,7 @@
                                   "docs": {
                                     "prerequisite/dev-tools.html": {
                                       "ref": "prerequisite/dev-tools.html",
-                                      "tf": 0.003076923076923077
+                                      "tf": 0.003067484662576687
                                     }
                                   }
                                 }
@@ -2939,7 +2938,7 @@
                                                   "docs": {
                                                     "prerequisite/dev-tools.html": {
                                                       "ref": "prerequisite/dev-tools.html",
-                                                      "tf": 0.006153846153846154
+                                                      "tf": 0.006134969325153374
                                                     }
                                                   }
                                                 }
@@ -2993,7 +2992,7 @@
                                     "docs": {
                                       "prerequisite/dev-tools.html": {
                                         "ref": "prerequisite/dev-tools.html",
-                                        "tf": 0.003076923076923077
+                                        "tf": 0.003067484662576687
                                       }
                                     }
                                   }
@@ -3014,7 +3013,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.003076923076923077
+              "tf": 0.003067484662576687
             }
           },
           "す": {
@@ -3023,7 +3022,7 @@
               "docs": {
                 "prerequisite/dev-tools.html": {
                   "ref": "prerequisite/dev-tools.html",
-                  "tf": 0.003076923076923077
+                  "tf": 0.003067484662576687
                 }
               }
             }
@@ -3158,7 +3157,7 @@
                                                                                                                                           "docs": {
                                                                                                                                             "prerequisite/dev-tools.html": {
                                                                                                                                               "ref": "prerequisite/dev-tools.html",
-                                                                                                                                              "tf": 0.003076923076923077
+                                                                                                                                              "tf": 0.003067484662576687
                                                                                                                                             }
                                                                                                                                           }
                                                                                                                                         }
@@ -3230,7 +3229,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.006153846153846154
+              "tf": 0.006134969325153374
             }
           },
           "パ": {
@@ -3257,7 +3256,7 @@
                                 "docs": {
                                   "prerequisite/dev-tools.html": {
                                     "ref": "prerequisite/dev-tools.html",
-                                    "tf": 0.003076923076923077
+                                    "tf": 0.003067484662576687
                                   }
                                 }
                               }
@@ -3292,7 +3291,7 @@
                           "docs": {
                             "prerequisite/dev-tools.html": {
                               "ref": "prerequisite/dev-tools.html",
-                              "tf": 0.003076923076923077
+                              "tf": 0.003067484662576687
                             }
                           }
                         }
@@ -3337,7 +3336,7 @@
                                           "docs": {
                                             "prerequisite/dev-tools.html": {
                                               "ref": "prerequisite/dev-tools.html",
-                                              "tf": 0.003076923076923077
+                                              "tf": 0.003067484662576687
                                             }
                                           }
                                         }
@@ -3382,7 +3381,7 @@
                                   "docs": {
                                     "prerequisite/dev-tools.html": {
                                       "ref": "prerequisite/dev-tools.html",
-                                      "tf": 0.003076923076923077
+                                      "tf": 0.003067484662576687
                                     }
                                   }
                                 }
@@ -3437,7 +3436,7 @@
                                                 "docs": {
                                                   "prerequisite/dev-tools.html": {
                                                     "ref": "prerequisite/dev-tools.html",
-                                                    "tf": 0.003076923076923077
+                                                    "tf": 0.003067484662576687
                                                   }
                                                 }
                                               }
@@ -3464,7 +3463,7 @@
           "docs": {
             "prerequisite/dev-tools.html": {
               "ref": "prerequisite/dev-tools.html",
-              "tf": 0.012307692307692308
+              "tf": 0.012269938650306749
             }
           },
           "ア": {
@@ -3497,7 +3496,7 @@
                                       "docs": {
                                         "prerequisite/dev-tools.html": {
                                           "ref": "prerequisite/dev-tools.html",
-                                          "tf": 0.003076923076923077
+                                          "tf": 0.003067484662576687
                                         }
                                       }
                                     }
@@ -3528,7 +3527,7 @@
                       "docs": {
                         "prerequisite/dev-tools.html": {
                           "ref": "prerequisite/dev-tools.html",
-                          "tf": 0.006153846153846154
+                          "tf": 0.006134969325153374
                         }
                       }
                     }
@@ -3571,7 +3570,7 @@
                                           "docs": {
                                             "prerequisite/dev-tools.html": {
                                               "ref": "prerequisite/dev-tools.html",
-                                              "tf": 0.003076923076923077
+                                              "tf": 0.003067484662576687
                                             }
                                           }
                                         }
@@ -3598,7 +3597,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.003076923076923077
+                    "tf": 0.003067484662576687
                   }
                 }
               }
@@ -3632,7 +3631,7 @@
                                     "docs": {
                                       "prerequisite/dev-tools.html": {
                                         "ref": "prerequisite/dev-tools.html",
-                                        "tf": 0.003076923076923077
+                                        "tf": 0.003067484662576687
                                       }
                                     }
                                   }
@@ -3704,7 +3703,7 @@
                                                                 "docs": {
                                                                   "prerequisite/dev-tools.html": {
                                                                     "ref": "prerequisite/dev-tools.html",
-                                                                    "tf": 0.003076923076923077
+                                                                    "tf": 0.003067484662576687
                                                                   }
                                                                 }
                                                               }
@@ -3740,7 +3739,7 @@
               "docs": {
                 "prerequisite/dev-tools.html": {
                   "ref": "prerequisite/dev-tools.html",
-                  "tf": 0.003076923076923077
+                  "tf": 0.003067484662576687
                 }
               },
               "開": {
@@ -3749,7 +3748,7 @@
                   "docs": {
                     "prerequisite/dev-tools.html": {
                       "ref": "prerequisite/dev-tools.html",
-                      "tf": 0.006153846153846154
+                      "tf": 0.006134969325153374
                     }
                   }
                 }
@@ -3766,7 +3765,7 @@
                   "docs": {
                     "prerequisite/dev-tools.html": {
                       "ref": "prerequisite/dev-tools.html",
-                      "tf": 0.003076923076923077
+                      "tf": 0.003067484662576687
                     }
                   },
                   "を": {
@@ -3789,7 +3788,7 @@
                                     "docs": {
                                       "prerequisite/dev-tools.html": {
                                         "ref": "prerequisite/dev-tools.html",
-                                        "tf": 0.003076923076923077
+                                        "tf": 0.003067484662576687
                                       }
                                     }
                                   }
@@ -3817,7 +3816,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.003076923076923077
+                        "tf": 0.003067484662576687
                       }
                     }
                   }
@@ -3871,7 +3870,7 @@
                                                       "docs": {
                                                         "prerequisite/dev-tools.html": {
                                                           "ref": "prerequisite/dev-tools.html",
-                                                          "tf": 0.003076923076923077
+                                                          "tf": 0.003067484662576687
                                                         }
                                                       }
                                                     }
@@ -3909,7 +3908,7 @@
                   "docs": {
                     "prerequisite/dev-tools.html": {
                       "ref": "prerequisite/dev-tools.html",
-                      "tf": 0.003076923076923077
+                      "tf": 0.003067484662576687
                     }
                   }
                 }
@@ -3931,7 +3930,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.003076923076923077
+                        "tf": 0.003067484662576687
                       }
                     }
                   }
@@ -3955,7 +3954,7 @@
                         "docs": {
                           "prerequisite/dev-tools.html": {
                             "ref": "prerequisite/dev-tools.html",
-                            "tf": 0.003076923076923077
+                            "tf": 0.003067484662576687
                           }
                         }
                       }
@@ -3999,7 +3998,7 @@
                                           "docs": {
                                             "prerequisite/dev-tools.html": {
                                               "ref": "prerequisite/dev-tools.html",
-                                              "tf": 0.003076923076923077
+                                              "tf": 0.003067484662576687
                                             }
                                           }
                                         }
@@ -4045,7 +4044,7 @@
                                 "docs": {
                                   "prerequisite/dev-tools.html": {
                                     "ref": "prerequisite/dev-tools.html",
-                                    "tf": 0.003076923076923077
+                                    "tf": 0.003067484662576687
                                   }
                                 }
                               }
@@ -4065,7 +4064,7 @@
               "docs": {
                 "prerequisite/dev-tools.html": {
                   "ref": "prerequisite/dev-tools.html",
-                  "tf": 0.003076923076923077
+                  "tf": 0.003067484662576687
                 }
               }
             }
@@ -4074,7 +4073,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.003076923076923077
+                "tf": 0.003067484662576687
               }
             },
             "作": {
@@ -4117,7 +4116,7 @@
                                                   "docs": {
                                                     "prerequisite/dev-tools.html": {
                                                       "ref": "prerequisite/dev-tools.html",
-                                                      "tf": 0.003076923076923077
+                                                      "tf": 0.003067484662576687
                                                     }
                                                   }
                                                 }
@@ -4173,7 +4172,7 @@
                                       "docs": {
                                         "prerequisite/dev-tools.html": {
                                           "ref": "prerequisite/dev-tools.html",
-                                          "tf": 0.003076923076923077
+                                          "tf": 0.003067484662576687
                                         }
                                       }
                                     }
@@ -4245,7 +4244,7 @@
                                                                                     "docs": {
                                                                                       "prerequisite/dev-tools.html": {
                                                                                         "ref": "prerequisite/dev-tools.html",
-                                                                                        "tf": 0.003076923076923077
+                                                                                        "tf": 0.003067484662576687
                                                                                       }
                                                                                     }
                                                                                   }
@@ -4284,7 +4283,7 @@
                                   "docs": {
                                     "prerequisite/dev-tools.html": {
                                       "ref": "prerequisite/dev-tools.html",
-                                      "tf": 0.009230769230769232
+                                      "tf": 0.009202453987730062
                                     }
                                   }
                                 }
@@ -4317,7 +4316,7 @@
                           "docs": {
                             "prerequisite/dev-tools.html": {
                               "ref": "prerequisite/dev-tools.html",
-                              "tf": 0.003076923076923077
+                              "tf": 0.003067484662576687
                             }
                           }
                         }
@@ -4352,7 +4351,7 @@
                                 "docs": {
                                   "prerequisite/dev-tools.html": {
                                     "ref": "prerequisite/dev-tools.html",
-                                    "tf": 0.003076923076923077
+                                    "tf": 0.003067484662576687
                                   }
                                 }
                               }
@@ -4440,7 +4439,7 @@
                                                                                         "docs": {
                                                                                           "prerequisite/dev-tools.html": {
                                                                                             "ref": "prerequisite/dev-tools.html",
-                                                                                            "tf": 0.003076923076923077
+                                                                                            "tf": 0.003067484662576687
                                                                                           }
                                                                                         }
                                                                                       }
@@ -4558,7 +4557,7 @@
                                                                                     "docs": {
                                                                                       "prerequisite/dev-tools.html": {
                                                                                         "ref": "prerequisite/dev-tools.html",
-                                                                                        "tf": 0.003076923076923077
+                                                                                        "tf": 0.003067484662576687
                                                                                       }
                                                                                     }
                                                                                   }
@@ -4626,7 +4625,7 @@
                                     "docs": {
                                       "prerequisite/dev-tools.html": {
                                         "ref": "prerequisite/dev-tools.html",
-                                        "tf": 0.003076923076923077
+                                        "tf": 0.003067484662576687
                                       }
                                     }
                                   }
@@ -4654,7 +4653,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.003076923076923077
+                        "tf": 0.003067484662576687
                       }
                     }
                   },
@@ -4696,7 +4695,7 @@
                                                       "docs": {
                                                         "prerequisite/dev-tools.html": {
                                                           "ref": "prerequisite/dev-tools.html",
-                                                          "tf": 0.003076923076923077
+                                                          "tf": 0.003067484662576687
                                                         }
                                                       }
                                                     }
@@ -4753,7 +4752,7 @@
                                         "docs": {
                                           "prerequisite/dev-tools.html": {
                                             "ref": "prerequisite/dev-tools.html",
-                                            "tf": 0.003076923076923077
+                                            "tf": 0.003067484662576687
                                           }
                                         }
                                       }
@@ -4794,7 +4793,7 @@
                                   "docs": {
                                     "prerequisite/dev-tools.html": {
                                       "ref": "prerequisite/dev-tools.html",
-                                      "tf": 0.003076923076923077
+                                      "tf": 0.003067484662576687
                                     }
                                   }
                                 }
@@ -4894,7 +4893,7 @@
                                                                                           "docs": {
                                                                                             "prerequisite/dev-tools.html": {
                                                                                               "ref": "prerequisite/dev-tools.html",
-                                                                                              "tf": 0.003076923076923077
+                                                                                              "tf": 0.003067484662576687
                                                                                             }
                                                                                           }
                                                                                         }
@@ -4955,7 +4954,7 @@
                           "docs": {
                             "prerequisite/dev-tools.html": {
                               "ref": "prerequisite/dev-tools.html",
-                              "tf": 0.003076923076923077
+                              "tf": 0.003067484662576687
                             }
                           }
                         }
@@ -5053,7 +5052,7 @@
                                                                                             "docs": {
                                                                                               "prerequisite/dev-tools.html": {
                                                                                                 "ref": "prerequisite/dev-tools.html",
-                                                                                                "tf": 0.003076923076923077
+                                                                                                "tf": 0.003067484662576687
                                                                                               }
                                                                                             }
                                                                                           }
@@ -5097,7 +5096,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.003076923076923077
+                        "tf": 0.003067484662576687
                       }
                     },
                     "し": {
@@ -5144,7 +5143,7 @@
                                                               "docs": {
                                                                 "prerequisite/dev-tools.html": {
                                                                   "ref": "prerequisite/dev-tools.html",
-                                                                  "tf": 0.003076923076923077
+                                                                  "tf": 0.003067484662576687
                                                                 }
                                                               }
                                                             }
@@ -5192,7 +5191,7 @@
                         "docs": {
                           "prerequisite/dev-tools.html": {
                             "ref": "prerequisite/dev-tools.html",
-                            "tf": 0.003076923076923077
+                            "tf": 0.003067484662576687
                           }
                         }
                       }
@@ -5227,7 +5226,7 @@
                               "docs": {
                                 "prerequisite/dev-tools.html": {
                                   "ref": "prerequisite/dev-tools.html",
-                                  "tf": 0.003076923076923077
+                                  "tf": 0.003067484662576687
                                 }
                               }
                             }
@@ -5270,7 +5269,7 @@
                                       "docs": {
                                         "prerequisite/dev-tools.html": {
                                           "ref": "prerequisite/dev-tools.html",
-                                          "tf": 0.003076923076923077
+                                          "tf": 0.003067484662576687
                                         }
                                       }
                                     }
@@ -5306,7 +5305,7 @@
                                     "docs": {
                                       "prerequisite/dev-tools.html": {
                                         "ref": "prerequisite/dev-tools.html",
-                                        "tf": 0.003076923076923077
+                                        "tf": 0.003067484662576687
                                       }
                                     }
                                   }
@@ -5344,7 +5343,7 @@
                                     "docs": {
                                       "prerequisite/dev-tools.html": {
                                         "ref": "prerequisite/dev-tools.html",
-                                        "tf": 0.003076923076923077
+                                        "tf": 0.003067484662576687
                                       }
                                     }
                                   }
@@ -5373,7 +5372,7 @@
                   "docs": {
                     "prerequisite/dev-tools.html": {
                       "ref": "prerequisite/dev-tools.html",
-                      "tf": 0.006153846153846154
+                      "tf": 0.006134969325153374
                     }
                   }
                 }
@@ -5388,7 +5387,7 @@
                       "docs": {
                         "prerequisite/dev-tools.html": {
                           "ref": "prerequisite/dev-tools.html",
-                          "tf": 0.003076923076923077
+                          "tf": 0.003067484662576687
                         }
                       }
                     }
@@ -5424,7 +5423,7 @@
                                 "docs": {
                                   "prerequisite/dev-tools.html": {
                                     "ref": "prerequisite/dev-tools.html",
-                                    "tf": 0.003076923076923077
+                                    "tf": 0.003067484662576687
                                   }
                                 }
                               }
@@ -5448,7 +5447,7 @@
                               "docs": {
                                 "prerequisite/dev-tools.html": {
                                   "ref": "prerequisite/dev-tools.html",
-                                  "tf": 0.003076923076923077
+                                  "tf": 0.003067484662576687
                                 }
                               }
                             }
@@ -5536,7 +5535,7 @@
                                                                                 "docs": {
                                                                                   "prerequisite/dev-tools.html": {
                                                                                     "ref": "prerequisite/dev-tools.html",
-                                                                                    "tf": 0.003076923076923077
+                                                                                    "tf": 0.003067484662576687
                                                                                   }
                                                                                 }
                                                                               }
@@ -5602,7 +5601,7 @@
                                     "docs": {
                                       "prerequisite/dev-tools.html": {
                                         "ref": "prerequisite/dev-tools.html",
-                                        "tf": 0.003076923076923077
+                                        "tf": 0.003067484662576687
                                       }
                                     }
                                   }
@@ -5663,7 +5662,7 @@
                                                   "docs": {
                                                     "prerequisite/dev-tools.html": {
                                                       "ref": "prerequisite/dev-tools.html",
-                                                      "tf": 0.003076923076923077
+                                                      "tf": 0.003067484662576687
                                                     }
                                                   }
                                                 }
@@ -5755,7 +5754,7 @@
                                                                           "docs": {
                                                                             "prerequisite/dev-tools.html": {
                                                                               "ref": "prerequisite/dev-tools.html",
-                                                                              "tf": 0.003076923076923077
+                                                                              "tf": 0.003067484662576687
                                                                             }
                                                                           }
                                                                         }
@@ -5803,7 +5802,7 @@
                   "docs": {
                     "prerequisite/dev-tools.html": {
                       "ref": "prerequisite/dev-tools.html",
-                      "tf": 0.003076923076923077
+                      "tf": 0.003067484662576687
                     }
                   }
                 }
@@ -5857,7 +5856,7 @@
                                                     "docs": {
                                                       "prerequisite/dev-tools.html": {
                                                         "ref": "prerequisite/dev-tools.html",
-                                                        "tf": 0.003076923076923077
+                                                        "tf": 0.003067484662576687
                                                       }
                                                     }
                                                   }
@@ -5906,7 +5905,7 @@
                               "docs": {
                                 "prerequisite/dev-tools.html": {
                                   "ref": "prerequisite/dev-tools.html",
-                                  "tf": 0.003076923076923077
+                                  "tf": 0.003067484662576687
                                 }
                               }
                             }
@@ -5928,7 +5927,7 @@
               "docs": {
                 "prerequisite/dev-tools.html": {
                   "ref": "prerequisite/dev-tools.html",
-                  "tf": 0.003076923076923077
+                  "tf": 0.003067484662576687
                 }
               },
               "コ": {
@@ -5995,7 +5994,7 @@
                                                                             "docs": {
                                                                               "prerequisite/dev-tools.html": {
                                                                                 "ref": "prerequisite/dev-tools.html",
-                                                                                "tf": 0.003076923076923077
+                                                                                "tf": 0.003067484662576687
                                                                               }
                                                                             }
                                                                           }
@@ -6058,7 +6057,7 @@
                                 "docs": {
                                   "prerequisite/dev-tools.html": {
                                     "ref": "prerequisite/dev-tools.html",
-                                    "tf": 0.006153846153846154
+                                    "tf": 0.006134969325153374
                                   }
                                 }
                               }
@@ -6080,7 +6079,7 @@
                       "docs": {
                         "prerequisite/dev-tools.html": {
                           "ref": "prerequisite/dev-tools.html",
-                          "tf": 0.003076923076923077
+                          "tf": 0.003067484662576687
                         }
                       }
                     }
@@ -6122,7 +6121,7 @@
                                       "docs": {
                                         "prerequisite/dev-tools.html": {
                                           "ref": "prerequisite/dev-tools.html",
-                                          "tf": 0.003076923076923077
+                                          "tf": 0.003067484662576687
                                         }
                                       }
                                     }
@@ -6173,7 +6172,7 @@
                                                 "docs": {
                                                   "prerequisite/dev-tools.html": {
                                                     "ref": "prerequisite/dev-tools.html",
-                                                    "tf": 0.003076923076923077
+                                                    "tf": 0.003067484662576687
                                                   }
                                                 }
                                               }
@@ -6202,7 +6201,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.003076923076923077
+                "tf": 0.003067484662576687
               }
             }
           }
@@ -6283,7 +6282,7 @@
                                                                                   "docs": {
                                                                                     "prerequisite/dev-tools.html": {
                                                                                       "ref": "prerequisite/dev-tools.html",
-                                                                                      "tf": 0.003076923076923077
+                                                                                      "tf": 0.003067484662576687
                                                                                     }
                                                                                   }
                                                                                 }
@@ -6395,7 +6394,7 @@
                                                                                                       "docs": {
                                                                                                         "prerequisite/dev-tools.html": {
                                                                                                           "ref": "prerequisite/dev-tools.html",
-                                                                                                          "tf": 0.003076923076923077
+                                                                                                          "tf": 0.003067484662576687
                                                                                                         }
                                                                                                       }
                                                                                                     }
@@ -6541,7 +6540,7 @@
                                                                                                       "docs": {
                                                                                                         "prerequisite/dev-tools.html": {
                                                                                                           "ref": "prerequisite/dev-tools.html",
-                                                                                                          "tf": 0.003076923076923077
+                                                                                                          "tf": 0.003067484662576687
                                                                                                         }
                                                                                                       }
                                                                                                     }
@@ -6597,7 +6596,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.003076923076923077
+                "tf": 0.003067484662576687
               }
             }
           }
@@ -6628,7 +6627,7 @@
                                 "docs": {
                                   "prerequisite/dev-tools.html": {
                                     "ref": "prerequisite/dev-tools.html",
-                                    "tf": 0.003076923076923077
+                                    "tf": 0.003067484662576687
                                   }
                                 }
                               }
@@ -6649,7 +6648,7 @@
                                     "docs": {
                                       "prerequisite/dev-tools.html": {
                                         "ref": "prerequisite/dev-tools.html",
-                                        "tf": 0.003076923076923077
+                                        "tf": 0.003067484662576687
                                       }
                                     }
                                   }
@@ -6706,7 +6705,7 @@
                                               "docs": {
                                                 "prerequisite/dev-tools.html": {
                                                   "ref": "prerequisite/dev-tools.html",
-                                                  "tf": 0.003076923076923077
+                                                  "tf": 0.003067484662576687
                                                 }
                                               }
                                             }
@@ -6731,7 +6730,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.003076923076923077
+                "tf": 0.003067484662576687
               }
             }
           }
@@ -6742,33 +6741,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.003076923076923077
-              }
-            }
-          }
-        },
-        "拡": {
-          "docs": {},
-          "張": {
-            "docs": {},
-            "機": {
-              "docs": {},
-              "能": {
-                "docs": {},
-                "の": {
-                  "docs": {},
-                  "追": {
-                    "docs": {},
-                    "加": {
-                      "docs": {
-                        "prerequisite/dev-tools.html": {
-                          "ref": "prerequisite/dev-tools.html",
-                          "tf": 0.003076923076923077
-                        }
-                      }
-                    }
-                  }
-                }
+                "tf": 0.003067484662576687
               }
             }
           }
@@ -6805,7 +6778,7 @@
                                       "docs": {
                                         "prerequisite/dev-tools.html": {
                                           "ref": "prerequisite/dev-tools.html",
-                                          "tf": 0.003076923076923077
+                                          "tf": 0.003067484662576687
                                         }
                                       }
                                     }
@@ -6831,7 +6804,7 @@
               "docs": {
                 "prerequisite/dev-tools.html": {
                   "ref": "prerequisite/dev-tools.html",
-                  "tf": 0.003076923076923077
+                  "tf": 0.003067484662576687
                 }
               },
               "「": {
@@ -6900,7 +6873,7 @@
                                                                               "docs": {
                                                                                 "prerequisite/dev-tools.html": {
                                                                                   "ref": "prerequisite/dev-tools.html",
-                                                                                  "tf": 0.003076923076923077
+                                                                                  "tf": 0.003067484662576687
                                                                                 }
                                                                               }
                                                                             }
@@ -6944,7 +6917,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.003076923076923077
+                "tf": 0.003067484662576687
               }
             },
             "キ": {
@@ -6977,7 +6950,7 @@
                                         "docs": {
                                           "prerequisite/dev-tools.html": {
                                             "ref": "prerequisite/dev-tools.html",
-                                            "tf": 0.003076923076923077
+                                            "tf": 0.003067484662576687
                                           }
                                         }
                                       }
@@ -7060,7 +7033,7 @@
                                                                             "docs": {
                                                                               "prerequisite/dev-tools.html": {
                                                                                 "ref": "prerequisite/dev-tools.html",
-                                                                                "tf": 0.003076923076923077
+                                                                                "tf": 0.003067484662576687
                                                                               }
                                                                             }
                                                                           }
@@ -7117,7 +7090,7 @@
                                 "docs": {
                                   "prerequisite/dev-tools.html": {
                                     "ref": "prerequisite/dev-tools.html",
-                                    "tf": 0.003076923076923077
+                                    "tf": 0.003067484662576687
                                   }
                                 }
                               }
@@ -7143,7 +7116,7 @@
                                             "docs": {
                                               "prerequisite/dev-tools.html": {
                                                 "ref": "prerequisite/dev-tools.html",
-                                                "tf": 0.006153846153846154
+                                                "tf": 0.006134969325153374
                                               }
                                             }
                                           }
@@ -7175,7 +7148,7 @@
                                             "docs": {
                                               "prerequisite/dev-tools.html": {
                                                 "ref": "prerequisite/dev-tools.html",
-                                                "tf": 0.003076923076923077
+                                                "tf": 0.003067484662576687
                                               }
                                             }
                                           }
@@ -7210,7 +7183,7 @@
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.006153846153846154
+                        "tf": 0.006134969325153374
                       }
                     }
                   }
@@ -7225,7 +7198,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.006153846153846154
+                "tf": 0.006134969325153374
               }
             }
           }
@@ -7236,7 +7209,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.003076923076923077
+                "tf": 0.003067484662576687
               }
             }
           }
@@ -7337,7 +7310,7 @@
                                                                                                       "docs": {
                                                                                                         "prerequisite/dev-tools.html": {
                                                                                                           "ref": "prerequisite/dev-tools.html",
-                                                                                                          "tf": 0.003076923076923077
+                                                                                                          "tf": 0.003067484662576687
                                                                                                         }
                                                                                                       }
                                                                                                     }
@@ -7426,7 +7399,7 @@
                                                                               "docs": {
                                                                                 "prerequisite/dev-tools.html": {
                                                                                   "ref": "prerequisite/dev-tools.html",
-                                                                                  "tf": 0.003076923076923077
+                                                                                  "tf": 0.003067484662576687
                                                                                 }
                                                                               }
                                                                             }
@@ -7470,7 +7443,7 @@
             "docs": {
               "prerequisite/dev-tools.html": {
                 "ref": "prerequisite/dev-tools.html",
-                "tf": 0.009230769230769232
+                "tf": 0.009202453987730062
               }
             },
             "し": {
@@ -7523,7 +7496,7 @@
                                                             "docs": {
                                                               "prerequisite/dev-tools.html": {
                                                                 "ref": "prerequisite/dev-tools.html",
-                                                                "tf": 0.003076923076923077
+                                                                "tf": 0.003067484662576687
                                                               }
                                                             }
                                                           }
@@ -7570,7 +7543,7 @@
                         "docs": {
                           "prerequisite/dev-tools.html": {
                             "ref": "prerequisite/dev-tools.html",
-                            "tf": 0.003076923076923077
+                            "tf": 0.003067484662576687
                           }
                         }
                       }
@@ -7591,7 +7564,7 @@
                 "docs": {
                   "prerequisite/dev-tools.html": {
                     "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.003076923076923077
+                    "tf": 0.003067484662576687
                   }
                 }
               }
@@ -7622,7 +7595,7 @@
                                     "docs": {
                                       "prerequisite/dev-tools.html": {
                                         "ref": "prerequisite/dev-tools.html",
-                                        "tf": 0.003076923076923077
+                                        "tf": 0.003067484662576687
                                       }
                                     }
                                   }
@@ -7645,7 +7618,7 @@
                                     "docs": {
                                       "prerequisite/dev-tools.html": {
                                         "ref": "prerequisite/dev-tools.html",
-                                        "tf": 0.003076923076923077
+                                        "tf": 0.003067484662576687
                                       }
                                     }
                                   }
@@ -7668,7 +7641,7 @@
                   "docs": {
                     "prerequisite/dev-tools.html": {
                       "ref": "prerequisite/dev-tools.html",
-                      "tf": 10.003076923076923
+                      "tf": 10.003067484662576
                     }
                   }
                 }
@@ -7677,7 +7650,7 @@
           }
         }
       },
-      "length": 214
+      "length": 213
     },
     "corpusTokens": [
       "\"英語\"",
@@ -7872,7 +7845,6 @@
       "必要な情報を入力してサインアップする。",
       "必須",
       "手順",
-      "拡張機能の追加",
       "括弧のペアを色付きで把握できる",
       "最後に",
       "最後に「ステップを確認」のセクションがあるので、後続の手順で使うために",
@@ -7902,7 +7874,7 @@
       "url": "prerequisite/dev-tools.html",
       "title": "開発ツール",
       "keywords": "",
-      "body": "開発ツール\n実は、最初の難関はここにあります。ここで挫折するかたが多いですので、じっくり取り組みましょう。\n\nDeveloper Edition 環境\nTrailhead\nSalesforce IDE\nExtensions\nJava\nNode.js & Yarn\n\n\nDeveloper Edition 環境\nまず、Salesforce の無料の開発環境を入手しましょう。これを使って Trailhead にログインします。\nすでに持っている場合は、次のセクションへ。\n\nGoogle Chrome または Firefox を開く。（Internet Explorer は非推奨）\nhttps://developer.salesforce.com/signup へアクセスする。\n必要な情報を入力してサインアップする。\n件名「Salesforce へようこそ: アカウントを確認してください」のメールを開いて「アカウントを確認」をクリックする。\n好きなパスワードと秘密の質問を設定して「パスワードを変更」をクリックする。\n歯車アイコン > 「設定」をクリックする。\n左のペインで、「会社の設定」 > 「組織情報」をクリックする。\n「編集」をクリックする。\n「言語のデフォルト値」を \"英語\" に変更して「保存」をクリックする。\n\nTrailhead\n次の単元を通して、Trailhead のアカウントを準備しましょう。\nすでに持っている場合は、次のセクションへ。\n\nTrailhead の使用開始\n\n最後に Quiz があるので理解度をチェックしてみてください。\nSalesforce IDE\nVisual Studio Code のインストール\n次の単元を通して、Salesforce の IDE（統合開発環境）として利用できる Visual Studio Code（VS Code）をインストールしましょう。\n\nVisual Studio Code の使用開始\n\n最後に「ステップを確認」のセクションがあるので、後続の手順で使うために Trailhead Playground を作成しておきましょう。\nSalesforce CLI と Salesforce Extension Pack のインストール\n次の単元を通して、Salesforce CLI と Salesforce Extension Pack をインストールしましょう。\n\nVisual Studio Code の Salesforce 対応\n\n進めているうちに Trailhead Playground を作成する手順が出てきますが、前の単元で作成済みのものを起動して進めてください。\nまだ作成中の場合はしばらく待ってください。\nTrailhead Playground のログインパスワードリセット\nTrailhead サイトから Trailhead Playground を起動する際にはログインパスワードが不要です。\nしかし、Trailhead サイト以外から Trailhead Playground へログインしたい場合には、ログイン ID とパスワードが必要です。\n\nTrailhead サイトから Trailhead Playground を起動する。\n歯車アイコン > 「設定」をクリックする。\n左のペインで、「ユーザ」 > 「ユーザ」をクリックする。\n自分の氏名と同じユーザを探して、「ユーザ名」の値を手元にメモしておく。\n自分の氏名と同じユーザのチェックボックスをチェックし、「パスワードをリセット」をクリックする。\nポップアップ画面の「OK」をクリックする。\n件名「Your Developer Edition パスワードのリセット完了」のメールを開いて、本文のリンクをクリックする。\n件名「Salesforce で ID を確認」のメールに記載されている確認コードを入力して「検証」をクリックする。\n好きなパスワードを設定して「パスワードを変更」をクリックする。パスワードは手元にメモしておく。\n設定したパスワードでログインできるかどうか確かめる。\nアストロのアイコン > 「ログアウト」をクリックする。\nメモしたユーザ名とパスワードを入力して「ログイン」をクリックする。\n「携帯電話を登録」画面が表示された場合は、「電話を登録しません」をクリックする。\n\n\n\nSalesforce IDE の動作確認\n次の単元を通して、IDE の動作確認をしてみましょう。\n\nSalesforce 開発での Visual Studio Code の使用\n\nExtensions\nVS Code 拡張機能の追加\nさきほど VS Code の拡張機能の Salesforce Extension Pack をインストールしましたが、他にも開発に欠かせない拡張機能が豊富に存在します。\nぜひインストールしましょう。\n\n\n\nNo.\n必須\n名前\nオススメポイント\n\n\n\n\n1\nY\nBracket Pair Colorizer\n括弧のペアを色付きで把握できる\n\n\n2\nY\nCodey Midnight\nSalesforce 開発にぴったりのダークテーマ\n\n\n3\nY\nPrettier - Code formatter\nコードを綺麗に整形してくれる\n\n\n4\nY\nTodo Tree\nTODO コメントを一覧化できる\n\n\n5\nY\nTrailing Spaces\n余分なスペースを削除してくれる\n\n\n6\nY\nzenkaku\n余分な全角スペースをハイライトしてくれる\n\n\n7\n\nApex PMD\nApex コードの静的解析を実行できる\n\n\n8\n\nCodey High Noon\nSalesforce 開発にぴったりのライトテーマ\n\n\n9\n\nGitLens — Git supercharged\nGit のコミットの履歴を追跡しやすくなる\n\n\n10\n\nLive HTML Previewer\nHTML をプレビューできる\n\n\n11\n\nLive Share\nリアルタイムにコードを共有して共同作業できる\n\n\n12\n\nOutput Colorizer\nログに色付けしてくれる\n\n\n\nユーザ設定\nインストールした拡張機能の各種設定を有効化しましょう。\n次のキーボードのショートカットで Settings を開き、右上のアイコン「Open Settings (JSON)」をクリックします。\n\nMacOS : command + ,\nWindows : Ctrl + ,\n\n以下の JSON を貼り付けて保存しましょう。\n\nsettings.json\n\nPrettier 設定\n「VSCodeQuickstart」プロジェクトのルートに既に自動生成されているファイルの中身を以下で置き換えましょう。\n\n.prettierrc\n.prettierignore\n\nESLint 設定\n「VSCodeQuickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。\n\n.eslintrc.json\n.eslintignore\n\nJava\nApex コードの入力補完など、Apex に関する拡張機能を使うためには、Java の Runtime のパスを settings.json の salesforcedx-vscode-apex.java.home に設定する必要があります。\nまだ Java をインストールしていない場合は Zulu をインストールしましょう。\n\n手順\n\nNode.js & Yarn\nインストール\nPrettier の一括実行など各種コマンドを実行するために、Node.js をインストールしましょう。\n次の URL からインストーラーをダウンロードしてください。基本的に LTS バージョンで十分です。\n\nNode.js\nYarn\n\nインストーラーをダブルクリックし、デフォルトのままインストールを完了させてください。\n確認\n次のコマンドでインストールが正常に完了していることを確認しましょう。\nバージョンが表示されれば OK です。\nnode -v\nnpm -v\nyarn -v\n\n設定\nいま VS Code で開いている「VSCodeQuickstart」プロジェクトのルートに「package.json」ファイルを新規作成してください。\n\npackage.json\n\nパッケージのバージョンアップ\n以下のコマンドを実行して、パッケージのバージョンを最新化しましょう。\nyarn install\nyarn gulp:init\n\n"
+      "body": "開発ツール\n実は、最初の難関はここにあります。ここで挫折するかたが多いですので、じっくり取り組みましょう。\n\nDeveloper Edition 環境\nTrailhead\nSalesforce IDE\nVS Code Extensions\nJava\nNode.js & Yarn\n\n\nDeveloper Edition 環境\nまず、Salesforce の無料の開発環境を入手しましょう。これを使って Trailhead にログインします。\nすでに持っている場合は、次のセクションへ。\n\nGoogle Chrome または Firefox を開く。（Internet Explorer は非推奨）\nhttps://developer.salesforce.com/signup へアクセスする。\n必要な情報を入力してサインアップする。\n件名「Salesforce へようこそ: アカウントを確認してください」のメールを開いて「アカウントを確認」をクリックする。\n好きなパスワードと秘密の質問を設定して「パスワードを変更」をクリックする。\n歯車アイコン > 「設定」をクリックする。\n左のペインで、「会社の設定」 > 「組織情報」をクリックする。\n「編集」をクリックする。\n「言語のデフォルト値」を \"英語\" に変更して「保存」をクリックする。\n\nTrailhead\n次の単元を通して、Trailhead のアカウントを準備しましょう。\nすでに持っている場合は、次のセクションへ。\n\nTrailhead の使用開始\n\n最後に Quiz があるので理解度をチェックしてみてください。\nSalesforce IDE\nVisual Studio Code のインストール\n次の単元を通して、Salesforce の IDE（統合開発環境）として利用できる Visual Studio Code（VS Code）をインストールしましょう。\n\nVisual Studio Code の使用開始\n\n最後に「ステップを確認」のセクションがあるので、後続の手順で使うために Trailhead Playground を作成しておきましょう。\nSalesforce CLI と Salesforce Extension Pack のインストール\n次の単元を通して、Salesforce CLI と Salesforce Extension Pack をインストールしましょう。\n\nVisual Studio Code の Salesforce 対応\n\n進めているうちに Trailhead Playground を作成する手順が出てきますが、前の単元で作成済みのものを起動して進めてください。\nまだ作成中の場合はしばらく待ってください。\nTrailhead Playground のログインパスワードリセット\nTrailhead サイトから Trailhead Playground を起動する際にはログインパスワードが不要です。\nしかし、Trailhead サイト以外から Trailhead Playground へログインしたい場合には、ログイン ID とパスワードが必要です。\n\nTrailhead サイトから Trailhead Playground を起動する。\n歯車アイコン > 「設定」をクリックする。\n左のペインで、「ユーザ」 > 「ユーザ」をクリックする。\n自分の氏名と同じユーザを探して、「ユーザ名」の値を手元にメモしておく。\n自分の氏名と同じユーザのチェックボックスをチェックし、「パスワードをリセット」をクリックする。\nポップアップ画面の「OK」をクリックする。\n件名「Your Developer Edition パスワードのリセット完了」のメールを開いて、本文のリンクをクリックする。\n件名「Salesforce で ID を確認」のメールに記載されている確認コードを入力して「検証」をクリックする。\n好きなパスワードを設定して「パスワードを変更」をクリックする。パスワードは手元にメモしておく。\n設定したパスワードでログインできるかどうか確かめる。\nアストロのアイコン > 「ログアウト」をクリックする。\nメモしたユーザ名とパスワードを入力して「ログイン」をクリックする。\n「携帯電話を登録」画面が表示された場合は、「電話を登録しません」をクリックする。\n\n\n\nSalesforce IDE の動作確認\n次の単元を通して、IDE の動作確認をしてみましょう。\n\nSalesforce 開発での Visual Studio Code の使用\n\nVS Code Extensions\nさきほど VS Code の拡張機能の Salesforce Extension Pack をインストールしましたが、他にも開発に欠かせない拡張機能が豊富に存在します。\nぜひインストールしましょう。\n\n\n\nNo.\n必須\n名前\nオススメポイント\n\n\n\n\n1\nY\nBracket Pair Colorizer\n括弧のペアを色付きで把握できる\n\n\n2\nY\nCodey Midnight\nSalesforce 開発にぴったりのダークテーマ\n\n\n3\nY\nPrettier - Code formatter\nコードを綺麗に整形してくれる\n\n\n4\nY\nTodo Tree\nTODO コメントを一覧化できる\n\n\n5\nY\nTrailing Spaces\n余分なスペースを削除してくれる\n\n\n6\nY\nzenkaku\n余分な全角スペースをハイライトしてくれる\n\n\n7\n\nApex PMD\nApex コードの静的解析を実行できる\n\n\n8\n\nCodey High Noon\nSalesforce 開発にぴったりのライトテーマ\n\n\n9\n\nGitLens — Git supercharged\nGit のコミットの履歴を追跡しやすくなる\n\n\n10\n\nLive HTML Previewer\nHTML をプレビューできる\n\n\n11\n\nLive Share\nリアルタイムにコードを共有して共同作業できる\n\n\n12\n\nOutput Colorizer\nログに色付けしてくれる\n\n\n\nユーザ設定\nインストールした拡張機能の各種設定を有効化しましょう。\n次のキーボードのショートカットで Settings を開き、右上のアイコン「Open Settings (JSON)」をクリックします。\n\nMacOS : command + ,\nWindows : Ctrl + ,\n\n以下の JSON を貼り付けて保存しましょう。\n\nsettings.json\n\nPrettier 設定\n「VSCodeQuickstart」プロジェクトのルートに既に自動生成されているファイルの中身を以下で置き換えましょう。\n\n.prettierrc\n.prettierignore\n\nESLint 設定\n「VSCodeQuickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。\n\n.eslintrc.json\n.eslintignore\n\nJava\nApex コードの入力補完など、Apex に関する拡張機能を使うためには、Java の Runtime のパスを settings.json の salesforcedx-vscode-apex.java.home に設定する必要があります。\nまだ Java をインストールしていない場合は Zulu をインストールしましょう。\n\n手順\n\nNode.js & Yarn\nインストール\nPrettier の一括実行など各種コマンドを実行するために、Node.js をインストールしましょう。\n次の URL からインストーラーをダウンロードしてください。基本的に LTS バージョンで十分です。\n\nNode.js\nYarn\n\nインストーラーをダブルクリックし、デフォルトのままインストールを完了させてください。\n確認\n次のコマンドでインストールが正常に完了していることを確認しましょう。\nバージョンが表示されれば OK です。\nnode -v\nnpm -v\nyarn -v\n\n設定\nいま VS Code で開いている「VSCodeQuickstart」プロジェクトのルートに「package.json」ファイルを新規作成してください。\n\npackage.json\n\nパッケージのバージョンアップ\n以下のコマンドを実行して、パッケージのバージョンを最新化しましょう。\nyarn install\nyarn gulp:init\n\n"
     }
   }
 }

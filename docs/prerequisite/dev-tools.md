@@ -5,9 +5,9 @@
 1. [Developer Edition 環境](#developer-edition-環境)
 1. [Trailhead](#trailhead)
 1. [Salesforce IDE](#salesforce-ide)
-1. [Extensions](#extensions)
+1. [VS Code Extensions](#vs-code-extensions)
 1. [Java](#java)
-1. [Node.js & Yarn](#)
+1. [Node.js & Yarn](#nodejs--yarn)
 
 ---
 
@@ -79,9 +79,7 @@ Trailhead サイトから Trailhead Playground を起動する際にはログイ
 
 - [Salesforce 開発での Visual Studio Code の使用](https://trailhead.salesforce.com/ja/content/learn/projects/quickstart-vscode-salesforce/use-vscode-for-salesforce)
 
-## Extensions
-
-### VS Code 拡張機能の追加
+## VS Code Extensions
 
 さきほど VS Code の拡張機能の Salesforce Extension Pack をインストールしましたが、他にも開発に欠かせない拡張機能が豊富に存在します。
 ぜひインストールしましょう。
