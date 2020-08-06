@@ -6,7 +6,7 @@ Apex トリガの中級レベルのチュートリアルです。
 
 ---
 
-### **Salesforce Wednesday Online＃01 へご参加いただくみなさまへ**
+### <u>Salesforce Wednesday Online＃01 へご参加いただくみなさまへ</u>
 
 > 申込サイト: https://accenture-technology.connpass.com/event/185277/
 
