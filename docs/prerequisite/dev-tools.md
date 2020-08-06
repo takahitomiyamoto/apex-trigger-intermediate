@@ -3,7 +3,6 @@
 実は、最初の難関はここにあります。ここで挫折するかたが多いですので、じっくり取り組みましょう。
 
 1. [Developer Edition 環境](#developer-edition-環境)
-1. [Trailhead](#trailhead)
 1. [Salesforce IDE](#salesforce-ide)
 1. [VS Code Extensions](#vs-code-extensions)
 1. [Java](#java)
@@ -26,14 +25,7 @@
 1. 「編集」をクリックする。
 1. 「言語のデフォルト値」を "英語" に変更して「保存」をクリックする。
 
-## Trailhead
-
-次の単元を通して、Trailhead のアカウントを準備しましょう。
-すでに持っている場合は、次のセクションへ。
-
-- [Trailhead の使用開始](https://trailhead.salesforce.com/ja/content/learn/modules/trailhead_basics/get-started-with-trailhead)
-
-最後に Quiz があるので理解度をチェックしてみてください。
+---
 
 ## Salesforce IDE
 
@@ -78,6 +70,8 @@ Trailhead サイトから Trailhead Playground を起動する際にはログイ
 次の単元を通して、IDE の動作確認をしてみましょう。
 
 - [Salesforce 開発での Visual Studio Code の使用](https://trailhead.salesforce.com/ja/content/learn/projects/quickstart-vscode-salesforce/use-vscode-for-salesforce)
+
+---
 
 ## VS Code Extensions
 
@@ -127,12 +121,16 @@ Trailhead サイトから Trailhead Playground を起動する際にはログイ
 
 > [.eslintignore](https://github.com/takahitomiyamoto/flexible-apex-trigger/blob/master/.eslintignore)
 
+---
+
 ## Java
 
 Apex コードの入力補完など、Apex に関する拡張機能を使うためには、Java の Runtime のパスを settings.json の salesforcedx-vscode-apex.java.home に設定する必要があります。
 まだ Java をインストールしていない場合は Zulu をインストールしましょう。
 
 - [手順](https://developer.salesforce.com/tools/vscode/ja/getting-started/java-setup/#zulu)
+
+---
 
 ## Node.js & Yarn
 
