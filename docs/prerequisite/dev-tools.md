@@ -2,7 +2,7 @@
 
 実は、最初の難関はここにあります。ここで挫折するかたが多いですので、じっくり取り組みましょう。
 
-1. [Developer Edition 環境](#developer-edition-環境)
+1. [Developer Edition](#developer-edition)
 1. [Salesforce IDE](#salesforce-ide)
 1. [VS Code Extensions](#vs-code-extensions)
 1. [Java](#java)
@@ -10,7 +10,7 @@
 
 ---
 
-## Developer Edition 環境
+## Developer Edition
 
 まず、Salesforce の無料の開発環境を入手しましょう。これを使って Trailhead にログインします。
 すでに持っている場合は、次のセクションへ。
