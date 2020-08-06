@@ -22,7 +22,6 @@
           "https://developer.salesforce.com/signup",
           "ide（統合開発環境）",
           "java",
-          "node",
           "node.j",
           "remot",
           "salesforc",
@@ -417,19 +416,14 @@
             "d": {
               "docs": {},
               "e": {
-                "docs": {
-                  "prerequisite/dev-tools.html": {
-                    "ref": "prerequisite/dev-tools.html",
-                    "tf": 0.018867924528301886
-                  }
-                },
+                "docs": {},
                 ".": {
                   "docs": {},
                   "j": {
                     "docs": {
                       "prerequisite/dev-tools.html": {
                         "ref": "prerequisite/dev-tools.html",
-                        "tf": 0.018867924528301886
+                        "tf": 0.03773584905660377
                       }
                     }
                   }
@@ -1698,7 +1692,7 @@
           }
         }
       },
-      "length": 42
+      "length": 41
     },
     "corpusTokens": [
       "\"英語\"",
@@ -1713,7 +1707,6 @@
       "https://developer.salesforce.com/signup",
       "ide（統合開発環境）",
       "java",
-      "node",
       "node.j",
       "remot",
       "salesforc",
@@ -1751,7 +1744,7 @@
       "url": "prerequisite/dev-tools.html",
       "title": "開発ツール",
       "keywords": "",
-      "body": "開発ツール\n実は、最初の難関はここにあります。ここで挫折するかたが多いですので、じっくり取り組みましょう。\n必須\n\nDeveloper Edition 環境\nTrailhead\nSalesforce IDE（統合開発環境）\nExtensions\nJava\nNode\n\nオプション\n\nRemote Development\n\n\nDeveloper Edition 環境\nまず、Salesforce の無料の開発環境を入手しましょう。これを使って Trailhead にログインします。\nすでに持っている場合は、次のセクションへ。\n\nGoogle Chrome または Firefox を開く。（Internet Explorer は非推奨）\nhttps://developer.salesforce.com/signup へアクセスする。\n必要な情報を入力してサインアップする。\n件名「Salesforce へようこそ: アカウントを確認してください」のメールを開いて「アカウントを確認」をクリックする。\n好きなパスワードと秘密の質問を設定して「パスワードを変更」をクリックする。\n歯車アイコン > 「設定」をクリックする。\n左のペインで、「会社の設定」 > 「組織情報」をクリックする。\n「編集」をクリックする。\n「言語のデフォルト値」を \"英語\" に変更して「保存」をクリックする。\n\nTrailhead\nSalesforce IDE（統合開発環境）\nExtensions\nJava\nNode.js\n"
+      "body": "開発ツール\n実は、最初の難関はここにあります。ここで挫折するかたが多いですので、じっくり取り組みましょう。\n必須\n\nDeveloper Edition 環境\nTrailhead\nSalesforce IDE（統合開発環境）\nExtensions\nJava\nNode.js\n\nオプション\n\nRemote Development\n\n\nDeveloper Edition 環境\nまず、Salesforce の無料の開発環境を入手しましょう。これを使って Trailhead にログインします。\nすでに持っている場合は、次のセクションへ。\n\nGoogle Chrome または Firefox を開く。（Internet Explorer は非推奨）\nhttps://developer.salesforce.com/signup へアクセスする。\n必要な情報を入力してサインアップする。\n件名「Salesforce へようこそ: アカウントを確認してください」のメールを開いて「アカウントを確認」をクリックする。\n好きなパスワードと秘密の質問を設定して「パスワードを変更」をクリックする。\n歯車アイコン > 「設定」をクリックする。\n左のペインで、「会社の設定」 > 「組織情報」をクリックする。\n「編集」をクリックする。\n「言語のデフォルト値」を \"英語\" に変更して「保存」をクリックする。\n\nTrailhead\nSalesforce IDE（統合開発環境）\nExtensions\nJava\nNode.js\n"
     }
   }
 }
