@@ -4,6 +4,14 @@ Apex トリガの中級レベルのチュートリアルです。
 
 テストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。
 
+# 2020.09.09 (Wed) Salesforce Wednesday Online＃01 にご参加いただくみなさまへ
+
+当日は [Warm-up](exercises/warm-up) からスタートします。
+
+[初級者向けコンテンツ](prerequisite/beginner.md) や [開発ツール](prerequisite/dev-tools.md) を実施する時間はありませんので、事前に予習してきてください。
+
+---
+
 ## Acknowledgment
 
 - [flexible-apex-trigger](https://github.com/takahitomiyamoto/flexible-apex-trigger#flexible-apex-trigger)
