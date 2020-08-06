@@ -55,7 +55,7 @@
           "当日は",
           "重要",
           "開発ツール",
-          "開発ツールのセットアップが終わっていないかたは、開発者コンソールにて実施いただきます。",
+          "開発ツールのセットアップが終わっていないかたは、開発者コンソールをご利用ください。",
           "開発手法をいっしょに学びましょう。"
         ]
       },
@@ -1112,33 +1112,27 @@
                                                                       "docs": {},
                                                                       "ル": {
                                                                         "docs": {},
-                                                                        "に": {
+                                                                        "を": {
                                                                           "docs": {},
-                                                                          "て": {
+                                                                          "ご": {
                                                                             "docs": {},
-                                                                            "実": {
+                                                                            "利": {
                                                                               "docs": {},
-                                                                              "施": {
+                                                                              "用": {
                                                                                 "docs": {},
-                                                                                "い": {
+                                                                                "く": {
                                                                                   "docs": {},
-                                                                                  "た": {
+                                                                                  "だ": {
                                                                                     "docs": {},
-                                                                                    "だ": {
+                                                                                    "さ": {
                                                                                       "docs": {},
-                                                                                      "き": {
+                                                                                      "い": {
                                                                                         "docs": {},
-                                                                                        "ま": {
-                                                                                          "docs": {},
-                                                                                          "す": {
-                                                                                            "docs": {},
-                                                                                            "。": {
-                                                                                              "docs": {
-                                                                                                "./": {
-                                                                                                  "ref": "./",
-                                                                                                  "tf": 0.018867924528301886
-                                                                                                }
-                                                                                              }
+                                                                                        "。": {
+                                                                                          "docs": {
+                                                                                            "./": {
+                                                                                              "ref": "./",
+                                                                                              "tf": 0.018867924528301886
                                                                                             }
                                                                                           }
                                                                                         }
@@ -1281,7 +1275,7 @@
       "当日は",
       "重要",
       "開発ツール",
-      "開発ツールのセットアップが終わっていないかたは、開発者コンソールにて実施いただきます。",
+      "開発ツールのセットアップが終わっていないかたは、開発者コンソールをご利用ください。",
       "開発手法をいっしょに学びましょう。"
     ],
     "pipeline": ["stopWordFilter", "stemmer"]
@@ -1291,7 +1285,7 @@
       "url": "./",
       "title": "TOP",
       "keywords": "",
-      "body": "Apex トリガ 中級\nApex トリガの中級レベルのチュートリアルです。\nテストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。\n重要 :loudspeaker:\nSalesforce Wednesday Online＃01 にご参加いただくみなさまへ\n当日は Warm-up からスタートします。\n初級者向けコンテンツ や 開発ツール を実施する時間はありませんので、事前に予習してきてください。\n開発ツールのセットアップが終わっていないかたは、開発者コンソールにて実施いただきます。\n\nAcknowledgment\n\nflexible-apex-trigger\nSFDC trigger framework\nAdvanced Logging with Platform Events\n\nAuthor\nTakahito Miyamoto @takahito0508\n\nAccenture Japan Ltd, 2011-\nSalesforce Einstein Champion, 2019-\nSalesforce MVP, 2020-\nTech Blog\nLifestyle Blog\n\n"
+      "body": "Apex トリガ 中級\nApex トリガの中級レベルのチュートリアルです。\nテストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。\n重要 :loudspeaker:\nSalesforce Wednesday Online＃01 にご参加いただくみなさまへ\n当日は Warm-up からスタートします。\n初級者向けコンテンツ や 開発ツール を実施する時間はありませんので、事前に予習してきてください。\n開発ツールのセットアップが終わっていないかたは、開発者コンソールをご利用ください。\n\nAcknowledgment\n\nflexible-apex-trigger\nSFDC trigger framework\nAdvanced Logging with Platform Events\n\nAuthor\nTakahito Miyamoto @takahito0508\n\nAccenture Japan Ltd, 2011-\nSalesforce Einstein Champion, 2019-\nSalesforce MVP, 2020-\nTech Blog\nLifestyle Blog\n\n"
     }
   }
 }
