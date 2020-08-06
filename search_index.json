@@ -10,11 +10,10 @@
     "documentStore": {
       "store": {
         "./": [
-          "(wed)",
           "2011",
           "2019",
           "2020",
-          "2020.09.09",
+          ":loudspeaker:",
           "@takahito0508",
           "accentur",
           "acknowledg",
@@ -54,6 +53,7 @@
           "中級",
           "初級者向けコンテンツ",
           "当日は",
+          "重要",
           "開発ツール",
           "開発手法をいっしょに学びましょう。"
         ]
@@ -75,27 +75,7 @@
             },
             "2": {
               "0": {
-                "docs": { "./": { "ref": "./", "tf": 0.019230769230769232 } },
-                ".": {
-                  "0": {
-                    "9": {
-                      "docs": {},
-                      ".": {
-                        "0": {
-                          "9": {
-                            "docs": {
-                              "./": { "ref": "./", "tf": 0.019230769230769232 }
-                            }
-                          },
-                          "docs": {}
-                        },
-                        "docs": {}
-                      }
-                    },
-                    "docs": {}
-                  },
-                  "docs": {}
-                }
+                "docs": { "./": { "ref": "./", "tf": 0.019230769230769232 } }
               },
               "docs": {}
             },
@@ -104,16 +84,45 @@
           "docs": {}
         },
         "docs": {},
-        "(": {
+        ":": {
           "docs": {},
-          "w": {
+          "l": {
             "docs": {},
-            "e": {
+            "o": {
               "docs": {},
-              "d": {
+              "u": {
                 "docs": {},
-                ")": {
-                  "docs": { "./": { "ref": "./", "tf": 0.019230769230769232 } }
+                "d": {
+                  "docs": {},
+                  "s": {
+                    "docs": {},
+                    "p": {
+                      "docs": {},
+                      "e": {
+                        "docs": {},
+                        "a": {
+                          "docs": {},
+                          "k": {
+                            "docs": {},
+                            "e": {
+                              "docs": {},
+                              "r": {
+                                "docs": {},
+                                ":": {
+                                  "docs": {
+                                    "./": {
+                                      "ref": "./",
+                                      "tf": 0.019230769230769232
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -1032,6 +1041,12 @@
             }
           }
         },
+        "重": {
+          "docs": {},
+          "要": {
+            "docs": { "./": { "ref": "./", "tf": 0.019230769230769232 } }
+          }
+        },
         "開": {
           "docs": {},
           "発": {
@@ -1101,11 +1116,10 @@
       "length": 46
     },
     "corpusTokens": [
-      "(wed)",
       "2011",
       "2019",
       "2020",
-      "2020.09.09",
+      ":loudspeaker:",
       "@takahito0508",
       "accentur",
       "acknowledg",
@@ -1145,6 +1159,7 @@
       "中級",
       "初級者向けコンテンツ",
       "当日は",
+      "重要",
       "開発ツール",
       "開発手法をいっしょに学びましょう。"
     ],
@@ -1155,7 +1170,7 @@
       "url": "./",
       "title": "TOP",
       "keywords": "",
-      "body": "Apex トリガ 中級\nApex トリガの中級レベルのチュートリアルです。\nテストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。\n2020.09.09 (Wed) Salesforce Wednesday Online＃01 にご参加いただくみなさまへ\n当日は Warm-up からスタートします。\n初級者向けコンテンツ や 開発ツール を実施する時間はありませんので、事前に予習してきてください。\n\nAcknowledgment\n\nflexible-apex-trigger\nSFDC trigger framework\nAdvanced Logging with Platform Events\n\nAuthor\nTakahito Miyamoto @takahito0508\n\nAccenture Japan Ltd, 2011-\nSalesforce Einstein Champion, 2019-\nSalesforce MVP, 2020-\nTech Blog\nLifestyle Blog\n\n"
+      "body": "Apex トリガ 中級\nApex トリガの中級レベルのチュートリアルです。\nテストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。\n重要 :loudspeaker:\nSalesforce Wednesday Online＃01 にご参加いただくみなさまへ\n当日は Warm-up からスタートします。\n初級者向けコンテンツ や 開発ツール を実施する時間はありませんので、事前に予習してきてください。\n\nAcknowledgment\n\nflexible-apex-trigger\nSFDC trigger framework\nAdvanced Logging with Platform Events\n\nAuthor\nTakahito Miyamoto @takahito0508\n\nAccenture Japan Ltd, 2011-\nSalesforce Einstein Champion, 2019-\nSalesforce MVP, 2020-\nTech Blog\nLifestyle Blog\n\n"
     }
   }
 }
