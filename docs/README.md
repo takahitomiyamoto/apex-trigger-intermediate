@@ -4,11 +4,16 @@ Apex トリガの中級レベルのチュートリアルです。
 
 テストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。
 
+---
+
 ## 重要
 
 > [Salesforce Wednesday Online＃01](https://accenture-technology.connpass.com/event/185277/) にご参加いただくみなさまへ
+>
 > 当日は [Warm-up](exercises/warm-up) からスタートします。
+>
 > [初級者向けコンテンツ](prerequisite/beginner.md) や [開発ツール](prerequisite/dev-tools.md) を実施する時間はありませんので、事前に予習してきてください。
+>
 > 開発ツールのセットアップが終わっていないかたは、開発者コンソールをご利用ください。
 
 ---
