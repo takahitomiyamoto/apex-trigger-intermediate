@@ -4,9 +4,7 @@ Apex トリガの中級レベルのチュートリアルです。
 
 テストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。
 
----
-
-## 重要
+:sparkles: :sparkles: :sparkles:
 
 ### **Salesforce Wednesday Online＃01 へご参加いただくみなさまへ**
 
@@ -18,7 +16,7 @@ Apex トリガの中級レベルのチュートリアルです。
 
 開発ツールのセットアップが終わっていないかたは、 **開発者コンソール** をご利用ください。
 
----
+:sparkles: :sparkles: :sparkles:
 
 ## Acknowledgment
 
