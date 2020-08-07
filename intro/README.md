@@ -1,2 +1,0 @@
-- [Common Values](common-values.md)
-- [Curriculum](curriculum.md)
