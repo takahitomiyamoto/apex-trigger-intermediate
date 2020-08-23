@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>VS Code Extensions · Apex Trigger Intermediate</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="generator" content="HonKit 3.6.1" />
+    <meta name="author" content="Takahito Miyamoto" />
+
+    <link rel="stylesheet" href="../gitbook/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="../gitbook/gitbook-plugin-highlight/website.css"
+    />
+
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css" />
+
+    <link
+      rel="stylesheet"
+      href="../gitbook/gitbook-plugin-fontsettings/website.css"
+    />
+
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="../gitbook/images/apple-touch-icon-precomposed-152.png"
+    />
+    <link
+      rel="shortcut icon"
+      href="../gitbook/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="next" href="java.html" />
+
+    <link rel="prev" href="salesforce-ide.html" />
+  </head>
+  <body>
+    <div class="book">
+      <div class="book-summary">
+        <div id="book-search-input" role="search">
+          <input type="text" placeholder="検索ワードを入力" />
+        </div>
+
+        <nav role="navigation">
+          <ul class="summary">
+            <li class="header">はじめに</li>
+
+            <li class="chapter" data-level="1.1" data-path="../">
+              <a href="../">
+                TOP
+              </a>
+            </li>
+
+            <li
+              class="chapter"
+              data-level="1.2"
+              data-path="../intro/common-values.html"
+            >
+              <a href="../intro/common-values.html">
+                Common Values
+              </a>
+            </li>
+
+            <li
+              class="chapter"
+              data-level="1.3"
+              data-path="../intro/curriculum.html"
+            >
+              <a href="../intro/curriculum.html">
+                Curriculum
+              </a>
+            </li>
+
+            <li class="header">事前準備</li>
+
+            <li class="chapter" data-level="2.1" data-path="beginner.html">
+              <a href="beginner.html">
+                初級者向けコンテンツ
+              </a>
+            </li>
+
+            <li class="chapter" data-level="2.2" data-path="dev-tools.html">
+              <a href="dev-tools.html">
+                開発ツール
+              </a>
+
+              <ul class="articles">
+                <li
+                  class="chapter"
+                  data-level="2.2.1"
+                  data-path="developer-edition.html"
+                >
+                  <a href="developer-edition.html">
+                    Developer Edition
+                  </a>
+                </li>
+
+                <li
+                  class="chapter"
+                  data-level="2.2.2"
+                  data-path="salesforce-ide.html"
+                >
+                  <a href="salesforce-ide.html">
+                    Salesforce IDE
+                  </a>
+                </li>
+
+                <li
+                  class="chapter active"
+                  data-level="2.2.3"
+                  data-path="vs-code-extensions.html"
+                >
+                  <a href="vs-code-extensions.html">
+                    VS Code Extensions
+                  </a>
+                </li>
+
+                <li class="chapter" data-level="2.2.4" data-path="java.html">
+                  <a href="java.html">
+                    Java
+                  </a>
+                </li>
+
+                <li class="chapter" data-level="2.2.5" data-path="nodejs.html">
+                  <a href="nodejs.html">
+                    Node.js & Yarn
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="header">演習問題</li>
+
+            <li
+              class="chapter"
+              data-level="3.1"
+              data-path="../exercises/warm-up.html"
+            >
+              <a href="../exercises/warm-up.html">
+                Warm-up
+              </a>
+
+              <ul class="articles">
+                <li
+                  class="chapter"
+                  data-level="3.1.1"
+                  data-path="../exercises/warm-up-answer.html"
+                >
+                  <a href="../exercises/warm-up-answer.html">
+                    解答
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li
+              class="chapter"
+              data-level="3.2"
+              data-path="../exercises/level-01.html"
+            >
+              <a href="../exercises/level-01.html">
+                Lv. 1
+              </a>
+
+              <ul class="articles">
+                <li
+                  class="chapter"
+                  data-level="3.2.1"
+                  data-path="../exercises/level-01-answer.html"
+                >
+                  <a href="../exercises/level-01-answer.html">
+                    解答
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li
+              class="chapter"
+              data-level="3.3"
+              data-path="../exercises/level-02.html"
+            >
+              <a href="../exercises/level-02.html">
+                Lv. 2
+              </a>
+
+              <ul class="articles">
+                <li
+                  class="chapter"
+                  data-level="3.3.1"
+                  data-path="../exercises/level-02-answer.html"
+                >
+                  <a href="../exercises/level-02-answer.html">
+                    解答
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li
+              class="chapter"
+              data-level="3.4"
+              data-path="../exercises/level-03.html"
+            >
+              <a href="../exercises/level-03.html">
+                Lv. 3
+              </a>
+
+              <ul class="articles">
+                <li
+                  class="chapter"
+                  data-level="3.4.1"
+                  data-path="../exercises/level-03-answer.html"
+                >
+                  <a href="../exercises/level-03-answer.html">
+                    解答
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li
+              class="chapter"
+              data-level="3.5"
+              data-path="../exercises/level-04.html"
+            >
+              <a href="../exercises/level-04.html">
+                Lv. 4
+              </a>
+
+              <ul class="articles">
+                <li
+                  class="chapter"
+                  data-level="3.5.1"
+                  data-path="../exercises/level-04-answer.html"
+                >
+                  <a href="../exercises/level-04-answer.html">
+                    解答
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li
+              class="chapter"
+              data-level="3.6"
+              data-path="../exercises/level-05.html"
+            >
+              <a href="../exercises/level-05.html">
+                Lv. 5
+              </a>
+
+              <ul class="articles">
+                <li
+                  class="chapter"
+                  data-level="3.6.1"
+                  data-path="../exercises/level-05-answer.html"
+                >
+                  <a href="../exercises/level-05-answer.html">
+                    解答
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="header">次のステップ</li>
+
+            <li class="chapter" data-level="4.1" data-path="../next-step/">
+              <a href="../next-step/#trailhead">
+                Trailhead
+              </a>
+            </li>
+
+            <li class="chapter" data-level="4.2" data-path="../next-step/">
+              <a href="../next-step/#開発者ガイド">
+                開発者ガイド
+              </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li class="chapter" data-level="5.1" data-path="../">
+              <a href="../#acknowledgment">
+                Acknowledgment
+              </a>
+            </li>
+
+            <li class="chapter" data-level="5.2" data-path="../">
+              <a href="../#author">
+                Author
+              </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li class="chapter" data-level="6.1">
+              <a
+                target="_blank"
+                href="https://github.com/takahitomiyamoto/apex-trigger-intermediate"
+              >
+                View on GitHub
+              </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+              <a
+                href="https://github.com/honkit/honkit"
+                target="blank"
+                class="gitbook-link"
+              >
+                HonKitで公開
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="book-body">
+        <div class="body-inner">
+          <div class="book-header" role="navigation">
+            <!-- Title -->
+            <h1>
+              <i class="fa fa-circle-o-notch fa-spin"></i>
+              <a href="..">VS Code Extensions</a>
+            </h1>
+          </div>
+
+          <div class="page-wrapper" tabindex="-1" role="main">
+            <div class="page-inner">
+              <div id="book-search-results">
+                <div class="search-noresults">
+                  <section class="normal markdown-section">
+                    <h1 id="vs-code-extensions">VS Code Extensions</h1>
+                    <p>
+                      &#x3055;&#x304D;&#x307B;&#x3069; VS Code
+                      &#x306E;&#x62E1;&#x5F35;&#x6A5F;&#x80FD;&#x306E;
+                      Salesforce Extension Pack
+                      &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3057;&#x305F;&#x304C;&#x3001;&#x4ED6;&#x306B;&#x3082;&#x958B;&#x767A;&#x306B;&#x6B20;&#x304B;&#x305B;&#x306A;&#x3044;&#x62E1;&#x5F35;&#x6A5F;&#x80FD;&#x304C;&#x8C4A;&#x5BCC;&#x306B;&#x5B58;&#x5728;&#x3057;&#x307E;&#x3059;&#x3002;
+                      &#x305C;&#x3072;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                    </p>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th style="text-align: left;">No.</th>
+                          <th style="text-align: center;">&#x5FC5;&#x9808;</th>
+                          <th style="text-align: left;">&#x540D;&#x524D;</th>
+                          <th style="text-align: left;">
+                            &#x30AA;&#x30B9;&#x30B9;&#x30E1;&#x30DD;&#x30A4;&#x30F3;&#x30C8;
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="text-align: left;">1</td>
+                          <td style="text-align: center;">Y</td>
+                          <td style="text-align: left;">
+                            <a
+                              href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer"
+                              target="_blank"
+                              >Bracket Pair Colorizer</a
+                            >
+                          </td>
+                          <td style="text-align: left;">
+                            &#x62EC;&#x5F27;&#x306E;&#x30DA;&#x30A2;&#x3092;&#x8272;&#x4ED8;&#x304D;&#x3067;&#x628A;&#x63E1;&#x3067;&#x304D;&#x308B;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: left;">2</td>
+                          <td style="text-align: center;">Y</td>
+                          <td style="text-align: left;">
+                            <a
+                              href="https://marketplace.visualstudio.com/items?itemName=salesforce.codey-midnight"
+                              target="_blank"
+                              >Codey Midnight</a
+                            >
+                          </td>
+                          <td style="text-align: left;">
+                            Salesforce
+                            &#x958B;&#x767A;&#x306B;&#x3074;&#x3063;&#x305F;&#x308A;&#x306E;&#x30C0;&#x30FC;&#x30AF;&#x30C6;&#x30FC;&#x30DE;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: left;">3</td>
+                          <td style="text-align: center;">Y</td>
+                          <td style="text-align: left;">
+                            <a
+                              href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+                              target="_blank"
+                              >Prettier - Code formatter</a
+                            >
+                          </td>
+                          <td style="text-align: left;">
+                            &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x7DBA;&#x9E97;&#x306B;&#x6574;&#x5F62;&#x3057;&#x3066;&#x304F;&#x308C;&#x308B;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: left;">4</td>
+                          <td style="text-align: center;">Y</td>
+                          <td style="text-align: left;">
+                            <a
+                              href="https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree"
+                              target="_blank"
+                              >Todo Tree</a
+                            >
+                          </td>
+                          <td style="text-align: left;">
+                            TODO
+                            &#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x3092;&#x4E00;&#x89A7;&#x5316;&#x3067;&#x304D;&#x308B;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: left;">5</td>
+                          <td style="text-align: center;">Y</td>
+                          <td style="text-align: left;">
+                            <a
+                              href="https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces"
+                              target="_blank"
+                              >Trailing Spaces</a
+                            >
+                          </td>
+                          <td style="text-align: left;">
+                            &#x4F59;&#x5206;&#x306A;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x3092;&#x524A;&#x9664;&#x3057;&#x3066;&#x304F;&#x308C;&#x308B;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: left;">6</td>
+                          <td style="text-align: center;">Y</td>
+                          <td style="text-align: left;">
+                            <a
+                              href="https://marketplace.visualstudio.com/items?itemName=mosapride.zenkaku"
+                              target="_blank"
+                              >zenkaku</a
+                            >
+                          </td>
+                          <td style="text-align: left;">
+                            &#x4F59;&#x5206;&#x306A;&#x5168;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x3092;&#x30CF;&#x30A4;&#x30E9;&#x30A4;&#x30C8;&#x3057;&#x3066;&#x304F;&#x308C;&#x308B;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: left;">7</td>
+                          <td style="text-align: center;"></td>
+                          <td style="text-align: left;">
+                            <a
+                              href="https://marketplace.visualstudio.com/items?itemName=chuckjonas.apex-pmd"
+                              target="_blank"
+                              >Apex PMD</a
+                            >
+                          </td>
+                          <td style="text-align: left;">
+                            Apex
+                            &#x30B3;&#x30FC;&#x30C9;&#x306E;&#x9759;&#x7684;&#x89E3;&#x6790;&#x3092;&#x5B9F;&#x884C;&#x3067;&#x304D;&#x308B;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: left;">8</td>
+                          <td style="text-align: center;"></td>
+                          <td style="text-align: left;">
+                            <a
+                              href="https://marketplace.visualstudio.com/items?itemName=salesforce.codey-high-noon"
+                              target="_blank"
+                              >Codey High Noon</a
+                            >
+                          </td>
+                          <td style="text-align: left;">
+                            Salesforce
+                            &#x958B;&#x767A;&#x306B;&#x3074;&#x3063;&#x305F;&#x308A;&#x306E;&#x30E9;&#x30A4;&#x30C8;&#x30C6;&#x30FC;&#x30DE;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: left;">9</td>
+                          <td style="text-align: center;"></td>
+                          <td style="text-align: left;">
+                            <a
+                              href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens"
+                              target="_blank"
+                              >GitLens &#x2014; Git supercharged</a
+                            >
+                          </td>
+                          <td style="text-align: left;">
+                            Git
+                            &#x306E;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x306E;&#x5C65;&#x6B74;&#x3092;&#x8FFD;&#x8DE1;&#x3057;&#x3084;&#x3059;&#x304F;&#x306A;&#x308B;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: left;">10</td>
+                          <td style="text-align: center;"></td>
+                          <td style="text-align: left;">
+                            <a
+                              href="https://marketplace.visualstudio.com/items?itemName=hdg.live-html-previewer"
+                              target="_blank"
+                              >Live HTML Previewer</a
+                            >
+                          </td>
+                          <td style="text-align: left;">
+                            HTML
+                            &#x3092;&#x30D7;&#x30EC;&#x30D3;&#x30E5;&#x30FC;&#x3067;&#x304D;&#x308B;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: left;">11</td>
+                          <td style="text-align: center;"></td>
+                          <td style="text-align: left;">
+                            <a
+                              href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare"
+                              target="_blank"
+                              >Live Share</a
+                            >
+                          </td>
+                          <td style="text-align: left;">
+                            &#x30EA;&#x30A2;&#x30EB;&#x30BF;&#x30A4;&#x30E0;&#x306B;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x5171;&#x6709;&#x3057;&#x3066;&#x5171;&#x540C;&#x4F5C;&#x696D;&#x3067;&#x304D;&#x308B;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: left;">12</td>
+                          <td style="text-align: center;"></td>
+                          <td style="text-align: left;">
+                            <a
+                              href="https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer"
+                              target="_blank"
+                              >Output Colorizer</a
+                            >
+                          </td>
+                          <td style="text-align: left;">
+                            &#x30ED;&#x30B0;&#x306B;&#x8272;&#x4ED8;&#x3051;&#x3057;&#x3066;&#x304F;&#x308C;&#x308B;
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <h2 id="&#x30E6;&#x30FC;&#x30B6;&#x8A2D;&#x5B9A;">
+                      &#x30E6;&#x30FC;&#x30B6;&#x8A2D;&#x5B9A;
+                    </h2>
+                    <p>
+                      &#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x305F;&#x62E1;&#x5F35;&#x6A5F;&#x80FD;&#x306E;&#x5404;&#x7A2E;&#x8A2D;&#x5B9A;&#x3092;&#x6709;&#x52B9;&#x5316;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                      &#x6B21;&#x306E;&#x30AD;&#x30FC;&#x30DC;&#x30FC;&#x30C9;&#x306E;&#x30B7;&#x30E7;&#x30FC;&#x30C8;&#x30AB;&#x30C3;&#x30C8;&#x3067;
+                      Settings
+                      &#x3092;&#x958B;&#x304D;&#x3001;&#x53F3;&#x4E0A;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x300C;Open
+                      Settings
+                      (JSON)&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <ul>
+                      <li>MacOS : command + ,</li>
+                      <li>Windows : Ctrl + ,</li>
+                    </ul>
+                    <p>
+                      &#x4EE5;&#x4E0B;&#x306E; JSON
+                      &#x3092;&#x8CBC;&#x308A;&#x4ED8;&#x3051;&#x3066;&#x4FDD;&#x5B58;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                    </p>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://github.com/takahitomiyamoto/flexible-apex-trigger/blob/master/.vscode/settings.json"
+                          target="_blank"
+                          >settings.json</a
+                        >
+                      </li>
+                    </ul>
+                    <h2 id="prettier-&#x8A2D;&#x5B9A;">
+                      Prettier &#x8A2D;&#x5B9A;
+                    </h2>
+                    <p>
+                      &#x300C;VSCodeQuickstart&#x300D;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x30EB;&#x30FC;&#x30C8;&#x306B;&#x65E2;&#x306B;&#x81EA;&#x52D5;&#x751F;&#x6210;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4E2D;&#x8EAB;&#x3092;&#x4EE5;&#x4E0B;&#x3067;&#x7F6E;&#x304D;&#x63DB;&#x3048;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                    </p>
+                    <blockquote>
+                      <p>
+                        <a
+                          href="https://github.com/takahitomiyamoto/flexible-apex-trigger/blob/master/.prettierrc"
+                          target="_blank"
+                          >.prettierrc</a
+                        >
+                      </p>
+                      <p>
+                        <a
+                          href="https://github.com/takahitomiyamoto/flexible-apex-trigger/blob/master/.prettierignore"
+                          target="_blank"
+                          >.prettierignore</a
+                        >
+                      </p>
+                    </blockquote>
+                    <h2 id="eslint-&#x8A2D;&#x5B9A;">
+                      ESLint &#x8A2D;&#x5B9A;
+                    </h2>
+                    <p>
+                      &#x300C;VSCodeQuickstart&#x300D;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x30EB;&#x30FC;&#x30C8;&#x306B;&#x306F;&#x5B58;&#x5728;&#x3057;&#x3066;&#x3044;&#x306A;&#x3044;&#x306E;&#x3067;&#x3001;&#x6B21;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                    </p>
+                    <blockquote>
+                      <p>
+                        <a
+                          href="https://github.com/takahitomiyamoto/flexible-apex-trigger/blob/master/.eslintrc.json"
+                          target="_blank"
+                          >.eslintrc.json</a
+                        >
+                      </p>
+                      <p>
+                        <a
+                          href="https://github.com/takahitomiyamoto/flexible-apex-trigger/blob/master/.eslintignore"
+                          target="_blank"
+                          >.eslintignore</a
+                        >
+                      </p>
+                    </blockquote>
+                  </section>
+                </div>
+                <div class="search-results">
+                  <div class="has-results">
+                    <h1 class="search-results-title">
+                      <span class="search-results-count"></span> results
+                      matching "<span class="search-query"></span>"
+                    </h1>
+                    <ul class="search-results-list"></ul>
+                  </div>
+                  <div class="no-results">
+                    <h1 class="search-results-title">
+                      No results matching "<span class="search-query"></span>"
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="salesforce-ide.html"
+          class="navigation navigation-prev"
+          aria-label="Previous page: Salesforce IDE"
+        >
+          <i class="fa fa-angle-left"></i>
+        </a>
+
+        <a
+          href="java.html"
+          class="navigation navigation-next"
+          aria-label="Next page: Java"
+        >
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </div>
+
+      <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function () {
+          gitbook.page.hasChanged({
+            page: {
+              title: 'VS Code Extensions',
+              level: '2.2.3',
+              depth: 2,
+              next: {
+                title: 'Java',
+                level: '2.2.4',
+                depth: 2,
+                path: 'prerequisite/java.md',
+                ref: 'prerequisite/java.md',
+                articles: []
+              },
+              previous: {
+                title: 'Salesforce IDE',
+                level: '2.2.2',
+                depth: 2,
+                path: 'prerequisite/salesforce-ide.md',
+                ref: 'prerequisite/salesforce-ide.md',
+                articles: []
+              },
+              dir: 'ltr'
+            },
+            config: {
+              plugins: [],
+              root: './docs',
+              styles: {
+                website: 'styles/website.css',
+                pdf: 'styles/pdf.css',
+                epub: 'styles/epub.css',
+                mobi: 'styles/mobi.css',
+                ebook: 'styles/ebook.css',
+                print: 'styles/print.css'
+              },
+              pluginsConfig: {
+                highlight: {},
+                search: {},
+                lunr: { maxIndexSize: 1000000, ignoreSpecialCharacters: false },
+                fontsettings: { theme: 'white', family: 'sans', size: 2 },
+                'theme-default': {
+                  styles: {
+                    website: 'styles/website.css',
+                    pdf: 'styles/pdf.css',
+                    epub: 'styles/epub.css',
+                    mobi: 'styles/mobi.css',
+                    ebook: 'styles/ebook.css',
+                    print: 'styles/print.css'
+                  },
+                  showLevel: false
+                }
+              },
+              'pdf.embedFonts': 'false',
+              theme: 'default',
+              'structure.readme': 'docs/README.md',
+              'pdf.margin.left': '62',
+              author: 'Takahito Miyamoto',
+              'structure.summary': 'docs/SUMMARY.md',
+              'pdf.fontSize': '12',
+              'pdf.margin.bottom': '56',
+              'pdf.fontFamily': 'Arial',
+              'pdf.paperSize': 'a4',
+              'pdf.margin.top': '56',
+              pdf: {
+                pageNumbers: true,
+                fontSize: 12,
+                fontFamily: 'Arial',
+                paperSize: 'a4',
+                chapterMark: 'pagebreak',
+                pageBreaksBefore: '/',
+                margin: { right: 62, left: 62, top: 56, bottom: 56 },
+                embedFonts: false
+              },
+              structure: {
+                langs: 'LANGS.md',
+                readme: 'README.md',
+                glossary: 'GLOSSARY.md',
+                summary: 'SUMMARY.md'
+              },
+              variables: {},
+              'pdf.margin.right': '62',
+              title: 'Apex Trigger Intermediate',
+              language: 'ja',
+              gitbook: '*',
+              description: 'Apex トリガの中級レベルのチュートリアルです。',
+              'pdf.pageNumbers': 'true'
+            },
+            file: {
+              path: 'prerequisite/vs-code-extensions.md',
+              mtime: '2020-08-23T10:15:22.186Z',
+              type: 'markdown'
+            },
+            gitbook: { version: '3.6.1', time: '2020-08-23T10:21:10.194Z' },
+            basePath: '..',
+            book: { language: '' }
+          });
+        });
+      </script>
+    </div>
+
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+
+    <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+
+    <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+
+    <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+
+    <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+
+    <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+  </body>
+</html>
