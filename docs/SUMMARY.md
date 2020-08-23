@@ -32,7 +32,7 @@
   - [解答](exercises/level-03-answer.md)
 - [Lv. 4](exercises/level-04.md)
   - [解答](exercises/level-04-answer.md)
-- [:+1: Lv. 5](exercises/level-05.md)
+- [Lv. 5](exercises/level-05.md)
   - [解答](exercises/level-05-answer.md)
 
 ---
