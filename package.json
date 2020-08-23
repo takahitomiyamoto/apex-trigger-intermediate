@@ -1,7 +1,7 @@
 {
   "name": "apex-trigger-intermediate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Apex トリガの中級レベルのチュートリアルです。",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/takahitomiyamoto/apex-trigger-intermediate.git"
