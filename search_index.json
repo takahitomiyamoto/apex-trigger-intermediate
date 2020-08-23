@@ -7,10 +7,254 @@
       { "name": "body", "boost": 1 }
     ],
     "ref": "url",
-    "documentStore": { "store": {}, "length": 0 },
-    "tokenStore": { "root": { "docs": {} }, "length": 0 },
-    "corpusTokens": [],
+    "documentStore": {
+      "store": {
+        "exercises/warm-up.html": [
+          "apex",
+          "up",
+          "warm",
+          "まずは、シンプルな",
+          "アーキテクチャ要件",
+          "シンプルな",
+          "トリガを書いてみましょう。",
+          "トリガを書いてみよう",
+          "ビジネス要件"
+        ]
+      },
+      "length": 1
+    },
+    "tokenStore": {
+      "root": {
+        "docs": {},
+        "a": {
+          "docs": {},
+          "p": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "x": {
+                "docs": {
+                  "exercises/warm-up.html": {
+                    "ref": "exercises/warm-up.html",
+                    "tf": 0.2
+                  }
+                }
+              }
+            }
+          }
+        },
+        "u": {
+          "docs": {},
+          "p": {
+            "docs": {
+              "exercises/warm-up.html": {
+                "ref": "exercises/warm-up.html",
+                "tf": 5.1
+              }
+            }
+          }
+        },
+        "w": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "m": {
+                "docs": {
+                  "exercises/warm-up.html": {
+                    "ref": "exercises/warm-up.html",
+                    "tf": 5.1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ま": {
+          "docs": {},
+          "ず": {
+            "docs": {},
+            "は": {
+              "docs": {},
+              "、": {
+                "docs": {},
+                "シ": {
+                  "docs": {},
+                  "ン": {
+                    "docs": {},
+                    "プ": {
+                      "docs": {},
+                      "ル": {
+                        "docs": {},
+                        "な": {
+                          "docs": {
+                            "exercises/warm-up.html": {
+                              "ref": "exercises/warm-up.html",
+                              "tf": 0.1
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ア": {
+          "docs": {},
+          "ー": {
+            "docs": {},
+            "キ": {
+              "docs": {},
+              "テ": {
+                "docs": {},
+                "ク": {
+                  "docs": {},
+                  "チ": {
+                    "docs": {},
+                    "ャ": {
+                      "docs": {},
+                      "要": {
+                        "docs": {},
+                        "件": {
+                          "docs": {
+                            "exercises/warm-up.html": {
+                              "ref": "exercises/warm-up.html",
+                              "tf": 0.1
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "シ": {
+          "docs": {},
+          "ン": {
+            "docs": {},
+            "プ": {
+              "docs": {},
+              "ル": {
+                "docs": {},
+                "な": {
+                  "docs": {
+                    "exercises/warm-up.html": {
+                      "ref": "exercises/warm-up.html",
+                      "tf": 0.1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ト": {
+          "docs": {},
+          "リ": {
+            "docs": {},
+            "ガ": {
+              "docs": {},
+              "を": {
+                "docs": {},
+                "書": {
+                  "docs": {},
+                  "い": {
+                    "docs": {},
+                    "て": {
+                      "docs": {},
+                      "み": {
+                        "docs": {},
+                        "ま": {
+                          "docs": {},
+                          "し": {
+                            "docs": {},
+                            "ょ": {
+                              "docs": {},
+                              "う": {
+                                "docs": {},
+                                "。": {
+                                  "docs": {
+                                    "exercises/warm-up.html": {
+                                      "ref": "exercises/warm-up.html",
+                                      "tf": 0.1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "よ": {
+                          "docs": {},
+                          "う": {
+                            "docs": {
+                              "exercises/warm-up.html": {
+                                "ref": "exercises/warm-up.html",
+                                "tf": 0.1
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ビ": {
+          "docs": {},
+          "ジ": {
+            "docs": {},
+            "ネ": {
+              "docs": {},
+              "ス": {
+                "docs": {},
+                "要": {
+                  "docs": {},
+                  "件": {
+                    "docs": {
+                      "exercises/warm-up.html": {
+                        "ref": "exercises/warm-up.html",
+                        "tf": 0.1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "length": 9
+    },
+    "corpusTokens": [
+      "apex",
+      "up",
+      "warm",
+      "まずは、シンプルな",
+      "アーキテクチャ要件",
+      "シンプルな",
+      "トリガを書いてみましょう。",
+      "トリガを書いてみよう",
+      "ビジネス要件"
+    ],
     "pipeline": ["stopWordFilter", "stemmer"]
   },
-  "store": {}
+  "store": {
+    "exercises/warm-up.html": {
+      "url": "exercises/warm-up.html",
+      "title": "Warm-up",
+      "keywords": "",
+      "body": "Warm-up\nシンプルな Apex トリガを書いてみよう\nまずは、シンプルな Apex トリガを書いてみましょう。\nビジネス要件\nアーキテクチャ要件\n"
+    }
+  }
 }
