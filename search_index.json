@@ -9,18 +9,6 @@
     "ref": "url",
     "documentStore": {
       "store": {
-        "prerequisite/dev-hub.html": [
-          "dev",
-          "develop",
-          "edit",
-          "hub",
-          "の有効化",
-          "を有効化してある組織を持っている場合は、次のセクションへ。",
-          "を有効化しましょう。",
-          "既に",
-          "演習問題を進めるうえで、スクラッチ組織を利用すると便利です。",
-          "組織上で"
-        ],
         "exercises/warm-up-answer.html": [
           "\"befor",
           "(befor",
@@ -64,7 +52,7 @@
           "解答"
         ]
       },
-      "length": 2
+      "length": 1
     },
     "tokenStore": {
       "root": {
@@ -77,378 +65,6 @@
           }
         },
         "docs": {},
-        "d": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.038461538461538464
-            }
-          },
-          "e": {
-            "docs": {},
-            "v": {
-              "docs": {
-                "prerequisite/dev-hub.html": {
-                  "ref": "prerequisite/dev-hub.html",
-                  "tf": 5.25
-                }
-              },
-              "e": {
-                "docs": {},
-                "l": {
-                  "docs": {},
-                  "o": {
-                    "docs": {},
-                    "p": {
-                      "docs": {
-                        "prerequisite/dev-hub.html": {
-                          "ref": "prerequisite/dev-hub.html",
-                          "tf": 0.0625
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "h": {
-                "docs": {},
-                "u": {
-                  "docs": {},
-                  "b": {
-                    "docs": {
-                      "exercises/warm-up-answer.html": {
-                        "ref": "exercises/warm-up-answer.html",
-                        "tf": 0.019230769230769232
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "f": {
-              "docs": {},
-              ".": {
-                "docs": {},
-                "j": {
-                  "docs": {},
-                  "s": {
-                    "docs": {},
-                    "o": {
-                      "docs": {},
-                      "n": {
-                        "docs": {
-                          "exercises/warm-up-answer.html": {
-                            "ref": "exercises/warm-up-answer.html",
-                            "tf": 0.019230769230769232
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "m": {
-              "docs": {},
-              "o": {
-                "docs": {
-                  "exercises/warm-up-answer.html": {
-                    "ref": "exercises/warm-up-answer.html",
-                    "tf": 0.057692307692307696
-                  }
-                }
-              }
-            }
-          }
-        },
-        "e": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.019230769230769232
-            }
-          },
-          "d": {
-            "docs": {},
-            "i": {
-              "docs": {},
-              "t": {
-                "docs": {
-                  "prerequisite/dev-hub.html": {
-                    "ref": "prerequisite/dev-hub.html",
-                    "tf": 0.0625
-                  }
-                }
-              }
-            }
-          }
-        },
-        "h": {
-          "docs": {},
-          "u": {
-            "docs": {},
-            "b": {
-              "docs": {
-                "prerequisite/dev-hub.html": {
-                  "ref": "prerequisite/dev-hub.html",
-                  "tf": 5.25
-                }
-              }
-            }
-          }
-        },
-        "の": {
-          "docs": {},
-          "有": {
-            "docs": {},
-            "効": {
-              "docs": {},
-              "化": {
-                "docs": {
-                  "prerequisite/dev-hub.html": {
-                    "ref": "prerequisite/dev-hub.html",
-                    "tf": 0.0625
-                  }
-                }
-              }
-            }
-          }
-        },
-        "を": {
-          "docs": {},
-          "有": {
-            "docs": {},
-            "効": {
-              "docs": {},
-              "化": {
-                "docs": {},
-                "し": {
-                  "docs": {},
-                  "て": {
-                    "docs": {},
-                    "あ": {
-                      "docs": {},
-                      "る": {
-                        "docs": {},
-                        "組": {
-                          "docs": {},
-                          "織": {
-                            "docs": {},
-                            "を": {
-                              "docs": {},
-                              "持": {
-                                "docs": {},
-                                "っ": {
-                                  "docs": {},
-                                  "て": {
-                                    "docs": {},
-                                    "い": {
-                                      "docs": {},
-                                      "る": {
-                                        "docs": {},
-                                        "場": {
-                                          "docs": {},
-                                          "合": {
-                                            "docs": {},
-                                            "は": {
-                                              "docs": {},
-                                              "、": {
-                                                "docs": {},
-                                                "次": {
-                                                  "docs": {},
-                                                  "の": {
-                                                    "docs": {},
-                                                    "セ": {
-                                                      "docs": {},
-                                                      "ク": {
-                                                        "docs": {},
-                                                        "シ": {
-                                                          "docs": {},
-                                                          "ョ": {
-                                                            "docs": {},
-                                                            "ン": {
-                                                              "docs": {},
-                                                              "へ": {
-                                                                "docs": {},
-                                                                "。": {
-                                                                  "docs": {
-                                                                    "prerequisite/dev-hub.html": {
-                                                                      "ref": "prerequisite/dev-hub.html",
-                                                                      "tf": 0.0625
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "ま": {
-                    "docs": {},
-                    "し": {
-                      "docs": {},
-                      "ょ": {
-                        "docs": {},
-                        "う": {
-                          "docs": {},
-                          "。": {
-                            "docs": {
-                              "prerequisite/dev-hub.html": {
-                                "ref": "prerequisite/dev-hub.html",
-                                "tf": 0.0625
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "既": {
-          "docs": {},
-          "に": {
-            "docs": {
-              "prerequisite/dev-hub.html": {
-                "ref": "prerequisite/dev-hub.html",
-                "tf": 0.0625
-              }
-            }
-          }
-        },
-        "演": {
-          "docs": {},
-          "習": {
-            "docs": {},
-            "問": {
-              "docs": {},
-              "題": {
-                "docs": {},
-                "を": {
-                  "docs": {},
-                  "進": {
-                    "docs": {},
-                    "め": {
-                      "docs": {},
-                      "る": {
-                        "docs": {},
-                        "う": {
-                          "docs": {},
-                          "え": {
-                            "docs": {},
-                            "で": {
-                              "docs": {},
-                              "、": {
-                                "docs": {},
-                                "ス": {
-                                  "docs": {},
-                                  "ク": {
-                                    "docs": {},
-                                    "ラ": {
-                                      "docs": {},
-                                      "ッ": {
-                                        "docs": {},
-                                        "チ": {
-                                          "docs": {},
-                                          "組": {
-                                            "docs": {},
-                                            "織": {
-                                              "docs": {},
-                                              "を": {
-                                                "docs": {},
-                                                "利": {
-                                                  "docs": {},
-                                                  "用": {
-                                                    "docs": {},
-                                                    "す": {
-                                                      "docs": {},
-                                                      "る": {
-                                                        "docs": {},
-                                                        "と": {
-                                                          "docs": {},
-                                                          "便": {
-                                                            "docs": {},
-                                                            "利": {
-                                                              "docs": {},
-                                                              "で": {
-                                                                "docs": {},
-                                                                "す": {
-                                                                  "docs": {},
-                                                                  "。": {
-                                                                    "docs": {
-                                                                      "prerequisite/dev-hub.html": {
-                                                                        "ref": "prerequisite/dev-hub.html",
-                                                                        "tf": 0.0625
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "組": {
-          "docs": {},
-          "織": {
-            "docs": {},
-            "上": {
-              "docs": {},
-              "で": {
-                "docs": {
-                  "prerequisite/dev-hub.html": {
-                    "ref": "prerequisite/dev-hub.html",
-                    "tf": 0.0625
-                  }
-                }
-              }
-            }
-          }
-        },
         "\"": {
           "docs": {},
           "b": {
@@ -721,6 +337,76 @@
                   }
                 }
               }
+            }
+          }
+        },
+        "d": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.038461538461538464
+            }
+          },
+          "e": {
+            "docs": {},
+            "f": {
+              "docs": {},
+              ".": {
+                "docs": {},
+                "j": {
+                  "docs": {},
+                  "s": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "n": {
+                        "docs": {
+                          "exercises/warm-up-answer.html": {
+                            "ref": "exercises/warm-up-answer.html",
+                            "tf": 0.019230769230769232
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "m": {
+              "docs": {},
+              "o": {
+                "docs": {
+                  "exercises/warm-up-answer.html": {
+                    "ref": "exercises/warm-up-answer.html",
+                    "tf": 0.057692307692307696
+                  }
+                }
+              }
+            },
+            "v": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "b": {
+                    "docs": {
+                      "exercises/warm-up-answer.html": {
+                        "ref": "exercises/warm-up-answer.html",
+                        "tf": 0.019230769230769232
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "e": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.019230769230769232
             }
           }
         },
@@ -1202,7 +888,7 @@
           }
         }
       },
-      "length": 50
+      "length": 40
     },
     "corpusTokens": [
       "\"befor",
@@ -1219,17 +905,13 @@
       "d",
       "def.json",
       "demo",
-      "dev",
-      "develop",
       "devhub",
       "e",
-      "edit",
       "f",
       "forc",
       "force:apex:trigger:cr",
       "force:org:cr",
       "force:project:cr",
-      "hub",
       "insert\"",
       "insert)",
       "n",
@@ -1245,31 +927,19 @@
       "x",
       "{",
       "}",
-      "の有効化",
-      "を有効化してある組織を持っている場合は、次のセクションへ。",
-      "を有効化しましょう。",
       "スクラッチ組織を作成します。",
       "トリガを作成します。",
       "プロジェクトを作成します。",
-      "既に",
-      "演習問題を進めるうえで、スクラッチ組織を利用すると便利です。",
-      "組織上で",
       "解答"
     ],
     "pipeline": ["stopWordFilter", "stemmer"]
   },
   "store": {
-    "prerequisite/dev-hub.html": {
-      "url": "prerequisite/dev-hub.html",
-      "title": "Dev Hub",
-      "keywords": "",
-      "body": "Dev Hub\n演習問題を進めるうえで、スクラッチ組織を利用すると便利です。\nDeveloper Edition 組織上で Dev Hub を有効化しましょう。\n既に Dev Hub を有効化してある組織を持っている場合は、次のセクションへ。\n\nDev Hub の有効化\n\n"
-    },
     "exercises/warm-up-answer.html": {
       "url": "exercises/warm-up-answer.html",
       "title": "解答",
       "keywords": "",
-      "body": "Warm-up 解答\n\nプロジェクトを作成します。\n\nsfdx force:project:create -n demo -t standard -x\n\ncd demo\n\n\nスクラッチ組織を作成します。\n\nsfdx force:org:create -a demo -d 7 -f config/project-scratch-def.json -s -t scratch -v DevHub\n\n\nApex トリガを作成します。\n\nsfdx force:apex:trigger:create -d force-app/main/default/triggers -e \"before insert\" -n AccountTrigger -s Account -t ApexTrigger\n\nAccountTrigger.trigger\ntrigger AccountTrigger on Account (before insert) {\n\n}\n\n"
+      "body": "Warm-up 解答\nプロジェクトを作成します。\nsfdx force:project:create -n demo -t standard -x\n\ncd demo\n\nスクラッチ組織を作成します。\nsfdx force:org:create -a demo -d 7 -f config/project-scratch-def.json -s -t scratch -v DevHub\n\nApex トリガを作成します。\nsfdx force:apex:trigger:create -d force-app/main/default/triggers -e \"before insert\" -n AccountTrigger -s Account -t ApexTrigger\n\nAccountTrigger.trigger\ntrigger AccountTrigger on Account (before insert) {\n\n}\n\n"
     }
   }
 }
