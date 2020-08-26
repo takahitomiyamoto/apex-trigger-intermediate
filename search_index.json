@@ -9,6 +9,97 @@
     "ref": "url",
     "documentStore": {
       "store": {
+        "prerequisite/vs-code-extensions.html": [
+          "(json)」をクリックします。",
+          "+",
+          ",",
+          ".eslintignor",
+          ".eslintrc.json",
+          ".prettierignor",
+          ".prettierrc",
+          "1",
+          "10",
+          "11",
+          "12",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          ":",
+          "apex",
+          "bracket",
+          "code",
+          "codey",
+          "color",
+          "command",
+          "ctrl",
+          "eslint",
+          "extens",
+          "formatt",
+          "git",
+          "gitlen",
+          "high",
+          "html",
+          "json",
+          "live",
+          "maco",
+          "midnight",
+          "no.",
+          "noon",
+          "output",
+          "pack",
+          "pair",
+          "pmd",
+          "prettier",
+          "preview",
+          "ruleset.xml",
+          "salesforc",
+          "set",
+          "settings.json",
+          "share",
+          "space",
+          "supercharg",
+          "todo",
+          "trail",
+          "tree",
+          "vs",
+          "window",
+          "y",
+          "zenkaku",
+          "—",
+          "「vscodequickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。",
+          "「vscodequickstart」プロジェクトのルートに既に自動生成されているファイルの中身を以下で置き換えましょう。",
+          "さきほど",
+          "ぜひインストールしましょう。",
+          "のコミットの履歴を追跡しやすくなる",
+          "の拡張機能の",
+          "をインストールしましたが、他にも開発に欠かせない拡張機能が豊富に存在します。",
+          "をプレビューできる",
+          "を貼り付けて保存しましょう。",
+          "を開き、右上のアイコン「open",
+          "インストールした拡張機能の各種設定を有効化しましょう。",
+          "オススメポイント",
+          "コメントを一覧化できる",
+          "コードの静的解析を実行できる",
+          "コードを綺麗に整形してくれる",
+          "ユーザ設定",
+          "リアルタイムにコードを共有して共同作業できる",
+          "ログに色付けしてくれる",
+          "以下の",
+          "余分なスペースを削除してくれる",
+          "余分な全角スペースをハイライトしてくれる",
+          "名前",
+          "必須",
+          "括弧のペアを色付きで把握できる",
+          "次のキーボードのショートカットで",
+          "設定",
+          "開発にぴったりのダークテーマ",
+          "開発にぴったりのライトテーマ"
+        ],
         "exercises/warm-up-answer.html": [
           "\"befor",
           "(befor",
@@ -19,7 +110,6 @@
           "apex",
           "apextrigg",
           "app/main/default/trigg",
-          "cd",
           "config/project",
           "d",
           "def.json",
@@ -30,144 +120,172 @@
           "forc",
           "force:apex:trigger:cr",
           "force:org:cr",
-          "force:project:cr",
+          "force:org:open",
+          "force:source:push",
           "insert\"",
           "insert)",
           "n",
+          "p",
+          "project",
           "s",
           "scratch",
           "sfdx",
-          "standard",
           "t",
           "trigger",
+          "u",
           "up",
           "v",
           "warm",
-          "x",
           "{",
           "}",
+          "の中身を次の内容で書き換えます。",
+          "スクラッチ組織へプッシュします。",
           "スクラッチ組織を作成します。",
+          "スクラッチ組織を開きます。",
           "トリガを作成します。",
-          "プロジェクトを作成します。",
           "解答"
         ]
       },
-      "length": 1
+      "length": 2
     },
     "tokenStore": {
       "root": {
+        "1": {
+          "0": {
+            "docs": {
+              "prerequisite/vs-code-extensions.html": {
+                "ref": "prerequisite/vs-code-extensions.html",
+                "tf": 0.00847457627118644
+              }
+            }
+          },
+          "1": {
+            "docs": {
+              "prerequisite/vs-code-extensions.html": {
+                "ref": "prerequisite/vs-code-extensions.html",
+                "tf": 0.00847457627118644
+              }
+            }
+          },
+          "2": {
+            "docs": {
+              "prerequisite/vs-code-extensions.html": {
+                "ref": "prerequisite/vs-code-extensions.html",
+                "tf": 0.00847457627118644
+              }
+            }
+          },
+          "docs": {
+            "prerequisite/vs-code-extensions.html": {
+              "ref": "prerequisite/vs-code-extensions.html",
+              "tf": 0.00847457627118644
+            }
+          }
+        },
+        "2": {
+          "docs": {
+            "prerequisite/vs-code-extensions.html": {
+              "ref": "prerequisite/vs-code-extensions.html",
+              "tf": 0.00847457627118644
+            }
+          }
+        },
+        "3": {
+          "docs": {
+            "prerequisite/vs-code-extensions.html": {
+              "ref": "prerequisite/vs-code-extensions.html",
+              "tf": 0.00847457627118644
+            }
+          }
+        },
+        "4": {
+          "docs": {
+            "prerequisite/vs-code-extensions.html": {
+              "ref": "prerequisite/vs-code-extensions.html",
+              "tf": 0.00847457627118644
+            }
+          }
+        },
+        "5": {
+          "docs": {
+            "prerequisite/vs-code-extensions.html": {
+              "ref": "prerequisite/vs-code-extensions.html",
+              "tf": 0.00847457627118644
+            }
+          }
+        },
+        "6": {
+          "docs": {
+            "prerequisite/vs-code-extensions.html": {
+              "ref": "prerequisite/vs-code-extensions.html",
+              "tf": 0.00847457627118644
+            }
+          }
+        },
         "7": {
           "docs": {
+            "prerequisite/vs-code-extensions.html": {
+              "ref": "prerequisite/vs-code-extensions.html",
+              "tf": 0.00847457627118644
+            },
             "exercises/warm-up-answer.html": {
               "ref": "exercises/warm-up-answer.html",
-              "tf": 0.019230769230769232
+              "tf": 0.016666666666666666
+            }
+          }
+        },
+        "8": {
+          "docs": {
+            "prerequisite/vs-code-extensions.html": {
+              "ref": "prerequisite/vs-code-extensions.html",
+              "tf": 0.00847457627118644
+            }
+          }
+        },
+        "9": {
+          "docs": {
+            "prerequisite/vs-code-extensions.html": {
+              "ref": "prerequisite/vs-code-extensions.html",
+              "tf": 0.00847457627118644
             }
           }
         },
         "docs": {},
-        "\"": {
-          "docs": {},
-          "b": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "f": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "r": {
-                    "docs": {
-                      "exercises/warm-up-answer.html": {
-                        "ref": "exercises/warm-up-answer.html",
-                        "tf": 0.019230769230769232
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "(": {
           "docs": {},
-          "b": {
+          "j": {
             "docs": {},
-            "e": {
-              "docs": {},
-              "f": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "r": {
-                    "docs": {
-                      "exercises/warm-up-answer.html": {
-                        "ref": "exercises/warm-up-answer.html",
-                        "tf": 0.019230769230769232
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "a": {
-          "docs": {},
-          "c": {
-            "docs": {},
-            "c": {
+            "s": {
               "docs": {},
               "o": {
                 "docs": {},
-                "u": {
+                "n": {
                   "docs": {},
-                  "n": {
+                  ")": {
                     "docs": {},
-                    "t": {
-                      "docs": {
-                        "exercises/warm-up-answer.html": {
-                          "ref": "exercises/warm-up-answer.html",
-                          "tf": 0.038461538461538464
-                        }
-                      },
-                      "t": {
+                    "」": {
+                      "docs": {},
+                      "を": {
                         "docs": {},
-                        "r": {
+                        "ク": {
                           "docs": {},
-                          "i": {
+                          "リ": {
                             "docs": {},
-                            "g": {
+                            "ッ": {
                               "docs": {},
-                              "g": {
-                                "docs": {
-                                  "exercises/warm-up-answer.html": {
-                                    "ref": "exercises/warm-up-answer.html",
-                                    "tf": 0.038461538461538464
-                                  }
-                                },
-                                "e": {
+                              "ク": {
+                                "docs": {},
+                                "し": {
                                   "docs": {},
-                                  "r": {
+                                  "ま": {
                                     "docs": {},
-                                    ".": {
+                                    "す": {
                                       "docs": {},
-                                      "t": {
-                                        "docs": {},
-                                        "r": {
-                                          "docs": {},
-                                          "i": {
-                                            "docs": {},
-                                            "g": {
-                                              "docs": {},
-                                              "g": {
-                                                "docs": {
-                                                  "exercises/warm-up-answer.html": {
-                                                    "ref": "exercises/warm-up-answer.html",
-                                                    "tf": 0.019230769230769232
-                                                  }
-                                                }
-                                              }
-                                            }
+                                      "。": {
+                                        "docs": {
+                                          "prerequisite/vs-code-extensions.html": {
+                                            "ref": "prerequisite/vs-code-extensions.html",
+                                            "tf": 0.00847457627118644
                                           }
                                         }
                                       }
@@ -185,15 +303,188 @@
               }
             }
           },
+          "b": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "f": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "exercises/warm-up-answer.html": {
+                        "ref": "exercises/warm-up-answer.html",
+                        "tf": 0.016666666666666666
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "+": {
+          "docs": {
+            "prerequisite/vs-code-extensions.html": {
+              "ref": "prerequisite/vs-code-extensions.html",
+              "tf": 0.01694915254237288
+            }
+          }
+        },
+        ",": {
+          "docs": {
+            "prerequisite/vs-code-extensions.html": {
+              "ref": "prerequisite/vs-code-extensions.html",
+              "tf": 0.01694915254237288
+            }
+          }
+        },
+        ".": {
+          "docs": {},
+          "e": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "t": {
+                      "docs": {},
+                      "i": {
+                        "docs": {},
+                        "g": {
+                          "docs": {},
+                          "n": {
+                            "docs": {},
+                            "o": {
+                              "docs": {},
+                              "r": {
+                                "docs": {
+                                  "prerequisite/vs-code-extensions.html": {
+                                    "ref": "prerequisite/vs-code-extensions.html",
+                                    "tf": 0.00847457627118644
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "r": {
+                        "docs": {},
+                        "c": {
+                          "docs": {},
+                          ".": {
+                            "docs": {},
+                            "j": {
+                              "docs": {},
+                              "s": {
+                                "docs": {},
+                                "o": {
+                                  "docs": {},
+                                  "n": {
+                                    "docs": {
+                                      "prerequisite/vs-code-extensions.html": {
+                                        "ref": "prerequisite/vs-code-extensions.html",
+                                        "tf": 0.00847457627118644
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "p": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "e": {
+                        "docs": {},
+                        "r": {
+                          "docs": {},
+                          "i": {
+                            "docs": {},
+                            "g": {
+                              "docs": {},
+                              "n": {
+                                "docs": {},
+                                "o": {
+                                  "docs": {},
+                                  "r": {
+                                    "docs": {
+                                      "prerequisite/vs-code-extensions.html": {
+                                        "ref": "prerequisite/vs-code-extensions.html",
+                                        "tf": 0.00847457627118644
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "r": {
+                            "docs": {},
+                            "c": {
+                              "docs": {
+                                "prerequisite/vs-code-extensions.html": {
+                                  "ref": "prerequisite/vs-code-extensions.html",
+                                  "tf": 0.00847457627118644
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        ":": {
+          "docs": {
+            "prerequisite/vs-code-extensions.html": {
+              "ref": "prerequisite/vs-code-extensions.html",
+              "tf": 0.01694915254237288
+            }
+          }
+        },
+        "a": {
+          "docs": {},
           "p": {
             "docs": {},
             "e": {
               "docs": {},
               "x": {
                 "docs": {
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 0.025423728813559324
+                  },
                   "exercises/warm-up-answer.html": {
                     "ref": "exercises/warm-up-answer.html",
-                    "tf": 0.019230769230769232
+                    "tf": 0.016666666666666666
                   }
                 },
                 "t": {
@@ -208,7 +499,7 @@
                           "docs": {
                             "exercises/warm-up-answer.html": {
                               "ref": "exercises/warm-up-answer.html",
-                              "tf": 0.019230769230769232
+                              "tf": 0.016666666666666666
                             }
                           }
                         }
@@ -260,7 +551,7 @@
                                                     "docs": {
                                                       "exercises/warm-up-answer.html": {
                                                         "ref": "exercises/warm-up-answer.html",
-                                                        "tf": 0.019230769230769232
+                                                        "tf": 0.016666666666666666
                                                       }
                                                     }
                                                   }
@@ -283,20 +574,163 @@
                 }
               }
             }
+          },
+          "c": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "exercises/warm-up-answer.html": {
+                          "ref": "exercises/warm-up-answer.html",
+                          "tf": 0.03333333333333333
+                        }
+                      },
+                      "t": {
+                        "docs": {},
+                        "r": {
+                          "docs": {},
+                          "i": {
+                            "docs": {},
+                            "g": {
+                              "docs": {},
+                              "g": {
+                                "docs": {
+                                  "exercises/warm-up-answer.html": {
+                                    "ref": "exercises/warm-up-answer.html",
+                                    "tf": 0.03333333333333333
+                                  }
+                                },
+                                "e": {
+                                  "docs": {},
+                                  "r": {
+                                    "docs": {},
+                                    ".": {
+                                      "docs": {},
+                                      "t": {
+                                        "docs": {},
+                                        "r": {
+                                          "docs": {},
+                                          "i": {
+                                            "docs": {},
+                                            "g": {
+                                              "docs": {},
+                                              "g": {
+                                                "docs": {
+                                                  "exercises/warm-up-answer.html": {
+                                                    "ref": "exercises/warm-up-answer.html",
+                                                    "tf": 0.016666666666666666
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "b": {
+          "docs": {},
+          "r": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "k": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "prerequisite/vs-code-extensions.html": {
+                          "ref": "prerequisite/vs-code-extensions.html",
+                          "tf": 0.00847457627118644
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "c": {
           "docs": {},
-          "d": {
-            "docs": {
-              "exercises/warm-up-answer.html": {
-                "ref": "exercises/warm-up-answer.html",
-                "tf": 0.019230769230769232
-              }
-            }
-          },
           "o": {
             "docs": {},
+            "d": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 3.3587570621468923
+                  }
+                },
+                "y": {
+                  "docs": {
+                    "prerequisite/vs-code-extensions.html": {
+                      "ref": "prerequisite/vs-code-extensions.html",
+                      "tf": 0.01694915254237288
+                    }
+                  }
+                }
+              }
+            },
+            "l": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "r": {
+                  "docs": {
+                    "prerequisite/vs-code-extensions.html": {
+                      "ref": "prerequisite/vs-code-extensions.html",
+                      "tf": 0.01694915254237288
+                    }
+                  }
+                }
+              }
+            },
+            "m": {
+              "docs": {},
+              "m": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "d": {
+                      "docs": {
+                        "prerequisite/vs-code-extensions.html": {
+                          "ref": "prerequisite/vs-code-extensions.html",
+                          "tf": 0.00847457627118644
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "n": {
               "docs": {},
               "f": {
@@ -323,7 +757,7 @@
                                     "docs": {
                                       "exercises/warm-up-answer.html": {
                                         "ref": "exercises/warm-up-answer.html",
-                                        "tf": 0.019230769230769232
+                                        "tf": 0.03333333333333333
                                       }
                                     }
                                   }
@@ -338,64 +772,16 @@
                 }
               }
             }
-          }
-        },
-        "d": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.038461538461538464
-            }
           },
-          "e": {
+          "t": {
             "docs": {},
-            "f": {
+            "r": {
               "docs": {},
-              ".": {
-                "docs": {},
-                "j": {
-                  "docs": {},
-                  "s": {
-                    "docs": {},
-                    "o": {
-                      "docs": {},
-                      "n": {
-                        "docs": {
-                          "exercises/warm-up-answer.html": {
-                            "ref": "exercises/warm-up-answer.html",
-                            "tf": 0.019230769230769232
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "m": {
-              "docs": {},
-              "o": {
+              "l": {
                 "docs": {
-                  "exercises/warm-up-answer.html": {
-                    "ref": "exercises/warm-up-answer.html",
-                    "tf": 0.057692307692307696
-                  }
-                }
-              }
-            },
-            "v": {
-              "docs": {},
-              "h": {
-                "docs": {},
-                "u": {
-                  "docs": {},
-                  "b": {
-                    "docs": {
-                      "exercises/warm-up-answer.html": {
-                        "ref": "exercises/warm-up-answer.html",
-                        "tf": 0.019230769230769232
-                      }
-                    }
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 0.00847457627118644
                   }
                 }
               }
@@ -406,7 +792,47 @@
           "docs": {
             "exercises/warm-up-answer.html": {
               "ref": "exercises/warm-up-answer.html",
-              "tf": 0.019230769230769232
+              "tf": 0.016666666666666666
+            }
+          },
+          "s": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "prerequisite/vs-code-extensions.html": {
+                        "ref": "prerequisite/vs-code-extensions.html",
+                        "tf": 0.00847457627118644
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "x": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "s": {
+                    "docs": {
+                      "prerequisite/vs-code-extensions.html": {
+                        "ref": "prerequisite/vs-code-extensions.html",
+                        "tf": 3.350282485875706
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         },
@@ -414,18 +840,35 @@
           "docs": {
             "exercises/warm-up-answer.html": {
               "ref": "exercises/warm-up-answer.html",
-              "tf": 0.019230769230769232
+              "tf": 0.016666666666666666
             }
           },
           "o": {
             "docs": {},
             "r": {
               "docs": {},
+              "m": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "prerequisite/vs-code-extensions.html": {
+                          "ref": "prerequisite/vs-code-extensions.html",
+                          "tf": 0.00847457627118644
+                        }
+                      }
+                    }
+                  }
+                }
+              },
               "c": {
                 "docs": {
                   "exercises/warm-up-answer.html": {
                     "ref": "exercises/warm-up-answer.html",
-                    "tf": 0.019230769230769232
+                    "tf": 0.016666666666666666
                   }
                 },
                 "e": {
@@ -464,7 +907,7 @@
                                                   "docs": {
                                                     "exercises/warm-up-answer.html": {
                                                       "ref": "exercises/warm-up-answer.html",
-                                                      "tf": 0.019230769230769232
+                                                      "tf": 0.016666666666666666
                                                     }
                                                   }
                                                 }
@@ -496,7 +939,24 @@
                                 "docs": {
                                   "exercises/warm-up-answer.html": {
                                     "ref": "exercises/warm-up-answer.html",
-                                    "tf": 0.019230769230769232
+                                    "tf": 0.016666666666666666
+                                  }
+                                }
+                              }
+                            },
+                            "o": {
+                              "docs": {},
+                              "p": {
+                                "docs": {},
+                                "e": {
+                                  "docs": {},
+                                  "n": {
+                                    "docs": {
+                                      "exercises/warm-up-answer.html": {
+                                        "ref": "exercises/warm-up-answer.html",
+                                        "tf": 0.016666666666666666
+                                      }
+                                    }
                                   }
                                 }
                               }
@@ -505,29 +965,32 @@
                         }
                       }
                     },
-                    "p": {
+                    "s": {
                       "docs": {},
-                      "r": {
+                      "o": {
                         "docs": {},
-                        "o": {
+                        "u": {
                           "docs": {},
-                          "j": {
+                          "r": {
                             "docs": {},
-                            "e": {
+                            "c": {
                               "docs": {},
-                              "c": {
+                              "e": {
                                 "docs": {},
-                                "t": {
+                                ":": {
                                   "docs": {},
-                                  ":": {
+                                  "p": {
                                     "docs": {},
-                                    "c": {
+                                    "u": {
                                       "docs": {},
-                                      "r": {
-                                        "docs": {
-                                          "exercises/warm-up-answer.html": {
-                                            "ref": "exercises/warm-up-answer.html",
-                                            "tf": 0.019230769230769232
+                                      "s": {
+                                        "docs": {},
+                                        "h": {
+                                          "docs": {
+                                            "exercises/warm-up-answer.html": {
+                                              "ref": "exercises/warm-up-answer.html",
+                                              "tf": 0.016666666666666666
+                                            }
                                           }
                                         }
                                       }
@@ -538,6 +1001,2172 @@
                             }
                           }
                         }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "g": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "t": {
+              "docs": {
+                "prerequisite/vs-code-extensions.html": {
+                  "ref": "prerequisite/vs-code-extensions.html",
+                  "tf": 0.01694915254237288
+                }
+              },
+              "l": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "prerequisite/vs-code-extensions.html": {
+                        "ref": "prerequisite/vs-code-extensions.html",
+                        "tf": 0.00847457627118644
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "h": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "g": {
+              "docs": {},
+              "h": {
+                "docs": {
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 0.00847457627118644
+                  }
+                }
+              }
+            }
+          },
+          "t": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "l": {
+                "docs": {
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 0.01694915254237288
+                  }
+                }
+              }
+            }
+          }
+        },
+        "j": {
+          "docs": {},
+          "s": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "n": {
+                "docs": {
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 0.00847457627118644
+                  }
+                }
+              }
+            }
+          }
+        },
+        "l": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "v": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 0.01694915254237288
+                  }
+                }
+              }
+            }
+          }
+        },
+        "m": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "o": {
+                "docs": {
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 0.00847457627118644
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "g": {
+                    "docs": {},
+                    "h": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "prerequisite/vs-code-extensions.html": {
+                            "ref": "prerequisite/vs-code-extensions.html",
+                            "tf": 0.00847457627118644
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "n": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.016666666666666666
+            }
+          },
+          "o": {
+            "docs": {},
+            ".": {
+              "docs": {
+                "prerequisite/vs-code-extensions.html": {
+                  "ref": "prerequisite/vs-code-extensions.html",
+                  "tf": 0.00847457627118644
+                }
+              }
+            },
+            "o": {
+              "docs": {},
+              "n": {
+                "docs": {
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 0.00847457627118644
+                  }
+                }
+              }
+            }
+          }
+        },
+        "o": {
+          "docs": {},
+          "u": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "prerequisite/vs-code-extensions.html": {
+                        "ref": "prerequisite/vs-code-extensions.html",
+                        "tf": 0.00847457627118644
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "p": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.016666666666666666
+            }
+          },
+          "a": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "k": {
+                "docs": {
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 0.00847457627118644
+                  }
+                }
+              }
+            },
+            "i": {
+              "docs": {},
+              "r": {
+                "docs": {
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 0.00847457627118644
+                  }
+                }
+              }
+            }
+          },
+          "m": {
+            "docs": {},
+            "d": {
+              "docs": {
+                "prerequisite/vs-code-extensions.html": {
+                  "ref": "prerequisite/vs-code-extensions.html",
+                  "tf": 0.025423728813559324
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "r": {
+                        "docs": {
+                          "prerequisite/vs-code-extensions.html": {
+                            "ref": "prerequisite/vs-code-extensions.html",
+                            "tf": 0.01694915254237288
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "v": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "w": {
+                      "docs": {
+                        "prerequisite/vs-code-extensions.html": {
+                          "ref": "prerequisite/vs-code-extensions.html",
+                          "tf": 0.00847457627118644
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "o": {
+              "docs": {},
+              "j": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "c": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "exercises/warm-up-answer.html": {
+                          "ref": "exercises/warm-up-answer.html",
+                          "tf": 0.016666666666666666
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "r": {
+          "docs": {},
+          "u": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "t": {
+                      "docs": {},
+                      ".": {
+                        "docs": {},
+                        "x": {
+                          "docs": {},
+                          "m": {
+                            "docs": {},
+                            "l": {
+                              "docs": {
+                                "prerequisite/vs-code-extensions.html": {
+                                  "ref": "prerequisite/vs-code-extensions.html",
+                                  "tf": 0.00847457627118644
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "s": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.03333333333333333
+            }
+          },
+          "a": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "f": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "r": {
+                        "docs": {},
+                        "c": {
+                          "docs": {
+                            "prerequisite/vs-code-extensions.html": {
+                              "ref": "prerequisite/vs-code-extensions.html",
+                              "tf": 0.025423728813559324
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "t": {
+              "docs": {
+                "prerequisite/vs-code-extensions.html": {
+                  "ref": "prerequisite/vs-code-extensions.html",
+                  "tf": 0.01694915254237288
+                }
+              },
+              "t": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "g": {
+                      "docs": {},
+                      "s": {
+                        "docs": {},
+                        ".": {
+                          "docs": {},
+                          "j": {
+                            "docs": {},
+                            "s": {
+                              "docs": {},
+                              "o": {
+                                "docs": {},
+                                "n": {
+                                  "docs": {
+                                    "prerequisite/vs-code-extensions.html": {
+                                      "ref": "prerequisite/vs-code-extensions.html",
+                                      "tf": 0.00847457627118644
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "h": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "e": {
+                  "docs": {
+                    "prerequisite/vs-code-extensions.html": {
+                      "ref": "prerequisite/vs-code-extensions.html",
+                      "tf": 0.00847457627118644
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "p": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "e": {
+                  "docs": {
+                    "prerequisite/vs-code-extensions.html": {
+                      "ref": "prerequisite/vs-code-extensions.html",
+                      "tf": 0.00847457627118644
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "c": {
+                    "docs": {},
+                    "h": {
+                      "docs": {},
+                      "a": {
+                        "docs": {},
+                        "r": {
+                          "docs": {},
+                          "g": {
+                            "docs": {
+                              "prerequisite/vs-code-extensions.html": {
+                                "ref": "prerequisite/vs-code-extensions.html",
+                                "tf": 0.00847457627118644
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "c": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "c": {
+                    "docs": {},
+                    "h": {
+                      "docs": {
+                        "exercises/warm-up-answer.html": {
+                          "ref": "exercises/warm-up-answer.html",
+                          "tf": 0.06666666666666667
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "f": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "x": {
+                "docs": {
+                  "exercises/warm-up-answer.html": {
+                    "ref": "exercises/warm-up-answer.html",
+                    "tf": 0.06666666666666667
+                  }
+                }
+              }
+            }
+          }
+        },
+        "t": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.03333333333333333
+            }
+          },
+          "o": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "o": {
+                "docs": {
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 0.01694915254237288
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "prerequisite/vs-code-extensions.html": {
+                      "ref": "prerequisite/vs-code-extensions.html",
+                      "tf": 0.00847457627118644
+                    }
+                  }
+                }
+              }
+            },
+            "e": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 0.00847457627118644
+                  }
+                }
+              }
+            },
+            "i": {
+              "docs": {},
+              "g": {
+                "docs": {},
+                "g": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "r": {
+                      "docs": {
+                        "exercises/warm-up-answer.html": {
+                          "ref": "exercises/warm-up-answer.html",
+                          "tf": 0.016666666666666666
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "v": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.016666666666666666
+            }
+          },
+          "s": {
+            "docs": {
+              "prerequisite/vs-code-extensions.html": {
+                "ref": "prerequisite/vs-code-extensions.html",
+                "tf": 3.350282485875706
+              }
+            }
+          }
+        },
+        "w": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "d": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "w": {
+                    "docs": {
+                      "prerequisite/vs-code-extensions.html": {
+                        "ref": "prerequisite/vs-code-extensions.html",
+                        "tf": 0.00847457627118644
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "m": {
+                "docs": {
+                  "exercises/warm-up-answer.html": {
+                    "ref": "exercises/warm-up-answer.html",
+                    "tf": 0.016666666666666666
+                  }
+                }
+              }
+            }
+          }
+        },
+        "y": {
+          "docs": {
+            "prerequisite/vs-code-extensions.html": {
+              "ref": "prerequisite/vs-code-extensions.html",
+              "tf": 0.05084745762711865
+            }
+          }
+        },
+        "z": {
+          "docs": {},
+          "e": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "k": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "k": {
+                    "docs": {},
+                    "u": {
+                      "docs": {
+                        "prerequisite/vs-code-extensions.html": {
+                          "ref": "prerequisite/vs-code-extensions.html",
+                          "tf": 0.00847457627118644
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "—": {
+          "docs": {
+            "prerequisite/vs-code-extensions.html": {
+              "ref": "prerequisite/vs-code-extensions.html",
+              "tf": 0.00847457627118644
+            }
+          }
+        },
+        "「": {
+          "docs": {},
+          "v": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "d": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "q": {
+                        "docs": {},
+                        "u": {
+                          "docs": {},
+                          "i": {
+                            "docs": {},
+                            "c": {
+                              "docs": {},
+                              "k": {
+                                "docs": {},
+                                "s": {
+                                  "docs": {},
+                                  "t": {
+                                    "docs": {},
+                                    "a": {
+                                      "docs": {},
+                                      "r": {
+                                        "docs": {},
+                                        "t": {
+                                          "docs": {},
+                                          "」": {
+                                            "docs": {},
+                                            "プ": {
+                                              "docs": {},
+                                              "ロ": {
+                                                "docs": {},
+                                                "ジ": {
+                                                  "docs": {},
+                                                  "ェ": {
+                                                    "docs": {},
+                                                    "ク": {
+                                                      "docs": {},
+                                                      "ト": {
+                                                        "docs": {},
+                                                        "の": {
+                                                          "docs": {},
+                                                          "ル": {
+                                                            "docs": {},
+                                                            "ー": {
+                                                              "docs": {},
+                                                              "ト": {
+                                                                "docs": {},
+                                                                "に": {
+                                                                  "docs": {},
+                                                                  "は": {
+                                                                    "docs": {},
+                                                                    "存": {
+                                                                      "docs": {},
+                                                                      "在": {
+                                                                        "docs": {},
+                                                                        "し": {
+                                                                          "docs": {},
+                                                                          "て": {
+                                                                            "docs": {},
+                                                                            "い": {
+                                                                              "docs": {},
+                                                                              "な": {
+                                                                                "docs": {},
+                                                                                "い": {
+                                                                                  "docs": {},
+                                                                                  "の": {
+                                                                                    "docs": {},
+                                                                                    "で": {
+                                                                                      "docs": {},
+                                                                                      "、": {
+                                                                                        "docs": {},
+                                                                                        "次": {
+                                                                                          "docs": {},
+                                                                                          "の": {
+                                                                                            "docs": {},
+                                                                                            "フ": {
+                                                                                              "docs": {},
+                                                                                              "ァ": {
+                                                                                                "docs": {},
+                                                                                                "イ": {
+                                                                                                  "docs": {},
+                                                                                                  "ル": {
+                                                                                                    "docs": {},
+                                                                                                    "を": {
+                                                                                                      "docs": {},
+                                                                                                      "新": {
+                                                                                                        "docs": {},
+                                                                                                        "規": {
+                                                                                                          "docs": {},
+                                                                                                          "作": {
+                                                                                                            "docs": {},
+                                                                                                            "成": {
+                                                                                                              "docs": {},
+                                                                                                              "し": {
+                                                                                                                "docs": {},
+                                                                                                                "ま": {
+                                                                                                                  "docs": {},
+                                                                                                                  "し": {
+                                                                                                                    "docs": {},
+                                                                                                                    "ょ": {
+                                                                                                                      "docs": {},
+                                                                                                                      "う": {
+                                                                                                                        "docs": {},
+                                                                                                                        "。": {
+                                                                                                                          "docs": {
+                                                                                                                            "prerequisite/vs-code-extensions.html": {
+                                                                                                                              "ref": "prerequisite/vs-code-extensions.html",
+                                                                                                                              "tf": 0.01694915254237288
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "既": {
+                                                                    "docs": {},
+                                                                    "に": {
+                                                                      "docs": {},
+                                                                      "自": {
+                                                                        "docs": {},
+                                                                        "動": {
+                                                                          "docs": {},
+                                                                          "生": {
+                                                                            "docs": {},
+                                                                            "成": {
+                                                                              "docs": {},
+                                                                              "さ": {
+                                                                                "docs": {},
+                                                                                "れ": {
+                                                                                  "docs": {},
+                                                                                  "て": {
+                                                                                    "docs": {},
+                                                                                    "い": {
+                                                                                      "docs": {},
+                                                                                      "る": {
+                                                                                        "docs": {},
+                                                                                        "フ": {
+                                                                                          "docs": {},
+                                                                                          "ァ": {
+                                                                                            "docs": {},
+                                                                                            "イ": {
+                                                                                              "docs": {},
+                                                                                              "ル": {
+                                                                                                "docs": {},
+                                                                                                "の": {
+                                                                                                  "docs": {},
+                                                                                                  "中": {
+                                                                                                    "docs": {},
+                                                                                                    "身": {
+                                                                                                      "docs": {},
+                                                                                                      "を": {
+                                                                                                        "docs": {},
+                                                                                                        "以": {
+                                                                                                          "docs": {},
+                                                                                                          "下": {
+                                                                                                            "docs": {},
+                                                                                                            "で": {
+                                                                                                              "docs": {},
+                                                                                                              "置": {
+                                                                                                                "docs": {},
+                                                                                                                "き": {
+                                                                                                                  "docs": {},
+                                                                                                                  "換": {
+                                                                                                                    "docs": {},
+                                                                                                                    "え": {
+                                                                                                                      "docs": {},
+                                                                                                                      "ま": {
+                                                                                                                        "docs": {},
+                                                                                                                        "し": {
+                                                                                                                          "docs": {},
+                                                                                                                          "ょ": {
+                                                                                                                            "docs": {},
+                                                                                                                            "う": {
+                                                                                                                              "docs": {},
+                                                                                                                              "。": {
+                                                                                                                                "docs": {
+                                                                                                                                  "prerequisite/vs-code-extensions.html": {
+                                                                                                                                    "ref": "prerequisite/vs-code-extensions.html",
+                                                                                                                                    "tf": 0.00847457627118644
+                                                                                                                                  }
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "さ": {
+          "docs": {},
+          "き": {
+            "docs": {},
+            "ほ": {
+              "docs": {},
+              "ど": {
+                "docs": {
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 0.00847457627118644
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ぜ": {
+          "docs": {},
+          "ひ": {
+            "docs": {},
+            "イ": {
+              "docs": {},
+              "ン": {
+                "docs": {},
+                "ス": {
+                  "docs": {},
+                  "ト": {
+                    "docs": {},
+                    "ー": {
+                      "docs": {},
+                      "ル": {
+                        "docs": {},
+                        "し": {
+                          "docs": {},
+                          "ま": {
+                            "docs": {},
+                            "し": {
+                              "docs": {},
+                              "ょ": {
+                                "docs": {},
+                                "う": {
+                                  "docs": {},
+                                  "。": {
+                                    "docs": {
+                                      "prerequisite/vs-code-extensions.html": {
+                                        "ref": "prerequisite/vs-code-extensions.html",
+                                        "tf": 0.00847457627118644
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "の": {
+          "docs": {},
+          "コ": {
+            "docs": {},
+            "ミ": {
+              "docs": {},
+              "ッ": {
+                "docs": {},
+                "ト": {
+                  "docs": {},
+                  "の": {
+                    "docs": {},
+                    "履": {
+                      "docs": {},
+                      "歴": {
+                        "docs": {},
+                        "を": {
+                          "docs": {},
+                          "追": {
+                            "docs": {},
+                            "跡": {
+                              "docs": {},
+                              "し": {
+                                "docs": {},
+                                "や": {
+                                  "docs": {},
+                                  "す": {
+                                    "docs": {},
+                                    "く": {
+                                      "docs": {},
+                                      "な": {
+                                        "docs": {},
+                                        "る": {
+                                          "docs": {
+                                            "prerequisite/vs-code-extensions.html": {
+                                              "ref": "prerequisite/vs-code-extensions.html",
+                                              "tf": 0.00847457627118644
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "拡": {
+            "docs": {},
+            "張": {
+              "docs": {},
+              "機": {
+                "docs": {},
+                "能": {
+                  "docs": {},
+                  "の": {
+                    "docs": {
+                      "prerequisite/vs-code-extensions.html": {
+                        "ref": "prerequisite/vs-code-extensions.html",
+                        "tf": 0.00847457627118644
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "中": {
+            "docs": {},
+            "身": {
+              "docs": {},
+              "を": {
+                "docs": {},
+                "次": {
+                  "docs": {},
+                  "の": {
+                    "docs": {},
+                    "内": {
+                      "docs": {},
+                      "容": {
+                        "docs": {},
+                        "で": {
+                          "docs": {},
+                          "書": {
+                            "docs": {},
+                            "き": {
+                              "docs": {},
+                              "換": {
+                                "docs": {},
+                                "え": {
+                                  "docs": {},
+                                  "ま": {
+                                    "docs": {},
+                                    "す": {
+                                      "docs": {},
+                                      "。": {
+                                        "docs": {
+                                          "exercises/warm-up-answer.html": {
+                                            "ref": "exercises/warm-up-answer.html",
+                                            "tf": 0.016666666666666666
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "を": {
+          "docs": {},
+          "イ": {
+            "docs": {},
+            "ン": {
+              "docs": {},
+              "ス": {
+                "docs": {},
+                "ト": {
+                  "docs": {},
+                  "ー": {
+                    "docs": {},
+                    "ル": {
+                      "docs": {},
+                      "し": {
+                        "docs": {},
+                        "ま": {
+                          "docs": {},
+                          "し": {
+                            "docs": {},
+                            "た": {
+                              "docs": {},
+                              "が": {
+                                "docs": {},
+                                "、": {
+                                  "docs": {},
+                                  "他": {
+                                    "docs": {},
+                                    "に": {
+                                      "docs": {},
+                                      "も": {
+                                        "docs": {},
+                                        "開": {
+                                          "docs": {},
+                                          "発": {
+                                            "docs": {},
+                                            "に": {
+                                              "docs": {},
+                                              "欠": {
+                                                "docs": {},
+                                                "か": {
+                                                  "docs": {},
+                                                  "せ": {
+                                                    "docs": {},
+                                                    "な": {
+                                                      "docs": {},
+                                                      "い": {
+                                                        "docs": {},
+                                                        "拡": {
+                                                          "docs": {},
+                                                          "張": {
+                                                            "docs": {},
+                                                            "機": {
+                                                              "docs": {},
+                                                              "能": {
+                                                                "docs": {},
+                                                                "が": {
+                                                                  "docs": {},
+                                                                  "豊": {
+                                                                    "docs": {},
+                                                                    "富": {
+                                                                      "docs": {},
+                                                                      "に": {
+                                                                        "docs": {},
+                                                                        "存": {
+                                                                          "docs": {},
+                                                                          "在": {
+                                                                            "docs": {},
+                                                                            "し": {
+                                                                              "docs": {},
+                                                                              "ま": {
+                                                                                "docs": {},
+                                                                                "す": {
+                                                                                  "docs": {},
+                                                                                  "。": {
+                                                                                    "docs": {
+                                                                                      "prerequisite/vs-code-extensions.html": {
+                                                                                        "ref": "prerequisite/vs-code-extensions.html",
+                                                                                        "tf": 0.00847457627118644
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "プ": {
+            "docs": {},
+            "レ": {
+              "docs": {},
+              "ビ": {
+                "docs": {},
+                "ュ": {
+                  "docs": {},
+                  "ー": {
+                    "docs": {},
+                    "で": {
+                      "docs": {},
+                      "き": {
+                        "docs": {},
+                        "る": {
+                          "docs": {
+                            "prerequisite/vs-code-extensions.html": {
+                              "ref": "prerequisite/vs-code-extensions.html",
+                              "tf": 0.00847457627118644
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "貼": {
+            "docs": {},
+            "り": {
+              "docs": {},
+              "付": {
+                "docs": {},
+                "け": {
+                  "docs": {},
+                  "て": {
+                    "docs": {},
+                    "保": {
+                      "docs": {},
+                      "存": {
+                        "docs": {},
+                        "し": {
+                          "docs": {},
+                          "ま": {
+                            "docs": {},
+                            "し": {
+                              "docs": {},
+                              "ょ": {
+                                "docs": {},
+                                "う": {
+                                  "docs": {},
+                                  "。": {
+                                    "docs": {
+                                      "prerequisite/vs-code-extensions.html": {
+                                        "ref": "prerequisite/vs-code-extensions.html",
+                                        "tf": 0.00847457627118644
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "開": {
+            "docs": {},
+            "き": {
+              "docs": {},
+              "、": {
+                "docs": {},
+                "右": {
+                  "docs": {},
+                  "上": {
+                    "docs": {},
+                    "の": {
+                      "docs": {},
+                      "ア": {
+                        "docs": {},
+                        "イ": {
+                          "docs": {},
+                          "コ": {
+                            "docs": {},
+                            "ン": {
+                              "docs": {},
+                              "「": {
+                                "docs": {},
+                                "o": {
+                                  "docs": {},
+                                  "p": {
+                                    "docs": {},
+                                    "e": {
+                                      "docs": {},
+                                      "n": {
+                                        "docs": {
+                                          "prerequisite/vs-code-extensions.html": {
+                                            "ref": "prerequisite/vs-code-extensions.html",
+                                            "tf": 0.00847457627118644
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "イ": {
+          "docs": {},
+          "ン": {
+            "docs": {},
+            "ス": {
+              "docs": {},
+              "ト": {
+                "docs": {},
+                "ー": {
+                  "docs": {},
+                  "ル": {
+                    "docs": {},
+                    "し": {
+                      "docs": {},
+                      "た": {
+                        "docs": {},
+                        "拡": {
+                          "docs": {},
+                          "張": {
+                            "docs": {},
+                            "機": {
+                              "docs": {},
+                              "能": {
+                                "docs": {},
+                                "の": {
+                                  "docs": {},
+                                  "各": {
+                                    "docs": {},
+                                    "種": {
+                                      "docs": {},
+                                      "設": {
+                                        "docs": {},
+                                        "定": {
+                                          "docs": {},
+                                          "を": {
+                                            "docs": {},
+                                            "有": {
+                                              "docs": {},
+                                              "効": {
+                                                "docs": {},
+                                                "化": {
+                                                  "docs": {},
+                                                  "し": {
+                                                    "docs": {},
+                                                    "ま": {
+                                                      "docs": {},
+                                                      "し": {
+                                                        "docs": {},
+                                                        "ょ": {
+                                                          "docs": {},
+                                                          "う": {
+                                                            "docs": {},
+                                                            "。": {
+                                                              "docs": {
+                                                                "prerequisite/vs-code-extensions.html": {
+                                                                  "ref": "prerequisite/vs-code-extensions.html",
+                                                                  "tf": 0.00847457627118644
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "オ": {
+          "docs": {},
+          "ス": {
+            "docs": {},
+            "ス": {
+              "docs": {},
+              "メ": {
+                "docs": {},
+                "ポ": {
+                  "docs": {},
+                  "イ": {
+                    "docs": {},
+                    "ン": {
+                      "docs": {},
+                      "ト": {
+                        "docs": {
+                          "prerequisite/vs-code-extensions.html": {
+                            "ref": "prerequisite/vs-code-extensions.html",
+                            "tf": 0.00847457627118644
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "コ": {
+          "docs": {},
+          "メ": {
+            "docs": {},
+            "ン": {
+              "docs": {},
+              "ト": {
+                "docs": {},
+                "を": {
+                  "docs": {},
+                  "一": {
+                    "docs": {},
+                    "覧": {
+                      "docs": {},
+                      "化": {
+                        "docs": {},
+                        "で": {
+                          "docs": {},
+                          "き": {
+                            "docs": {},
+                            "る": {
+                              "docs": {
+                                "prerequisite/vs-code-extensions.html": {
+                                  "ref": "prerequisite/vs-code-extensions.html",
+                                  "tf": 0.00847457627118644
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ー": {
+            "docs": {},
+            "ド": {
+              "docs": {},
+              "の": {
+                "docs": {},
+                "静": {
+                  "docs": {},
+                  "的": {
+                    "docs": {},
+                    "解": {
+                      "docs": {},
+                      "析": {
+                        "docs": {},
+                        "を": {
+                          "docs": {},
+                          "実": {
+                            "docs": {},
+                            "行": {
+                              "docs": {},
+                              "で": {
+                                "docs": {},
+                                "き": {
+                                  "docs": {},
+                                  "る": {
+                                    "docs": {
+                                      "prerequisite/vs-code-extensions.html": {
+                                        "ref": "prerequisite/vs-code-extensions.html",
+                                        "tf": 0.00847457627118644
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "を": {
+                "docs": {},
+                "綺": {
+                  "docs": {},
+                  "麗": {
+                    "docs": {},
+                    "に": {
+                      "docs": {},
+                      "整": {
+                        "docs": {},
+                        "形": {
+                          "docs": {},
+                          "し": {
+                            "docs": {},
+                            "て": {
+                              "docs": {},
+                              "く": {
+                                "docs": {},
+                                "れ": {
+                                  "docs": {},
+                                  "る": {
+                                    "docs": {
+                                      "prerequisite/vs-code-extensions.html": {
+                                        "ref": "prerequisite/vs-code-extensions.html",
+                                        "tf": 0.00847457627118644
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ユ": {
+          "docs": {},
+          "ー": {
+            "docs": {},
+            "ザ": {
+              "docs": {},
+              "設": {
+                "docs": {},
+                "定": {
+                  "docs": {
+                    "prerequisite/vs-code-extensions.html": {
+                      "ref": "prerequisite/vs-code-extensions.html",
+                      "tf": 0.00847457627118644
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "リ": {
+          "docs": {},
+          "ア": {
+            "docs": {},
+            "ル": {
+              "docs": {},
+              "タ": {
+                "docs": {},
+                "イ": {
+                  "docs": {},
+                  "ム": {
+                    "docs": {},
+                    "に": {
+                      "docs": {},
+                      "コ": {
+                        "docs": {},
+                        "ー": {
+                          "docs": {},
+                          "ド": {
+                            "docs": {},
+                            "を": {
+                              "docs": {},
+                              "共": {
+                                "docs": {},
+                                "有": {
+                                  "docs": {},
+                                  "し": {
+                                    "docs": {},
+                                    "て": {
+                                      "docs": {},
+                                      "共": {
+                                        "docs": {},
+                                        "同": {
+                                          "docs": {},
+                                          "作": {
+                                            "docs": {},
+                                            "業": {
+                                              "docs": {},
+                                              "で": {
+                                                "docs": {},
+                                                "き": {
+                                                  "docs": {},
+                                                  "る": {
+                                                    "docs": {
+                                                      "prerequisite/vs-code-extensions.html": {
+                                                        "ref": "prerequisite/vs-code-extensions.html",
+                                                        "tf": 0.00847457627118644
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ロ": {
+          "docs": {},
+          "グ": {
+            "docs": {},
+            "に": {
+              "docs": {},
+              "色": {
+                "docs": {},
+                "付": {
+                  "docs": {},
+                  "け": {
+                    "docs": {},
+                    "し": {
+                      "docs": {},
+                      "て": {
+                        "docs": {},
+                        "く": {
+                          "docs": {},
+                          "れ": {
+                            "docs": {},
+                            "る": {
+                              "docs": {
+                                "prerequisite/vs-code-extensions.html": {
+                                  "ref": "prerequisite/vs-code-extensions.html",
+                                  "tf": 0.00847457627118644
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "以": {
+          "docs": {},
+          "下": {
+            "docs": {},
+            "の": {
+              "docs": {
+                "prerequisite/vs-code-extensions.html": {
+                  "ref": "prerequisite/vs-code-extensions.html",
+                  "tf": 0.00847457627118644
+                }
+              }
+            }
+          }
+        },
+        "余": {
+          "docs": {},
+          "分": {
+            "docs": {},
+            "な": {
+              "docs": {},
+              "ス": {
+                "docs": {},
+                "ペ": {
+                  "docs": {},
+                  "ー": {
+                    "docs": {},
+                    "ス": {
+                      "docs": {},
+                      "を": {
+                        "docs": {},
+                        "削": {
+                          "docs": {},
+                          "除": {
+                            "docs": {},
+                            "し": {
+                              "docs": {},
+                              "て": {
+                                "docs": {},
+                                "く": {
+                                  "docs": {},
+                                  "れ": {
+                                    "docs": {},
+                                    "る": {
+                                      "docs": {
+                                        "prerequisite/vs-code-extensions.html": {
+                                          "ref": "prerequisite/vs-code-extensions.html",
+                                          "tf": 0.00847457627118644
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "全": {
+                "docs": {},
+                "角": {
+                  "docs": {},
+                  "ス": {
+                    "docs": {},
+                    "ペ": {
+                      "docs": {},
+                      "ー": {
+                        "docs": {},
+                        "ス": {
+                          "docs": {},
+                          "を": {
+                            "docs": {},
+                            "ハ": {
+                              "docs": {},
+                              "イ": {
+                                "docs": {},
+                                "ラ": {
+                                  "docs": {},
+                                  "イ": {
+                                    "docs": {},
+                                    "ト": {
+                                      "docs": {},
+                                      "し": {
+                                        "docs": {},
+                                        "て": {
+                                          "docs": {},
+                                          "く": {
+                                            "docs": {},
+                                            "れ": {
+                                              "docs": {},
+                                              "る": {
+                                                "docs": {
+                                                  "prerequisite/vs-code-extensions.html": {
+                                                    "ref": "prerequisite/vs-code-extensions.html",
+                                                    "tf": 0.00847457627118644
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "名": {
+          "docs": {},
+          "前": {
+            "docs": {
+              "prerequisite/vs-code-extensions.html": {
+                "ref": "prerequisite/vs-code-extensions.html",
+                "tf": 0.00847457627118644
+              }
+            }
+          }
+        },
+        "必": {
+          "docs": {},
+          "須": {
+            "docs": {
+              "prerequisite/vs-code-extensions.html": {
+                "ref": "prerequisite/vs-code-extensions.html",
+                "tf": 0.00847457627118644
+              }
+            }
+          }
+        },
+        "括": {
+          "docs": {},
+          "弧": {
+            "docs": {},
+            "の": {
+              "docs": {},
+              "ペ": {
+                "docs": {},
+                "ア": {
+                  "docs": {},
+                  "を": {
+                    "docs": {},
+                    "色": {
+                      "docs": {},
+                      "付": {
+                        "docs": {},
+                        "き": {
+                          "docs": {},
+                          "で": {
+                            "docs": {},
+                            "把": {
+                              "docs": {},
+                              "握": {
+                                "docs": {},
+                                "で": {
+                                  "docs": {},
+                                  "き": {
+                                    "docs": {},
+                                    "る": {
+                                      "docs": {
+                                        "prerequisite/vs-code-extensions.html": {
+                                          "ref": "prerequisite/vs-code-extensions.html",
+                                          "tf": 0.00847457627118644
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "次": {
+          "docs": {},
+          "の": {
+            "docs": {},
+            "キ": {
+              "docs": {},
+              "ー": {
+                "docs": {},
+                "ボ": {
+                  "docs": {},
+                  "ー": {
+                    "docs": {},
+                    "ド": {
+                      "docs": {},
+                      "の": {
+                        "docs": {},
+                        "シ": {
+                          "docs": {},
+                          "ョ": {
+                            "docs": {},
+                            "ー": {
+                              "docs": {},
+                              "ト": {
+                                "docs": {},
+                                "カ": {
+                                  "docs": {},
+                                  "ッ": {
+                                    "docs": {},
+                                    "ト": {
+                                      "docs": {},
+                                      "で": {
+                                        "docs": {
+                                          "prerequisite/vs-code-extensions.html": {
+                                            "ref": "prerequisite/vs-code-extensions.html",
+                                            "tf": 0.00847457627118644
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "設": {
+          "docs": {},
+          "定": {
+            "docs": {
+              "prerequisite/vs-code-extensions.html": {
+                "ref": "prerequisite/vs-code-extensions.html",
+                "tf": 0.025423728813559324
+              }
+            }
+          }
+        },
+        "開": {
+          "docs": {},
+          "発": {
+            "docs": {},
+            "に": {
+              "docs": {},
+              "ぴ": {
+                "docs": {},
+                "っ": {
+                  "docs": {},
+                  "た": {
+                    "docs": {},
+                    "り": {
+                      "docs": {},
+                      "の": {
+                        "docs": {},
+                        "ダ": {
+                          "docs": {},
+                          "ー": {
+                            "docs": {},
+                            "ク": {
+                              "docs": {},
+                              "テ": {
+                                "docs": {},
+                                "ー": {
+                                  "docs": {},
+                                  "マ": {
+                                    "docs": {
+                                      "prerequisite/vs-code-extensions.html": {
+                                        "ref": "prerequisite/vs-code-extensions.html",
+                                        "tf": 0.00847457627118644
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "ラ": {
+                          "docs": {},
+                          "イ": {
+                            "docs": {},
+                            "ト": {
+                              "docs": {},
+                              "テ": {
+                                "docs": {},
+                                "ー": {
+                                  "docs": {},
+                                  "マ": {
+                                    "docs": {
+                                      "prerequisite/vs-code-extensions.html": {
+                                        "ref": "prerequisite/vs-code-extensions.html",
+                                        "tf": 0.00847457627118644
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "\"": {
+          "docs": {},
+          "b": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "f": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "exercises/warm-up-answer.html": {
+                        "ref": "exercises/warm-up-answer.html",
+                        "tf": 0.016666666666666666
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "d": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.03333333333333333
+            }
+          },
+          "e": {
+            "docs": {},
+            "f": {
+              "docs": {},
+              ".": {
+                "docs": {},
+                "j": {
+                  "docs": {},
+                  "s": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "n": {
+                        "docs": {
+                          "exercises/warm-up-answer.html": {
+                            "ref": "exercises/warm-up-answer.html",
+                            "tf": 0.05
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "m": {
+              "docs": {},
+              "o": {
+                "docs": {
+                  "exercises/warm-up-answer.html": {
+                    "ref": "exercises/warm-up-answer.html",
+                    "tf": 0.05
+                  }
+                }
+              }
+            },
+            "v": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "b": {
+                    "docs": {
+                      "exercises/warm-up-answer.html": {
+                        "ref": "exercises/warm-up-answer.html",
+                        "tf": 0.016666666666666666
                       }
                     }
                   }
@@ -562,7 +3191,7 @@
                       "docs": {
                         "exercises/warm-up-answer.html": {
                           "ref": "exercises/warm-up-answer.html",
-                          "tf": 0.019230769230769232
+                          "tf": 0.016666666666666666
                         }
                       }
                     },
@@ -570,117 +3199,7 @@
                       "docs": {
                         "exercises/warm-up-answer.html": {
                           "ref": "exercises/warm-up-answer.html",
-                          "tf": 0.019230769230769232
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "n": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.038461538461538464
-            }
-          }
-        },
-        "s": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.038461538461538464
-            }
-          },
-          "c": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "c": {
-                    "docs": {},
-                    "h": {
-                      "docs": {
-                        "exercises/warm-up-answer.html": {
-                          "ref": "exercises/warm-up-answer.html",
-                          "tf": 0.038461538461538464
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "f": {
-            "docs": {},
-            "d": {
-              "docs": {},
-              "x": {
-                "docs": {
-                  "exercises/warm-up-answer.html": {
-                    "ref": "exercises/warm-up-answer.html",
-                    "tf": 0.057692307692307696
-                  }
-                }
-              }
-            }
-          },
-          "t": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "n": {
-                "docs": {},
-                "d": {
-                  "docs": {},
-                  "a": {
-                    "docs": {},
-                    "r": {
-                      "docs": {},
-                      "d": {
-                        "docs": {
-                          "exercises/warm-up-answer.html": {
-                            "ref": "exercises/warm-up-answer.html",
-                            "tf": 0.019230769230769232
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "t": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.057692307692307696
-            }
-          },
-          "r": {
-            "docs": {},
-            "i": {
-              "docs": {},
-              "g": {
-                "docs": {},
-                "g": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "r": {
-                      "docs": {
-                        "exercises/warm-up-answer.html": {
-                          "ref": "exercises/warm-up-answer.html",
-                          "tf": 0.019230769230769232
+                          "tf": 0.016666666666666666
                         }
                       }
                     }
@@ -691,46 +3210,18 @@
           }
         },
         "u": {
-          "docs": {},
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.03333333333333333
+            }
+          },
           "p": {
             "docs": {
               "exercises/warm-up-answer.html": {
                 "ref": "exercises/warm-up-answer.html",
-                "tf": 0.019230769230769232
+                "tf": 0.016666666666666666
               }
-            }
-          }
-        },
-        "v": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.019230769230769232
-            }
-          }
-        },
-        "w": {
-          "docs": {},
-          "a": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "m": {
-                "docs": {
-                  "exercises/warm-up-answer.html": {
-                    "ref": "exercises/warm-up-answer.html",
-                    "tf": 0.019230769230769232
-                  }
-                }
-              }
-            }
-          }
-        },
-        "x": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.019230769230769232
             }
           }
         },
@@ -738,7 +3229,7 @@
           "docs": {
             "exercises/warm-up-answer.html": {
               "ref": "exercises/warm-up-answer.html",
-              "tf": 0.019230769230769232
+              "tf": 0.016666666666666666
             }
           }
         },
@@ -746,7 +3237,7 @@
           "docs": {
             "exercises/warm-up-answer.html": {
               "ref": "exercises/warm-up-answer.html",
-              "tf": 0.019230769230769232
+              "tf": 0.016666666666666666
             }
           }
         },
@@ -764,6 +3255,38 @@
                     "docs": {},
                     "織": {
                       "docs": {},
+                      "へ": {
+                        "docs": {},
+                        "プ": {
+                          "docs": {},
+                          "ッ": {
+                            "docs": {},
+                            "シ": {
+                              "docs": {},
+                              "ュ": {
+                                "docs": {},
+                                "し": {
+                                  "docs": {},
+                                  "ま": {
+                                    "docs": {},
+                                    "す": {
+                                      "docs": {},
+                                      "。": {
+                                        "docs": {
+                                          "exercises/warm-up-answer.html": {
+                                            "ref": "exercises/warm-up-answer.html",
+                                            "tf": 0.016666666666666666
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
                       "を": {
                         "docs": {},
                         "作": {
@@ -780,8 +3303,28 @@
                                     "docs": {
                                       "exercises/warm-up-answer.html": {
                                         "ref": "exercises/warm-up-answer.html",
-                                        "tf": 0.019230769230769232
+                                        "tf": 0.016666666666666666
                                       }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "開": {
+                          "docs": {},
+                          "き": {
+                            "docs": {},
+                            "ま": {
+                              "docs": {},
+                              "す": {
+                                "docs": {},
+                                "。": {
+                                  "docs": {
+                                    "exercises/warm-up-answer.html": {
+                                      "ref": "exercises/warm-up-answer.html",
+                                      "tf": 0.016666666666666666
                                     }
                                   }
                                 }
@@ -819,51 +3362,7 @@
                             "docs": {
                               "exercises/warm-up-answer.html": {
                                 "ref": "exercises/warm-up-answer.html",
-                                "tf": 0.019230769230769232
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "プ": {
-          "docs": {},
-          "ロ": {
-            "docs": {},
-            "ジ": {
-              "docs": {},
-              "ェ": {
-                "docs": {},
-                "ク": {
-                  "docs": {},
-                  "ト": {
-                    "docs": {},
-                    "を": {
-                      "docs": {},
-                      "作": {
-                        "docs": {},
-                        "成": {
-                          "docs": {},
-                          "し": {
-                            "docs": {},
-                            "ま": {
-                              "docs": {},
-                              "す": {
-                                "docs": {},
-                                "。": {
-                                  "docs": {
-                                    "exercises/warm-up-answer.html": {
-                                      "ref": "exercises/warm-up-answer.html",
-                                      "tf": 0.019230769230769232
-                                    }
-                                  }
-                                }
+                                "tf": 0.016666666666666666
                               }
                             }
                           }
@@ -882,64 +3381,160 @@
             "docs": {
               "exercises/warm-up-answer.html": {
                 "ref": "exercises/warm-up-answer.html",
-                "tf": 10.01923076923077
+                "tf": 10.016666666666667
               }
             }
           }
         }
       },
-      "length": 40
+      "length": 132
     },
     "corpusTokens": [
       "\"befor",
       "(befor",
+      "(json)」をクリックします。",
+      "+",
+      ",",
+      ".eslintignor",
+      ".eslintrc.json",
+      ".prettierignor",
+      ".prettierrc",
+      "1",
+      "10",
+      "11",
+      "12",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
       "7",
+      "8",
+      "9",
+      ":",
       "account",
       "accounttrigg",
       "accounttrigger.trigg",
       "apex",
       "apextrigg",
       "app/main/default/trigg",
-      "cd",
+      "bracket",
+      "code",
+      "codey",
+      "color",
+      "command",
       "config/project",
+      "ctrl",
       "d",
       "def.json",
       "demo",
       "devhub",
       "e",
+      "eslint",
+      "extens",
       "f",
       "forc",
       "force:apex:trigger:cr",
       "force:org:cr",
-      "force:project:cr",
+      "force:org:open",
+      "force:source:push",
+      "formatt",
+      "git",
+      "gitlen",
+      "high",
+      "html",
       "insert\"",
       "insert)",
+      "json",
+      "live",
+      "maco",
+      "midnight",
       "n",
+      "no.",
+      "noon",
+      "output",
+      "p",
+      "pack",
+      "pair",
+      "pmd",
+      "prettier",
+      "preview",
+      "project",
+      "ruleset.xml",
       "s",
+      "salesforc",
       "scratch",
+      "set",
+      "settings.json",
       "sfdx",
-      "standard",
+      "share",
+      "space",
+      "supercharg",
       "t",
+      "todo",
+      "trail",
+      "tree",
       "trigger",
+      "u",
       "up",
       "v",
+      "vs",
       "warm",
-      "x",
+      "window",
+      "y",
+      "zenkaku",
       "{",
       "}",
+      "—",
+      "「vscodequickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。",
+      "「vscodequickstart」プロジェクトのルートに既に自動生成されているファイルの中身を以下で置き換えましょう。",
+      "さきほど",
+      "ぜひインストールしましょう。",
+      "のコミットの履歴を追跡しやすくなる",
+      "の中身を次の内容で書き換えます。",
+      "の拡張機能の",
+      "をインストールしましたが、他にも開発に欠かせない拡張機能が豊富に存在します。",
+      "をプレビューできる",
+      "を貼り付けて保存しましょう。",
+      "を開き、右上のアイコン「open",
+      "インストールした拡張機能の各種設定を有効化しましょう。",
+      "オススメポイント",
+      "コメントを一覧化できる",
+      "コードの静的解析を実行できる",
+      "コードを綺麗に整形してくれる",
+      "スクラッチ組織へプッシュします。",
       "スクラッチ組織を作成します。",
+      "スクラッチ組織を開きます。",
       "トリガを作成します。",
-      "プロジェクトを作成します。",
-      "解答"
+      "ユーザ設定",
+      "リアルタイムにコードを共有して共同作業できる",
+      "ログに色付けしてくれる",
+      "以下の",
+      "余分なスペースを削除してくれる",
+      "余分な全角スペースをハイライトしてくれる",
+      "名前",
+      "必須",
+      "括弧のペアを色付きで把握できる",
+      "次のキーボードのショートカットで",
+      "解答",
+      "設定",
+      "開発にぴったりのダークテーマ",
+      "開発にぴったりのライトテーマ"
     ],
     "pipeline": ["stopWordFilter", "stemmer"]
   },
   "store": {
+    "prerequisite/vs-code-extensions.html": {
+      "url": "prerequisite/vs-code-extensions.html",
+      "title": "VS Code Extensions",
+      "keywords": "",
+      "body": "VS Code Extensions\nさきほど VS Code の拡張機能の Salesforce Extension Pack をインストールしましたが、他にも開発に欠かせない拡張機能が豊富に存在します。\nぜひインストールしましょう。\n\n\n\nNo.\n必須\n名前\nオススメポイント\n\n\n\n\n1\nY\nBracket Pair Colorizer\n括弧のペアを色付きで把握できる\n\n\n2\nY\nCodey Midnight\nSalesforce 開発にぴったりのダークテーマ\n\n\n3\nY\nPrettier - Code formatter\nコードを綺麗に整形してくれる\n\n\n4\nY\nTodo Tree\nTODO コメントを一覧化できる\n\n\n5\nY\nTrailing Spaces\n余分なスペースを削除してくれる\n\n\n6\nY\nzenkaku\n余分な全角スペースをハイライトしてくれる\n\n\n7\n\nApex PMD\nApex コードの静的解析を実行できる\n\n\n8\n\nCodey High Noon\nSalesforce 開発にぴったりのライトテーマ\n\n\n9\n\nGitLens — Git supercharged\nGit のコミットの履歴を追跡しやすくなる\n\n\n10\n\nLive HTML Previewer\nHTML をプレビューできる\n\n\n11\n\nLive Share\nリアルタイムにコードを共有して共同作業できる\n\n\n12\n\nOutput Colorizer\nログに色付けしてくれる\n\n\n\nユーザ設定\nインストールした拡張機能の各種設定を有効化しましょう。\n次のキーボードのショートカットで Settings を開き、右上のアイコン「Open Settings (JSON)」をクリックします。\n\nMacOS : command + ,\nWindows : Ctrl + ,\n\n以下の JSON を貼り付けて保存しましょう。\n\nsettings.json\n\nPrettier 設定\n「VSCodeQuickstart」プロジェクトのルートに既に自動生成されているファイルの中身を以下で置き換えましょう。\n\n.prettierrc\n.prettierignore\n\nESLint 設定\n「VSCodeQuickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。\n\n.eslintrc.json\n.eslintignore\n\nApex PMD 設定\n「VSCodeQuickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。\n\npmd-ruleset.xml\n\n"
+    },
     "exercises/warm-up-answer.html": {
       "url": "exercises/warm-up-answer.html",
       "title": "解答",
       "keywords": "",
-      "body": "Warm-up 解答\nプロジェクトを作成します。\nsfdx force:project:create -n demo -t standard -x\n\ncd demo\n\nスクラッチ組織を作成します。\nsfdx force:org:create -a demo -d 7 -f config/project-scratch-def.json -s -t scratch -v DevHub\n\nApex トリガを作成します。\nsfdx force:apex:trigger:create -d force-app/main/default/triggers -e \"before insert\" -n AccountTrigger -s Account -t ApexTrigger\n\nAccountTrigger.trigger\ntrigger AccountTrigger on Account (before insert) {\n\n}\n\n"
+      "body": "Warm-up 解答\nconfig/project-scratch-def.json の中身を次の内容で書き換えます。\n\nproject-scratch-def.json\n\nスクラッチ組織を作成します。\nsfdx force:org:create -a demo -d 7 -f config/project-scratch-def.json -s -t scratch -v DevHub\n\nApex トリガを作成します。\nsfdx force:apex:trigger:create -d force-app/main/default/triggers -e \"before insert\" -n AccountTrigger -s Account -t ApexTrigger\n\nAccountTrigger.trigger\ntrigger AccountTrigger on Account (before insert) {\n\n}\n\nスクラッチ組織へプッシュします。\nsfdx force:source:push -u demo\n\nスクラッチ組織を開きます。\nsfdx force:org:open -u demo -p\n\n"
     }
   }
 }
