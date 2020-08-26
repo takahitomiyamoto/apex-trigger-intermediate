@@ -9,70 +9,9 @@
     "ref": "url",
     "documentStore": {
       "store": {
-        "exercises/warm-up-answer.html": [
-          "\"befor",
-          "'",
-          "'[サンプル]",
-          "(account",
-          "+",
-          "...",
-          "7",
-          ":",
-          "=",
-          "account",
-          "account(befor",
-          "account.nam",
-          "account.name;",
-          "accounttrigg",
-          "accounttrigger.trigg",
-          "apex",
-          "apextrigg",
-          "app/main/default/trigg",
-          "config/project",
-          "d",
-          "def.json",
-          "demo",
-          "devhub",
-          "e",
-          "f",
-          "forc",
-          "force:apex:trigger:cr",
-          "force:org:cr",
-          "force:org:open",
-          "force:source:push",
-          "insert\"",
-          "insert)",
-          "lightning/o/account/list",
-          "n",
-          "p",
-          "prettier",
-          "project",
-          "s",
-          "scratch",
-          "sfdx",
-          "t",
-          "trigger",
-          "trigger.new)",
-          "u",
-          "up",
-          "v",
-          "warm",
-          "yarn",
-          "{",
-          "}",
-          "いかがでしたか？",
-          "の中身を次の内容で書き換えます。",
-          "の解答",
-          "コードをフォーマットします。",
-          "スクラッチ組織へプッシュします。",
-          "スクラッチ組織を作成します。",
-          "スクラッチ組織を開きます。",
-          "トリガを作成します。",
-          "新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。",
-          "解答"
-        ],
         "exercises/level-01-answer.html": [
           "'",
+          "'';",
           "'[サンプル]",
           "'cold'",
           "'high';",
@@ -102,6 +41,8 @@
           "befor",
           "before_insert",
           "before_upd",
+          "customerprior",
+          "customerpriority;",
           "demo",
           "force:org:open",
           "force:source:push",
@@ -111,6 +52,7 @@
           "p",
           "prettier",
           "sfdx",
+          "string",
           "switch",
           "trigger",
           "trigger.new)",
@@ -131,7 +73,7 @@
           "解答"
         ]
       },
-      "length": 2
+      "length": 1
     },
     "tokenStore": {
       "root": {
@@ -139,51 +81,27 @@
           "docs": {
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.008333333333333333
-            }
-          }
-        },
-        "7": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.01282051282051282
+              "tf": 0.007633587786259542
             }
           }
         },
         "docs": {},
-        "\"": {
-          "docs": {},
-          "b": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "f": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "r": {
-                    "docs": {
-                      "exercises/warm-up-answer.html": {
-                        "ref": "exercises/warm-up-answer.html",
-                        "tf": 0.01282051282051282
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "'": {
           "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.01282051282051282
-            },
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.008333333333333333
+              "tf": 0.007633587786259542
+            }
+          },
+          "'": {
+            "docs": {},
+            ";": {
+              "docs": {
+                "exercises/level-01-answer.html": {
+                  "ref": "exercises/level-01-answer.html",
+                  "tf": 0.015267175572519083
+                }
+              }
             }
           },
           "[": {
@@ -198,13 +116,9 @@
                     "docs": {},
                     "]": {
                       "docs": {
-                        "exercises/warm-up-answer.html": {
-                          "ref": "exercises/warm-up-answer.html",
-                          "tf": 0.01282051282051282
-                        },
                         "exercises/level-01-answer.html": {
                           "ref": "exercises/level-01-answer.html",
-                          "tf": 0.008333333333333333
+                          "tf": 0.007633587786259542
                         }
                       }
                     }
@@ -225,7 +139,7 @@
                     "docs": {
                       "exercises/level-01-answer.html": {
                         "ref": "exercises/level-01-answer.html",
-                        "tf": 0.016666666666666666
+                        "tf": 0.015267175572519083
                       }
                     }
                   }
@@ -247,7 +161,7 @@
                       "docs": {
                         "exercises/level-01-answer.html": {
                           "ref": "exercises/level-01-answer.html",
-                          "tf": 0.016666666666666666
+                          "tf": 0.015267175572519083
                         }
                       }
                     }
@@ -263,7 +177,7 @@
                   "docs": {
                     "exercises/level-01-answer.html": {
                       "ref": "exercises/level-01-answer.html",
-                      "tf": 0.016666666666666666
+                      "tf": 0.015267175572519083
                     }
                   }
                 }
@@ -282,7 +196,7 @@
                     "docs": {
                       "exercises/level-01-answer.html": {
                         "ref": "exercises/level-01-answer.html",
-                        "tf": 0.016666666666666666
+                        "tf": 0.015267175572519083
                       }
                     }
                   }
@@ -308,7 +222,7 @@
                           "docs": {
                             "exercises/level-01-answer.html": {
                               "ref": "exercises/level-01-answer.html",
-                              "tf": 0.016666666666666666
+                              "tf": 0.015267175572519083
                             }
                           }
                         }
@@ -331,7 +245,7 @@
                     "docs": {
                       "exercises/level-01-answer.html": {
                         "ref": "exercises/level-01-answer.html",
-                        "tf": 0.016666666666666666
+                        "tf": 0.015267175572519083
                       }
                     }
                   }
@@ -347,7 +261,7 @@
               "docs": {
                 "exercises/level-01-answer.html": {
                   "ref": "exercises/level-01-answer.html",
-                  "tf": 0.008333333333333333
+                  "tf": 0.007633587786259542
                 }
               }
             }
@@ -358,7 +272,7 @@
               "docs": {
                 "exercises/level-01-answer.html": {
                   "ref": "exercises/level-01-answer.html",
-                  "tf": 0.016666666666666666
+                  "tf": 0.007633587786259542
                 }
               }
             }
@@ -378,13 +292,9 @@
                       "docs": {},
                       "t": {
                         "docs": {
-                          "exercises/warm-up-answer.html": {
-                            "ref": "exercises/warm-up-answer.html",
-                            "tf": 0.01282051282051282
-                          },
                           "exercises/level-01-answer.html": {
                             "ref": "exercises/level-01-answer.html",
-                            "tf": 0.016666666666666666
+                            "tf": 0.015267175572519083
                           }
                         }
                       }
@@ -397,13 +307,9 @@
         },
         "+": {
           "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.01282051282051282
-            },
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.008333333333333333
+              "tf": 0.007633587786259542
             }
           }
         },
@@ -413,39 +319,38 @@
             "docs": {},
             ".": {
               "docs": {
-                "exercises/warm-up-answer.html": {
-                  "ref": "exercises/warm-up-answer.html",
-                  "tf": 0.01282051282051282
-                },
                 "exercises/level-01-answer.html": {
                   "ref": "exercises/level-01-answer.html",
-                  "tf": 0.008333333333333333
+                  "tf": 0.007633587786259542
                 }
+              }
+            }
+          }
+        },
+        "/": {
+          "docs": {},
+          "/": {
+            "docs": {
+              "exercises/level-01-answer.html": {
+                "ref": "exercises/level-01-answer.html",
+                "tf": 0.015267175572519083
               }
             }
           }
         },
         ":": {
           "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.01282051282051282
-            },
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.016666666666666666
+              "tf": 0.015267175572519083
             }
           }
         },
         "=": {
           "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.01282051282051282
-            },
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.058333333333333334
+              "tf": 0.08396946564885496
             }
           }
         },
@@ -463,13 +368,9 @@
                     "docs": {},
                     "t": {
                       "docs": {
-                        "exercises/warm-up-answer.html": {
-                          "ref": "exercises/warm-up-answer.html",
-                          "tf": 0.02564102564102564
-                        },
                         "exercises/level-01-answer.html": {
                           "ref": "exercises/level-01-answer.html",
-                          "tf": 0.016666666666666666
+                          "tf": 0.015267175572519083
                         }
                       },
                       "(": {
@@ -484,13 +385,9 @@
                                 "docs": {},
                                 "r": {
                                   "docs": {
-                                    "exercises/warm-up-answer.html": {
-                                      "ref": "exercises/warm-up-answer.html",
-                                      "tf": 0.01282051282051282
-                                    },
                                     "exercises/level-01-answer.html": {
                                       "ref": "exercises/level-01-answer.html",
-                                      "tf": 0.008333333333333333
+                                      "tf": 0.007633587786259542
                                     }
                                   }
                                 }
@@ -501,39 +398,6 @@
                       },
                       ".": {
                         "docs": {},
-                        "n": {
-                          "docs": {},
-                          "a": {
-                            "docs": {},
-                            "m": {
-                              "docs": {
-                                "exercises/warm-up-answer.html": {
-                                  "ref": "exercises/warm-up-answer.html",
-                                  "tf": 0.01282051282051282
-                                },
-                                "exercises/level-01-answer.html": {
-                                  "ref": "exercises/level-01-answer.html",
-                                  "tf": 0.008333333333333333
-                                }
-                              },
-                              "e": {
-                                "docs": {},
-                                ";": {
-                                  "docs": {
-                                    "exercises/warm-up-answer.html": {
-                                      "ref": "exercises/warm-up-answer.html",
-                                      "tf": 0.01282051282051282
-                                    },
-                                    "exercises/level-01-answer.html": {
-                                      "ref": "exercises/level-01-answer.html",
-                                      "tf": 0.008333333333333333
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        },
                         "c": {
                           "docs": {},
                           "u": {
@@ -574,7 +438,7 @@
                                                               "docs": {
                                                                 "exercises/level-01-answer.html": {
                                                                   "ref": "exercises/level-01-answer.html",
-                                                                  "tf": 0.05
+                                                                  "tf": 0.015267175572519083
                                                                 }
                                                               }
                                                             }
@@ -596,11 +460,36 @@
                             }
                           }
                         },
+                        "n": {
+                          "docs": {},
+                          "a": {
+                            "docs": {},
+                            "m": {
+                              "docs": {
+                                "exercises/level-01-answer.html": {
+                                  "ref": "exercises/level-01-answer.html",
+                                  "tf": 0.007633587786259542
+                                }
+                              },
+                              "e": {
+                                "docs": {},
+                                ";": {
+                                  "docs": {
+                                    "exercises/level-01-answer.html": {
+                                      "ref": "exercises/level-01-answer.html",
+                                      "tf": 0.007633587786259542
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
                         "r": {
                           "docs": {
                             "exercises/level-01-answer.html": {
                               "ref": "exercises/level-01-answer.html",
-                              "tf": 0.016666666666666666
+                              "tf": 0.015267175572519083
                             }
                           }
                         }
@@ -615,13 +504,9 @@
                               "docs": {},
                               "g": {
                                 "docs": {
-                                  "exercises/warm-up-answer.html": {
-                                    "ref": "exercises/warm-up-answer.html",
-                                    "tf": 0.02564102564102564
-                                  },
                                   "exercises/level-01-answer.html": {
                                     "ref": "exercises/level-01-answer.html",
-                                    "tf": 0.008333333333333333
+                                    "tf": 0.007633587786259542
                                   }
                                 },
                                 "e": {
@@ -640,13 +525,9 @@
                                               "docs": {},
                                               "g": {
                                                 "docs": {
-                                                  "exercises/warm-up-answer.html": {
-                                                    "ref": "exercises/warm-up-answer.html",
-                                                    "tf": 0.01282051282051282
-                                                  },
                                                   "exercises/level-01-answer.html": {
                                                     "ref": "exercises/level-01-answer.html",
-                                                    "tf": 0.008333333333333333
+                                                    "tf": 0.007633587786259542
                                                   }
                                                 }
                                               }
@@ -677,7 +558,7 @@
                     "docs": {
                       "exercises/level-01-answer.html": {
                         "ref": "exercises/level-01-answer.html",
-                        "tf": 0.025
+                        "tf": 0.015267175572519083
                       }
                     }
                   }
@@ -691,92 +572,66 @@
               "docs": {},
               "x": {
                 "docs": {
-                  "exercises/warm-up-answer.html": {
-                    "ref": "exercises/warm-up-answer.html",
-                    "tf": 0.01282051282051282
-                  },
                   "exercises/level-01-answer.html": {
                     "ref": "exercises/level-01-answer.html",
-                    "tf": 0.008333333333333333
-                  }
-                },
-                "t": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "i": {
-                      "docs": {},
-                      "g": {
-                        "docs": {},
-                        "g": {
-                          "docs": {
-                            "exercises/warm-up-answer.html": {
-                              "ref": "exercises/warm-up-answer.html",
-                              "tf": 0.01282051282051282
-                            }
-                          }
-                        }
-                      }
-                    }
+                    "tf": 0.007633587786259542
                   }
                 }
               }
-            },
-            "p": {
+            }
+          }
+        },
+        "b": {
+          "docs": {},
+          "e": {
+            "docs": {},
+            "f": {
               "docs": {},
-              "/": {
+              "o": {
                 "docs": {},
-                "m": {
-                  "docs": {},
-                  "a": {
+                "r": {
+                  "docs": {
+                    "exercises/level-01-answer.html": {
+                      "ref": "exercises/level-01-answer.html",
+                      "tf": 0.007633587786259542
+                    }
+                  },
+                  "e": {
                     "docs": {},
-                    "i": {
+                    "_": {
                       "docs": {},
-                      "n": {
+                      "i": {
                         "docs": {},
-                        "/": {
+                        "n": {
                           "docs": {},
-                          "d": {
+                          "s": {
                             "docs": {},
                             "e": {
                               "docs": {},
-                              "f": {
+                              "r": {
                                 "docs": {},
-                                "a": {
-                                  "docs": {},
-                                  "u": {
-                                    "docs": {},
-                                    "l": {
-                                      "docs": {},
-                                      "t": {
-                                        "docs": {},
-                                        "/": {
-                                          "docs": {},
-                                          "t": {
-                                            "docs": {},
-                                            "r": {
-                                              "docs": {},
-                                              "i": {
-                                                "docs": {},
-                                                "g": {
-                                                  "docs": {},
-                                                  "g": {
-                                                    "docs": {
-                                                      "exercises/warm-up-answer.html": {
-                                                        "ref": "exercises/warm-up-answer.html",
-                                                        "tf": 0.01282051282051282
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
+                                "t": {
+                                  "docs": {
+                                    "exercises/level-01-answer.html": {
+                                      "ref": "exercises/level-01-answer.html",
+                                      "tf": 0.007633587786259542
                                     }
                                   }
                                 }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "u": {
+                        "docs": {},
+                        "p": {
+                          "docs": {},
+                          "d": {
+                            "docs": {
+                              "exercises/level-01-answer.html": {
+                                "ref": "exercises/level-01-answer.html",
+                                "tf": 0.007633587786259542
                               }
                             }
                           }
@@ -791,35 +646,49 @@
         },
         "c": {
           "docs": {},
-          "o": {
+          "u": {
             "docs": {},
-            "n": {
+            "s": {
               "docs": {},
-              "f": {
+              "t": {
                 "docs": {},
-                "i": {
+                "o": {
                   "docs": {},
-                  "g": {
+                  "m": {
                     "docs": {},
-                    "/": {
+                    "e": {
                       "docs": {},
-                      "p": {
+                      "r": {
                         "docs": {},
-                        "r": {
+                        "p": {
                           "docs": {},
-                          "o": {
+                          "r": {
                             "docs": {},
-                            "j": {
+                            "i": {
                               "docs": {},
-                              "e": {
+                              "o": {
                                 "docs": {},
-                                "c": {
-                                  "docs": {},
-                                  "t": {
-                                    "docs": {
-                                      "exercises/warm-up-answer.html": {
-                                        "ref": "exercises/warm-up-answer.html",
-                                        "tf": 0.02564102564102564
+                                "r": {
+                                  "docs": {
+                                    "exercises/level-01-answer.html": {
+                                      "ref": "exercises/level-01-answer.html",
+                                      "tf": 0.061068702290076333
+                                    }
+                                  },
+                                  "i": {
+                                    "docs": {},
+                                    "t": {
+                                      "docs": {},
+                                      "y": {
+                                        "docs": {},
+                                        ";": {
+                                          "docs": {
+                                            "exercises/level-01-answer.html": {
+                                              "ref": "exercises/level-01-answer.html",
+                                              "tf": 0.015267175572519083
+                                            }
+                                          }
+                                        }
                                       }
                                     }
                                   }
@@ -837,151 +706,34 @@
           }
         },
         "d": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.02564102564102564
-            }
-          },
+          "docs": {},
           "e": {
             "docs": {},
-            "f": {
-              "docs": {},
-              ".": {
-                "docs": {},
-                "j": {
-                  "docs": {},
-                  "s": {
-                    "docs": {},
-                    "o": {
-                      "docs": {},
-                      "n": {
-                        "docs": {
-                          "exercises/warm-up-answer.html": {
-                            "ref": "exercises/warm-up-answer.html",
-                            "tf": 0.038461538461538464
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "m": {
               "docs": {},
               "o": {
                 "docs": {
-                  "exercises/warm-up-answer.html": {
-                    "ref": "exercises/warm-up-answer.html",
-                    "tf": 0.038461538461538464
-                  },
                   "exercises/level-01-answer.html": {
                     "ref": "exercises/level-01-answer.html",
-                    "tf": 0.016666666666666666
+                    "tf": 0.015267175572519083
                   }
                 }
               }
-            },
-            "v": {
-              "docs": {},
-              "h": {
-                "docs": {},
-                "u": {
-                  "docs": {},
-                  "b": {
-                    "docs": {
-                      "exercises/warm-up-answer.html": {
-                        "ref": "exercises/warm-up-answer.html",
-                        "tf": 0.01282051282051282
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "e": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.01282051282051282
             }
           }
         },
         "f": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.01282051282051282
-            }
-          },
+          "docs": {},
           "o": {
             "docs": {},
             "r": {
               "docs": {},
               "c": {
-                "docs": {
-                  "exercises/warm-up-answer.html": {
-                    "ref": "exercises/warm-up-answer.html",
-                    "tf": 0.01282051282051282
-                  }
-                },
+                "docs": {},
                 "e": {
                   "docs": {},
                   ":": {
                     "docs": {},
-                    "a": {
-                      "docs": {},
-                      "p": {
-                        "docs": {},
-                        "e": {
-                          "docs": {},
-                          "x": {
-                            "docs": {},
-                            ":": {
-                              "docs": {},
-                              "t": {
-                                "docs": {},
-                                "r": {
-                                  "docs": {},
-                                  "i": {
-                                    "docs": {},
-                                    "g": {
-                                      "docs": {},
-                                      "g": {
-                                        "docs": {},
-                                        "e": {
-                                          "docs": {},
-                                          "r": {
-                                            "docs": {},
-                                            ":": {
-                                              "docs": {},
-                                              "c": {
-                                                "docs": {},
-                                                "r": {
-                                                  "docs": {
-                                                    "exercises/warm-up-answer.html": {
-                                                      "ref": "exercises/warm-up-answer.html",
-                                                      "tf": 0.01282051282051282
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    },
                     "o": {
                       "docs": {},
                       "r": {
@@ -990,17 +742,6 @@
                           "docs": {},
                           ":": {
                             "docs": {},
-                            "c": {
-                              "docs": {},
-                              "r": {
-                                "docs": {
-                                  "exercises/warm-up-answer.html": {
-                                    "ref": "exercises/warm-up-answer.html",
-                                    "tf": 0.01282051282051282
-                                  }
-                                }
-                              }
-                            },
                             "o": {
                               "docs": {},
                               "p": {
@@ -1009,13 +750,9 @@
                                   "docs": {},
                                   "n": {
                                     "docs": {
-                                      "exercises/warm-up-answer.html": {
-                                        "ref": "exercises/warm-up-answer.html",
-                                        "tf": 0.01282051282051282
-                                      },
                                       "exercises/level-01-answer.html": {
                                         "ref": "exercises/level-01-answer.html",
-                                        "tf": 0.008333333333333333
+                                        "tf": 0.007633587786259542
                                       }
                                     }
                                   }
@@ -1048,13 +785,9 @@
                                         "docs": {},
                                         "h": {
                                           "docs": {
-                                            "exercises/warm-up-answer.html": {
-                                              "ref": "exercises/warm-up-answer.html",
-                                              "tf": 0.01282051282051282
-                                            },
                                             "exercises/level-01-answer.html": {
                                               "ref": "exercises/level-01-answer.html",
-                                              "tf": 0.008333333333333333
+                                              "tf": 0.007633587786259542
                                             }
                                           }
                                         }
@@ -1086,27 +819,11 @@
                   "docs": {},
                   "t": {
                     "docs": {},
-                    "\"": {
-                      "docs": {
-                        "exercises/warm-up-answer.html": {
-                          "ref": "exercises/warm-up-answer.html",
-                          "tf": 0.01282051282051282
-                        }
-                      }
-                    },
-                    ")": {
-                      "docs": {
-                        "exercises/warm-up-answer.html": {
-                          "ref": "exercises/warm-up-answer.html",
-                          "tf": 0.01282051282051282
-                        }
-                      }
-                    },
                     ",": {
                       "docs": {
                         "exercises/level-01-answer.html": {
                           "ref": "exercises/level-01-answer.html",
-                          "tf": 0.008333333333333333
+                          "tf": 0.007633587786259542
                         }
                       }
                     }
@@ -1164,13 +881,9 @@
                                                       "docs": {},
                                                       "t": {
                                                         "docs": {
-                                                          "exercises/warm-up-answer.html": {
-                                                            "ref": "exercises/warm-up-answer.html",
-                                                            "tf": 0.01282051282051282
-                                                          },
                                                           "exercises/level-01-answer.html": {
                                                             "ref": "exercises/level-01-answer.html",
-                                                            "tf": 0.008333333333333333
+                                                            "tf": 0.007633587786259542
                                                           }
                                                         }
                                                       }
@@ -1202,29 +915,17 @@
               "docs": {
                 "exercises/level-01-answer.html": {
                   "ref": "exercises/level-01-answer.html",
-                  "tf": 0.008333333333333333
+                  "tf": 0.007633587786259542
                 }
               }
             }
           }
         },
-        "n": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.01282051282051282
-            }
-          }
-        },
         "p": {
           "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.01282051282051282
-            },
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.008333333333333333
+              "tf": 0.007633587786259542
             }
           },
           "r": {
@@ -1241,34 +942,10 @@
                       "docs": {},
                       "r": {
                         "docs": {
-                          "exercises/warm-up-answer.html": {
-                            "ref": "exercises/warm-up-answer.html",
-                            "tf": 0.01282051282051282
-                          },
                           "exercises/level-01-answer.html": {
                             "ref": "exercises/level-01-answer.html",
-                            "tf": 0.008333333333333333
+                            "tf": 0.007633587786259542
                           }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "o": {
-              "docs": {},
-              "j": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "c": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "exercises/warm-up-answer.html": {
-                          "ref": "exercises/warm-up-answer.html",
-                          "tf": 0.01282051282051282
                         }
                       }
                     }
@@ -1279,48 +956,36 @@
           }
         },
         "s": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.02564102564102564
-            }
-          },
-          "c": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "c": {
-                    "docs": {},
-                    "h": {
-                      "docs": {
-                        "exercises/warm-up-answer.html": {
-                          "ref": "exercises/warm-up-answer.html",
-                          "tf": 0.05128205128205128
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
+          "docs": {},
           "f": {
             "docs": {},
             "d": {
               "docs": {},
               "x": {
                 "docs": {
-                  "exercises/warm-up-answer.html": {
-                    "ref": "exercises/warm-up-answer.html",
-                    "tf": 0.05128205128205128
-                  },
                   "exercises/level-01-answer.html": {
                     "ref": "exercises/level-01-answer.html",
-                    "tf": 0.016666666666666666
+                    "tf": 0.015267175572519083
+                  }
+                }
+              }
+            }
+          },
+          "t": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "g": {
+                    "docs": {
+                      "exercises/level-01-answer.html": {
+                        "ref": "exercises/level-01-answer.html",
+                        "tf": 0.015267175572519083
+                      }
+                    }
                   }
                 }
               }
@@ -1338,7 +1003,7 @@
                     "docs": {
                       "exercises/level-01-answer.html": {
                         "ref": "exercises/level-01-answer.html",
-                        "tf": 0.025
+                        "tf": 0.022900763358778626
                       }
                     }
                   }
@@ -1348,12 +1013,7 @@
           }
         },
         "t": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.02564102564102564
-            }
-          },
+          "docs": {},
           "r": {
             "docs": {},
             "i": {
@@ -1366,13 +1026,9 @@
                     "docs": {},
                     "r": {
                       "docs": {
-                        "exercises/warm-up-answer.html": {
-                          "ref": "exercises/warm-up-answer.html",
-                          "tf": 0.01282051282051282
-                        },
                         "exercises/level-01-answer.html": {
                           "ref": "exercises/level-01-answer.html",
-                          "tf": 0.008333333333333333
+                          "tf": 0.007633587786259542
                         }
                       },
                       ".": {
@@ -1385,13 +1041,9 @@
                               "docs": {},
                               ")": {
                                 "docs": {
-                                  "exercises/warm-up-answer.html": {
-                                    "ref": "exercises/warm-up-answer.html",
-                                    "tf": 0.01282051282051282
-                                  },
                                   "exercises/level-01-answer.html": {
                                     "ref": "exercises/level-01-answer.html",
-                                    "tf": 0.016666666666666666
+                                    "tf": 0.015267175572519083
                                   }
                                 }
                               }
@@ -1424,7 +1076,7 @@
                                                 "docs": {
                                                   "exercises/level-01-answer.html": {
                                                     "ref": "exercises/level-01-answer.html",
-                                                    "tf": 0.008333333333333333
+                                                    "tf": 0.007633587786259542
                                                   }
                                                 }
                                               }
@@ -1449,22 +1101,13 @@
         },
         "u": {
           "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.02564102564102564
-            },
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.016666666666666666
+              "tf": 0.015267175572519083
             }
           },
           "p": {
-            "docs": {
-              "exercises/warm-up-answer.html": {
-                "ref": "exercises/warm-up-answer.html",
-                "tf": 0.01282051282051282
-              }
-            },
+            "docs": {},
             "d": {
               "docs": {},
               "a": {
@@ -1477,35 +1120,10 @@
                       "docs": {
                         "exercises/level-01-answer.html": {
                           "ref": "exercises/level-01-answer.html",
-                          "tf": 0.008333333333333333
+                          "tf": 0.007633587786259542
                         }
                       }
                     }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "v": {
-          "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.01282051282051282
-            }
-          }
-        },
-        "w": {
-          "docs": {},
-          "a": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "m": {
-                "docs": {
-                  "exercises/warm-up-answer.html": {
-                    "ref": "exercises/warm-up-answer.html",
-                    "tf": 0.01282051282051282
                   }
                 }
               }
@@ -1520,13 +1138,9 @@
               "docs": {},
               "n": {
                 "docs": {
-                  "exercises/warm-up-answer.html": {
-                    "ref": "exercises/warm-up-answer.html",
-                    "tf": 0.01282051282051282
-                  },
                   "exercises/level-01-answer.html": {
                     "ref": "exercises/level-01-answer.html",
-                    "tf": 0.008333333333333333
+                    "tf": 0.007633587786259542
                   }
                 }
               }
@@ -1535,25 +1149,17 @@
         },
         "{": {
           "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.02564102564102564
-            },
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.14166666666666666
+              "tf": 0.1297709923664122
             }
           }
         },
         "}": {
           "docs": {
-            "exercises/warm-up-answer.html": {
-              "ref": "exercises/warm-up-answer.html",
-              "tf": 0.02564102564102564
-            },
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.14166666666666666
+              "tf": 0.1297709923664122
             }
           }
         },
@@ -1573,13 +1179,9 @@
                       "docs": {},
                       "？": {
                         "docs": {
-                          "exercises/warm-up-answer.html": {
-                            "ref": "exercises/warm-up-answer.html",
-                            "tf": 0.01282051282051282
-                          },
                           "exercises/level-01-answer.html": {
                             "ref": "exercises/level-01-answer.html",
-                            "tf": 0.008333333333333333
+                            "tf": 0.007633587786259542
                           }
                         }
                       }
@@ -1592,39 +1194,107 @@
         },
         "の": {
           "docs": {},
-          "中": {
+          "解": {
             "docs": {},
-            "身": {
+            "答": {
+              "docs": {
+                "exercises/level-01-answer.html": {
+                  "ref": "exercises/level-01-answer.html",
+                  "tf": 0.007633587786259542
+                }
+              }
+            }
+          }
+        },
+        "ま": {
+          "docs": {},
+          "た": {
+            "docs": {},
+            "、": {
               "docs": {},
-              "を": {
+              "そ": {
                 "docs": {},
-                "次": {
+                "の": {
                   "docs": {},
-                  "の": {
+                  "レ": {
                     "docs": {},
-                    "内": {
+                    "コ": {
                       "docs": {},
-                      "容": {
+                      "ー": {
                         "docs": {},
-                        "で": {
+                        "ド": {
                           "docs": {},
-                          "書": {
+                          "を": {
                             "docs": {},
-                            "き": {
+                            "更": {
                               "docs": {},
-                              "換": {
+                              "新": {
                                 "docs": {},
-                                "え": {
+                                "し": {
                                   "docs": {},
-                                  "ま": {
+                                  "、": {
                                     "docs": {},
-                                    "す": {
+                                    "想": {
                                       "docs": {},
-                                      "。": {
-                                        "docs": {
-                                          "exercises/warm-up-answer.html": {
-                                            "ref": "exercises/warm-up-answer.html",
-                                            "tf": 0.01282051282051282
+                                      "定": {
+                                        "docs": {},
+                                        "通": {
+                                          "docs": {},
+                                          "り": {
+                                            "docs": {},
+                                            "の": {
+                                              "docs": {},
+                                              "挙": {
+                                                "docs": {},
+                                                "動": {
+                                                  "docs": {},
+                                                  "か": {
+                                                    "docs": {},
+                                                    "ど": {
+                                                      "docs": {},
+                                                      "う": {
+                                                        "docs": {},
+                                                        "か": {
+                                                          "docs": {},
+                                                          "を": {
+                                                            "docs": {},
+                                                            "確": {
+                                                              "docs": {},
+                                                              "認": {
+                                                                "docs": {},
+                                                                "し": {
+                                                                  "docs": {},
+                                                                  "ま": {
+                                                                    "docs": {},
+                                                                    "し": {
+                                                                      "docs": {},
+                                                                      "ょ": {
+                                                                        "docs": {},
+                                                                        "う": {
+                                                                          "docs": {},
+                                                                          "。": {
+                                                                            "docs": {
+                                                                              "exercises/level-01-answer.html": {
+                                                                                "ref": "exercises/level-01-answer.html",
+                                                                                "tf": 0.007633587786259542
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
                                           }
                                         }
                                       }
@@ -1638,21 +1308,6 @@
                       }
                     }
                   }
-                }
-              }
-            }
-          },
-          "解": {
-            "docs": {},
-            "答": {
-              "docs": {
-                "exercises/warm-up-answer.html": {
-                  "ref": "exercises/warm-up-answer.html",
-                  "tf": 0.01282051282051282
-                },
-                "exercises/level-01-answer.html": {
-                  "ref": "exercises/level-01-answer.html",
-                  "tf": 0.008333333333333333
                 }
               }
             }
@@ -1686,13 +1341,9 @@
                                   "docs": {},
                                   "。": {
                                     "docs": {
-                                      "exercises/warm-up-answer.html": {
-                                        "ref": "exercises/warm-up-answer.html",
-                                        "tf": 0.01282051282051282
-                                      },
                                       "exercises/level-01-answer.html": {
                                         "ref": "exercises/level-01-answer.html",
-                                        "tf": 0.008333333333333333
+                                        "tf": 0.007633587786259542
                                       }
                                     }
                                   }
@@ -1741,13 +1392,9 @@
                                       "docs": {},
                                       "。": {
                                         "docs": {
-                                          "exercises/warm-up-answer.html": {
-                                            "ref": "exercises/warm-up-answer.html",
-                                            "tf": 0.01282051282051282
-                                          },
                                           "exercises/level-01-answer.html": {
                                             "ref": "exercises/level-01-answer.html",
-                                            "tf": 0.008333333333333333
+                                            "tf": 0.007633587786259542
                                           }
                                         }
                                       }
@@ -1761,29 +1408,6 @@
                       },
                       "を": {
                         "docs": {},
-                        "作": {
-                          "docs": {},
-                          "成": {
-                            "docs": {},
-                            "し": {
-                              "docs": {},
-                              "ま": {
-                                "docs": {},
-                                "す": {
-                                  "docs": {},
-                                  "。": {
-                                    "docs": {
-                                      "exercises/warm-up-answer.html": {
-                                        "ref": "exercises/warm-up-answer.html",
-                                        "tf": 0.01282051282051282
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        },
                         "開": {
                           "docs": {},
                           "き": {
@@ -1794,13 +1418,9 @@
                                 "docs": {},
                                 "。": {
                                   "docs": {
-                                    "exercises/warm-up-answer.html": {
-                                      "ref": "exercises/warm-up-answer.html",
-                                      "tf": 0.01282051282051282
-                                    },
                                     "exercises/level-01-answer.html": {
                                       "ref": "exercises/level-01-answer.html",
-                                      "tf": 0.008333333333333333
+                                      "tf": 0.007633587786259542
                                     }
                                   }
                                 }
@@ -1824,29 +1444,6 @@
               "docs": {},
               "を": {
                 "docs": {},
-                "作": {
-                  "docs": {},
-                  "成": {
-                    "docs": {},
-                    "し": {
-                      "docs": {},
-                      "ま": {
-                        "docs": {},
-                        "す": {
-                          "docs": {},
-                          "。": {
-                            "docs": {
-                              "exercises/warm-up-answer.html": {
-                                "ref": "exercises/warm-up-answer.html",
-                                "tf": 0.01282051282051282
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
                 "修": {
                   "docs": {},
                   "正": {
@@ -1861,7 +1458,7 @@
                             "docs": {
                               "exercises/level-01-answer.html": {
                                 "ref": "exercises/level-01-answer.html",
-                                "tf": 0.008333333333333333
+                                "tf": 0.007633587786259542
                               }
                             }
                           }
@@ -1956,13 +1553,9 @@
                                                                                         "docs": {},
                                                                                         "。": {
                                                                                           "docs": {
-                                                                                            "exercises/warm-up-answer.html": {
-                                                                                              "ref": "exercises/warm-up-answer.html",
-                                                                                              "tf": 0.01282051282051282
-                                                                                            },
                                                                                             "exercises/level-01-answer.html": {
                                                                                               "ref": "exercises/level-01-answer.html",
-                                                                                              "tf": 0.008333333333333333
+                                                                                              "tf": 0.007633587786259542
                                                                                             }
                                                                                           }
                                                                                         }
@@ -2010,204 +1603,19 @@
           "docs": {},
           "答": {
             "docs": {
-              "exercises/warm-up-answer.html": {
-                "ref": "exercises/warm-up-answer.html",
-                "tf": 10
-              },
               "exercises/level-01-answer.html": {
                 "ref": "exercises/level-01-answer.html",
                 "tf": 10
-              }
-            }
-          }
-        },
-        "/": {
-          "docs": {},
-          "/": {
-            "docs": {
-              "exercises/level-01-answer.html": {
-                "ref": "exercises/level-01-answer.html",
-                "tf": 0.025
-              }
-            }
-          }
-        },
-        "b": {
-          "docs": {},
-          "e": {
-            "docs": {},
-            "f": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "r": {
-                  "docs": {
-                    "exercises/level-01-answer.html": {
-                      "ref": "exercises/level-01-answer.html",
-                      "tf": 0.008333333333333333
-                    }
-                  },
-                  "e": {
-                    "docs": {},
-                    "_": {
-                      "docs": {},
-                      "i": {
-                        "docs": {},
-                        "n": {
-                          "docs": {},
-                          "s": {
-                            "docs": {},
-                            "e": {
-                              "docs": {},
-                              "r": {
-                                "docs": {},
-                                "t": {
-                                  "docs": {
-                                    "exercises/level-01-answer.html": {
-                                      "ref": "exercises/level-01-answer.html",
-                                      "tf": 0.008333333333333333
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      },
-                      "u": {
-                        "docs": {},
-                        "p": {
-                          "docs": {},
-                          "d": {
-                            "docs": {
-                              "exercises/level-01-answer.html": {
-                                "ref": "exercises/level-01-answer.html",
-                                "tf": 0.008333333333333333
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "ま": {
-          "docs": {},
-          "た": {
-            "docs": {},
-            "、": {
-              "docs": {},
-              "そ": {
-                "docs": {},
-                "の": {
-                  "docs": {},
-                  "レ": {
-                    "docs": {},
-                    "コ": {
-                      "docs": {},
-                      "ー": {
-                        "docs": {},
-                        "ド": {
-                          "docs": {},
-                          "を": {
-                            "docs": {},
-                            "更": {
-                              "docs": {},
-                              "新": {
-                                "docs": {},
-                                "し": {
-                                  "docs": {},
-                                  "、": {
-                                    "docs": {},
-                                    "想": {
-                                      "docs": {},
-                                      "定": {
-                                        "docs": {},
-                                        "通": {
-                                          "docs": {},
-                                          "り": {
-                                            "docs": {},
-                                            "の": {
-                                              "docs": {},
-                                              "挙": {
-                                                "docs": {},
-                                                "動": {
-                                                  "docs": {},
-                                                  "か": {
-                                                    "docs": {},
-                                                    "ど": {
-                                                      "docs": {},
-                                                      "う": {
-                                                        "docs": {},
-                                                        "か": {
-                                                          "docs": {},
-                                                          "を": {
-                                                            "docs": {},
-                                                            "確": {
-                                                              "docs": {},
-                                                              "認": {
-                                                                "docs": {},
-                                                                "し": {
-                                                                  "docs": {},
-                                                                  "ま": {
-                                                                    "docs": {},
-                                                                    "し": {
-                                                                      "docs": {},
-                                                                      "ょ": {
-                                                                        "docs": {},
-                                                                        "う": {
-                                                                          "docs": {},
-                                                                          "。": {
-                                                                            "docs": {
-                                                                              "exercises/level-01-answer.html": {
-                                                                                "ref": "exercises/level-01-answer.html",
-                                                                                "tf": 0.008333333333333333
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
               }
             }
           }
         }
       },
-      "length": 117
+      "length": 61
     },
     "corpusTokens": [
-      "\"befor",
       "'",
+      "'';",
       "'[サンプル]",
       "'cold'",
       "'high';",
@@ -2222,7 +1630,6 @@
       "...",
       "//",
       "1",
-      "7",
       ":",
       "=",
       "account",
@@ -2235,57 +1642,36 @@
       "accounttrigger.trigg",
       "action",
       "apex",
-      "apextrigg",
-      "app/main/default/trigg",
       "befor",
       "before_insert",
       "before_upd",
-      "config/project",
-      "d",
-      "def.json",
+      "customerprior",
+      "customerpriority;",
       "demo",
-      "devhub",
-      "e",
-      "f",
-      "forc",
-      "force:apex:trigger:cr",
-      "force:org:cr",
       "force:org:open",
       "force:source:push",
-      "insert\"",
-      "insert)",
       "insert,",
       "lightning/o/account/list",
       "lv.",
-      "n",
       "p",
       "prettier",
-      "project",
-      "s",
-      "scratch",
       "sfdx",
+      "string",
       "switch",
-      "t",
       "trigger",
       "trigger.new)",
       "trigger.operationtyp",
       "u",
-      "up",
       "update)",
-      "v",
-      "warm",
       "yarn",
       "{",
       "}",
       "いかがでしたか？",
-      "の中身を次の内容で書き換えます。",
       "の解答",
       "また、そのレコードを更新し、想定通りの挙動かどうかを確認しましょう。",
       "コードをフォーマットします。",
       "スクラッチ組織へプッシュします。",
-      "スクラッチ組織を作成します。",
       "スクラッチ組織を開きます。",
-      "トリガを作成します。",
       "トリガを修正します。",
       "新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。",
       "解答"
@@ -2293,17 +1679,11 @@
     "pipeline": ["stopWordFilter", "stemmer"]
   },
   "store": {
-    "exercises/warm-up-answer.html": {
-      "url": "exercises/warm-up-answer.html",
-      "title": "解答",
-      "keywords": "",
-      "body": "Warm-up の解答\nconfig/project-scratch-def.json の中身を次の内容で書き換えます。\n\nproject-scratch-def.json\n\nスクラッチ組織を作成します。\nsfdx force:org:create -a demo -d 7 -f config/project-scratch-def.json -s -t scratch -v DevHub\n\nApex トリガを作成します。\nsfdx force:apex:trigger:create -d force-app/main/default/triggers -e \"before insert\" -n AccountTrigger -s Account -t ApexTrigger\n\nAccountTrigger.trigger\ntrigger AccountTrigger on Account(before insert) {\n  for (Account account : Trigger.new) {\n    account.Name = '[サンプル] ' + account.Name;\n  }\n}\n\nコードをフォーマットします。\nyarn prettier\n\nスクラッチ組織へプッシュします。\nsfdx force:source:push -u demo\n\nスクラッチ組織を開きます。\nsfdx force:org:open -u demo -p lightning/o/Account/list\n\n新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。\n... いかがでしたか？\n"
-    },
     "exercises/level-01-answer.html": {
       "url": "exercises/level-01-answer.html",
       "title": "解答",
       "keywords": "",
-      "body": "Lv. 1 の解答\nApex トリガを修正します。\nAccountTrigger.trigger\ntrigger AccountTrigger on Account(before insert, before update) {\n  switch on Trigger.operationType {\n    when BEFORE_INSERT {\n      for (Account account : Trigger.new) {\n        // Action (1)\n        account.Name = '[サンプル] ' + account.Name;\n\n        // Action (2)\n        switch on account.Rating {\n          when 'Hot' {\n            account.CustomerPriority__c = 'High';\n          }\n          when 'Warm' {\n            account.CustomerPriority__c = 'Medium';\n          }\n          when 'Cold' {\n            account.CustomerPriority__c = 'Low';\n          }\n          when else {\n          }\n        }\n      }\n    }\n    when BEFORE_UPDATE {\n      for (Account account : Trigger.new) {\n        // Action (2)\n        switch on account.Rating {\n          when 'Hot' {\n            account.CustomerPriority__c = 'High';\n          }\n          when 'Warm' {\n            account.CustomerPriority__c = 'Medium';\n          }\n          when 'Cold' {\n            account.CustomerPriority__c = 'Low';\n          }\n          when else {\n          }\n        }\n      }\n    }\n    when else {\n    }\n  }\n}\n\nコードをフォーマットします。\nyarn prettier\n\nスクラッチ組織へプッシュします。\nsfdx force:source:push -u demo\n\nスクラッチ組織を開きます。\nsfdx force:org:open -u demo -p lightning/o/Account/list\n\n新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。\nまた、そのレコードを更新し、想定通りの挙動かどうかを確認しましょう。\n... いかがでしたか？\n"
+      "body": "Lv. 1 の解答\nApex トリガを修正します。\nAccountTrigger.trigger\ntrigger AccountTrigger on Account(before insert, before update) {\n  switch on Trigger.operationType {\n    when BEFORE_INSERT {\n      for (Account account : Trigger.new) {\n        // Action (1)\n        account.Name = '[サンプル] ' + account.Name;\n\n        // Action (2)\n        String customerPriority = '';\n        switch on account.Rating {\n          when 'Hot' {\n            customerPriority = 'High';\n          }\n          when 'Warm' {\n            customerPriority = 'Medium';\n          }\n          when 'Cold' {\n            customerPriority = 'Low';\n          }\n          when else {\n          }\n        }\n        account.CustomerPriority__c = customerPriority;\n      }\n    }\n    when BEFORE_UPDATE {\n      for (Account account : Trigger.new) {\n        String customerPriority = '';\n        switch on account.Rating {\n          when 'Hot' {\n            customerPriority = 'High';\n          }\n          when 'Warm' {\n            customerPriority = 'Medium';\n          }\n          when 'Cold' {\n            customerPriority = 'Low';\n          }\n          when else {\n          }\n        }\n        account.CustomerPriority__c = customerPriority;\n      }\n    }\n    when else {\n    }\n  }\n}\n\nコードをフォーマットします。\nyarn prettier\n\nスクラッチ組織へプッシュします。\nsfdx force:source:push -u demo\n\nスクラッチ組織を開きます。\nsfdx force:org:open -u demo -p lightning/o/Account/list\n\n新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。\nまた、そのレコードを更新し、想定通りの挙動かどうかを確認しましょう。\n... いかがでしたか？\n"
     }
   }
 }

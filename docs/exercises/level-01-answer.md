@@ -13,37 +13,40 @@ trigger AccountTrigger on Account(before insert, before update) {
         account.Name = '[サンプル] ' + account.Name;
 
         // Action (2)
+        String customerPriority = '';
         switch on account.Rating {
           when 'Hot' {
-            account.CustomerPriority__c = 'High';
+            customerPriority = 'High';
           }
           when 'Warm' {
-            account.CustomerPriority__c = 'Medium';
+            customerPriority = 'Medium';
           }
           when 'Cold' {
-            account.CustomerPriority__c = 'Low';
+            customerPriority = 'Low';
           }
           when else {
           }
         }
+        account.CustomerPriority__c = customerPriority;
       }
     }
     when BEFORE_UPDATE {
       for (Account account : Trigger.new) {
-        // Action (2)
+        String customerPriority = '';
         switch on account.Rating {
           when 'Hot' {
-            account.CustomerPriority__c = 'High';
+            customerPriority = 'High';
           }
           when 'Warm' {
-            account.CustomerPriority__c = 'Medium';
+            customerPriority = 'Medium';
           }
           when 'Cold' {
-            account.CustomerPriority__c = 'Low';
+            customerPriority = 'Low';
           }
           when else {
           }
         }
+        account.CustomerPriority__c = customerPriority;
       }
     }
     when else {
