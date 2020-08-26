@@ -44,4 +44,6 @@ sfdx force:source:push -u demo
 sfdx force:org:open -u demo -p lightning/o/Account/list
 ```
 
-新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認します。
+新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。
+
+... いかがでしたか？
