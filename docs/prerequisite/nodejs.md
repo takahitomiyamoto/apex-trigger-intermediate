@@ -21,17 +21,16 @@ npm -v
 yarn -v
 ```
 
-## 設定
+## Gulp 設定
 
-いま VS Code で開いている「VSCodeQuickstart」プロジェクトのルートに「package.json」ファイルを新規作成してください。
+「VSCodeQuickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。
 
 > [package.json](https://github.com/takahitomiyamoto/flexible-apex-trigger/blob/master/package.json)
 
-## パッケージのバージョンアップ
+## npm パッケージのインストール
 
-以下のコマンドを実行して、パッケージのバージョンを最新化しましょう。
+以下のコマンドを実行して、npm パッケージをインストールしましょう。
 
 ```sh
 yarn install
-yarn gulp:init
 ```
