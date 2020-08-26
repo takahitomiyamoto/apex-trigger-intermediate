@@ -1,4 +1,4 @@
-# Warm-up 解答
+# Warm-up の解答
 
 `config/project-scratch-def.json` の中身を次の内容で書き換えます。
 
