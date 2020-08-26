@@ -32,6 +32,7 @@ trigger AccountTrigger on Account(before insert, before update) {
     }
     when BEFORE_UPDATE {
       for (Account account : Trigger.new) {
+        // Action (2)
         String customerPriority = '';
         switch on account.Rating {
           when 'Hot' {

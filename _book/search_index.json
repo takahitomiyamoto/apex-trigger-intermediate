@@ -81,7 +81,7 @@
           "docs": {
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.007633587786259542
+              "tf": 0.007462686567164179
             }
           }
         },
@@ -90,7 +90,7 @@
           "docs": {
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.007633587786259542
+              "tf": 0.007462686567164179
             }
           },
           "'": {
@@ -99,7 +99,7 @@
               "docs": {
                 "exercises/level-01-answer.html": {
                   "ref": "exercises/level-01-answer.html",
-                  "tf": 0.015267175572519083
+                  "tf": 0.014925373134328358
                 }
               }
             }
@@ -118,7 +118,7 @@
                       "docs": {
                         "exercises/level-01-answer.html": {
                           "ref": "exercises/level-01-answer.html",
-                          "tf": 0.007633587786259542
+                          "tf": 0.007462686567164179
                         }
                       }
                     }
@@ -139,7 +139,7 @@
                     "docs": {
                       "exercises/level-01-answer.html": {
                         "ref": "exercises/level-01-answer.html",
-                        "tf": 0.015267175572519083
+                        "tf": 0.014925373134328358
                       }
                     }
                   }
@@ -161,7 +161,7 @@
                       "docs": {
                         "exercises/level-01-answer.html": {
                           "ref": "exercises/level-01-answer.html",
-                          "tf": 0.015267175572519083
+                          "tf": 0.014925373134328358
                         }
                       }
                     }
@@ -177,7 +177,7 @@
                   "docs": {
                     "exercises/level-01-answer.html": {
                       "ref": "exercises/level-01-answer.html",
-                      "tf": 0.015267175572519083
+                      "tf": 0.014925373134328358
                     }
                   }
                 }
@@ -196,7 +196,7 @@
                     "docs": {
                       "exercises/level-01-answer.html": {
                         "ref": "exercises/level-01-answer.html",
-                        "tf": 0.015267175572519083
+                        "tf": 0.014925373134328358
                       }
                     }
                   }
@@ -222,7 +222,7 @@
                           "docs": {
                             "exercises/level-01-answer.html": {
                               "ref": "exercises/level-01-answer.html",
-                              "tf": 0.015267175572519083
+                              "tf": 0.014925373134328358
                             }
                           }
                         }
@@ -245,7 +245,7 @@
                     "docs": {
                       "exercises/level-01-answer.html": {
                         "ref": "exercises/level-01-answer.html",
-                        "tf": 0.015267175572519083
+                        "tf": 0.014925373134328358
                       }
                     }
                   }
@@ -261,7 +261,7 @@
               "docs": {
                 "exercises/level-01-answer.html": {
                   "ref": "exercises/level-01-answer.html",
-                  "tf": 0.007633587786259542
+                  "tf": 0.007462686567164179
                 }
               }
             }
@@ -272,7 +272,7 @@
               "docs": {
                 "exercises/level-01-answer.html": {
                   "ref": "exercises/level-01-answer.html",
-                  "tf": 0.007633587786259542
+                  "tf": 0.014925373134328358
                 }
               }
             }
@@ -294,7 +294,7 @@
                         "docs": {
                           "exercises/level-01-answer.html": {
                             "ref": "exercises/level-01-answer.html",
-                            "tf": 0.015267175572519083
+                            "tf": 0.014925373134328358
                           }
                         }
                       }
@@ -309,7 +309,7 @@
           "docs": {
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.007633587786259542
+              "tf": 0.007462686567164179
             }
           }
         },
@@ -321,7 +321,7 @@
               "docs": {
                 "exercises/level-01-answer.html": {
                   "ref": "exercises/level-01-answer.html",
-                  "tf": 0.007633587786259542
+                  "tf": 0.007462686567164179
                 }
               }
             }
@@ -333,7 +333,7 @@
             "docs": {
               "exercises/level-01-answer.html": {
                 "ref": "exercises/level-01-answer.html",
-                "tf": 0.015267175572519083
+                "tf": 0.022388059701492536
               }
             }
           }
@@ -342,7 +342,7 @@
           "docs": {
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.015267175572519083
+              "tf": 0.014925373134328358
             }
           }
         },
@@ -350,7 +350,7 @@
           "docs": {
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.08396946564885496
+              "tf": 0.08208955223880597
             }
           }
         },
@@ -370,7 +370,7 @@
                       "docs": {
                         "exercises/level-01-answer.html": {
                           "ref": "exercises/level-01-answer.html",
-                          "tf": 0.015267175572519083
+                          "tf": 0.014925373134328358
                         }
                       },
                       "(": {
@@ -387,7 +387,7 @@
                                   "docs": {
                                     "exercises/level-01-answer.html": {
                                       "ref": "exercises/level-01-answer.html",
-                                      "tf": 0.007633587786259542
+                                      "tf": 0.007462686567164179
                                     }
                                   }
                                 }
@@ -438,7 +438,7 @@
                                                               "docs": {
                                                                 "exercises/level-01-answer.html": {
                                                                   "ref": "exercises/level-01-answer.html",
-                                                                  "tf": 0.015267175572519083
+                                                                  "tf": 0.014925373134328358
                                                                 }
                                                               }
                                                             }
@@ -468,7 +468,7 @@
                               "docs": {
                                 "exercises/level-01-answer.html": {
                                   "ref": "exercises/level-01-answer.html",
-                                  "tf": 0.007633587786259542
+                                  "tf": 0.007462686567164179
                                 }
                               },
                               "e": {
@@ -477,7 +477,7 @@
                                   "docs": {
                                     "exercises/level-01-answer.html": {
                                       "ref": "exercises/level-01-answer.html",
-                                      "tf": 0.007633587786259542
+                                      "tf": 0.007462686567164179
                                     }
                                   }
                                 }
@@ -489,7 +489,7 @@
                           "docs": {
                             "exercises/level-01-answer.html": {
                               "ref": "exercises/level-01-answer.html",
-                              "tf": 0.015267175572519083
+                              "tf": 0.014925373134328358
                             }
                           }
                         }
@@ -506,7 +506,7 @@
                                 "docs": {
                                   "exercises/level-01-answer.html": {
                                     "ref": "exercises/level-01-answer.html",
-                                    "tf": 0.007633587786259542
+                                    "tf": 0.007462686567164179
                                   }
                                 },
                                 "e": {
@@ -527,7 +527,7 @@
                                                 "docs": {
                                                   "exercises/level-01-answer.html": {
                                                     "ref": "exercises/level-01-answer.html",
-                                                    "tf": 0.007633587786259542
+                                                    "tf": 0.007462686567164179
                                                   }
                                                 }
                                               }
@@ -558,7 +558,7 @@
                     "docs": {
                       "exercises/level-01-answer.html": {
                         "ref": "exercises/level-01-answer.html",
-                        "tf": 0.015267175572519083
+                        "tf": 0.022388059701492536
                       }
                     }
                   }
@@ -574,7 +574,7 @@
                 "docs": {
                   "exercises/level-01-answer.html": {
                     "ref": "exercises/level-01-answer.html",
-                    "tf": 0.007633587786259542
+                    "tf": 0.007462686567164179
                   }
                 }
               }
@@ -593,7 +593,7 @@
                   "docs": {
                     "exercises/level-01-answer.html": {
                       "ref": "exercises/level-01-answer.html",
-                      "tf": 0.007633587786259542
+                      "tf": 0.007462686567164179
                     }
                   },
                   "e": {
@@ -614,7 +614,7 @@
                                   "docs": {
                                     "exercises/level-01-answer.html": {
                                       "ref": "exercises/level-01-answer.html",
-                                      "tf": 0.007633587786259542
+                                      "tf": 0.007462686567164179
                                     }
                                   }
                                 }
@@ -631,7 +631,7 @@
                             "docs": {
                               "exercises/level-01-answer.html": {
                                 "ref": "exercises/level-01-answer.html",
-                                "tf": 0.007633587786259542
+                                "tf": 0.007462686567164179
                               }
                             }
                           }
@@ -672,7 +672,7 @@
                                   "docs": {
                                     "exercises/level-01-answer.html": {
                                       "ref": "exercises/level-01-answer.html",
-                                      "tf": 0.061068702290076333
+                                      "tf": 0.05970149253731343
                                     }
                                   },
                                   "i": {
@@ -685,7 +685,7 @@
                                           "docs": {
                                             "exercises/level-01-answer.html": {
                                               "ref": "exercises/level-01-answer.html",
-                                              "tf": 0.015267175572519083
+                                              "tf": 0.014925373134328358
                                             }
                                           }
                                         }
@@ -715,7 +715,7 @@
                 "docs": {
                   "exercises/level-01-answer.html": {
                     "ref": "exercises/level-01-answer.html",
-                    "tf": 0.015267175572519083
+                    "tf": 0.014925373134328358
                   }
                 }
               }
@@ -752,7 +752,7 @@
                                     "docs": {
                                       "exercises/level-01-answer.html": {
                                         "ref": "exercises/level-01-answer.html",
-                                        "tf": 0.007633587786259542
+                                        "tf": 0.007462686567164179
                                       }
                                     }
                                   }
@@ -787,7 +787,7 @@
                                           "docs": {
                                             "exercises/level-01-answer.html": {
                                               "ref": "exercises/level-01-answer.html",
-                                              "tf": 0.007633587786259542
+                                              "tf": 0.007462686567164179
                                             }
                                           }
                                         }
@@ -823,7 +823,7 @@
                       "docs": {
                         "exercises/level-01-answer.html": {
                           "ref": "exercises/level-01-answer.html",
-                          "tf": 0.007633587786259542
+                          "tf": 0.007462686567164179
                         }
                       }
                     }
@@ -883,7 +883,7 @@
                                                         "docs": {
                                                           "exercises/level-01-answer.html": {
                                                             "ref": "exercises/level-01-answer.html",
-                                                            "tf": 0.007633587786259542
+                                                            "tf": 0.007462686567164179
                                                           }
                                                         }
                                                       }
@@ -915,7 +915,7 @@
               "docs": {
                 "exercises/level-01-answer.html": {
                   "ref": "exercises/level-01-answer.html",
-                  "tf": 0.007633587786259542
+                  "tf": 0.007462686567164179
                 }
               }
             }
@@ -925,7 +925,7 @@
           "docs": {
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.007633587786259542
+              "tf": 0.007462686567164179
             }
           },
           "r": {
@@ -944,7 +944,7 @@
                         "docs": {
                           "exercises/level-01-answer.html": {
                             "ref": "exercises/level-01-answer.html",
-                            "tf": 0.007633587786259542
+                            "tf": 0.007462686567164179
                           }
                         }
                       }
@@ -965,7 +965,7 @@
                 "docs": {
                   "exercises/level-01-answer.html": {
                     "ref": "exercises/level-01-answer.html",
-                    "tf": 0.015267175572519083
+                    "tf": 0.014925373134328358
                   }
                 }
               }
@@ -983,7 +983,7 @@
                     "docs": {
                       "exercises/level-01-answer.html": {
                         "ref": "exercises/level-01-answer.html",
-                        "tf": 0.015267175572519083
+                        "tf": 0.014925373134328358
                       }
                     }
                   }
@@ -1003,7 +1003,7 @@
                     "docs": {
                       "exercises/level-01-answer.html": {
                         "ref": "exercises/level-01-answer.html",
-                        "tf": 0.022900763358778626
+                        "tf": 0.022388059701492536
                       }
                     }
                   }
@@ -1028,7 +1028,7 @@
                       "docs": {
                         "exercises/level-01-answer.html": {
                           "ref": "exercises/level-01-answer.html",
-                          "tf": 0.007633587786259542
+                          "tf": 0.007462686567164179
                         }
                       },
                       ".": {
@@ -1043,7 +1043,7 @@
                                 "docs": {
                                   "exercises/level-01-answer.html": {
                                     "ref": "exercises/level-01-answer.html",
-                                    "tf": 0.015267175572519083
+                                    "tf": 0.014925373134328358
                                   }
                                 }
                               }
@@ -1076,7 +1076,7 @@
                                                 "docs": {
                                                   "exercises/level-01-answer.html": {
                                                     "ref": "exercises/level-01-answer.html",
-                                                    "tf": 0.007633587786259542
+                                                    "tf": 0.007462686567164179
                                                   }
                                                 }
                                               }
@@ -1103,7 +1103,7 @@
           "docs": {
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.015267175572519083
+              "tf": 0.014925373134328358
             }
           },
           "p": {
@@ -1120,7 +1120,7 @@
                       "docs": {
                         "exercises/level-01-answer.html": {
                           "ref": "exercises/level-01-answer.html",
-                          "tf": 0.007633587786259542
+                          "tf": 0.007462686567164179
                         }
                       }
                     }
@@ -1140,7 +1140,7 @@
                 "docs": {
                   "exercises/level-01-answer.html": {
                     "ref": "exercises/level-01-answer.html",
-                    "tf": 0.007633587786259542
+                    "tf": 0.007462686567164179
                   }
                 }
               }
@@ -1151,7 +1151,7 @@
           "docs": {
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.1297709923664122
+              "tf": 0.12686567164179105
             }
           }
         },
@@ -1159,7 +1159,7 @@
           "docs": {
             "exercises/level-01-answer.html": {
               "ref": "exercises/level-01-answer.html",
-              "tf": 0.1297709923664122
+              "tf": 0.12686567164179105
             }
           }
         },
@@ -1181,7 +1181,7 @@
                         "docs": {
                           "exercises/level-01-answer.html": {
                             "ref": "exercises/level-01-answer.html",
-                            "tf": 0.007633587786259542
+                            "tf": 0.007462686567164179
                           }
                         }
                       }
@@ -1200,7 +1200,7 @@
               "docs": {
                 "exercises/level-01-answer.html": {
                   "ref": "exercises/level-01-answer.html",
-                  "tf": 0.007633587786259542
+                  "tf": 0.007462686567164179
                 }
               }
             }
@@ -1276,7 +1276,7 @@
                                                                             "docs": {
                                                                               "exercises/level-01-answer.html": {
                                                                                 "ref": "exercises/level-01-answer.html",
-                                                                                "tf": 0.007633587786259542
+                                                                                "tf": 0.007462686567164179
                                                                               }
                                                                             }
                                                                           }
@@ -1343,7 +1343,7 @@
                                     "docs": {
                                       "exercises/level-01-answer.html": {
                                         "ref": "exercises/level-01-answer.html",
-                                        "tf": 0.007633587786259542
+                                        "tf": 0.007462686567164179
                                       }
                                     }
                                   }
@@ -1394,7 +1394,7 @@
                                         "docs": {
                                           "exercises/level-01-answer.html": {
                                             "ref": "exercises/level-01-answer.html",
-                                            "tf": 0.007633587786259542
+                                            "tf": 0.007462686567164179
                                           }
                                         }
                                       }
@@ -1420,7 +1420,7 @@
                                   "docs": {
                                     "exercises/level-01-answer.html": {
                                       "ref": "exercises/level-01-answer.html",
-                                      "tf": 0.007633587786259542
+                                      "tf": 0.007462686567164179
                                     }
                                   }
                                 }
@@ -1458,7 +1458,7 @@
                             "docs": {
                               "exercises/level-01-answer.html": {
                                 "ref": "exercises/level-01-answer.html",
-                                "tf": 0.007633587786259542
+                                "tf": 0.007462686567164179
                               }
                             }
                           }
@@ -1555,7 +1555,7 @@
                                                                                           "docs": {
                                                                                             "exercises/level-01-answer.html": {
                                                                                               "ref": "exercises/level-01-answer.html",
-                                                                                              "tf": 0.007633587786259542
+                                                                                              "tf": 0.007462686567164179
                                                                                             }
                                                                                           }
                                                                                         }
@@ -1683,7 +1683,7 @@
       "url": "exercises/level-01-answer.html",
       "title": "解答",
       "keywords": "",
-      "body": "Lv. 1 の解答\nApex トリガを修正します。\nAccountTrigger.trigger\ntrigger AccountTrigger on Account(before insert, before update) {\n  switch on Trigger.operationType {\n    when BEFORE_INSERT {\n      for (Account account : Trigger.new) {\n        // Action (1)\n        account.Name = '[サンプル] ' + account.Name;\n\n        // Action (2)\n        String customerPriority = '';\n        switch on account.Rating {\n          when 'Hot' {\n            customerPriority = 'High';\n          }\n          when 'Warm' {\n            customerPriority = 'Medium';\n          }\n          when 'Cold' {\n            customerPriority = 'Low';\n          }\n          when else {\n          }\n        }\n        account.CustomerPriority__c = customerPriority;\n      }\n    }\n    when BEFORE_UPDATE {\n      for (Account account : Trigger.new) {\n        String customerPriority = '';\n        switch on account.Rating {\n          when 'Hot' {\n            customerPriority = 'High';\n          }\n          when 'Warm' {\n            customerPriority = 'Medium';\n          }\n          when 'Cold' {\n            customerPriority = 'Low';\n          }\n          when else {\n          }\n        }\n        account.CustomerPriority__c = customerPriority;\n      }\n    }\n    when else {\n    }\n  }\n}\n\nコードをフォーマットします。\nyarn prettier\n\nスクラッチ組織へプッシュします。\nsfdx force:source:push -u demo\n\nスクラッチ組織を開きます。\nsfdx force:org:open -u demo -p lightning/o/Account/list\n\n新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。\nまた、そのレコードを更新し、想定通りの挙動かどうかを確認しましょう。\n... いかがでしたか？\n"
+      "body": "Lv. 1 の解答\nApex トリガを修正します。\nAccountTrigger.trigger\ntrigger AccountTrigger on Account(before insert, before update) {\n  switch on Trigger.operationType {\n    when BEFORE_INSERT {\n      for (Account account : Trigger.new) {\n        // Action (1)\n        account.Name = '[サンプル] ' + account.Name;\n\n        // Action (2)\n        String customerPriority = '';\n        switch on account.Rating {\n          when 'Hot' {\n            customerPriority = 'High';\n          }\n          when 'Warm' {\n            customerPriority = 'Medium';\n          }\n          when 'Cold' {\n            customerPriority = 'Low';\n          }\n          when else {\n          }\n        }\n        account.CustomerPriority__c = customerPriority;\n      }\n    }\n    when BEFORE_UPDATE {\n      for (Account account : Trigger.new) {\n        // Action (2)\n        String customerPriority = '';\n        switch on account.Rating {\n          when 'Hot' {\n            customerPriority = 'High';\n          }\n          when 'Warm' {\n            customerPriority = 'Medium';\n          }\n          when 'Cold' {\n            customerPriority = 'Low';\n          }\n          when else {\n          }\n        }\n        account.CustomerPriority__c = customerPriority;\n      }\n    }\n    when else {\n    }\n  }\n}\n\nコードをフォーマットします。\nyarn prettier\n\nスクラッチ組織へプッシュします。\nsfdx force:source:push -u demo\n\nスクラッチ組織を開きます。\nsfdx force:org:open -u demo -p lightning/o/Account/list\n\n新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。\nまた、そのレコードを更新し、想定通りの挙動かどうかを確認しましょう。\n... いかがでしたか？\n"
     }
   }
 }
