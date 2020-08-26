@@ -26,6 +26,12 @@ trigger AccountTrigger on Account(before insert) {
 }
 ```
 
+コードをフォーマットします。
+
+```sh
+yarn prettier
+```
+
 スクラッチ組織へプッシュします。
 
 ```sh

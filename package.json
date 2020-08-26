@@ -34,7 +34,7 @@
     "gulp-babel": "8.0.0",
     "gulp-shell": "0.8.0",
     "honkit": "3.6.1",
-    "prettier": "2.0.5",
+    "prettier": "2.1.1",
     "prettier-plugin-apex": "1.6.0"
   }
 }
