@@ -20,7 +20,7 @@ Apex トリガを作成します。
 sfdx force:apex:trigger:create -d force-app/main/default/triggers -e "before insert" -n AccountTrigger -s Account -t ApexTrigger
 ```
 
-## AccountTrigger.trigger
+#### AccountTrigger.trigger
 
 ```java
 trigger AccountTrigger on Account (before insert) {
