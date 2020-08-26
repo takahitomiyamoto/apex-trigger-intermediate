@@ -11,7 +11,6 @@
       "store": {
         "prerequisite/nodejs.html": [
           "&",
-          "gulp",
           "instal",
           "lt",
           "node",
@@ -39,35 +38,82 @@
           "次のコマンドでインストールが正常に完了していることを確認しましょう。",
           "確認",
           "設定"
+        ],
+        "exercises/warm-up-answer.html": [
+          "\"befor",
+          "'",
+          "'[サンプル]",
+          "(account",
+          "+",
+          "7",
+          ":",
+          "=",
+          "account",
+          "account(befor",
+          "account.nam",
+          "account.name;",
+          "accounttrigg",
+          "accounttrigger.trigg",
+          "apex",
+          "apextrigg",
+          "app/main/default/trigg",
+          "config/project",
+          "d",
+          "def.json",
+          "demo",
+          "devhub",
+          "e",
+          "f",
+          "forc",
+          "force:apex:trigger:cr",
+          "force:org:cr",
+          "force:org:open",
+          "force:source:push",
+          "insert\"",
+          "insert)",
+          "lightning/o/account/list",
+          "n",
+          "p",
+          "project",
+          "s",
+          "scratch",
+          "sfdx",
+          "t",
+          "trigger",
+          "trigger.new)",
+          "u",
+          "up",
+          "v",
+          "warm",
+          "{",
+          "}",
+          "の中身を次の内容で書き換えます。",
+          "スクラッチ組織へプッシュします。",
+          "スクラッチ組織を作成します。",
+          "スクラッチ組織を開きます。",
+          "トリガを作成します。",
+          "新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認します。",
+          "解答"
         ]
       },
-      "length": 1
+      "length": 2
     },
     "tokenStore": {
       "root": {
+        "7": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0136986301369863
+            }
+          }
+        },
         "docs": {},
         "&": {
           "docs": {
             "prerequisite/nodejs.html": {
               "ref": "prerequisite/nodejs.html",
-              "tf": 3.3611111111111107
-            }
-          }
-        },
-        "g": {
-          "docs": {},
-          "u": {
-            "docs": {},
-            "l": {
-              "docs": {},
-              "p": {
-                "docs": {
-                  "prerequisite/nodejs.html": {
-                    "ref": "prerequisite/nodejs.html",
-                    "tf": 0.027777777777777776
-                  }
-                }
-              }
+              "tf": 3.3619047619047615
             }
           }
         },
@@ -85,7 +131,32 @@
                     "docs": {
                       "prerequisite/nodejs.html": {
                         "ref": "prerequisite/nodejs.html",
-                        "tf": 0.027777777777777776
+                        "tf": 0.02857142857142857
+                      }
+                    }
+                  }
+                }
+              },
+              "e": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    "\"": {
+                      "docs": {
+                        "exercises/warm-up-answer.html": {
+                          "ref": "exercises/warm-up-answer.html",
+                          "tf": 0.0136986301369863
+                        }
+                      }
+                    },
+                    ")": {
+                      "docs": {
+                        "exercises/warm-up-answer.html": {
+                          "ref": "exercises/warm-up-answer.html",
+                          "tf": 0.0136986301369863
+                        }
                       }
                     }
                   }
@@ -100,13 +171,92 @@
             "docs": {
               "prerequisite/nodejs.html": {
                 "ref": "prerequisite/nodejs.html",
-                "tf": 0.027777777777777776
+                "tf": 0.02857142857142857
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "g": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "g": {
+                          "docs": {},
+                          "/": {
+                            "docs": {},
+                            "o": {
+                              "docs": {},
+                              "/": {
+                                "docs": {},
+                                "a": {
+                                  "docs": {},
+                                  "c": {
+                                    "docs": {},
+                                    "c": {
+                                      "docs": {},
+                                      "o": {
+                                        "docs": {},
+                                        "u": {
+                                          "docs": {},
+                                          "n": {
+                                            "docs": {},
+                                            "t": {
+                                              "docs": {},
+                                              "/": {
+                                                "docs": {},
+                                                "l": {
+                                                  "docs": {},
+                                                  "i": {
+                                                    "docs": {},
+                                                    "s": {
+                                                      "docs": {},
+                                                      "t": {
+                                                        "docs": {
+                                                          "exercises/warm-up-answer.html": {
+                                                            "ref": "exercises/warm-up-answer.html",
+                                                            "tf": 0.0136986301369863
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           }
         },
         "n": {
-          "docs": {},
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0136986301369863
+            }
+          },
           "o": {
             "docs": {},
             "d": {
@@ -115,7 +265,7 @@
                 "docs": {
                   "prerequisite/nodejs.html": {
                     "ref": "prerequisite/nodejs.html",
-                    "tf": 0.027777777777777776
+                    "tf": 0.02857142857142857
                   }
                 },
                 ".": {
@@ -124,7 +274,7 @@
                     "docs": {
                       "prerequisite/nodejs.html": {
                         "ref": "prerequisite/nodejs.html",
-                        "tf": 3.3888888888888884
+                        "tf": 3.39047619047619
                       }
                     }
                   }
@@ -138,7 +288,7 @@
               "docs": {
                 "prerequisite/nodejs.html": {
                   "ref": "prerequisite/nodejs.html",
-                  "tf": 0.05555555555555555
+                  "tf": 0.05714285714285714
                 }
               }
             }
@@ -150,13 +300,18 @@
             "docs": {
               "prerequisite/nodejs.html": {
                 "ref": "prerequisite/nodejs.html",
-                "tf": 0.027777777777777776
+                "tf": 0.02857142857142857
               }
             }
           }
         },
         "p": {
-          "docs": {},
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0136986301369863
+            }
+          },
           "a": {
             "docs": {},
             "c": {
@@ -181,7 +336,7 @@
                                 "docs": {
                                   "prerequisite/nodejs.html": {
                                     "ref": "prerequisite/nodejs.html",
-                                    "tf": 0.027777777777777776
+                                    "tf": 0.02857142857142857
                                   }
                                 }
                               }
@@ -211,8 +366,28 @@
                         "docs": {
                           "prerequisite/nodejs.html": {
                             "ref": "prerequisite/nodejs.html",
-                            "tf": 0.027777777777777776
+                            "tf": 0.02857142857142857
                           }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "o": {
+              "docs": {},
+              "j": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "c": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "exercises/warm-up-answer.html": {
+                          "ref": "exercises/warm-up-answer.html",
+                          "tf": 0.0136986301369863
                         }
                       }
                     }
@@ -223,15 +398,28 @@
           }
         },
         "u": {
-          "docs": {},
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0273972602739726
+            }
+          },
           "r": {
             "docs": {},
             "l": {
               "docs": {
                 "prerequisite/nodejs.html": {
                   "ref": "prerequisite/nodejs.html",
-                  "tf": 0.027777777777777776
+                  "tf": 0.02857142857142857
                 }
+              }
+            }
+          },
+          "p": {
+            "docs": {
+              "exercises/warm-up-answer.html": {
+                "ref": "exercises/warm-up-answer.html",
+                "tf": 0.0136986301369863
               }
             }
           }
@@ -240,7 +428,11 @@
           "docs": {
             "prerequisite/nodejs.html": {
               "ref": "prerequisite/nodejs.html",
-              "tf": 0.08333333333333333
+              "tf": 0.08571428571428572
+            },
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0136986301369863
             }
           }
         },
@@ -254,7 +446,7 @@
                 "docs": {
                   "prerequisite/nodejs.html": {
                     "ref": "prerequisite/nodejs.html",
-                    "tf": 3.444444444444444
+                    "tf": 3.4476190476190474
                   }
                 }
               }
@@ -377,7 +569,7 @@
                                                                                                                           "docs": {
                                                                                                                             "prerequisite/nodejs.html": {
                                                                                                                               "ref": "prerequisite/nodejs.html",
-                                                                                                                              "tf": 0.027777777777777776
+                                                                                                                              "tf": 0.02857142857142857
                                                                                                                             }
                                                                                                                           }
                                                                                                                         }
@@ -493,7 +685,7 @@
                                                               "docs": {
                                                                 "prerequisite/nodejs.html": {
                                                                   "ref": "prerequisite/nodejs.html",
-                                                                  "tf": 0.027777777777777776
+                                                                  "tf": 0.02857142857142857
                                                                 }
                                                               }
                                                             }
@@ -531,7 +723,7 @@
               "docs": {
                 "prerequisite/nodejs.html": {
                   "ref": "prerequisite/nodejs.html",
-                  "tf": 0.027777777777777776
+                  "tf": 0.02857142857142857
                 }
               }
             }
@@ -595,7 +787,7 @@
                                                                 "docs": {
                                                                   "prerequisite/nodejs.html": {
                                                                     "ref": "prerequisite/nodejs.html",
-                                                                    "tf": 0.027777777777777776
+                                                                    "tf": 0.02857142857142857
                                                                   }
                                                                 }
                                                               }
@@ -608,6 +800,56 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "中": {
+            "docs": {},
+            "身": {
+              "docs": {},
+              "を": {
+                "docs": {},
+                "次": {
+                  "docs": {},
+                  "の": {
+                    "docs": {},
+                    "内": {
+                      "docs": {},
+                      "容": {
+                        "docs": {},
+                        "で": {
+                          "docs": {},
+                          "書": {
+                            "docs": {},
+                            "き": {
+                              "docs": {},
+                              "換": {
+                                "docs": {},
+                                "え": {
+                                  "docs": {},
+                                  "ま": {
+                                    "docs": {},
+                                    "す": {
+                                      "docs": {},
+                                      "。": {
+                                        "docs": {
+                                          "exercises/warm-up-answer.html": {
+                                            "ref": "exercises/warm-up-answer.html",
+                                            "tf": 0.0136986301369863
                                           }
                                         }
                                       }
@@ -654,7 +896,7 @@
                                   "docs": {
                                     "prerequisite/nodejs.html": {
                                       "ref": "prerequisite/nodejs.html",
-                                      "tf": 0.027777777777777776
+                                      "tf": 0.02857142857142857
                                     }
                                   }
                                 }
@@ -756,7 +998,7 @@
                                                                                             "docs": {
                                                                                               "prerequisite/nodejs.html": {
                                                                                                 "ref": "prerequisite/nodejs.html",
-                                                                                                "tf": 0.027777777777777776
+                                                                                                "tf": 0.02857142857142857
                                                                                               }
                                                                                             }
                                                                                           }
@@ -800,7 +1042,7 @@
                     "docs": {
                       "prerequisite/nodejs.html": {
                         "ref": "prerequisite/nodejs.html",
-                        "tf": 0.027777777777777776
+                        "tf": 0.02857142857142857
                       }
                     }
                   }
@@ -835,7 +1077,7 @@
                                 "docs": {
                                   "prerequisite/nodejs.html": {
                                     "ref": "prerequisite/nodejs.html",
-                                    "tf": 0.027777777777777776
+                                    "tf": 0.02857142857142857
                                   }
                                 }
                               }
@@ -859,7 +1101,7 @@
                               "docs": {
                                 "prerequisite/nodejs.html": {
                                   "ref": "prerequisite/nodejs.html",
-                                  "tf": 0.027777777777777776
+                                  "tf": 0.02857142857142857
                                 }
                               }
                             }
@@ -899,7 +1141,7 @@
                                 "docs": {
                                   "prerequisite/nodejs.html": {
                                     "ref": "prerequisite/nodejs.html",
-                                    "tf": 0.027777777777777776
+                                    "tf": 0.02857142857142857
                                   }
                                 }
                               }
@@ -937,7 +1179,7 @@
                                             "docs": {
                                               "prerequisite/nodejs.html": {
                                                 "ref": "prerequisite/nodejs.html",
-                                                "tf": 0.027777777777777776
+                                                "tf": 0.02857142857142857
                                               }
                                             }
                                           }
@@ -992,7 +1234,7 @@
                                         "docs": {
                                           "prerequisite/nodejs.html": {
                                             "ref": "prerequisite/nodejs.html",
-                                            "tf": 0.027777777777777776
+                                            "tf": 0.02857142857142857
                                           }
                                         }
                                       }
@@ -1017,7 +1259,7 @@
             "docs": {
               "prerequisite/nodejs.html": {
                 "ref": "prerequisite/nodejs.html",
-                "tf": 0.027777777777777776
+                "tf": 0.02857142857142857
               }
             },
             "コ": {
@@ -1086,7 +1328,7 @@
                                                                             "docs": {
                                                                               "prerequisite/nodejs.html": {
                                                                                 "ref": "prerequisite/nodejs.html",
-                                                                                "tf": 0.027777777777777776
+                                                                                "tf": 0.02857142857142857
                                                                               }
                                                                             }
                                                                           }
@@ -1129,7 +1371,7 @@
             "docs": {
               "prerequisite/nodejs.html": {
                 "ref": "prerequisite/nodejs.html",
-                "tf": 0.027777777777777776
+                "tf": 0.02857142857142857
               }
             }
           }
@@ -1140,43 +1382,1096 @@
             "docs": {
               "prerequisite/nodejs.html": {
                 "ref": "prerequisite/nodejs.html",
-                "tf": 0.027777777777777776
+                "tf": 0.02857142857142857
+              }
+            }
+          }
+        },
+        "\"": {
+          "docs": {},
+          "b": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "f": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "exercises/warm-up-answer.html": {
+                        "ref": "exercises/warm-up-answer.html",
+                        "tf": 0.0136986301369863
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "'": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0136986301369863
+            }
+          },
+          "[": {
+            "docs": {},
+            "サ": {
+              "docs": {},
+              "ン": {
+                "docs": {},
+                "プ": {
+                  "docs": {},
+                  "ル": {
+                    "docs": {},
+                    "]": {
+                      "docs": {
+                        "exercises/warm-up-answer.html": {
+                          "ref": "exercises/warm-up-answer.html",
+                          "tf": 0.0136986301369863
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "(": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "u": {
+                    "docs": {},
+                    "n": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "exercises/warm-up-answer.html": {
+                            "ref": "exercises/warm-up-answer.html",
+                            "tf": 0.0136986301369863
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "+": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0136986301369863
+            }
+          }
+        },
+        ":": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0136986301369863
+            }
+          }
+        },
+        "=": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0136986301369863
+            }
+          }
+        },
+        "a": {
+          "docs": {},
+          "c": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "exercises/warm-up-answer.html": {
+                          "ref": "exercises/warm-up-answer.html",
+                          "tf": 0.0273972602739726
+                        }
+                      },
+                      "(": {
+                        "docs": {},
+                        "b": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "f": {
+                              "docs": {},
+                              "o": {
+                                "docs": {},
+                                "r": {
+                                  "docs": {
+                                    "exercises/warm-up-answer.html": {
+                                      "ref": "exercises/warm-up-answer.html",
+                                      "tf": 0.0136986301369863
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      ".": {
+                        "docs": {},
+                        "n": {
+                          "docs": {},
+                          "a": {
+                            "docs": {},
+                            "m": {
+                              "docs": {
+                                "exercises/warm-up-answer.html": {
+                                  "ref": "exercises/warm-up-answer.html",
+                                  "tf": 0.0136986301369863
+                                }
+                              },
+                              "e": {
+                                "docs": {},
+                                ";": {
+                                  "docs": {
+                                    "exercises/warm-up-answer.html": {
+                                      "ref": "exercises/warm-up-answer.html",
+                                      "tf": 0.0136986301369863
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "t": {
+                        "docs": {},
+                        "r": {
+                          "docs": {},
+                          "i": {
+                            "docs": {},
+                            "g": {
+                              "docs": {},
+                              "g": {
+                                "docs": {
+                                  "exercises/warm-up-answer.html": {
+                                    "ref": "exercises/warm-up-answer.html",
+                                    "tf": 0.0273972602739726
+                                  }
+                                },
+                                "e": {
+                                  "docs": {},
+                                  "r": {
+                                    "docs": {},
+                                    ".": {
+                                      "docs": {},
+                                      "t": {
+                                        "docs": {},
+                                        "r": {
+                                          "docs": {},
+                                          "i": {
+                                            "docs": {},
+                                            "g": {
+                                              "docs": {},
+                                              "g": {
+                                                "docs": {
+                                                  "exercises/warm-up-answer.html": {
+                                                    "ref": "exercises/warm-up-answer.html",
+                                                    "tf": 0.0136986301369863
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "p": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "x": {
+                "docs": {
+                  "exercises/warm-up-answer.html": {
+                    "ref": "exercises/warm-up-answer.html",
+                    "tf": 0.0136986301369863
+                  }
+                },
+                "t": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "g": {
+                        "docs": {},
+                        "g": {
+                          "docs": {
+                            "exercises/warm-up-answer.html": {
+                              "ref": "exercises/warm-up-answer.html",
+                              "tf": 0.0136986301369863
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "p": {
+              "docs": {},
+              "/": {
+                "docs": {},
+                "m": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "/": {
+                          "docs": {},
+                          "d": {
+                            "docs": {},
+                            "e": {
+                              "docs": {},
+                              "f": {
+                                "docs": {},
+                                "a": {
+                                  "docs": {},
+                                  "u": {
+                                    "docs": {},
+                                    "l": {
+                                      "docs": {},
+                                      "t": {
+                                        "docs": {},
+                                        "/": {
+                                          "docs": {},
+                                          "t": {
+                                            "docs": {},
+                                            "r": {
+                                              "docs": {},
+                                              "i": {
+                                                "docs": {},
+                                                "g": {
+                                                  "docs": {},
+                                                  "g": {
+                                                    "docs": {
+                                                      "exercises/warm-up-answer.html": {
+                                                        "ref": "exercises/warm-up-answer.html",
+                                                        "tf": 0.0136986301369863
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "c": {
+          "docs": {},
+          "o": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "f": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "g": {
+                    "docs": {},
+                    "/": {
+                      "docs": {},
+                      "p": {
+                        "docs": {},
+                        "r": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "j": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "c": {
+                                  "docs": {},
+                                  "t": {
+                                    "docs": {
+                                      "exercises/warm-up-answer.html": {
+                                        "ref": "exercises/warm-up-answer.html",
+                                        "tf": 0.0273972602739726
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "d": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0273972602739726
+            }
+          },
+          "e": {
+            "docs": {},
+            "f": {
+              "docs": {},
+              ".": {
+                "docs": {},
+                "j": {
+                  "docs": {},
+                  "s": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "n": {
+                        "docs": {
+                          "exercises/warm-up-answer.html": {
+                            "ref": "exercises/warm-up-answer.html",
+                            "tf": 0.0410958904109589
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "m": {
+              "docs": {},
+              "o": {
+                "docs": {
+                  "exercises/warm-up-answer.html": {
+                    "ref": "exercises/warm-up-answer.html",
+                    "tf": 0.0410958904109589
+                  }
+                }
+              }
+            },
+            "v": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "b": {
+                    "docs": {
+                      "exercises/warm-up-answer.html": {
+                        "ref": "exercises/warm-up-answer.html",
+                        "tf": 0.0136986301369863
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "e": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0136986301369863
+            }
+          }
+        },
+        "f": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0136986301369863
+            }
+          },
+          "o": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "c": {
+                "docs": {
+                  "exercises/warm-up-answer.html": {
+                    "ref": "exercises/warm-up-answer.html",
+                    "tf": 0.0136986301369863
+                  }
+                },
+                "e": {
+                  "docs": {},
+                  ":": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "p": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "x": {
+                            "docs": {},
+                            ":": {
+                              "docs": {},
+                              "t": {
+                                "docs": {},
+                                "r": {
+                                  "docs": {},
+                                  "i": {
+                                    "docs": {},
+                                    "g": {
+                                      "docs": {},
+                                      "g": {
+                                        "docs": {},
+                                        "e": {
+                                          "docs": {},
+                                          "r": {
+                                            "docs": {},
+                                            ":": {
+                                              "docs": {},
+                                              "c": {
+                                                "docs": {},
+                                                "r": {
+                                                  "docs": {
+                                                    "exercises/warm-up-answer.html": {
+                                                      "ref": "exercises/warm-up-answer.html",
+                                                      "tf": 0.0136986301369863
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "o": {
+                      "docs": {},
+                      "r": {
+                        "docs": {},
+                        "g": {
+                          "docs": {},
+                          ":": {
+                            "docs": {},
+                            "c": {
+                              "docs": {},
+                              "r": {
+                                "docs": {
+                                  "exercises/warm-up-answer.html": {
+                                    "ref": "exercises/warm-up-answer.html",
+                                    "tf": 0.0136986301369863
+                                  }
+                                }
+                              }
+                            },
+                            "o": {
+                              "docs": {},
+                              "p": {
+                                "docs": {},
+                                "e": {
+                                  "docs": {},
+                                  "n": {
+                                    "docs": {
+                                      "exercises/warm-up-answer.html": {
+                                        "ref": "exercises/warm-up-answer.html",
+                                        "tf": 0.0136986301369863
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "s": {
+                      "docs": {},
+                      "o": {
+                        "docs": {},
+                        "u": {
+                          "docs": {},
+                          "r": {
+                            "docs": {},
+                            "c": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                ":": {
+                                  "docs": {},
+                                  "p": {
+                                    "docs": {},
+                                    "u": {
+                                      "docs": {},
+                                      "s": {
+                                        "docs": {},
+                                        "h": {
+                                          "docs": {
+                                            "exercises/warm-up-answer.html": {
+                                              "ref": "exercises/warm-up-answer.html",
+                                              "tf": 0.0136986301369863
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "s": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0273972602739726
+            }
+          },
+          "c": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "c": {
+                    "docs": {},
+                    "h": {
+                      "docs": {
+                        "exercises/warm-up-answer.html": {
+                          "ref": "exercises/warm-up-answer.html",
+                          "tf": 0.0547945205479452
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "f": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "x": {
+                "docs": {
+                  "exercises/warm-up-answer.html": {
+                    "ref": "exercises/warm-up-answer.html",
+                    "tf": 0.0547945205479452
+                  }
+                }
+              }
+            }
+          }
+        },
+        "t": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0273972602739726
+            }
+          },
+          "r": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "g": {
+                "docs": {},
+                "g": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "r": {
+                      "docs": {
+                        "exercises/warm-up-answer.html": {
+                          "ref": "exercises/warm-up-answer.html",
+                          "tf": 0.0136986301369863
+                        }
+                      },
+                      ".": {
+                        "docs": {},
+                        "n": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "w": {
+                              "docs": {},
+                              ")": {
+                                "docs": {
+                                  "exercises/warm-up-answer.html": {
+                                    "ref": "exercises/warm-up-answer.html",
+                                    "tf": 0.0136986301369863
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "w": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "m": {
+                "docs": {
+                  "exercises/warm-up-answer.html": {
+                    "ref": "exercises/warm-up-answer.html",
+                    "tf": 0.0136986301369863
+                  }
+                }
+              }
+            }
+          }
+        },
+        "{": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0273972602739726
+            }
+          }
+        },
+        "}": {
+          "docs": {
+            "exercises/warm-up-answer.html": {
+              "ref": "exercises/warm-up-answer.html",
+              "tf": 0.0273972602739726
+            }
+          }
+        },
+        "ス": {
+          "docs": {},
+          "ク": {
+            "docs": {},
+            "ラ": {
+              "docs": {},
+              "ッ": {
+                "docs": {},
+                "チ": {
+                  "docs": {},
+                  "組": {
+                    "docs": {},
+                    "織": {
+                      "docs": {},
+                      "へ": {
+                        "docs": {},
+                        "プ": {
+                          "docs": {},
+                          "ッ": {
+                            "docs": {},
+                            "シ": {
+                              "docs": {},
+                              "ュ": {
+                                "docs": {},
+                                "し": {
+                                  "docs": {},
+                                  "ま": {
+                                    "docs": {},
+                                    "す": {
+                                      "docs": {},
+                                      "。": {
+                                        "docs": {
+                                          "exercises/warm-up-answer.html": {
+                                            "ref": "exercises/warm-up-answer.html",
+                                            "tf": 0.0136986301369863
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "を": {
+                        "docs": {},
+                        "作": {
+                          "docs": {},
+                          "成": {
+                            "docs": {},
+                            "し": {
+                              "docs": {},
+                              "ま": {
+                                "docs": {},
+                                "す": {
+                                  "docs": {},
+                                  "。": {
+                                    "docs": {
+                                      "exercises/warm-up-answer.html": {
+                                        "ref": "exercises/warm-up-answer.html",
+                                        "tf": 0.0136986301369863
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "開": {
+                          "docs": {},
+                          "き": {
+                            "docs": {},
+                            "ま": {
+                              "docs": {},
+                              "す": {
+                                "docs": {},
+                                "。": {
+                                  "docs": {
+                                    "exercises/warm-up-answer.html": {
+                                      "ref": "exercises/warm-up-answer.html",
+                                      "tf": 0.0136986301369863
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ト": {
+          "docs": {},
+          "リ": {
+            "docs": {},
+            "ガ": {
+              "docs": {},
+              "を": {
+                "docs": {},
+                "作": {
+                  "docs": {},
+                  "成": {
+                    "docs": {},
+                    "し": {
+                      "docs": {},
+                      "ま": {
+                        "docs": {},
+                        "す": {
+                          "docs": {},
+                          "。": {
+                            "docs": {
+                              "exercises/warm-up-answer.html": {
+                                "ref": "exercises/warm-up-answer.html",
+                                "tf": 0.0136986301369863
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "新": {
+          "docs": {},
+          "規": {
+            "docs": {},
+            "ボ": {
+              "docs": {},
+              "タ": {
+                "docs": {},
+                "ン": {
+                  "docs": {},
+                  "か": {
+                    "docs": {},
+                    "ら": {
+                      "docs": {},
+                      "取": {
+                        "docs": {},
+                        "引": {
+                          "docs": {},
+                          "先": {
+                            "docs": {},
+                            "レ": {
+                              "docs": {},
+                              "コ": {
+                                "docs": {},
+                                "ー": {
+                                  "docs": {},
+                                  "ド": {
+                                    "docs": {},
+                                    "を": {
+                                      "docs": {},
+                                      "新": {
+                                        "docs": {},
+                                        "規": {
+                                          "docs": {},
+                                          "作": {
+                                            "docs": {},
+                                            "成": {
+                                              "docs": {},
+                                              "し": {
+                                                "docs": {},
+                                                "、": {
+                                                  "docs": {},
+                                                  "想": {
+                                                    "docs": {},
+                                                    "定": {
+                                                      "docs": {},
+                                                      "通": {
+                                                        "docs": {},
+                                                        "り": {
+                                                          "docs": {},
+                                                          "の": {
+                                                            "docs": {},
+                                                            "挙": {
+                                                              "docs": {},
+                                                              "動": {
+                                                                "docs": {},
+                                                                "か": {
+                                                                  "docs": {},
+                                                                  "ど": {
+                                                                    "docs": {},
+                                                                    "う": {
+                                                                      "docs": {},
+                                                                      "か": {
+                                                                        "docs": {},
+                                                                        "を": {
+                                                                          "docs": {},
+                                                                          "確": {
+                                                                            "docs": {},
+                                                                            "認": {
+                                                                              "docs": {},
+                                                                              "し": {
+                                                                                "docs": {},
+                                                                                "ま": {
+                                                                                  "docs": {},
+                                                                                  "す": {
+                                                                                    "docs": {},
+                                                                                    "。": {
+                                                                                      "docs": {
+                                                                                        "exercises/warm-up-answer.html": {
+                                                                                          "ref": "exercises/warm-up-answer.html",
+                                                                                          "tf": 0.0136986301369863
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "解": {
+          "docs": {},
+          "答": {
+            "docs": {
+              "exercises/warm-up-answer.html": {
+                "ref": "exercises/warm-up-answer.html",
+                "tf": 10.013698630136986
               }
             }
           }
         }
       },
-      "length": 29
+      "length": 82
     },
     "corpusTokens": [
+      "\"befor",
       "&",
-      "gulp",
+      "'",
+      "'[サンプル]",
+      "(account",
+      "+",
+      "7",
+      ":",
+      "=",
+      "account",
+      "account(befor",
+      "account.nam",
+      "account.name;",
+      "accounttrigg",
+      "accounttrigger.trigg",
+      "apex",
+      "apextrigg",
+      "app/main/default/trigg",
+      "config/project",
+      "d",
+      "def.json",
+      "demo",
+      "devhub",
+      "e",
+      "f",
+      "forc",
+      "force:apex:trigger:cr",
+      "force:org:cr",
+      "force:org:open",
+      "force:source:push",
+      "insert\"",
+      "insert)",
       "instal",
+      "lightning/o/account/list",
       "lt",
+      "n",
       "node",
       "node.j",
       "npm",
       "ok",
+      "p",
       "package.json",
       "prettier",
+      "project",
+      "s",
+      "scratch",
+      "sfdx",
+      "t",
+      "trigger",
+      "trigger.new)",
+      "u",
+      "up",
       "url",
       "v",
+      "warm",
       "yarn",
+      "{",
+      "}",
       "「vscodequickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。",
       "からインストーラーをダウンロードしてください。基本的に",
       "です。",
       "の一括実行など各種コマンドを実行するために、node.j",
+      "の中身を次の内容で書き換えます。",
       "をインストールしましょう。",
       "インストーラーをダブルクリックし、デフォルトのままインストールを完了させてください。",
       "インストール",
+      "スクラッチ組織へプッシュします。",
+      "スクラッチ組織を作成します。",
+      "スクラッチ組織を開きます。",
+      "トリガを作成します。",
       "バージョンが表示されれば",
       "バージョンで十分です。",
       "パッケージのインストール",
       "パッケージをインストールしましょう。",
       "以下のコマンドを実行して、npm",
+      "新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認します。",
       "次の",
       "次のコマンドでインストールが正常に完了していることを確認しましょう。",
       "確認",
+      "解答",
       "設定"
     ],
     "pipeline": ["stopWordFilter", "stemmer"]
@@ -1186,7 +2481,13 @@
       "url": "prerequisite/nodejs.html",
       "title": "Node.js & Yarn",
       "keywords": "",
-      "body": "Node.js & Yarn\nインストール\nPrettier の一括実行など各種コマンドを実行するために、Node.js をインストールしましょう。\n次の URL からインストーラーをダウンロードしてください。基本的に LTS バージョンで十分です。\n\nNode.js\nYarn\n\nインストーラーをダブルクリックし、デフォルトのままインストールを完了させてください。\n確認\n次のコマンドでインストールが正常に完了していることを確認しましょう。\nバージョンが表示されれば OK です。\nnode -v\nnpm -v\nyarn -v\n\nGulp 設定\n「VSCodeQuickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。\n\npackage.json\n\nnpm パッケージのインストール\n以下のコマンドを実行して、npm パッケージをインストールしましょう。\nyarn install\n\n"
+      "body": "Node.js & Yarn\nインストール\nPrettier の一括実行など各種コマンドを実行するために、Node.js をインストールしましょう。\n次の URL からインストーラーをダウンロードしてください。基本的に LTS バージョンで十分です。\n\nNode.js\nYarn\n\nインストーラーをダブルクリックし、デフォルトのままインストールを完了させてください。\n確認\n次のコマンドでインストールが正常に完了していることを確認しましょう。\nバージョンが表示されれば OK です。\nnode -v\nnpm -v\nyarn -v\n\n設定\n「VSCodeQuickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。\n\npackage.json\n\nnpm パッケージのインストール\n以下のコマンドを実行して、npm パッケージをインストールしましょう。\nyarn install\n\n"
+    },
+    "exercises/warm-up-answer.html": {
+      "url": "exercises/warm-up-answer.html",
+      "title": "解答",
+      "keywords": "",
+      "body": "Warm-up 解答\nconfig/project-scratch-def.json の中身を次の内容で書き換えます。\n\nproject-scratch-def.json\n\nスクラッチ組織を作成します。\nsfdx force:org:create -a demo -d 7 -f config/project-scratch-def.json -s -t scratch -v DevHub\n\nApex トリガを作成します。\nsfdx force:apex:trigger:create -d force-app/main/default/triggers -e \"before insert\" -n AccountTrigger -s Account -t ApexTrigger\n\nAccountTrigger.trigger\ntrigger AccountTrigger on Account(before insert) {\n  for (Account account : Trigger.new) {\n    account.Name = '[サンプル] ' + account.Name;\n  }\n}\n\nスクラッチ組織へプッシュします。\nsfdx force:source:push -u demo\n\nスクラッチ組織を開きます。\nsfdx force:org:open -u demo -p lightning/o/Account/list\n\n新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認します。\n"
     }
   }
 }

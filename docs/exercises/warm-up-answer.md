@@ -19,8 +19,10 @@ sfdx force:apex:trigger:create -d force-app/main/default/triggers -e "before ins
 #### AccountTrigger.trigger
 
 ```java
-trigger AccountTrigger on Account (before insert) {
-
+trigger AccountTrigger on Account(before insert) {
+  for (Account account : Trigger.new) {
+    account.Name = '[サンプル] ' + account.Name;
+  }
 }
 ```
 
@@ -33,5 +35,7 @@ sfdx force:source:push -u demo
 スクラッチ組織を開きます。
 
 ```sh
-sfdx force:org:open -u demo -p
+sfdx force:org:open -u demo -p lightning/o/Account/list
 ```
+
+新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認します。
