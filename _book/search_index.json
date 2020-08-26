@@ -35,6 +35,7 @@
           "トリガ名",
           "ビジネス要件",
           "値",
+          "備考",
           "元の値",
           "内容",
           "取引先",
@@ -72,7 +73,7 @@
                         "docs": {
                           "exercises/warm-up.html": {
                             "ref": "exercises/warm-up.html",
-                            "tf": 0.023255813953488372
+                            "tf": 0.022222222222222223
                           }
                         }
                       }
@@ -87,7 +88,7 @@
           "docs": {
             "exercises/warm-up.html": {
               "ref": "exercises/warm-up.html",
-              "tf": 0.046511627906976744
+              "tf": 0.044444444444444446
             }
           }
         },
@@ -105,7 +106,7 @@
                     "docs": {
                       "exercises/warm-up.html": {
                         "ref": "exercises/warm-up.html",
-                        "tf": 0.046511627906976744
+                        "tf": 0.044444444444444446
                       }
                     }
                   }
@@ -140,7 +141,7 @@
                                 "docs": {
                                   "exercises/warm-up.html": {
                                     "ref": "exercises/warm-up.html",
-                                    "tf": 0.023255813953488372
+                                    "tf": 0.022222222222222223
                                   }
                                 }
                               }
@@ -162,7 +163,7 @@
                 "docs": {
                   "exercises/warm-up.html": {
                     "ref": "exercises/warm-up.html",
-                    "tf": 0.11627906976744186
+                    "tf": 0.1111111111111111
                   }
                 }
               }
@@ -175,7 +176,7 @@
             "docs": {
               "exercises/warm-up.html": {
                 "ref": "exercises/warm-up.html",
-                "tf": 5.023255813953488
+                "tf": 5.022222222222222
               }
             }
           }
@@ -190,7 +191,7 @@
                 "docs": {
                   "exercises/warm-up.html": {
                     "ref": "exercises/warm-up.html",
-                    "tf": 5.023255813953488
+                    "tf": 5.022222222222222
                   }
                 }
               }
@@ -203,7 +204,7 @@
             "docs": {
               "exercises/warm-up.html": {
                 "ref": "exercises/warm-up.html",
-                "tf": 0.023255813953488372
+                "tf": 0.022222222222222223
               }
             }
           }
@@ -216,7 +217,7 @@
               "docs": {
                 "exercises/warm-up.html": {
                   "ref": "exercises/warm-up.html",
-                  "tf": 0.023255813953488372
+                  "tf": 0.022222222222222223
                 }
               }
             }
@@ -297,7 +298,7 @@
                                                                                     "docs": {
                                                                                       "exercises/warm-up.html": {
                                                                                         "ref": "exercises/warm-up.html",
-                                                                                        "tf": 0.023255813953488372
+                                                                                        "tf": 0.022222222222222223
                                                                                       }
                                                                                     }
                                                                                   }
@@ -380,7 +381,7 @@
                                                 "docs": {
                                                   "exercises/warm-up.html": {
                                                     "ref": "exercises/warm-up.html",
-                                                    "tf": 0.023255813953488372
+                                                    "tf": 0.022222222222222223
                                                   }
                                                 }
                                               }
@@ -497,7 +498,7 @@
                                                                                                     "docs": {
                                                                                                       "exercises/warm-up.html": {
                                                                                                         "ref": "exercises/warm-up.html",
-                                                                                                        "tf": 0.023255813953488372
+                                                                                                        "tf": 0.022222222222222223
                                                                                                       }
                                                                                                     }
                                                                                                   }
@@ -566,7 +567,7 @@
                           "docs": {
                             "exercises/warm-up.html": {
                               "ref": "exercises/warm-up.html",
-                              "tf": 0.023255813953488372
+                              "tf": 0.022222222222222223
                             }
                           }
                         }
@@ -590,7 +591,7 @@
                   "docs": {
                     "exercises/warm-up.html": {
                       "ref": "exercises/warm-up.html",
-                      "tf": 0.023255813953488372
+                      "tf": 0.022222222222222223
                     }
                   }
                 }
@@ -615,7 +616,7 @@
                           "docs": {
                             "exercises/warm-up.html": {
                               "ref": "exercises/warm-up.html",
-                              "tf": 0.023255813953488372
+                              "tf": 0.022222222222222223
                             }
                           }
                         }
@@ -671,7 +672,7 @@
                                                   "docs": {
                                                     "exercises/warm-up.html": {
                                                       "ref": "exercises/warm-up.html",
-                                                      "tf": 0.023255813953488372
+                                                      "tf": 0.022222222222222223
                                                     }
                                                   }
                                                 }
@@ -709,7 +710,7 @@
                     "docs": {
                       "exercises/warm-up.html": {
                         "ref": "exercises/warm-up.html",
-                        "tf": 0.023255813953488372
+                        "tf": 0.022222222222222223
                       }
                     }
                   }
@@ -727,7 +728,7 @@
                   "docs": {
                     "exercises/warm-up.html": {
                       "ref": "exercises/warm-up.html",
-                      "tf": 0.023255813953488372
+                      "tf": 0.022222222222222223
                     }
                   }
                 }
@@ -745,7 +746,7 @@
                 "docs": {
                   "exercises/warm-up.html": {
                     "ref": "exercises/warm-up.html",
-                    "tf": 0.023255813953488372
+                    "tf": 0.022222222222222223
                   }
                 }
               }
@@ -784,7 +785,7 @@
                                       "docs": {
                                         "exercises/warm-up.html": {
                                           "ref": "exercises/warm-up.html",
-                                          "tf": 0.023255813953488372
+                                          "tf": 0.022222222222222223
                                         }
                                       }
                                     }
@@ -821,7 +822,7 @@
                                   "docs": {
                                     "exercises/warm-up.html": {
                                       "ref": "exercises/warm-up.html",
-                                      "tf": 0.023255813953488372
+                                      "tf": 0.022222222222222223
                                     }
                                   }
                                 }
@@ -835,7 +836,7 @@
                             "docs": {
                               "exercises/warm-up.html": {
                                 "ref": "exercises/warm-up.html",
-                                "tf": 0.023255813953488372
+                                "tf": 0.022222222222222223
                               }
                             }
                           }
@@ -849,7 +850,7 @@
                 "docs": {
                   "exercises/warm-up.html": {
                     "ref": "exercises/warm-up.html",
-                    "tf": 0.023255813953488372
+                    "tf": 0.022222222222222223
                   }
                 }
               }
@@ -870,7 +871,7 @@
                     "docs": {
                       "exercises/warm-up.html": {
                         "ref": "exercises/warm-up.html",
-                        "tf": 0.023255813953488372
+                        "tf": 0.022222222222222223
                       }
                     }
                   }
@@ -883,7 +884,18 @@
           "docs": {
             "exercises/warm-up.html": {
               "ref": "exercises/warm-up.html",
-              "tf": 0.023255813953488372
+              "tf": 0.022222222222222223
+            }
+          }
+        },
+        "備": {
+          "docs": {},
+          "考": {
+            "docs": {
+              "exercises/warm-up.html": {
+                "ref": "exercises/warm-up.html",
+                "tf": 0.044444444444444446
+              }
             }
           }
         },
@@ -895,7 +907,7 @@
               "docs": {
                 "exercises/warm-up.html": {
                   "ref": "exercises/warm-up.html",
-                  "tf": 0.023255813953488372
+                  "tf": 0.022222222222222223
                 }
               }
             }
@@ -907,7 +919,7 @@
             "docs": {
               "exercises/warm-up.html": {
                 "ref": "exercises/warm-up.html",
-                "tf": 0.023255813953488372
+                "tf": 0.022222222222222223
               }
             }
           }
@@ -920,14 +932,14 @@
               "docs": {
                 "exercises/warm-up.html": {
                   "ref": "exercises/warm-up.html",
-                  "tf": 0.023255813953488372
+                  "tf": 0.022222222222222223
                 }
               },
               "名": {
                 "docs": {
                   "exercises/warm-up.html": {
                     "ref": "exercises/warm-up.html",
-                    "tf": 0.023255813953488372
+                    "tf": 0.022222222222222223
                   }
                 }
               }
@@ -952,7 +964,7 @@
                         "docs": {
                           "exercises/warm-up.html": {
                             "ref": "exercises/warm-up.html",
-                            "tf": 0.023255813953488372
+                            "tf": 0.022222222222222223
                           }
                         }
                       }
@@ -979,7 +991,7 @@
                       "docs": {
                         "exercises/warm-up.html": {
                           "ref": "exercises/warm-up.html",
-                          "tf": 0.023255813953488372
+                          "tf": 0.022222222222222223
                         }
                       }
                     }
@@ -1005,7 +1017,7 @@
                       "docs": {
                         "exercises/warm-up.html": {
                           "ref": "exercises/warm-up.html",
-                          "tf": 0.023255813953488372
+                          "tf": 0.022222222222222223
                         }
                       }
                     }
@@ -1041,7 +1053,7 @@
                                 "docs": {
                                   "exercises/warm-up.html": {
                                     "ref": "exercises/warm-up.html",
-                                    "tf": 0.023255813953488372
+                                    "tf": 0.022222222222222223
                                   }
                                 }
                               }
@@ -1062,7 +1074,7 @@
             "docs": {
               "exercises/warm-up.html": {
                 "ref": "exercises/warm-up.html",
-                "tf": 0.023255813953488372
+                "tf": 0.022222222222222223
               }
             }
           }
@@ -1077,7 +1089,7 @@
                 "docs": {
                   "exercises/warm-up.html": {
                     "ref": "exercises/warm-up.html",
-                    "tf": 0.023255813953488372
+                    "tf": 0.022222222222222223
                   }
                 }
               }
@@ -1092,7 +1104,7 @@
               "docs": {
                 "exercises/warm-up.html": {
                   "ref": "exercises/warm-up.html",
-                  "tf": 0.023255813953488372
+                  "tf": 0.022222222222222223
                 }
               }
             },
@@ -1106,7 +1118,7 @@
                     "docs": {
                       "exercises/warm-up.html": {
                         "ref": "exercises/warm-up.html",
-                        "tf": 0.023255813953488372
+                        "tf": 0.022222222222222223
                       }
                     }
                   }
@@ -1116,7 +1128,7 @@
           }
         }
       },
-      "length": 37
+      "length": 38
     },
     "corpusTokens": [
       "(半角スペース)",
@@ -1144,6 +1156,7 @@
       "トリガ名",
       "ビジネス要件",
       "値",
+      "備考",
       "元の値",
       "内容",
       "取引先",
@@ -1164,7 +1177,7 @@
       "url": "exercises/warm-up.html",
       "title": "Warm-up",
       "keywords": "",
-      "body": "Warm-up\nシンプルな Apex トリガを書いてみよう\nまずは、シンプルな Apex トリガを書いてみましょう。\nビジネス要件\nこれから取引先オブジェクトにサンプルデータを何件か作成しようと考えています。\nひと目でサンプルデータであることがわかるように、データを作成するタイミングで取引先名の先頭に [サンプル] という文字列を自動的に付与してください。\nアーキテクチャ要件\nApex トリガのみで実装してください。\nApex クラスなど他の資源を使用してはいけません。\nシステム要件\n\n\n\nタイトル\n内容\n\n\n\n\nApex トリガ名\nAccountTrigger\n\n\n対象オブジェクト\n取引先\n\n\n起動条件\n新規作成する前\n\n\nアクション\n項目自動更新\n\n\n複数件レコードの一括処理\nYes\n\n\n\n更新対象の項目\n\n\n\n項目名\n値\n\n\n\n\n取引先名\n[サンプル] + (半角スペース) + 元の値\n\n\n\n解答\n\nこちら\n\n"
+      "body": "Warm-up\nシンプルな Apex トリガを書いてみよう\nまずは、シンプルな Apex トリガを書いてみましょう。\nビジネス要件\nこれから取引先オブジェクトにサンプルデータを何件か作成しようと考えています。\nひと目でサンプルデータであることがわかるように、データを作成するタイミングで取引先名の先頭に [サンプル] という文字列を自動的に付与してください。\nアーキテクチャ要件\nApex トリガのみで実装してください。\nApex クラスなど他の資源を使用してはいけません。\nシステム要件\n\n\n\nタイトル\n内容\n備考\n\n\n\n\nApex トリガ名\nAccountTrigger\n\n\n\n対象オブジェクト\n取引先\n\n\n\n起動条件\n新規作成する前\n\n\n\nアクション\n項目自動更新\n\n\n\n複数件レコードの一括処理\nYes\n\n\n\n更新対象の項目\n\n\n\n項目名\n値\n備考\n\n\n\n\n取引先名\n[サンプル] + (半角スペース) + 元の値\n\n\n\n解答\n\nこちら\n\n"
     }
   }
 }
