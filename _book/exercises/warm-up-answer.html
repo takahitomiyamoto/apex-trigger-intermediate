@@ -117,6 +117,16 @@
                 <li
                   class="chapter"
                   data-level="2.2.2"
+                  data-path="../prerequisite/dev-hub.html"
+                >
+                  <a href="../prerequisite/dev-hub.html">
+                    Dev Hub
+                  </a>
+                </li>
+
+                <li
+                  class="chapter"
+                  data-level="2.2.3"
                   data-path="../prerequisite/salesforce-ide.html"
                 >
                   <a href="../prerequisite/salesforce-ide.html">
@@ -126,7 +136,7 @@
 
                 <li
                   class="chapter"
-                  data-level="2.2.3"
+                  data-level="2.2.4"
                   data-path="../prerequisite/vs-code-extensions.html"
                 >
                   <a href="../prerequisite/vs-code-extensions.html">
@@ -136,7 +146,7 @@
 
                 <li
                   class="chapter"
-                  data-level="2.2.4"
+                  data-level="2.2.5"
                   data-path="../prerequisite/java.html"
                 >
                   <a href="../prerequisite/java.html">
@@ -146,7 +156,7 @@
 
                 <li
                   class="chapter"
-                  data-level="2.2.5"
+                  data-level="2.2.6"
                   data-path="../prerequisite/nodejs.html"
                 >
                   <a href="../prerequisite/nodejs.html">
@@ -338,6 +348,35 @@
                     <h1 id="warm-up-&#x89E3;&#x7B54;">
                       Warm-up &#x89E3;&#x7B54;
                     </h1>
+                    <ul>
+                      <li>
+                        &#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+                      </li>
+                    </ul>
+                    <pre><code class="lang-sh">sfdx force:project:create -n demo -t standard -x
+</code></pre>
+                    <pre><code class="lang-sh"><span class="hljs-built_in">cd</span> demo
+</code></pre>
+                    <ul>
+                      <li>
+                        &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+                      </li>
+                    </ul>
+                    <pre><code class="lang-sh">sfdx force:org:create <span class="hljs-_">-a</span> demo <span class="hljs-_">-d</span> 7 <span class="hljs-_">-f</span> config/project-scratch-def.json <span class="hljs-_">-s</span> -t scratch -v DevHub
+</code></pre>
+                    <ul>
+                      <li>
+                        Apex
+                        &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+                      </li>
+                    </ul>
+                    <pre><code class="lang-sh">sfdx force:apex:trigger:create <span class="hljs-_">-d</span> force-app/main/default/triggers <span class="hljs-_">-e</span> <span class="hljs-string">&quot;before insert&quot;</span> -n AccountTrigger <span class="hljs-_">-s</span> Account -t ApexTrigger
+</code></pre>
+                    <h2 id="accounttriggertrigger">AccountTrigger.trigger</h2>
+                    <pre><code class="lang-java"><span class="hljs-function">trigger AccountTrigger on <span class="hljs-title">Account</span> <span class="hljs-params">(before insert)</span> </span>{
+
+}
+</code></pre>
                   </section>
                 </div>
                 <div class="search-results">
@@ -485,10 +524,10 @@
             },
             file: {
               path: 'exercises/warm-up-answer.md',
-              mtime: '2020-08-23T09:51:32.190Z',
+              mtime: '2020-08-26T11:35:27.843Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-08-26T08:25:24.581Z' },
+            gitbook: { version: '3.6.1', time: '2020-08-26T11:35:34.387Z' },
             basePath: '..',
             book: { language: '' }
           });

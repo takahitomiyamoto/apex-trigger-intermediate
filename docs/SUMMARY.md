@@ -13,6 +13,7 @@
 - [初級者向けコンテンツ](prerequisite/beginner.md)
 - [開発ツール](prerequisite/dev-tools.md)
   - [Developer Edition](prerequisite/developer-edition.md)
+  - [Dev Hub](prerequisite/dev-hub.md)
   - [Salesforce IDE](prerequisite/salesforce-ide.md)
   - [VS Code Extensions](prerequisite/vs-code-extensions.md)
   - [Java](prerequisite/java.md)
