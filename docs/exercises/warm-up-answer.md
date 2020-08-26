@@ -1,12 +1,8 @@
 # Warm-up 解答
 
-プロジェクトを作成します。
+`config/project-scratch-def.json` の中身を次の内容で書き換えます。
 
-```sh
-sfdx force:project:create -n demo -t standard -x
-
-cd demo
-```
+> [project-scratch-def.json](https://github.com/takahitomiyamoto/flexible-apex-trigger/blob/master/config/project-scratch-def.json)
 
 スクラッチ組織を作成します。
 
@@ -26,4 +22,16 @@ sfdx force:apex:trigger:create -d force-app/main/default/triggers -e "before ins
 trigger AccountTrigger on Account (before insert) {
 
 }
+```
+
+スクラッチ組織へプッシュします。
+
+```sh
+sfdx force:source:push -u demo
+```
+
+スクラッチ組織を開きます。
+
+```sh
+sfdx force:org:open -u demo -p
 ```

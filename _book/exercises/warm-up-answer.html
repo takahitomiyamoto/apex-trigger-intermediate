@@ -349,12 +349,18 @@
                       Warm-up &#x89E3;&#x7B54;
                     </h1>
                     <p>
-                      &#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+                      <code>config/project-scratch-def.json</code>
+                      &#x306E;&#x4E2D;&#x8EAB;&#x3092;&#x6B21;&#x306E;&#x5185;&#x5BB9;&#x3067;&#x66F8;&#x304D;&#x63DB;&#x3048;&#x307E;&#x3059;&#x3002;
                     </p>
-                    <pre><code class="lang-sh">sfdx force:project:create -n demo -t standard -x
-
-<span class="hljs-built_in">cd</span> demo
-</code></pre>
+                    <blockquote>
+                      <p>
+                        <a
+                          href="https://github.com/takahitomiyamoto/flexible-apex-trigger/blob/master/config/project-scratch-def.json"
+                          target="_blank"
+                          >project-scratch-def.json</a
+                        >
+                      </p>
+                    </blockquote>
                     <p>
                       &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
                     </p>
@@ -370,6 +376,16 @@
                     <pre><code class="lang-java"><span class="hljs-function">trigger AccountTrigger on <span class="hljs-title">Account</span> <span class="hljs-params">(before insert)</span> </span>{
 
 }
+</code></pre>
+                    <p>
+                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
+</code></pre>
+                    <p>
+                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3092;&#x958B;&#x304D;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:org:open -u demo -p
 </code></pre>
                   </section>
                 </div>
@@ -518,10 +534,10 @@
             },
             file: {
               path: 'exercises/warm-up-answer.md',
-              mtime: '2020-08-26T11:40:13.333Z',
+              mtime: '2020-08-26T12:09:52.608Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-08-26T11:40:41.303Z' },
+            gitbook: { version: '3.6.1', time: '2020-08-26T12:10:13.417Z' },
             basePath: '..',
             book: { language: '' }
           });

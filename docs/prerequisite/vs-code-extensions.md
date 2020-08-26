@@ -45,3 +45,9 @@
 > [.eslintrc.json](https://github.com/takahitomiyamoto/flexible-apex-trigger/blob/master/.eslintrc.json)
 
 > [.eslintignore](https://github.com/takahitomiyamoto/flexible-apex-trigger/blob/master/.eslintignore)
+
+## Apex PMD 設定
+
+「VSCodeQuickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。
+
+> [pmd-ruleset.xml](https://github.com/takahitomiyamoto/flexible-apex-trigger/blob/master/pmd-ruleset.xml)
