@@ -16,9 +16,9 @@ Step by Step で学んでいきましょう。
 
 - [Lv. 2](../exercises/level-02.md) : トリガフレームワークを導入してみよう | [解答](../exercises/level-02-answer.md)
 
-- [Lv. 3](../exercises/level-03.md) : 既存の Apex トリガのロジックを変更してみよう | [解答](../exercises/level-03-answer.md)
+- [Lv. 3](../exercises/level-03.md) : Apex トリガのテストを書いてみよう | [解答](../exercises/level-03-answer.md)
 
-- [Lv. 4](../exercises/level-04.md) : 既存の Apex トリガのロジックを変更してみよう パート 2 | [解答](../exercises/level-04-answer.md)
+- [Lv. 4](../exercises/level-04.md) : 既存の Apex トリガのロジックを変更してみよう | [解答](../exercises/level-04-answer.md)
 
 - [Lv. 5](../exercises/level-05.md) : 新規に Apex トリガを追加してみよう | [解答](../exercises/level-05-answer.md)
 
