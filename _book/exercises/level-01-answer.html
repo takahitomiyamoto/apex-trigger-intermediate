@@ -301,8 +301,31 @@
                       Lv. 1 &#x306E;&#x89E3;&#x7B54;
                     </h1>
                     <p>
-                      Apex
+                      <a href="warm-up-answer.html">Warm-up</a>
+                      &#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F; Apex
                       &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <h5 id="accounttriggertrigger">AccountTrigger.trigger</h5>
+                    <pre><code class="lang-java"><span class="hljs-function">trigger AccountTrigger on <span class="hljs-title">Account</span><span class="hljs-params">(before insert, before update)</span> </span>{
+  <span class="hljs-keyword">switch</span> on Trigger.operationType {
+    when BEFORE_INSERT {
+      <span class="hljs-keyword">for</span> (Account account : Trigger.new) {
+        <span class="hljs-comment">// Action (1)</span>
+        account.Name = <span class="hljs-string">&apos;[&#x30B5;&#x30F3;&#x30D7;&#x30EB;] &apos;</span> + account.Name;
+      }
+    }
+    when BEFORE_UPDATE {
+    }
+    when <span class="hljs-keyword">else</span> {
+    }
+  }
+}
+</code></pre>
+                    <p>
+                      &#x30A2;&#x30AF;&#x30B7;&#x30E7;&#x30F3; (2) &#x3092;
+                      <code>BEFORE_INSERT</code> &#x304A;&#x3088;&#x3073;
+                      <code>BEFORE_UPDATE</code>
+                      &#x306B;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
                     </p>
                     <h5 id="accounttriggertrigger">AccountTrigger.trigger</h5>
                     <pre><code class="lang-java"><span class="hljs-function">trigger AccountTrigger on <span class="hljs-title">Account</span><span class="hljs-params">(before insert, before update)</span> </span>{
@@ -373,6 +396,8 @@
                     <p>
                       &#x65B0;&#x898F;&#x30DC;&#x30BF;&#x30F3;&#x304B;&#x3089;&#x53D6;&#x5F15;&#x5148;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3057;&#x3001;&#x60F3;&#x5B9A;&#x901A;&#x308A;&#x306E;&#x6319;&#x52D5;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
                       &#x307E;&#x305F;&#x3001;&#x305D;&#x306E;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x66F4;&#x65B0;&#x3057;&#x3001;&#x60F3;&#x5B9A;&#x901A;&#x308A;&#x306E;&#x6319;&#x52D5;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                    </p>
+                    <p>
                       ...
                       &#x3044;&#x304B;&#x304C;&#x3067;&#x3057;&#x305F;&#x304B;&#xFF1F;
                     </p>
@@ -523,10 +548,10 @@
             },
             file: {
               path: 'exercises/level-01-answer.md',
-              mtime: '2020-08-26T14:11:49.703Z',
+              mtime: '2020-08-30T06:16:17.112Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-08-30T05:58:36.083Z' },
+            gitbook: { version: '3.6.1', time: '2020-08-30T06:16:24.403Z' },
             basePath: '..',
             book: { language: '' }
           });
