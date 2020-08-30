@@ -39,6 +39,117 @@ trigger AccountTrigger on Account(before insert, before update) {
 }
 ```
 
+Apex クラスを作成します。
+
+```sh
+sfdx force:apex:class:create -d force-app/main/default/classes -n AccountTriggerService -t DefaultApexClass
+```
+
+##### AccountTriggerService.cls
+
+```java
+public with sharing class AccountTriggerService implements FAT_ITriggerObserver {
+  public void onBeforeInsert(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onBeforeUpdate(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onBeforeDelete(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterInsert(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterUpdate(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterDelete(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterUndelete(FAT_CommonTriggerHandler handler) {
+  }
+}
+```
+
+メソッドを追加します。
+
+##### AccountTriggerService.cls
+
+```java
+public with sharing class AccountTriggerService implements FAT_ITriggerObserver {
+  @TestVisible
+  private void addPrefixToName(List<Account> accounts) {
+    for (Account account : accounts) {
+      account.Name = '[サンプル] ' + account.Name;
+    }
+  }
+
+  @TestVisible
+  private void setCustomerPriority(List<Account> accounts) {
+    for (Account account : accounts) {
+      String customerPriority = '';
+      switch on account.Rating {
+        when 'Hot' {
+          customerPriority = 'High';
+        }
+        when 'Warm' {
+          customerPriority = 'Medium';
+        }
+        when 'Cold' {
+          customerPriority = 'Low';
+        }
+        when else {
+        }
+      }
+      account.CustomerPriority__c = customerPriority;
+    }
+  }
+
+  public void onBeforeInsert(FAT_CommonTriggerHandler handler) {
+    this.addPrefixToName((List<Account>) handler.newObjects);
+  }
+
+  public void onBeforeUpdate(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onBeforeDelete(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterInsert(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterUpdate(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterDelete(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterUndelete(FAT_CommonTriggerHandler handler) {
+  }
+}
+```
+
+コードをフォーマットします。
+
+```sh
+yarn prettier
+```
+
+スクラッチ組織へプッシュします。
+
+```sh
+sfdx force:source:push -u demo
+```
+
+カスタムメタデータ型にレコードを追加するために、スクラッチ組織を開きます。
+
+```sh
+sfdx force:org:open -u demo -p lightning/setup/CustomMetadata/home
+```
+
+![customMetadata](../images/level-02-answer-01.png)
+
 コードをフォーマットします。
 
 ```sh

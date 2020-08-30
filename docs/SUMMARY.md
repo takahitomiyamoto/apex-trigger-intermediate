@@ -24,17 +24,17 @@
 ### 演習問題
 
 - [Warm-up](exercises/warm-up.md)
-  - [解答](exercises/warm-up-answer.md)
+  - [Warm-up の解答](exercises/warm-up-answer.md)
 - [Lv. 1](exercises/level-01.md)
-  - [解答](exercises/level-01-answer.md)
+  - [Lv. 1 の解答](exercises/level-01-answer.md)
 - [Lv. 2](exercises/level-02.md)
-  - [解答](exercises/level-02-answer.md)
+  - [Lv. 2 の解答](exercises/level-02-answer.md)
 - [Lv. 3](exercises/level-03.md)
-  - [解答](exercises/level-03-answer.md)
+  - [Lv. 3 の解答](exercises/level-03-answer.md)
 - [Lv. 4](exercises/level-04.md)
-  - [解答](exercises/level-04-answer.md)
+  - [Lv. 4 の解答](exercises/level-04-answer.md)
 - [Lv. 5](exercises/level-05.md)
-  - [解答](exercises/level-05-answer.md)
+  - [Lv. 5 の解答](exercises/level-05-answer.md)
 
 ---
 
