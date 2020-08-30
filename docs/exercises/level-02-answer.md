@@ -148,7 +148,17 @@ sfdx force:source:push -u demo
 sfdx force:org:open -u demo -p lightning/setup/CustomMetadata/home
 ```
 
+`FAT_TriggerObserver` の `レコードの管理` をクリックします。
+
 ![customMetadata](../images/level-02-answer-01.png)
+
+`新規` をクリックします。
+
+![customMetadata](../images/level-02-answer-02.png)
+
+情報を入力して `保存` をクリックします。
+
+![customMetadata](../images/level-02-answer-03.png)
 
 コードをフォーマットします。
 

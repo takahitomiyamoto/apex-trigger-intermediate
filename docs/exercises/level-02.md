@@ -37,9 +37,15 @@ Apex トリガ内のビジネスロジックはすべて削除し、代わりに
 
 ### カスタムメタデータ型
 
-| 観点                 | 内容                    | 備考 |
-| :------------------- | :---------------------- | :--- |
-| カスタムメタデータ名 | `AccountTriggerService` | -    |
+| 項目名                       | 値                      | 備考 |
+| :--------------------------- | :---------------------- | :--- |
+| 表示ラベル                   | `AccountTriggerService` | -    |
+| カスタムメタデータレコード名 | `AccountTriggerService` | -    |
+| Apex Class                   | `AccountTriggerService` | -    |
+| sObject                      | `Account`               | -    |
+| Active                       | Yes                     | -    |
+| Before Insert                | Yes                     | -    |
+| Before Update                | Yes                     | -    |
 
 ## 解答
 
