@@ -1,6 +1,6 @@
 # Lv. 3 の解答
 
-Apex テストを実行して現在のコードカバー率を確認します。
+1-1. Apex テストを実行して現在のコードカバー率を確認します。
 
 ```sh
 export SFDX_IMPROVED_CODE_COVERAGE="true"
@@ -37,7 +37,7 @@ Test Run Coverage    96%
 Org Wide Coverage    90%
 ```
 
-Apex クラスを作成します。
+1-2. AccountTriggerService.cls のテストクラスを作成します。
 
 ```sh
 sfdx force:apex:class:create -d force-app/test/default/classes -n AccountTriggerServiceTest -t ApexUnitTest
@@ -235,19 +235,19 @@ private class AccountTriggerServiceTest {
 }
 ```
 
-コードをフォーマットします。
+1-3. コードをフォーマットします。
 
 ```sh
 yarn prettier
 ```
 
-スクラッチ組織へプッシュします。
+1-4. スクラッチ組織へプッシュします。
 
 ```sh
 sfdx force:source:push -u demo
 ```
 
-Apex テストを実行して現在のコードカバー率を確認します。
+1-5. Apex テストを実行して現在のコードカバー率を確認します。
 
 ```sh
 export SFDX_IMPROVED_CODE_COVERAGE="true"
@@ -284,3 +284,167 @@ Fail Rate            0%
 Test Run Coverage    97%
 Org Wide Coverage    96%
 ```
+
+2-1. AccountTrigger.trigger のコードカバー率を向上させるために起動条件を追加します。
+ただし、カスタムメタデータ型で制御しているため実際の動作には影響ありません。
+
+```java
+trigger AccountTrigger on Account(
+  before insert,
+  before update,
+  before delete,
+  after insert,
+  after update,
+  after delete,
+  after undelete
+) {
+  FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+    Account.class
+  );
+  handler.invoke();
+}
+```
+
+2-2. AccountTrigger.trigger のテストクラスを作成します。
+
+```sh
+sfdx force:apex:class:create -d force-app/test/default/classes -n AccountTestUtils -t ApexUnitTest
+sfdx force:apex:class:create -d force-app/test/default/classes -n AccountTriggerTest -t ApexUnitTest
+```
+
+##### AccountTestUtils.cls
+
+```java
+@isTest(SeeAllData=false)
+public with sharing class AccountTestUtils {
+  public static List<Account> createNormalAccounts() {
+    List<Account> accounts = new List<Account>();
+
+    Account account1 = new Account();
+    account1.Name = 'Demo';
+    account1.Rating = 'Hot';
+    accounts.add(account1);
+
+    return accounts;
+  }
+
+  public static List<Account> selectAccounts() {
+    return [
+      SELECT Id, Name, Rating, CustomerPriority__c
+      FROM Account
+      ORDER BY Name ASC
+      LIMIT 50000
+    ];
+  }
+
+  public static void insertAccounts(List<Account> accounts) {
+    List<Database.SaveResult> results = Database.insert(accounts, false);
+  }
+
+  public static void updateAccounts(List<Account> accounts) {
+    List<Database.SaveResult> results = Database.update(accounts, false);
+  }
+
+  public static void deleteAccounts(List<Account> accounts) {
+    List<Database.DeleteResult> results = Database.delete(accounts, false);
+  }
+
+  public static void undeleteAccounts(List<Account> accounts) {
+    List<Database.UndeleteResult> results = Database.undelete(accounts, false);
+  }
+}
+```
+
+##### AccountTriggerTest.cls
+
+```java
+@isTest(SeeAllData=false)
+private class AccountTriggerTest {
+  @testSetup
+  static void setup() {
+    List<Account> accounts = AccountTestUtils.createNormalAccounts();
+    AccountTestUtils.insertAccounts(accounts);
+  }
+
+  @isTest
+  static void invokeUpdate() {
+    List<Account> accounts = AccountTestUtils.selectAccounts();
+
+    Test.startTest();
+    AccountTestUtils.updateAccounts(accounts);
+    Test.stopTest();
+
+    System.assertNotEquals(0, accounts.size(), 'invokeUpdate');
+  }
+
+  @isTest
+  static void invokeDelete() {
+    List<Account> accounts = AccountTestUtils.selectAccounts();
+    AccountTestUtils.deleteAccounts(accounts);
+
+    Test.startTest();
+    AccountTestUtils.undeleteAccounts(accounts);
+    Test.stopTest();
+
+    System.assertNotEquals(0, accounts.size(), 'invokeDelete');
+  }
+
+  @isTest
+  static void invokeException() {
+    // TODO
+  }
+}
+```
+
+2-3. コードをフォーマットします。
+
+```sh
+yarn prettier
+```
+
+2-4. スクラッチ組織へプッシュします。
+
+```sh
+sfdx force:source:push -u demo
+```
+
+2-5. Apex テストを実行して現在のコードカバー率を確認します。
+
+```sh
+export SFDX_IMPROVED_CODE_COVERAGE="true"
+
+sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
+```
+
+```sh
+=== Apex Code Coverage
+ID                  NAME                           % COVERED  UNCOVERED LINES
+──────────────────  ─────────────────────────────  ─────────  ───────────────────────────────────────────────
+01p1m000000dNwKAAU  FAT_CommonConstants            NaN%
+01p1m000000dNwLAAU  FAT_CommonError                100%
+01p1m000000dNwYAAU  FAT_CommonUtils                100%
+01p1m000000dNwOAAU  FAT_CommonLoggerConstants      100%
+01p1m000000dNwNAAU  FAT_CommonLogger               100%
+01p1m000000dNwPAAU  FAT_CommonLoggerHelper         100%
+01p1m000000dNwTAAU  FAT_CommonTriggerHandler       98%        216,217
+01p1m000000dNwVAAU  FAT_CommonTriggerHelper        100%
+01q1m000000EAWXAA4  FAT_LoggerEventTrigger         100%
+01p1m000000dNwbAAE  FAT_LoggerEventTriggerService  100%
+01q1m000000E9UvAAK  AccountTrigger                 100%
+01p1m000000dO0mAAE  AccountTriggerService          100%
+
+=== Test Summary
+NAME                 VALUE
+───────────────────  ─────────────────────────────────────────────────────────
+Outcome              Passed
+Tests Ran            58
+Passing              58
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Run Coverage    99%
+Org Wide Coverage    99%
+```
+
+最後の 1%は、まだできないので後ほど対応しましょう。

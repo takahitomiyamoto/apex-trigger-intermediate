@@ -301,7 +301,7 @@
                       Lv. 3 &#x306E;&#x89E3;&#x7B54;
                     </h1>
                     <p>
-                      Apex
+                      1-1. Apex
                       &#x30C6;&#x30B9;&#x30C8;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x73FE;&#x5728;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30FC;&#x7387;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;
                     </p>
                     <pre><code class="lang-sh"><span class="hljs-built_in">export</span> SFDX_IMPROVED_CODE_COVERAGE=<span class="hljs-string">&quot;true&quot;</span>
@@ -336,8 +336,8 @@ Test Run Coverage    96%
 Org Wide Coverage    90%
 </code></pre>
                     <p>
-                      Apex
-                      &#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+                      1-2. AccountTriggerService.cls
+                      &#x306E;&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
                     </p>
                     <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n AccountTriggerServiceTest -t ApexUnitTest
 </code></pre>
@@ -533,17 +533,19 @@ Org Wide Coverage    90%
 }
 </code></pre>
                     <p>
+                      1-3.
                       &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
                     </p>
                     <pre><code class="lang-sh">yarn prettier
 </code></pre>
                     <p>
+                      1-4.
                       &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
                     </p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
 </code></pre>
                     <p>
-                      Apex
+                      1-5. Apex
                       &#x30C6;&#x30B9;&#x30C8;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x73FE;&#x5728;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30FC;&#x7387;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;
                     </p>
                     <pre><code class="lang-sh"><span class="hljs-built_in">export</span> SFDX_IMPROVED_CODE_COVERAGE=<span class="hljs-string">&quot;true&quot;</span>
@@ -578,6 +580,164 @@ Fail Rate            0%
 Test Run Coverage    97%
 Org Wide Coverage    96%
 </code></pre>
+                    <p>
+                      2-1. AccountTrigger.trigger
+                      &#x306E;&#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30FC;&#x7387;&#x3092;&#x5411;&#x4E0A;&#x3055;&#x305B;&#x308B;&#x305F;&#x3081;&#x306B;&#x8D77;&#x52D5;&#x6761;&#x4EF6;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
+                      &#x305F;&#x3060;&#x3057;&#x3001;&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3067;&#x5236;&#x5FA1;&#x3057;&#x3066;&#x3044;&#x308B;&#x305F;&#x3081;&#x5B9F;&#x969B;&#x306E;&#x52D5;&#x4F5C;&#x306B;&#x306F;&#x5F71;&#x97FF;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;
+                    </p>
+                    <pre><code class="lang-java"><span class="hljs-function">trigger AccountTrigger on <span class="hljs-title">Account</span><span class="hljs-params">(
+  before insert,
+  before update,
+  before delete,
+  after insert,
+  after update,
+  after delete,
+  after undelete
+)</span> </span>{
+  FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+    Account.class
+  );
+  handler.invoke();
+}
+</code></pre>
+                    <p>
+                      2-2. AccountTrigger.trigger
+                      &#x306E;&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n AccountTestUtils -t ApexUnitTest
+sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n AccountTriggerTest -t ApexUnitTest
+</code></pre>
+                    <h5 id="accounttestutilscls">AccountTestUtils.cls</h5>
+                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+<span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTestUtils</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Account&gt; <span class="hljs-title">createNormalAccounts</span><span class="hljs-params">()</span> </span>{
+    List&lt;Account&gt; accounts = <span class="hljs-keyword">new</span> List&lt;Account&gt;();
+
+    Account account1 = <span class="hljs-keyword">new</span> Account();
+    account1.Name = <span class="hljs-string">&apos;Demo&apos;</span>;
+    account1.Rating = <span class="hljs-string">&apos;Hot&apos;</span>;
+    accounts.add(account1);
+
+    <span class="hljs-keyword">return</span> accounts;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Account&gt; <span class="hljs-title">selectAccounts</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> [
+      SELECT Id, Name, Rating, CustomerPriority__c
+      FROM Account
+      ORDER BY Name ASC
+      LIMIT <span class="hljs-number">50000</span>
+    ];
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">insertAccounts</span><span class="hljs-params">(List&lt;Account&gt; accounts)</span> </span>{
+    List&lt;Database.SaveResult&gt; results = Database.insert(accounts, <span class="hljs-keyword">false</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">updateAccounts</span><span class="hljs-params">(List&lt;Account&gt; accounts)</span> </span>{
+    List&lt;Database.SaveResult&gt; results = Database.update(accounts, <span class="hljs-keyword">false</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">deleteAccounts</span><span class="hljs-params">(List&lt;Account&gt; accounts)</span> </span>{
+    List&lt;Database.DeleteResult&gt; results = Database.delete(accounts, <span class="hljs-keyword">false</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">undeleteAccounts</span><span class="hljs-params">(List&lt;Account&gt; accounts)</span> </span>{
+    List&lt;Database.UndeleteResult&gt; results = Database.undelete(accounts, <span class="hljs-keyword">false</span>);
+  }
+}
+</code></pre>
+                    <h5 id="accounttriggertestcls">AccountTriggerTest.cls</h5>
+                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+<span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerTest</span> </span>{
+  <span class="hljs-meta">@testSetup</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+    List&lt;Account&gt; accounts = AccountTestUtils.createNormalAccounts();
+    AccountTestUtils.insertAccounts(accounts);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">invokeUpdate</span><span class="hljs-params">()</span> </span>{
+    List&lt;Account&gt; accounts = AccountTestUtils.selectAccounts();
+
+    Test.startTest();
+    AccountTestUtils.updateAccounts(accounts);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-number">0</span>, accounts.size(), <span class="hljs-string">&apos;invokeUpdate&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">invokeDelete</span><span class="hljs-params">()</span> </span>{
+    List&lt;Account&gt; accounts = AccountTestUtils.selectAccounts();
+    AccountTestUtils.deleteAccounts(accounts);
+
+    Test.startTest();
+    AccountTestUtils.undeleteAccounts(accounts);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-number">0</span>, accounts.size(), <span class="hljs-string">&apos;invokeDelete&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">invokeException</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// TODO</span>
+  }
+}
+</code></pre>
+                    <p>
+                      2-3.
+                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">yarn prettier
+</code></pre>
+                    <p>
+                      2-4.
+                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
+</code></pre>
+                    <p>
+                      2-5. Apex
+                      &#x30C6;&#x30B9;&#x30C8;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x73FE;&#x5728;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30FC;&#x7387;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh"><span class="hljs-built_in">export</span> SFDX_IMPROVED_CODE_COVERAGE=<span class="hljs-string">&quot;true&quot;</span>
+
+sfdx force:apex:<span class="hljs-built_in">test</span>:run -c <span class="hljs-_">-l</span> RunLocalTests -r human -u demo
+</code></pre>
+                    <pre><code class="lang-sh">=== Apex Code Coverage
+ID                  NAME                           % COVERED  UNCOVERED LINES
+&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+01p1m000000dNwKAAU  FAT_CommonConstants            NaN%
+01p1m000000dNwLAAU  FAT_CommonError                100%
+01p1m000000dNwYAAU  FAT_CommonUtils                100%
+01p1m000000dNwOAAU  FAT_CommonLoggerConstants      100%
+01p1m000000dNwNAAU  FAT_CommonLogger               100%
+01p1m000000dNwPAAU  FAT_CommonLoggerHelper         100%
+01p1m000000dNwTAAU  FAT_CommonTriggerHandler       98%        216,217
+01p1m000000dNwVAAU  FAT_CommonTriggerHelper        100%
+01q1m000000EAWXAA4  FAT_LoggerEventTrigger         100%
+01p1m000000dNwbAAE  FAT_LoggerEventTriggerService  100%
+01q1m000000E9UvAAK  AccountTrigger                 100%
+01p1m000000dO0mAAE  AccountTriggerService          100%
+
+=== Test Summary
+NAME                 VALUE
+&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+Outcome              Passed
+Tests Ran            58
+Passing              58
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Run Coverage    99%
+Org Wide Coverage    99%
+</code></pre>
+                    <p>
+                      &#x6700;&#x5F8C;&#x306E;
+                      1%&#x306F;&#x3001;&#x307E;&#x3060;&#x3067;&#x304D;&#x306A;&#x3044;&#x306E;&#x3067;&#x5F8C;&#x307B;&#x3069;&#x5BFE;&#x5FDC;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                    </p>
                   </section>
                 </div>
                 <div class="search-results">
@@ -725,10 +885,10 @@ Org Wide Coverage    96%
             },
             file: {
               path: 'exercises/level-03-answer.md',
-              mtime: '2020-08-30T10:44:23.860Z',
+              mtime: '2020-08-30T12:13:59.492Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-08-30T10:44:30.994Z' },
+            gitbook: { version: '3.6.1', time: '2020-08-30T12:14:06.564Z' },
             basePath: '..',
             book: { language: '' }
           });

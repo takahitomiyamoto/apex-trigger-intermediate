@@ -1,6 +1,6 @@
 # Lv. 2 の解答
 
-`sfdx-project.json` に `packageAliases` を追加します。
+1-1. `sfdx-project.json` に `packageAliases` を追加します。
 
 ##### sfdx-project.json
 
@@ -21,14 +21,14 @@
 }
 ```
 
-`flexible-apex-trigger@1.0.2.0` をインストールします。
+1-2. `flexible-apex-trigger@1.0.2.0` をインストールします。
 
 ```sh
 sfdx force:package:install -p flexible-apex-trigger@1.0.2.0 -s AllUsers -u demo
 sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
 ```
 
-[Lv. 1](level-01-answer.md) で修正した Apex トリガを修正します。
+1-3. [Lv. 1](level-01-answer.md) で修正した Apex トリガを修正します。
 
 ##### AccountTrigger.trigger
 
@@ -39,13 +39,13 @@ trigger AccountTrigger on Account(before insert, before update) {
 }
 ```
 
-Apex クラスを作成します。
+1-4. Apex クラスを作成します。
 
 ```sh
 sfdx force:apex:class:create -d force-app/main/default/classes -n AccountTriggerService -t DefaultApexClass
 ```
 
-FAT_ITriggerObserver を実装します。
+1-5. FAT_ITriggerObserver を実装します。
 
 ##### AccountTriggerService.cls
 
@@ -74,7 +74,7 @@ public with sharing class AccountTriggerService implements FAT_ITriggerObserver 
 }
 ```
 
-`addPrefixToName` および `setCustomerPriority` を追加します。
+1-6. `addPrefixToName` および `setCustomerPriority` を追加します。
 
 ##### AccountTriggerService.cls
 
@@ -131,7 +131,7 @@ public with sharing class AccountTriggerService implements FAT_ITriggerObserver 
 }
 ```
 
-`onBeforeInsert` から `addPrefixToName` および `setCustomerPriority` を呼び出し、
+1-7. `onBeforeInsert` から `addPrefixToName` および `setCustomerPriority` を呼び出し、
 `onBeforeUpdate` から `setCustomerPriority` を呼び出すようにします。
 
 ##### AccountTriggerService.cls
@@ -192,43 +192,43 @@ public with sharing class AccountTriggerService implements FAT_ITriggerObserver 
 }
 ```
 
-コードをフォーマットします。
+1-8. コードをフォーマットします。
 
 ```sh
 yarn prettier
 ```
 
-スクラッチ組織へプッシュします。
+1-9. スクラッチ組織へプッシュします。
 
 ```sh
 sfdx force:source:push -u demo
 ```
 
-カスタムメタデータ型にレコードを追加するために、スクラッチ組織を開きます。
+2-1. カスタムメタデータ型にレコードを追加するために、スクラッチ組織を開きます。
 
 ```sh
 sfdx force:org:open -u demo -p lightning/setup/CustomMetadata/home
 ```
 
-`FAT_TriggerObserver` の `レコードの管理` をクリックします。
+2-2. `FAT_TriggerObserver` の `レコードの管理` をクリックします。
 
 ![customMetadata](../images/level-02-answer-01.png)
 
-`新規` をクリックします。
+2-3. `新規` をクリックします。
 
 ![customMetadata](../images/level-02-answer-02.png)
 
-情報を入力して `保存` をクリックします。
+2-4. 情報を入力して `保存` をクリックします。
 
 ![customMetadata](../images/level-02-answer-03.png)
 
-取引先画面を開きます。
+2-5. 取引先画面を開きます。
 
 ```sh
 sfdx force:org:open -u demo -p lightning/o/Account/list
 ```
 
-新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。
+2-6. 新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。
 また、そのレコードを更新し、想定通りの挙動かどうかを確認しましょう。
 
 ... いかがでしたか？
