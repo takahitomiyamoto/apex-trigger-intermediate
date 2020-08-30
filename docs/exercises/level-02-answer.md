@@ -72,7 +72,7 @@ public with sharing class AccountTriggerService implements FAT_ITriggerObserver 
 }
 ```
 
-メソッドを追加します。
+`addPrefixToName` および `setCustomerPriority` を追加します。
 
 ##### AccountTriggerService.cls
 
@@ -108,9 +108,72 @@ public with sharing class AccountTriggerService implements FAT_ITriggerObserver 
 
   public void onBeforeInsert(FAT_CommonTriggerHandler handler) {
     this.addPrefixToName((List<Account>) handler.newObjects);
+    this.setCustomerPriority((List<Account>) handler.newObjects);
   }
 
   public void onBeforeUpdate(FAT_CommonTriggerHandler handler) {
+    this.setCustomerPriority((List<Account>) handler.newObjects);
+  }
+
+  public void onBeforeDelete(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterInsert(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterUpdate(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterDelete(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterUndelete(FAT_CommonTriggerHandler handler) {
+  }
+}
+```
+
+`onBeforeInsert` から `addPrefixToName` および `setCustomerPriority` を呼び出し、
+`onBeforeUpdate` から `setCustomerPriority` を呼び出すようにします。
+
+##### AccountTriggerService.cls
+
+```java
+public with sharing class AccountTriggerService implements FAT_ITriggerObserver {
+  @TestVisible
+  private void addPrefixToName(List<Account> accounts) {
+    for (Account account : accounts) {
+      account.Name = '[サンプル] ' + account.Name;
+    }
+  }
+
+  @TestVisible
+  private void setCustomerPriority(List<Account> accounts) {
+    for (Account account : accounts) {
+      String customerPriority = '';
+      switch on account.Rating {
+        when 'Hot' {
+          customerPriority = 'High';
+        }
+        when 'Warm' {
+          customerPriority = 'Medium';
+        }
+        when 'Cold' {
+          customerPriority = 'Low';
+        }
+        when else {
+        }
+      }
+      account.CustomerPriority__c = customerPriority;
+    }
+  }
+
+  public void onBeforeInsert(FAT_CommonTriggerHandler handler) {
+    this.addPrefixToName((List<Account>) handler.newObjects);
+    this.setCustomerPriority((List<Account>) handler.newObjects);
+  }
+
+  public void onBeforeUpdate(FAT_CommonTriggerHandler handler) {
+    this.setCustomerPriority((List<Account>) handler.newObjects);
   }
 
   public void onBeforeDelete(FAT_CommonTriggerHandler handler) {
@@ -160,19 +223,7 @@ sfdx force:org:open -u demo -p lightning/setup/CustomMetadata/home
 
 ![customMetadata](../images/level-02-answer-03.png)
 
-コードをフォーマットします。
-
-```sh
-yarn prettier
-```
-
-スクラッチ組織へプッシュします。
-
-```sh
-sfdx force:source:push -u demo
-```
-
-スクラッチ組織を開きます。
+取引先画面を開きます。
 
 ```sh
 sfdx force:org:open -u demo -p lightning/o/Account/list
