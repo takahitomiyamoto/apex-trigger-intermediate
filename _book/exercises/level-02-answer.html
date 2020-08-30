@@ -345,6 +345,10 @@ sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
                     </p>
                     <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/main/default/classes -n AccountTriggerService -t DefaultApexClass
 </code></pre>
+                    <p>
+                      FAT_ITriggerObserver
+                      &#x3092;&#x5B9F;&#x88C5;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
                     <h5 id="accounttriggerservicecls">
                       AccountTriggerService.cls
                     </h5>
@@ -409,12 +413,9 @@ sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
   }
 
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeInsert</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
-    <span class="hljs-keyword">this</span>.addPrefixToName((List&lt;Account&gt;) handler.newObjects);
-    <span class="hljs-keyword">this</span>.setCustomerPriority((List&lt;Account&gt;) handler.newObjects);
   }
 
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeUpdate</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
-    <span class="hljs-keyword">this</span>.setCustomerPriority((List&lt;Account&gt;) handler.newObjects);
   }
 
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeDelete</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
@@ -708,10 +709,10 @@ sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
             },
             file: {
               path: 'exercises/level-02-answer.md',
-              mtime: '2020-08-30T08:24:18.028Z',
+              mtime: '2020-08-30T08:44:35.791Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-08-30T08:36:14.463Z' },
+            gitbook: { version: '3.6.1', time: '2020-08-30T08:44:50.887Z' },
             basePath: '..',
             book: { language: '' }
           });

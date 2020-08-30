@@ -45,6 +45,8 @@ Apex クラスを作成します。
 sfdx force:apex:class:create -d force-app/main/default/classes -n AccountTriggerService -t DefaultApexClass
 ```
 
+FAT_ITriggerObserver を実装します。
+
 ##### AccountTriggerService.cls
 
 ```java
@@ -107,12 +109,9 @@ public with sharing class AccountTriggerService implements FAT_ITriggerObserver 
   }
 
   public void onBeforeInsert(FAT_CommonTriggerHandler handler) {
-    this.addPrefixToName((List<Account>) handler.newObjects);
-    this.setCustomerPriority((List<Account>) handler.newObjects);
   }
 
   public void onBeforeUpdate(FAT_CommonTriggerHandler handler) {
-    this.setCustomerPriority((List<Account>) handler.newObjects);
   }
 
   public void onBeforeDelete(FAT_CommonTriggerHandler handler) {
