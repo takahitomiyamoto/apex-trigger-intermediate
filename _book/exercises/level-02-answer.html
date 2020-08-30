@@ -329,81 +329,14 @@
 sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
 </code></pre>
                     <p>
-                      <a href="warm-up-answer.html">Warm-up</a>
-                      &#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F; Apex
+                      <a href="level-01-answer.html">Lv. 1</a>
+                      &#x3067;&#x4FEE;&#x6B63;&#x3057;&#x305F; Apex
                       &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3059;&#x3002;
                     </p>
                     <h5 id="accounttriggertrigger">AccountTrigger.trigger</h5>
                     <pre><code class="lang-java"><span class="hljs-function">trigger AccountTrigger on <span class="hljs-title">Account</span><span class="hljs-params">(before insert, before update)</span> </span>{
-  <span class="hljs-keyword">switch</span> on Trigger.operationType {
-    when BEFORE_INSERT {
-      <span class="hljs-keyword">for</span> (Account account : Trigger.new) {
-        <span class="hljs-comment">// Action (1)</span>
-        account.Name = <span class="hljs-string">&apos;[&#x30B5;&#x30F3;&#x30D7;&#x30EB;] &apos;</span> + account.Name;
-      }
-    }
-    when BEFORE_UPDATE {
-    }
-    when <span class="hljs-keyword">else</span> {
-    }
-  }
-}
-</code></pre>
-                    <p>
-                      &#x30A2;&#x30AF;&#x30B7;&#x30E7;&#x30F3; (2) &#x3092;
-                      <code>BEFORE_INSERT</code> &#x304A;&#x3088;&#x3073;
-                      <code>BEFORE_UPDATE</code>
-                      &#x306B;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
-                    <h5 id="accounttriggertrigger">AccountTrigger.trigger</h5>
-                    <pre><code class="lang-java"><span class="hljs-function">trigger AccountTrigger on <span class="hljs-title">Account</span><span class="hljs-params">(before insert, before update)</span> </span>{
-  <span class="hljs-keyword">switch</span> on Trigger.operationType {
-    when BEFORE_INSERT {
-      <span class="hljs-keyword">for</span> (Account account : Trigger.new) {
-        <span class="hljs-comment">// Action (1)</span>
-        account.Name = <span class="hljs-string">&apos;[&#x30B5;&#x30F3;&#x30D7;&#x30EB;] &apos;</span> + account.Name;
-
-        <span class="hljs-comment">// Action (2)</span>
-        String customerPriority = <span class="hljs-string">&apos;&apos;</span>;
-        <span class="hljs-keyword">switch</span> on account.Rating {
-          when <span class="hljs-string">&apos;Hot&apos;</span> {
-            customerPriority = <span class="hljs-string">&apos;High&apos;</span>;
-          }
-          when <span class="hljs-string">&apos;Warm&apos;</span> {
-            customerPriority = <span class="hljs-string">&apos;Medium&apos;</span>;
-          }
-          when <span class="hljs-string">&apos;Cold&apos;</span> {
-            customerPriority = <span class="hljs-string">&apos;Low&apos;</span>;
-          }
-          when <span class="hljs-keyword">else</span> {
-          }
-        }
-        account.CustomerPriority__c = customerPriority;
-      }
-    }
-    when BEFORE_UPDATE {
-      <span class="hljs-keyword">for</span> (Account account : Trigger.new) {
-        <span class="hljs-comment">// Action (2)</span>
-        String customerPriority = <span class="hljs-string">&apos;&apos;</span>;
-        <span class="hljs-keyword">switch</span> on account.Rating {
-          when <span class="hljs-string">&apos;Hot&apos;</span> {
-            customerPriority = <span class="hljs-string">&apos;High&apos;</span>;
-          }
-          when <span class="hljs-string">&apos;Warm&apos;</span> {
-            customerPriority = <span class="hljs-string">&apos;Medium&apos;</span>;
-          }
-          when <span class="hljs-string">&apos;Cold&apos;</span> {
-            customerPriority = <span class="hljs-string">&apos;Low&apos;</span>;
-          }
-          when <span class="hljs-keyword">else</span> {
-          }
-        }
-        account.CustomerPriority__c = customerPriority;
-      }
-    }
-    when <span class="hljs-keyword">else</span> {
-    }
-  }
+  FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(Account.class);
+  handler.invoke();
 }
 </code></pre>
                     <p>
@@ -576,10 +509,10 @@ sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
             },
             file: {
               path: 'exercises/level-02-answer.md',
-              mtime: '2020-08-30T06:54:21.195Z',
+              mtime: '2020-08-30T07:04:41.054Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-08-30T06:56:03.396Z' },
+            gitbook: { version: '3.6.1', time: '2020-08-30T07:05:52.949Z' },
             basePath: '..',
             book: { language: '' }
           });
