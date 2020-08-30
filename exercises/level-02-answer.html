@@ -300,6 +300,135 @@
                     <h1 id="lv-2-&#x306E;&#x89E3;&#x7B54;">
                       Lv. 2 &#x306E;&#x89E3;&#x7B54;
                     </h1>
+                    <p>
+                      <code>sfdx-project.json</code> &#x306B;
+                      <code>packageAliases</code>
+                      &#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <h5 id="sfdx-projectjson">sfdx-project.json</h5>
+                    <pre><code class="lang-json">{
+  <span class="hljs-string">&quot;packageDirectories&quot;</span>: [
+    {
+      <span class="hljs-string">&quot;path&quot;</span>: <span class="hljs-string">&quot;force-app&quot;</span>,
+      <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-literal">true</span>
+    }
+  ],
+  <span class="hljs-string">&quot;namespace&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+  <span class="hljs-string">&quot;sfdcLoginUrl&quot;</span>: <span class="hljs-string">&quot;https://login.salesforce.com&quot;</span>,
+  <span class="hljs-string">&quot;sourceApiVersion&quot;</span>: <span class="hljs-string">&quot;49.0&quot;</span>,
+  <span class="hljs-string">&quot;packageAliases&quot;</span>: {
+    <span class="hljs-string">&quot;flexible-apex-trigger@1.0.2.0&quot;</span>: <span class="hljs-string">&quot;04t2x000003ugk5AAA&quot;</span>
+  }
+}
+</code></pre>
+                    <p>
+                      <code>flexible-apex-trigger@1.0.2.0</code>
+                      &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:package:install -p flexible-apex-trigger@1.0.2.0 <span class="hljs-_">-s</span> AllUsers -u demo
+sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
+</code></pre>
+                    <p>
+                      <a href="warm-up-answer.html">Warm-up</a>
+                      &#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F; Apex
+                      &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <h5 id="accounttriggertrigger">AccountTrigger.trigger</h5>
+                    <pre><code class="lang-java"><span class="hljs-function">trigger AccountTrigger on <span class="hljs-title">Account</span><span class="hljs-params">(before insert, before update)</span> </span>{
+  <span class="hljs-keyword">switch</span> on Trigger.operationType {
+    when BEFORE_INSERT {
+      <span class="hljs-keyword">for</span> (Account account : Trigger.new) {
+        <span class="hljs-comment">// Action (1)</span>
+        account.Name = <span class="hljs-string">&apos;[&#x30B5;&#x30F3;&#x30D7;&#x30EB;] &apos;</span> + account.Name;
+      }
+    }
+    when BEFORE_UPDATE {
+    }
+    when <span class="hljs-keyword">else</span> {
+    }
+  }
+}
+</code></pre>
+                    <p>
+                      &#x30A2;&#x30AF;&#x30B7;&#x30E7;&#x30F3; (2) &#x3092;
+                      <code>BEFORE_INSERT</code> &#x304A;&#x3088;&#x3073;
+                      <code>BEFORE_UPDATE</code>
+                      &#x306B;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <h5 id="accounttriggertrigger">AccountTrigger.trigger</h5>
+                    <pre><code class="lang-java"><span class="hljs-function">trigger AccountTrigger on <span class="hljs-title">Account</span><span class="hljs-params">(before insert, before update)</span> </span>{
+  <span class="hljs-keyword">switch</span> on Trigger.operationType {
+    when BEFORE_INSERT {
+      <span class="hljs-keyword">for</span> (Account account : Trigger.new) {
+        <span class="hljs-comment">// Action (1)</span>
+        account.Name = <span class="hljs-string">&apos;[&#x30B5;&#x30F3;&#x30D7;&#x30EB;] &apos;</span> + account.Name;
+
+        <span class="hljs-comment">// Action (2)</span>
+        String customerPriority = <span class="hljs-string">&apos;&apos;</span>;
+        <span class="hljs-keyword">switch</span> on account.Rating {
+          when <span class="hljs-string">&apos;Hot&apos;</span> {
+            customerPriority = <span class="hljs-string">&apos;High&apos;</span>;
+          }
+          when <span class="hljs-string">&apos;Warm&apos;</span> {
+            customerPriority = <span class="hljs-string">&apos;Medium&apos;</span>;
+          }
+          when <span class="hljs-string">&apos;Cold&apos;</span> {
+            customerPriority = <span class="hljs-string">&apos;Low&apos;</span>;
+          }
+          when <span class="hljs-keyword">else</span> {
+          }
+        }
+        account.CustomerPriority__c = customerPriority;
+      }
+    }
+    when BEFORE_UPDATE {
+      <span class="hljs-keyword">for</span> (Account account : Trigger.new) {
+        <span class="hljs-comment">// Action (2)</span>
+        String customerPriority = <span class="hljs-string">&apos;&apos;</span>;
+        <span class="hljs-keyword">switch</span> on account.Rating {
+          when <span class="hljs-string">&apos;Hot&apos;</span> {
+            customerPriority = <span class="hljs-string">&apos;High&apos;</span>;
+          }
+          when <span class="hljs-string">&apos;Warm&apos;</span> {
+            customerPriority = <span class="hljs-string">&apos;Medium&apos;</span>;
+          }
+          when <span class="hljs-string">&apos;Cold&apos;</span> {
+            customerPriority = <span class="hljs-string">&apos;Low&apos;</span>;
+          }
+          when <span class="hljs-keyword">else</span> {
+          }
+        }
+        account.CustomerPriority__c = customerPriority;
+      }
+    }
+    when <span class="hljs-keyword">else</span> {
+    }
+  }
+}
+</code></pre>
+                    <p>
+                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">yarn prettier
+</code></pre>
+                    <p>
+                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
+</code></pre>
+                    <p>
+                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3092;&#x958B;&#x304D;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:org:open -u demo -p lightning/o/Account/list
+</code></pre>
+                    <p>
+                      &#x65B0;&#x898F;&#x30DC;&#x30BF;&#x30F3;&#x304B;&#x3089;&#x53D6;&#x5F15;&#x5148;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3057;&#x3001;&#x60F3;&#x5B9A;&#x901A;&#x308A;&#x306E;&#x6319;&#x52D5;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                      &#x307E;&#x305F;&#x3001;&#x305D;&#x306E;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x66F4;&#x65B0;&#x3057;&#x3001;&#x60F3;&#x5B9A;&#x901A;&#x308A;&#x306E;&#x6319;&#x52D5;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                    </p>
+                    <p>
+                      ...
+                      &#x3044;&#x304B;&#x304C;&#x3067;&#x3057;&#x305F;&#x304B;&#xFF1F;
+                    </p>
                   </section>
                 </div>
                 <div class="search-results">
@@ -447,10 +576,10 @@
             },
             file: {
               path: 'exercises/level-02-answer.md',
-              mtime: '2020-08-26T13:39:25.038Z',
+              mtime: '2020-08-30T06:54:21.195Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-08-30T06:29:12.362Z' },
+            gitbook: { version: '3.6.1', time: '2020-08-30T06:56:03.396Z' },
             basePath: '..',
             book: { language: '' }
           });
