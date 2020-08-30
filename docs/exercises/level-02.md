@@ -8,11 +8,14 @@ Apex トリガの柔軟性・可読性を高めるフレームワークを導入
 
 ## ビジネス要件
 
+将来的にシステムへの変更要求が頻繁に発生することが予見されています。
+既存のビジネスロジックを保ちながら、新規のビジネスロジックを追加しやすく、テストもしやすい設計方針へ改めてください。
+
 ## アーキテクチャ要件
 
-[Flexible Apex Trigger](https://github.com/takahitomiyamoto/flexible-apex-trigger#flexible-apex-trigger) をインストールしてください。
+[Flexible Apex Trigger](https://github.com/takahitomiyamoto/flexible-apex-trigger#flexible-apex-trigger) を利用してください。
 Apex トリガ内のビジネスロジックはすべて削除し、代わりに Apex クラスで実装してください。
-カスタムメタデータ型を利用して Apex クラスの有効化・無効化を制御できるようにしてください。
+カスタムメタデータ型を利用して各 Apex クラスの有効化・無効化を制御できるようにしてください。
 
 ## システム要件
 
