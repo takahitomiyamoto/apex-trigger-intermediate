@@ -28,7 +28,9 @@
           "このまま続けても良いのですが、そろそろ本題に入りましょう。",
           "だんだんロジックが複雑になってきました。",
           "また、同じコードが重複して存在している部分も気になりますね。",
+          "または",
           "を利用してください。",
+          "を実行する",
           "アーキテクチャ要件",
           "カスタムメタデータ型を利用して各",
           "クラス",
@@ -42,19 +44,20 @@
           "トリガ内のビジネスロジックはすべて削除し、代わりに",
           "トリガ名",
           "ビジネス要件",
+          "メソッド",
           "備考",
           "内容",
           "取引先",
           "対象オブジェクト",
           "将来的にシステムへの変更要求が頻繁に発生することが予見されています。",
           "新規作成する前",
+          "新規作成前に",
           "既存のビジネスロジックを保ちながら、新規のビジネスロジックを追加しやすく、テストもしやすい設計方針へ改めてください。",
-          "更新する前",
+          "更新する前に",
           "複数件レコードの一括処理",
           "観点",
           "解答",
-          "項目自動更新",
-          "項目自動更新2."
+          "項目自動更新"
         ]
       },
       "length": 1
@@ -67,7 +70,7 @@
             "docs": {
               "exercises/level-02.html": {
                 "ref": "exercises/level-02.html",
-                "tf": 0.07575757575757576
+                "tf": 0.03076923076923077
               }
             }
           }
@@ -76,7 +79,7 @@
           "docs": {
             "exercises/level-02.html": {
               "ref": "exercises/level-02.html",
-              "tf": 5.015151515151516
+              "tf": 5.015384615384615
             }
           }
         },
@@ -88,7 +91,7 @@
               "docs": {
                 "exercises/level-02.html": {
                   "ref": "exercises/level-02.html",
-                  "tf": 0.015151515151515152
+                  "tf": 0.03076923076923077
                 }
               }
             }
@@ -99,7 +102,7 @@
               "docs": {
                 "exercises/level-02.html": {
                   "ref": "exercises/level-02.html",
-                  "tf": 0.030303030303030304
+                  "tf": 0.03076923076923077
                 }
               }
             }
@@ -110,7 +113,7 @@
           "docs": {
             "exercises/level-02.html": {
               "ref": "exercises/level-02.html",
-              "tf": 0.06060606060606061
+              "tf": 0.015384615384615385
             }
           }
         },
@@ -140,7 +143,7 @@
                                 "docs": {
                                   "exercises/level-02.html": {
                                     "ref": "exercises/level-02.html",
-                                    "tf": 0.015151515151515152
+                                    "tf": 0.015384615384615385
                                   }
                                 },
                                 "e": {
@@ -161,7 +164,7 @@
                                                 "docs": {
                                                   "exercises/level-02.html": {
                                                     "ref": "exercises/level-02.html",
-                                                    "tf": 0.015151515151515152
+                                                    "tf": 0.015384615384615385
                                                   }
                                                 }
                                               }
@@ -211,7 +214,7 @@
                                     "docs": {
                                       "exercises/level-02.html": {
                                         "ref": "exercises/level-02.html",
-                                        "tf": 0.015151515151515152
+                                        "tf": 0.015384615384615385
                                       }
                                     }
                                   }
@@ -235,7 +238,7 @@
                 "docs": {
                   "exercises/level-02.html": {
                     "ref": "exercises/level-02.html",
-                    "tf": 0.13636363636363635
+                    "tf": 0.13846153846153847
                   }
                 }
               }
@@ -258,7 +261,7 @@
                       "docs": {
                         "exercises/level-02.html": {
                           "ref": "exercises/level-02.html",
-                          "tf": 0.015151515151515152
+                          "tf": 0.015384615384615385
                         }
                       }
                     }
@@ -276,7 +279,7 @@
               "docs": {
                 "exercises/level-02.html": {
                   "ref": "exercises/level-02.html",
-                  "tf": 5.015151515151516
+                  "tf": 5.015384615384615
                 }
               }
             }
@@ -316,7 +319,7 @@
                                         "docs": {
                                           "exercises/level-02.html": {
                                             "ref": "exercises/level-02.html",
-                                            "tf": 0.030303030303030304
+                                            "tf": 0.015384615384615385
                                           }
                                         }
                                       }
@@ -351,7 +354,7 @@
                       "docs": {
                         "exercises/level-02.html": {
                           "ref": "exercises/level-02.html",
-                          "tf": 0.015151515151515152
+                          "tf": 0.015384615384615385
                         }
                       }
                     }
@@ -367,7 +370,7 @@
             "docs": {
               "exercises/level-02.html": {
                 "ref": "exercises/level-02.html",
-                "tf": 0.015151515151515152
+                "tf": 0.015384615384615385
               }
             }
           }
@@ -380,7 +383,7 @@
               "docs": {
                 "exercises/level-02.html": {
                   "ref": "exercises/level-02.html",
-                  "tf": 0.015151515151515152
+                  "tf": 0.015384615384615385
                 }
               }
             }
@@ -443,7 +446,7 @@
                                                                   "docs": {
                                                                     "exercises/level-02.html": {
                                                                       "ref": "exercises/level-02.html",
-                                                                      "tf": 0.015151515151515152
+                                                                      "tf": 0.015384615384615385
                                                                     }
                                                                   }
                                                                 }
@@ -517,7 +520,7 @@
                                                 "docs": {
                                                   "exercises/level-02.html": {
                                                     "ref": "exercises/level-02.html",
-                                                    "tf": 0.015151515151515152
+                                                    "tf": 0.015384615384615385
                                                   }
                                                 }
                                               }
@@ -602,7 +605,7 @@
                                                                     "docs": {
                                                                       "exercises/level-02.html": {
                                                                         "ref": "exercises/level-02.html",
-                                                                        "tf": 0.015151515151515152
+                                                                        "tf": 0.015384615384615385
                                                                       }
                                                                     }
                                                                   }
@@ -632,6 +635,14 @@
                   }
                 }
               }
+            },
+            "は": {
+              "docs": {
+                "exercises/level-02.html": {
+                  "ref": "exercises/level-02.html",
+                  "tf": 0.015384615384615385
+                }
+              }
             }
           }
         },
@@ -657,12 +668,29 @@
                             "docs": {
                               "exercises/level-02.html": {
                                 "ref": "exercises/level-02.html",
-                                "tf": 0.015151515151515152
+                                "tf": 0.015384615384615385
                               }
                             }
                           }
                         }
                       }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "実": {
+            "docs": {},
+            "行": {
+              "docs": {},
+              "す": {
+                "docs": {},
+                "る": {
+                  "docs": {
+                    "exercises/level-02.html": {
+                      "ref": "exercises/level-02.html",
+                      "tf": 0.03076923076923077
                     }
                   }
                 }
@@ -690,7 +718,7 @@
                           "docs": {
                             "exercises/level-02.html": {
                               "ref": "exercises/level-02.html",
-                              "tf": 0.015151515151515152
+                              "tf": 0.015384615384615385
                             }
                           }
                         }
@@ -736,7 +764,7 @@
                                         "docs": {
                                           "exercises/level-02.html": {
                                             "ref": "exercises/level-02.html",
-                                            "tf": 0.015151515151515152
+                                            "tf": 0.015384615384615385
                                           }
                                         }
                                       }
@@ -763,7 +791,7 @@
               "docs": {
                 "exercises/level-02.html": {
                   "ref": "exercises/level-02.html",
-                  "tf": 0.015151515151515152
+                  "tf": 0.015384615384615385
                 }
               },
               "で": {
@@ -788,7 +816,7 @@
                                   "docs": {
                                     "exercises/level-02.html": {
                                       "ref": "exercises/level-02.html",
-                                      "tf": 0.015151515151515152
+                                      "tf": 0.015384615384615385
                                     }
                                   }
                                 }
@@ -851,7 +879,7 @@
                                                               "docs": {
                                                                 "exercises/level-02.html": {
                                                                   "ref": "exercises/level-02.html",
-                                                                  "tf": 0.015151515151515152
+                                                                  "tf": 0.015384615384615385
                                                                 }
                                                               }
                                                             }
@@ -882,7 +910,7 @@
                 "docs": {
                   "exercises/level-02.html": {
                     "ref": "exercises/level-02.html",
-                    "tf": 0.015151515151515152
+                    "tf": 0.015384615384615385
                   }
                 }
               }
@@ -903,7 +931,7 @@
                     "docs": {
                       "exercises/level-02.html": {
                         "ref": "exercises/level-02.html",
-                        "tf": 0.015151515151515152
+                        "tf": 0.015384615384615385
                       }
                     }
                   }
@@ -920,7 +948,7 @@
               "docs": {
                 "exercises/level-02.html": {
                   "ref": "exercises/level-02.html",
-                  "tf": 0.015151515151515152
+                  "tf": 0.015384615384615385
                 }
               },
               "の": {
@@ -1017,7 +1045,7 @@
                                                                                                           "docs": {
                                                                                                             "exercises/level-02.html": {
                                                                                                               "ref": "exercises/level-02.html",
-                                                                                                              "tf": 0.015151515151515152
+                                                                                                              "tf": 0.015384615384615385
                                                                                                             }
                                                                                                           }
                                                                                                         }
@@ -1098,7 +1126,7 @@
                                             "docs": {
                                               "exercises/level-02.html": {
                                                 "ref": "exercises/level-02.html",
-                                                "tf": 0.015151515151515152
+                                                "tf": 0.015384615384615385
                                               }
                                             }
                                           }
@@ -1162,7 +1190,7 @@
                                                           "docs": {
                                                             "exercises/level-02.html": {
                                                               "ref": "exercises/level-02.html",
-                                                              "tf": 0.015151515151515152
+                                                              "tf": 0.015384615384615385
                                                             }
                                                           }
                                                         }
@@ -1191,7 +1219,7 @@
                 "docs": {
                   "exercises/level-02.html": {
                     "ref": "exercises/level-02.html",
-                    "tf": 0.015151515151515152
+                    "tf": 0.015384615384615385
                   }
                 }
               }
@@ -1212,9 +1240,26 @@
                     "docs": {
                       "exercises/level-02.html": {
                         "ref": "exercises/level-02.html",
-                        "tf": 0.015151515151515152
+                        "tf": 0.015384615384615385
                       }
                     }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "メ": {
+          "docs": {},
+          "ソ": {
+            "docs": {},
+            "ッ": {
+              "docs": {},
+              "ド": {
+                "docs": {
+                  "exercises/level-02.html": {
+                    "ref": "exercises/level-02.html",
+                    "tf": 0.03076923076923077
                   }
                 }
               }
@@ -1227,7 +1272,7 @@
             "docs": {
               "exercises/level-02.html": {
                 "ref": "exercises/level-02.html",
-                "tf": 0.030303030303030304
+                "tf": 0.03076923076923077
               }
             }
           }
@@ -1238,7 +1283,7 @@
             "docs": {
               "exercises/level-02.html": {
                 "ref": "exercises/level-02.html",
-                "tf": 0.030303030303030304
+                "tf": 0.03076923076923077
               }
             }
           }
@@ -1251,7 +1296,7 @@
               "docs": {
                 "exercises/level-02.html": {
                   "ref": "exercises/level-02.html",
-                  "tf": 0.015151515151515152
+                  "tf": 0.015384615384615385
                 }
               }
             }
@@ -1275,7 +1320,7 @@
                         "docs": {
                           "exercises/level-02.html": {
                             "ref": "exercises/level-02.html",
-                            "tf": 0.015151515151515152
+                            "tf": 0.015384615384615385
                           }
                         }
                       }
@@ -1356,7 +1401,7 @@
                                                                             "docs": {
                                                                               "exercises/level-02.html": {
                                                                                 "ref": "exercises/level-02.html",
-                                                                                "tf": 0.015151515151515152
+                                                                                "tf": 0.015384615384615385
                                                                               }
                                                                             }
                                                                           }
@@ -1409,8 +1454,19 @@
                       "docs": {
                         "exercises/level-02.html": {
                           "ref": "exercises/level-02.html",
-                          "tf": 0.015151515151515152
+                          "tf": 0.015384615384615385
                         }
+                      }
+                    }
+                  }
+                },
+                "前": {
+                  "docs": {},
+                  "に": {
+                    "docs": {
+                      "exercises/level-02.html": {
+                        "ref": "exercises/level-02.html",
+                        "tf": 0.015384615384615385
                       }
                     }
                   }
@@ -1537,7 +1593,7 @@
                                                                                                                             "docs": {
                                                                                                                               "exercises/level-02.html": {
                                                                                                                                 "ref": "exercises/level-02.html",
-                                                                                                                                "tf": 0.015151515151515152
+                                                                                                                                "tf": 0.015384615384615385
                                                                                                                               }
                                                                                                                             }
                                                                                                                           }
@@ -1607,10 +1663,13 @@
               "る": {
                 "docs": {},
                 "前": {
-                  "docs": {
-                    "exercises/level-02.html": {
-                      "ref": "exercises/level-02.html",
-                      "tf": 0.015151515151515152
+                  "docs": {},
+                  "に": {
+                    "docs": {
+                      "exercises/level-02.html": {
+                        "ref": "exercises/level-02.html",
+                        "tf": 0.015384615384615385
+                      }
                     }
                   }
                 }
@@ -1644,7 +1703,7 @@
                                 "docs": {
                                   "exercises/level-02.html": {
                                     "ref": "exercises/level-02.html",
-                                    "tf": 0.015151515151515152
+                                    "tf": 0.015384615384615385
                                   }
                                 }
                               }
@@ -1665,7 +1724,7 @@
             "docs": {
               "exercises/level-02.html": {
                 "ref": "exercises/level-02.html",
-                "tf": 0.030303030303030304
+                "tf": 0.03076923076923077
               }
             }
           }
@@ -1676,7 +1735,7 @@
             "docs": {
               "exercises/level-02.html": {
                 "ref": "exercises/level-02.html",
-                "tf": 0.015151515151515152
+                "tf": 0.015384615384615385
               }
             }
           }
@@ -1692,21 +1751,10 @@
                 "更": {
                   "docs": {},
                   "新": {
-                    "2": {
-                      "docs": {},
-                      ".": {
-                        "docs": {
-                          "exercises/level-02.html": {
-                            "ref": "exercises/level-02.html",
-                            "tf": 0.015151515151515152
-                          }
-                        }
-                      }
-                    },
                     "docs": {
                       "exercises/level-02.html": {
                         "ref": "exercises/level-02.html",
-                        "tf": 0.030303030303030304
+                        "tf": 0.03076923076923077
                       }
                     }
                   }
@@ -1716,7 +1764,7 @@
           }
         }
       },
-      "length": 45
+      "length": 48
     },
     "corpusTokens": [
       "(1)",
@@ -1737,7 +1785,9 @@
       "このまま続けても良いのですが、そろそろ本題に入りましょう。",
       "だんだんロジックが複雑になってきました。",
       "また、同じコードが重複して存在している部分も気になりますね。",
+      "または",
       "を利用してください。",
+      "を実行する",
       "アーキテクチャ要件",
       "カスタムメタデータ型を利用して各",
       "クラス",
@@ -1751,19 +1801,20 @@
       "トリガ内のビジネスロジックはすべて削除し、代わりに",
       "トリガ名",
       "ビジネス要件",
+      "メソッド",
       "備考",
       "内容",
       "取引先",
       "対象オブジェクト",
       "将来的にシステムへの変更要求が頻繁に発生することが予見されています。",
       "新規作成する前",
+      "新規作成前に",
       "既存のビジネスロジックを保ちながら、新規のビジネスロジックを追加しやすく、テストもしやすい設計方針へ改めてください。",
-      "更新する前",
+      "更新する前に",
       "複数件レコードの一括処理",
       "観点",
       "解答",
-      "項目自動更新",
-      "項目自動更新2."
+      "項目自動更新"
     ],
     "pipeline": ["stopWordFilter", "stemmer"]
   },
@@ -1772,7 +1823,7 @@
       "url": "exercises/level-02.html",
       "title": "Lv. 2",
       "keywords": "",
-      "body": "Lv. 2 : トリガフレームワークを導入してみよう\nだんだんロジックが複雑になってきました。\nまた、同じコードが重複して存在している部分も気になりますね。\nこのまま続けても良いのですが、そろそろ本題に入りましょう。\nApex トリガの柔軟性・可読性を高めるフレームワークを導入することで何が嬉しいのかを実戦で学んでいきます。\nビジネス要件\n将来的にシステムへの変更要求が頻繁に発生することが予見されています。\n既存のビジネスロジックを保ちながら、新規のビジネスロジックを追加しやすく、テストもしやすい設計方針へ改めてください。\nアーキテクチャ要件\nFlexible Apex Trigger を利用してください。\nApex トリガ内のビジネスロジックはすべて削除し、代わりに Apex クラスで実装してください。\nカスタムメタデータ型を利用して各 Apex クラスの有効化・無効化を制御できるようにしてください。\nシステム要件\nApex トリガ\n\n\n\n観点\n内容\n備考\n\n\n\n\nApex トリガ名\nAccountTrigger\n-\n\n\n対象オブジェクト\n取引先\n-\n\n\n複数件レコードの一括処理\nYes\n-\n\n\n\nApex クラス\n\n\n\n観点\n内容\n備考\n\n\n\n\nApex クラス名\nAccountTriggerService\n-\n\n\n新規作成する前\n1. addPrefixToName : (1)-1. 項目自動更新2. setCustomerPriority : (2)-1. 項目自動更新\n-\n\n\n更新する前\n1. setCustomerPriority : (2)-1. 項目自動更新\n-\n\n\n\n解答\n\nこちら\n\n"
+      "body": "Lv. 2 : トリガフレームワークを導入してみよう\nだんだんロジックが複雑になってきました。\nまた、同じコードが重複して存在している部分も気になりますね。\nこのまま続けても良いのですが、そろそろ本題に入りましょう。\nApex トリガの柔軟性・可読性を高めるフレームワークを導入することで何が嬉しいのかを実戦で学んでいきます。\nビジネス要件\n将来的にシステムへの変更要求が頻繁に発生することが予見されています。\n既存のビジネスロジックを保ちながら、新規のビジネスロジックを追加しやすく、テストもしやすい設計方針へ改めてください。\nアーキテクチャ要件\nFlexible Apex Trigger を利用してください。\nApex トリガ内のビジネスロジックはすべて削除し、代わりに Apex クラスで実装してください。\nカスタムメタデータ型を利用して各 Apex クラスの有効化・無効化を制御できるようにしてください。\nシステム要件\nApex トリガ\n\n\n\n観点\n内容\n備考\n\n\n\n\nApex トリガ名\nAccountTrigger\n-\n\n\n対象オブジェクト\n取引先\n-\n\n\n複数件レコードの一括処理\nYes\n-\n\n\n\nApex クラス\n\n\n\n観点\n内容\n備考\n\n\n\n\nApex クラス名\nAccountTriggerService\n-\n\n\nメソッド (1)\naddPrefixToName\n新規作成前に (1)-1. 項目自動更新 を実行する\n\n\nメソッド (2)\nsetCustomerPriority\n新規作成する前 または 更新する前に (2)-1. 項目自動更新 を実行する\n\n\n\n解答\n\nこちら\n\n"
     }
   }
 }
