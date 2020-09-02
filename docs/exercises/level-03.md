@@ -1,6 +1,6 @@
 # Lv. 3 : Apex トリガのテストを書いてみよう
 
-[Flexible Apex Trigger](https://github.com/takahitomiyamoto/flexible-apex-trigger#flexible-apex-trigger) を利用することで、トリガとビジネスロジックを分離できました。それによってテストクラスが書きやすくなっていますので体感してみましょう。
+[Flexible Apex Trigger](https://github.com/takahitomiyamoto/flexible-apex-trigger#flexible-apex-trigger) を利用することで、トリガとビジネスロジックを分離できました。それによってテストクラスが書きやすくなっていますので実際に体感してみましょう。
 
 ## ビジネス要件
 
