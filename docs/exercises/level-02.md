@@ -35,8 +35,8 @@ Apex トリガ内のビジネスロジックはすべて削除し、代わりに
 | メソッド (1)  | `addPrefixToName`       | [(1)-1. 項目自動更新](warm-up.md#warm-up-1-1)   |
 | メソッド (2)  | `setCustomerPriority`   | [(2)-1. 項目自動更新](level-01.md#level-01-2-1) |
 
-- 新規作成する前に `addPrefixToName` および `addPrefixToName`を実行する
-- 更新する前に `addPrefixToName`を実行する
+- 新規作成する前に `addPrefixToName` および `setCustomerPriority`を実行する
+- 更新する前に `setCustomerPriority`を実行する
 
 ### カスタムメタデータ型
 
