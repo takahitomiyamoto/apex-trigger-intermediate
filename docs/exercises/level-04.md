@@ -50,10 +50,10 @@ SLA が設定されている場合、SLA の有効期限およびシリアルナ
 
 ##### エラーメッセージ
 
-| エラー ID                                  | エラーメッセージ                                             | エラー表示場所      | 備考                                   |
-| :----------------------------------------- | :----------------------------------------------------------- | :------------------ | :------------------------------------- |
-| ERROR_MESSAGE_SLA_EXPIRATION_DATE_REQUIRED | SLA が設定されている場合は有効期限も入力してください         | SLA Expiration Date | SLA Expiration Date が null である場合 |
-| ERROR_MESSAGE_SLA_SERIAL_NUMBER_REQUIRED   | SLA が設定されている場合はシリアルナンバーも入力してください | SLA Serial Number   | SLA Serial Number が null である場合   |
+| エラー ID                    | エラーメッセージ                                             | エラー表示場所      | 備考                                   |
+| :--------------------------- | :----------------------------------------------------------- | :------------------ | :------------------------------------- |
+| SLA_EXPIRATION_DATE_REQUIRED | SLA が設定されている場合は有効期限も入力してください         | SLA Expiration Date | SLA Expiration Date が null である場合 |
+| SLA_SERIAL_NUMBER_REQUIRED   | SLA が設定されている場合はシリアルナンバーも入力してください | SLA Serial Number   | SLA Serial Number が null である場合   |
 
 ### カスタムメタデータ型
 
