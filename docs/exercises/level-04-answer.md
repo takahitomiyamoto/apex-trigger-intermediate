@@ -450,8 +450,8 @@ private class AccountTriggerValidationTest {
       validation.validateSLA(accounts);
     } catch (Exception e) {
       exceptions.add(true);
-      String message = FAT_CommonError.createErrorMessage(e);
-      System.assertNotEquals(
+      String message = e.getMessage();
+      System.assertEquals(
         SLA_EXPIRATION_DATE_REQUIRED,
         message,
         'validateSLAErrorSLAExpirationDate'
@@ -480,8 +480,8 @@ private class AccountTriggerValidationTest {
       validation.validateSLA(accounts);
     } catch (Exception e) {
       exceptions.add(true);
-      String message = FAT_CommonError.createErrorMessage(e);
-      System.assertNotEquals(
+      String message = e.getMessage();
+      System.assertEquals(
         SLA_SERIAL_NUMBER_REQUIRED,
         message,
         'validateSLAErrorSLASerialNumber'
