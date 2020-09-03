@@ -8,8 +8,8 @@
 
 ## アーキテクチャ要件
 
-[Flexible Apex Trigger](https://github.com/takahitomiyamoto/flexible-apex-trigger#flexible-apex-trigger) を利用してください。
-すべてのテストデータはテストクラス内で作成してください。
+- [Flexible Apex Trigger](https://github.com/takahitomiyamoto/flexible-apex-trigger#flexible-apex-trigger) を利用してください。
+- すべてのテストデータはテストクラス内で作成してください。
 
 ## システム要件
 

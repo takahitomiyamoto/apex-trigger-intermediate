@@ -13,10 +13,10 @@ SLA が設定されている場合、SLA の有効期限およびシリアルナ
 
 ## アーキテクチャ要件
 
-[Flexible Apex Trigger](https://github.com/takahitomiyamoto/flexible-apex-trigger#flexible-apex-trigger) を利用してください。
-入力規則は Apex トリガで実装してください。
-エラーメッセージはカスタム表示ラベルに定義してください。
-すべてのテストデータはテストクラス内で作成してください。
+- [Flexible Apex Trigger](https://github.com/takahitomiyamoto/flexible-apex-trigger#flexible-apex-trigger) を利用してください。
+- 入力規則は Apex トリガで実装してください。
+- エラーメッセージはカスタム表示ラベルに定義してください。
+- すべてのテストデータはテストクラス内で作成してください。
 
 ## システム要件
 
