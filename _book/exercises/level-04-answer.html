@@ -599,7 +599,8 @@
                     <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/main/default/classes -n AccountTriggerValidation -t DefaultApexClass
 </code></pre>
                     <p>
-                      3-2. FAT_ITriggerObserver
+                      3-2.
+                      <code>FAT_ITriggerObserver</code>
                       &#x3092;&#x5B9F;&#x88C5;&#x3057;&#x307E;&#x3059;&#x3002;
                     </p>
                     <h5 id="accounttriggervalidationcls">
@@ -815,7 +816,8 @@ Test Run Coverage    96%
 Org Wide Coverage    96%
 </code></pre>
                     <p>
-                      4-2. AccountTriggerValidationTest.cls
+                      4-2.
+                      <code>AccountTriggerValidationTest.cls</code>
                       &#x306E;&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
                     </p>
                     <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n AccountTriggerValidationTest -t ApexUnitTest
@@ -825,20 +827,133 @@ Org Wide Coverage    96%
                     </h5>
                     <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
 <span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerValidationTest</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SLA_EXPIRATION_DATE_REQUIRED = System.Label.SLA_EXPIRATION_DATE_REQUIRED;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SLA_SERIAL_NUMBER_REQUIRED = System.Label.SLA_SERIAL_NUMBER_REQUIRED;
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> AccountTriggerValidation validation = <span class="hljs-keyword">new</span> AccountTriggerValidation();
 
   <span class="hljs-meta">@isTest</span>
-  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">validateSLA</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">validateSLAErrorSLAExpirationDate</span><span class="hljs-params">()</span> </span>{
     List&lt;Account&gt; accounts = <span class="hljs-keyword">new</span> List&lt;Account&gt;();
     Account account = <span class="hljs-keyword">new</span> Account();
     account.Name = <span class="hljs-string">&apos;Demo&apos;</span>;
+    account.SLA__c = <span class="hljs-string">&apos;Gold&apos;</span>;
+    account.SLAExpirationDate__c = <span class="hljs-keyword">null</span>;
+    account.SLASerialNumber__c = <span class="hljs-string">&apos;0&apos;</span>;
     accounts.add(account);
 
     Test.startTest();
-    validation.validateSLA(accounts);
+    List&lt;Boolean&gt; exceptions = <span class="hljs-keyword">new</span> List&lt;Boolean&gt;();
+    <span class="hljs-keyword">try</span> {
+      validation.validateSLA(accounts);
+    } <span class="hljs-keyword">catch</span> (Exception e) {
+      exceptions.add(<span class="hljs-keyword">true</span>);
+      String message = FAT_CommonError.createErrorMessage(e);
+      System.assertNotEquals(
+        SLA_EXPIRATION_DATE_REQUIRED,
+        message,
+        <span class="hljs-string">&apos;validateSLAErrorSLAExpirationDate&apos;</span>
+      );
+    }
     Test.stopTest();
 
-    System.assertNotEquals(<span class="hljs-keyword">null</span>, validation, <span class="hljs-string">&apos;validateSLA&apos;</span>);
+    <span class="hljs-keyword">for</span> (Boolean b : exceptions) {
+      System.assertEquals(<span class="hljs-keyword">true</span>, b, <span class="hljs-string">&apos;validateSLAErrorSLAExpirationDate&apos;</span>);
+    }
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">validateSLAErrorSLASerialNumber</span><span class="hljs-params">()</span> </span>{
+    List&lt;Account&gt; accounts = <span class="hljs-keyword">new</span> List&lt;Account&gt;();
+    Account account = <span class="hljs-keyword">new</span> Account();
+    account.Name = <span class="hljs-string">&apos;Demo&apos;</span>;
+    account.SLA__c = <span class="hljs-string">&apos;Gold&apos;</span>;
+    account.SLAExpirationDate__c = Date.today();
+    account.SLASerialNumber__c = <span class="hljs-keyword">null</span>;
+    accounts.add(account);
+
+    Test.startTest();
+    List&lt;Boolean&gt; exceptions = <span class="hljs-keyword">new</span> List&lt;Boolean&gt;();
+    <span class="hljs-keyword">try</span> {
+      validation.validateSLA(accounts);
+    } <span class="hljs-keyword">catch</span> (Exception e) {
+      exceptions.add(<span class="hljs-keyword">true</span>);
+      String message = FAT_CommonError.createErrorMessage(e);
+      System.assertNotEquals(
+        SLA_SERIAL_NUMBER_REQUIRED,
+        message,
+        <span class="hljs-string">&apos;validateSLAErrorSLASerialNumber&apos;</span>
+      );
+    }
+    Test.stopTest();
+
+    <span class="hljs-keyword">for</span> (Boolean b : exceptions) {
+      System.assertEquals(<span class="hljs-keyword">true</span>, b, <span class="hljs-string">&apos;validateSLAErrorSLASerialNumber&apos;</span>);
+    }
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeDelete</span><span class="hljs-params">()</span> </span>{
+    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+      Account.class
+    );
+
+    Test.startTest();
+    validation.onBeforeDelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onBeforeDelete&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterInsert</span><span class="hljs-params">()</span> </span>{
+    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+      Account.class
+    );
+
+    Test.startTest();
+    validation.onAfterInsert(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onAfterInsert&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterUpdate</span><span class="hljs-params">()</span> </span>{
+    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+      Account.class
+    );
+
+    Test.startTest();
+    validation.onAfterUpdate(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onAfterUpdate&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterDelete</span><span class="hljs-params">()</span> </span>{
+    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+      Account.class
+    );
+
+    Test.startTest();
+    validation.onAfterDelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onAfterDelete&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterUndelete</span><span class="hljs-params">()</span> </span>{
+    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+      Account.class
+    );
+
+    Test.startTest();
+    validation.onAfterUndelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onAfterUndelete&apos;</span>);
   }
 }
 </code></pre>
@@ -864,12 +979,195 @@ sfdx force:apex:<span class="hljs-built_in">test</span>:run -c <span class="hljs
 </code></pre>
                     <pre><code class="lang-sh">=== Apex Code Coverage
 ID                  NAME                           % COVERED  UNCOVERED LINES
-&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
+01p0l0000027mN0AAI  FAT_CommonUtils                100%
+01p0l0000027mMnAAI  FAT_CommonError                100%
+01p0l0000027mMqAAI  FAT_CommonLoggerConstants      100%
+01p0l0000027mMrAAI  FAT_CommonLoggerHelper         100%
+01p0l0000027mMpAAI  FAT_CommonLogger               100%
+01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
+01p0l0000027mMvAAI  FAT_CommonTriggerHandler       98%        216,217
+01q0l000000HcL0AAK  FAT_LoggerEventTrigger         100%
+01p0l0000027mN3AAI  FAT_LoggerEventTriggerService  100%
+01p0l0000027mN7AAI  AccountTriggerService          100%
+01q0l000000HcL5AAK  AccountTrigger                 100%
+01p0l0000027mNAAAY  AccountTriggerValidation       100%
 
 === Test Summary
 NAME                 VALUE
-&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+Outcome              Passed
+Tests Ran            65
+Passing              65
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Run Coverage    99%
+Org Wide Coverage    99%
 </code></pre>
+                    <p>
+                      5-1. <code>AccountTestUtils.cls</code> &#x306B;
+                      <code>createAbnormalAccounts</code>
+                      &#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <h5 id="accounttestutilscls">AccountTestUtils.cls</h5>
+                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+<span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTestUtils</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Account&gt; <span class="hljs-title">createNormalAccounts</span><span class="hljs-params">()</span> </span>{
+    List&lt;Account&gt; accounts = <span class="hljs-keyword">new</span> List&lt;Account&gt;();
+
+    Account account1 = <span class="hljs-keyword">new</span> Account();
+    account1.Name = <span class="hljs-string">&apos;Demo1&apos;</span>;
+    account1.Rating = <span class="hljs-string">&apos;Hot&apos;</span>;
+    accounts.add(account1);
+
+    <span class="hljs-keyword">return</span> accounts;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Account&gt; <span class="hljs-title">createAbnormalAccounts</span><span class="hljs-params">()</span> </span>{
+    List&lt;Account&gt; accounts = <span class="hljs-keyword">new</span> List&lt;Account&gt;();
+
+    Account account2 = <span class="hljs-keyword">new</span> Account();
+    account2.Name = <span class="hljs-string">&apos;Demo2&apos;</span>;
+    account2.SLA__c = <span class="hljs-string">&apos;Gold&apos;</span>;
+    account2.SLAExpirationDate__c = <span class="hljs-keyword">null</span>;
+    account2.SLASerialNumber__c = <span class="hljs-keyword">null</span>;
+    accounts.add(account2);
+
+    <span class="hljs-keyword">return</span> accounts;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Account&gt; <span class="hljs-title">selectAccounts</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> [
+      SELECT Id, Name, Rating, CustomerPriority__c
+      FROM Account
+      ORDER BY Name ASC
+      LIMIT <span class="hljs-number">50000</span>
+    ];
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">insertAccounts</span><span class="hljs-params">(List&lt;Account&gt; accounts)</span> </span>{
+    List&lt;Database.SaveResult&gt; results = Database.insert(accounts, <span class="hljs-keyword">false</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">updateAccounts</span><span class="hljs-params">(List&lt;Account&gt; accounts)</span> </span>{
+    List&lt;Database.SaveResult&gt; results = Database.update(accounts, <span class="hljs-keyword">false</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">deleteAccounts</span><span class="hljs-params">(List&lt;Account&gt; accounts)</span> </span>{
+    List&lt;Database.DeleteResult&gt; results = Database.delete(accounts, <span class="hljs-keyword">false</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">undeleteAccounts</span><span class="hljs-params">(List&lt;Account&gt; accounts)</span> </span>{
+    List&lt;Database.UndeleteResult&gt; results = Database.undelete(accounts, <span class="hljs-keyword">false</span>);
+  }
+}
+</code></pre>
+                    <p>
+                      6-1. <code>AccountTriggerTest.cls</code> &#x306E;
+                      <code>invokeException</code>
+                      &#x306B;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <h5 id="accounttriggertestcls">AccountTriggerTest.cls</h5>
+                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+<span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerTest</span> </span>{
+  <span class="hljs-meta">@testSetup</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+    List&lt;Account&gt; accounts = AccountTestUtils.createNormalAccounts();
+    AccountTestUtils.insertAccounts(accounts);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">invokeUpdate</span><span class="hljs-params">()</span> </span>{
+    List&lt;Account&gt; accounts = AccountTestUtils.selectAccounts();
+
+    Test.startTest();
+    AccountTestUtils.updateAccounts(accounts);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-number">0</span>, accounts.size(), <span class="hljs-string">&apos;invokeUpdate&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">invokeDelete</span><span class="hljs-params">()</span> </span>{
+    List&lt;Account&gt; accounts = AccountTestUtils.selectAccounts();
+    AccountTestUtils.deleteAccounts(accounts);
+
+    Test.startTest();
+    AccountTestUtils.undeleteAccounts(accounts);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-number">0</span>, accounts.size(), <span class="hljs-string">&apos;invokeDelete&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">invokeException</span><span class="hljs-params">()</span> </span>{
+    List&lt;Account&gt; accounts = AccountTestUtils.createAbnormalAccounts();
+
+    Test.startTest();
+    AccountTestUtils.insertAccounts(accounts);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-number">0</span>, accounts.size(), <span class="hljs-string">&apos;invokeException&apos;</span>);
+  }
+}
+</code></pre>
+                    <p>
+                      6-2.
+                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">yarn prettier
+</code></pre>
+                    <p>
+                      6-3.
+                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
+</code></pre>
+                    <p>
+                      6-4. Apex
+                      &#x30C6;&#x30B9;&#x30C8;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x73FE;&#x5728;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30FC;&#x7387;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh"><span class="hljs-built_in">export</span> SFDX_IMPROVED_CODE_COVERAGE=<span class="hljs-string">&quot;true&quot;</span>
+
+sfdx force:apex:<span class="hljs-built_in">test</span>:run -c <span class="hljs-_">-l</span> RunLocalTests -r human -u demo
+</code></pre>
+                    <pre><code class="lang-sh">=== Apex Code Coverage
+ID                  NAME                           % COVERED  UNCOVERED LINES
+&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
+01p0l0000027mMnAAI  FAT_CommonError                100%
+01p0l0000027mN0AAI  FAT_CommonUtils                100%
+01p0l0000027mMqAAI  FAT_CommonLoggerConstants      100%
+01p0l0000027mMrAAI  FAT_CommonLoggerHelper         100%
+01p0l0000027mMpAAI  FAT_CommonLogger               100%
+01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
+01p0l0000027mN3AAI  FAT_LoggerEventTriggerService  100%
+01q0l000000HcL0AAK  FAT_LoggerEventTrigger         100%
+01p0l0000027mMvAAI  FAT_CommonTriggerHandler       100%
+01p0l0000027mN7AAI  AccountTriggerService          100%
+01p0l0000027mNAAAY  AccountTriggerValidation       100%
+01q0l000000HcL5AAK  AccountTrigger                 100%
+
+=== Test Summary
+NAME                 VALUE
+&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+Outcome              Passed
+Tests Ran            65
+Passing              65
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Run Coverage    100%
+Org Wide Coverage    100%
+</code></pre>
+                    <p>
+                      &#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30FC;&#x7387;&#x304C;
+                      100%&#x306B;&#x306A;&#x308A;&#x307E;&#x3057;&#x305F;&#xFF01;
+                    </p>
                   </section>
                 </div>
                 <div class="search-results">
@@ -1017,10 +1315,10 @@ NAME                 VALUE
             },
             file: {
               path: 'exercises/level-04-answer.md',
-              mtime: '2020-09-02T15:05:57.456Z',
+              mtime: '2020-09-03T11:42:31.204Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-02T15:06:07.251Z' },
+            gitbook: { version: '3.6.1', time: '2020-09-03T11:42:41.237Z' },
             basePath: '..',
             book: { language: '' }
           });

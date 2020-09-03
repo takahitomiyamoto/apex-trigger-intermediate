@@ -207,7 +207,7 @@ sfdx force:source:push -u demo
 sfdx force:apex:class:create -d force-app/main/default/classes -n AccountTriggerValidation -t DefaultApexClass
 ```
 
-3-2. FAT_ITriggerObserver を実装します。
+3-2. `FAT_ITriggerObserver` を実装します。
 
 ##### AccountTriggerValidation.cls
 
@@ -419,7 +419,7 @@ Test Run Coverage    96%
 Org Wide Coverage    96%
 ```
 
-4-2. AccountTriggerValidationTest.cls のテストクラスを作成します。
+4-2. `AccountTriggerValidationTest.cls` のテストクラスを作成します。
 
 ```sh
 sfdx force:apex:class:create -d force-app/test/default/classes -n AccountTriggerValidationTest -t ApexUnitTest
@@ -430,20 +430,133 @@ sfdx force:apex:class:create -d force-app/test/default/classes -n AccountTrigger
 ```java
 @isTest(SeeAllData=false)
 private class AccountTriggerValidationTest {
+  private static final String SLA_EXPIRATION_DATE_REQUIRED = System.Label.SLA_EXPIRATION_DATE_REQUIRED;
+  private static final String SLA_SERIAL_NUMBER_REQUIRED = System.Label.SLA_SERIAL_NUMBER_REQUIRED;
   private static AccountTriggerValidation validation = new AccountTriggerValidation();
 
   @isTest
-  static void validateSLA() {
+  static void validateSLAErrorSLAExpirationDate() {
     List<Account> accounts = new List<Account>();
     Account account = new Account();
     account.Name = 'Demo';
+    account.SLA__c = 'Gold';
+    account.SLAExpirationDate__c = null;
+    account.SLASerialNumber__c = '0';
     accounts.add(account);
 
     Test.startTest();
-    validation.validateSLA(accounts);
+    List<Boolean> exceptions = new List<Boolean>();
+    try {
+      validation.validateSLA(accounts);
+    } catch (Exception e) {
+      exceptions.add(true);
+      String message = FAT_CommonError.createErrorMessage(e);
+      System.assertNotEquals(
+        SLA_EXPIRATION_DATE_REQUIRED,
+        message,
+        'validateSLAErrorSLAExpirationDate'
+      );
+    }
     Test.stopTest();
 
-    System.assertNotEquals(null, validation, 'validateSLA');
+    for (Boolean b : exceptions) {
+      System.assertEquals(true, b, 'validateSLAErrorSLAExpirationDate');
+    }
+  }
+
+  @isTest
+  static void validateSLAErrorSLASerialNumber() {
+    List<Account> accounts = new List<Account>();
+    Account account = new Account();
+    account.Name = 'Demo';
+    account.SLA__c = 'Gold';
+    account.SLAExpirationDate__c = Date.today();
+    account.SLASerialNumber__c = null;
+    accounts.add(account);
+
+    Test.startTest();
+    List<Boolean> exceptions = new List<Boolean>();
+    try {
+      validation.validateSLA(accounts);
+    } catch (Exception e) {
+      exceptions.add(true);
+      String message = FAT_CommonError.createErrorMessage(e);
+      System.assertNotEquals(
+        SLA_SERIAL_NUMBER_REQUIRED,
+        message,
+        'validateSLAErrorSLASerialNumber'
+      );
+    }
+    Test.stopTest();
+
+    for (Boolean b : exceptions) {
+      System.assertEquals(true, b, 'validateSLAErrorSLASerialNumber');
+    }
+  }
+
+  @isTest
+  static void onBeforeDelete() {
+    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+      Account.class
+    );
+
+    Test.startTest();
+    validation.onBeforeDelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onBeforeDelete');
+  }
+
+  @isTest
+  static void onAfterInsert() {
+    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+      Account.class
+    );
+
+    Test.startTest();
+    validation.onAfterInsert(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onAfterInsert');
+  }
+
+  @isTest
+  static void onAfterUpdate() {
+    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+      Account.class
+    );
+
+    Test.startTest();
+    validation.onAfterUpdate(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onAfterUpdate');
+  }
+
+  @isTest
+  static void onAfterDelete() {
+    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+      Account.class
+    );
+
+    Test.startTest();
+    validation.onAfterDelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onAfterDelete');
+  }
+
+  @isTest
+  static void onAfterUndelete() {
+    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+      Account.class
+    );
+
+    Test.startTest();
+    validation.onAfterUndelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onAfterUndelete');
   }
 }
 ```
@@ -471,9 +584,192 @@ sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 ```sh
 === Apex Code Coverage
 ID                  NAME                           % COVERED  UNCOVERED LINES
-──────────────────  ─────────────────────────────  ─────────  ───────────────────────────────────────────────
+──────────────────  ─────────────────────────────  ─────────  ───────────────
+01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
+01p0l0000027mN0AAI  FAT_CommonUtils                100%
+01p0l0000027mMnAAI  FAT_CommonError                100%
+01p0l0000027mMqAAI  FAT_CommonLoggerConstants      100%
+01p0l0000027mMrAAI  FAT_CommonLoggerHelper         100%
+01p0l0000027mMpAAI  FAT_CommonLogger               100%
+01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
+01p0l0000027mMvAAI  FAT_CommonTriggerHandler       98%        216,217
+01q0l000000HcL0AAK  FAT_LoggerEventTrigger         100%
+01p0l0000027mN3AAI  FAT_LoggerEventTriggerService  100%
+01p0l0000027mN7AAI  AccountTriggerService          100%
+01q0l000000HcL5AAK  AccountTrigger                 100%
+01p0l0000027mNAAAY  AccountTriggerValidation       100%
 
 === Test Summary
 NAME                 VALUE
-───────────────────  ─────────────────────────────────────────────────────────
+───────────────────  ────────────────────────────────────────────────────────────
+Outcome              Passed
+Tests Ran            65
+Passing              65
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Run Coverage    99%
+Org Wide Coverage    99%
 ```
+
+5-1. `AccountTestUtils.cls` に `createAbnormalAccounts` を追加します。
+
+##### AccountTestUtils.cls
+
+```java
+@isTest(SeeAllData=false)
+public with sharing class AccountTestUtils {
+  public static List<Account> createNormalAccounts() {
+    List<Account> accounts = new List<Account>();
+
+    Account account1 = new Account();
+    account1.Name = 'Demo1';
+    account1.Rating = 'Hot';
+    accounts.add(account1);
+
+    return accounts;
+  }
+
+  public static List<Account> createAbnormalAccounts() {
+    List<Account> accounts = new List<Account>();
+
+    Account account2 = new Account();
+    account2.Name = 'Demo2';
+    account2.SLA__c = 'Gold';
+    account2.SLAExpirationDate__c = null;
+    account2.SLASerialNumber__c = null;
+    accounts.add(account2);
+
+    return accounts;
+  }
+
+  public static List<Account> selectAccounts() {
+    return [
+      SELECT Id, Name, Rating, CustomerPriority__c
+      FROM Account
+      ORDER BY Name ASC
+      LIMIT 50000
+    ];
+  }
+
+  public static void insertAccounts(List<Account> accounts) {
+    List<Database.SaveResult> results = Database.insert(accounts, false);
+  }
+
+  public static void updateAccounts(List<Account> accounts) {
+    List<Database.SaveResult> results = Database.update(accounts, false);
+  }
+
+  public static void deleteAccounts(List<Account> accounts) {
+    List<Database.DeleteResult> results = Database.delete(accounts, false);
+  }
+
+  public static void undeleteAccounts(List<Account> accounts) {
+    List<Database.UndeleteResult> results = Database.undelete(accounts, false);
+  }
+}
+```
+
+6-1. `AccountTriggerTest.cls` の `invokeException` にコードを追加します。
+
+##### AccountTriggerTest.cls
+
+```java
+@isTest(SeeAllData=false)
+private class AccountTriggerTest {
+  @testSetup
+  static void setup() {
+    List<Account> accounts = AccountTestUtils.createNormalAccounts();
+    AccountTestUtils.insertAccounts(accounts);
+  }
+
+  @isTest
+  static void invokeUpdate() {
+    List<Account> accounts = AccountTestUtils.selectAccounts();
+
+    Test.startTest();
+    AccountTestUtils.updateAccounts(accounts);
+    Test.stopTest();
+
+    System.assertNotEquals(0, accounts.size(), 'invokeUpdate');
+  }
+
+  @isTest
+  static void invokeDelete() {
+    List<Account> accounts = AccountTestUtils.selectAccounts();
+    AccountTestUtils.deleteAccounts(accounts);
+
+    Test.startTest();
+    AccountTestUtils.undeleteAccounts(accounts);
+    Test.stopTest();
+
+    System.assertNotEquals(0, accounts.size(), 'invokeDelete');
+  }
+
+  @isTest
+  static void invokeException() {
+    List<Account> accounts = AccountTestUtils.createAbnormalAccounts();
+
+    Test.startTest();
+    AccountTestUtils.insertAccounts(accounts);
+    Test.stopTest();
+
+    System.assertNotEquals(0, accounts.size(), 'invokeException');
+  }
+}
+```
+
+6-2. コードをフォーマットします。
+
+```sh
+yarn prettier
+```
+
+6-3. スクラッチ組織へプッシュします。
+
+```sh
+sfdx force:source:push -u demo
+```
+
+6-4. Apex テストを実行して現在のコードカバー率を確認します。
+
+```sh
+export SFDX_IMPROVED_CODE_COVERAGE="true"
+
+sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
+```
+
+```sh
+=== Apex Code Coverage
+ID                  NAME                           % COVERED  UNCOVERED LINES
+──────────────────  ─────────────────────────────  ─────────  ───────────────
+01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
+01p0l0000027mMnAAI  FAT_CommonError                100%
+01p0l0000027mN0AAI  FAT_CommonUtils                100%
+01p0l0000027mMqAAI  FAT_CommonLoggerConstants      100%
+01p0l0000027mMrAAI  FAT_CommonLoggerHelper         100%
+01p0l0000027mMpAAI  FAT_CommonLogger               100%
+01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
+01p0l0000027mN3AAI  FAT_LoggerEventTriggerService  100%
+01q0l000000HcL0AAK  FAT_LoggerEventTrigger         100%
+01p0l0000027mMvAAI  FAT_CommonTriggerHandler       100%
+01p0l0000027mN7AAI  AccountTriggerService          100%
+01p0l0000027mNAAAY  AccountTriggerValidation       100%
+01q0l000000HcL5AAK  AccountTrigger                 100%
+
+=== Test Summary
+NAME                 VALUE
+───────────────────  ────────────────────────────────────────────────────────────
+Outcome              Passed
+Tests Ran            65
+Passing              65
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Run Coverage    100%
+Org Wide Coverage    100%
+```
+
+コードカバー率が 100%になりました！

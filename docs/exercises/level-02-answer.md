@@ -45,7 +45,7 @@ trigger AccountTrigger on Account(before insert, before update) {
 sfdx force:apex:class:create -d force-app/main/default/classes -n AccountTriggerService -t DefaultApexClass
 ```
 
-1-5. FAT_ITriggerObserver を実装します。
+1-5. `FAT_ITriggerObserver` を実装します。
 
 ##### AccountTriggerService.cls
 

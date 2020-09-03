@@ -37,7 +37,7 @@ Test Run Coverage    96%
 Org Wide Coverage    90%
 ```
 
-1-2. AccountTriggerService.cls のテストクラスを作成します。
+1-2. `AccountTriggerService.cls` のテストクラスを作成します。
 
 ```sh
 sfdx force:apex:class:create -d force-app/test/default/classes -n AccountTriggerServiceTest -t ApexUnitTest
@@ -305,7 +305,7 @@ trigger AccountTrigger on Account(
 }
 ```
 
-2-2. AccountTrigger.trigger のテストクラスを作成します。
+2-2. `AccountTrigger.trigger` のテストクラスを作成します。
 
 ```sh
 sfdx force:apex:class:create -d force-app/test/default/classes -n AccountTestUtils -t ApexUnitTest
@@ -321,7 +321,7 @@ public with sharing class AccountTestUtils {
     List<Account> accounts = new List<Account>();
 
     Account account1 = new Account();
-    account1.Name = 'Demo';
+    account1.Name = 'Demo1';
     account1.Rating = 'Hot';
     accounts.add(account1);
 
@@ -419,7 +419,7 @@ sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 ```sh
 === Apex Code Coverage
 ID                  NAME                           % COVERED  UNCOVERED LINES
-──────────────────  ─────────────────────────────  ─────────  ───────────────────────────────────────────────
+──────────────────  ─────────────────────────────  ─────────  ───────────────
 01p1m000000dNwKAAU  FAT_CommonConstants            NaN%
 01p1m000000dNwLAAU  FAT_CommonError                100%
 01p1m000000dNwYAAU  FAT_CommonUtils                100%
