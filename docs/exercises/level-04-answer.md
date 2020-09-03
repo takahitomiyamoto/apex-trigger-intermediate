@@ -212,6 +212,7 @@ sfdx force:apex:class:create -d force-app/main/default/classes -n AccountTrigger
 ##### AccountTriggerValidation.cls
 
 ```java
+@SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
 public with sharing class AccountTriggerValidation implements FAT_ITriggerObserver {
   public void onBeforeInsert(FAT_CommonTriggerHandler handler) {
   }
@@ -241,6 +242,7 @@ public with sharing class AccountTriggerValidation implements FAT_ITriggerObserv
 ##### AccountTriggerValidation.cls
 
 ```java
+@SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
 public with sharing class AccountTriggerValidation implements FAT_ITriggerObserver {
   private static final String SLA_EXPIRATION_DATE_REQUIRED = System.Label.SLA_EXPIRATION_DATE_REQUIRED;
   private static final String SLA_SERIAL_NUMBER_REQUIRED = System.Label.SLA_SERIAL_NUMBER_REQUIRED;
@@ -305,6 +307,7 @@ public with sharing class AccountTriggerValidation implements FAT_ITriggerObserv
 `onBeforeUpdate` から `validateSLA` を呼び出すようにします。
 
 ```java
+@SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
 public with sharing class AccountTriggerValidation implements FAT_ITriggerObserver {
   private static final String SLA_EXPIRATION_DATE_REQUIRED = System.Label.SLA_EXPIRATION_DATE_REQUIRED;
   private static final String SLA_SERIAL_NUMBER_REQUIRED = System.Label.SLA_SERIAL_NUMBER_REQUIRED;
@@ -618,6 +621,7 @@ Org Wide Coverage    99%
 ##### AccountTestUtils.cls
 
 ```java
+@SuppressWarnings('PMD.ApexDoc')
 @isTest(SeeAllData=false)
 public with sharing class AccountTestUtils {
   public static List<Account> createNormalAccounts() {

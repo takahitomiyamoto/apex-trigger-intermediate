@@ -315,6 +315,7 @@ sfdx force:apex:class:create -d force-app/test/default/classes -n AccountTrigger
 ##### AccountTestUtils.cls
 
 ```java
+@SuppressWarnings('PMD.ApexDoc')
 @isTest(SeeAllData=false)
 public with sharing class AccountTestUtils {
   public static List<Account> createNormalAccounts() {

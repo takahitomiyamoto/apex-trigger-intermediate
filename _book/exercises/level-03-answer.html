@@ -610,7 +610,8 @@ Org Wide Coverage    96%
 sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n AccountTriggerTest -t ApexUnitTest
 </code></pre>
                     <h5 id="accounttestutilscls">AccountTestUtils.cls</h5>
-                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.ApexDoc&apos;</span>)
+<span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
 <span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTestUtils</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Account&gt; <span class="hljs-title">createNormalAccounts</span><span class="hljs-params">()</span> </span>{
     List&lt;Account&gt; accounts = <span class="hljs-keyword">new</span> List&lt;Account&gt;();
@@ -900,10 +901,10 @@ Org Wide Coverage    99%
             },
             file: {
               path: 'exercises/level-03-answer.md',
-              mtime: '2020-09-03T11:37:40.573Z',
+              mtime: '2020-09-03T12:03:49.132Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-03T11:49:12.296Z' },
+            gitbook: { version: '3.6.1', time: '2020-09-03T12:06:01.125Z' },
             basePath: '..',
             book: { language: '' }
           });

@@ -50,6 +50,7 @@ sfdx force:apex:class:create -d force-app/main/default/classes -n AccountTrigger
 ##### AccountTriggerService.cls
 
 ```java
+@SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
 public with sharing class AccountTriggerService implements FAT_ITriggerObserver {
   public void onBeforeInsert(FAT_CommonTriggerHandler handler) {
   }
@@ -79,6 +80,7 @@ public with sharing class AccountTriggerService implements FAT_ITriggerObserver 
 ##### AccountTriggerService.cls
 
 ```java
+@SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
 public with sharing class AccountTriggerService implements FAT_ITriggerObserver {
   @TestVisible
   private void addPrefixToName(List<Account> accounts) {
@@ -137,6 +139,7 @@ public with sharing class AccountTriggerService implements FAT_ITriggerObserver 
 ##### AccountTriggerService.cls
 
 ```java
+@SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
 public with sharing class AccountTriggerService implements FAT_ITriggerObserver {
   @TestVisible
   private void addPrefixToName(List<Account> accounts) {
