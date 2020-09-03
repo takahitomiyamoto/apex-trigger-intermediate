@@ -671,7 +671,7 @@ public with sharing class AccountTestUtils {
 }
 ```
 
-6-1. `AccountTriggerTest.cls` の `invokeException` にコードを追加します。
+5-2. `AccountTriggerTest.cls` の `invokeException` にコードを追加します。
 
 ##### AccountTriggerTest.cls
 
@@ -720,19 +720,19 @@ private class AccountTriggerTest {
 }
 ```
 
-6-2. コードをフォーマットします。
+5-3. コードをフォーマットします。
 
 ```sh
 yarn prettier
 ```
 
-6-3. スクラッチ組織へプッシュします。
+5-4. スクラッチ組織へプッシュします。
 
 ```sh
 sfdx force:source:push -u demo
 ```
 
-6-4. Apex テストを実行して現在のコードカバー率を確認します。
+5-5. Apex テストを実行して現在のコードカバー率を確認します。
 
 ```sh
 export SFDX_IMPROVED_CODE_COVERAGE="true"
