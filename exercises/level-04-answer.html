@@ -606,7 +606,8 @@
                     <h5 id="accounttriggervalidationcls">
                       AccountTriggerValidation.cls
                     </h5>
-                    <pre><code class="lang-java"><span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerValidation</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;</span>)
+<span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerValidation</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeInsert</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
   }
 
@@ -637,7 +638,8 @@
                     <h5 id="accounttriggervalidationcls">
                       AccountTriggerValidation.cls
                     </h5>
-                    <pre><code class="lang-java"><span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerValidation</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;</span>)
+<span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerValidation</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SLA_EXPIRATION_DATE_REQUIRED = System.Label.SLA_EXPIRATION_DATE_REQUIRED;
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SLA_SERIAL_NUMBER_REQUIRED = System.Label.SLA_SERIAL_NUMBER_REQUIRED;
 
@@ -704,7 +706,8 @@
                       <code>validateSLA</code>
                       &#x3092;&#x547C;&#x3073;&#x51FA;&#x3059;&#x3088;&#x3046;&#x306B;&#x3057;&#x307E;&#x3059;&#x3002;
                     </p>
-                    <pre><code class="lang-java"><span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerValidation</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;</span>)
+<span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerValidation</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SLA_EXPIRATION_DATE_REQUIRED = System.Label.SLA_EXPIRATION_DATE_REQUIRED;
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SLA_SERIAL_NUMBER_REQUIRED = System.Label.SLA_SERIAL_NUMBER_REQUIRED;
 
@@ -1013,7 +1016,8 @@ Org Wide Coverage    99%
                       &#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
                     </p>
                     <h5 id="accounttestutilscls">AccountTestUtils.cls</h5>
-                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.ApexDoc&apos;</span>)
+<span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
 <span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTestUtils</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Account&gt; <span class="hljs-title">createNormalAccounts</span><span class="hljs-params">()</span> </span>{
     List&lt;Account&gt; accounts = <span class="hljs-keyword">new</span> List&lt;Account&gt;();
@@ -1323,10 +1327,10 @@ Org Wide Coverage    100%
             },
             file: {
               path: 'exercises/level-04-answer.md',
-              mtime: '2020-09-03T11:49:08.754Z',
+              mtime: '2020-09-03T12:05:27.197Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-03T11:49:12.296Z' },
+            gitbook: { version: '3.6.1', time: '2020-09-03T12:06:01.125Z' },
             basePath: '..',
             book: { language: '' }
           });
