@@ -4,7 +4,7 @@ Apex トリガの中級レベルのチュートリアルです。
 
 テストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。
 
-<a href="https://twitter.com/intent/tweet?text=%23WednesdayWisdom%20with%20%40takahito0508%20%3E%3E%20&url=https%3A%2F%2Fgithub.com%2Ftakahitomiyamoto%2Fapex-trigger-intermediate"><img alt="Twitter" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Ftakahitomiyamoto%2Fapex-trigger-intermediate"></a>
+<a href="https://twitter.com/intent/tweet?text=本日は%20%23WednesdayWisdom%20%23AlwaysBeLearning%20%3E%3E%20&url=https%3A%2F%2Fgithub.com%2Ftakahitomiyamoto%2Fapex-trigger-intermediate"><img alt="Twitter" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Ftakahitomiyamoto%2Fapex-trigger-intermediate"></a>
 
 ---
 
