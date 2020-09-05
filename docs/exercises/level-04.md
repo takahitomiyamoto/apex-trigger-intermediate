@@ -40,28 +40,28 @@ SLA が設定されている場合、SLA の有効期限およびシリアルナ
 
 次のいずれかの条件を満たす場合:
 
-1. `SLA` が null でない、かつ `SLA Expiration Date` が null である
-1. `SLA` が null でない、かつ `SLA Serial Number` が null である
+1. `SLA` が null でない、かつ SLA Expiration Date が null である
+1. `SLA` が null でない、かつ SLA Serial Number が null である
 
 | 表示ラベル          | 項目名                 | 備考 |
 | :------------------ | :--------------------- | :--- |
-| SLA                 | SLA\_\_c               | -    |
-| SLA Expiration Date | SLAExpirationDate\_\_c | -    |
-| SLA Serial Number   | SLASerialNumber\_\_c   | -    |
+| SLA                 | `SLA__c`               | -    |
+| SLA Expiration Date | `SLAExpirationDate__c` | -    |
+| SLA Serial Number   | `SLASerialNumber__c`   | -    |
 
 ##### エラーメッセージ
 
-| エラーメッセージ                                               | エラー表示場所        | 備考                                     |
-| :------------------------------------------------------------- | :-------------------- | :--------------------------------------- |
-| SLA が設定されている場合は有効期限も入力してください。         | `SLA Expiration Date` | `SLA Expiration Date` が null である場合 |
-| SLA が設定されている場合はシリアルナンバーも入力してください。 | `SLA Serial Number`   | `SLA Serial Number` が null である場合   |
+| エラーメッセージ                                               | エラー表示場所      | 備考                                   |
+| :------------------------------------------------------------- | :------------------ | :------------------------------------- |
+| SLA が設定されている場合は有効期限も入力してください。         | SLA Expiration Date | SLA Expiration Date が null である場合 |
+| SLA が設定されている場合はシリアルナンバーも入力してください。 | SLA Serial Number   | SLA Serial Number が null である場合   |
 
 ### カスタム表示ラベル
 
-| カテゴリ | エラー ID                    | エラーメッセージ                                               | 備考 |
-| :------- | :--------------------------- | :------------------------------------------------------------- | :--- |
-| ERROR    | SLA_EXPIRATION_DATE_REQUIRED | SLA が設定されている場合は有効期限も入力してください。         | -    |
-| ERROR    | SLA_SERIAL_NUMBER_REQUIRED   | SLA が設定されている場合はシリアルナンバーも入力してください。 | -    |
+| カテゴリ | エラー ID                      | エラーメッセージ                                               | 備考 |
+| :------- | :----------------------------- | :------------------------------------------------------------- | :--- |
+| `ERROR`  | `SLA_EXPIRATION_DATE_REQUIRED` | SLA が設定されている場合は有効期限も入力してください。         | -    |
+| `ERROR`  | `SLA_SERIAL_NUMBER_REQUIRED`   | SLA が設定されている場合はシリアルナンバーも入力してください。 | -    |
 
 ### カスタムメタデータ型 : FAT_TriggerObserver
 

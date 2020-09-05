@@ -35,19 +35,19 @@
 
 次のいずれかの条件を満たす場合:
 
-| 表示ラベル | 項目名 | 値   | 備考 |
-| :--------- | :----- | :--- | :--- |
-| 評価       | Rating | Hot  | -    |
-| 評価       | Rating | Warm | -    |
-| 評価       | Rating | Cold | -    |
+| 表示ラベル | 項目名   | 値   | 備考 |
+| :--------- | :------- | :--- | :--- |
+| 評価       | `Rating` | Hot  | -    |
+| 評価       | `Rating` | Warm | -    |
+| 評価       | `Rating` | Cold | -    |
 
 ##### 更新対象の項目
 
 | 表示ラベル        | 項目名                | 値     | 備考               |
 | :---------------- | :-------------------- | :----- | :----------------- |
-| Customer Priority | CustomerPriority\_\_c | High   | 評価が Hot の場合  |
-| Customer Priority | CustomerPriority\_\_c | Medium | 評価が Warm の場合 |
-| Customer Priority | CustomerPriority\_\_c | Low    | 評価が Cold の場合 |
+| Customer Priority | `CustomerPriority__c` | High   | 評価が Hot の場合  |
+| Customer Priority | `CustomerPriority__c` | Medium | 評価が Warm の場合 |
+| Customer Priority | `CustomerPriority__c` | Low    | 評価が Cold の場合 |
 
 ## 解答
 
