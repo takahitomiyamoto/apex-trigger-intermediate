@@ -44,11 +44,11 @@
 | テストクラス名                     | 用途                                                                  | 備考 |
 | :--------------------------------- | :-------------------------------------------------------------------- | :--- |
 | `OpportunityTriggerValidationTest` | `OpportunityTriggerValidation.cls` に対するテストクラス               | -    |
-| `OpportunityTriggerTest`           | `OpportunityTrigger.trigger` に対するテストクラス                     | -    |
 | `OpportunityTestUtils`             | `OpportunityTriggerTest.cls` で利用するテストメソッドを準備するクラス | -    |
+| `OpportunityTriggerTest`           | `OpportunityTrigger.trigger` に対するテストクラス                     | -    |
 | `CaseTriggerServiceTest`           | `CaseTriggerServiceTest.cls` に対するテストクラス                     | -    |
-| `CaseTriggerTest`                  | `CaseTrigger.trigger` に対するテストクラス                            | -    |
 | `CaseTestUtils`                    | `CaseTriggerTest.cls` で利用するテストメソッドを準備するクラス        | -    |
+| `CaseTriggerTest`                  | `CaseTrigger.trigger` に対するテストクラス                            | -    |
 
 #### (1)-1. 削除防止アクション
 
@@ -85,6 +85,33 @@
 | 投稿メッセージ                       | 投稿場所                       | 備考 |
 | :----------------------------------- | :----------------------------- | :--- |
 | 優先度の高いケースが作成されました！ | 新規作成したケースのフィード欄 | -    |
+
+### カスタム表示ラベル
+
+| カテゴリ | エラー ID                    | エラーメッセージ                     | 備考 |
+| :------- | :--------------------------- | :----------------------------------- | :--- |
+| ERROR    | CLOSED_WON_CANNOT_BE_DELETED | 成約済みの商談は削除できません。     | -    |
+| INFO     | HIGH_CASE_IS_CREATED         | 優先度の高いケースが作成されました！ | -    |
+
+### カスタムメタデータ型 : FAT_TriggerObserver
+
+| 項目名                       | 値                             | 備考 |
+| :--------------------------- | :----------------------------- | :--- |
+| 表示ラベル                   | `OpportunityTriggerValidation` | -    |
+| カスタムメタデータレコード名 | `OpportunityTriggerValidation` | -    |
+| Apex Class                   | `OpportunityTriggerValidation` | -    |
+| sObject                      | `Opportunity`                  | -    |
+| Active                       | Yes                            | -    |
+| Before Delete                | Yes                            | -    |
+
+| 項目名                       | 値                   | 備考 |
+| :--------------------------- | :------------------- | :--- |
+| 表示ラベル                   | `CaseTriggerService` | -    |
+| カスタムメタデータレコード名 | `CaseTriggerService` | -    |
+| Apex Class                   | `CaseTriggerService` | -    |
+| sObject                      | `Case`               | -    |
+| Active                       | Yes                  | -    |
+| After Insert                 | Yes                  | -    |
 
 ## 解答
 

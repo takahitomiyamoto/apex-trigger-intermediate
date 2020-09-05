@@ -38,7 +38,7 @@ Apex トリガの柔軟性・可読性を高めるフレームワークを導入
 - 新規作成する前に `addPrefixToName` および `setCustomerPriority`を実行する
 - 更新する前に `setCustomerPriority`を実行する
 
-### カスタムメタデータ型
+### カスタムメタデータ型 : FAT_TriggerObserver
 
 | 項目名                       | 値                      | 備考 |
 | :--------------------------- | :---------------------- | :--- |
