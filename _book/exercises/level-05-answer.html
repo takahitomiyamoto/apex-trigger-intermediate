@@ -663,6 +663,114 @@
                     <h5 id="opportunitytriggervalidationtestcls">
                       OpportunityTriggerValidationTest.cls
                     </h5>
+                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+<span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OpportunityTriggerValidationTest</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String CLOSED_WON_CANNOT_BE_DELETED = System.Label.CLOSED_WON_CANNOT_BE_DELETED;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String CLOSED_WON = <span class="hljs-string">&apos;Closed Won&apos;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> OpportunityTriggerValidation validation = <span class="hljs-keyword">new</span> OpportunityTriggerValidation();
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+    Opportunity.class
+  );
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">preventDeletion</span><span class="hljs-params">()</span> </span>{
+    List&lt;Opportunity&gt; opportunities = <span class="hljs-keyword">new</span> List&lt;Opportunity&gt;();
+    Opportunity opportunity = <span class="hljs-keyword">new</span> Opportunity();
+    opportunity.StageName = CLOSED_WON;
+    opportunities.add(opportunity);
+
+    Test.startTest();
+    List&lt;Boolean&gt; exceptions = <span class="hljs-keyword">new</span> List&lt;Boolean&gt;();
+    <span class="hljs-keyword">try</span> {
+      validation.preventDeletion(opportunities);
+    } <span class="hljs-keyword">catch</span> (Exception e) {
+      exceptions.add(<span class="hljs-keyword">true</span>);
+      String message = e.getMessage();
+      System.assertEquals(
+        CLOSED_WON_CANNOT_BE_DELETED,
+        message,
+        <span class="hljs-string">&apos;preventDeletion&apos;</span>
+      );
+    }
+    Test.stopTest();
+
+    <span class="hljs-keyword">for</span> (Boolean b : exceptions) {
+      System.assertEquals(<span class="hljs-keyword">true</span>, b, <span class="hljs-string">&apos;preventDeletion&apos;</span>);
+    }
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeInsert</span><span class="hljs-params">()</span> </span>{
+    Test.startTest();
+    validation.onBeforeInsert(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onBeforeInsert&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeUpdate</span><span class="hljs-params">()</span> </span>{
+    Test.startTest();
+    validation.onBeforeUpdate(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onBeforeUpdate&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeDelete</span><span class="hljs-params">()</span> </span>{
+    List&lt;Opportunity&gt; opportunities = <span class="hljs-keyword">new</span> List&lt;Opportunity&gt;();
+    handler.oldObjects = opportunities;
+
+    Test.startTest();
+    validation.onBeforeDelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onBeforeDelete&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterInsert</span><span class="hljs-params">()</span> </span>{
+    Test.startTest();
+    validation.onAfterInsert(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onAfterInsert&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterUpdate</span><span class="hljs-params">()</span> </span>{
+    Test.startTest();
+    validation.onAfterUpdate(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onAfterUpdate&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterDelete</span><span class="hljs-params">()</span> </span>{
+    Test.startTest();
+    validation.onAfterDelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onAfterDelete&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterUndelete</span><span class="hljs-params">()</span> </span>{
+    Test.startTest();
+    validation.onAfterUndelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onAfterUndelete&apos;</span>);
+  }
+}
+</code></pre>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTestUtils -t ApexUnitTest
+</code></pre>
+                    <h5 id="opportunitytestutilscls">
+                      OpportunityTestUtils.cls
+                    </h5>
                     <pre><code class="lang-java">
 
 </code></pre>
@@ -679,6 +787,99 @@
                     <h5 id="casetriggerservicetestcls">
                       CaseTriggerServiceTest.cls
                     </h5>
+                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+<span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CaseTriggerServiceTest</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> CaseTriggerService service = <span class="hljs-keyword">new</span> CaseTriggerService();
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+    Case.class
+  );
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">postFeedItems</span><span class="hljs-params">()</span> </span>{
+    List&lt;Case&gt; cases = <span class="hljs-keyword">new</span> List&lt;Case&gt;();
+    Case newCase = <span class="hljs-keyword">new</span> Case();
+    newCase.Priority = <span class="hljs-string">&apos;High&apos;</span>;
+    newCase.Origin = <span class="hljs-string">&apos;Phone&apos;</span>;
+    newCase.Status = <span class="hljs-string">&apos;New&apos;</span>;
+    cases.add(newCase);
+
+    Test.startTest();
+    service.postFeedItems(cases);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, cases, <span class="hljs-string">&apos;postFeedItems&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeInsert</span><span class="hljs-params">()</span> </span>{
+    Test.startTest();
+    service.onBeforeInsert(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onBeforeInsert&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeUpdate</span><span class="hljs-params">()</span> </span>{
+    Test.startTest();
+    service.onBeforeUpdate(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onBeforeUpdate&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeDelete</span><span class="hljs-params">()</span> </span>{
+    Test.startTest();
+    service.onBeforeDelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onBeforeDelete&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterInsert</span><span class="hljs-params">()</span> </span>{
+    List&lt;Case&gt; cases = <span class="hljs-keyword">new</span> List&lt;Case&gt;();
+    handler.newObjects = cases;
+
+    Test.startTest();
+    service.onAfterInsert(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onAfterInsert&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterUpdate</span><span class="hljs-params">()</span> </span>{
+    Test.startTest();
+    service.onAfterUpdate(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onAfterUpdate&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterDelete</span><span class="hljs-params">()</span> </span>{
+    Test.startTest();
+    service.onAfterDelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onAfterDelete&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterUndelete</span><span class="hljs-params">()</span> </span>{
+    Test.startTest();
+    service.onAfterUndelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onAfterUndelete&apos;</span>);
+  }
+}
+</code></pre>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTestUtils -t ApexUnitTest
+</code></pre>
+                    <h5 id="casetestutilscls">CaseTestUtils.cls</h5>
                     <pre><code class="lang-java">
 
 </code></pre>
@@ -832,10 +1033,10 @@
             },
             file: {
               path: 'exercises/level-05-answer.md',
-              mtime: '2020-09-05T10:04:15.469Z',
+              mtime: '2020-09-05T10:53:41.333Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-05T10:37:38.992Z' },
+            gitbook: { version: '3.6.1', time: '2020-09-05T10:53:44.703Z' },
             basePath: '..',
             book: { language: '' }
           });

@@ -375,6 +375,117 @@ sfdx force:apex:class:create -d force-app/test/default/classes -n OpportunityTri
 ##### OpportunityTriggerValidationTest.cls
 
 ```java
+@isTest(SeeAllData=false)
+private class OpportunityTriggerValidationTest {
+  private static final String CLOSED_WON_CANNOT_BE_DELETED = System.Label.CLOSED_WON_CANNOT_BE_DELETED;
+  private static final String CLOSED_WON = 'Closed Won';
+  private static OpportunityTriggerValidation validation = new OpportunityTriggerValidation();
+  private static FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+    Opportunity.class
+  );
+
+  @isTest
+  static void preventDeletion() {
+    List<Opportunity> opportunities = new List<Opportunity>();
+    Opportunity opportunity = new Opportunity();
+    opportunity.StageName = CLOSED_WON;
+    opportunities.add(opportunity);
+
+    Test.startTest();
+    List<Boolean> exceptions = new List<Boolean>();
+    try {
+      validation.preventDeletion(opportunities);
+    } catch (Exception e) {
+      exceptions.add(true);
+      String message = e.getMessage();
+      System.assertEquals(
+        CLOSED_WON_CANNOT_BE_DELETED,
+        message,
+        'preventDeletion'
+      );
+    }
+    Test.stopTest();
+
+    for (Boolean b : exceptions) {
+      System.assertEquals(true, b, 'preventDeletion');
+    }
+  }
+
+  @isTest
+  static void onBeforeInsert() {
+    Test.startTest();
+    validation.onBeforeInsert(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onBeforeInsert');
+  }
+
+  @isTest
+  static void onBeforeUpdate() {
+    Test.startTest();
+    validation.onBeforeUpdate(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onBeforeUpdate');
+  }
+
+  @isTest
+  static void onBeforeDelete() {
+    List<Opportunity> opportunities = new List<Opportunity>();
+    handler.oldObjects = opportunities;
+
+    Test.startTest();
+    validation.onBeforeDelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onBeforeDelete');
+  }
+
+  @isTest
+  static void onAfterInsert() {
+    Test.startTest();
+    validation.onAfterInsert(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onAfterInsert');
+  }
+
+  @isTest
+  static void onAfterUpdate() {
+    Test.startTest();
+    validation.onAfterUpdate(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onAfterUpdate');
+  }
+
+  @isTest
+  static void onAfterDelete() {
+    Test.startTest();
+    validation.onAfterDelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onAfterDelete');
+  }
+
+  @isTest
+  static void onAfterUndelete() {
+    Test.startTest();
+    validation.onAfterUndelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onAfterUndelete');
+  }
+}
+```
+
+```sh
+sfdx force:apex:class:create -d force-app/test/default/classes -n OpportunityTestUtils -t ApexUnitTest
+```
+
+##### OpportunityTestUtils.cls
+
+```java
 
 ```
 
@@ -393,6 +504,104 @@ sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTriggerSer
 ```
 
 ##### CaseTriggerServiceTest.cls
+
+```java
+@isTest(SeeAllData=false)
+private class CaseTriggerServiceTest {
+  private static CaseTriggerService service = new CaseTriggerService();
+  private static FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+    Case.class
+  );
+
+  @isTest
+  static void postFeedItems() {
+    List<Case> cases = new List<Case>();
+    Case newCase = new Case();
+    newCase.Priority = 'High';
+    newCase.Origin = 'Phone';
+    newCase.Status = 'New';
+    cases.add(newCase);
+
+    Test.startTest();
+    service.postFeedItems(cases);
+    Test.stopTest();
+
+    System.assertNotEquals(null, cases, 'postFeedItems');
+  }
+
+  @isTest
+  static void onBeforeInsert() {
+    Test.startTest();
+    service.onBeforeInsert(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onBeforeInsert');
+  }
+
+  @isTest
+  static void onBeforeUpdate() {
+    Test.startTest();
+    service.onBeforeUpdate(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onBeforeUpdate');
+  }
+
+  @isTest
+  static void onBeforeDelete() {
+    Test.startTest();
+    service.onBeforeDelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onBeforeDelete');
+  }
+
+  @isTest
+  static void onAfterInsert() {
+    List<Case> cases = new List<Case>();
+    handler.newObjects = cases;
+
+    Test.startTest();
+    service.onAfterInsert(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onAfterInsert');
+  }
+
+  @isTest
+  static void onAfterUpdate() {
+    Test.startTest();
+    service.onAfterUpdate(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onAfterUpdate');
+  }
+
+  @isTest
+  static void onAfterDelete() {
+    Test.startTest();
+    service.onAfterDelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onAfterDelete');
+  }
+
+  @isTest
+  static void onAfterUndelete() {
+    Test.startTest();
+    service.onAfterUndelete(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onAfterUndelete');
+  }
+}
+```
+
+```sh
+sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTestUtils -t ApexUnitTest
+```
+
+##### CaseTestUtils.cls
 
 ```java
 
