@@ -173,7 +173,59 @@ sfdx force:apex:class:create -d force-app/main/default/classes -n CaseTriggerSer
 ##### CaseTriggerService.cls
 
 ```java
+@SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
+public with sharing class CaseTriggerService implements FAT_ITriggerObserver {
+  private static final String HIGH_CASE_IS_CREATED = System.Label.HIGH_CASE_IS_CREATED;
+  private static final String PRIORITY_HIGH = 'High';
 
+  private final FAT_CommonLogger logger = FAT_CommonLogger.getInstance();
+
+  private void setMethodName(String methodName) {
+    logger.setClassName(CaseTriggerService.class.getName());
+    logger.setMethodName(methodName);
+  }
+
+  @TestVisible
+  private void postFeedItems(List<Case> cases) {
+    this.setMethodName('postFeedItems');
+
+    List<FeedItem> feedItems = new List<FeedItem>();
+    for (Case newCase : cases) {
+      logger.store(LoggingLevel.DEBUG, 'New Case: ' + newCase.Id);
+
+      Boolean isHigh = PRIORITY_HIGH.equals(newCase.Priority);
+      if (isHigh) {
+        FeedItem feedItem = new FeedItem();
+        feedItem.ParentId = newCase.Id;
+        feedItem.Body = HIGH_CASE_IS_CREATED;
+        feedItems.add(feedItem);
+      }
+    }
+    Database.insert(feedItems, false);
+  }
+
+  public void onBeforeInsert(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onBeforeUpdate(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onBeforeDelete(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterInsert(FAT_CommonTriggerHandler handler) {
+    this.postFeedItems((List<Case>) handler.newObjects);
+  }
+
+  public void onAfterUpdate(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterDelete(FAT_CommonTriggerHandler handler) {
+  }
+
+  public void onAfterUndelete(FAT_CommonTriggerHandler handler) {
+  }
+}
 ```
 
 3-2. コードをフォーマットします。
