@@ -113,12 +113,23 @@ public with sharing class OpportunityTriggerValidation implements FAT_ITriggerOb
   private static final String CLOSED_WON_CANNOT_BE_DELETED = System.Label.CLOSED_WON_CANNOT_BE_DELETED;
   private static final String CLOSED_WON = 'Closed Won';
 
+  private final FAT_CommonLogger logger = FAT_CommonLogger.getInstance();
+
   public class CustomException extends Exception {
+  }
+
+  private void setMethodName(String methodName) {
+    logger.setClassName(OpportunityTriggerValidation.class.getName());
+    logger.setMethodName(methodName);
   }
 
   @TestVisible
   private void preventDeletion(List<Opportunity> opportunities) {
+    this.setMethodName('preventDeletion');
+
     for (Opportunity opportunity : opportunities) {
+      logger.store(LoggingLevel.DEBUG, 'opportunity: ' + opportunity.Id);
+
       Boolean closedWon = CLOSED_WON.equals(opportunity.StageName);
       if (closedWon) {
         opportunity.StageName.addError(CLOSED_WON_CANNOT_BE_DELETED);
@@ -138,7 +149,7 @@ public with sharing class OpportunityTriggerValidation implements FAT_ITriggerOb
   }
 
   public void onBeforeDelete(FAT_CommonTriggerHandler handler) {
-    this.preventDeletion((List<Opportunity>) handler.newObjects);
+    this.preventDeletion((List<Opportunity>) handler.oldObjects);
   }
 
   public void onAfterInsert(FAT_CommonTriggerHandler handler) {

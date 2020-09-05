@@ -404,12 +404,23 @@
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String CLOSED_WON_CANNOT_BE_DELETED = System.Label.CLOSED_WON_CANNOT_BE_DELETED;
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String CLOSED_WON = <span class="hljs-string">&apos;Closed Won&apos;</span>;
 
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> FAT_CommonLogger logger = FAT_CommonLogger.getInstance();
+
   <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Exception</span> </span>{
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setMethodName</span><span class="hljs-params">(String methodName)</span> </span>{
+    logger.setClassName(OpportunityTriggerValidation.class.getName());
+    logger.setMethodName(methodName);
   }
 
   <span class="hljs-meta">@TestVisible</span>
   <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">preventDeletion</span><span class="hljs-params">(List&lt;Opportunity&gt; opportunities)</span> </span>{
+    <span class="hljs-keyword">this</span>.setMethodName(<span class="hljs-string">&apos;preventDeletion&apos;</span>);
+
     <span class="hljs-keyword">for</span> (Opportunity opportunity : opportunities) {
+      logger.store(LoggingLevel.DEBUG, <span class="hljs-string">&apos;opportunity: &apos;</span> + opportunity.Id);
+
       Boolean closedWon = CLOSED_WON.equals(opportunity.StageName);
       <span class="hljs-keyword">if</span> (closedWon) {
         opportunity.StageName.addError(CLOSED_WON_CANNOT_BE_DELETED);
@@ -429,7 +440,7 @@
   }
 
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeDelete</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
-    <span class="hljs-keyword">this</span>.preventDeletion((List&lt;Opportunity&gt;) handler.newObjects);
+    <span class="hljs-keyword">this</span>.preventDeletion((List&lt;Opportunity&gt;) handler.oldObjects);
   }
 
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterInsert</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
@@ -770,10 +781,10 @@
             },
             file: {
               path: 'exercises/level-05-answer.md',
-              mtime: '2020-09-05T07:39:12.852Z',
+              mtime: '2020-09-05T08:51:42.445Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-05T08:37:09.357Z' },
+            gitbook: { version: '3.6.1', time: '2020-09-05T08:52:40.019Z' },
             basePath: '..',
             book: { language: '' }
           });
