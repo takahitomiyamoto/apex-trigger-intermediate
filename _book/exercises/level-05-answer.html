@@ -771,16 +771,74 @@
                     <h5 id="opportunitytestutilscls">
                       OpportunityTestUtils.cls
                     </h5>
-                    <pre><code class="lang-java">
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.ApexDoc&apos;</span>)
+<span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+<span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OpportunityTestUtils</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Opportunity&gt; <span class="hljs-title">createNormalOpportunities</span><span class="hljs-params">()</span> </span>{
+    List&lt;Opportunity&gt; opportunities = <span class="hljs-keyword">new</span> List&lt;Opportunity&gt;();
 
+    Opportunity opportunity1 = <span class="hljs-keyword">new</span> Opportunity();
+    opportunity1.Name = <span class="hljs-string">&apos;Demo 1&apos;</span>;
+    opportunity1.StageName = <span class="hljs-string">&apos;Closed Won&apos;</span>;
+    opportunity1.CloseDate = Date.today();
+    opportunities.add(opportunity1);
+
+    <span class="hljs-keyword">return</span> opportunities;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Opportunity&gt; <span class="hljs-title">selectOpportunities</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> [
+      SELECT Id, Name, StageName, CloseDate
+      FROM Opportunity
+      ORDER BY Name ASC
+      LIMIT <span class="hljs-number">50000</span>
+    ];
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">insertOpportunities</span><span class="hljs-params">(List&lt;Opportunity&gt; opportunities)</span> </span>{
+    List&lt;Database.SaveResult&gt; results = Database.insert(opportunities, <span class="hljs-keyword">false</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">updateOpportunities</span><span class="hljs-params">(List&lt;Opportunity&gt; opportunities)</span> </span>{
+    List&lt;Database.SaveResult&gt; results = Database.update(opportunities, <span class="hljs-keyword">false</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">deleteOpportunities</span><span class="hljs-params">(List&lt;Opportunity&gt; opportunities)</span> </span>{
+    List&lt;Database.DeleteResult&gt; results = Database.delete(opportunities, <span class="hljs-keyword">false</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">undeleteOpportunities</span><span class="hljs-params">(List&lt;Opportunity&gt; opportunities)</span> </span>{
+    List&lt;Database.UndeleteResult&gt; results = Database.undelete(
+      opportunities,
+      <span class="hljs-keyword">false</span>
+    );
+  }
+}
 </code></pre>
                     <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTriggerTest -t ApexUnitTest
 </code></pre>
                     <h5 id="opportunitytriggertestcls">
                       OpportunityTriggerTest.cls
                     </h5>
-                    <pre><code class="lang-java">
+                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+<span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OpportunityTriggerTest</span> </span>{
+  <span class="hljs-meta">@testSetup</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+    List&lt;Opportunity&gt; opportunities = OpportunityTestUtils.createNormalOpportunities();
+    OpportunityTestUtils.insertOpportunities(opportunities);
+  }
 
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">invokeDelete</span><span class="hljs-params">()</span> </span>{
+    List&lt;Opportunity&gt; opportunities = OpportunityTestUtils.selectOpportunities();
+
+    Test.startTest();
+    OpportunityTestUtils.deleteOpportunities(opportunities);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-number">0</span>, opportunities.size(), <span class="hljs-string">&apos;invokeDelete&apos;</span>);
+  }
+}
 </code></pre>
                     <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTriggerServiceTest -t ApexUnitTest
 </code></pre>
@@ -880,14 +938,69 @@
                     <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTestUtils -t ApexUnitTest
 </code></pre>
                     <h5 id="casetestutilscls">CaseTestUtils.cls</h5>
-                    <pre><code class="lang-java">
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.ApexDoc&apos;</span>)
+<span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+<span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CaseTestUtils</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Case&gt; <span class="hljs-title">createNormalCases</span><span class="hljs-params">()</span> </span>{
+    List&lt;Case&gt; cases = <span class="hljs-keyword">new</span> List&lt;Case&gt;();
 
+    Case case1 = <span class="hljs-keyword">new</span> Case();
+    case1.Priority = <span class="hljs-string">&apos;High&apos;</span>;
+    case1.Origin = <span class="hljs-string">&apos;Phone&apos;</span>;
+    case1.Status = <span class="hljs-string">&apos;New&apos;</span>;
+    cases.add(case1);
+
+    <span class="hljs-keyword">return</span> cases;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Case&gt; <span class="hljs-title">selectCases</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> [
+      SELECT Id, CaseNumber, Priority, Origin, Status
+      FROM Case
+      ORDER BY CaseNumber ASC
+      LIMIT <span class="hljs-number">50000</span>
+    ];
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">insertCases</span><span class="hljs-params">(List&lt;Case&gt; cases)</span> </span>{
+    List&lt;Database.SaveResult&gt; results = Database.insert(cases, <span class="hljs-keyword">false</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">updateCases</span><span class="hljs-params">(List&lt;Case&gt; cases)</span> </span>{
+    List&lt;Database.SaveResult&gt; results = Database.update(cases, <span class="hljs-keyword">false</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">deleteCases</span><span class="hljs-params">(List&lt;Case&gt; cases)</span> </span>{
+    List&lt;Database.DeleteResult&gt; results = Database.delete(cases, <span class="hljs-keyword">false</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">undeleteCases</span><span class="hljs-params">(List&lt;Case&gt; cases)</span> </span>{
+    List&lt;Database.UndeleteResult&gt; results = Database.undelete(cases, <span class="hljs-keyword">false</span>);
+  }
+}
 </code></pre>
                     <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTriggerTest -t ApexUnitTest
 </code></pre>
                     <h5 id="casetriggertestcls">CaseTriggerTest.cls</h5>
-                    <pre><code class="lang-java">
+                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+<span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CaseTriggerTest</span> </span>{
+  <span class="hljs-meta">@testSetup</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+    List&lt;Case&gt; cases = CaseTestUtils.createNormalCases();
+    CaseTestUtils.insertCases(cases);
+  }
 
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">invokeDelete</span><span class="hljs-params">()</span> </span>{
+    List&lt;Case&gt; cases = CaseTestUtils.selectCases();
+
+    Test.startTest();
+    CaseTestUtils.deleteCases(cases);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-number">0</span>, cases.size(), <span class="hljs-string">&apos;invokeDelete&apos;</span>);
+  }
+}
 </code></pre>
                     <p>
                       5-2.
@@ -1033,10 +1146,10 @@
             },
             file: {
               path: 'exercises/level-05-answer.md',
-              mtime: '2020-09-05T10:53:41.333Z',
+              mtime: '2020-09-05T11:11:40.689Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-05T10:53:44.703Z' },
+            gitbook: { version: '3.6.1', time: '2020-09-05T11:12:13.947Z' },
             basePath: '..',
             book: { language: '' }
           });

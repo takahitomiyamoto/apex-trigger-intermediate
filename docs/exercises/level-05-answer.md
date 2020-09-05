@@ -486,7 +486,49 @@ sfdx force:apex:class:create -d force-app/test/default/classes -n OpportunityTes
 ##### OpportunityTestUtils.cls
 
 ```java
+@SuppressWarnings('PMD.ApexDoc')
+@isTest(SeeAllData=false)
+public with sharing class OpportunityTestUtils {
+  public static List<Opportunity> createNormalOpportunities() {
+    List<Opportunity> opportunities = new List<Opportunity>();
 
+    Opportunity opportunity1 = new Opportunity();
+    opportunity1.Name = 'Demo 1';
+    opportunity1.StageName = 'Closed Won';
+    opportunity1.CloseDate = Date.today();
+    opportunities.add(opportunity1);
+
+    return opportunities;
+  }
+
+  public static List<Opportunity> selectOpportunities() {
+    return [
+      SELECT Id, Name, StageName, CloseDate
+      FROM Opportunity
+      ORDER BY Name ASC
+      LIMIT 50000
+    ];
+  }
+
+  public static void insertOpportunities(List<Opportunity> opportunities) {
+    List<Database.SaveResult> results = Database.insert(opportunities, false);
+  }
+
+  public static void updateOpportunities(List<Opportunity> opportunities) {
+    List<Database.SaveResult> results = Database.update(opportunities, false);
+  }
+
+  public static void deleteOpportunities(List<Opportunity> opportunities) {
+    List<Database.DeleteResult> results = Database.delete(opportunities, false);
+  }
+
+  public static void undeleteOpportunities(List<Opportunity> opportunities) {
+    List<Database.UndeleteResult> results = Database.undelete(
+      opportunities,
+      false
+    );
+  }
+}
 ```
 
 ```sh
@@ -496,7 +538,25 @@ sfdx force:apex:class:create -d force-app/test/default/classes -n OpportunityTri
 ##### OpportunityTriggerTest.cls
 
 ```java
+@isTest(SeeAllData=false)
+private class OpportunityTriggerTest {
+  @testSetup
+  static void setup() {
+    List<Opportunity> opportunities = OpportunityTestUtils.createNormalOpportunities();
+    OpportunityTestUtils.insertOpportunities(opportunities);
+  }
 
+  @isTest
+  static void invokeDelete() {
+    List<Opportunity> opportunities = OpportunityTestUtils.selectOpportunities();
+
+    Test.startTest();
+    OpportunityTestUtils.deleteOpportunities(opportunities);
+    Test.stopTest();
+
+    System.assertNotEquals(0, opportunities.size(), 'invokeDelete');
+  }
+}
 ```
 
 ```sh
@@ -604,7 +664,46 @@ sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTestUtils 
 ##### CaseTestUtils.cls
 
 ```java
+@SuppressWarnings('PMD.ApexDoc')
+@isTest(SeeAllData=false)
+public with sharing class CaseTestUtils {
+  public static List<Case> createNormalCases() {
+    List<Case> cases = new List<Case>();
 
+    Case case1 = new Case();
+    case1.Priority = 'High';
+    case1.Origin = 'Phone';
+    case1.Status = 'New';
+    cases.add(case1);
+
+    return cases;
+  }
+
+  public static List<Case> selectCases() {
+    return [
+      SELECT Id, CaseNumber, Priority, Origin, Status
+      FROM Case
+      ORDER BY CaseNumber ASC
+      LIMIT 50000
+    ];
+  }
+
+  public static void insertCases(List<Case> cases) {
+    List<Database.SaveResult> results = Database.insert(cases, false);
+  }
+
+  public static void updateCases(List<Case> cases) {
+    List<Database.SaveResult> results = Database.update(cases, false);
+  }
+
+  public static void deleteCases(List<Case> cases) {
+    List<Database.DeleteResult> results = Database.delete(cases, false);
+  }
+
+  public static void undeleteCases(List<Case> cases) {
+    List<Database.UndeleteResult> results = Database.undelete(cases, false);
+  }
+}
 ```
 
 ```sh
@@ -614,7 +713,25 @@ sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTriggerTes
 ##### CaseTriggerTest.cls
 
 ```java
+@isTest(SeeAllData=false)
+private class CaseTriggerTest {
+  @testSetup
+  static void setup() {
+    List<Case> cases = CaseTestUtils.createNormalCases();
+    CaseTestUtils.insertCases(cases);
+  }
 
+  @isTest
+  static void invokeDelete() {
+    List<Case> cases = CaseTestUtils.selectCases();
+
+    Test.startTest();
+    CaseTestUtils.deleteCases(cases);
+    Test.stopTest();
+
+    System.assertNotEquals(0, cases.size(), 'invokeDelete');
+  }
+}
 ```
 
 5-2. コードをフォーマットします。
