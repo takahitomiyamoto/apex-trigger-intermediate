@@ -348,6 +348,9 @@ Org Wide Coverage    90%
                     <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
 <span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerServiceTest</span> </span>{
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> AccountTriggerService service = <span class="hljs-keyword">new</span> AccountTriggerService();
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+    Account.class
+  );
 
   <span class="hljs-meta">@isTest</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addPrefixToName</span><span class="hljs-params">()</span> </span>{
@@ -420,59 +423,29 @@ Org Wide Coverage    90%
   <span class="hljs-meta">@isTest</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeInsert</span><span class="hljs-params">()</span> </span>{
     List&lt;Account&gt; accounts = <span class="hljs-keyword">new</span> List&lt;Account&gt;();
-    Account account = <span class="hljs-keyword">new</span> Account();
-    account.Name = <span class="hljs-string">&apos;Demo&apos;</span>;
-    account.Rating = <span class="hljs-string">&apos;Hot&apos;</span>;
-    accounts.add(account);
-
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
     handler.newObjects = accounts;
 
     Test.startTest();
     service.onBeforeInsert(handler);
     Test.stopTest();
 
-    System.assertEquals(<span class="hljs-string">&apos;[&#x30B5;&#x30F3;&#x30D7;&#x30EB;] Demo&apos;</span>, accounts[<span class="hljs-number">0</span>].Name, <span class="hljs-string">&apos;onBeforeInsert&apos;</span>);
-    System.assertEquals(
-      <span class="hljs-string">&apos;High&apos;</span>,
-      accounts[<span class="hljs-number">0</span>].CustomerPriority__c,
-      <span class="hljs-string">&apos;onBeforeInsert&apos;</span>
-    );
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onBeforeInsert&apos;</span>);
   }
 
   <span class="hljs-meta">@isTest</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeUpdate</span><span class="hljs-params">()</span> </span>{
     List&lt;Account&gt; accounts = <span class="hljs-keyword">new</span> List&lt;Account&gt;();
-    Account account = <span class="hljs-keyword">new</span> Account();
-    account.Name = <span class="hljs-string">&apos;Demo&apos;</span>;
-    account.Rating = <span class="hljs-string">&apos;Hot&apos;</span>;
-    accounts.add(account);
-
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
     handler.newObjects = accounts;
 
     Test.startTest();
     service.onBeforeUpdate(handler);
     Test.stopTest();
 
-    System.assertEquals(<span class="hljs-string">&apos;Demo&apos;</span>, accounts[<span class="hljs-number">0</span>].Name, <span class="hljs-string">&apos;onBeforeUpdate&apos;</span>);
-    System.assertEquals(
-      <span class="hljs-string">&apos;High&apos;</span>,
-      accounts[<span class="hljs-number">0</span>].CustomerPriority__c,
-      <span class="hljs-string">&apos;onBeforeUpdate&apos;</span>
-    );
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onBeforeInsert&apos;</span>);
   }
 
   <span class="hljs-meta">@isTest</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeDelete</span><span class="hljs-params">()</span> </span>{
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
-
     Test.startTest();
     service.onBeforeDelete(handler);
     Test.stopTest();
@@ -482,10 +455,6 @@ Org Wide Coverage    90%
 
   <span class="hljs-meta">@isTest</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterInsert</span><span class="hljs-params">()</span> </span>{
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
-
     Test.startTest();
     service.onAfterInsert(handler);
     Test.stopTest();
@@ -495,10 +464,6 @@ Org Wide Coverage    90%
 
   <span class="hljs-meta">@isTest</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterUpdate</span><span class="hljs-params">()</span> </span>{
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
-
     Test.startTest();
     service.onAfterUpdate(handler);
     Test.stopTest();
@@ -508,10 +473,6 @@ Org Wide Coverage    90%
 
   <span class="hljs-meta">@isTest</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterDelete</span><span class="hljs-params">()</span> </span>{
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
-
     Test.startTest();
     service.onAfterDelete(handler);
     Test.stopTest();
@@ -521,10 +482,6 @@ Org Wide Coverage    90%
 
   <span class="hljs-meta">@isTest</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterUndelete</span><span class="hljs-params">()</span> </span>{
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
-
     Test.startTest();
     service.onAfterUndelete(handler);
     Test.stopTest();
@@ -902,10 +859,10 @@ Org Wide Coverage    99%
             },
             file: {
               path: 'exercises/level-03-answer.md',
-              mtime: '2020-09-05T05:16:45.202Z',
+              mtime: '2020-09-05T10:37:34.044Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-05T10:07:44.494Z' },
+            gitbook: { version: '3.6.1', time: '2020-09-05T10:37:38.992Z' },
             basePath: '..',
             book: { language: '' }
           });
