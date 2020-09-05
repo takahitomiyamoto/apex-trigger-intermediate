@@ -1,3 +1,9 @@
+![GitHub issues](https://img.shields.io/github/issues/takahitomiyamoto/apex-trigger-intermediate)
+![GitHub forks](https://img.shields.io/github/forks/takahitomiyamoto/apex-trigger-intermediate)
+![GitHub stars](https://img.shields.io/github/stars/takahitomiyamoto/apex-trigger-intermediate)
+![GitHub license](https://img.shields.io/github/license/takahitomiyamoto/apex-trigger-intermediate?color=blue)
+![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Ftakahitomiyamoto%2Fapex-trigger-intermediate)
+
 # Apex Trigger 中級
 
 Apex トリガの中級レベルのチュートリアルです。
