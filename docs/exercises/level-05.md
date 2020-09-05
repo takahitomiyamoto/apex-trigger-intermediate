@@ -14,7 +14,6 @@
 ## アーキテクチャ要件
 
 - [Flexible Apex Trigger](https://github.com/takahitomiyamoto/flexible-apex-trigger#flexible-apex-trigger) を利用してください。
-- 入力規則は Apex トリガで実装してください。
 - エラーメッセージはカスタム表示ラベルに定義してください。
 - すべてのテストデータはテストクラス内で作成してください。
 
