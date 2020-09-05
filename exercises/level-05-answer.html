@@ -298,15 +298,346 @@
                     <h1 id="lv-5-&#x306E;&#x89E3;&#x7B54;">
                       Lv. 5 &#x306E;&#x89E3;&#x7B54;
                     </h1>
-                    <p>1-1:</p>
+                    <p>
+                      1-1. Apex
+                      &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
                     <pre><code class="lang-sh">sfdx force:apex:trigger:create <span class="hljs-_">-d</span> force-app/main/default/triggers <span class="hljs-_">-e</span> <span class="hljs-string">&quot;before insert,before update,before delete,after insert,after update,after delete,after undelete&quot;</span> -n OpportunityTrigger <span class="hljs-_">-s</span> Opportunity -t ApexTrigger
+</code></pre>
+                    <h5 id="opportunitytriggertrigger">
+                      OpportunityTrigger.trigger
+                    </h5>
+                    <pre><code class="lang-java"><span class="hljs-function">trigger OpportunityTrigger on <span class="hljs-title">Opportunity</span><span class="hljs-params">(
+  before insert,
+  before update,
+  before delete,
+  after insert,
+  after update,
+  after delete,
+  after undelete
+)</span> </span>{
+  FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+    Opportunity.class
+  );
+  handler.invoke();
+}
 </code></pre>
                     <pre><code class="lang-sh">sfdx force:apex:trigger:create <span class="hljs-_">-d</span> force-app/main/default/triggers <span class="hljs-_">-e</span> <span class="hljs-string">&quot;before insert,before update,before delete,after insert,after update,after delete,after undelete&quot;</span> -n CaseTrigger <span class="hljs-_">-s</span> Case -t ApexTrigger
 </code></pre>
+                    <h5 id="casetriggertrigger">CaseTrigger.trigger</h5>
+                    <pre><code class="lang-java"><span class="hljs-function">trigger CaseTrigger on <span class="hljs-title">Case</span><span class="hljs-params">(
+  before insert,
+  before update,
+  before delete,
+  after insert,
+  after update,
+  after delete,
+  after undelete
+)</span> </span>{
+  FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+    Case.class
+  );
+  handler.invoke();
+}
+</code></pre>
+                    <p>
+                      1-2.
+                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">yarn prettier
+</code></pre>
+                    <p>
+                      1-3.
+                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
+</code></pre>
                     <hr />
-                    <p>2-1:</p>
+                    <p>
+                      2-1.
+                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <h5 id="customlabelslabels-metaxml">
+                      CustomLabels.labels-meta.xml
+                    </h5>
+                    <pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span> <span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">CustomLabels</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://soap.sforce.com/2006/04/metadata&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">labels</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">fullName</span>&gt;</span>SLA_EXPIRATION_DATE_REQUIRED<span class="hljs-tag">&lt;/<span class="hljs-name">fullName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">categories</span>&gt;</span>ERROR<span class="hljs-tag">&lt;/<span class="hljs-name">categories</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">language</span>&gt;</span>ja<span class="hljs-tag">&lt;/<span class="hljs-name">language</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">protected</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">protected</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">shortDescription</span>&gt;</span>SLA_EXPIRATION_DATE_REQUIRED<span class="hljs-tag">&lt;/<span class="hljs-name">shortDescription</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>SLA &#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x6709;&#x52B9;&#x671F;&#x9650;&#x3082;&#x5165;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">labels</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">labels</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">fullName</span>&gt;</span>SLA_SERIAL_NUMBER_REQUIRED<span class="hljs-tag">&lt;/<span class="hljs-name">fullName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">categories</span>&gt;</span>ERROR<span class="hljs-tag">&lt;/<span class="hljs-name">categories</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">language</span>&gt;</span>ja<span class="hljs-tag">&lt;/<span class="hljs-name">language</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">protected</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">protected</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">shortDescription</span>&gt;</span>SLA_SERIAL_NUMBER_REQUIRED<span class="hljs-tag">&lt;/<span class="hljs-name">shortDescription</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span>
+    &gt;</span>SLA &#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x30B7;&#x30EA;&#x30A2;&#x30EB;&#x30CA;&#x30F3;&#x30D0;&#x30FC;&#x3082;&#x5165;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">labels</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">labels</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">fullName</span>&gt;</span>CLOSED_WON_CANNOT_BE_DELETED<span class="hljs-tag">&lt;/<span class="hljs-name">fullName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">categories</span>&gt;</span>ERROR<span class="hljs-tag">&lt;/<span class="hljs-name">categories</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">language</span>&gt;</span>ja<span class="hljs-tag">&lt;/<span class="hljs-name">language</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">protected</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">protected</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">shortDescription</span>&gt;</span>CLOSED_WON_CANNOT_BE_DELETED<span class="hljs-tag">&lt;/<span class="hljs-name">shortDescription</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>&#x6210;&#x7D04;&#x6E08;&#x307F;&#x306E;&#x5546;&#x8AC7;&#x306F;&#x524A;&#x9664;&#x3067;&#x304D;&#x307E;&#x305B;&#x3093;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">labels</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">CustomLabels</span>&gt;</span>
+</code></pre>
                     <hr />
-                    <p>3-1:</p>
+                    <p>
+                      3-1. Apex
+                      &#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/main/default/classes -n OpportunityTriggerValidation -t DefaultApexClass
+</code></pre>
+                    <h5 id="opportunitytriggervalidationcls">
+                      OpportunityTriggerValidation.cls
+                    </h5>
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;</span>)
+<span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OpportunityTriggerValidation</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String CLOSED_WON_CANNOT_BE_DELETED = System.Label.CLOSED_WON_CANNOT_BE_DELETED;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String CLOSED_WON = <span class="hljs-string">&apos;Closed Won&apos;</span>;
+
+  <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Exception</span> </span>{
+  }
+
+  <span class="hljs-meta">@TestVisible</span>
+  <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">preventDeletion</span><span class="hljs-params">(List&lt;Opportunity&gt; opportunities)</span> </span>{
+    <span class="hljs-keyword">for</span> (Opportunity opportunity : opportunities) {
+      Boolean closedWon = CLOSED_WON.equals(opportunity.StageName);
+      <span class="hljs-keyword">if</span> (closedWon) {
+        opportunity.StageName.addError(CLOSED_WON_CANNOT_BE_DELETED);
+        String errorMessage = CLOSED_WON_CANNOT_BE_DELETED;
+
+        CustomException e = <span class="hljs-keyword">new</span> CustomException();
+        e.setMessage(errorMessage);
+        <span class="hljs-keyword">throw</span> e;
+      }
+    }
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeInsert</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeUpdate</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeDelete</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
+    <span class="hljs-keyword">this</span>.preventDeletion((List&lt;Opportunity&gt;) handler.newObjects);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterInsert</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterUpdate</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterDelete</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterUndelete</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
+  }
+}
+</code></pre>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/main/default/classes -n CaseTriggerService -t DefaultApexClass
+</code></pre>
+                    <h5 id="casetriggerservicecls">CaseTriggerService.cls</h5>
+                    <pre><code class="lang-java">
+
+</code></pre>
+                    <p>
+                      3-2.
+                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">yarn prettier
+</code></pre>
+                    <p>
+                      3-3.
+                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
+</code></pre>
+                    <hr />
+                    <p>
+                      4-1.
+                      <code
+                        >FAT_TriggerObserver.AccountTriggerService.md-meta.xml</code
+                      >
+                      &#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3057;&#x3066;&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <h5
+                      id="fattriggerobserveropportunitytriggervalidationmd-metaxml"
+                    >
+                      FAT_TriggerObserver.OpportunityTriggerValidation.md-meta.xml
+                    </h5>
+                    <pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span> <span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">CustomMetadata</span>
+  <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://soap.sforce.com/2006/04/metadata&quot;</span>
+  <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+  <span class="hljs-attr">xmlns:xsd</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema&quot;</span>
+&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>OpportunityTriggerValidation<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">protected</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">protected</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>Active__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>AfterDelete__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>AfterInsert__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>AfterUndelete__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>AfterUpdate__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>ApexClass__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:string&quot;</span>&gt;</span>OpportunityTriggerValidation<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>BeforeDelete__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>BeforeInsert__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>BeforeUpdate__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>SObject__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:string&quot;</span>&gt;</span>Opportunity<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">CustomMetadata</span>&gt;</span>
+</code></pre>
+                    <h5 id="fattriggerobservercasetriggerservicemd-metaxml">
+                      FAT_TriggerObserver.CaseTriggerService.md-meta.xml
+                    </h5>
+                    <pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span> <span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">CustomMetadata</span>
+  <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://soap.sforce.com/2006/04/metadata&quot;</span>
+  <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+  <span class="hljs-attr">xmlns:xsd</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema&quot;</span>
+&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>CaseTriggerService<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">protected</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">protected</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>Active__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>AfterDelete__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>AfterInsert__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>AfterUndelete__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>AfterUpdate__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>ApexClass__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:string&quot;</span>&gt;</span>CaseTriggerService<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>BeforeDelete__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>BeforeInsert__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>BeforeUpdate__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:boolean&quot;</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">values</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">field</span>&gt;</span>SObject__c<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span> <span class="hljs-attr">xsi:type</span>=<span class="hljs-string">&quot;xsd:string&quot;</span>&gt;</span>Case<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">CustomMetadata</span>&gt;</span>
+</code></pre>
+                    <p>
+                      4-2.
+                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">yarn prettier
+</code></pre>
+                    <p>
+                      4-3.
+                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
+</code></pre>
+                    <hr />
+                    <p>
+                      5-1.
+                      &#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTriggerValidationTest -t ApexUnitTest
+</code></pre>
+                    <h5 id="opportunitytriggervalidationtestcls">
+                      OpportunityTriggerValidationTest.cls
+                    </h5>
+                    <pre><code class="lang-java">
+
+</code></pre>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTriggerTest -t ApexUnitTest
+</code></pre>
+                    <h5 id="opportunitytriggertestcls">
+                      OpportunityTriggerTest.cls
+                    </h5>
+                    <pre><code class="lang-java">
+
+</code></pre>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTriggerServiceTest -t ApexUnitTest
+</code></pre>
+                    <h5 id="casetriggerservicetestcls">
+                      CaseTriggerServiceTest.cls
+                    </h5>
+                    <pre><code class="lang-java">
+
+</code></pre>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTriggerTest -t ApexUnitTest
+</code></pre>
+                    <h5 id="casetriggertestcls">CaseTriggerTest.cls</h5>
+                    <pre><code class="lang-java">
+
+</code></pre>
+                    <p>
+                      5-2.
+                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">yarn prettier
+</code></pre>
+                    <p>
+                      5-3.
+                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
+</code></pre>
                   </section>
                 </div>
                 <div class="search-results">
@@ -439,10 +770,10 @@
             },
             file: {
               path: 'exercises/level-05-answer.md',
-              mtime: '2020-09-05T06:34:46.531Z',
+              mtime: '2020-09-05T07:39:12.852Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-05T06:37:25.681Z' },
+            gitbook: { version: '3.6.1', time: '2020-09-05T08:37:09.357Z' },
             basePath: '..',
             book: { language: '' }
           });
