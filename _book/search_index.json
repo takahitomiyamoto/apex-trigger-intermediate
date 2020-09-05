@@ -9,172 +9,127 @@
     "ref": "url",
     "documentStore": {
       "store": {
-        "exercises/level-05.html": [
-          "(1)",
-          "(2)",
-          "1.",
-          "5",
-          ":",
-          "activ",
+        "./": [
+          "2011",
+          "2019",
+          "2020",
+          "@takahito0508",
+          "accentur",
+          "acknowledg",
+          "advanc",
           "apex",
-          "befor",
-          "case",
-          "casetestutil",
-          "casetrigg",
-          "casetrigger.trigg",
-          "casetriggerservic",
-          "casetriggerservicetest",
-          "casetriggerservicetest.cl",
-          "casetriggertest",
-          "casetriggertest.cl",
-          "class",
-          "close",
-          "closed_won_cannot_be_delet",
-          "delet",
-          "error",
-          "fat_triggerobserv",
+          "author",
+          "blog",
+          "champion,",
+          "einstein",
+          "event",
           "flexibl",
-          "high",
-          "high_case_is_cr",
-          "id",
-          "info",
-          "insert",
-          "lv.",
-          "opportun",
-          "opportunitytestutil",
-          "opportunitytrigg",
-          "opportunitytrigger.trigg",
-          "opportunitytriggertest",
-          "opportunitytriggertest.cl",
-          "opportunitytriggervalid",
-          "opportunitytriggervalidation.cl",
-          "opportunitytriggervalidationtest",
-          "postfeeditem",
-          "preventdelet",
-          "prioriti",
-          "sobject",
-          "stage",
-          "stagenam",
+          "framework",
+          "https://accentur",
+          "japan",
+          "lifestyl",
+          "log",
+          "ltd,",
+          "miyamoto",
+          "mvp,",
+          "online＃01",
+          "platform",
+          "salesforc",
+          "sfdc",
+          "takahito",
+          "tech",
+          "technology.connpass.com/event/185277/",
+          "top",
           "trigger",
-          "won",
-          "ye",
-          "こちら",
-          "すべてのテストデータはテストクラス内で作成してください。",
-          "である",
-          "で利用するテストメソッドを準備するクラス",
-          "に対するテストクラス",
-          "また、重要なケースが起票された場合に見逃しにくくしたいと考えています。",
-          "を利用してください。",
-          "を利用することで、apex",
-          "を実行する",
-          "アーキテクチャ要件",
-          "エラー",
-          "エラーメッセージ",
-          "エラーメッセージはカスタム表示ラベルに定義してください。",
-          "エラー表示場所",
-          "カスタムメタデータレコード名",
-          "カスタムメタデータ型",
-          "カスタム表示ラベル",
-          "カテゴリ",
-          "クラス",
-          "クラス名",
-          "ケース",
-          "システム要件",
-          "テストクラス名",
+          "up",
+          "warm",
+          "wednesday",
+          "からスタートします。",
+          "へご参加いただくみなさまへ",
+          "や",
+          "をご利用ください。",
+          "を実施する時間はありませんので、",
+          "テストがしやすくて、将来の変更に強い、一歩進んだ",
           "トリガ",
-          "トリガを追加してみよう",
-          "トリガを量産しやすくなっています。",
-          "トリガ名",
-          "ビジネス要件",
-          "フィードにメッセージが自動投稿されるようにしてください。",
-          "フィード投稿アクション",
-          "フェーズ",
-          "フェーズが",
-          "メソッド",
-          "値",
-          "備考",
-          "優先度",
-          "優先度が",
-          "優先度の高いケースが作成されました！",
-          "内容",
-          "削除する前に",
-          "削除防止アクション",
-          "商談",
-          "売上として計上されている商談データを誤って削除できないようにしたいと考えています。",
-          "実際に体感してみましょう。",
-          "対象オブジェクト",
-          "成約済みの商談は削除できません。",
-          "成約済みの場合、エラーメッセージを表示して削除できないようにしてください。",
-          "投稿メッセージ",
-          "投稿場所",
-          "新規に",
-          "新規作成したケースのフィード欄",
-          "新規作成した後に",
-          "次の条件を満たす場合:",
-          "用途",
-          "表示ラベル",
-          "複数件レコードの一括処理",
-          "観点",
-          "解答",
-          "起動条件",
-          "重要度が高いケースが新規作成された場合に、chatter",
-          "項目名"
+          "トリガの中級レベルのチュートリアルです。",
+          "中級",
+          "事前に予習してきてください。",
+          "初級者向けコンテンツ",
+          "当日は",
+          "申込サイト:",
+          "開発ツール",
+          "開発ツールのセットアップが終わっていないかたは、",
+          "開発手法をいっしょに学びましょう。",
+          "開発者コンソール"
         ]
       },
       "length": 1
     },
     "tokenStore": {
       "root": {
-        "1": {
-          "docs": {},
-          ".": {
-            "docs": {
-              "exercises/level-05.html": {
-                "ref": "exercises/level-05.html",
-                "tf": 0.021052631578947368
-              }
-            }
-          }
-        },
-        "5": {
-          "docs": {
-            "exercises/level-05.html": {
-              "ref": "exercises/level-05.html",
-              "tf": 5.005263157894737
-            }
-          }
-        },
-        "docs": {},
-        "(": {
-          "1": {
-            "docs": {},
-            ")": {
-              "docs": {
-                "exercises/level-05.html": {
-                  "ref": "exercises/level-05.html",
-                  "tf": 0.015789473684210527
-                }
-              }
-            }
-          },
-          "2": {
-            "docs": {},
-            ")": {
-              "docs": {
-                "exercises/level-05.html": {
-                  "ref": "exercises/level-05.html",
-                  "tf": 0.015789473684210527
-                }
-              }
-            }
+        "2": {
+          "0": {
+            "1": {
+              "1": {
+                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+              },
+              "9": {
+                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+              },
+              "docs": {}
+            },
+            "2": {
+              "0": {
+                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+              },
+              "docs": {}
+            },
+            "docs": {}
           },
           "docs": {}
         },
-        ":": {
-          "docs": {
-            "exercises/level-05.html": {
-              "ref": "exercises/level-05.html",
-              "tf": 0.010526315789473684
+        "docs": {},
+        "@": {
+          "docs": {},
+          "t": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "k": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "h": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "t": {
+                        "docs": {},
+                        "o": {
+                          "0": {
+                            "5": {
+                              "0": {
+                                "8": {
+                                  "docs": {
+                                    "./": {
+                                      "ref": "./",
+                                      "tf": 0.017543859649122806
+                                    }
+                                  }
+                                },
+                                "docs": {}
+                              },
+                              "docs": {}
+                            },
+                            "docs": {}
+                          },
+                          "docs": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         },
@@ -182,15 +137,64 @@
           "docs": {},
           "c": {
             "docs": {},
-            "t": {
+            "c": {
               "docs": {},
-              "i": {
+              "e": {
                 "docs": {},
-                "v": {
-                  "docs": {
-                    "exercises/level-05.html": {
-                      "ref": "exercises/level-05.html",
-                      "tf": 0.010526315789473684
+                "n": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    "u": {
+                      "docs": {},
+                      "r": {
+                        "docs": {
+                          "./": { "ref": "./", "tf": 0.017543859649122806 }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "k": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "w": {
+                    "docs": {},
+                    "l": {
+                      "docs": {},
+                      "e": {
+                        "docs": {},
+                        "d": {
+                          "docs": {},
+                          "g": {
+                            "docs": {
+                              "./": { "ref": "./", "tf": 0.017543859649122806 }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "d": {
+            "docs": {},
+            "v": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "c": {
+                    "docs": {
+                      "./": { "ref": "./", "tf": 0.017543859649122806 }
                     }
                   }
                 }
@@ -202,10 +206,22 @@
             "e": {
               "docs": {},
               "x": {
-                "docs": {
-                  "exercises/level-05.html": {
-                    "ref": "exercises/level-05.html",
-                    "tf": 0.05789473684210526
+                "docs": { "./": { "ref": "./", "tf": 0.07017543859649122 } }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "./": { "ref": "./", "tf": 0.017543859649122806 }
+                    }
                   }
                 }
               }
@@ -214,316 +230,38 @@
         },
         "b": {
           "docs": {},
-          "e": {
+          "l": {
             "docs": {},
-            "f": {
+            "o": {
               "docs": {},
-              "o": {
-                "docs": {},
-                "r": {
-                  "docs": {
-                    "exercises/level-05.html": {
-                      "ref": "exercises/level-05.html",
-                      "tf": 0.005263157894736842
-                    }
-                  }
-                }
+              "g": {
+                "docs": { "./": { "ref": "./", "tf": 0.03508771929824561 } }
               }
             }
           }
         },
         "c": {
           "docs": {},
-          "a": {
-            "docs": {},
-            "s": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "exercises/level-05.html": {
-                    "ref": "exercises/level-05.html",
-                    "tf": 0.005263157894736842
-                  }
-                },
-                "t": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "s": {
-                      "docs": {},
-                      "t": {
-                        "docs": {},
-                        "u": {
-                          "docs": {},
-                          "t": {
-                            "docs": {},
-                            "i": {
-                              "docs": {},
-                              "l": {
-                                "docs": {
-                                  "exercises/level-05.html": {
-                                    "ref": "exercises/level-05.html",
-                                    "tf": 0.005263157894736842
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "r": {
-                    "docs": {},
-                    "i": {
-                      "docs": {},
-                      "g": {
-                        "docs": {},
-                        "g": {
-                          "docs": {
-                            "exercises/level-05.html": {
-                              "ref": "exercises/level-05.html",
-                              "tf": 0.005263157894736842
-                            }
-                          },
-                          "e": {
-                            "docs": {},
-                            "r": {
-                              "docs": {},
-                              ".": {
-                                "docs": {},
-                                "t": {
-                                  "docs": {},
-                                  "r": {
-                                    "docs": {},
-                                    "i": {
-                                      "docs": {},
-                                      "g": {
-                                        "docs": {},
-                                        "g": {
-                                          "docs": {
-                                            "exercises/level-05.html": {
-                                              "ref": "exercises/level-05.html",
-                                              "tf": 0.005263157894736842
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              },
-                              "s": {
-                                "docs": {},
-                                "e": {
-                                  "docs": {},
-                                  "r": {
-                                    "docs": {},
-                                    "v": {
-                                      "docs": {},
-                                      "i": {
-                                        "docs": {},
-                                        "c": {
-                                          "docs": {
-                                            "exercises/level-05.html": {
-                                              "ref": "exercises/level-05.html",
-                                              "tf": 0.021052631578947368
-                                            }
-                                          },
-                                          "e": {
-                                            "docs": {},
-                                            "t": {
-                                              "docs": {},
-                                              "e": {
-                                                "docs": {},
-                                                "s": {
-                                                  "docs": {},
-                                                  "t": {
-                                                    "docs": {
-                                                      "exercises/level-05.html": {
-                                                        "ref": "exercises/level-05.html",
-                                                        "tf": 0.005263157894736842
-                                                      }
-                                                    },
-                                                    ".": {
-                                                      "docs": {},
-                                                      "c": {
-                                                        "docs": {},
-                                                        "l": {
-                                                          "docs": {
-                                                            "exercises/level-05.html": {
-                                                              "ref": "exercises/level-05.html",
-                                                              "tf": 0.005263157894736842
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              },
-                              "t": {
-                                "docs": {},
-                                "e": {
-                                  "docs": {},
-                                  "s": {
-                                    "docs": {},
-                                    "t": {
-                                      "docs": {
-                                        "exercises/level-05.html": {
-                                          "ref": "exercises/level-05.html",
-                                          "tf": 0.005263157894736842
-                                        }
-                                      },
-                                      ".": {
-                                        "docs": {},
-                                        "c": {
-                                          "docs": {},
-                                          "l": {
-                                            "docs": {
-                                              "exercises/level-05.html": {
-                                                "ref": "exercises/level-05.html",
-                                                "tf": 0.005263157894736842
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "l": {
+          "h": {
             "docs": {},
             "a": {
               "docs": {},
-              "s": {
+              "m": {
                 "docs": {},
-                "s": {
-                  "docs": {
-                    "exercises/level-05.html": {
-                      "ref": "exercises/level-05.html",
-                      "tf": 0.010526315789473684
-                    }
-                  }
-                }
-              }
-            },
-            "o": {
-              "docs": {},
-              "s": {
-                "docs": {},
-                "e": {
-                  "docs": {
-                    "exercises/level-05.html": {
-                      "ref": "exercises/level-05.html",
-                      "tf": 0.005263157894736842
-                    }
-                  },
-                  "d": {
+                "p": {
+                  "docs": {},
+                  "i": {
                     "docs": {},
-                    "_": {
+                    "o": {
                       "docs": {},
-                      "w": {
+                      "n": {
                         "docs": {},
-                        "o": {
-                          "docs": {},
-                          "n": {
-                            "docs": {},
-                            "_": {
-                              "docs": {},
-                              "c": {
-                                "docs": {},
-                                "a": {
-                                  "docs": {},
-                                  "n": {
-                                    "docs": {},
-                                    "n": {
-                                      "docs": {},
-                                      "o": {
-                                        "docs": {},
-                                        "t": {
-                                          "docs": {},
-                                          "_": {
-                                            "docs": {},
-                                            "b": {
-                                              "docs": {},
-                                              "e": {
-                                                "docs": {},
-                                                "_": {
-                                                  "docs": {},
-                                                  "d": {
-                                                    "docs": {},
-                                                    "e": {
-                                                      "docs": {},
-                                                      "l": {
-                                                        "docs": {},
-                                                        "e": {
-                                                          "docs": {},
-                                                          "t": {
-                                                            "docs": {
-                                                              "exercises/level-05.html": {
-                                                                "ref": "exercises/level-05.html",
-                                                                "tf": 0.005263157894736842
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
+                        ",": {
+                          "docs": {
+                            "./": { "ref": "./", "tf": 0.017543859649122806 }
                           }
                         }
                       }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "d": {
-          "docs": {},
-          "e": {
-            "docs": {},
-            "l": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "exercises/level-05.html": {
-                      "ref": "exercises/level-05.html",
-                      "tf": 0.005263157894736842
                     }
                   }
                 }
@@ -533,71 +271,21 @@
         },
         "e": {
           "docs": {},
-          "r": {
+          "i": {
             "docs": {},
-            "r": {
+            "n": {
               "docs": {},
-              "o": {
-                "docs": {},
-                "r": {
-                  "docs": {
-                    "exercises/level-05.html": {
-                      "ref": "exercises/level-05.html",
-                      "tf": 0.005263157894736842
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "f": {
-          "docs": {},
-          "a": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "_": {
+              "s": {
                 "docs": {},
                 "t": {
                   "docs": {},
-                  "r": {
+                  "e": {
                     "docs": {},
                     "i": {
                       "docs": {},
-                      "g": {
-                        "docs": {},
-                        "g": {
-                          "docs": {},
-                          "e": {
-                            "docs": {},
-                            "r": {
-                              "docs": {},
-                              "o": {
-                                "docs": {},
-                                "b": {
-                                  "docs": {},
-                                  "s": {
-                                    "docs": {},
-                                    "e": {
-                                      "docs": {},
-                                      "r": {
-                                        "docs": {},
-                                        "v": {
-                                          "docs": {
-                                            "exercises/level-05.html": {
-                                              "ref": "exercises/level-05.html",
-                                              "tf": 0.005263157894736842
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
+                      "n": {
+                        "docs": {
+                          "./": { "ref": "./", "tf": 0.017543859649122806 }
                         }
                       }
                     }
@@ -606,6 +294,21 @@
               }
             }
           },
+          "v": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "t": {
+                  "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+                }
+              }
+            }
+          }
+        },
+        "f": {
+          "docs": {},
           "l": {
             "docs": {},
             "e": {
@@ -618,9 +321,32 @@
                     "docs": {},
                     "l": {
                       "docs": {
-                        "exercises/level-05.html": {
-                          "ref": "exercises/level-05.html",
-                          "tf": 0.010526315789473684
+                        "./": { "ref": "./", "tf": 0.017543859649122806 }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "m": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "w": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "r": {
+                        "docs": {},
+                        "k": {
+                          "docs": {
+                            "./": { "ref": "./", "tf": 0.017543859649122806 }
+                          }
                         }
                       }
                     }
@@ -632,42 +358,40 @@
         },
         "h": {
           "docs": {},
-          "i": {
+          "t": {
             "docs": {},
-            "g": {
+            "t": {
               "docs": {},
-              "h": {
-                "docs": {
-                  "exercises/level-05.html": {
-                    "ref": "exercises/level-05.html",
-                    "tf": 0.005263157894736842
-                  }
-                },
-                "_": {
+              "p": {
+                "docs": {},
+                "s": {
                   "docs": {},
-                  "c": {
+                  ":": {
                     "docs": {},
-                    "a": {
+                    "/": {
                       "docs": {},
-                      "s": {
+                      "/": {
                         "docs": {},
-                        "e": {
+                        "a": {
                           "docs": {},
-                          "_": {
+                          "c": {
                             "docs": {},
-                            "i": {
+                            "c": {
                               "docs": {},
-                              "s": {
+                              "e": {
                                 "docs": {},
-                                "_": {
+                                "n": {
                                   "docs": {},
-                                  "c": {
+                                  "t": {
                                     "docs": {},
-                                    "r": {
-                                      "docs": {
-                                        "exercises/level-05.html": {
-                                          "ref": "exercises/level-05.html",
-                                          "tf": 0.005263157894736842
+                                    "u": {
+                                      "docs": {},
+                                      "r": {
+                                        "docs": {
+                                          "./": {
+                                            "ref": "./",
+                                            "tf": 0.017543859649122806
+                                          }
                                         }
                                       }
                                     }
@@ -685,40 +409,144 @@
             }
           }
         },
-        "i": {
+        "j": {
           "docs": {},
-          "d": {
-            "docs": {
-              "exercises/level-05.html": {
-                "ref": "exercises/level-05.html",
-                "tf": 0.005263157894736842
+          "a": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "n": {
+                  "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+                }
               }
             }
-          },
-          "n": {
+          }
+        },
+        "l": {
+          "docs": {},
+          "i": {
             "docs": {},
             "f": {
               "docs": {},
-              "o": {
-                "docs": {
-                  "exercises/level-05.html": {
-                    "ref": "exercises/level-05.html",
-                    "tf": 0.005263157894736842
+              "e": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    "y": {
+                      "docs": {},
+                      "l": {
+                        "docs": {
+                          "./": { "ref": "./", "tf": 0.017543859649122806 }
+                        }
+                      }
+                    }
                   }
                 }
               }
-            },
-            "s": {
+            }
+          },
+          "o": {
+            "docs": {},
+            "g": {
+              "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+            }
+          },
+          "t": {
+            "docs": {},
+            "d": {
               "docs": {},
-              "e": {
+              ",": {
+                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+              }
+            }
+          }
+        },
+        "m": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "y": {
+              "docs": {},
+              "a": {
                 "docs": {},
-                "r": {
+                "m": {
                   "docs": {},
-                  "t": {
-                    "docs": {
-                      "exercises/level-05.html": {
-                        "ref": "exercises/level-05.html",
-                        "tf": 0.005263157894736842
+                  "o": {
+                    "docs": {},
+                    "t": {
+                      "docs": {},
+                      "o": {
+                        "docs": {
+                          "./": { "ref": "./", "tf": 0.017543859649122806 }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "v": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              ",": {
+                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+              }
+            }
+          }
+        },
+        "o": {
+          "docs": {},
+          "n": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "＃": {
+                      "0": {
+                        "1": {
+                          "docs": {
+                            "./": { "ref": "./", "tf": 0.017543859649122806 }
+                          }
+                        },
+                        "docs": {}
+                      },
+                      "docs": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "p": {
+          "docs": {},
+          "l": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "f": {
+                  "docs": {},
+                  "o": {
+                    "docs": {},
+                    "r": {
+                      "docs": {},
+                      "m": {
+                        "docs": {
+                          "./": { "ref": "./", "tf": 0.017543859649122806 }
+                        }
                       }
                     }
                   }
@@ -727,200 +555,153 @@
             }
           }
         },
-        "l": {
+        "s": {
           "docs": {},
-          "v": {
+          "a": {
             "docs": {},
-            ".": {
-              "docs": {
-                "exercises/level-05.html": {
-                  "ref": "exercises/level-05.html",
-                  "tf": 5.005263157894737
+            "l": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "f": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "r": {
+                        "docs": {},
+                        "c": {
+                          "docs": {
+                            "./": { "ref": "./", "tf": 0.05263157894736842 }
+                          }
+                        }
+                      }
+                    }
+                  }
                 }
+              }
+            }
+          },
+          "f": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "c": {
+                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
               }
             }
           }
         },
-        "o": {
+        "t": {
           "docs": {},
-          "p": {
+          "a": {
             "docs": {},
-            "p": {
+            "k": {
               "docs": {},
-              "o": {
+              "a": {
                 "docs": {},
-                "r": {
+                "h": {
                   "docs": {},
-                  "t": {
+                  "i": {
                     "docs": {},
-                    "u": {
+                    "t": {
                       "docs": {},
-                      "n": {
+                      "o": {
                         "docs": {
-                          "exercises/level-05.html": {
-                            "ref": "exercises/level-05.html",
-                            "tf": 0.005263157894736842
-                          }
-                        },
-                        "i": {
+                          "./": { "ref": "./", "tf": 0.017543859649122806 }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "h": {
+                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } },
+                "n": {
+                  "docs": {},
+                  "o": {
+                    "docs": {},
+                    "l": {
+                      "docs": {},
+                      "o": {
+                        "docs": {},
+                        "g": {
                           "docs": {},
-                          "t": {
+                          "y": {
                             "docs": {},
-                            "y": {
+                            ".": {
                               "docs": {},
-                              "t": {
+                              "c": {
                                 "docs": {},
-                                "e": {
+                                "o": {
                                   "docs": {},
-                                  "s": {
+                                  "n": {
                                     "docs": {},
-                                    "t": {
+                                    "n": {
                                       "docs": {},
-                                      "u": {
+                                      "p": {
                                         "docs": {},
-                                        "t": {
+                                        "a": {
                                           "docs": {},
-                                          "i": {
+                                          "s": {
                                             "docs": {},
-                                            "l": {
-                                              "docs": {
-                                                "exercises/level-05.html": {
-                                                  "ref": "exercises/level-05.html",
-                                                  "tf": 0.005263157894736842
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                },
-                                "r": {
-                                  "docs": {},
-                                  "i": {
-                                    "docs": {},
-                                    "g": {
-                                      "docs": {},
-                                      "g": {
-                                        "docs": {
-                                          "exercises/level-05.html": {
-                                            "ref": "exercises/level-05.html",
-                                            "tf": 0.005263157894736842
-                                          }
-                                        },
-                                        "e": {
-                                          "docs": {},
-                                          "r": {
-                                            "docs": {},
-                                            ".": {
+                                            "s": {
                                               "docs": {},
-                                              "t": {
+                                              ".": {
                                                 "docs": {},
-                                                "r": {
+                                                "c": {
                                                   "docs": {},
-                                                  "i": {
+                                                  "o": {
                                                     "docs": {},
-                                                    "g": {
+                                                    "m": {
                                                       "docs": {},
-                                                      "g": {
-                                                        "docs": {
-                                                          "exercises/level-05.html": {
-                                                            "ref": "exercises/level-05.html",
-                                                            "tf": 0.005263157894736842
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            },
-                                            "t": {
-                                              "docs": {},
-                                              "e": {
-                                                "docs": {},
-                                                "s": {
-                                                  "docs": {},
-                                                  "t": {
-                                                    "docs": {
-                                                      "exercises/level-05.html": {
-                                                        "ref": "exercises/level-05.html",
-                                                        "tf": 0.005263157894736842
-                                                      }
-                                                    },
-                                                    ".": {
-                                                      "docs": {},
-                                                      "c": {
+                                                      "/": {
                                                         "docs": {},
-                                                        "l": {
-                                                          "docs": {
-                                                            "exercises/level-05.html": {
-                                                              "ref": "exercises/level-05.html",
-                                                              "tf": 0.005263157894736842
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            },
-                                            "v": {
-                                              "docs": {},
-                                              "a": {
-                                                "docs": {},
-                                                "l": {
-                                                  "docs": {},
-                                                  "i": {
-                                                    "docs": {},
-                                                    "d": {
-                                                      "docs": {
-                                                        "exercises/level-05.html": {
-                                                          "ref": "exercises/level-05.html",
-                                                          "tf": 0.021052631578947368
-                                                        }
-                                                      },
-                                                      "a": {
-                                                        "docs": {},
-                                                        "t": {
+                                                        "e": {
                                                           "docs": {},
-                                                          "i": {
+                                                          "v": {
                                                             "docs": {},
-                                                            "o": {
+                                                            "e": {
                                                               "docs": {},
                                                               "n": {
                                                                 "docs": {},
-                                                                ".": {
-                                                                  "docs": {},
-                                                                  "c": {
-                                                                    "docs": {},
-                                                                    "l": {
-                                                                      "docs": {
-                                                                        "exercises/level-05.html": {
-                                                                          "ref": "exercises/level-05.html",
-                                                                          "tf": 0.005263157894736842
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                },
                                                                 "t": {
                                                                   "docs": {},
-                                                                  "e": {
-                                                                    "docs": {},
-                                                                    "s": {
-                                                                      "docs": {},
-                                                                      "t": {
-                                                                        "docs": {
-                                                                          "exercises/level-05.html": {
-                                                                            "ref": "exercises/level-05.html",
-                                                                            "tf": 0.005263157894736842
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
+                                                                  "/": {
+                                                                    "1": {
+                                                                      "8": {
+                                                                        "5": {
+                                                                          "2": {
+                                                                            "7": {
+                                                                              "7": {
+                                                                                "docs": {},
+                                                                                "/": {
+                                                                                  "docs": {
+                                                                                    "./": {
+                                                                                      "ref": "./",
+                                                                                      "tf": 0.017543859649122806
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              },
+                                                                              "docs": {}
+                                                                            },
+                                                                            "docs": {}
+                                                                          },
+                                                                          "docs": {}
+                                                                        },
+                                                                        "docs": {}
+                                                                      },
+                                                                      "docs": {}
+                                                                    },
+                                                                    "docs": {}
                                                                   }
                                                                 }
                                                               }
@@ -949,169 +730,11 @@
                 }
               }
             }
-          }
-        },
-        "p": {
-          "docs": {},
+          },
           "o": {
             "docs": {},
-            "s": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "f": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "e": {
-                      "docs": {},
-                      "d": {
-                        "docs": {},
-                        "i": {
-                          "docs": {},
-                          "t": {
-                            "docs": {},
-                            "e": {
-                              "docs": {},
-                              "m": {
-                                "docs": {
-                                  "exercises/level-05.html": {
-                                    "ref": "exercises/level-05.html",
-                                    "tf": 0.010526315789473684
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
+            "p": { "docs": { "./": { "ref": "./", "tf": 10 } } }
           },
-          "r": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "v": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "t": {
-                      "docs": {},
-                      "d": {
-                        "docs": {},
-                        "e": {
-                          "docs": {},
-                          "l": {
-                            "docs": {},
-                            "e": {
-                              "docs": {},
-                              "t": {
-                                "docs": {
-                                  "exercises/level-05.html": {
-                                    "ref": "exercises/level-05.html",
-                                    "tf": 0.010526315789473684
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "i": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "r": {
-                  "docs": {},
-                  "i": {
-                    "docs": {},
-                    "t": {
-                      "docs": {},
-                      "i": {
-                        "docs": {
-                          "exercises/level-05.html": {
-                            "ref": "exercises/level-05.html",
-                            "tf": 0.005263157894736842
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "s": {
-          "docs": {},
-          "o": {
-            "docs": {},
-            "b": {
-              "docs": {},
-              "j": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "c": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "exercises/level-05.html": {
-                          "ref": "exercises/level-05.html",
-                          "tf": 0.010526315789473684
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "t": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "g": {
-                "docs": {},
-                "e": {
-                  "docs": {
-                    "exercises/level-05.html": {
-                      "ref": "exercises/level-05.html",
-                      "tf": 0.005263157894736842
-                    }
-                  },
-                  "n": {
-                    "docs": {},
-                    "a": {
-                      "docs": {},
-                      "m": {
-                        "docs": {
-                          "exercises/level-05.html": {
-                            "ref": "exercises/level-05.html",
-                            "tf": 0.005263157894736842
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "t": {
-          "docs": {},
           "r": {
             "docs": {},
             "i": {
@@ -1124,10 +747,7 @@
                     "docs": {},
                     "r": {
                       "docs": {
-                        "exercises/level-05.html": {
-                          "ref": "exercises/level-05.html",
-                          "tf": 0.010526315789473684
-                        }
+                        "./": { "ref": "./", "tf": 0.03508771929824561 }
                       }
                     }
                   }
@@ -1135,201 +755,39 @@
               }
             }
           }
+        },
+        "u": {
+          "docs": {},
+          "p": { "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } } }
         },
         "w": {
           "docs": {},
-          "o": {
+          "a": {
             "docs": {},
-            "n": {
-              "docs": {
-                "exercises/level-05.html": {
-                  "ref": "exercises/level-05.html",
-                  "tf": 0.005263157894736842
-                }
-              }
-            }
-          }
-        },
-        "y": {
-          "docs": {},
-          "e": {
-            "docs": {
-              "exercises/level-05.html": {
-                "ref": "exercises/level-05.html",
-                "tf": 0.031578947368421054
-              }
-            }
-          }
-        },
-        "こ": {
-          "docs": {},
-          "ち": {
-            "docs": {},
-            "ら": {
-              "docs": {
-                "exercises/level-05.html": {
-                  "ref": "exercises/level-05.html",
-                  "tf": 0.005263157894736842
-                }
-              }
-            }
-          }
-        },
-        "す": {
-          "docs": {},
-          "べ": {
-            "docs": {},
-            "て": {
+            "r": {
               "docs": {},
-              "の": {
-                "docs": {},
-                "テ": {
-                  "docs": {},
-                  "ス": {
-                    "docs": {},
-                    "ト": {
-                      "docs": {},
-                      "デ": {
-                        "docs": {},
-                        "ー": {
-                          "docs": {},
-                          "タ": {
-                            "docs": {},
-                            "は": {
-                              "docs": {},
-                              "テ": {
-                                "docs": {},
-                                "ス": {
-                                  "docs": {},
-                                  "ト": {
-                                    "docs": {},
-                                    "ク": {
-                                      "docs": {},
-                                      "ラ": {
-                                        "docs": {},
-                                        "ス": {
-                                          "docs": {},
-                                          "内": {
-                                            "docs": {},
-                                            "で": {
-                                              "docs": {},
-                                              "作": {
-                                                "docs": {},
-                                                "成": {
-                                                  "docs": {},
-                                                  "し": {
-                                                    "docs": {},
-                                                    "て": {
-                                                      "docs": {},
-                                                      "く": {
-                                                        "docs": {},
-                                                        "だ": {
-                                                          "docs": {},
-                                                          "さ": {
-                                                            "docs": {},
-                                                            "い": {
-                                                              "docs": {},
-                                                              "。": {
-                                                                "docs": {
-                                                                  "exercises/level-05.html": {
-                                                                    "ref": "exercises/level-05.html",
-                                                                    "tf": 0.005263157894736842
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "で": {
-          "docs": {},
-          "あ": {
-            "docs": {},
-            "る": {
-              "docs": {
-                "exercises/level-05.html": {
-                  "ref": "exercises/level-05.html",
-                  "tf": 0.010526315789473684
-                }
+              "m": {
+                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
               }
             }
           },
-          "利": {
+          "e": {
             "docs": {},
-            "用": {
+            "d": {
               "docs": {},
-              "す": {
+              "n": {
                 "docs": {},
-                "る": {
+                "e": {
                   "docs": {},
-                  "テ": {
+                  "s": {
                     "docs": {},
-                    "ス": {
+                    "d": {
                       "docs": {},
-                      "ト": {
+                      "a": {
                         "docs": {},
-                        "メ": {
-                          "docs": {},
-                          "ソ": {
-                            "docs": {},
-                            "ッ": {
-                              "docs": {},
-                              "ド": {
-                                "docs": {},
-                                "を": {
-                                  "docs": {},
-                                  "準": {
-                                    "docs": {},
-                                    "備": {
-                                      "docs": {},
-                                      "す": {
-                                        "docs": {},
-                                        "る": {
-                                          "docs": {},
-                                          "ク": {
-                                            "docs": {},
-                                            "ラ": {
-                                              "docs": {},
-                                              "ス": {
-                                                "docs": {
-                                                  "exercises/level-05.html": {
-                                                    "ref": "exercises/level-05.html",
-                                                    "tf": 0.010526315789473684
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
+                        "y": {
+                          "docs": {
+                            "./": { "ref": "./", "tf": 0.017543859649122806 }
                           }
                         }
                       }
@@ -1340,174 +798,70 @@
             }
           }
         },
-        "に": {
+        "か": {
           "docs": {},
-          "対": {
+          "ら": {
             "docs": {},
-            "す": {
+            "ス": {
               "docs": {},
-              "る": {
+              "タ": {
                 "docs": {},
-                "テ": {
+                "ー": {
                   "docs": {},
-                  "ス": {
+                  "ト": {
                     "docs": {},
-                    "ト": {
+                    "し": {
                       "docs": {},
-                      "ク": {
+                      "ま": {
                         "docs": {},
-                        "ラ": {
-                          "docs": {},
-                          "ス": {
-                            "docs": {
-                              "exercises/level-05.html": {
-                                "ref": "exercises/level-05.html",
-                                "tf": 0.021052631578947368
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "ま": {
-          "docs": {},
-          "た": {
-            "docs": {},
-            "、": {
-              "docs": {},
-              "重": {
-                "docs": {},
-                "要": {
-                  "docs": {},
-                  "な": {
-                    "docs": {},
-                    "ケ": {
-                      "docs": {},
-                      "ー": {
-                        "docs": {},
-                        "ス": {
-                          "docs": {},
-                          "が": {
-                            "docs": {},
-                            "起": {
-                              "docs": {},
-                              "票": {
-                                "docs": {},
-                                "さ": {
-                                  "docs": {},
-                                  "れ": {
-                                    "docs": {},
-                                    "た": {
-                                      "docs": {},
-                                      "場": {
-                                        "docs": {},
-                                        "合": {
-                                          "docs": {},
-                                          "に": {
-                                            "docs": {},
-                                            "見": {
-                                              "docs": {},
-                                              "逃": {
-                                                "docs": {},
-                                                "し": {
-                                                  "docs": {},
-                                                  "に": {
-                                                    "docs": {},
-                                                    "く": {
-                                                      "docs": {},
-                                                      "く": {
-                                                        "docs": {},
-                                                        "し": {
-                                                          "docs": {},
-                                                          "た": {
-                                                            "docs": {},
-                                                            "い": {
-                                                              "docs": {},
-                                                              "と": {
-                                                                "docs": {},
-                                                                "考": {
-                                                                  "docs": {},
-                                                                  "え": {
-                                                                    "docs": {},
-                                                                    "て": {
-                                                                      "docs": {},
-                                                                      "い": {
-                                                                        "docs": {},
-                                                                        "ま": {
-                                                                          "docs": {},
-                                                                          "す": {
-                                                                            "docs": {},
-                                                                            "。": {
-                                                                              "docs": {
-                                                                                "exercises/level-05.html": {
-                                                                                  "ref": "exercises/level-05.html",
-                                                                                  "tf": 0.005263157894736842
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "を": {
-          "docs": {},
-          "利": {
-            "docs": {},
-            "用": {
-              "docs": {},
-              "し": {
-                "docs": {},
-                "て": {
-                  "docs": {},
-                  "く": {
-                    "docs": {},
-                    "だ": {
-                      "docs": {},
-                      "さ": {
-                        "docs": {},
-                        "い": {
+                        "す": {
                           "docs": {},
                           "。": {
                             "docs": {
-                              "exercises/level-05.html": {
-                                "ref": "exercises/level-05.html",
-                                "tf": 0.005263157894736842
+                              "./": { "ref": "./", "tf": 0.017543859649122806 }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "へ": {
+          "docs": {},
+          "ご": {
+            "docs": {},
+            "参": {
+              "docs": {},
+              "加": {
+                "docs": {},
+                "い": {
+                  "docs": {},
+                  "た": {
+                    "docs": {},
+                    "だ": {
+                      "docs": {},
+                      "く": {
+                        "docs": {},
+                        "み": {
+                          "docs": {},
+                          "な": {
+                            "docs": {},
+                            "さ": {
+                              "docs": {},
+                              "ま": {
+                                "docs": {},
+                                "へ": {
+                                  "docs": {
+                                    "./": {
+                                      "ref": "./",
+                                      "tf": 0.017543859649122806
+                                    }
+                                  }
+                                }
                               }
                             }
                           }
@@ -1516,35 +870,30 @@
                     }
                   }
                 }
-              },
-              "す": {
+              }
+            }
+          }
+        },
+        "や": { "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } } },
+        "を": {
+          "docs": {},
+          "ご": {
+            "docs": {},
+            "利": {
+              "docs": {},
+              "用": {
                 "docs": {},
-                "る": {
+                "く": {
                   "docs": {},
-                  "こ": {
+                  "だ": {
                     "docs": {},
-                    "と": {
+                    "さ": {
                       "docs": {},
-                      "で": {
+                      "い": {
                         "docs": {},
-                        "、": {
-                          "docs": {},
-                          "a": {
-                            "docs": {},
-                            "p": {
-                              "docs": {},
-                              "e": {
-                                "docs": {},
-                                "x": {
-                                  "docs": {
-                                    "exercises/level-05.html": {
-                                      "ref": "exercises/level-05.html",
-                                      "tf": 0.005263157894736842
-                                    }
-                                  }
-                                }
-                              }
-                            }
+                        "。": {
+                          "docs": {
+                            "./": { "ref": "./", "tf": 0.017543859649122806 }
                           }
                         }
                       }
@@ -1556,135 +905,37 @@
           },
           "実": {
             "docs": {},
-            "行": {
+            "施": {
               "docs": {},
               "す": {
                 "docs": {},
                 "る": {
-                  "docs": {
-                    "exercises/level-05.html": {
-                      "ref": "exercises/level-05.html",
-                      "tf": 0.010526315789473684
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "ア": {
-          "docs": {},
-          "ー": {
-            "docs": {},
-            "キ": {
-              "docs": {},
-              "テ": {
-                "docs": {},
-                "ク": {
                   "docs": {},
-                  "チ": {
+                  "時": {
                     "docs": {},
-                    "ャ": {
+                    "間": {
                       "docs": {},
-                      "要": {
+                      "は": {
                         "docs": {},
-                        "件": {
-                          "docs": {
-                            "exercises/level-05.html": {
-                              "ref": "exercises/level-05.html",
-                              "tf": 0.005263157894736842
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "エ": {
-          "docs": {},
-          "ラ": {
-            "docs": {},
-            "ー": {
-              "docs": {
-                "exercises/level-05.html": {
-                  "ref": "exercises/level-05.html",
-                  "tf": 0.005263157894736842
-                }
-              },
-              "メ": {
-                "docs": {},
-                "ッ": {
-                  "docs": {},
-                  "セ": {
-                    "docs": {},
-                    "ー": {
-                      "docs": {},
-                      "ジ": {
-                        "docs": {
-                          "exercises/level-05.html": {
-                            "ref": "exercises/level-05.html",
-                            "tf": 0.015789473684210527
-                          }
-                        },
-                        "は": {
+                        "あ": {
                           "docs": {},
-                          "カ": {
+                          "り": {
                             "docs": {},
-                            "ス": {
+                            "ま": {
                               "docs": {},
-                              "タ": {
+                              "せ": {
                                 "docs": {},
-                                "ム": {
+                                "ん": {
                                   "docs": {},
-                                  "表": {
+                                  "の": {
                                     "docs": {},
-                                    "示": {
+                                    "で": {
                                       "docs": {},
-                                      "ラ": {
-                                        "docs": {},
-                                        "ベ": {
-                                          "docs": {},
-                                          "ル": {
-                                            "docs": {},
-                                            "に": {
-                                              "docs": {},
-                                              "定": {
-                                                "docs": {},
-                                                "義": {
-                                                  "docs": {},
-                                                  "し": {
-                                                    "docs": {},
-                                                    "て": {
-                                                      "docs": {},
-                                                      "く": {
-                                                        "docs": {},
-                                                        "だ": {
-                                                          "docs": {},
-                                                          "さ": {
-                                                            "docs": {},
-                                                            "い": {
-                                                              "docs": {},
-                                                              "。": {
-                                                                "docs": {
-                                                                  "exercises/level-05.html": {
-                                                                    "ref": "exercises/level-05.html",
-                                                                    "tf": 0.005263157894736842
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
+                                      "、": {
+                                        "docs": {
+                                          "./": {
+                                            "ref": "./",
+                                            "tf": 0.017543859649122806
                                           }
                                         }
                                       }
@@ -1695,171 +946,6 @@
                             }
                           }
                         }
-                      }
-                    }
-                  }
-                }
-              },
-              "表": {
-                "docs": {},
-                "示": {
-                  "docs": {},
-                  "場": {
-                    "docs": {},
-                    "所": {
-                      "docs": {
-                        "exercises/level-05.html": {
-                          "ref": "exercises/level-05.html",
-                          "tf": 0.005263157894736842
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "カ": {
-          "docs": {},
-          "ス": {
-            "docs": {},
-            "タ": {
-              "docs": {},
-              "ム": {
-                "docs": {},
-                "メ": {
-                  "docs": {},
-                  "タ": {
-                    "docs": {},
-                    "デ": {
-                      "docs": {},
-                      "ー": {
-                        "docs": {},
-                        "タ": {
-                          "docs": {},
-                          "レ": {
-                            "docs": {},
-                            "コ": {
-                              "docs": {},
-                              "ー": {
-                                "docs": {},
-                                "ド": {
-                                  "docs": {},
-                                  "名": {
-                                    "docs": {
-                                      "exercises/level-05.html": {
-                                        "ref": "exercises/level-05.html",
-                                        "tf": 0.010526315789473684
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "型": {
-                            "docs": {
-                              "exercises/level-05.html": {
-                                "ref": "exercises/level-05.html",
-                                "tf": 0.005263157894736842
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "表": {
-                  "docs": {},
-                  "示": {
-                    "docs": {},
-                    "ラ": {
-                      "docs": {},
-                      "ベ": {
-                        "docs": {},
-                        "ル": {
-                          "docs": {
-                            "exercises/level-05.html": {
-                              "ref": "exercises/level-05.html",
-                              "tf": 0.005263157894736842
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "テ": {
-            "docs": {},
-            "ゴ": {
-              "docs": {},
-              "リ": {
-                "docs": {
-                  "exercises/level-05.html": {
-                    "ref": "exercises/level-05.html",
-                    "tf": 0.005263157894736842
-                  }
-                }
-              }
-            }
-          }
-        },
-        "ク": {
-          "docs": {},
-          "ラ": {
-            "docs": {},
-            "ス": {
-              "docs": {
-                "exercises/level-05.html": {
-                  "ref": "exercises/level-05.html",
-                  "tf": 0.005263157894736842
-                }
-              },
-              "名": {
-                "docs": {
-                  "exercises/level-05.html": {
-                    "ref": "exercises/level-05.html",
-                    "tf": 0.010526315789473684
-                  }
-                }
-              }
-            }
-          }
-        },
-        "ケ": {
-          "docs": {},
-          "ー": {
-            "docs": {},
-            "ス": {
-              "docs": {
-                "exercises/level-05.html": {
-                  "ref": "exercises/level-05.html",
-                  "tf": 0.005263157894736842
-                }
-              }
-            }
-          }
-        },
-        "シ": {
-          "docs": {},
-          "ス": {
-            "docs": {},
-            "テ": {
-              "docs": {},
-              "ム": {
-                "docs": {},
-                "要": {
-                  "docs": {},
-                  "件": {
-                    "docs": {
-                      "exercises/level-05.html": {
-                        "ref": "exercises/level-05.html",
-                        "tf": 0.005263157894736842
                       }
                     }
                   }
@@ -1874,17 +960,68 @@
             "docs": {},
             "ト": {
               "docs": {},
-              "ク": {
+              "が": {
                 "docs": {},
-                "ラ": {
+                "し": {
                   "docs": {},
-                  "ス": {
+                  "や": {
                     "docs": {},
-                    "名": {
-                      "docs": {
-                        "exercises/level-05.html": {
-                          "ref": "exercises/level-05.html",
-                          "tf": 0.005263157894736842
+                    "す": {
+                      "docs": {},
+                      "く": {
+                        "docs": {},
+                        "て": {
+                          "docs": {},
+                          "、": {
+                            "docs": {},
+                            "将": {
+                              "docs": {},
+                              "来": {
+                                "docs": {},
+                                "の": {
+                                  "docs": {},
+                                  "変": {
+                                    "docs": {},
+                                    "更": {
+                                      "docs": {},
+                                      "に": {
+                                        "docs": {},
+                                        "強": {
+                                          "docs": {},
+                                          "い": {
+                                            "docs": {},
+                                            "、": {
+                                              "docs": {},
+                                              "一": {
+                                                "docs": {},
+                                                "歩": {
+                                                  "docs": {},
+                                                  "進": {
+                                                    "docs": {},
+                                                    "ん": {
+                                                      "docs": {},
+                                                      "だ": {
+                                                        "docs": {
+                                                          "./": {
+                                                            "ref": "./",
+                                                            "tf": 0.017543859649122806
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
                         }
                       }
                     }
@@ -1899,541 +1036,44 @@
           "リ": {
             "docs": {},
             "ガ": {
-              "docs": {
-                "exercises/level-05.html": {
-                  "ref": "exercises/level-05.html",
-                  "tf": 0.005263157894736842
-                }
-              },
-              "を": {
-                "docs": {},
-                "追": {
-                  "docs": {},
-                  "加": {
-                    "docs": {},
-                    "し": {
-                      "docs": {},
-                      "て": {
-                        "docs": {},
-                        "み": {
-                          "docs": {},
-                          "よ": {
-                            "docs": {},
-                            "う": {
-                              "docs": {
-                                "exercises/level-05.html": {
-                                  "ref": "exercises/level-05.html",
-                                  "tf": 0.005263157894736842
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "量": {
-                  "docs": {},
-                  "産": {
-                    "docs": {},
-                    "し": {
-                      "docs": {},
-                      "や": {
-                        "docs": {},
-                        "す": {
-                          "docs": {},
-                          "く": {
-                            "docs": {},
-                            "な": {
-                              "docs": {},
-                              "っ": {
-                                "docs": {},
-                                "て": {
-                                  "docs": {},
-                                  "い": {
-                                    "docs": {},
-                                    "ま": {
-                                      "docs": {},
-                                      "す": {
-                                        "docs": {},
-                                        "。": {
-                                          "docs": {
-                                            "exercises/level-05.html": {
-                                              "ref": "exercises/level-05.html",
-                                              "tf": 0.005263157894736842
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "名": {
-                "docs": {
-                  "exercises/level-05.html": {
-                    "ref": "exercises/level-05.html",
-                    "tf": 0.010526315789473684
-                  }
-                }
-              }
-            }
-          }
-        },
-        "ビ": {
-          "docs": {},
-          "ジ": {
-            "docs": {},
-            "ネ": {
-              "docs": {},
-              "ス": {
-                "docs": {},
-                "要": {
-                  "docs": {},
-                  "件": {
-                    "docs": {
-                      "exercises/level-05.html": {
-                        "ref": "exercises/level-05.html",
-                        "tf": 0.005263157894736842
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "フ": {
-          "docs": {},
-          "ィ": {
-            "docs": {},
-            "ー": {
-              "docs": {},
-              "ド": {
-                "docs": {},
-                "に": {
-                  "docs": {},
-                  "メ": {
-                    "docs": {},
-                    "ッ": {
-                      "docs": {},
-                      "セ": {
-                        "docs": {},
-                        "ー": {
-                          "docs": {},
-                          "ジ": {
-                            "docs": {},
-                            "が": {
-                              "docs": {},
-                              "自": {
-                                "docs": {},
-                                "動": {
-                                  "docs": {},
-                                  "投": {
-                                    "docs": {},
-                                    "稿": {
-                                      "docs": {},
-                                      "さ": {
-                                        "docs": {},
-                                        "れ": {
-                                          "docs": {},
-                                          "る": {
-                                            "docs": {},
-                                            "よ": {
-                                              "docs": {},
-                                              "う": {
-                                                "docs": {},
-                                                "に": {
-                                                  "docs": {},
-                                                  "し": {
-                                                    "docs": {},
-                                                    "て": {
-                                                      "docs": {},
-                                                      "く": {
-                                                        "docs": {},
-                                                        "だ": {
-                                                          "docs": {},
-                                                          "さ": {
-                                                            "docs": {},
-                                                            "い": {
-                                                              "docs": {},
-                                                              "。": {
-                                                                "docs": {
-                                                                  "exercises/level-05.html": {
-                                                                    "ref": "exercises/level-05.html",
-                                                                    "tf": 0.005263157894736842
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "投": {
-                  "docs": {},
-                  "稿": {
-                    "docs": {},
-                    "ア": {
-                      "docs": {},
-                      "ク": {
-                        "docs": {},
-                        "シ": {
-                          "docs": {},
-                          "ョ": {
-                            "docs": {},
-                            "ン": {
-                              "docs": {
-                                "exercises/level-05.html": {
-                                  "ref": "exercises/level-05.html",
-                                  "tf": 0.010526315789473684
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "ェ": {
-            "docs": {},
-            "ー": {
-              "docs": {},
-              "ズ": {
-                "docs": {
-                  "exercises/level-05.html": {
-                    "ref": "exercises/level-05.html",
-                    "tf": 0.005263157894736842
-                  }
-                },
-                "が": {
-                  "docs": {
-                    "exercises/level-05.html": {
-                      "ref": "exercises/level-05.html",
-                      "tf": 0.005263157894736842
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "メ": {
-          "docs": {},
-          "ソ": {
-            "docs": {},
-            "ッ": {
-              "docs": {},
-              "ド": {
-                "docs": {
-                  "exercises/level-05.html": {
-                    "ref": "exercises/level-05.html",
-                    "tf": 0.010526315789473684
-                  }
-                }
-              }
-            }
-          }
-        },
-        "値": {
-          "docs": {
-            "exercises/level-05.html": {
-              "ref": "exercises/level-05.html",
-              "tf": 0.010526315789473684
-            }
-          }
-        },
-        "備": {
-          "docs": {},
-          "考": {
-            "docs": {
-              "exercises/level-05.html": {
-                "ref": "exercises/level-05.html",
-                "tf": 0.06315789473684211
-              }
-            }
-          }
-        },
-        "優": {
-          "docs": {},
-          "先": {
-            "docs": {},
-            "度": {
-              "docs": {
-                "exercises/level-05.html": {
-                  "ref": "exercises/level-05.html",
-                  "tf": 0.005263157894736842
-                }
-              },
-              "が": {
-                "docs": {
-                  "exercises/level-05.html": {
-                    "ref": "exercises/level-05.html",
-                    "tf": 0.005263157894736842
-                  }
-                }
-              },
+              "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } },
               "の": {
                 "docs": {},
-                "高": {
+                "中": {
                   "docs": {},
-                  "い": {
+                  "級": {
                     "docs": {},
-                    "ケ": {
+                    "レ": {
                       "docs": {},
-                      "ー": {
+                      "ベ": {
                         "docs": {},
-                        "ス": {
+                        "ル": {
                           "docs": {},
-                          "が": {
+                          "の": {
                             "docs": {},
-                            "作": {
+                            "チ": {
                               "docs": {},
-                              "成": {
+                              "ュ": {
                                 "docs": {},
-                                "さ": {
+                                "ー": {
                                   "docs": {},
-                                  "れ": {
+                                  "ト": {
                                     "docs": {},
-                                    "ま": {
+                                    "リ": {
                                       "docs": {},
-                                      "し": {
+                                      "ア": {
                                         "docs": {},
-                                        "た": {
+                                        "ル": {
                                           "docs": {},
-                                          "！": {
-                                            "docs": {
-                                              "exercises/level-05.html": {
-                                                "ref": "exercises/level-05.html",
-                                                "tf": 0.010526315789473684
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "内": {
-          "docs": {},
-          "容": {
-            "docs": {
-              "exercises/level-05.html": {
-                "ref": "exercises/level-05.html",
-                "tf": 0.021052631578947368
-              }
-            }
-          }
-        },
-        "削": {
-          "docs": {},
-          "除": {
-            "docs": {},
-            "す": {
-              "docs": {},
-              "る": {
-                "docs": {},
-                "前": {
-                  "docs": {},
-                  "に": {
-                    "docs": {
-                      "exercises/level-05.html": {
-                        "ref": "exercises/level-05.html",
-                        "tf": 0.005263157894736842
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "防": {
-              "docs": {},
-              "止": {
-                "docs": {},
-                "ア": {
-                  "docs": {},
-                  "ク": {
-                    "docs": {},
-                    "シ": {
-                      "docs": {},
-                      "ョ": {
-                        "docs": {},
-                        "ン": {
-                          "docs": {
-                            "exercises/level-05.html": {
-                              "ref": "exercises/level-05.html",
-                              "tf": 0.010526315789473684
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "商": {
-          "docs": {},
-          "談": {
-            "docs": {
-              "exercises/level-05.html": {
-                "ref": "exercises/level-05.html",
-                "tf": 0.005263157894736842
-              }
-            }
-          }
-        },
-        "売": {
-          "docs": {},
-          "上": {
-            "docs": {},
-            "と": {
-              "docs": {},
-              "し": {
-                "docs": {},
-                "て": {
-                  "docs": {},
-                  "計": {
-                    "docs": {},
-                    "上": {
-                      "docs": {},
-                      "さ": {
-                        "docs": {},
-                        "れ": {
-                          "docs": {},
-                          "て": {
-                            "docs": {},
-                            "い": {
-                              "docs": {},
-                              "る": {
-                                "docs": {},
-                                "商": {
-                                  "docs": {},
-                                  "談": {
-                                    "docs": {},
-                                    "デ": {
-                                      "docs": {},
-                                      "ー": {
-                                        "docs": {},
-                                        "タ": {
-                                          "docs": {},
-                                          "を": {
+                                          "で": {
                                             "docs": {},
-                                            "誤": {
+                                            "す": {
                                               "docs": {},
-                                              "っ": {
-                                                "docs": {},
-                                                "て": {
-                                                  "docs": {},
-                                                  "削": {
-                                                    "docs": {},
-                                                    "除": {
-                                                      "docs": {},
-                                                      "で": {
-                                                        "docs": {},
-                                                        "き": {
-                                                          "docs": {},
-                                                          "な": {
-                                                            "docs": {},
-                                                            "い": {
-                                                              "docs": {},
-                                                              "よ": {
-                                                                "docs": {},
-                                                                "う": {
-                                                                  "docs": {},
-                                                                  "に": {
-                                                                    "docs": {},
-                                                                    "し": {
-                                                                      "docs": {},
-                                                                      "た": {
-                                                                        "docs": {},
-                                                                        "い": {
-                                                                          "docs": {},
-                                                                          "と": {
-                                                                            "docs": {},
-                                                                            "考": {
-                                                                              "docs": {},
-                                                                              "え": {
-                                                                                "docs": {},
-                                                                                "て": {
-                                                                                  "docs": {},
-                                                                                  "い": {
-                                                                                    "docs": {},
-                                                                                    "ま": {
-                                                                                      "docs": {},
-                                                                                      "す": {
-                                                                                        "docs": {},
-                                                                                        "。": {
-                                                                                          "docs": {
-                                                                                            "exercises/level-05.html": {
-                                                                                              "ref": "exercises/level-05.html",
-                                                                                              "tf": 0.005263157894736842
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
+                                              "。": {
+                                                "docs": {
+                                                  "./": {
+                                                    "ref": "./",
+                                                    "tf": 0.017543859649122806
                                                   }
                                                 }
                                               }
@@ -2456,116 +1096,43 @@
             }
           }
         },
-        "実": {
+        "中": {
           "docs": {},
-          "際": {
+          "級": {
+            "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+          }
+        },
+        "事": {
+          "docs": {},
+          "前": {
             "docs": {},
             "に": {
               "docs": {},
-              "体": {
+              "予": {
                 "docs": {},
-                "感": {
+                "習": {
                   "docs": {},
                   "し": {
                     "docs": {},
                     "て": {
                       "docs": {},
-                      "み": {
+                      "き": {
                         "docs": {},
-                        "ま": {
+                        "て": {
                           "docs": {},
-                          "し": {
+                          "く": {
                             "docs": {},
-                            "ょ": {
+                            "だ": {
                               "docs": {},
-                              "う": {
+                              "さ": {
                                 "docs": {},
-                                "。": {
-                                  "docs": {
-                                    "exercises/level-05.html": {
-                                      "ref": "exercises/level-05.html",
-                                      "tf": 0.005263157894736842
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "対": {
-          "docs": {},
-          "象": {
-            "docs": {},
-            "オ": {
-              "docs": {},
-              "ブ": {
-                "docs": {},
-                "ジ": {
-                  "docs": {},
-                  "ェ": {
-                    "docs": {},
-                    "ク": {
-                      "docs": {},
-                      "ト": {
-                        "docs": {
-                          "exercises/level-05.html": {
-                            "ref": "exercises/level-05.html",
-                            "tf": 0.010526315789473684
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "成": {
-          "docs": {},
-          "約": {
-            "docs": {},
-            "済": {
-              "docs": {},
-              "み": {
-                "docs": {},
-                "の": {
-                  "docs": {},
-                  "商": {
-                    "docs": {},
-                    "談": {
-                      "docs": {},
-                      "は": {
-                        "docs": {},
-                        "削": {
-                          "docs": {},
-                          "除": {
-                            "docs": {},
-                            "で": {
-                              "docs": {},
-                              "き": {
-                                "docs": {},
-                                "ま": {
+                                "い": {
                                   "docs": {},
-                                  "せ": {
-                                    "docs": {},
-                                    "ん": {
-                                      "docs": {},
-                                      "。": {
-                                        "docs": {
-                                          "exercises/level-05.html": {
-                                            "ref": "exercises/level-05.html",
-                                            "tf": 0.010526315789473684
-                                          }
-                                        }
+                                  "。": {
+                                    "docs": {
+                                      "./": {
+                                        "ref": "./",
+                                        "tf": 0.017543859649122806
                                       }
                                     }
                                   }
@@ -2576,87 +1143,124 @@
                         }
                       }
                     }
-                  },
-                  "場": {
+                  }
+                }
+              }
+            }
+          }
+        },
+        "初": {
+          "docs": {},
+          "級": {
+            "docs": {},
+            "者": {
+              "docs": {},
+              "向": {
+                "docs": {},
+                "け": {
+                  "docs": {},
+                  "コ": {
                     "docs": {},
-                    "合": {
+                    "ン": {
                       "docs": {},
-                      "、": {
+                      "テ": {
                         "docs": {},
-                        "エ": {
+                        "ン": {
                           "docs": {},
-                          "ラ": {
+                          "ツ": {
+                            "docs": {
+                              "./": { "ref": "./", "tf": 0.017543859649122806 }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "当": {
+          "docs": {},
+          "日": {
+            "docs": {},
+            "は": {
+              "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+            }
+          }
+        },
+        "申": {
+          "docs": {},
+          "込": {
+            "docs": {},
+            "サ": {
+              "docs": {},
+              "イ": {
+                "docs": {},
+                "ト": {
+                  "docs": {},
+                  ":": {
+                    "docs": {
+                      "./": { "ref": "./", "tf": 0.017543859649122806 }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "開": {
+          "docs": {},
+          "発": {
+            "docs": {},
+            "ツ": {
+              "docs": {},
+              "ー": {
+                "docs": {},
+                "ル": {
+                  "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } },
+                  "の": {
+                    "docs": {},
+                    "セ": {
+                      "docs": {},
+                      "ッ": {
+                        "docs": {},
+                        "ト": {
+                          "docs": {},
+                          "ア": {
                             "docs": {},
-                            "ー": {
+                            "ッ": {
                               "docs": {},
-                              "メ": {
+                              "プ": {
                                 "docs": {},
-                                "ッ": {
+                                "が": {
                                   "docs": {},
-                                  "セ": {
+                                  "終": {
                                     "docs": {},
-                                    "ー": {
+                                    "わ": {
                                       "docs": {},
-                                      "ジ": {
+                                      "っ": {
                                         "docs": {},
-                                        "を": {
+                                        "て": {
                                           "docs": {},
-                                          "表": {
+                                          "い": {
                                             "docs": {},
-                                            "示": {
+                                            "な": {
                                               "docs": {},
-                                              "し": {
+                                              "い": {
                                                 "docs": {},
-                                                "て": {
+                                                "か": {
                                                   "docs": {},
-                                                  "削": {
+                                                  "た": {
                                                     "docs": {},
-                                                    "除": {
+                                                    "は": {
                                                       "docs": {},
-                                                      "で": {
-                                                        "docs": {},
-                                                        "き": {
-                                                          "docs": {},
-                                                          "な": {
-                                                            "docs": {},
-                                                            "い": {
-                                                              "docs": {},
-                                                              "よ": {
-                                                                "docs": {},
-                                                                "う": {
-                                                                  "docs": {},
-                                                                  "に": {
-                                                                    "docs": {},
-                                                                    "し": {
-                                                                      "docs": {},
-                                                                      "て": {
-                                                                        "docs": {},
-                                                                        "く": {
-                                                                          "docs": {},
-                                                                          "だ": {
-                                                                            "docs": {},
-                                                                            "さ": {
-                                                                              "docs": {},
-                                                                              "い": {
-                                                                                "docs": {},
-                                                                                "。": {
-                                                                                  "docs": {
-                                                                                    "exercises/level-05.html": {
-                                                                                      "ref": "exercises/level-05.html",
-                                                                                      "tf": 0.005263157894736842
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
+                                                      "、": {
+                                                        "docs": {
+                                                          "./": {
+                                                            "ref": "./",
+                                                            "tf": 0.017543859649122806
                                                           }
                                                         }
                                                       }
@@ -2680,334 +1284,40 @@
                   }
                 }
               }
-            }
-          }
-        },
-        "投": {
-          "docs": {},
-          "稿": {
-            "docs": {},
-            "メ": {
-              "docs": {},
-              "ッ": {
-                "docs": {},
-                "セ": {
-                  "docs": {},
-                  "ー": {
-                    "docs": {},
-                    "ジ": {
-                      "docs": {
-                        "exercises/level-05.html": {
-                          "ref": "exercises/level-05.html",
-                          "tf": 0.010526315789473684
-                        }
-                      }
-                    }
-                  }
-                }
-              }
             },
-            "場": {
+            "手": {
               "docs": {},
-              "所": {
-                "docs": {
-                  "exercises/level-05.html": {
-                    "ref": "exercises/level-05.html",
-                    "tf": 0.005263157894736842
-                  }
-                }
-              }
-            }
-          }
-        },
-        "新": {
-          "docs": {},
-          "規": {
-            "docs": {},
-            "に": {
-              "docs": {
-                "exercises/level-05.html": {
-                  "ref": "exercises/level-05.html",
-                  "tf": 0.005263157894736842
-                }
-              }
-            },
-            "作": {
-              "docs": {},
-              "成": {
-                "docs": {},
-                "し": {
-                  "docs": {},
-                  "た": {
-                    "docs": {},
-                    "ケ": {
-                      "docs": {},
-                      "ー": {
-                        "docs": {},
-                        "ス": {
-                          "docs": {},
-                          "の": {
-                            "docs": {},
-                            "フ": {
-                              "docs": {},
-                              "ィ": {
-                                "docs": {},
-                                "ー": {
-                                  "docs": {},
-                                  "ド": {
-                                    "docs": {},
-                                    "欄": {
-                                      "docs": {
-                                        "exercises/level-05.html": {
-                                          "ref": "exercises/level-05.html",
-                                          "tf": 0.005263157894736842
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "後": {
-                      "docs": {},
-                      "に": {
-                        "docs": {
-                          "exercises/level-05.html": {
-                            "ref": "exercises/level-05.html",
-                            "tf": 0.005263157894736842
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "次": {
-          "docs": {},
-          "の": {
-            "docs": {},
-            "条": {
-              "docs": {},
-              "件": {
+              "法": {
                 "docs": {},
                 "を": {
                   "docs": {},
-                  "満": {
-                    "docs": {},
-                    "た": {
-                      "docs": {},
-                      "す": {
-                        "docs": {},
-                        "場": {
-                          "docs": {},
-                          "合": {
-                            "docs": {},
-                            ":": {
-                              "docs": {
-                                "exercises/level-05.html": {
-                                  "ref": "exercises/level-05.html",
-                                  "tf": 0.010526315789473684
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "用": {
-          "docs": {},
-          "途": {
-            "docs": {
-              "exercises/level-05.html": {
-                "ref": "exercises/level-05.html",
-                "tf": 0.005263157894736842
-              }
-            }
-          }
-        },
-        "表": {
-          "docs": {},
-          "示": {
-            "docs": {},
-            "ラ": {
-              "docs": {},
-              "ベ": {
-                "docs": {},
-                "ル": {
-                  "docs": {
-                    "exercises/level-05.html": {
-                      "ref": "exercises/level-05.html",
-                      "tf": 0.021052631578947368
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "複": {
-          "docs": {},
-          "数": {
-            "docs": {},
-            "件": {
-              "docs": {},
-              "レ": {
-                "docs": {},
-                "コ": {
-                  "docs": {},
-                  "ー": {
-                    "docs": {},
-                    "ド": {
-                      "docs": {},
-                      "の": {
-                        "docs": {},
-                        "一": {
-                          "docs": {},
-                          "括": {
-                            "docs": {},
-                            "処": {
-                              "docs": {},
-                              "理": {
-                                "docs": {
-                                  "exercises/level-05.html": {
-                                    "ref": "exercises/level-05.html",
-                                    "tf": 0.010526315789473684
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "観": {
-          "docs": {},
-          "点": {
-            "docs": {
-              "exercises/level-05.html": {
-                "ref": "exercises/level-05.html",
-                "tf": 0.021052631578947368
-              }
-            }
-          }
-        },
-        "解": {
-          "docs": {},
-          "答": {
-            "docs": {
-              "exercises/level-05.html": {
-                "ref": "exercises/level-05.html",
-                "tf": 0.005263157894736842
-              }
-            }
-          }
-        },
-        "起": {
-          "docs": {},
-          "動": {
-            "docs": {},
-            "条": {
-              "docs": {},
-              "件": {
-                "docs": {
-                  "exercises/level-05.html": {
-                    "ref": "exercises/level-05.html",
-                    "tf": 0.010526315789473684
-                  }
-                }
-              }
-            }
-          }
-        },
-        "重": {
-          "docs": {},
-          "要": {
-            "docs": {},
-            "度": {
-              "docs": {},
-              "が": {
-                "docs": {},
-                "高": {
-                  "docs": {},
                   "い": {
                     "docs": {},
-                    "ケ": {
+                    "っ": {
                       "docs": {},
-                      "ー": {
+                      "し": {
                         "docs": {},
-                        "ス": {
+                        "ょ": {
                           "docs": {},
-                          "が": {
+                          "に": {
                             "docs": {},
-                            "新": {
+                            "学": {
                               "docs": {},
-                              "規": {
+                              "び": {
                                 "docs": {},
-                                "作": {
+                                "ま": {
                                   "docs": {},
-                                  "成": {
+                                  "し": {
                                     "docs": {},
-                                    "さ": {
+                                    "ょ": {
                                       "docs": {},
-                                      "れ": {
+                                      "う": {
                                         "docs": {},
-                                        "た": {
-                                          "docs": {},
-                                          "場": {
-                                            "docs": {},
-                                            "合": {
-                                              "docs": {},
-                                              "に": {
-                                                "docs": {},
-                                                "、": {
-                                                  "docs": {},
-                                                  "c": {
-                                                    "docs": {},
-                                                    "h": {
-                                                      "docs": {},
-                                                      "a": {
-                                                        "docs": {},
-                                                        "t": {
-                                                          "docs": {},
-                                                          "t": {
-                                                            "docs": {},
-                                                            "e": {
-                                                              "docs": {},
-                                                              "r": {
-                                                                "docs": {
-                                                                  "exercises/level-05.html": {
-                                                                    "ref": "exercises/level-05.html",
-                                                                    "tf": 0.005263157894736842
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
+                                        "。": {
+                                          "docs": {
+                                            "./": {
+                                              "ref": "./",
+                                              "tf": 0.017543859649122806
                                             }
                                           }
                                         }
@@ -3024,145 +1334,93 @@
                   }
                 }
               }
-            }
-          }
-        },
-        "項": {
-          "docs": {},
-          "目": {
-            "docs": {},
-            "名": {
-              "docs": {
-                "exercises/level-05.html": {
-                  "ref": "exercises/level-05.html",
-                  "tf": 0.021052631578947368
+            },
+            "者": {
+              "docs": {},
+              "コ": {
+                "docs": {},
+                "ン": {
+                  "docs": {},
+                  "ソ": {
+                    "docs": {},
+                    "ー": {
+                      "docs": {},
+                      "ル": {
+                        "docs": {
+                          "./": { "ref": "./", "tf": 0.017543859649122806 }
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
           }
         }
       },
-      "length": 109
+      "length": 51
     },
     "corpusTokens": [
-      "(1)",
-      "(2)",
-      "1.",
-      "5",
-      ":",
-      "activ",
+      "2011",
+      "2019",
+      "2020",
+      "@takahito0508",
+      "accentur",
+      "acknowledg",
+      "advanc",
       "apex",
-      "befor",
-      "case",
-      "casetestutil",
-      "casetrigg",
-      "casetrigger.trigg",
-      "casetriggerservic",
-      "casetriggerservicetest",
-      "casetriggerservicetest.cl",
-      "casetriggertest",
-      "casetriggertest.cl",
-      "class",
-      "close",
-      "closed_won_cannot_be_delet",
-      "delet",
-      "error",
-      "fat_triggerobserv",
+      "author",
+      "blog",
+      "champion,",
+      "einstein",
+      "event",
       "flexibl",
-      "high",
-      "high_case_is_cr",
-      "id",
-      "info",
-      "insert",
-      "lv.",
-      "opportun",
-      "opportunitytestutil",
-      "opportunitytrigg",
-      "opportunitytrigger.trigg",
-      "opportunitytriggertest",
-      "opportunitytriggertest.cl",
-      "opportunitytriggervalid",
-      "opportunitytriggervalidation.cl",
-      "opportunitytriggervalidationtest",
-      "postfeeditem",
-      "preventdelet",
-      "prioriti",
-      "sobject",
-      "stage",
-      "stagenam",
+      "framework",
+      "https://accentur",
+      "japan",
+      "lifestyl",
+      "log",
+      "ltd,",
+      "miyamoto",
+      "mvp,",
+      "online＃01",
+      "platform",
+      "salesforc",
+      "sfdc",
+      "takahito",
+      "tech",
+      "technology.connpass.com/event/185277/",
+      "top",
       "trigger",
-      "won",
-      "ye",
-      "こちら",
-      "すべてのテストデータはテストクラス内で作成してください。",
-      "である",
-      "で利用するテストメソッドを準備するクラス",
-      "に対するテストクラス",
-      "また、重要なケースが起票された場合に見逃しにくくしたいと考えています。",
-      "を利用してください。",
-      "を利用することで、apex",
-      "を実行する",
-      "アーキテクチャ要件",
-      "エラー",
-      "エラーメッセージ",
-      "エラーメッセージはカスタム表示ラベルに定義してください。",
-      "エラー表示場所",
-      "カスタムメタデータレコード名",
-      "カスタムメタデータ型",
-      "カスタム表示ラベル",
-      "カテゴリ",
-      "クラス",
-      "クラス名",
-      "ケース",
-      "システム要件",
-      "テストクラス名",
+      "up",
+      "warm",
+      "wednesday",
+      "からスタートします。",
+      "へご参加いただくみなさまへ",
+      "や",
+      "をご利用ください。",
+      "を実施する時間はありませんので、",
+      "テストがしやすくて、将来の変更に強い、一歩進んだ",
       "トリガ",
-      "トリガを追加してみよう",
-      "トリガを量産しやすくなっています。",
-      "トリガ名",
-      "ビジネス要件",
-      "フィードにメッセージが自動投稿されるようにしてください。",
-      "フィード投稿アクション",
-      "フェーズ",
-      "フェーズが",
-      "メソッド",
-      "値",
-      "備考",
-      "優先度",
-      "優先度が",
-      "優先度の高いケースが作成されました！",
-      "内容",
-      "削除する前に",
-      "削除防止アクション",
-      "商談",
-      "売上として計上されている商談データを誤って削除できないようにしたいと考えています。",
-      "実際に体感してみましょう。",
-      "対象オブジェクト",
-      "成約済みの商談は削除できません。",
-      "成約済みの場合、エラーメッセージを表示して削除できないようにしてください。",
-      "投稿メッセージ",
-      "投稿場所",
-      "新規に",
-      "新規作成したケースのフィード欄",
-      "新規作成した後に",
-      "次の条件を満たす場合:",
-      "用途",
-      "表示ラベル",
-      "複数件レコードの一括処理",
-      "観点",
-      "解答",
-      "起動条件",
-      "重要度が高いケースが新規作成された場合に、chatter",
-      "項目名"
+      "トリガの中級レベルのチュートリアルです。",
+      "中級",
+      "事前に予習してきてください。",
+      "初級者向けコンテンツ",
+      "当日は",
+      "申込サイト:",
+      "開発ツール",
+      "開発ツールのセットアップが終わっていないかたは、",
+      "開発手法をいっしょに学びましょう。",
+      "開発者コンソール"
     ],
     "pipeline": ["stopWordFilter", "stemmer"]
   },
   "store": {
-    "exercises/level-05.html": {
-      "url": "exercises/level-05.html",
-      "title": "Lv. 5",
+    "./": {
+      "url": "./",
+      "title": "TOP",
       "keywords": "",
-      "body": "Lv. 5 : 新規に Apex トリガを追加してみよう\nFlexible Apex Trigger を利用することで、Apex トリガを量産しやすくなっています。\n実際に体感してみましょう。\nビジネス要件\n売上として計上されている商談データを誤って削除できないようにしたいと考えています。\n成約済みの場合、エラーメッセージを表示して削除できないようにしてください。\nまた、重要なケースが起票された場合に見逃しにくくしたいと考えています。\n重要度が高いケースが新規作成された場合に、Chatter フィードにメッセージが自動投稿されるようにしてください。\nアーキテクチャ要件\n\nFlexible Apex Trigger を利用してください。\nエラーメッセージはカスタム表示ラベルに定義してください。\nすべてのテストデータはテストクラス内で作成してください。\n\nシステム要件\nApex トリガ\n\n\n\n観点\n内容\n備考\n\n\n\n\nApex トリガ名\nOpportunityTrigger\n-\n\n\n対象オブジェクト\n商談\n-\n\n\n複数件レコードの一括処理\nYes\n-\n\n\n\n\n\n\n観点\n内容\n備考\n\n\n\n\nApex トリガ名\nCaseTrigger\n-\n\n\n対象オブジェクト\nケース\n-\n\n\n複数件レコードの一括処理\nYes\n-\n\n\n\nApex クラス\n\n\n\n観点\n内容\n備考\n\n\n\n\nApex クラス名\nOpportunityTriggerValidation\n-\n\n\nメソッド (1)\npreventDeletion\n(1)-1. 削除防止アクション\n\n\n\n\n削除する前に preventDeletion を実行する\n\n\n\n\n観点\n内容\n備考\n\n\n\n\nApex クラス名\nCaseTriggerService\n-\n\n\nメソッド (2)\npostFeedItems\n(2)-1. フィード投稿アクション\n\n\n\n\n新規作成した後に postFeedItems を実行する\n\n\n\n\nテストクラス名\n用途\n備考\n\n\n\n\nOpportunityTriggerValidationTest\nOpportunityTriggerValidation.cls に対するテストクラス\n-\n\n\nOpportunityTestUtils\nOpportunityTriggerTest.cls で利用するテストメソッドを準備するクラス\n-\n\n\nOpportunityTriggerTest\nOpportunityTrigger.trigger に対するテストクラス\n-\n\n\nCaseTriggerServiceTest\nCaseTriggerServiceTest.cls に対するテストクラス\n-\n\n\nCaseTestUtils\nCaseTriggerTest.cls で利用するテストメソッドを準備するクラス\n-\n\n\nCaseTriggerTest\nCaseTrigger.trigger に対するテストクラス\n-\n\n\n\n(1)-1. 削除防止アクション\n起動条件\n次の条件を満たす場合:\n\nフェーズが Closed Won である\n\n\n\n\n表示ラベル\n項目名\n備考\n\n\n\n\nフェーズ\nStageName\n-\n\n\n\nエラーメッセージ\n\n\n\nエラーメッセージ\nエラー表示場所\n備考\n\n\n\n\n成約済みの商談は削除できません。\nStage\n-\n\n\n\n(2)-1. フィード投稿アクション\n起動条件\n次の条件を満たす場合:\n\n優先度が High である\n\n\n\n\n表示ラベル\n項目名\n備考\n\n\n\n\n優先度\nPriority\n-\n\n\n\n投稿メッセージ\n\n\n\n投稿メッセージ\n投稿場所\n備考\n\n\n\n\n優先度の高いケースが作成されました！\n新規作成したケースのフィード欄\n-\n\n\n\nカスタム表示ラベル\n\n\n\nカテゴリ\nエラー ID\nエラーメッセージ\n備考\n\n\n\n\nERROR\nCLOSED_WON_CANNOT_BE_DELETED\n成約済みの商談は削除できません。\n-\n\n\nINFO\nHIGH_CASE_IS_CREATED\n優先度の高いケースが作成されました！\n-\n\n\n\nカスタムメタデータ型 : FAT_TriggerObserver\n\n\n\n項目名\n値\n備考\n\n\n\n\n表示ラベル\nOpportunityTriggerValidation\n-\n\n\nカスタムメタデータレコード名\nOpportunityTriggerValidation\n-\n\n\nApex Class\nOpportunityTriggerValidation\n-\n\n\nsObject\nOpportunity\n-\n\n\nActive\nYes\n-\n\n\nBefore Delete\nYes\n-\n\n\n\n\n\n\n項目名\n値\n備考\n\n\n\n\n表示ラベル\nCaseTriggerService\n-\n\n\nカスタムメタデータレコード名\nCaseTriggerService\n-\n\n\nApex Class\nCaseTriggerService\n-\n\n\nsObject\nCase\n-\n\n\nActive\nYes\n-\n\n\nAfter Insert\nYes\n-\n\n\n\n解答\n\nこちら\n\n"
+      "body": "Apex トリガ 中級\nApex トリガの中級レベルのチュートリアルです。\nテストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。\n\n\nSalesforce Wednesday Online＃01 へご参加いただくみなさまへ\n\n申込サイト: https://accenture-technology.connpass.com/event/185277/\n\n当日は Warm-up からスタートします。\n初級者向けコンテンツ や 開発ツール を実施する時間はありませんので、\n事前に予習してきてください。\n開発ツールのセットアップが終わっていないかたは、 開発者コンソール をご利用ください。\n\nAcknowledgment\n\nflexible-apex-trigger\nSFDC trigger framework\nAdvanced Logging with Platform Events\n\nAuthor\nTakahito Miyamoto @takahito0508\n\nAccenture Japan Ltd, 2011-\nSalesforce Einstein Champion, 2019-\nSalesforce MVP, 2020-\nTech Blog\nLifestyle Blog\n\n"
     }
   }
 }
