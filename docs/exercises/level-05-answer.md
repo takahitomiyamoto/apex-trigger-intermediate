@@ -97,12 +97,28 @@ sfdx force:source:push -u demo
 </CustomLabels>
 ```
 
+2-2. コードをフォーマットします。
+
+```sh
+yarn prettier
+```
+
+2-3. スクラッチ組織へプッシュします。
+
+```sh
+sfdx force:source:push -u demo
+```
+
 ---
 
 3-1. Apex クラスを作成します。
 
 ```sh
 sfdx force:apex:class:create -d force-app/main/default/classes -n OpportunityTriggerValidation -t DefaultApexClass
+```
+
+```sh
+sfdx force:apex:class:create -d force-app/main/default/classes -n CaseTriggerService -t DefaultApexClass
 ```
 
 ##### OpportunityTriggerValidation.cls
@@ -164,10 +180,6 @@ public with sharing class OpportunityTriggerValidation implements FAT_ITriggerOb
   public void onAfterUndelete(FAT_CommonTriggerHandler handler) {
   }
 }
-```
-
-```sh
-sfdx force:apex:class:create -d force-app/main/default/classes -n CaseTriggerService -t DefaultApexClass
 ```
 
 ##### CaseTriggerService.cls
@@ -372,6 +384,26 @@ sfdx force:source:push -u demo
 sfdx force:apex:class:create -d force-app/test/default/classes -n OpportunityTriggerValidationTest -t ApexUnitTest
 ```
 
+```sh
+sfdx force:apex:class:create -d force-app/test/default/classes -n OpportunityTestUtils -t ApexUnitTest
+```
+
+```sh
+sfdx force:apex:class:create -d force-app/test/default/classes -n OpportunityTriggerTest -t ApexUnitTest
+```
+
+```sh
+sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTriggerServiceTest -t ApexUnitTest
+```
+
+```sh
+sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTestUtils -t ApexUnitTest
+```
+
+```sh
+sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTriggerTest -t ApexUnitTest
+```
+
 ##### OpportunityTriggerValidationTest.cls
 
 ```java
@@ -479,10 +511,6 @@ private class OpportunityTriggerValidationTest {
 }
 ```
 
-```sh
-sfdx force:apex:class:create -d force-app/test/default/classes -n OpportunityTestUtils -t ApexUnitTest
-```
-
 ##### OpportunityTestUtils.cls
 
 ```java
@@ -531,10 +559,6 @@ public with sharing class OpportunityTestUtils {
 }
 ```
 
-```sh
-sfdx force:apex:class:create -d force-app/test/default/classes -n OpportunityTriggerTest -t ApexUnitTest
-```
-
 ##### OpportunityTriggerTest.cls
 
 ```java
@@ -557,10 +581,6 @@ private class OpportunityTriggerTest {
     System.assertNotEquals(0, opportunities.size(), 'invokeDelete');
   }
 }
-```
-
-```sh
-sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTriggerServiceTest -t ApexUnitTest
 ```
 
 ##### CaseTriggerServiceTest.cls
@@ -657,10 +677,6 @@ private class CaseTriggerServiceTest {
 }
 ```
 
-```sh
-sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTestUtils -t ApexUnitTest
-```
-
 ##### CaseTestUtils.cls
 
 ```java
@@ -706,10 +722,6 @@ public with sharing class CaseTestUtils {
 }
 ```
 
-```sh
-sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTriggerTest -t ApexUnitTest
-```
-
 ##### CaseTriggerTest.cls
 
 ```java
@@ -745,3 +757,54 @@ yarn prettier
 ```sh
 sfdx force:source:push -u demo
 ```
+
+5-4. Apex テストを実行して現在のコードカバー率を確認します。
+
+```sh
+export SFDX_IMPROVED_CODE_COVERAGE="true"
+
+sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
+```
+
+```sh
+=== Apex Code Coverage
+ID                  NAME                           % COVERED  UNCOVERED LINES
+──────────────────  ─────────────────────────────  ─────────  ───────────────
+01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
+01p0l0000027mN7AAI  AccountTriggerService          100%
+01p0l0000027mMpAAI  FAT_CommonLogger               100%
+01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
+01p0l0000027mMqAAI  FAT_CommonLoggerConstants      100%
+01p0l0000027mMrAAI  FAT_CommonLoggerHelper         100%
+01p0l0000027mMvAAI  FAT_CommonTriggerHandler       100%
+01p0l0000027mN3AAI  FAT_LoggerEventTriggerService  100%
+01p0l0000027mNAAAY  AccountTriggerValidation       100%
+01p0l0000027mMnAAI  FAT_CommonError                100%
+01q0l000000HcL5AAK  AccountTrigger                 100%
+01p0l0000027mN0AAI  FAT_CommonUtils                100%
+01q0l000000HcL0AAK  FAT_LoggerEventTrigger         100%
+01p0l0000027ppJAAQ  CaseTriggerService             100%
+01q0l000000HctXAAS  CaseTrigger                    100%
+01p0l0000027ppLAAQ  OpportunityTriggerValidation   100%
+01q0l000000HctYAAS  OpportunityTrigger             100%
+
+=== Test Summary
+NAME                 VALUE
+───────────────────  ───────────────────────────────────────────────────────────
+Outcome              Passed
+Tests Ran            85
+Passing              85
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Run Coverage    100%
+Org Wide Coverage    100%
+```
+
+コードカバー率は 100%になっています！
+
+動作確認してみましょう。商談画面を開いて、想定通りの挙動かどうかを確認しましょう。
+また、ケース画面を開いて、想定通りの挙動かどうかを確認しましょう。
+
+... いかがでしたか？
