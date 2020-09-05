@@ -207,6 +207,8 @@ yarn prettier
 sfdx force:source:push -u demo
 ```
 
+---
+
 2-1. カスタムメタデータ型にレコードを追加するために、スクラッチ組織を開きます。
 
 ```sh

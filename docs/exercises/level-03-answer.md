@@ -285,6 +285,8 @@ Test Run Coverage    97%
 Org Wide Coverage    96%
 ```
 
+---
+
 2-1. AccountTrigger.trigger のコードカバー率を向上させるために起動条件を追加します。
 安心してください、カスタムメタデータ型で制御しているため実際の動作には影響ありません。
 

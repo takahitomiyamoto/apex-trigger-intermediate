@@ -132,6 +132,8 @@ sfdx force:source:push -u demo
 
 ![customMetadata](../images/level-04-answer-01.png)
 
+---
+
 2-1. カスタム表示ラベルにレコードを追加するために、スクラッチ組織を開きます。
 
 ```sh
@@ -200,6 +202,8 @@ sfdx force:source:push -u demo
 ```
 
 ![customMetadata](../images/level-04-answer-04.png)
+
+---
 
 3-1. `AccountTriggerValidation.cls` を作成します。
 
@@ -381,6 +385,8 @@ yarn prettier
 ```sh
 sfdx force:source:push -u demo
 ```
+
+---
 
 4-1. Apex テストを実行して現在のコードカバー率を確認します。
 
@@ -615,6 +621,8 @@ Fail Rate            0%
 Test Run Coverage    99%
 Org Wide Coverage    99%
 ```
+
+---
 
 5-1. `AccountTestUtils.cls` に `createAbnormalAccounts` を追加します。
 
