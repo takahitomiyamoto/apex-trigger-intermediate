@@ -16,15 +16,15 @@
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "49.0",
   "packageAliases": {
-    "flexible-apex-trigger@1.0.3.0": "04t2x000003ul4xAAA"
+    "flexible-apex-trigger@1.0.4.0": "04t2x000003uv9jAAA"
   }
 }
 ```
 
-1-2. `flexible-apex-trigger@1.0.3.0` をインストールします。
+1-2. `flexible-apex-trigger@1.0.4.0` をインストールします。
 
 ```sh
-sfdx force:package:install -p flexible-apex-trigger@1.0.3.0 -s AllUsers -u demo
+sfdx force:package:install -p flexible-apex-trigger@1.0.4.0 -s AllUsers -u demo
 sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
 ```
 
