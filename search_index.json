@@ -61,12 +61,58 @@
           "開発ツールのセットアップが終わっていないかたは、",
           "開発手法をいっしょに学びましょう。",
           "開発者コンソール"
+        ],
+        "exercises/level-05-answer.html": [
+          "\"befor",
+          "1",
+          "1:",
+          "2",
+          "3",
+          "5",
+          "apextrigg",
+          "app/main/default/trigg",
+          "case",
+          "casetrigg",
+          "d",
+          "delete,aft",
+          "e",
+          "forc",
+          "force:apex:trigger:cr",
+          "insert,aft",
+          "insert,befor",
+          "lv.",
+          "n",
+          "opportun",
+          "opportunitytrigg",
+          "s",
+          "sfdx",
+          "t",
+          "undelete\"",
+          "update,aft",
+          "update,befor",
+          "の解答"
         ]
       },
-      "length": 1
+      "length": 2
     },
     "tokenStore": {
       "root": {
+        "1": {
+          "docs": {
+            "exercises/level-05-answer.html": {
+              "ref": "exercises/level-05-answer.html",
+              "tf": 0.02040816326530612
+            }
+          },
+          ":": {
+            "docs": {
+              "exercises/level-05-answer.html": {
+                "ref": "exercises/level-05-answer.html",
+                "tf": 0.061224489795918366
+              }
+            }
+          }
+        },
         "2": {
           "0": {
             "1": {
@@ -86,7 +132,28 @@
             },
             "docs": {}
           },
-          "docs": {}
+          "docs": {
+            "exercises/level-05-answer.html": {
+              "ref": "exercises/level-05-answer.html",
+              "tf": 0.02040816326530612
+            }
+          }
+        },
+        "3": {
+          "docs": {
+            "exercises/level-05-answer.html": {
+              "ref": "exercises/level-05-answer.html",
+              "tf": 0.02040816326530612
+            }
+          }
+        },
+        "5": {
+          "docs": {
+            "exercises/level-05-answer.html": {
+              "ref": "exercises/level-05-answer.html",
+              "tf": 3.353741496598639
+            }
+          }
         },
         "docs": {},
         "@": {
@@ -206,7 +273,92 @@
             "e": {
               "docs": {},
               "x": {
-                "docs": { "./": { "ref": "./", "tf": 0.07017543859649122 } }
+                "docs": { "./": { "ref": "./", "tf": 0.07017543859649122 } },
+                "t": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "g": {
+                        "docs": {},
+                        "g": {
+                          "docs": {
+                            "exercises/level-05-answer.html": {
+                              "ref": "exercises/level-05-answer.html",
+                              "tf": 0.04081632653061224
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "p": {
+              "docs": {},
+              "/": {
+                "docs": {},
+                "m": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "/": {
+                          "docs": {},
+                          "d": {
+                            "docs": {},
+                            "e": {
+                              "docs": {},
+                              "f": {
+                                "docs": {},
+                                "a": {
+                                  "docs": {},
+                                  "u": {
+                                    "docs": {},
+                                    "l": {
+                                      "docs": {},
+                                      "t": {
+                                        "docs": {},
+                                        "/": {
+                                          "docs": {},
+                                          "t": {
+                                            "docs": {},
+                                            "r": {
+                                              "docs": {},
+                                              "i": {
+                                                "docs": {},
+                                                "g": {
+                                                  "docs": {},
+                                                  "g": {
+                                                    "docs": {
+                                                      "exercises/level-05-answer.html": {
+                                                        "ref": "exercises/level-05-answer.html",
+                                                        "tf": 0.04081632653061224
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           },
@@ -267,10 +419,49 @@
                 }
               }
             }
+          },
+          "a": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "exercises/level-05-answer.html": {
+                    "ref": "exercises/level-05-answer.html",
+                    "tf": 0.02040816326530612
+                  }
+                },
+                "t": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "g": {
+                        "docs": {},
+                        "g": {
+                          "docs": {
+                            "exercises/level-05-answer.html": {
+                              "ref": "exercises/level-05-answer.html",
+                              "tf": 0.02040816326530612
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "e": {
-          "docs": {},
+          "docs": {
+            "exercises/level-05-answer.html": {
+              "ref": "exercises/level-05-answer.html",
+              "tf": 0.04081632653061224
+            }
+          },
           "i": {
             "docs": {},
             "n": {
@@ -346,6 +537,76 @@
                         "k": {
                           "docs": {
                             "./": { "ref": "./", "tf": 0.017543859649122806 }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "c": {
+                "docs": {
+                  "exercises/level-05-answer.html": {
+                    "ref": "exercises/level-05-answer.html",
+                    "tf": 0.04081632653061224
+                  }
+                },
+                "e": {
+                  "docs": {},
+                  ":": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "p": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "x": {
+                            "docs": {},
+                            ":": {
+                              "docs": {},
+                              "t": {
+                                "docs": {},
+                                "r": {
+                                  "docs": {},
+                                  "i": {
+                                    "docs": {},
+                                    "g": {
+                                      "docs": {},
+                                      "g": {
+                                        "docs": {},
+                                        "e": {
+                                          "docs": {},
+                                          "r": {
+                                            "docs": {},
+                                            ":": {
+                                              "docs": {},
+                                              "c": {
+                                                "docs": {},
+                                                "r": {
+                                                  "docs": {
+                                                    "exercises/level-05-answer.html": {
+                                                      "ref": "exercises/level-05-answer.html",
+                                                      "tf": 0.04081632653061224
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           }
                         }
                       }
@@ -463,6 +724,17 @@
                 "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
               }
             }
+          },
+          "v": {
+            "docs": {},
+            ".": {
+              "docs": {
+                "exercises/level-05-answer.html": {
+                  "ref": "exercises/level-05-answer.html",
+                  "tf": 3.353741496598639
+                }
+              }
+            }
           }
         },
         "m": {
@@ -527,6 +799,61 @@
                 }
               }
             }
+          },
+          "p": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    "u": {
+                      "docs": {},
+                      "n": {
+                        "docs": {
+                          "exercises/level-05-answer.html": {
+                            "ref": "exercises/level-05-answer.html",
+                            "tf": 0.02040816326530612
+                          }
+                        },
+                        "i": {
+                          "docs": {},
+                          "t": {
+                            "docs": {},
+                            "y": {
+                              "docs": {},
+                              "t": {
+                                "docs": {},
+                                "r": {
+                                  "docs": {},
+                                  "i": {
+                                    "docs": {},
+                                    "g": {
+                                      "docs": {},
+                                      "g": {
+                                        "docs": {
+                                          "exercises/level-05-answer.html": {
+                                            "ref": "exercises/level-05-answer.html",
+                                            "tf": 0.02040816326530612
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "p": {
@@ -556,7 +883,12 @@
           }
         },
         "s": {
-          "docs": {},
+          "docs": {
+            "exercises/level-05-answer.html": {
+              "ref": "exercises/level-05-answer.html",
+              "tf": 0.04081632653061224
+            }
+          },
           "a": {
             "docs": {},
             "l": {
@@ -589,12 +921,25 @@
               "docs": {},
               "c": {
                 "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+              },
+              "x": {
+                "docs": {
+                  "exercises/level-05-answer.html": {
+                    "ref": "exercises/level-05-answer.html",
+                    "tf": 0.04081632653061224
+                  }
+                }
               }
             }
           }
         },
         "t": {
-          "docs": {},
+          "docs": {
+            "exercises/level-05-answer.html": {
+              "ref": "exercises/level-05-answer.html",
+              "tf": 0.04081632653061224
+            }
+          },
           "a": {
             "docs": {},
             "k": {
@@ -758,7 +1103,87 @@
         },
         "u": {
           "docs": {},
-          "p": { "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } } }
+          "p": {
+            "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } },
+            "d": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    ",": {
+                      "docs": {},
+                      "a": {
+                        "docs": {},
+                        "f": {
+                          "docs": {},
+                          "t": {
+                            "docs": {
+                              "exercises/level-05-answer.html": {
+                                "ref": "exercises/level-05-answer.html",
+                                "tf": 0.04081632653061224
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "b": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "f": {
+                            "docs": {},
+                            "o": {
+                              "docs": {},
+                              "r": {
+                                "docs": {
+                                  "exercises/level-05-answer.html": {
+                                    "ref": "exercises/level-05-answer.html",
+                                    "tf": 0.04081632653061224
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "n": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "l": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "t": {
+                      "docs": {},
+                      "e": {
+                        "docs": {},
+                        "\"": {
+                          "docs": {
+                            "exercises/level-05-answer.html": {
+                              "ref": "exercises/level-05-answer.html",
+                              "tf": 0.04081632653061224
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         },
         "w": {
           "docs": {},
@@ -1356,46 +1781,214 @@
               }
             }
           }
+        },
+        "\"": {
+          "docs": {},
+          "b": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "f": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "exercises/level-05-answer.html": {
+                        "ref": "exercises/level-05-answer.html",
+                        "tf": 0.04081632653061224
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "d": {
+          "docs": {
+            "exercises/level-05-answer.html": {
+              "ref": "exercises/level-05-answer.html",
+              "tf": 0.04081632653061224
+            }
+          },
+          "e": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    ",": {
+                      "docs": {},
+                      "a": {
+                        "docs": {},
+                        "f": {
+                          "docs": {},
+                          "t": {
+                            "docs": {
+                              "exercises/level-05-answer.html": {
+                                "ref": "exercises/level-05-answer.html",
+                                "tf": 0.08163265306122448
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "i": {
+          "docs": {},
+          "n": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    ",": {
+                      "docs": {},
+                      "a": {
+                        "docs": {},
+                        "f": {
+                          "docs": {},
+                          "t": {
+                            "docs": {
+                              "exercises/level-05-answer.html": {
+                                "ref": "exercises/level-05-answer.html",
+                                "tf": 0.04081632653061224
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "b": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "f": {
+                            "docs": {},
+                            "o": {
+                              "docs": {},
+                              "r": {
+                                "docs": {
+                                  "exercises/level-05-answer.html": {
+                                    "ref": "exercises/level-05-answer.html",
+                                    "tf": 0.04081632653061224
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "n": {
+          "docs": {
+            "exercises/level-05-answer.html": {
+              "ref": "exercises/level-05-answer.html",
+              "tf": 0.04081632653061224
+            }
+          }
+        },
+        "の": {
+          "docs": {},
+          "解": {
+            "docs": {},
+            "答": {
+              "docs": {
+                "exercises/level-05-answer.html": {
+                  "ref": "exercises/level-05-answer.html",
+                  "tf": 3.353741496598639
+                }
+              }
+            }
+          }
         }
       },
-      "length": 51
+      "length": 79
     },
     "corpusTokens": [
+      "\"befor",
+      "1",
+      "1:",
+      "2",
       "2011",
       "2019",
       "2020",
+      "3",
+      "5",
       "@takahito0508",
       "accentur",
       "acknowledg",
       "advanc",
       "apex",
+      "apextrigg",
+      "app/main/default/trigg",
       "author",
       "blog",
+      "case",
+      "casetrigg",
       "champion,",
+      "d",
+      "delete,aft",
+      "e",
       "einstein",
       "event",
       "flexibl",
+      "forc",
+      "force:apex:trigger:cr",
       "framework",
       "https://accentur",
+      "insert,aft",
+      "insert,befor",
       "japan",
       "lifestyl",
       "log",
       "ltd,",
+      "lv.",
       "miyamoto",
       "mvp,",
+      "n",
       "online＃01",
+      "opportun",
+      "opportunitytrigg",
       "platform",
+      "s",
       "salesforc",
       "sfdc",
+      "sfdx",
+      "t",
       "takahito",
       "tech",
       "technology.connpass.com/event/185277/",
       "top",
       "trigger",
+      "undelete\"",
       "up",
+      "update,aft",
+      "update,befor",
       "warm",
       "wednesday",
       "からスタートします。",
+      "の解答",
       "へご参加いただくみなさまへ",
       "や",
       "をご利用ください。",
@@ -1420,7 +2013,13 @@
       "url": "./",
       "title": "TOP",
       "keywords": "",
-      "body": "\nApex トリガ 中級\nApex トリガの中級レベルのチュートリアルです。\nテストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。\n\nSalesforce Wednesday Online＃01 へご参加いただくみなさまへ\n\n申込サイト: https://accenture-technology.connpass.com/event/185277/\n\n当日は Warm-up からスタートします。\n初級者向けコンテンツ や 開発ツール を実施する時間はありませんので、\n事前に予習してきてください。\n開発ツールのセットアップが終わっていないかたは、 開発者コンソール をご利用ください。\n\nAcknowledgment\n\nflexible-apex-trigger\nSFDC trigger framework\nAdvanced Logging with Platform Events\n\nAuthor\nTakahito Miyamoto @takahito0508\n\nAccenture Japan Ltd, 2011-\nSalesforce Einstein Champion, 2019-\nSalesforce MVP, 2020-\nTech Blog\nLifestyle Blog\n\n"
+      "body": "Apex トリガ 中級\nApex トリガの中級レベルのチュートリアルです。\nテストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。\n\n\nSalesforce Wednesday Online＃01 へご参加いただくみなさまへ\n\n申込サイト: https://accenture-technology.connpass.com/event/185277/\n\n当日は Warm-up からスタートします。\n初級者向けコンテンツ や 開発ツール を実施する時間はありませんので、\n事前に予習してきてください。\n開発ツールのセットアップが終わっていないかたは、 開発者コンソール をご利用ください。\n\nAcknowledgment\n\nflexible-apex-trigger\nSFDC trigger framework\nAdvanced Logging with Platform Events\n\nAuthor\nTakahito Miyamoto @takahito0508\n\nAccenture Japan Ltd, 2011-\nSalesforce Einstein Champion, 2019-\nSalesforce MVP, 2020-\nTech Blog\nLifestyle Blog\n\n"
+    },
+    "exercises/level-05-answer.html": {
+      "url": "exercises/level-05-answer.html",
+      "title": "Lv. 5 の解答",
+      "keywords": "",
+      "body": "Lv. 5 の解答\n1-1:\nsfdx force:apex:trigger:create -d force-app/main/default/triggers -e \"before insert,before update,before delete,after insert,after update,after delete,after undelete\" -n OpportunityTrigger -s Opportunity -t ApexTrigger\n\nsfdx force:apex:trigger:create -d force-app/main/default/triggers -e \"before insert,before update,before delete,after insert,after update,after delete,after undelete\" -n CaseTrigger -s Case -t ApexTrigger\n\n\n2-1:\n\n3-1:\n"
     }
   }
 }
