@@ -442,6 +442,9 @@ private class AccountTriggerValidationTest {
   private static final String SLA_EXPIRATION_DATE_REQUIRED = System.Label.SLA_EXPIRATION_DATE_REQUIRED;
   private static final String SLA_SERIAL_NUMBER_REQUIRED = System.Label.SLA_SERIAL_NUMBER_REQUIRED;
   private static AccountTriggerValidation validation = new AccountTriggerValidation();
+  private static FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+    Account.class
+  );
 
   @isTest
   static void validateSLAErrorSLAExpirationDate() {
@@ -504,11 +507,31 @@ private class AccountTriggerValidationTest {
   }
 
   @isTest
-  static void onBeforeDelete() {
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
+  static void onBeforeInsert() {
+    List<Account> accounts = new List<Account>();
+    handler.newObjects = accounts;
 
+    Test.startTest();
+    validation.onBeforeInsert(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onBeforeInsert');
+  }
+
+  @isTest
+  static void onBeforeUpdate() {
+    List<Account> accounts = new List<Account>();
+    handler.newObjects = accounts;
+
+    Test.startTest();
+    validation.onBeforeUpdate(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(null, handler, 'onBeforeInsert');
+  }
+
+  @isTest
+  static void onBeforeDelete() {
     Test.startTest();
     validation.onBeforeDelete(handler);
     Test.stopTest();
@@ -518,10 +541,6 @@ private class AccountTriggerValidationTest {
 
   @isTest
   static void onAfterInsert() {
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
-
     Test.startTest();
     validation.onAfterInsert(handler);
     Test.stopTest();
@@ -531,10 +550,6 @@ private class AccountTriggerValidationTest {
 
   @isTest
   static void onAfterUpdate() {
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
-
     Test.startTest();
     validation.onAfterUpdate(handler);
     Test.stopTest();
@@ -544,10 +559,6 @@ private class AccountTriggerValidationTest {
 
   @isTest
   static void onAfterDelete() {
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
-
     Test.startTest();
     validation.onAfterDelete(handler);
     Test.stopTest();
@@ -557,10 +568,6 @@ private class AccountTriggerValidationTest {
 
   @isTest
   static void onAfterUndelete() {
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
-
     Test.startTest();
     validation.onAfterUndelete(handler);
     Test.stopTest();

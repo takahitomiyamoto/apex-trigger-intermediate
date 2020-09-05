@@ -836,6 +836,9 @@ Org Wide Coverage    96%
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SLA_EXPIRATION_DATE_REQUIRED = System.Label.SLA_EXPIRATION_DATE_REQUIRED;
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SLA_SERIAL_NUMBER_REQUIRED = System.Label.SLA_SERIAL_NUMBER_REQUIRED;
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> AccountTriggerValidation validation = <span class="hljs-keyword">new</span> AccountTriggerValidation();
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
+    Account.class
+  );
 
   <span class="hljs-meta">@isTest</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">validateSLAErrorSLAExpirationDate</span><span class="hljs-params">()</span> </span>{
@@ -898,11 +901,31 @@ Org Wide Coverage    96%
   }
 
   <span class="hljs-meta">@isTest</span>
-  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeDelete</span><span class="hljs-params">()</span> </span>{
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeInsert</span><span class="hljs-params">()</span> </span>{
+    List&lt;Account&gt; accounts = <span class="hljs-keyword">new</span> List&lt;Account&gt;();
+    handler.newObjects = accounts;
 
+    Test.startTest();
+    validation.onBeforeInsert(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onBeforeInsert&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeUpdate</span><span class="hljs-params">()</span> </span>{
+    List&lt;Account&gt; accounts = <span class="hljs-keyword">new</span> List&lt;Account&gt;();
+    handler.newObjects = accounts;
+
+    Test.startTest();
+    validation.onBeforeUpdate(handler);
+    Test.stopTest();
+
+    System.assertNotEquals(<span class="hljs-keyword">null</span>, handler, <span class="hljs-string">&apos;onBeforeInsert&apos;</span>);
+  }
+
+  <span class="hljs-meta">@isTest</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeDelete</span><span class="hljs-params">()</span> </span>{
     Test.startTest();
     validation.onBeforeDelete(handler);
     Test.stopTest();
@@ -912,10 +935,6 @@ Org Wide Coverage    96%
 
   <span class="hljs-meta">@isTest</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterInsert</span><span class="hljs-params">()</span> </span>{
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
-
     Test.startTest();
     validation.onAfterInsert(handler);
     Test.stopTest();
@@ -925,10 +944,6 @@ Org Wide Coverage    96%
 
   <span class="hljs-meta">@isTest</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterUpdate</span><span class="hljs-params">()</span> </span>{
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
-
     Test.startTest();
     validation.onAfterUpdate(handler);
     Test.stopTest();
@@ -938,10 +953,6 @@ Org Wide Coverage    96%
 
   <span class="hljs-meta">@isTest</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterDelete</span><span class="hljs-params">()</span> </span>{
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
-
     Test.startTest();
     validation.onAfterDelete(handler);
     Test.stopTest();
@@ -951,10 +962,6 @@ Org Wide Coverage    96%
 
   <span class="hljs-meta">@isTest</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterUndelete</span><span class="hljs-params">()</span> </span>{
-    FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
-      Account.class
-    );
-
     Test.startTest();
     validation.onAfterUndelete(handler);
     Test.stopTest();
@@ -1331,10 +1338,10 @@ Org Wide Coverage    100%
             },
             file: {
               path: 'exercises/level-04-answer.md',
-              mtime: '2020-09-05T05:17:11.235Z',
+              mtime: '2020-09-05T10:36:47.901Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-05T10:07:44.494Z' },
+            gitbook: { version: '3.6.1', time: '2020-09-05T10:37:38.992Z' },
             basePath: '..',
             book: { language: '' }
           });
