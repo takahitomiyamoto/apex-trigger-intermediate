@@ -389,12 +389,26 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">labels</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">CustomLabels</span>&gt;</span>
 </code></pre>
+                    <p>
+                      2-2.
+                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">yarn prettier
+</code></pre>
+                    <p>
+                      2-3.
+                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
+</code></pre>
                     <hr />
                     <p>
                       3-1. Apex
                       &#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
                     </p>
                     <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/main/default/classes -n OpportunityTriggerValidation -t DefaultApexClass
+</code></pre>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/main/default/classes -n CaseTriggerService -t DefaultApexClass
 </code></pre>
                     <h5 id="opportunitytriggervalidationcls">
                       OpportunityTriggerValidation.cls
@@ -455,8 +469,6 @@
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAfterUndelete</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
   }
 }
-</code></pre>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/main/default/classes -n CaseTriggerService -t DefaultApexClass
 </code></pre>
                     <h5 id="casetriggerservicecls">CaseTriggerService.cls</h5>
                     <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;</span>)
@@ -660,6 +672,16 @@
                     </p>
                     <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTriggerValidationTest -t ApexUnitTest
 </code></pre>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTestUtils -t ApexUnitTest
+</code></pre>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTriggerTest -t ApexUnitTest
+</code></pre>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTriggerServiceTest -t ApexUnitTest
+</code></pre>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTestUtils -t ApexUnitTest
+</code></pre>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTriggerTest -t ApexUnitTest
+</code></pre>
                     <h5 id="opportunitytriggervalidationtestcls">
                       OpportunityTriggerValidationTest.cls
                     </h5>
@@ -766,8 +788,6 @@
   }
 }
 </code></pre>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTestUtils -t ApexUnitTest
-</code></pre>
                     <h5 id="opportunitytestutilscls">
                       OpportunityTestUtils.cls
                     </h5>
@@ -815,8 +835,6 @@
   }
 }
 </code></pre>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTriggerTest -t ApexUnitTest
-</code></pre>
                     <h5 id="opportunitytriggertestcls">
                       OpportunityTriggerTest.cls
                     </h5>
@@ -839,8 +857,6 @@
     System.assertNotEquals(<span class="hljs-number">0</span>, opportunities.size(), <span class="hljs-string">&apos;invokeDelete&apos;</span>);
   }
 }
-</code></pre>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTriggerServiceTest -t ApexUnitTest
 </code></pre>
                     <h5 id="casetriggerservicetestcls">
                       CaseTriggerServiceTest.cls
@@ -935,8 +951,6 @@
   }
 }
 </code></pre>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTestUtils -t ApexUnitTest
-</code></pre>
                     <h5 id="casetestutilscls">CaseTestUtils.cls</h5>
                     <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.ApexDoc&apos;</span>)
 <span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
@@ -979,8 +993,6 @@
   }
 }
 </code></pre>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTriggerTest -t ApexUnitTest
-</code></pre>
                     <h5 id="casetriggertestcls">CaseTriggerTest.cls</h5>
                     <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
 <span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CaseTriggerTest</span> </span>{
@@ -1014,6 +1026,60 @@
                     </p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
 </code></pre>
+                    <p>
+                      5-4. Apex
+                      &#x30C6;&#x30B9;&#x30C8;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x73FE;&#x5728;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30FC;&#x7387;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;
+                    </p>
+                    <pre><code class="lang-sh"><span class="hljs-built_in">export</span> SFDX_IMPROVED_CODE_COVERAGE=<span class="hljs-string">&quot;true&quot;</span>
+
+sfdx force:apex:<span class="hljs-built_in">test</span>:run -c <span class="hljs-_">-l</span> RunLocalTests -r human -u demo
+</code></pre>
+                    <pre><code class="lang-sh">=== Apex Code Coverage
+ID                  NAME                           % COVERED  UNCOVERED LINES
+&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
+01p0l0000027mN7AAI  AccountTriggerService          100%
+01p0l0000027mMpAAI  FAT_CommonLogger               100%
+01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
+01p0l0000027mMqAAI  FAT_CommonLoggerConstants      100%
+01p0l0000027mMrAAI  FAT_CommonLoggerHelper         100%
+01p0l0000027mMvAAI  FAT_CommonTriggerHandler       100%
+01p0l0000027mN3AAI  FAT_LoggerEventTriggerService  100%
+01p0l0000027mNAAAY  AccountTriggerValidation       100%
+01p0l0000027mMnAAI  FAT_CommonError                100%
+01q0l000000HcL5AAK  AccountTrigger                 100%
+01p0l0000027mN0AAI  FAT_CommonUtils                100%
+01q0l000000HcL0AAK  FAT_LoggerEventTrigger         100%
+01p0l0000027ppJAAQ  CaseTriggerService             100%
+01q0l000000HctXAAS  CaseTrigger                    100%
+01p0l0000027ppLAAQ  OpportunityTriggerValidation   100%
+01q0l000000HctYAAS  OpportunityTrigger             100%
+
+=== Test Summary
+NAME                 VALUE
+&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+Outcome              Passed
+Tests Ran            85
+Passing              85
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Run Coverage    100%
+Org Wide Coverage    100%
+</code></pre>
+                    <p>
+                      &#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30FC;&#x7387;&#x306F;
+                      100%&#x306B;&#x306A;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF01;
+                    </p>
+                    <p>
+                      &#x52D5;&#x4F5C;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x5546;&#x8AC7;&#x753B;&#x9762;&#x3092;&#x958B;&#x3044;&#x3066;&#x3001;&#x60F3;&#x5B9A;&#x901A;&#x308A;&#x306E;&#x6319;&#x52D5;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                      &#x307E;&#x305F;&#x3001;&#x30B1;&#x30FC;&#x30B9;&#x753B;&#x9762;&#x3092;&#x958B;&#x3044;&#x3066;&#x3001;&#x60F3;&#x5B9A;&#x901A;&#x308A;&#x306E;&#x6319;&#x52D5;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                    </p>
+                    <p>
+                      ...
+                      &#x3044;&#x304B;&#x304C;&#x3067;&#x3057;&#x305F;&#x304B;&#xFF1F;
+                    </p>
                   </section>
                 </div>
                 <div class="search-results">
@@ -1146,10 +1212,10 @@
             },
             file: {
               path: 'exercises/level-05-answer.md',
-              mtime: '2020-09-05T11:11:40.689Z',
+              mtime: '2020-09-05T11:19:12.315Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-05T11:12:13.947Z' },
+            gitbook: { version: '3.6.1', time: '2020-09-05T11:19:19.743Z' },
             basePath: '..',
             book: { language: '' }
           });
