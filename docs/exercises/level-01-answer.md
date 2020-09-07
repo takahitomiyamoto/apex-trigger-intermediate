@@ -1,8 +1,17 @@
 # Lv. 1 の解答
 
-1-1. [Warm-up](warm-up-answer.md) で作成した Apex トリガを修正します。
+## アウトライン
 
-##### AccountTrigger.trigger
+- [1. Apex トリガを変更](#1-apex-トリガを変更)
+  - [AccountTrigger.trigger](#accounttriggertrigger)
+
+## 1. Apex トリガを変更
+
+### AccountTrigger.trigger
+
+1-1. [Warm-up](warm-up-answer.md) で作成した Apex トリガを変更します。
+
+**AccountTrigger.trigger**
 
 ```java
 trigger AccountTrigger on Account(before insert, before update) {
@@ -23,7 +32,7 @@ trigger AccountTrigger on Account(before insert, before update) {
 
 1-2. アクション (2) を `BEFORE_INSERT` および `BEFORE_UPDATE` に追加します。
 
-##### AccountTrigger.trigger
+**AccountTrigger.trigger**
 
 ```java
 trigger AccountTrigger on Account(before insert, before update) {

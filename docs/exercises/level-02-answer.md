@@ -47,7 +47,7 @@ sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
 
 ### AccountTrigger.trigger
 
-2-1. [Lv. 1](level-01-answer.md) で変更した Apex トリガを更に変更します。
+2-1. [Lv. 1](level-01-answer.md#accounttriggertrigger) で変更した Apex トリガを更に変更します。
 
 **AccountTrigger.trigger**
 
