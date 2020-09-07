@@ -13,7 +13,7 @@
   - [AccountTriggerValidationTest.cls](#accounttriggervalidationtestcls)
 - [5. Apex テストクラスを変更](#5-apex-テストクラスを変更)
   - [AccountTestUtils.cls](#accounttestutilscls)
-  - [AccountTriggerTest.cls\*\*](#accounttriggertestcls\)
+  - [AccountTriggerTest.cls](#accounttriggertestcls)
 
 ## 1. カスタムメタデータ型の変更・追加
 
@@ -730,7 +730,7 @@ public with sharing class AccountTestUtils {
 }
 ```
 
-### AccountTriggerTest.cls\*\*
+### AccountTriggerTest.cls
 
 5-2. `AccountTriggerTest.cls` の `invokeException` にコードを追加します。
 
