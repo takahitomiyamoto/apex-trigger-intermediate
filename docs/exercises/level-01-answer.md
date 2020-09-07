@@ -9,7 +9,7 @@
 
 ### AccountTrigger.trigger
 
-1-1. [Warm-up](warm-up-answer.md) で作成した Apex トリガを変更します。
+1-1. [Warm-up](warm-up-answer.md#accounttriggertrigger) で作成した Apex トリガを変更します。
 
 **AccountTrigger.trigger**
 
