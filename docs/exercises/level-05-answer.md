@@ -6,6 +6,7 @@
   - [OpportunityTrigger.trigger](#opportunitytriggertrigger)
   - [CaseTrigger.trigger](#casetriggertrigger)
 - [2. カスタム表示ラベルを追加](#2-カスタム表示ラベルを追加)
+  - [CustomLabels.labels-meta.xml](#customlabelslabels-metaxml)
 - [3. Apex クラスを作成](#3-apex-クラスを作成)
   - [OpportunityTriggerValidation.cls](#opportunitytriggervalidationcls)
   - [CaseTriggerService.cls](#casetriggerservicecls)
@@ -92,7 +93,10 @@ sfdx force:source:push -u demo
 
 2-1. カスタム表示ラベルを追加します。
 
-**CustomLabels.labels-meta.xml**
+### CustomLabels.labels-meta.xml
+
+- CLOSED_WON_CANNOT_BE_DELETED
+- HIGH_CASE_IS_CREATED
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
