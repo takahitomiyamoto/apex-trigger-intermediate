@@ -5,21 +5,24 @@
 - [1. Apex トリガを作成](#1-apex-トリガを作成)
   - [OpportunityTrigger.trigger](#opportunitytriggertrigger)
   - [CaseTrigger.trigger](#casetriggertrigger)
-    - [CustomLabels.labels-meta.xml](#customlabelslabels-metaxml)
-    - [OpportunityTriggerValidation.cls](#opportunitytriggervalidationcls)
-    - [CaseTriggerService.cls](#casetriggerservicecls)
-    - [FAT_TriggerObserver.OpportunityTriggerValidation.md-meta.xml](#fat_triggerobserveropportunitytriggervalidationmd-metaxml)
-    - [FAT_TriggerObserver.CaseTriggerService.md-meta.xml](#fat_triggerobservercasetriggerservicemd-metaxml)
-    - [OpportunityTriggerValidationTest.cls](#opportunitytriggervalidationtestcls)
-    - [OpportunityTestUtils.cls](#opportunitytestutilscls)
-    - [OpportunityTriggerTest.cls](#opportunitytriggertestcls)
-    - [CaseTriggerServiceTest.cls](#casetriggerservicetestcls)
-    - [CaseTestUtils.cls](#casetestutilscls)
-    - [CaseTriggerTest.cls](#casetriggertestcls)
+- [2. カスタム表示ラベルを追加](#2-カスタム表示ラベルを追加)
+- [3. Apex クラスを作成](#3-apex-クラスを作成)
+  - [OpportunityTriggerValidation.cls](#opportunitytriggervalidationcls)
+  - [CaseTriggerService.cls](#casetriggerservicecls)
+- [4. カスタムメタデータ型を作成](#4-カスタムメタデータ型を作成)
+  - [FAT_TriggerObserver.OpportunityTriggerValidation.md-meta.xml](#fat_triggerobserveropportunitytriggervalidationmd-metaxml)
+  - [FAT_TriggerObserver.CaseTriggerService.md-meta.xml](#fat_triggerobservercasetriggerservicemd-metaxml)
+- [5. テストクラスを作成](#5-テストクラスを作成)
+  - [OpportunityTriggerValidationTest.cls](#opportunitytriggervalidationtestcls)
+  - [OpportunityTestUtils.cls](#opportunitytestutilscls)
+  - [OpportunityTriggerTest.cls](#opportunitytriggertestcls)
+  - [CaseTriggerServiceTest.cls](#casetriggerservicetestcls)
+  - [CaseTestUtils.cls](#casetestutilscls)
+  - [CaseTriggerTest.cls](#casetriggertestcls)
 
 ## 1. Apex トリガを作成
 
-Apex トリガを作成します。
+1-1. Apex トリガを作成します。
 
 ### OpportunityTrigger.trigger
 
@@ -85,9 +88,11 @@ sfdx force:source:push -u demo
 
 ---
 
+## 2. カスタム表示ラベルを追加
+
 2-1. カスタム表示ラベルを追加します。
 
-##### CustomLabels.labels-meta.xml
+**CustomLabels.labels-meta.xml**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -142,17 +147,17 @@ sfdx force:source:push -u demo
 
 ---
 
+## 3. Apex クラスを作成
+
 3-1. Apex クラスを作成します。
+
+### OpportunityTriggerValidation.cls
 
 ```sh
 sfdx force:apex:class:create -d force-app/main/default/classes -n OpportunityTriggerValidation -t DefaultApexClass
 ```
 
-```sh
-sfdx force:apex:class:create -d force-app/main/default/classes -n CaseTriggerService -t DefaultApexClass
-```
-
-##### OpportunityTriggerValidation.cls
+**OpportunityTriggerValidation.cls**
 
 ```java
 @SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
@@ -213,7 +218,13 @@ public with sharing class OpportunityTriggerValidation implements FAT_ITriggerOb
 }
 ```
 
-##### CaseTriggerService.cls
+### CaseTriggerService.cls
+
+```sh
+sfdx force:apex:class:create -d force-app/main/default/classes -n CaseTriggerService -t DefaultApexClass
+```
+
+**CaseTriggerService.cls**
 
 ```java
 @SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
@@ -285,9 +296,13 @@ sfdx force:source:push -u demo
 
 ---
 
+## 4. カスタムメタデータ型を作成
+
+### FAT_TriggerObserver.OpportunityTriggerValidation.md-meta.xml
+
 4-1. `FAT_TriggerObserver.AccountTriggerService.md-meta.xml` をコピーしてカスタムメタデータ型を作成します。
 
-##### FAT_TriggerObserver.OpportunityTriggerValidation.md-meta.xml
+**FAT_TriggerObserver.OpportunityTriggerValidation.md-meta.xml**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -341,7 +356,11 @@ sfdx force:source:push -u demo
 </CustomMetadata>
 ```
 
-##### FAT_TriggerObserver.CaseTriggerService.md-meta.xml
+### FAT_TriggerObserver.CaseTriggerService.md-meta.xml
+
+4-2. `FAT_TriggerObserver.AccountTriggerService.md-meta.xml` をコピーしてカスタムメタデータ型を作成します。
+
+**FAT_TriggerObserver.CaseTriggerService.md-meta.xml**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -395,13 +414,13 @@ sfdx force:source:push -u demo
 </CustomMetadata>
 ```
 
-4-2. コードをフォーマットします。
+4-3. コードをフォーマットします。
 
 ```sh
 yarn prettier
 ```
 
-4-3. スクラッチ組織へプッシュします。
+4-4. スクラッチ組織へプッシュします。
 
 ```sh
 sfdx force:source:push -u demo
@@ -409,33 +428,17 @@ sfdx force:source:push -u demo
 
 ---
 
+## 5. テストクラスを作成
+
 5-1. テストクラスを作成します。
+
+### OpportunityTriggerValidationTest.cls
 
 ```sh
 sfdx force:apex:class:create -d force-app/test/default/classes -n OpportunityTriggerValidationTest -t ApexUnitTest
 ```
 
-```sh
-sfdx force:apex:class:create -d force-app/test/default/classes -n OpportunityTestUtils -t ApexUnitTest
-```
-
-```sh
-sfdx force:apex:class:create -d force-app/test/default/classes -n OpportunityTriggerTest -t ApexUnitTest
-```
-
-```sh
-sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTriggerServiceTest -t ApexUnitTest
-```
-
-```sh
-sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTestUtils -t ApexUnitTest
-```
-
-```sh
-sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTriggerTest -t ApexUnitTest
-```
-
-##### OpportunityTriggerValidationTest.cls
+**OpportunityTriggerValidationTest.cls**
 
 ```java
 @isTest(SeeAllData=false)
@@ -542,7 +545,13 @@ private class OpportunityTriggerValidationTest {
 }
 ```
 
-##### OpportunityTestUtils.cls
+### OpportunityTestUtils.cls
+
+```sh
+sfdx force:apex:class:create -d force-app/test/default/classes -n OpportunityTestUtils -t ApexUnitTest
+```
+
+**OpportunityTestUtils.cls**
 
 ```java
 @SuppressWarnings('PMD.ApexDoc')
@@ -590,7 +599,13 @@ public with sharing class OpportunityTestUtils {
 }
 ```
 
-##### OpportunityTriggerTest.cls
+### OpportunityTriggerTest.cls
+
+```sh
+sfdx force:apex:class:create -d force-app/test/default/classes -n OpportunityTriggerTest -t ApexUnitTest
+```
+
+**OpportunityTriggerTest.cls**
 
 ```java
 @isTest(SeeAllData=false)
@@ -614,7 +629,13 @@ private class OpportunityTriggerTest {
 }
 ```
 
-##### CaseTriggerServiceTest.cls
+### CaseTriggerServiceTest.cls
+
+```sh
+sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTriggerServiceTest -t ApexUnitTest
+```
+
+**CaseTriggerServiceTest.cls**
 
 ```java
 @isTest(SeeAllData=false)
@@ -708,7 +729,13 @@ private class CaseTriggerServiceTest {
 }
 ```
 
-##### CaseTestUtils.cls
+### CaseTestUtils.cls
+
+```sh
+sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTestUtils -t ApexUnitTest
+```
+
+**CaseTestUtils.cls**
 
 ```java
 @SuppressWarnings('PMD.ApexDoc')
@@ -753,7 +780,13 @@ public with sharing class CaseTestUtils {
 }
 ```
 
-##### CaseTriggerTest.cls
+### CaseTriggerTest.cls
+
+```sh
+sfdx force:apex:class:create -d force-app/test/default/classes -n CaseTriggerTest -t ApexUnitTest
+```
+
+**CaseTriggerTest.cls**
 
 ```java
 @isTest(SeeAllData=false)
