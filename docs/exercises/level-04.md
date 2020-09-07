@@ -40,8 +40,8 @@ SLA が設定されている場合、SLA の有効期限およびシリアルナ
 
 次のいずれかの条件を満たす場合:
 
-1. `SLA` が null でない、かつ SLA Expiration Date が null である
-1. `SLA` が null でない、かつ SLA Serial Number が null である
+1. SLA が null でない、かつ SLA Expiration Date が null である
+1. SLA が null でない、かつ SLA Serial Number が null である
 
 | 表示ラベル          | 項目名                 | 備考 |
 | :------------------ | :--------------------- | :--- |
