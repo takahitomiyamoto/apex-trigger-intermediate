@@ -5,6 +5,8 @@
 - [1. Apex トリガを作成](#1-apex-トリガを作成)
   - [AccountTrigger.trigger](#accounttriggertrigger)
 
+---
+
 ## 1. Apex トリガを作成
 
 1-1. `config/project-scratch-def.json` の中身を次の内容で書き換えます。

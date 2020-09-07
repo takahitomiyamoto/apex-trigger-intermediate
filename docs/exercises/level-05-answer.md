@@ -21,6 +21,8 @@
   - [CaseTestUtils.cls](#casetestutilscls)
   - [CaseTriggerTest.cls](#casetriggertestcls)
 
+---
+
 ## 1. Apex トリガを作成
 
 1-1. Apex トリガを作成します。

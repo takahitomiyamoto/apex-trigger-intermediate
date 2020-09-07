@@ -15,6 +15,8 @@
   - [AccountTestUtils.cls](#accounttestutilscls)
   - [AccountTriggerTest.cls](#accounttriggertestcls)
 
+---
+
 ## 1. カスタムメタデータ型の変更・追加
 
 1-1. カスタムメタデータ型のレコードを修正するために、スクラッチ組織から pull します。

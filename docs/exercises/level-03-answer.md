@@ -8,6 +8,8 @@
   - [AccountTestUtils.cls](#accounttestutilscls)
   - [AccountTriggerTest.cls](#accounttriggertestcls)
 
+---
+
 ## 1. Apex テストクラスを作成
 
 1-1. Apex テストを実行して現在のコードカバー率を確認します。

@@ -11,6 +11,8 @@
 - [4. カスタムメタデータ型を追加](#4-カスタムメタデータ型を追加)
   - [FAT_TriggerObserver.AccountTriggerService.md-meta.xml](#fattriggerobserveraccounttriggerservicemd-metaxml)
 
+---
+
 ## 1. フレームワークをインストール
 
 1-1. `sfdx-project.json` に `packageAliases` を追加します。
