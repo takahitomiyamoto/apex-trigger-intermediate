@@ -53,3 +53,15 @@ Apex トリガの柔軟性・可読性を高めるフレームワークを導入
 ## 解答
 
 > [こちら](level-02-answer.md)
+
+---
+
+<div style="text-align:center;font-size:120%;">
+  &lt
+  <a href="./level-01-answer.md"><b>Prev</b></a>
+  |
+  <a href="./level-02-answer.md"><b>Next</b></a>
+  &gt
+</div>
+
+---

@@ -52,3 +52,15 @@
 ## 解答
 
 > [こちら](level-01-answer.md)
+
+---
+
+<div style="text-align:center;font-size:120%;">
+  &lt
+  <a href="./warm-up-answer.md"><b>Prev</b></a>
+  |
+  <a href="./level-01-answer.md"><b>Next</b></a>
+  &gt
+</div>
+
+---

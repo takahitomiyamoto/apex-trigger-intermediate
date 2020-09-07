@@ -91,3 +91,15 @@ Always Be Learning!!
 - [プラットフォームイベント開発者ガイド](https://developer.salesforce.com/docs/atlas.ja-jp.platform_events.meta/platform_events/platform_events_intro.htm)
 
 - [大量のデータを使用するリリースのベストプラクティス](https://developer.salesforce.com/docs/atlas.ja-jp.salesforce_large_data_volumes_bp.meta/salesforce_large_data_volumes_bp/ldv_deployments_introduction.htm)
+
+---
+
+<div style="text-align:center;font-size:120%;">
+  &lt
+  <a href="../exercises/level-05-answer.md"><b>Prev</b></a>
+  |
+  <b>Next</b>
+  &gt
+</div>
+
+---

@@ -108,3 +108,15 @@ sfdx force:org:open -u demo -p lightning/o/Account/list
 また、そのレコードを更新し、想定通りの挙動かどうかを確認しましょう。
 
 ... いかがでしたか？
+
+---
+
+<div style="text-align:center;font-size:120%;">
+  &lt
+  <a href="./level-01.md"><b>Prev</b></a>
+  |
+  <a href="./level-02.md"><b>Next</b></a>
+  &gt
+</div>
+
+---

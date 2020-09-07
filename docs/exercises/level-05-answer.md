@@ -879,7 +879,7 @@ Org Wide Coverage    100%
 
 ---
 
-<div style="text-align:center">
+<div style="text-align:center;font-size:120%;">
   &lt
   <a href="./level-05.md"><b>Prev</b></a>
   |
