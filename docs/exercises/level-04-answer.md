@@ -1,14 +1,31 @@
 # Lv. 4 の解答
 
+## アウトライン
+
+- [1. カスタムメタデータ型の変更・追加](#1-カスタムメタデータ型の変更・追加)
+  - [FAT_TriggerObserver.AccountTriggerService.md-meta.xml](#fat_triggerobserveraccounttriggerservicemd-metaxml)
+  - [FAT_TriggerObserver.AccountTriggerValidation.md-meta.xml](#fat_triggerobserveraccounttriggervalidationmd-metaxml)
+- [2. カスタム表示ラベルを追加](#2-カスタム表示ラベルを追加)
+  - [CustomLabels.labels-meta.xml](#customlabelslabels-metaxml)
+- [3. Apex クラスを作成](#3-apex-クラスを作成)
+  - [AccountTriggerValidation.cls](#accounttriggervalidationcls)
+- [4. Apex テストクラスを作成](#4-apex-テストクラスを作成)
+  - [AccountTriggerValidationTest.cls](#accounttriggervalidationtestcls)
+- [5. Apex テストクラスを変更](#5-apex-テストクラスを変更)
+
+## 1. カスタムメタデータ型の変更・追加
+
 1-1. カスタムメタデータ型のレコードを修正するために、スクラッチ組織から pull します。
 
 ```sh
 sfdx force:source:pull -u demo
 ```
 
+### FAT_TriggerObserver.AccountTriggerService.md-meta.xml
+
 1-2. `force-app/main/default/customMetadata/FAT_TriggerObserver.AccountTriggerService.md-meta.xml` を開いて`BeforeInsert__c`の値を修正します。
 
-##### FAT_TriggerObserver.AccountTriggerService.md-meta.xml
+**FAT_TriggerObserver.AccountTriggerService.md-meta.xml**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -62,9 +79,11 @@ sfdx force:source:pull -u demo
 </CustomMetadata>
 ```
 
-1-3. `FAT_TriggerObserver.AccountTriggerService.md-meta.xml` をコピーして `force-app/main/default/customMetadata/FAT_TriggerObserver.AccountTriggerValidation.md-meta.xml` を作成します。
+### FAT_TriggerObserver.AccountTriggerValidation.md-meta.xml
 
-##### FAT_TriggerObserver.AccountTriggerValidation.md-meta.xml
+1-3. `FAT_TriggerObserver.AccountTriggerService.md-meta.xml` をコピーしてカスタムメタデータ型を作成します。
+
+**FAT_TriggerObserver.AccountTriggerValidation.md-meta.xml**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -134,6 +153,8 @@ sfdx force:source:push -u demo
 
 ---
 
+## 2. カスタム表示ラベルを追加
+
 2-1. カスタム表示ラベルにレコードを追加するために、スクラッチ組織を開きます。
 
 ```sh
@@ -162,9 +183,13 @@ sfdx force:org:open -u demo -p lightning/setup/ExternalStrings/home
 sfdx force:source:pull -u demo
 ```
 
-2-5. `force-app/main/default/labels/CustomLabels.labels-meta.xml` を開いて `SLA_SERIAL_NUMBER_REQUIRED` を追加します。
+### CustomLabels.labels-meta.xml
 
-##### CustomLabels.labels-meta.xml
+2-5. `force-app/main/default/labels/CustomLabels.labels-meta.xml` を開いてカスタム表示ラベルを追加します。
+
+**CustomLabels.labels-meta.xml**
+
+- SLA_SERIAL_NUMBER_REQUIRED
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -205,7 +230,11 @@ sfdx force:source:push -u demo
 
 ---
 
-3-1. `AccountTriggerValidation.cls` を作成します。
+## 3. Apex クラスを作成
+
+3-1. Apex クラスを作成します。
+
+### AccountTriggerValidation.cls
 
 ```sh
 sfdx force:apex:class:create -d force-app/main/default/classes -n AccountTriggerValidation -t DefaultApexClass
@@ -213,7 +242,7 @@ sfdx force:apex:class:create -d force-app/main/default/classes -n AccountTrigger
 
 3-2. `FAT_ITriggerObserver` を実装します。
 
-##### AccountTriggerValidation.cls
+**AccountTriggerValidation.cls**
 
 ```java
 @SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
@@ -243,7 +272,7 @@ public with sharing class AccountTriggerValidation implements FAT_ITriggerObserv
 
 3-3. `validateSLA` を追加します。
 
-##### AccountTriggerValidation.cls
+**AccountTriggerValidation.cls**
 
 ```java
 @SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
@@ -307,8 +336,9 @@ public with sharing class AccountTriggerValidation implements FAT_ITriggerObserv
 }
 ```
 
-3-4. `onBeforeInsert` から `validateSLA` を呼び出し、
-`onBeforeUpdate` から `validateSLA` を呼び出すようにします。
+3-4. `onBeforeInsert` から `validateSLA` を呼び出し、`onBeforeUpdate` から `validateSLA` を呼び出すようにします。
+
+**AccountTriggerValidation.cls**
 
 ```java
 @SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
@@ -388,6 +418,8 @@ sfdx force:source:push -u demo
 
 ---
 
+## 4. Apex テストクラスを作成
+
 4-1. Apex テストを実行して現在のコードカバー率を確認します。
 
 ```sh
@@ -403,16 +435,16 @@ ID                  NAME                           % COVERED  UNCOVERED LINES
 01p1m000000dNwKAAU  FAT_CommonConstants            NaN%
 01p1m000000dNwLAAU  FAT_CommonError                100%
 01p1m000000dNwYAAU  FAT_CommonUtils                100%
-01p1m000000dNwPAAU  FAT_CommonLoggerHelper         100%
 01p1m000000dNwOAAU  FAT_CommonLoggerConstants      100%
 01p1m000000dNwNAAU  FAT_CommonLogger               100%
+01p1m000000dNwPAAU  FAT_CommonLoggerHelper         100%
 01q1m000000EAWXAA4  FAT_LoggerEventTrigger         100%
 01p1m000000dNwbAAE  FAT_LoggerEventTriggerService  100%
 01p1m000000dNwTAAU  FAT_CommonTriggerHandler       98%        216,217
 01p1m000000dNwVAAU  FAT_CommonTriggerHelper        100%
+01q1m000000E9UvAAK  AccountTrigger                 100%
 01p1m000000dO0mAAE  AccountTriggerService          100%
 01p1m000000dWaeAAE  AccountTriggerValidation       60%        21,22,25,26,31,32,33,46,49,52,55,58
-01q1m000000E9UvAAK  AccountTrigger                 100%
 
 === Test Summary
 NAME                 VALUE
@@ -428,13 +460,15 @@ Test Run Coverage    96%
 Org Wide Coverage    96%
 ```
 
-4-2. `AccountTriggerValidationTest.cls` のテストクラスを作成します。
+### AccountTriggerValidationTest.cls
+
+4-2. `AccountTriggerValidationTest.cls` の Apex テストクラスを作成します。
 
 ```sh
 sfdx force:apex:class:create -d force-app/test/default/classes -n AccountTriggerValidationTest -t ApexUnitTest
 ```
 
-##### AccountTriggerValidationTest.cls
+**AccountTriggerValidationTest.cls**
 
 ```java
 @isTest(SeeAllData=false)
@@ -602,17 +636,17 @@ sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 ID                  NAME                           % COVERED  UNCOVERED LINES
 ──────────────────  ─────────────────────────────  ─────────  ───────────────
 01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
-01p0l0000027mN0AAI  FAT_CommonUtils                100%
 01p0l0000027mMnAAI  FAT_CommonError                100%
+01p0l0000027mMpAAI  FAT_CommonLogger               100%
 01p0l0000027mMqAAI  FAT_CommonLoggerConstants      100%
 01p0l0000027mMrAAI  FAT_CommonLoggerHelper         100%
-01p0l0000027mMpAAI  FAT_CommonLogger               100%
-01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
 01p0l0000027mMvAAI  FAT_CommonTriggerHandler       98%        216,217
+01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
+01p0l0000027mN0AAI  FAT_CommonUtils                100%
 01q0l000000HcL0AAK  FAT_LoggerEventTrigger         100%
 01p0l0000027mN3AAI  FAT_LoggerEventTriggerService  100%
-01p0l0000027mN7AAI  AccountTriggerService          100%
 01q0l000000HcL5AAK  AccountTrigger                 100%
+01p0l0000027mN7AAI  AccountTriggerService          100%
 01p0l0000027mNAAAY  AccountTriggerValidation       100%
 
 === Test Summary
@@ -631,9 +665,11 @@ Org Wide Coverage    99%
 
 ---
 
+## 5. Apex テストクラスを変更
+
 5-1. `AccountTestUtils.cls` に `createAbnormalAccounts` を追加します。
 
-##### AccountTestUtils.cls
+**AccountTestUtils.cls**
 
 ```java
 @SuppressWarnings('PMD.ApexDoc')
@@ -692,7 +728,7 @@ public with sharing class AccountTestUtils {
 
 5-2. `AccountTriggerTest.cls` の `invokeException` にコードを追加します。
 
-##### AccountTriggerTest.cls
+**AccountTriggerTest.cls**
 
 ```java
 @isTest(SeeAllData=false)
@@ -765,17 +801,17 @@ ID                  NAME                           % COVERED  UNCOVERED LINES
 ──────────────────  ─────────────────────────────  ─────────  ───────────────
 01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
 01p0l0000027mMnAAI  FAT_CommonError                100%
-01p0l0000027mN0AAI  FAT_CommonUtils                100%
+01p0l0000027mMpAAI  FAT_CommonLogger               100%
 01p0l0000027mMqAAI  FAT_CommonLoggerConstants      100%
 01p0l0000027mMrAAI  FAT_CommonLoggerHelper         100%
-01p0l0000027mMpAAI  FAT_CommonLogger               100%
-01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
-01p0l0000027mN3AAI  FAT_LoggerEventTriggerService  100%
-01q0l000000HcL0AAK  FAT_LoggerEventTrigger         100%
 01p0l0000027mMvAAI  FAT_CommonTriggerHandler       100%
+01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
+01p0l0000027mN0AAI  FAT_CommonUtils                100%
+01q0l000000HcL0AAK  FAT_LoggerEventTrigger         100%
+01p0l0000027mN3AAI  FAT_LoggerEventTriggerService  100%
+01q0l000000HcL5AAK  AccountTrigger                 100%
 01p0l0000027mN7AAI  AccountTriggerService          100%
 01p0l0000027mNAAAY  AccountTriggerValidation       100%
-01q0l000000HcL5AAK  AccountTrigger                 100%
 
 === Test Summary
 NAME                 VALUE

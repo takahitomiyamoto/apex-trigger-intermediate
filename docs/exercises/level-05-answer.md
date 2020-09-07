@@ -13,7 +13,7 @@
 - [4. カスタムメタデータ型を作成](#4-カスタムメタデータ型を作成)
   - [FAT_TriggerObserver.OpportunityTriggerValidation.md-meta.xml](#fat_triggerobserveropportunitytriggervalidationmd-metaxml)
   - [FAT_TriggerObserver.CaseTriggerService.md-meta.xml](#fat_triggerobservercasetriggerservicemd-metaxml)
-- [5. テストクラスを作成](#5-テストクラスを作成)
+- [5. Apex テストクラスを作成](#5-apex-テストクラスを作成)
   - [OpportunityTriggerValidationTest.cls](#opportunitytriggervalidationtestcls)
   - [OpportunityTestUtils.cls](#opportunitytestutilscls)
   - [OpportunityTriggerTest.cls](#opportunitytriggertestcls)
@@ -432,9 +432,9 @@ sfdx force:source:push -u demo
 
 ---
 
-## 5. テストクラスを作成
+## 5. Apex テストクラスを作成
 
-5-1. テストクラスを作成します。
+5-1. Apex テストクラスを作成します。
 
 ### OpportunityTriggerValidationTest.cls
 
