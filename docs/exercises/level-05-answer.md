@@ -838,23 +838,23 @@ sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 === Apex Code Coverage
 ID                  NAME                           % COVERED  UNCOVERED LINES
 ──────────────────  ─────────────────────────────  ─────────  ───────────────
-01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
-01p0l0000027mN7AAI  AccountTriggerService          100%
-01p0l0000027mMpAAI  FAT_CommonLogger               100%
 01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
+01p0l0000027mMpAAI  FAT_CommonLogger               100%
 01p0l0000027mMqAAI  FAT_CommonLoggerConstants      100%
 01p0l0000027mMrAAI  FAT_CommonLoggerHelper         100%
-01p0l0000027mMvAAI  FAT_CommonTriggerHandler       100%
-01p0l0000027mN3AAI  FAT_LoggerEventTriggerService  100%
-01p0l0000027mNAAAY  AccountTriggerValidation       100%
 01p0l0000027mMnAAI  FAT_CommonError                100%
-01q0l000000HcL5AAK  AccountTrigger                 100%
+01p0l0000027mMvAAI  FAT_CommonTriggerHandler       100%
+01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
 01p0l0000027mN0AAI  FAT_CommonUtils                100%
 01q0l000000HcL0AAK  FAT_LoggerEventTrigger         100%
-01p0l0000027ppJAAQ  CaseTriggerService             100%
+01p0l0000027mN3AAI  FAT_LoggerEventTriggerService  100%
+01q0l000000HcL5AAK  AccountTrigger                 100%
+01p0l0000027mN7AAI  AccountTriggerService          100%
+01p0l0000027mNAAAY  AccountTriggerValidation       100%
 01q0l000000HctXAAS  CaseTrigger                    100%
-01p0l0000027ppLAAQ  OpportunityTriggerValidation   100%
+01p0l0000027ppJAAQ  CaseTriggerService             100%
 01q0l000000HctYAAS  OpportunityTrigger             100%
+01p0l0000027ppLAAQ  OpportunityTriggerValidation   100%
 
 === Test Summary
 NAME                 VALUE
