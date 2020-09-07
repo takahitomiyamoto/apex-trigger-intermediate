@@ -40,7 +40,7 @@
 
 ### 次のステップ
 
-- [Trailhead](next-step/README.md#trailhead)
+- [Trailhead](next-step/README.md)
 - [開発者ガイド](next-step/README.md#開発者ガイド)
 
 ---
