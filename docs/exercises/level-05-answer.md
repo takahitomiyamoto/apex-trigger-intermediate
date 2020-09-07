@@ -1,12 +1,33 @@
 # Lv. 5 の解答
 
-1-1. Apex トリガを作成します。
+## アウトライン
+
+- [1. Apex トリガを作成](#1-apex-トリガを作成)
+  - [OpportunityTrigger.trigger](#opportunitytriggertrigger)
+  - [CaseTrigger.trigger](#casetriggertrigger)
+    - [CustomLabels.labels-meta.xml](#customlabelslabels-metaxml)
+    - [OpportunityTriggerValidation.cls](#opportunitytriggervalidationcls)
+    - [CaseTriggerService.cls](#casetriggerservicecls)
+    - [FAT_TriggerObserver.OpportunityTriggerValidation.md-meta.xml](#fat_triggerobserveropportunitytriggervalidationmd-metaxml)
+    - [FAT_TriggerObserver.CaseTriggerService.md-meta.xml](#fat_triggerobservercasetriggerservicemd-metaxml)
+    - [OpportunityTriggerValidationTest.cls](#opportunitytriggervalidationtestcls)
+    - [OpportunityTestUtils.cls](#opportunitytestutilscls)
+    - [OpportunityTriggerTest.cls](#opportunitytriggertestcls)
+    - [CaseTriggerServiceTest.cls](#casetriggerservicetestcls)
+    - [CaseTestUtils.cls](#casetestutilscls)
+    - [CaseTriggerTest.cls](#casetriggertestcls)
+
+## 1. Apex トリガを作成
+
+Apex トリガを作成します。
+
+### OpportunityTrigger.trigger
 
 ```sh
 sfdx force:apex:trigger:create -d force-app/main/default/triggers -e "before insert,before update,before delete,after insert,after update,after delete,after undelete" -n OpportunityTrigger -s Opportunity -t ApexTrigger
 ```
 
-##### OpportunityTrigger.trigger
+**OpportunityTrigger.trigger**
 
 ```java
 trigger OpportunityTrigger on Opportunity(
@@ -25,11 +46,13 @@ trigger OpportunityTrigger on Opportunity(
 }
 ```
 
+### CaseTrigger.trigger
+
 ```sh
 sfdx force:apex:trigger:create -d force-app/main/default/triggers -e "before insert,before update,before delete,after insert,after update,after delete,after undelete" -n CaseTrigger -s Case -t ApexTrigger
 ```
 
-##### CaseTrigger.trigger
+**CaseTrigger.trigger**
 
 ```java
 trigger CaseTrigger on Case(
