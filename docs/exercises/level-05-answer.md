@@ -94,6 +94,14 @@ sfdx force:source:push -u demo
         <shortDescription>CLOSED_WON_CANNOT_BE_DELETED</shortDescription>
         <value>成約済みの商談は削除できません。</value>
     </labels>
+    <labels>
+        <fullName>HIGH_CASE_IS_CREATED</fullName>
+        <categories>INFO</categories>
+        <language>ja</language>
+        <protected>false</protected>
+        <shortDescription>HIGH_CASE_IS_CREATED</shortDescription>
+        <value>優先度の高いケースが作成されました！</value>
+    </labels>
 </CustomLabels>
 ```
 
