@@ -1,8 +1,21 @@
 # Lv. 2 の解答
 
+## アウトライン
+
+- [1. フレームワークをインストール](#1-フレームワークをインストール)
+  - [flexible-apex-trigger](#flexible-apex-trigger)
+- [2. Apex トリガを変更](#2-apex-トリガを変更)
+  - [AccountTrigger.trigger](#accounttriggertrigger)
+- [3. Apex クラスを作成](#3-apex-クラスを作成)
+  - [AccountTriggerService.cls](#accounttriggerservicecls)
+- [4. カスタムメタデータ型を追加](#4-カスタムメタデータ型を追加)
+  - [FAT_TriggerObserver.AccountTriggerService.md-meta.xml](#fat_triggerobserveraccounttriggerservicemd-metaxml)
+
+## 1. フレームワークをインストール
+
 1-1. `sfdx-project.json` に `packageAliases` を追加します。
 
-##### sfdx-project.json
+**sfdx-project.json**
 
 ```json
 {
@@ -21,6 +34,8 @@
 }
 ```
 
+### flexible-apex-trigger
+
 1-2. `flexible-apex-trigger@1.0.6.0` をインストールします。
 
 ```sh
@@ -28,9 +43,13 @@ sfdx force:package:install -p flexible-apex-trigger@1.0.6.0 -s AllUsers -u demo
 sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
 ```
 
-1-3. [Lv. 1](level-01-answer.md) で修正した Apex トリガを修正します。
+## 2. Apex トリガを変更
 
-##### AccountTrigger.trigger
+### AccountTrigger.trigger
+
+2-1. [Lv. 1](level-01-answer.md) で変更した Apex トリガを更に変更します。
+
+**AccountTrigger.trigger**
 
 ```java
 trigger AccountTrigger on Account(before insert, before update) {
@@ -39,15 +58,19 @@ trigger AccountTrigger on Account(before insert, before update) {
 }
 ```
 
-1-4. Apex クラスを作成します。
+## 3. Apex クラスを作成
+
+### AccountTriggerService.cls
+
+3-1. Apex クラスを作成します。
 
 ```sh
 sfdx force:apex:class:create -d force-app/main/default/classes -n AccountTriggerService -t DefaultApexClass
 ```
 
-1-5. `FAT_ITriggerObserver` を実装します。
+3-2. `FAT_ITriggerObserver` を実装します。
 
-##### AccountTriggerService.cls
+**AccountTriggerService.cls**
 
 ```java
 @SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
@@ -75,9 +98,9 @@ public with sharing class AccountTriggerService implements FAT_ITriggerObserver 
 }
 ```
 
-1-6. `addPrefixToName` および `setCustomerPriority` を追加します。
+3-3. `addPrefixToName` および `setCustomerPriority` を追加します。
 
-##### AccountTriggerService.cls
+**AccountTriggerService.cls**
 
 ```java
 @SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
@@ -133,10 +156,9 @@ public with sharing class AccountTriggerService implements FAT_ITriggerObserver 
 }
 ```
 
-1-7. `onBeforeInsert` から `addPrefixToName` および `setCustomerPriority` を呼び出し、
-`onBeforeUpdate` から `setCustomerPriority` を呼び出すようにします。
+3-4. `onBeforeInsert` から `addPrefixToName` および `setCustomerPriority` を呼び出し、`onBeforeUpdate` から `setCustomerPriority` を呼び出すようにします。
 
-##### AccountTriggerService.cls
+**AccountTriggerService.cls**
 
 ```java
 @SuppressWarnings('PMD.EmptyStatementBlock,PMD.ApexDoc')
@@ -195,13 +217,13 @@ public with sharing class AccountTriggerService implements FAT_ITriggerObserver 
 }
 ```
 
-1-8. コードをフォーマットします。
+3-5. コードをフォーマットします。
 
 ```sh
 yarn prettier
 ```
 
-1-9. スクラッチ組織へプッシュします。
+3-6. スクラッチ組織へプッシュします。
 
 ```sh
 sfdx force:source:push -u demo
@@ -209,31 +231,35 @@ sfdx force:source:push -u demo
 
 ---
 
-2-1. カスタムメタデータ型にレコードを追加するために、スクラッチ組織を開きます。
+## 4. カスタムメタデータ型を追加
+
+### FAT_TriggerObserver.AccountTriggerService.md-meta.xml
+
+4-1. カスタムメタデータ型にレコードを追加するために、スクラッチ組織を開きます。
 
 ```sh
 sfdx force:org:open -u demo -p lightning/setup/CustomMetadata/home
 ```
 
-2-2. `FAT_TriggerObserver` の `レコードの管理` をクリックします。
+4-2. `FAT_TriggerObserver` の `レコードの管理` をクリックします。
 
 ![customMetadata](../images/level-02-answer-01.png)
 
-2-3. `新規` をクリックします。
+4-3. `新規` をクリックします。
 
 ![customMetadata](../images/level-02-answer-02.png)
 
-2-4. 情報を入力して `保存` をクリックします。
+4-4. 情報を入力して `保存` をクリックします。
 
 ![customMetadata](../images/level-02-answer-03.png)
 
-2-5. 取引先画面を開きます。
+4-5. 取引先画面を開きます。
 
 ```sh
 sfdx force:org:open -u demo -p lightning/o/Account/list
 ```
 
-2-6. 新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。
+4-6. 新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。
 また、そのレコードを更新し、想定通りの挙動かどうかを確認しましょう。
 
 ... いかがでしたか？
