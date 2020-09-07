@@ -9,7 +9,7 @@
 - [3. Apex クラスを作成](#3-apex-クラスを作成)
   - [AccountTriggerService.cls](#accounttriggerservicecls)
 - [4. カスタムメタデータ型を追加](#4-カスタムメタデータ型を追加)
-  - [FAT_TriggerObserver.AccountTriggerService.md-meta.xml](#fat_triggerobserveraccounttriggerservicemd-metaxml)
+  - [FAT_TriggerObserver.AccountTriggerService.md-meta.xml](#fattriggerobserveraccounttriggerservicemd-metaxml)
 
 ## 1. フレームワークをインストール
 

@@ -3,8 +3,8 @@
 ## アウトライン
 
 - [1. カスタムメタデータ型の変更・追加](#1-カスタムメタデータ型の変更・追加)
-  - [FAT_TriggerObserver.AccountTriggerService.md-meta.xml](#fat_triggerobserveraccounttriggerservicemd-metaxml)
-  - [FAT_TriggerObserver.AccountTriggerValidation.md-meta.xml](#fat_triggerobserveraccounttriggervalidationmd-metaxml)
+  - [FAT_TriggerObserver.AccountTriggerService.md-meta.xml](#fattriggerobserveraccounttriggerservicemd-metaxml)
+  - [FAT_TriggerObserver.AccountTriggerValidation.md-meta.xml](#fattriggerobserveraccounttriggervalidationmd-metaxml)
 - [2. カスタム表示ラベルを追加](#2-カスタム表示ラベルを追加)
   - [CustomLabels.labels-meta.xml](#customlabelslabels-metaxml)
 - [3. Apex クラスを作成](#3-apex-クラスを作成)
