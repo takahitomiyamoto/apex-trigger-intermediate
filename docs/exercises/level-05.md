@@ -124,15 +124,3 @@
 ## 解答
 
 > [こちら](level-05-answer.md)
-
----
-
-<div style="text-align:center;font-size:120%;">
-  &lt
-  <a href="./level-04-answer.md"><b>Prev</b></a>
-  |
-  <a href="./level-05-answer.md"><b>Next</b></a>
-  &gt
-</div>
-
----

@@ -88,15 +88,3 @@ SLA が設定されている場合、SLA の有効期限およびシリアルナ
 ## 解答
 
 > [こちら](level-04-answer.md)
-
----
-
-<div style="text-align:center;font-size:120%;">
-  &lt
-  <a href="./level-03-answer.md"><b>Prev</b></a>
-  |
-  <a href="./level-04-answer.md"><b>Next</b></a>
-  &gt
-</div>
-
----

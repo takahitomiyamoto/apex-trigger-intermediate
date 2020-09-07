@@ -841,15 +841,3 @@ Org Wide Coverage    100%
 また、そのレコードを更新し、想定通りの挙動かどうかを確認しましょう。
 
 ... いかがでしたか？
-
----
-
-<div style="text-align:center;font-size:120%;">
-  &lt
-  <a href="./level-04.md"><b>Prev</b></a>
-  |
-  <a href="./level-05.md"><b>Next</b></a>
-  &gt
-</div>
-
----

@@ -437,15 +437,3 @@ Org Wide Coverage    99%
 
 今回はビジネスロジックに集中してテストコードを書けば良くなっているので、ちゃんと細かく単体テストしてる気持ちになれるのではないでしょうか。
 将来ビジネスロジックが複雑になったとしても、ホワイトボックステストを書きやすいですよね。
-
----
-
-<div style="text-align:center;font-size:120%;">
-  &lt
-  <a href="./level-03.md"><b>Prev</b></a>
-  |
-  <a href="./level-04.md"><b>Next</b></a>
-  &gt
-</div>
-
----

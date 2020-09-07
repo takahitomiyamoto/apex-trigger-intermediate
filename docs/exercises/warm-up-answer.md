@@ -58,15 +58,3 @@ sfdx force:org:open -u demo -p lightning/o/Account/list
 1-7. 新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。
 
 ... いかがでしたか？
-
----
-
-<div style="text-align:center;font-size:120%;">
-  &lt
-  <a href="./warm-up.md"><b>Prev</b></a>
-  |
-  <a href="./level-01.md"><b>Next</b></a>
-  &gt
-</div>
-
----
