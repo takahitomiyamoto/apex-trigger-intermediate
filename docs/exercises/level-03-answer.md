@@ -1,5 +1,15 @@
 # Lv. 3 の解答
 
+## アウトライン
+
+- [1. Apex テストクラスを作成](#1-apex-テストクラスを作成)
+  - [AccountTriggerServiceTest.cls](#accounttriggerservicetestcls)
+- [2. Apex テストクラスを作成](#2-apex-テストクラスを作成)
+  - [AccountTestUtils.cls](#accounttestutilscls)
+  - [AccountTriggerTest.cls](#accounttriggertestcls)
+
+## 1. Apex テストクラスを作成
+
 1-1. Apex テストを実行して現在のコードカバー率を確認します。
 
 ```sh
@@ -37,13 +47,15 @@ Test Run Coverage    96%
 Org Wide Coverage    90%
 ```
 
+### AccountTriggerServiceTest.cls
+
 1-2. `AccountTriggerService.cls` のテストクラスを作成します。
 
 ```sh
 sfdx force:apex:class:create -d force-app/test/default/classes -n AccountTriggerServiceTest -t ApexUnitTest
 ```
 
-##### AccountTriggerServiceTest.cls
+**AccountTriggerServiceTest.cls**
 
 ```java
 @isTest(SeeAllData=false)
@@ -244,6 +256,8 @@ Org Wide Coverage    96%
 
 ---
 
+## 2. Apex テストクラスを作成
+
 2-1. AccountTrigger.trigger のコードカバー率を向上させるために起動条件を追加します。
 安心してください、カスタムメタデータ型で制御しているため実際の動作には影響ありません。
 
@@ -264,14 +278,15 @@ trigger AccountTrigger on Account(
 }
 ```
 
+### AccountTestUtils.cls
+
 2-2. `AccountTrigger.trigger` のテストクラスを作成します。
 
 ```sh
 sfdx force:apex:class:create -d force-app/test/default/classes -n AccountTestUtils -t ApexUnitTest
-sfdx force:apex:class:create -d force-app/test/default/classes -n AccountTriggerTest -t ApexUnitTest
 ```
 
-##### AccountTestUtils.cls
+**AccountTestUtils.cls**
 
 ```java
 @SuppressWarnings('PMD.ApexDoc')
@@ -315,7 +330,13 @@ public with sharing class AccountTestUtils {
 }
 ```
 
-##### AccountTriggerTest.cls
+### AccountTriggerTest.cls
+
+```sh
+sfdx force:apex:class:create -d force-app/test/default/classes -n AccountTriggerTest -t ApexUnitTest
+```
+
+**AccountTriggerTest.cls**
 
 ```java
 @isTest(SeeAllData=false)
