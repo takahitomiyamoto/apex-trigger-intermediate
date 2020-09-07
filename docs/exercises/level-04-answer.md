@@ -12,6 +12,8 @@
 - [4. Apex テストクラスを作成](#4-apex-テストクラスを作成)
   - [AccountTriggerValidationTest.cls](#accounttriggervalidationtestcls)
 - [5. Apex テストクラスを変更](#5-apex-テストクラスを変更)
+  - [AccountTestUtils.cls](#accounttestutilscls)
+  - [AccountTriggerTest.cls\*\*](#accounttriggertestcls\)
 
 ## 1. カスタムメタデータ型の変更・追加
 
@@ -667,6 +669,8 @@ Org Wide Coverage    99%
 
 ## 5. Apex テストクラスを変更
 
+### AccountTestUtils.cls
+
 5-1. `AccountTestUtils.cls` に `createAbnormalAccounts` を追加します。
 
 **AccountTestUtils.cls**
@@ -725,6 +729,8 @@ public with sharing class AccountTestUtils {
   }
 }
 ```
+
+### AccountTriggerTest.cls\*\*
 
 5-2. `AccountTriggerTest.cls` の `invokeException` にコードを追加します。
 
