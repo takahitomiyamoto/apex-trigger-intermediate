@@ -20,13 +20,15 @@
           "accounttriggerservic",
           "activ",
           "addprefixtonam",
+          "afterinsert",
           "apex",
-          "befor",
+          "beforedelet",
+          "beforeinsert",
+          "beforeupd",
           "class",
           "fat_itriggerobserv",
           "fat_triggerobserv",
           "flexibl",
-          "insert",
           "lv.",
           "privat",
           "public",
@@ -35,7 +37,6 @@
           "share",
           "sobject",
           "trigger",
-          "updat",
           "void",
           "ye",
           "および",
@@ -285,6 +286,41 @@
               }
             }
           },
+          "f": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "n": {
+                      "docs": {},
+                      "s": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "r": {
+                            "docs": {},
+                            "t": {
+                              "docs": {
+                                "exercises/level-02.html": {
+                                  "ref": "exercises/level-02.html",
+                                  "tf": 0.011494252873563218
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "p": {
             "docs": {},
             "e": {
@@ -309,10 +345,65 @@
               "o": {
                 "docs": {},
                 "r": {
-                  "docs": {
-                    "exercises/level-02.html": {
-                      "ref": "exercises/level-02.html",
-                      "tf": 0.022988505747126436
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "d": {
+                      "docs": {},
+                      "e": {
+                        "docs": {},
+                        "l": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "t": {
+                              "docs": {
+                                "exercises/level-02.html": {
+                                  "ref": "exercises/level-02.html",
+                                  "tf": 0.011494252873563218
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "i": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "s": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "r": {
+                              "docs": {},
+                              "t": {
+                                "docs": {
+                                  "exercises/level-02.html": {
+                                    "ref": "exercises/level-02.html",
+                                    "tf": 0.011494252873563218
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "u": {
+                      "docs": {},
+                      "p": {
+                        "docs": {},
+                        "d": {
+                          "docs": {
+                            "exercises/level-02.html": {
+                              "ref": "exercises/level-02.html",
+                              "tf": 0.011494252873563218
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -458,29 +549,6 @@
                           "ref": "exercises/level-02.html",
                           "tf": 0.011494252873563218
                         }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "i": {
-          "docs": {},
-          "n": {
-            "docs": {},
-            "s": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "r": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "exercises/level-02.html": {
-                        "ref": "exercises/level-02.html",
-                        "tf": 0.011494252873563218
                       }
                     }
                   }
@@ -687,26 +755,6 @@
                           "tf": 0.011494252873563218
                         }
                       }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "u": {
-          "docs": {},
-          "p": {
-            "docs": {},
-            "d": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "exercises/level-02.html": {
-                      "ref": "exercises/level-02.html",
-                      "tf": 0.011494252873563218
                     }
                   }
                 }
@@ -2259,7 +2307,7 @@
           }
         }
       },
-      "length": 66
+      "length": 67
     },
     "corpusTokens": [
       "(1)",
@@ -2272,13 +2320,15 @@
       "accounttriggerservic",
       "activ",
       "addprefixtonam",
+      "afterinsert",
       "apex",
-      "befor",
+      "beforedelet",
+      "beforeinsert",
+      "beforeupd",
       "class",
       "fat_itriggerobserv",
       "fat_triggerobserv",
       "flexibl",
-      "insert",
       "lv.",
       "privat",
       "public",
@@ -2287,7 +2337,6 @@
       "share",
       "sobject",
       "trigger",
-      "updat",
       "void",
       "ye",
       "および",
@@ -2336,7 +2385,7 @@
       "url": "exercises/level-02.html",
       "title": "Lv. 2",
       "keywords": "",
-      "body": "Lv. 2 : トリガフレームワークを導入してみよう\nだんだんロジックが複雑になってきました。\nまた、同じコードが重複して存在している部分も気になりますね。\nこのまま続けても良いのですが、そろそろ本題に入りましょう。\nApex トリガの柔軟性・可読性を高めるフレームワークを導入することで何が嬉しいのかを実戦で学んでいきます。\nビジネス要件\n将来的にシステムへの変更要求が頻繁に発生することが予想されています。\n既存のビジネスロジックを保ちながら、新規のビジネスロジックを追加しやすく、テストもしやすい設計方針へ改めてください。\nアーキテクチャ要件\n\nFlexible Apex Trigger を利用してください。\nApex トリガ内のビジネスロジックはすべて削除し、代わりに Apex クラスで実装してください。\nカスタムメタデータ型を利用して各 Apex クラスの有効化・無効化を制御できるようにしてください。\n\nシステム要件\nApex トリガ\n\n\n\n観点\n内容\n備考\n\n\n\n\nApex トリガ名\nAccountTrigger\n-\n\n\n対象オブジェクト\n取引先\n-\n\n\n複数件レコードの一括処理\nYes\n-\n\n\n\nApex クラス\n\n\n\nクラス修飾子\nクラス名\n継承\n備考\n\n\n\n\npublic with sharing\nAccountTriggerService\nFAT_ITriggerObserver\n-\n\n\n\nAccountTriggerService\n\n\n\nアクセス修飾子と型\nメソッド名\n説明\n備考\n\n\n\n\nprivate void\naddPrefixToName\n(1) 項目自動更新\n@TestVisible\n\n\nprivate void\nsetCustomerPriority\n(2) 項目自動更新\n@TestVisible\n\n\n\n\n新規作成する前に addPrefixToName および setCustomerPriorityを実行する\n更新する前に setCustomerPriorityを実行する\n\nカスタムメタデータ型\nFAT_TriggerObserver\n\n\n\n表示ラベルカスタムメタデータレコード名Apex Class\nsObject\nActive\nBefore Insert\nBefore Update\n\n\n\n\nAccountTriggerService\nAccount\nYes\nYes\nYes\n\n\n\n解答\n\nこちら\n\n"
+      "body": "Lv. 2 : トリガフレームワークを導入してみよう\nだんだんロジックが複雑になってきました。\nまた、同じコードが重複して存在している部分も気になりますね。\nこのまま続けても良いのですが、そろそろ本題に入りましょう。\nApex トリガの柔軟性・可読性を高めるフレームワークを導入することで何が嬉しいのかを実戦で学んでいきます。\nビジネス要件\n将来的にシステムへの変更要求が頻繁に発生することが予想されています。\n既存のビジネスロジックを保ちながら、新規のビジネスロジックを追加しやすく、テストもしやすい設計方針へ改めてください。\nアーキテクチャ要件\n\nFlexible Apex Trigger を利用してください。\nApex トリガ内のビジネスロジックはすべて削除し、代わりに Apex クラスで実装してください。\nカスタムメタデータ型を利用して各 Apex クラスの有効化・無効化を制御できるようにしてください。\n\nシステム要件\nApex トリガ\n\n\n\n観点\n内容\n備考\n\n\n\n\nApex トリガ名\nAccountTrigger\n-\n\n\n対象オブジェクト\n取引先\n-\n\n\n複数件レコードの一括処理\nYes\n-\n\n\n\nApex クラス\n\n\n\nクラス修飾子\nクラス名\n継承\n備考\n\n\n\n\npublic with sharing\nAccountTriggerService\nFAT_ITriggerObserver\n-\n\n\n\nAccountTriggerService\n\n\n\nアクセス修飾子と型\nメソッド名\n説明\n備考\n\n\n\n\nprivate void\naddPrefixToName\n(1) 項目自動更新\n@TestVisible\n\n\nprivate void\nsetCustomerPriority\n(2) 項目自動更新\n@TestVisible\n\n\n\n\n新規作成する前に addPrefixToName および setCustomerPriorityを実行する\n更新する前に setCustomerPriorityを実行する\n\nカスタムメタデータ型\nFAT_TriggerObserver\n\n\n\n表示ラベルカスタムメタデータレコード名Apex Class\nsObject\nActive\nBeforeInsert\nBeforeUpdate\nBeforeDelete\nAfterInsert\n\n\n\n\nAccountTriggerService\nAccount\nYes\nYes\nYes\nNo\nNo\n\n\n\n解答\n\nこちら\n\n"
     }
   }
 }
