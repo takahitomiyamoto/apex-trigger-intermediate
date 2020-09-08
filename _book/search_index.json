@@ -22,8 +22,7 @@
           "warm",
           "ye",
           "こちら",
-          "これから取引先オブジェクトにサンプルデータを何件か作成しようと考えています。ひと目でサンプルデータであることがわかるように、取引先レコードを新規作成するタイミングで取引先の名前の先頭に",
-          "という文字列を自動付与してください。",
+          "これから取引先オブジェクトにサンプルデータを何件か作成しようと考えています。ひと目でサンプルデータであることがわかるように、取引先レコードを新規作成するタイミングで取引先の名前の先頭に特定の文字列を自動付与してください。",
           "なし",
           "まずは、シンプルな",
           "アクション",
@@ -66,7 +65,7 @@
               "docs": {
                 "exercises/warm-up.html": {
                   "ref": "exercises/warm-up.html",
-                  "tf": 0.03773584905660377
+                  "tf": 0.0392156862745098
                 }
               }
             }
@@ -88,7 +87,7 @@
                         "docs": {
                           "exercises/warm-up.html": {
                             "ref": "exercises/warm-up.html",
-                            "tf": 0.018867924528301886
+                            "tf": 0.0196078431372549
                           }
                         }
                       }
@@ -103,7 +102,7 @@
           "docs": {
             "exercises/warm-up.html": {
               "ref": "exercises/warm-up.html",
-              "tf": 0.03773584905660377
+              "tf": 0.0392156862745098
             }
           }
         },
@@ -111,7 +110,7 @@
           "docs": {
             "exercises/warm-up.html": {
               "ref": "exercises/warm-up.html",
-              "tf": 0.018867924528301886
+              "tf": 0.0196078431372549
             }
           }
         },
@@ -129,7 +128,7 @@
                     "docs": {
                       "exercises/warm-up.html": {
                         "ref": "exercises/warm-up.html",
-                        "tf": 0.03773584905660377
+                        "tf": 0.0196078431372549
                       }
                     }
                   }
@@ -164,7 +163,7 @@
                                 "docs": {
                                   "exercises/warm-up.html": {
                                     "ref": "exercises/warm-up.html",
-                                    "tf": 0.03773584905660377
+                                    "tf": 0.0392156862745098
                                   }
                                 }
                               }
@@ -186,7 +185,7 @@
                 "docs": {
                   "exercises/warm-up.html": {
                     "ref": "exercises/warm-up.html",
-                    "tf": 0.09433962264150944
+                    "tf": 0.09803921568627451
                   }
                 }
               }
@@ -203,7 +202,7 @@
                 "docs": {
                   "exercises/warm-up.html": {
                     "ref": "exercises/warm-up.html",
-                    "tf": 0.018867924528301886
+                    "tf": 0.0196078431372549
                   }
                 }
               }
@@ -216,7 +215,7 @@
             "docs": {
               "exercises/warm-up.html": {
                 "ref": "exercises/warm-up.html",
-                "tf": 5.018867924528302
+                "tf": 5.019607843137255
               }
             }
           }
@@ -231,7 +230,7 @@
                 "docs": {
                   "exercises/warm-up.html": {
                     "ref": "exercises/warm-up.html",
-                    "tf": 5.018867924528302
+                    "tf": 5.019607843137255
                   }
                 }
               }
@@ -244,7 +243,7 @@
             "docs": {
               "exercises/warm-up.html": {
                 "ref": "exercises/warm-up.html",
-                "tf": 0.018867924528301886
+                "tf": 0.0196078431372549
               }
             }
           }
@@ -257,7 +256,7 @@
               "docs": {
                 "exercises/warm-up.html": {
                   "ref": "exercises/warm-up.html",
-                  "tf": 0.018867924528301886
+                  "tf": 0.0196078431372549
                 }
               }
             }
@@ -443,10 +442,64 @@
                                                                                                                                                                                             "頭": {
                                                                                                                                                                                               "docs": {},
                                                                                                                                                                                               "に": {
-                                                                                                                                                                                                "docs": {
-                                                                                                                                                                                                  "exercises/warm-up.html": {
-                                                                                                                                                                                                    "ref": "exercises/warm-up.html",
-                                                                                                                                                                                                    "tf": 0.018867924528301886
+                                                                                                                                                                                                "docs": {},
+                                                                                                                                                                                                "特": {
+                                                                                                                                                                                                  "docs": {},
+                                                                                                                                                                                                  "定": {
+                                                                                                                                                                                                    "docs": {},
+                                                                                                                                                                                                    "の": {
+                                                                                                                                                                                                      "docs": {},
+                                                                                                                                                                                                      "文": {
+                                                                                                                                                                                                        "docs": {},
+                                                                                                                                                                                                        "字": {
+                                                                                                                                                                                                          "docs": {},
+                                                                                                                                                                                                          "列": {
+                                                                                                                                                                                                            "docs": {},
+                                                                                                                                                                                                            "を": {
+                                                                                                                                                                                                              "docs": {},
+                                                                                                                                                                                                              "自": {
+                                                                                                                                                                                                                "docs": {},
+                                                                                                                                                                                                                "動": {
+                                                                                                                                                                                                                  "docs": {},
+                                                                                                                                                                                                                  "付": {
+                                                                                                                                                                                                                    "docs": {},
+                                                                                                                                                                                                                    "与": {
+                                                                                                                                                                                                                      "docs": {},
+                                                                                                                                                                                                                      "し": {
+                                                                                                                                                                                                                        "docs": {},
+                                                                                                                                                                                                                        "て": {
+                                                                                                                                                                                                                          "docs": {},
+                                                                                                                                                                                                                          "く": {
+                                                                                                                                                                                                                            "docs": {},
+                                                                                                                                                                                                                            "だ": {
+                                                                                                                                                                                                                              "docs": {},
+                                                                                                                                                                                                                              "さ": {
+                                                                                                                                                                                                                                "docs": {},
+                                                                                                                                                                                                                                "い": {
+                                                                                                                                                                                                                                  "docs": {},
+                                                                                                                                                                                                                                  "。": {
+                                                                                                                                                                                                                                    "docs": {
+                                                                                                                                                                                                                                      "exercises/warm-up.html": {
+                                                                                                                                                                                                                                        "ref": "exercises/warm-up.html",
+                                                                                                                                                                                                                                        "tf": 0.0196078431372549
+                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                  }
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                              }
+                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                  }
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                              }
+                                                                                                                                                                                                            }
+                                                                                                                                                                                                          }
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                      }
+                                                                                                                                                                                                    }
                                                                                                                                                                                                   }
                                                                                                                                                                                                 }
                                                                                                                                                                                               }
@@ -541,72 +594,13 @@
             }
           }
         },
-        "と": {
-          "docs": {},
-          "い": {
-            "docs": {},
-            "う": {
-              "docs": {},
-              "文": {
-                "docs": {},
-                "字": {
-                  "docs": {},
-                  "列": {
-                    "docs": {},
-                    "を": {
-                      "docs": {},
-                      "自": {
-                        "docs": {},
-                        "動": {
-                          "docs": {},
-                          "付": {
-                            "docs": {},
-                            "与": {
-                              "docs": {},
-                              "し": {
-                                "docs": {},
-                                "て": {
-                                  "docs": {},
-                                  "く": {
-                                    "docs": {},
-                                    "だ": {
-                                      "docs": {},
-                                      "さ": {
-                                        "docs": {},
-                                        "い": {
-                                          "docs": {},
-                                          "。": {
-                                            "docs": {
-                                              "exercises/warm-up.html": {
-                                                "ref": "exercises/warm-up.html",
-                                                "tf": 0.018867924528301886
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "な": {
           "docs": {},
           "し": {
             "docs": {
               "exercises/warm-up.html": {
                 "ref": "exercises/warm-up.html",
-                "tf": 0.018867924528301886
+                "tf": 0.0196078431372549
               }
             }
           }
@@ -631,7 +625,7 @@
                           "docs": {
                             "exercises/warm-up.html": {
                               "ref": "exercises/warm-up.html",
-                              "tf": 0.018867924528301886
+                              "tf": 0.0196078431372549
                             }
                           }
                         }
@@ -655,7 +649,7 @@
                   "docs": {
                     "exercises/warm-up.html": {
                       "ref": "exercises/warm-up.html",
-                      "tf": 0.018867924528301886
+                      "tf": 0.0196078431372549
                     }
                   }
                 }
@@ -680,7 +674,7 @@
                           "docs": {
                             "exercises/warm-up.html": {
                               "ref": "exercises/warm-up.html",
-                              "tf": 0.018867924528301886
+                              "tf": 0.0196078431372549
                             }
                           }
                         }
@@ -736,7 +730,7 @@
                                                   "docs": {
                                                     "exercises/warm-up.html": {
                                                       "ref": "exercises/warm-up.html",
-                                                      "tf": 0.018867924528301886
+                                                      "tf": 0.0196078431372549
                                                     }
                                                   }
                                                 }
@@ -774,7 +768,7 @@
                     "docs": {
                       "exercises/warm-up.html": {
                         "ref": "exercises/warm-up.html",
-                        "tf": 0.018867924528301886
+                        "tf": 0.0196078431372549
                       }
                     }
                   }
@@ -792,7 +786,7 @@
                   "docs": {
                     "exercises/warm-up.html": {
                       "ref": "exercises/warm-up.html",
-                      "tf": 0.018867924528301886
+                      "tf": 0.0196078431372549
                     }
                   }
                 }
@@ -808,7 +802,7 @@
               "docs": {
                 "exercises/warm-up.html": {
                   "ref": "exercises/warm-up.html",
-                  "tf": 0.018867924528301886
+                  "tf": 0.0196078431372549
                 }
               },
               "の": {
@@ -837,7 +831,7 @@
                                       "docs": {
                                         "exercises/warm-up.html": {
                                           "ref": "exercises/warm-up.html",
-                                          "tf": 0.018867924528301886
+                                          "tf": 0.0196078431372549
                                         }
                                       }
                                     }
@@ -874,7 +868,7 @@
                                   "docs": {
                                     "exercises/warm-up.html": {
                                       "ref": "exercises/warm-up.html",
-                                      "tf": 0.018867924528301886
+                                      "tf": 0.0196078431372549
                                     }
                                   }
                                 }
@@ -888,7 +882,7 @@
                             "docs": {
                               "exercises/warm-up.html": {
                                 "ref": "exercises/warm-up.html",
-                                "tf": 0.018867924528301886
+                                "tf": 0.0196078431372549
                               }
                             }
                           }
@@ -902,7 +896,7 @@
                 "docs": {
                   "exercises/warm-up.html": {
                     "ref": "exercises/warm-up.html",
-                    "tf": 0.018867924528301886
+                    "tf": 0.0196078431372549
                   }
                 }
               }
@@ -923,7 +917,7 @@
                     "docs": {
                       "exercises/warm-up.html": {
                         "ref": "exercises/warm-up.html",
-                        "tf": 0.018867924528301886
+                        "tf": 0.0196078431372549
                       }
                     }
                   }
@@ -936,7 +930,7 @@
           "docs": {
             "exercises/warm-up.html": {
               "ref": "exercises/warm-up.html",
-              "tf": 0.018867924528301886
+              "tf": 0.0196078431372549
             }
           }
         },
@@ -946,7 +940,7 @@
             "docs": {
               "exercises/warm-up.html": {
                 "ref": "exercises/warm-up.html",
-                "tf": 0.05660377358490566
+                "tf": 0.058823529411764705
               }
             }
           }
@@ -963,7 +957,7 @@
                   "docs": {
                     "exercises/warm-up.html": {
                       "ref": "exercises/warm-up.html",
-                      "tf": 0.018867924528301886
+                      "tf": 0.0196078431372549
                     }
                   }
                 }
@@ -979,14 +973,14 @@
               "docs": {
                 "exercises/warm-up.html": {
                   "ref": "exercises/warm-up.html",
-                  "tf": 0.018867924528301886
+                  "tf": 0.0196078431372549
                 }
               },
               "名": {
                 "docs": {
                   "exercises/warm-up.html": {
                     "ref": "exercises/warm-up.html",
-                    "tf": 0.018867924528301886
+                    "tf": 0.0196078431372549
                   }
                 }
               }
@@ -1011,7 +1005,7 @@
                         "docs": {
                           "exercises/warm-up.html": {
                             "ref": "exercises/warm-up.html",
-                            "tf": 0.018867924528301886
+                            "tf": 0.0196078431372549
                           }
                         }
                       }
@@ -1038,7 +1032,7 @@
                       "docs": {
                         "exercises/warm-up.html": {
                           "ref": "exercises/warm-up.html",
-                          "tf": 0.018867924528301886
+                          "tf": 0.0196078431372549
                         }
                       }
                     }
@@ -1064,7 +1058,7 @@
                       "docs": {
                         "exercises/warm-up.html": {
                           "ref": "exercises/warm-up.html",
-                          "tf": 0.018867924528301886
+                          "tf": 0.0196078431372549
                         }
                       }
                     }
@@ -1078,7 +1072,7 @@
                 "docs": {
                   "exercises/warm-up.html": {
                     "ref": "exercises/warm-up.html",
-                    "tf": 0.018867924528301886
+                    "tf": 0.0196078431372549
                   }
                 }
               }
@@ -1097,7 +1091,7 @@
                   "docs": {
                     "exercises/warm-up.html": {
                       "ref": "exercises/warm-up.html",
-                      "tf": 0.018867924528301886
+                      "tf": 0.0196078431372549
                     }
                   }
                 }
@@ -1131,7 +1125,7 @@
                                 "docs": {
                                   "exercises/warm-up.html": {
                                     "ref": "exercises/warm-up.html",
-                                    "tf": 0.018867924528301886
+                                    "tf": 0.0196078431372549
                                   }
                                 }
                               }
@@ -1152,7 +1146,7 @@
             "docs": {
               "exercises/warm-up.html": {
                 "ref": "exercises/warm-up.html",
-                "tf": 0.018867924528301886
+                "tf": 0.0196078431372549
               }
             }
           }
@@ -1167,7 +1161,7 @@
                 "docs": {
                   "exercises/warm-up.html": {
                     "ref": "exercises/warm-up.html",
-                    "tf": 0.018867924528301886
+                    "tf": 0.0196078431372549
                   }
                 }
               }
@@ -1182,7 +1176,7 @@
               "docs": {
                 "exercises/warm-up.html": {
                   "ref": "exercises/warm-up.html",
-                  "tf": 0.018867924528301886
+                  "tf": 0.0196078431372549
                 }
               }
             },
@@ -1196,7 +1190,7 @@
                     "docs": {
                       "exercises/warm-up.html": {
                         "ref": "exercises/warm-up.html",
-                        "tf": 0.03773584905660377
+                        "tf": 0.0392156862745098
                       }
                     }
                   }
@@ -1206,7 +1200,7 @@
           }
         }
       },
-      "length": 42
+      "length": 41
     },
     "corpusTokens": [
       "(1)",
@@ -1221,8 +1215,7 @@
       "warm",
       "ye",
       "こちら",
-      "これから取引先オブジェクトにサンプルデータを何件か作成しようと考えています。ひと目でサンプルデータであることがわかるように、取引先レコードを新規作成するタイミングで取引先の名前の先頭に",
-      "という文字列を自動付与してください。",
+      "これから取引先オブジェクトにサンプルデータを何件か作成しようと考えています。ひと目でサンプルデータであることがわかるように、取引先レコードを新規作成するタイミングで取引先の名前の先頭に特定の文字列を自動付与してください。",
       "なし",
       "まずは、シンプルな",
       "アクション",
@@ -1259,7 +1252,7 @@
       "url": "exercises/warm-up.html",
       "title": "Warm-up",
       "keywords": "",
-      "body": "Warm-up : シンプルな Apex トリガを書いてみよう\nまずは、シンプルな Apex トリガを書いてみましょう。\nビジネス要件\n\nこれから取引先オブジェクトにサンプルデータを何件か作成しようと考えています。ひと目でサンプルデータであることがわかるように、取引先レコードを新規作成するタイミングで取引先の名前の先頭に [サンプル] という文字列を自動付与してください。\n\nアーキテクチャ要件\n\nApex トリガのみで実装してください。\nApex クラスなど他の資源を使用しないでください。\n\nシステム要件\nApex トリガ\n\n\n\nトリガ名\n対象オブジェクト\n複数件レコードの一括処理\n備考\n\n\n\n\nAccountTrigger\n取引先\nYes\n-\n\n\n\nAccountTrigger\n\n\n\n起動条件\nアクション\n備考\n\n\n\n\n新規作成する前\n(1) 項目自動更新\n-\n\n\n\n\n(1) 項目自動更新\n更新条件\nなし\n更新対象の項目\n\n\n\n表示ラベル\n項目名\n値\n備考\n\n\n\n\n取引先名\nName\n[サンプル] + (半角スペース) + 元の入力値\n-\n\n\n\n解答\n\nこちら\n\n"
+      "body": "Warm-up : シンプルな Apex トリガを書いてみよう\nまずは、シンプルな Apex トリガを書いてみましょう。\nビジネス要件\n\nこれから取引先オブジェクトにサンプルデータを何件か作成しようと考えています。ひと目でサンプルデータであることがわかるように、取引先レコードを新規作成するタイミングで取引先の名前の先頭に特定の文字列を自動付与してください。\n\nアーキテクチャ要件\n\nApex トリガのみで実装してください。\nApex クラスなど他の資源を使用しないでください。\n\nシステム要件\nApex トリガ\n\n\n\nトリガ名\n対象オブジェクト\n複数件レコードの一括処理\n備考\n\n\n\n\nAccountTrigger\n取引先\nYes\n-\n\n\n\nAccountTrigger\n\n\n\n起動条件\nアクション\n備考\n\n\n\n\n新規作成する前\n(1) 項目自動更新\n-\n\n\n\n\n(1) 項目自動更新\n更新条件\nなし\n更新対象の項目\n\n\n\n表示ラベル\n項目名\n値\n備考\n\n\n\n\n取引先名\nName\n[サンプル] + (半角スペース) + 元の入力値\n-\n\n\n\n解答\n\nこちら\n\n"
     }
   }
 }
