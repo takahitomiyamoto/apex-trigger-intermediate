@@ -9,6 +9,7 @@ Apex トリガの柔軟性・可読性を高めるフレームワークを導入
 ## ビジネス要件
 
 将来的にシステムへの変更要求が頻繁に発生することが予想されています。
+
 既存のビジネスロジックを保ちながら、新規のビジネスロジックを追加しやすく、テストもしやすい設計方針へ改めてください。
 
 ## アーキテクチャ要件
@@ -29,11 +30,16 @@ Apex トリガの柔軟性・可読性を高めるフレームワークを導入
 
 ### Apex クラス
 
-| 観点          | 内容                    | 備考                                       |
-| :------------ | :---------------------- | :----------------------------------------- |
-| Apex クラス名 | `AccountTriggerService` | -                                          |
-| メソッド (1)  | `addPrefixToName`       | [(1) 項目自動更新](warm-up.md#warm-up-1)   |
-| メソッド (2)  | `setCustomerPriority`   | [(2) 項目自動更新](level-01.md#level-01-2) |
+| クラス修飾子          | クラス名                | 継承                 | 備考 |
+| :-------------------- | :---------------------- | :------------------- | :--- |
+| `public with sharing` | `AccountTriggerService` | FAT_ITriggerObserver | -    |
+
+#### AccountTriggerService
+
+| アクセス修飾子と型 | メソッド名            | 説明                                       | 備考           |
+| :----------------- | :-------------------- | :----------------------------------------- | :------------- |
+| `private void`     | `addPrefixToName`     | [(1) 項目自動更新](warm-up.md#warm-up-1)   | `@TestVisible` |
+| `private void`     | `setCustomerPriority` | [(2) 項目自動更新](level-01.md#level-01-2) | `@TestVisible` |
 
 - 新規作成する前に `addPrefixToName` および `setCustomerPriority`を実行する
 - 更新する前に `setCustomerPriority`を実行する
