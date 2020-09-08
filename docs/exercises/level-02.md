@@ -30,9 +30,9 @@ Apex トリガの柔軟性・可読性を高めるフレームワークを導入
 
 ### Apex クラス
 
-| クラス修飾子          | クラス名                | 継承                 | 備考 |
-| :-------------------- | :---------------------- | :------------------- | :--- |
-| `public with sharing` | `AccountTriggerService` | FAT_ITriggerObserver | -    |
+| クラス修飾子          | クラス名                | 継承                   | 備考 |
+| :-------------------- | :---------------------- | :--------------------- | :--- |
+| `public with sharing` | `AccountTriggerService` | `FAT_ITriggerObserver` | -    |
 
 #### AccountTriggerService
 
@@ -44,17 +44,13 @@ Apex トリガの柔軟性・可読性を高めるフレームワークを導入
 - 新規作成する前に `addPrefixToName` および `setCustomerPriority`を実行する
 - 更新する前に `setCustomerPriority`を実行する
 
-### カスタムメタデータ型 : FAT_TriggerObserver
+### カスタムメタデータ型
 
-| 項目名                       | 値                      | 備考 |
-| :--------------------------- | :---------------------- | :--- |
-| 表示ラベル                   | `AccountTriggerService` | -    |
-| カスタムメタデータレコード名 | `AccountTriggerService` | -    |
-| Apex Class                   | `AccountTriggerService` | -    |
-| sObject                      | `Account`               | -    |
-| Active                       | Yes                     | -    |
-| Before Insert                | Yes                     | -    |
-| Before Update                | Yes                     | -    |
+#### FAT_TriggerObserver
+
+| 表示ラベル<br>カスタムメタデータレコード名<br>Apex Class | sObject   | Active | Before<br>Insert | Before<br>Update |
+| :------------------------------------------------------- | :-------- | :----- | :--------------- | :--------------- |
+| `AccountTriggerService`                                  | `Account` | Yes    | Yes              | Yes              |
 
 ## 解答
 
