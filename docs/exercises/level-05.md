@@ -21,46 +21,39 @@
 
 ### Apex トリガ
 
-| 観点                     | 内容                 | 備考 |
-| :----------------------- | :------------------- | :--- |
-| Apex トリガ名            | `OpportunityTrigger` | -    |
-| 対象オブジェクト         | 商談                 | -    |
-| 複数件レコードの一括処理 | Yes                  | -    |
-
-| 観点                     | 内容          | 備考 |
-| :----------------------- | :------------ | :--- |
-| Apex トリガ名            | `CaseTrigger` | -    |
-| 対象オブジェクト         | ケース        | -    |
-| 複数件レコードの一括処理 | Yes           | -    |
+| トリガ名             | 対象オブジェクト | 複数件レコードの一括処理 | 備考 |
+| :------------------- | :--------------- | :----------------------- | :--- |
+| `OpportunityTrigger` | 商談             | Yes                      | -    |
+| `CaseTrigger`        | ケース           | Yes                      | -    |
 
 ### Apex クラス
 
-| 観点          | 内容                           | 備考                   |
-| :------------ | :----------------------------- | :--------------------- |
-| Apex クラス名 | `OpportunityTriggerValidation` | -                      |
-| メソッド (1)  | `preventDeletion`              | (1) 削除防止アクション |
+| クラス修飾子          | クラス名                       | 継承                   | 備考 |
+| :-------------------- | :----------------------------- | :--------------------- | :--- |
+| `public with sharing` | `OpportunityTriggerValidation` | `FAT_ITriggerObserver` | -    |
+| `public with sharing` | `CaseTriggerService`           | `FAT_ITriggerObserver` | -    |
+
+#### OpportunityTriggerValidation
+
+| アクセス修飾子と型 | メソッド名        | 説明                                  | 備考           |
+| :----------------- | :---------------- | :------------------------------------ | :------------- |
+| `private void`     | `preventDeletion` | [(1) 削除防止アクション](#level-05-1) | `@TestVisible` |
 
 - 削除する前に `preventDeletion` を実行する
 
-| 観点          | 内容                 | 備考                       |
-| :------------ | :------------------- | :------------------------- |
-| Apex クラス名 | `CaseTriggerService` | -                          |
-| メソッド (2)  | `postFeedItems`      | (2) フィード投稿アクション |
+#### CaseTriggerService
+
+| アクセス修飾子と型 | メソッド名      | 説明                                      | 備考           |
+| :----------------- | :-------------- | :---------------------------------------- | :------------- |
+| `private void`     | `postFeedItems` | [(2) フィード投稿アクション](#level-05-2) | `@TestVisible` |
 
 - 新規作成した後に `postFeedItems` を実行する
 
-| テストクラス名                     | 用途                                                                  | 備考 |
-| :--------------------------------- | :-------------------------------------------------------------------- | :--- |
-| `OpportunityTriggerValidationTest` | `OpportunityTriggerValidation.cls` に対するテストクラス               | -    |
-| `OpportunityTestUtils`             | `OpportunityTriggerTest.cls` で利用するテストメソッドを準備するクラス | -    |
-| `OpportunityTriggerTest`           | `OpportunityTrigger.trigger` に対するテストクラス                     | -    |
-| `CaseTriggerServiceTest`           | `CaseTriggerServiceTest.cls` に対するテストクラス                     | -    |
-| `CaseTestUtils`                    | `CaseTriggerTest.cls` で利用するテストメソッドを準備するクラス        | -    |
-| `CaseTriggerTest`                  | `CaseTrigger.trigger` に対するテストクラス                            | -    |
+<a id="level-05-1"></a>
 
-#### (1) 削除防止アクション
+##### (1) 削除防止アクション
 
-##### 起動条件
+###### 起動条件
 
 次の条件を満たす場合:
 
@@ -70,15 +63,17 @@
 | :--------- | :---------- | :--- |
 | フェーズ   | `StageName` | -    |
 
-##### エラーメッセージ
+###### エラーメッセージ
 
 | エラーメッセージ                 | エラー表示場所 | 備考 |
 | :------------------------------- | :------------- | :--- |
 | 成約済みの商談は削除できません。 | `Stage`        | -    |
 
-#### (2) フィード投稿アクション
+<a id="level-05-2"></a>
 
-##### 起動条件
+##### (2) フィード投稿アクション
+
+###### 起動条件
 
 次の条件を満たす場合:
 
@@ -88,11 +83,22 @@
 | :--------- | :--------- | :--- |
 | 優先度     | `Priority` | -    |
 
-##### 投稿メッセージ
+###### 投稿メッセージ
 
 | 投稿メッセージ                       | 投稿場所                       | 備考 |
 | :----------------------------------- | :----------------------------- | :--- |
 | 優先度の高いケースが作成されました！ | 新規作成したケースのフィード欄 | -    |
+
+### Apex テストクラス
+
+| クラス修飾子          | クラス名                           | 用途                                                                  | 備考 |
+| :-------------------- | :--------------------------------- | :-------------------------------------------------------------------- | :--- |
+| `private`             | `OpportunityTriggerValidationTest` | `OpportunityTriggerValidation.cls` に対するテストクラス               | -    |
+| `public with sharing` | `OpportunityTestUtils`             | `OpportunityTriggerTest.cls` で利用するテストメソッドを準備するクラス | -    |
+| `private`             | `OpportunityTriggerTest`           | `OpportunityTrigger.trigger` に対するテストクラス                     | -    |
+| `private`             | `CaseTriggerServiceTest`           | `CaseTriggerService.cls` に対するテストクラス                         | -    |
+| `public with sharing` | `CaseTestUtils`                    | `CaseTriggerTest.cls` で利用するテストメソッドを準備するクラス        | -    |
+| `private`             | `CaseTriggerTest`                  | `CaseTrigger.trigger` に対するテストクラス                            | -    |
 
 ### カスタム表示ラベル
 
@@ -101,25 +107,14 @@
 | `ERROR`  | `CLOSED_WON_CANNOT_BE_DELETED` | 成約済みの商談は削除できません。     | -    |
 | `INFO`   | `HIGH_CASE_IS_CREATED`         | 優先度の高いケースが作成されました！ | -    |
 
-### カスタムメタデータ型 : FAT_TriggerObserver
+### カスタムメタデータ型
 
-| 項目名                       | 値                             | 備考 |
-| :--------------------------- | :----------------------------- | :--- |
-| 表示ラベル                   | `OpportunityTriggerValidation` | -    |
-| カスタムメタデータレコード名 | `OpportunityTriggerValidation` | -    |
-| Apex Class                   | `OpportunityTriggerValidation` | -    |
-| sObject                      | `Opportunity`                  | -    |
-| Active                       | Yes                            | -    |
-| Before Delete                | Yes                            | -    |
+#### FAT_TriggerObserver
 
-| 項目名                       | 値                   | 備考 |
-| :--------------------------- | :------------------- | :--- |
-| 表示ラベル                   | `CaseTriggerService` | -    |
-| カスタムメタデータレコード名 | `CaseTriggerService` | -    |
-| Apex Class                   | `CaseTriggerService` | -    |
-| sObject                      | `Case`               | -    |
-| Active                       | Yes                  | -    |
-| After Insert                 | Yes                  | -    |
+| 表示ラベル<br>カスタムメタデータレコード名<br>Apex Class | sObject   | Active | Before<br>Insert | Before<br>Update | Before<br>Delete | After<br>Insert |
+| :------------------------------------------------------- | :-------- | :----- | :--------------- | :--------------- | :--------------- | :-------------- |
+| `OpportunityTriggerValidation`                           | `Account` | Yes    | No               | No               | Yes              | No              |
+| `CaseTriggerService`                                     | `Account` | Yes    | No               | No               | No               | Yes             |
 
 ## 解答
 
