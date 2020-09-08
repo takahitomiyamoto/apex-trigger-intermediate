@@ -15,11 +15,11 @@
 
 ### Apex クラス
 
-| テストクラス名              | 用途                                                              | 備考 |
-| :-------------------------- | :---------------------------------------------------------------- | :--- |
-| `AccountTriggerServiceTest` | `AccountTriggerService.cls` に対するテストクラス                  | -    |
-| `AccountTestUtils`          | `AccountTriggerTest.cls` で利用するテストメソッドを準備するクラス | -    |
-| `AccountTriggerTest`        | `AccountTrigger.trigger` に対するテストクラス                     | -    |
+| クラス修飾子 | クラス名                    | 用途                                                              | 備考                        |
+| :----------- | :-------------------------- | :---------------------------------------------------------------- | :-------------------------- |
+| `private`    | `AccountTriggerServiceTest` | `AccountTriggerService.cls` に対するテストクラス                  | `@isTest(SeeAllData=false)` |
+| `private`    | `AccountTestUtils`          | `AccountTriggerTest.cls` で利用するテストメソッドを準備するクラス | `@isTest(SeeAllData=false)` |
+| `private`    | `AccountTriggerTest`        | `AccountTrigger.trigger` に対するテストクラス                     | `@isTest(SeeAllData=false)` |
 
 ## 解答
 
