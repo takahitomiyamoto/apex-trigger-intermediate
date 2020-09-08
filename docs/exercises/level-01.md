@@ -49,9 +49,9 @@
 | :---------------- | :-------------------- | :---------------------------------- | :--- |
 | Customer Priority | `CustomerPriority__c` | `High` または `Medium` または `Low` | -    |
 
-- 評価が `Hot` の場合: `High`
-- 評価が `Warm` の場合: `Medium`
-- 評価が `Cold` の場合: `Low`
+- 評価が `Hot` である場合: `High`
+- 評価が `Warm` である場合: `Medium`
+- 評価が `Cold` である場合: `Low`
 
 ## 解答
 
