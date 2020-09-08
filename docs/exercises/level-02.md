@@ -29,11 +29,11 @@ Apex トリガの柔軟性・可読性を高めるフレームワークを導入
 
 ### Apex クラス
 
-| 観点          | 内容                    | 備考                                            |
-| :------------ | :---------------------- | :---------------------------------------------- |
-| Apex クラス名 | `AccountTriggerService` | -                                               |
-| メソッド (1)  | `addPrefixToName`       | [(1)-1. 項目自動更新](warm-up.md#warm-up-1-1)   |
-| メソッド (2)  | `setCustomerPriority`   | [(2)-1. 項目自動更新](level-01.md#level-01-2-1) |
+| 観点          | 内容                    | 備考                                       |
+| :------------ | :---------------------- | :----------------------------------------- |
+| Apex クラス名 | `AccountTriggerService` | -                                          |
+| メソッド (1)  | `addPrefixToName`       | [(1) 項目自動更新](warm-up.md#warm-up-1)   |
+| メソッド (2)  | `setCustomerPriority`   | [(2) 項目自動更新](level-01.md#level-01-2) |
 
 - 新規作成する前に `addPrefixToName` および `setCustomerPriority`を実行する
 - 更新する前に `setCustomerPriority`を実行する
