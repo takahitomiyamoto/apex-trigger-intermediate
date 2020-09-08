@@ -13,7 +13,6 @@
           "(1)",
           "4",
           ":",
-          "@istest(seealldata=false)",
           "@testvis",
           "account",
           "accounttriggerservic",
@@ -114,7 +113,7 @@
           "docs": {
             "exercises/level-04.html": {
               "ref": "exercises/level-04.html",
-              "tf": 5.0060975609756095
+              "tf": 5.006134969325154
             }
           }
         },
@@ -126,7 +125,7 @@
               "docs": {
                 "exercises/level-04.html": {
                   "ref": "exercises/level-04.html",
-                  "tf": 0.012195121951219513
+                  "tf": 0.012269938650306749
                 }
               }
             }
@@ -137,89 +136,12 @@
           "docs": {
             "exercises/level-04.html": {
               "ref": "exercises/level-04.html",
-              "tf": 0.006097560975609756
+              "tf": 0.006134969325153374
             }
           }
         },
         "@": {
           "docs": {},
-          "i": {
-            "docs": {},
-            "s": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "s": {
-                    "docs": {},
-                    "t": {
-                      "docs": {},
-                      "(": {
-                        "docs": {},
-                        "s": {
-                          "docs": {},
-                          "e": {
-                            "docs": {},
-                            "e": {
-                              "docs": {},
-                              "a": {
-                                "docs": {},
-                                "l": {
-                                  "docs": {},
-                                  "l": {
-                                    "docs": {},
-                                    "d": {
-                                      "docs": {},
-                                      "a": {
-                                        "docs": {},
-                                        "t": {
-                                          "docs": {},
-                                          "a": {
-                                            "docs": {},
-                                            "=": {
-                                              "docs": {},
-                                              "f": {
-                                                "docs": {},
-                                                "a": {
-                                                  "docs": {},
-                                                  "l": {
-                                                    "docs": {},
-                                                    "s": {
-                                                      "docs": {},
-                                                      "e": {
-                                                        "docs": {},
-                                                        ")": {
-                                                          "docs": {
-                                                            "exercises/level-04.html": {
-                                                              "ref": "exercises/level-04.html",
-                                                              "tf": 0.006097560975609756
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "t": {
             "docs": {},
             "e": {
@@ -236,7 +158,7 @@
                         "docs": {
                           "exercises/level-04.html": {
                             "ref": "exercises/level-04.html",
-                            "tf": 0.006097560975609756
+                            "tf": 0.006134969325153374
                           }
                         }
                       }
@@ -263,7 +185,7 @@
                       "docs": {
                         "exercises/level-04.html": {
                           "ref": "exercises/level-04.html",
-                          "tf": 0.012195121951219513
+                          "tf": 0.012269938650306749
                         }
                       },
                       "t": {
@@ -294,7 +216,7 @@
                                                 "docs": {
                                                   "exercises/level-04.html": {
                                                     "ref": "exercises/level-04.html",
-                                                    "tf": 0.006097560975609756
+                                                    "tf": 0.006134969325153374
                                                   }
                                                 }
                                               }
@@ -315,7 +237,7 @@
                                               "docs": {
                                                 "exercises/level-04.html": {
                                                   "ref": "exercises/level-04.html",
-                                                  "tf": 0.018292682926829267
+                                                  "tf": 0.018404907975460124
                                                 }
                                               },
                                               "a": {
@@ -336,7 +258,7 @@
                                                               "docs": {
                                                                 "exercises/level-04.html": {
                                                                   "ref": "exercises/level-04.html",
-                                                                  "tf": 0.006097560975609756
+                                                                  "tf": 0.006134969325153374
                                                                 }
                                                               }
                                                             }
@@ -352,7 +274,7 @@
                                                                 "docs": {
                                                                   "exercises/level-04.html": {
                                                                     "ref": "exercises/level-04.html",
-                                                                    "tf": 0.006097560975609756
+                                                                    "tf": 0.006134969325153374
                                                                   }
                                                                 }
                                                               }
@@ -389,7 +311,7 @@
                   "docs": {
                     "exercises/level-04.html": {
                       "ref": "exercises/level-04.html",
-                      "tf": 0.006097560975609756
+                      "tf": 0.006134969325153374
                     }
                   }
                 }
@@ -418,7 +340,7 @@
                               "docs": {
                                 "exercises/level-04.html": {
                                   "ref": "exercises/level-04.html",
-                                  "tf": 0.006097560975609756
+                                  "tf": 0.006134969325153374
                                 }
                               }
                             }
@@ -439,7 +361,7 @@
                 "docs": {
                   "exercises/level-04.html": {
                     "ref": "exercises/level-04.html",
-                    "tf": 0.036585365853658534
+                    "tf": 0.03680981595092025
                   }
                 }
               }
@@ -470,7 +392,7 @@
                               "docs": {
                                 "exercises/level-04.html": {
                                   "ref": "exercises/level-04.html",
-                                  "tf": 0.006097560975609756
+                                  "tf": 0.006134969325153374
                                 }
                               }
                             }
@@ -492,7 +414,7 @@
                                 "docs": {
                                   "exercises/level-04.html": {
                                     "ref": "exercises/level-04.html",
-                                    "tf": 0.006097560975609756
+                                    "tf": 0.006134969325153374
                                   }
                                 }
                               }
@@ -509,7 +431,7 @@
                           "docs": {
                             "exercises/level-04.html": {
                               "ref": "exercises/level-04.html",
-                              "tf": 0.006097560975609756
+                              "tf": 0.006134969325153374
                             }
                           }
                         }
@@ -533,7 +455,7 @@
                   "docs": {
                     "exercises/level-04.html": {
                       "ref": "exercises/level-04.html",
-                      "tf": 0.006097560975609756
+                      "tf": 0.006134969325153374
                     }
                   }
                 }
@@ -551,7 +473,7 @@
                 "docs": {
                   "exercises/level-04.html": {
                     "ref": "exercises/level-04.html",
-                    "tf": 0.024390243902439025
+                    "tf": 0.024539877300613498
                   }
                 }
               }
@@ -570,7 +492,7 @@
                   "docs": {
                     "exercises/level-04.html": {
                       "ref": "exercises/level-04.html",
-                      "tf": 0.012195121951219513
+                      "tf": 0.012269938650306749
                     }
                   }
                 }
@@ -587,7 +509,7 @@
                   "docs": {
                     "exercises/level-04.html": {
                       "ref": "exercises/level-04.html",
-                      "tf": 0.024390243902439025
+                      "tf": 0.024539877300613498
                     }
                   }
                 }
@@ -633,7 +555,7 @@
                                             "docs": {
                                               "exercises/level-04.html": {
                                                 "ref": "exercises/level-04.html",
-                                                "tf": 0.006097560975609756
+                                                "tf": 0.006134969325153374
                                               }
                                             }
                                           }
@@ -678,7 +600,7 @@
                                           "docs": {
                                             "exercises/level-04.html": {
                                               "ref": "exercises/level-04.html",
-                                              "tf": 0.006097560975609756
+                                              "tf": 0.006134969325153374
                                             }
                                           }
                                         }
@@ -711,7 +633,7 @@
                       "docs": {
                         "exercises/level-04.html": {
                           "ref": "exercises/level-04.html",
-                          "tf": 0.012195121951219513
+                          "tf": 0.012269938650306749
                         }
                       }
                     }
@@ -727,7 +649,7 @@
             "docs": {
               "exercises/level-04.html": {
                 "ref": "exercises/level-04.html",
-                "tf": 0.006097560975609756
+                "tf": 0.006134969325153374
               }
             }
           }
@@ -740,7 +662,7 @@
               "docs": {
                 "exercises/level-04.html": {
                   "ref": "exercises/level-04.html",
-                  "tf": 5.0060975609756095
+                  "tf": 5.006134969325154
                 }
               }
             }
@@ -756,7 +678,7 @@
                 "docs": {
                   "exercises/level-04.html": {
                     "ref": "exercises/level-04.html",
-                    "tf": 0.036585365853658534
+                    "tf": 0.03680981595092025
                   }
                 }
               }
@@ -771,7 +693,7 @@
                     "docs": {
                       "exercises/level-04.html": {
                         "ref": "exercises/level-04.html",
-                        "tf": 0.024390243902439025
+                        "tf": 0.024539877300613498
                       }
                     }
                   }
@@ -794,7 +716,7 @@
                     "docs": {
                       "exercises/level-04.html": {
                         "ref": "exercises/level-04.html",
-                        "tf": 0.012195121951219513
+                        "tf": 0.012269938650306749
                       }
                     }
                   }
@@ -814,7 +736,7 @@
                     "docs": {
                       "exercises/level-04.html": {
                         "ref": "exercises/level-04.html",
-                        "tf": 0.006097560975609756
+                        "tf": 0.006134969325153374
                       }
                     }
                   }
@@ -837,7 +759,7 @@
                     "docs": {
                       "exercises/level-04.html": {
                         "ref": "exercises/level-04.html",
-                        "tf": 0.024390243902439025
+                        "tf": 0.024539877300613498
                       }
                     }
                   }
@@ -855,7 +777,7 @@
                   "docs": {
                     "exercises/level-04.html": {
                       "ref": "exercises/level-04.html",
-                      "tf": 0.006097560975609756
+                      "tf": 0.006134969325153374
                     }
                   }
                 }
@@ -868,7 +790,7 @@
               "docs": {
                 "exercises/level-04.html": {
                   "ref": "exercises/level-04.html",
-                  "tf": 0.0975609756097561
+                  "tf": 0.09815950920245399
                 }
               },
               "_": {
@@ -879,7 +801,7 @@
                     "docs": {
                       "exercises/level-04.html": {
                         "ref": "exercises/level-04.html",
-                        "tf": 0.006097560975609756
+                        "tf": 0.006134969325153374
                       }
                     }
                   }
@@ -930,7 +852,7 @@
                                                             "docs": {
                                                               "exercises/level-04.html": {
                                                                 "ref": "exercises/level-04.html",
-                                                                "tf": 0.006097560975609756
+                                                                "tf": 0.006134969325153374
                                                               }
                                                             }
                                                           }
@@ -997,7 +919,7 @@
                                                         "docs": {
                                                           "exercises/level-04.html": {
                                                             "ref": "exercises/level-04.html",
-                                                            "tf": 0.006097560975609756
+                                                            "tf": 0.006134969325153374
                                                           }
                                                         }
                                                       }
@@ -1057,7 +979,7 @@
                                                 "docs": {
                                                   "exercises/level-04.html": {
                                                     "ref": "exercises/level-04.html",
-                                                    "tf": 0.006097560975609756
+                                                    "tf": 0.006134969325153374
                                                   }
                                                 }
                                               }
@@ -1109,7 +1031,7 @@
                                             "docs": {
                                               "exercises/level-04.html": {
                                                 "ref": "exercises/level-04.html",
-                                                "tf": 0.006097560975609756
+                                                "tf": 0.006134969325153374
                                               }
                                             }
                                           }
@@ -1143,7 +1065,7 @@
                       "docs": {
                         "exercises/level-04.html": {
                           "ref": "exercises/level-04.html",
-                          "tf": 0.006097560975609756
+                          "tf": 0.006134969325153374
                         }
                       }
                     }
@@ -1169,7 +1091,7 @@
                       "docs": {
                         "exercises/level-04.html": {
                           "ref": "exercises/level-04.html",
-                          "tf": 0.012195121951219513
+                          "tf": 0.012269938650306749
                         }
                       }
                     }
@@ -1203,7 +1125,7 @@
                               "docs": {
                                 "exercises/level-04.html": {
                                   "ref": "exercises/level-04.html",
-                                  "tf": 0.012195121951219513
+                                  "tf": 0.012269938650306749
                                 }
                               },
                               "を": {
@@ -1218,7 +1140,7 @@
                                         "docs": {
                                           "exercises/level-04.html": {
                                             "ref": "exercises/level-04.html",
-                                            "tf": 0.006097560975609756
+                                            "tf": 0.006134969325153374
                                           }
                                         }
                                       }
@@ -1244,7 +1166,7 @@
                 "docs": {
                   "exercises/level-04.html": {
                     "ref": "exercises/level-04.html",
-                    "tf": 0.006097560975609756
+                    "tf": 0.006134969325153374
                   }
                 }
               }
@@ -1257,7 +1179,7 @@
             "docs": {
               "exercises/level-04.html": {
                 "ref": "exercises/level-04.html",
-                "tf": 0.03048780487804878
+                "tf": 0.03067484662576687
               }
             }
           }
@@ -1266,7 +1188,7 @@
           "docs": {
             "exercises/level-04.html": {
               "ref": "exercises/level-04.html",
-              "tf": 0.036585365853658534
+              "tf": 0.03680981595092025
             }
           },
           "設": {
@@ -1297,7 +1219,7 @@
                                     "docs": {
                                       "exercises/level-04.html": {
                                         "ref": "exercises/level-04.html",
-                                        "tf": 0.006097560975609756
+                                        "tf": 0.006134969325153374
                                       }
                                     }
                                   }
@@ -1344,7 +1266,7 @@
                                                                   "docs": {
                                                                     "exercises/level-04.html": {
                                                                       "ref": "exercises/level-04.html",
-                                                                      "tf": 0.012195121951219513
+                                                                      "tf": 0.012269938650306749
                                                                     }
                                                                   }
                                                                 }
@@ -1395,7 +1317,7 @@
                                                           "docs": {
                                                             "exercises/level-04.html": {
                                                               "ref": "exercises/level-04.html",
-                                                              "tf": 0.012195121951219513
+                                                              "tf": 0.012269938650306749
                                                             }
                                                           }
                                                         }
@@ -1431,7 +1353,7 @@
               "docs": {
                 "exercises/level-04.html": {
                   "ref": "exercises/level-04.html",
-                  "tf": 0.006097560975609756
+                  "tf": 0.006134969325153374
                 }
               }
             }
@@ -1524,7 +1446,7 @@
                                                                                                 "docs": {
                                                                                                   "exercises/level-04.html": {
                                                                                                     "ref": "exercises/level-04.html",
-                                                                                                    "tf": 0.006097560975609756
+                                                                                                    "tf": 0.006134969325153374
                                                                                                   }
                                                                                                 }
                                                                                               }
@@ -1645,7 +1567,7 @@
                                                                                       "docs": {
                                                                                         "exercises/level-04.html": {
                                                                                           "ref": "exercises/level-04.html",
-                                                                                          "tf": 0.006097560975609756
+                                                                                          "tf": 0.006134969325153374
                                                                                         }
                                                                                       }
                                                                                     }
@@ -1745,7 +1667,7 @@
                                                                 "docs": {
                                                                   "exercises/level-04.html": {
                                                                     "ref": "exercises/level-04.html",
-                                                                    "tf": 0.006097560975609756
+                                                                    "tf": 0.006134969325153374
                                                                   }
                                                                 }
                                                               }
@@ -1784,7 +1706,7 @@
               "docs": {
                 "exercises/level-04.html": {
                   "ref": "exercises/level-04.html",
-                  "tf": 0.012195121951219513
+                  "tf": 0.012269938650306749
                 }
               },
               "場": {
@@ -1793,7 +1715,7 @@
                   "docs": {
                     "exercises/level-04.html": {
                       "ref": "exercises/level-04.html",
-                      "tf": 0.012195121951219513
+                      "tf": 0.012269938650306749
                     }
                   }
                 }
@@ -1812,7 +1734,7 @@
                     "docs": {
                       "exercises/level-04.html": {
                         "ref": "exercises/level-04.html",
-                        "tf": 0.012195121951219513
+                        "tf": 0.012269938650306749
                       }
                     }
                   }
@@ -1843,7 +1765,7 @@
                             "docs": {
                               "exercises/level-04.html": {
                                 "ref": "exercises/level-04.html",
-                                "tf": 0.006097560975609756
+                                "tf": 0.006134969325153374
                               }
                             }
                           }
@@ -1924,7 +1846,7 @@
                                                                           "docs": {
                                                                             "exercises/level-04.html": {
                                                                               "ref": "exercises/level-04.html",
-                                                                              "tf": 0.006097560975609756
+                                                                              "tf": 0.006134969325153374
                                                                             }
                                                                           }
                                                                         }
@@ -2040,7 +1962,7 @@
                                                                                       "docs": {
                                                                                         "exercises/level-04.html": {
                                                                                           "ref": "exercises/level-04.html",
-                                                                                          "tf": 0.006097560975609756
+                                                                                          "tf": 0.006134969325153374
                                                                                         }
                                                                                       }
                                                                                     }
@@ -2104,7 +2026,7 @@
                             "docs": {
                               "exercises/level-04.html": {
                                 "ref": "exercises/level-04.html",
-                                "tf": 0.006097560975609756
+                                "tf": 0.006134969325153374
                               }
                             }
                           }
@@ -2238,7 +2160,7 @@
                                                                                                                                         "docs": {
                                                                                                                                           "exercises/level-04.html": {
                                                                                                                                             "ref": "exercises/level-04.html",
-                                                                                                                                            "tf": 0.006097560975609756
+                                                                                                                                            "tf": 0.006134969325153374
                                                                                                                                           }
                                                                                                                                         }
                                                                                                                                       }
@@ -2314,7 +2236,7 @@
                   "docs": {
                     "exercises/level-04.html": {
                       "ref": "exercises/level-04.html",
-                      "tf": 0.006097560975609756
+                      "tf": 0.006134969325153374
                     }
                   }
                 }
@@ -2342,7 +2264,7 @@
                           "docs": {
                             "exercises/level-04.html": {
                               "ref": "exercises/level-04.html",
-                              "tf": 0.006097560975609756
+                              "tf": 0.006134969325153374
                             }
                           }
                         }
@@ -2371,7 +2293,7 @@
                           "docs": {
                             "exercises/level-04.html": {
                               "ref": "exercises/level-04.html",
-                              "tf": 0.006097560975609756
+                              "tf": 0.006134969325153374
                             }
                           }
                         }
@@ -2391,7 +2313,7 @@
               "docs": {
                 "exercises/level-04.html": {
                   "ref": "exercises/level-04.html",
-                  "tf": 0.006097560975609756
+                  "tf": 0.006134969325153374
                 }
               },
               "メ": {
@@ -2406,7 +2328,7 @@
                         "docs": {
                           "exercises/level-04.html": {
                             "ref": "exercises/level-04.html",
-                            "tf": 0.018292682926829267
+                            "tf": 0.018404907975460124
                           }
                         },
                         "は": {
@@ -2451,7 +2373,7 @@
                                                                 "docs": {
                                                                   "exercises/level-04.html": {
                                                                     "ref": "exercises/level-04.html",
-                                                                    "tf": 0.006097560975609756
+                                                                    "tf": 0.006134969325153374
                                                                   }
                                                                 }
                                                               }
@@ -2485,7 +2407,7 @@
                   "docs": {
                     "exercises/level-04.html": {
                       "ref": "exercises/level-04.html",
-                      "tf": 0.006097560975609756
+                      "tf": 0.006134969325153374
                     }
                   }
                 }
@@ -2500,7 +2422,7 @@
                       "docs": {
                         "exercises/level-04.html": {
                           "ref": "exercises/level-04.html",
-                          "tf": 0.006097560975609756
+                          "tf": 0.006134969325153374
                         }
                       }
                     }
@@ -2532,7 +2454,7 @@
                             "docs": {
                               "exercises/level-04.html": {
                                 "ref": "exercises/level-04.html",
-                                "tf": 0.006097560975609756
+                                "tf": 0.006134969325153374
                               }
                             }
                           }
@@ -2553,7 +2475,7 @@
                           "docs": {
                             "exercises/level-04.html": {
                               "ref": "exercises/level-04.html",
-                              "tf": 0.006097560975609756
+                              "tf": 0.006134969325153374
                             }
                           }
                         }
@@ -2572,7 +2494,7 @@
                 "docs": {
                   "exercises/level-04.html": {
                     "ref": "exercises/level-04.html",
-                    "tf": 0.006097560975609756
+                    "tf": 0.006134969325153374
                   }
                 }
               }
@@ -2587,7 +2509,7 @@
               "docs": {
                 "exercises/level-04.html": {
                   "ref": "exercises/level-04.html",
-                  "tf": 0.006097560975609756
+                  "tf": 0.006134969325153374
                 }
               },
               "修": {
@@ -2598,7 +2520,7 @@
                     "docs": {
                       "exercises/level-04.html": {
                         "ref": "exercises/level-04.html",
-                        "tf": 0.012195121951219513
+                        "tf": 0.012269938650306749
                       }
                     }
                   }
@@ -2608,7 +2530,7 @@
                 "docs": {
                   "exercises/level-04.html": {
                     "ref": "exercises/level-04.html",
-                    "tf": 0.012195121951219513
+                    "tf": 0.012269938650306749
                   }
                 }
               }
@@ -2629,7 +2551,7 @@
                     "docs": {
                       "exercises/level-04.html": {
                         "ref": "exercises/level-04.html",
-                        "tf": 0.006097560975609756
+                        "tf": 0.006134969325153374
                       }
                     }
                   }
@@ -2652,7 +2574,7 @@
                     "docs": {
                       "exercises/level-04.html": {
                         "ref": "exercises/level-04.html",
-                        "tf": 0.006097560975609756
+                        "tf": 0.006134969325153374
                       }
                     }
                   }
@@ -2689,7 +2611,7 @@
                                   "docs": {
                                     "exercises/level-04.html": {
                                       "ref": "exercises/level-04.html",
-                                      "tf": 0.006097560975609756
+                                      "tf": 0.006134969325153374
                                     }
                                   }
                                 }
@@ -2730,7 +2652,7 @@
                                         "docs": {
                                           "exercises/level-04.html": {
                                             "ref": "exercises/level-04.html",
-                                            "tf": 0.006097560975609756
+                                            "tf": 0.006134969325153374
                                           }
                                         }
                                       }
@@ -2763,7 +2685,7 @@
                     "docs": {
                       "exercises/level-04.html": {
                         "ref": "exercises/level-04.html",
-                        "tf": 0.006097560975609756
+                        "tf": 0.006134969325153374
                       }
                     }
                   }
@@ -2784,7 +2706,7 @@
                   "docs": {
                     "exercises/level-04.html": {
                       "ref": "exercises/level-04.html",
-                      "tf": 0.006097560975609756
+                      "tf": 0.006134969325153374
                     }
                   }
                 }
@@ -2798,7 +2720,7 @@
             "docs": {
               "exercises/level-04.html": {
                 "ref": "exercises/level-04.html",
-                "tf": 0.036585365853658534
+                "tf": 0.03680981595092025
               }
             }
           }
@@ -2885,7 +2807,7 @@
                                                                                         "docs": {
                                                                                           "exercises/level-04.html": {
                                                                                             "ref": "exercises/level-04.html",
-                                                                                            "tf": 0.006097560975609756
+                                                                                            "tf": 0.006134969325153374
                                                                                           }
                                                                                         }
                                                                                       }
@@ -2932,14 +2854,14 @@
                 "docs": {
                   "exercises/level-04.html": {
                     "ref": "exercises/level-04.html",
-                    "tf": 0.012195121951219513
+                    "tf": 0.012269938650306749
                   }
                 },
                 "は": {
                   "docs": {
                     "exercises/level-04.html": {
                       "ref": "exercises/level-04.html",
-                      "tf": 0.006097560975609756
+                      "tf": 0.006134969325153374
                     }
                   }
                 }
@@ -2965,7 +2887,7 @@
                         "docs": {
                           "exercises/level-04.html": {
                             "ref": "exercises/level-04.html",
-                            "tf": 0.006097560975609756
+                            "tf": 0.006134969325153374
                           }
                         }
                       }
@@ -2984,7 +2906,7 @@
               "docs": {
                 "exercises/level-04.html": {
                   "ref": "exercises/level-04.html",
-                  "tf": 0.006097560975609756
+                  "tf": 0.006134969325153374
                 }
               }
             }
@@ -3004,7 +2926,7 @@
                     "docs": {
                       "exercises/level-04.html": {
                         "ref": "exercises/level-04.html",
-                        "tf": 0.006097560975609756
+                        "tf": 0.006134969325153374
                       }
                     }
                   }
@@ -3047,7 +2969,7 @@
                                         "docs": {
                                           "exercises/level-04.html": {
                                             "ref": "exercises/level-04.html",
-                                            "tf": 0.006097560975609756
+                                            "tf": 0.006134969325153374
                                           }
                                         }
                                       }
@@ -3072,7 +2994,7 @@
             "docs": {
               "exercises/level-04.html": {
                 "ref": "exercises/level-04.html",
-                "tf": 0.006097560975609756
+                "tf": 0.006134969325153374
               }
             }
           }
@@ -3083,7 +3005,7 @@
             "docs": {
               "exercises/level-04.html": {
                 "ref": "exercises/level-04.html",
-                "tf": 0.006097560975609756
+                "tf": 0.006134969325153374
               }
             }
           }
@@ -3100,7 +3022,7 @@
                   "docs": {
                     "exercises/level-04.html": {
                       "ref": "exercises/level-04.html",
-                      "tf": 0.006097560975609756
+                      "tf": 0.006134969325153374
                     }
                   },
                   "カ": {
@@ -3141,7 +3063,7 @@
                                                       "docs": {
                                                         "exercises/level-04.html": {
                                                           "ref": "exercises/level-04.html",
-                                                          "tf": 0.006097560975609756
+                                                          "tf": 0.006134969325153374
                                                         }
                                                       }
                                                     }
@@ -3173,7 +3095,7 @@
             "docs": {
               "exercises/level-04.html": {
                 "ref": "exercises/level-04.html",
-                "tf": 0.006097560975609756
+                "tf": 0.006134969325153374
               }
             }
           }
@@ -3184,7 +3106,7 @@
             "docs": {
               "exercises/level-04.html": {
                 "ref": "exercises/level-04.html",
-                "tf": 0.006097560975609756
+                "tf": 0.006134969325153374
               }
             }
           }
@@ -3197,20 +3119,19 @@
               "docs": {
                 "exercises/level-04.html": {
                   "ref": "exercises/level-04.html",
-                  "tf": 0.006097560975609756
+                  "tf": 0.006134969325153374
                 }
               }
             }
           }
         }
       },
-      "length": 94
+      "length": 93
     },
     "corpusTokens": [
       "(1)",
       "4",
       ":",
-      "@istest(seealldata=false)",
       "@testvis",
       "account",
       "accounttriggerservic",
@@ -3309,7 +3230,7 @@
       "url": "exercises/level-04.html",
       "title": "Lv. 4",
       "keywords": "",
-      "body": "Lv. 4 : 既存の Apex トリガのロジックを変更してみよう\nFlexible Apex Trigger を利用することで、ビジネスロジックを変更しやすくなっています。もちろんテストも書きやすくなっています。実際に体感してみましょう。\nビジネス要件\nこれまでは、データを作成および更新するタイミングで項目自動更新をしていました。\nこれからは、データを作成するタイミングで一時的にそのロジックを停止したいと考えています。\nまた、データを作成および更新するタイミングで入力規則をかけたいと考えています。\nSLA が設定されている場合、SLA の有効期限およびシリアルナンバーが入力されていなければなりません。\n入力されていない場合、エラーメッセージを表示して保存できないようにしてください。\nアーキテクチャ要件\n\nFlexible Apex Trigger を利用してください。\n入力規則は Apex トリガで実装してください。\nエラーメッセージはカスタム表示ラベルに定義してください。\nすべてのテストデータはテストクラス内で作成してください。\n\nシステム要件\nApex クラス\n\n\n\nクラス修飾子\nクラス名\n継承\n備考\n\n\n\n\npublic with sharing\nAccountTriggerValidation\nFAT_ITriggerObserver\n-\n\n\n\nAccountTriggerValidation\n\n\n\nアクセス修飾子と型\nメソッド名\n説明\n備考\n\n\n\n\nprivate void\nvalidateSLA\n(1) 入力規則\n@TestVisible\n\n\n\n\n新規作成する前に validateSLA を実行する\n更新する前に validateSLAを実行する\n\n\n(1) 入力規則\nエラー条件\n次のいずれかの条件を満たす場合:\n\nSLA が null でない、かつ SLA Expiration Date が null である\nSLA が null でない、かつ SLA Serial Number が null である\n\n\n\n\n表示ラベル\n項目名\n備考\n\n\n\n\nSLA\nSLA__c\n-\n\n\nSLA Expiration Date\nSLAExpirationDate__c\n-\n\n\nSLA Serial Number\nSLASerialNumber__c\n-\n\n\n\nエラーメッセージ\n\n\n\nエラーメッセージ\nエラー表示場所\n備考\n\n\n\n\nSLA が設定されている場合は有効期限も入力してください。\nSLA Expiration Date\nSLA Expiration Date が null である場合\n\n\nSLA が設定されている場合はシリアルナンバーも入力してください。\nSLA Serial Number\nSLA Serial Number が null である場合\n\n\n\nApex テストクラス\n\n\n\nクラス修飾子\nクラス名\n用途\n備考\n\n\n\n\nprivate\nAccountTriggerValidationTest\nAccountTriggerValidation.cls に対するテストクラス\n@isTest(SeeAllData=false)\n\n\n\nカスタム表示ラベル\n\n\n\nカテゴリ\nエラー ID\nエラーメッセージ\n備考\n\n\n\n\nERROR\nSLA_EXPIRATION_DATE_REQUIRED\nSLA が設定されている場合は有効期限も入力してください。\n-\n\n\nERROR\nSLA_SERIAL_NUMBER_REQUIRED\nSLA が設定されている場合はシリアルナンバーも入力してください。\n-\n\n\n\nカスタムメタデータ型\nFAT_TriggerObserver\n\n\n\n表示ラベルカスタムメタデータレコード名Apex Class\nsObject\nActive\nBeforeInsert\nBeforeUpdate\nBeforeDelete\nAfterInsert\n\n\n\n\nAccountTriggerService\nAccount\nYes\nNo\nYes\nNo\nNo\n\n\nAccountTriggerValidation\nAccount\nYes\nYes\nYes\nNo\nNo\n\n\n\n解答\n\nこちら\n\n"
+      "body": "Lv. 4 : 既存の Apex トリガのロジックを変更してみよう\nFlexible Apex Trigger を利用することで、ビジネスロジックを変更しやすくなっています。もちろんテストも書きやすくなっています。実際に体感してみましょう。\nビジネス要件\nこれまでは、データを作成および更新するタイミングで項目自動更新をしていました。\nこれからは、データを作成するタイミングで一時的にそのロジックを停止したいと考えています。\nまた、データを作成および更新するタイミングで入力規則をかけたいと考えています。\nSLA が設定されている場合、SLA の有効期限およびシリアルナンバーが入力されていなければなりません。\n入力されていない場合、エラーメッセージを表示して保存できないようにしてください。\nアーキテクチャ要件\n\nFlexible Apex Trigger を利用してください。\n入力規則は Apex トリガで実装してください。\nエラーメッセージはカスタム表示ラベルに定義してください。\nすべてのテストデータはテストクラス内で作成してください。\n\nシステム要件\nApex クラス\n\n\n\nクラス修飾子\nクラス名\n継承\n備考\n\n\n\n\npublic with sharing\nAccountTriggerValidation\nFAT_ITriggerObserver\n-\n\n\n\nAccountTriggerValidation\n\n\n\nアクセス修飾子と型\nメソッド名\n説明\n備考\n\n\n\n\nprivate void\nvalidateSLA\n(1) 入力規則\n@TestVisible\n\n\n\n\n新規作成する前に validateSLA を実行する\n更新する前に validateSLAを実行する\n\n\n(1) 入力規則\nエラー条件\n次のいずれかの条件を満たす場合:\n\nSLA が null でない、かつ SLA Expiration Date が null である\nSLA が null でない、かつ SLA Serial Number が null である\n\n\n\n\n表示ラベル\n項目名\n備考\n\n\n\n\nSLA\nSLA__c\n-\n\n\nSLA Expiration Date\nSLAExpirationDate__c\n-\n\n\nSLA Serial Number\nSLASerialNumber__c\n-\n\n\n\nエラーメッセージ\n\n\n\nエラーメッセージ\nエラー表示場所\n備考\n\n\n\n\nSLA が設定されている場合は有効期限も入力してください。\nSLA Expiration Date\nSLA Expiration Date が null である場合\n\n\nSLA が設定されている場合はシリアルナンバーも入力してください。\nSLA Serial Number\nSLA Serial Number が null である場合\n\n\n\nApex テストクラス\n\n\n\nクラス修飾子\nクラス名\n用途\n備考\n\n\n\n\nprivate\nAccountTriggerValidationTest\nAccountTriggerValidation.cls に対するテストクラス\n-\n\n\n\nカスタム表示ラベル\n\n\n\nカテゴリ\nエラー ID\nエラーメッセージ\n備考\n\n\n\n\nERROR\nSLA_EXPIRATION_DATE_REQUIRED\nSLA が設定されている場合は有効期限も入力してください。\n-\n\n\nERROR\nSLA_SERIAL_NUMBER_REQUIRED\nSLA が設定されている場合はシリアルナンバーも入力してください。\n-\n\n\n\nカスタムメタデータ型\nFAT_TriggerObserver\n\n\n\n表示ラベルカスタムメタデータレコード名Apex Class\nsObject\nActive\nBeforeInsert\nBeforeUpdate\nBeforeDelete\nAfterInsert\n\n\n\n\nAccountTriggerService\nAccount\nYes\nNo\nYes\nNo\nNo\n\n\nAccountTriggerValidation\nAccount\nYes\nYes\nYes\nNo\nNo\n\n\n\n解答\n\nこちら\n\n"
     }
   }
 }
