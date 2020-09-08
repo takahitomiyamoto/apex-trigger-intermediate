@@ -48,9 +48,9 @@ Apex トリガの柔軟性・可読性を高めるフレームワークを導入
 
 #### FAT_TriggerObserver
 
-| 表示ラベル<br>カスタムメタデータレコード名<br>Apex Class | sObject   | Active | Before<br>Insert | Before<br>Update |
-| :------------------------------------------------------- | :-------- | :----- | :--------------- | :--------------- |
-| `AccountTriggerService`                                  | `Account` | Yes    | Yes              | Yes              |
+| 表示ラベル<br>カスタムメタデータレコード名<br>Apex Class | sObject   | Active | Before<br>Insert | Before<br>Update | Before<br>Delete | After<br>Insert |
+| :------------------------------------------------------- | :-------- | :----- | :--------------- | :--------------- | :--------------- | :-------------- |
+| `AccountTriggerService`                                  | `Account` | Yes    | Yes              | Yes              | No               | No              |
 
 ## 解答
 
