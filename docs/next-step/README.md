@@ -30,19 +30,11 @@ Always Be Learning!!
 
 - [Apex エンタープライズパターン: ドメインおよびセレクタレイヤ](https://trailhead.salesforce.com/ja/content/learn/modules/apex_patterns_dsl)
 
-- [Process Design Without Limits](https://trailhead.salesforce.com/ja/content/learn/modules/process-design-without-limits)
-
 - [App Development Without Limits](https://trailhead.salesforce.com/ja/content/learn/modules/app-development-without-limits)
 
 - [Success Cloud Coding Conventions](https://trailhead.salesforce.com/ja/content/learn/modules/success-cloud-coding-conventions)
 
-- [インジェクションの脆弱性防止](https://trailhead.salesforce.com/ja/content/learn/modules/secdev_injection_vulnerabilities)
-
-- [アプリケーションロジックの脆弱性防止](https://trailhead.salesforce.com/ja/content/learn/modules/secdev_application_logic_vulnerabilities)
-
-- [データ漏洩の防止](https://trailhead.salesforce.com/ja/content/learn/modules/data-leak-prevention)
-
-- [秘密の保存場所の保護](https://trailhead.salesforce.com/ja/content/learn/modules/secure-secret-storage)
+- [秘密の保存場所の保護](https://trailhead.salesforce.com/ja/content/learn/modules/secure-secrets-storage)
 
 - [Big Object の基礎](https://trailhead.salesforce.com/ja/content/learn/modules/big_objects)
 
