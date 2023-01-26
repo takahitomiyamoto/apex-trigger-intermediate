@@ -13,9 +13,8 @@
 | 6   |      | [Apex PMD](https://marketplace.visualstudio.com/items?itemName=chuckjonas.apex-pmd)                     | Apex コードの静的解析を実行できる            |
 | 7   |      | [Codey High Noon](https://marketplace.visualstudio.com/items?itemName=salesforce.codey-high-noon)       | Salesforce 開発にぴったりのライトテーマ      |
 | 8   |      | [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)       | Git のコミットの履歴を追跡しやすくなる       |
-| 9   |      | [Live HTML Previewer](https://marketplace.visualstudio.com/items?itemName=hdg.live-html-previewer)      | HTML をプレビューできる                      |
-| 10  |      | [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)            | リアルタイムにコードを共有して共同作業できる |
-| 11  |      | [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)            | ログに色付けしてくれる                       |
+| 9   |      | [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)            | リアルタイムにコードを共有して共同作業できる |
+| 10  |      | [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)            | ログに色付けしてくれる                       |
 
 ## ユーザ設定
 
