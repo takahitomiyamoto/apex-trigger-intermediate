@@ -301,31 +301,37 @@
                     <h2 id="アウトライン">アウトライン</h2>
                     <ul>
                       <li>
-                        <a href="#1-apex-テストクラスを作成"
-                          >1. Apex テストクラスを作成</a
-                        >
+                        <a href="#lv-3-の解答">Lv. 3 の解答</a>
                         <ul>
+                          <li><a href="#アウトライン">アウトライン</a></li>
                           <li>
-                            <a href="#accounttriggerservicetestcls"
-                              >AccountTriggerServiceTest.cls</a
+                            <a href="#1-apex-テストクラスを作成"
+                              >1. Apex テストクラスを作成</a
                             >
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#2-apex-テストクラスを作成"
-                          >2. Apex テストクラスを作成</a
-                        >
-                        <ul>
-                          <li>
-                            <a href="#accounttestutilscls"
-                              >AccountTestUtils.cls</a
-                            >
+                            <ul>
+                              <li>
+                                <a href="#accounttriggerservicetestcls"
+                                  >AccountTriggerServiceTest.cls</a
+                                >
+                              </li>
+                            </ul>
                           </li>
                           <li>
-                            <a href="#accounttriggertestcls"
-                              >AccountTriggerTest.cls</a
+                            <a href="#2-apex-テストクラスを作成"
+                              >2. Apex テストクラスを作成</a
                             >
+                            <ul>
+                              <li>
+                                <a href="#accounttestutilscls"
+                                  >AccountTestUtils.cls</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#accounttriggertestcls"
+                                  >AccountTriggerTest.cls</a
+                                >
+                              </li>
+                            </ul>
                           </li>
                         </ul>
                       </li>
@@ -338,9 +344,17 @@
                       1-1. Apex
                       テストを実行して現在のコードカバー率を確認します。
                     </p>
-                    <pre><code class="lang-sh"><span class="hljs-built_in">export</span> SFDX_IMPROVED_CODE_COVERAGE=<span class="hljs-string">&quot;true&quot;</span>
+                    <pre><code class="lang-sh"><span class="hljs-variable">$Env</span>:SFDX_IMPROVED_CODE_COVERAGE = <span class="hljs-string">&quot;true&quot;</span>
 
 sfdx force:apex:<span class="hljs-built_in">test</span>:run -c -l RunLocalTests -r human -u demo
+</code></pre>
+                    <p>
+                      なお、環境変数
+                      <code>SFDX_IMPROVED_CODE_COVERAGE</code> に対して
+                      <code>true</code>
+                      が設定されているかどうかを確認したい場合は、次のコマンドを実行してみてください。
+                    </p>
+                    <pre><code class="lang-sh"><span class="hljs-variable">$Env</span>:SFDX_IMPROVED_CODE_COVERAGE
 </code></pre>
                     <pre><code class="lang-sh">=== Apex Code Coverage
 ID                  NAME                           % COVERED  UNCOVERED LINES
@@ -535,7 +549,7 @@ Org Wide Coverage    90%
                       1-5. Apex
                       テストを実行して現在のコードカバー率を確認します。
                     </p>
-                    <pre><code class="lang-sh"><span class="hljs-built_in">export</span> SFDX_IMPROVED_CODE_COVERAGE=<span class="hljs-string">&quot;true&quot;</span>
+                    <pre><code class="lang-sh"><span class="hljs-variable">$Env</span>:SFDX_IMPROVED_CODE_COVERAGE = <span class="hljs-string">&quot;true&quot;</span>
 
 sfdx force:apex:<span class="hljs-built_in">test</span>:run -c -l RunLocalTests -r human -u demo
 </code></pre>
@@ -691,7 +705,7 @@ Org Wide Coverage    96%
                       2-5. Apex
                       テストを実行して現在のコードカバー率を確認します。
                     </p>
-                    <pre><code class="lang-sh"><span class="hljs-built_in">export</span> SFDX_IMPROVED_CODE_COVERAGE=<span class="hljs-string">&quot;true&quot;</span>
+                    <pre><code class="lang-sh"><span class="hljs-variable">$Env</span>:SFDX_IMPROVED_CODE_COVERAGE = <span class="hljs-string">&quot;true&quot;</span>
 
 sfdx force:apex:<span class="hljs-built_in">test</span>:run -c -l RunLocalTests -r human -u demo
 </code></pre>
@@ -884,10 +898,10 @@ Org Wide Coverage    99%
             },
             file: {
               path: 'exercises/level-03-answer.md',
-              mtime: '2020-09-07T12:22:48.118Z',
+              mtime: '2023-01-26T10:17:23.493Z',
               type: 'markdown'
             },
-            gitbook: { version: '4.0.4', time: '2023-01-26T10:11:58.477Z' },
+            gitbook: { version: '4.0.4', time: '2023-01-26T10:17:44.370Z' },
             basePath: '..',
             book: { language: '' }
           });
