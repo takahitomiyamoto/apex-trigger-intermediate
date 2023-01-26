@@ -11,34 +11,36 @@
       "store": {
         "./": [
           "2011",
-          "2019",
           "2020",
           "@takahito0508",
           "accentur",
           "acknowledg",
           "advanc",
           "apex",
+          "architect",
           "author",
           "blog",
-          "champion,",
-          "einstein",
+          "certifi",
           "event",
           "flexibl",
           "framework",
+          "group",
           "https://accentur",
-          "japan",
+          "japan,",
+          "lead:",
           "lifestyl",
           "log",
-          "ltd,",
+          "manager,",
           "miyamoto",
           "mvp,",
-          "online＃01",
+          "online＃06",
           "platform",
           "salesforc",
           "sfdc",
           "takahito",
           "tech",
-          "technology.connpass.com/event/185277/",
+          "technic",
+          "technology.connpass.com/event/270716/",
           "top",
           "trigger",
           "up",
@@ -2496,16 +2498,13 @@
           "0": {
             "1": {
               "1": {
-                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
-              },
-              "9": {
-                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+                "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } }
               },
               "docs": {}
             },
             "2": {
               "0": {
-                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+                "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } }
               },
               "docs": {}
             },
@@ -2960,7 +2959,7 @@
                                   "docs": {
                                     "./": {
                                       "ref": "./",
-                                      "tf": 0.017543859649122806
+                                      "tf": 0.01639344262295082
                                     }
                                   }
                                 },
@@ -3383,7 +3382,7 @@
                       "docs": {},
                       "r": {
                         "docs": {
-                          "./": { "ref": "./", "tf": 0.017543859649122806 }
+                          "./": { "ref": "./", "tf": 0.01639344262295082 }
                         }
                       }
                     }
@@ -5417,7 +5416,7 @@
                           "docs": {},
                           "g": {
                             "docs": {
-                              "./": { "ref": "./", "tf": 0.017543859649122806 }
+                              "./": { "ref": "./", "tf": 0.01639344262295082 }
                             }
                           }
                         }
@@ -5491,9 +5490,7 @@
                 "n": {
                   "docs": {},
                   "c": {
-                    "docs": {
-                      "./": { "ref": "./", "tf": 0.017543859649122806 }
-                    }
+                    "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } }
                   }
                 }
               }
@@ -5595,7 +5592,7 @@
               "docs": {},
               "x": {
                 "docs": {
-                  "./": { "ref": "./", "tf": 0.07017543859649122 },
+                  "./": { "ref": "./", "tf": 0.06557377049180328 },
                   "intro/curriculum.html": {
                     "ref": "intro/curriculum.html",
                     "tf": 0.08928571428571429
@@ -6241,6 +6238,32 @@
               }
             }
           },
+          "r": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "c": {
+                        "docs": {},
+                        "t": {
+                          "docs": {
+                            "./": { "ref": "./", "tf": 0.03278688524590164 }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "u": {
             "docs": {},
             "t": {
@@ -6250,9 +6273,7 @@
                 "o": {
                   "docs": {},
                   "r": {
-                    "docs": {
-                      "./": { "ref": "./", "tf": 0.017543859649122806 }
-                    }
+                    "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } }
                   }
                 }
               },
@@ -6512,7 +6533,7 @@
             "o": {
               "docs": {},
               "g": {
-                "docs": { "./": { "ref": "./", "tf": 0.03508771929824561 } }
+                "docs": { "./": { "ref": "./", "tf": 0.03278688524590164 } }
               }
             }
           },
@@ -6844,42 +6865,24 @@
               "tf": 0.0007621951219512195
             }
           },
-          "h": {
+          "e": {
             "docs": {},
-            "a": {
-              "docs": {},
-              "m": {
-                "docs": {},
-                "p": {
-                  "docs": {},
-                  "i": {
-                    "docs": {},
-                    "o": {
-                      "docs": {},
-                      "n": {
-                        "docs": {},
-                        ",": {
-                          "docs": {
-                            "./": { "ref": "./", "tf": 0.017543859649122806 }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "r": {
               "docs": {},
-              "o": {
+              "t": {
                 "docs": {},
-                "m": {
+                "i": {
                   "docs": {},
-                  "e": {
+                  "f": {
                     "docs": {
-                      "prerequisite/developer-edition.html": {
-                        "ref": "prerequisite/developer-edition.html",
-                        "tf": 0.03225806451612903
+                      "next-step/": {
+                        "ref": "next-step/",
+                        "tf": 0.031746031746031744
+                      }
+                    },
+                    "i": {
+                      "docs": {
+                        "./": { "ref": "./", "tf": 0.01639344262295082 }
                       }
                     }
                   }
@@ -7337,6 +7340,26 @@
                             }
                           }
                         }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "h": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "m": {
+                  "docs": {},
+                  "e": {
+                    "docs": {
+                      "prerequisite/developer-edition.html": {
+                        "ref": "prerequisite/developer-edition.html",
+                        "tf": 0.03225806451612903
                       }
                     }
                   }
@@ -8661,26 +8684,6 @@
                 }
               }
             }
-          },
-          "e": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "f": {
-                    "docs": {
-                      "next-step/": {
-                        "ref": "next-step/",
-                        "tf": 0.031746031746031744
-                      }
-                    }
-                  }
-                }
-              }
-            }
           }
         },
         "e": {
@@ -8698,29 +8701,6 @@
               "tf": 0.0022865853658536584
             }
           },
-          "i": {
-            "docs": {},
-            "n": {
-              "docs": {},
-              "s": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "i": {
-                      "docs": {},
-                      "n": {
-                        "docs": {
-                          "./": { "ref": "./", "tf": 0.017543859649122806 }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "v": {
             "docs": {},
             "e": {
@@ -8728,7 +8708,7 @@
               "n": {
                 "docs": {},
                 "t": {
-                  "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+                  "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } }
                 }
               }
             }
@@ -9173,7 +9153,7 @@
                     "docs": {},
                     "l": {
                       "docs": {
-                        "./": { "ref": "./", "tf": 0.017543859649122806 },
+                        "./": { "ref": "./", "tf": 0.01639344262295082 },
                         "exercises/level-02.html": {
                           "ref": "exercises/level-02.html",
                           "tf": 0.012048192771084338
@@ -9217,7 +9197,7 @@
                         "docs": {},
                         "k": {
                           "docs": {
-                            "./": { "ref": "./", "tf": 0.017543859649122806 }
+                            "./": { "ref": "./", "tf": 0.01639344262295082 }
                           }
                         }
                       }
@@ -10607,6 +10587,77 @@
             }
           }
         },
+        "g": {
+          "docs": {},
+          "r": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "p": {
+                  "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "g": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "prerequisite/developer-edition.html": {
+                      "ref": "prerequisite/developer-edition.html",
+                      "tf": 0.03225806451612903
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "t": {
+              "docs": {
+                "prerequisite/vs-code-extensions.html": {
+                  "ref": "prerequisite/vs-code-extensions.html",
+                  "tf": 0.018867924528301886
+                }
+              },
+              "l": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "prerequisite/vs-code-extensions.html": {
+                        "ref": "prerequisite/vs-code-extensions.html",
+                        "tf": 0.009433962264150943
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "d": {
+                "docs": {
+                  "next-step/": {
+                    "ref": "next-step/",
+                    "tf": 0.015873015873015872
+                  }
+                }
+              }
+            }
+          }
+        },
         "h": {
           "docs": {},
           "t": {
@@ -10641,7 +10692,7 @@
                                         "docs": {
                                           "./": {
                                             "ref": "./",
-                                            "tf": 0.017543859649122806
+                                            "tf": 0.01639344262295082
                                           }
                                         }
                                       }
@@ -11253,7 +11304,10 @@
               "a": {
                 "docs": {},
                 "n": {
-                  "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+                  "docs": {},
+                  ",": {
+                    "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } }
+                  }
                 }
               }
             },
@@ -11303,6 +11357,44 @@
               "tf": 0.0007621951219512195
             }
           },
+          "e": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "d": {
+                "docs": {},
+                ":": {
+                  "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } }
+                }
+              },
+              "r": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "n": {
+                      "docs": {},
+                      "g": {
+                        "docs": {},
+                        "!": {
+                          "docs": {},
+                          "!": {
+                            "docs": {
+                              "next-step/": {
+                                "ref": "next-step/",
+                                "tf": 0.007936507936507936
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "i": {
             "docs": {},
             "f": {
@@ -11317,7 +11409,7 @@
                       "docs": {},
                       "l": {
                         "docs": {
-                          "./": { "ref": "./", "tf": 0.017543859649122806 }
+                          "./": { "ref": "./", "tf": 0.01639344262295082 }
                         }
                       }
                     }
@@ -11634,7 +11726,7 @@
           "o": {
             "docs": {},
             "g": {
-              "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } },
+              "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } },
               "g": {
                 "docs": {},
                 "e": {
@@ -12119,20 +12211,6 @@
               }
             }
           },
-          "t": {
-            "docs": {
-              "prerequisite/nodejs.html": {
-                "ref": "prerequisite/nodejs.html",
-                "tf": 0.02702702702702703
-              }
-            },
-            "d": {
-              "docs": {},
-              ",": {
-                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
-              }
-            }
-          },
           "v": {
             "docs": {},
             ".": {
@@ -12184,6 +12262,14 @@
               }
             }
           },
+          "t": {
+            "docs": {
+              "prerequisite/nodejs.html": {
+                "ref": "prerequisite/nodejs.html",
+                "tf": 0.02702702702702703
+              }
+            }
+          },
           "a": {
             "docs": {},
             "r": {
@@ -12197,42 +12283,49 @@
                 }
               }
             }
-          },
-          "e": {
+          }
+        },
+        "m": {
+          "docs": {},
+          "a": {
             "docs": {},
-            "a": {
+            "n": {
               "docs": {},
-              "r": {
+              "a": {
                 "docs": {},
-                "n": {
-                  "docs": {},
-                  "i": {
+                "g": {
+                  "docs": {
+                    "next-step/": {
+                      "ref": "next-step/",
+                      "tf": 0.007936507936507936
+                    }
+                  },
+                  "e": {
                     "docs": {},
-                    "n": {
+                    "r": {
                       "docs": {},
-                      "g": {
-                        "docs": {},
-                        "!": {
-                          "docs": {},
-                          "!": {
-                            "docs": {
-                              "next-step/": {
-                                "ref": "next-step/",
-                                "tf": 0.007936507936507936
-                              }
-                            }
-                          }
+                      ",": {
+                        "docs": {
+                          "./": { "ref": "./", "tf": 0.01639344262295082 }
                         }
                       }
                     }
                   }
                 }
               }
+            },
+            "c": {
+              "docs": {},
+              "o": {
+                "docs": {
+                  "prerequisite/vs-code-extensions.html": {
+                    "ref": "prerequisite/vs-code-extensions.html",
+                    "tf": 0.009433962264150943
+                  }
+                }
+              }
             }
-          }
-        },
-        "m": {
-          "docs": {},
+          },
           "i": {
             "docs": {},
             "y": {
@@ -12247,7 +12340,7 @@
                       "docs": {},
                       "o": {
                         "docs": {
-                          "./": { "ref": "./", "tf": 0.017543859649122806 }
+                          "./": { "ref": "./", "tf": 0.01639344262295082 }
                         }
                       }
                     }
@@ -12284,35 +12377,7 @@
             "p": {
               "docs": {},
               ",": {
-                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
-              }
-            }
-          },
-          "a": {
-            "docs": {},
-            "c": {
-              "docs": {},
-              "o": {
-                "docs": {
-                  "prerequisite/vs-code-extensions.html": {
-                    "ref": "prerequisite/vs-code-extensions.html",
-                    "tf": 0.009433962264150943
-                  }
-                }
-              }
-            },
-            "n": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "g": {
-                  "docs": {
-                    "next-step/": {
-                      "ref": "next-step/",
-                      "tf": 0.007936507936507936
-                    }
-                  }
-                }
+                "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } }
               }
             }
           },
@@ -12481,9 +12546,9 @@
                     "docs": {},
                     "＃": {
                       "0": {
-                        "1": {
+                        "6": {
                           "docs": {
-                            "./": { "ref": "./", "tf": 0.017543859649122806 }
+                            "./": { "ref": "./", "tf": 0.01639344262295082 }
                           }
                         },
                         "docs": {}
@@ -14603,7 +14668,7 @@
                       "docs": {},
                       "m": {
                         "docs": {
-                          "./": { "ref": "./", "tf": 0.017543859649122806 },
+                          "./": { "ref": "./", "tf": 0.01639344262295082 },
                           "prerequisite/beginner.html": {
                             "ref": "prerequisite/beginner.html",
                             "tf": 0.02040816326530612
@@ -15307,7 +15372,7 @@
                         "docs": {},
                         "c": {
                           "docs": {
-                            "./": { "ref": "./", "tf": 0.05263157894736842 },
+                            "./": { "ref": "./", "tf": 0.06557377049180328 },
                             "prerequisite/beginner.html": {
                               "ref": "prerequisite/beginner.html",
                               "tf": 0.02040816326530612
@@ -15356,7 +15421,7 @@
             "d": {
               "docs": {},
               "c": {
-                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+                "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } }
               },
               "x": {
                 "docs": {
@@ -18246,7 +18311,7 @@
                       "docs": {},
                       "o": {
                         "docs": {
-                          "./": { "ref": "./", "tf": 0.017543859649122806 }
+                          "./": { "ref": "./", "tf": 0.01639344262295082 }
                         }
                       }
                     }
@@ -18260,9 +18325,17 @@
             "c": {
               "docs": {},
               "h": {
-                "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } },
+                "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } },
                 "n": {
                   "docs": {},
+                  "i": {
+                    "docs": {},
+                    "c": {
+                      "docs": {
+                        "./": { "ref": "./", "tf": 0.01639344262295082 }
+                      }
+                    }
+                  },
                   "o": {
                     "docs": {},
                     "l": {
@@ -18312,18 +18385,18 @@
                                                                 "t": {
                                                                   "docs": {},
                                                                   "/": {
-                                                                    "1": {
-                                                                      "8": {
-                                                                        "5": {
-                                                                          "2": {
-                                                                            "7": {
-                                                                              "7": {
+                                                                    "2": {
+                                                                      "7": {
+                                                                        "0": {
+                                                                          "7": {
+                                                                            "1": {
+                                                                              "6": {
                                                                                 "docs": {},
                                                                                 "/": {
                                                                                   "docs": {
                                                                                     "./": {
                                                                                       "ref": "./",
-                                                                                      "tf": 0.017543859649122806
+                                                                                      "tf": 0.01639344262295082
                                                                                     }
                                                                                   }
                                                                                 }
@@ -18540,7 +18613,7 @@
                     "docs": {},
                     "r": {
                       "docs": {
-                        "./": { "ref": "./", "tf": 0.03508771929824561 },
+                        "./": { "ref": "./", "tf": 0.03278688524590164 },
                         "exercises/warm-up-answer.html": {
                           "ref": "exercises/warm-up-answer.html",
                           "tf": 0.007633587786259542
@@ -19372,7 +19445,7 @@
           },
           "p": {
             "docs": {
-              "./": { "ref": "./", "tf": 0.017543859649122806 },
+              "./": { "ref": "./", "tf": 0.01639344262295082 },
               "intro/curriculum.html": {
                 "ref": "intro/curriculum.html",
                 "tf": 0.017857142857142856
@@ -19833,7 +19906,7 @@
               "docs": {},
               "m": {
                 "docs": {
-                  "./": { "ref": "./", "tf": 0.017543859649122806 },
+                  "./": { "ref": "./", "tf": 0.01639344262295082 },
                   "intro/curriculum.html": {
                     "ref": "intro/curriculum.html",
                     "tf": 0.017857142857142856
@@ -19874,7 +19947,7 @@
                         "docs": {},
                         "y": {
                           "docs": {
-                            "./": { "ref": "./", "tf": 0.017543859649122806 }
+                            "./": { "ref": "./", "tf": 0.01639344262295082 }
                           }
                         }
                       }
@@ -19995,7 +20068,7 @@
                           "docs": {},
                           "。": {
                             "docs": {
-                              "./": { "ref": "./", "tf": 0.017543859649122806 }
+                              "./": { "ref": "./", "tf": 0.01639344262295082 }
                             }
                           }
                         }
@@ -20115,7 +20188,7 @@
                                   "docs": {
                                     "./": {
                                       "ref": "./",
-                                      "tf": 0.017543859649122806
+                                      "tf": 0.01639344262295082
                                     }
                                   }
                                 }
@@ -20230,7 +20303,7 @@
             }
           }
         },
-        "や": { "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } } },
+        "や": { "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } } },
         "を": {
           "docs": {
             "exercises/level-01-answer.html": {
@@ -20254,7 +20327,7 @@
                         "docs": {},
                         "。": {
                           "docs": {
-                            "./": { "ref": "./", "tf": 0.017543859649122806 }
+                            "./": { "ref": "./", "tf": 0.01639344262295082 }
                           }
                         }
                       }
@@ -20296,7 +20369,7 @@
                                         "docs": {
                                           "./": {
                                             "ref": "./",
-                                            "tf": 0.017543859649122806
+                                            "tf": 0.01639344262295082
                                           }
                                         }
                                       }
@@ -22025,7 +22098,7 @@
                                                         "docs": {
                                                           "./": {
                                                             "ref": "./",
-                                                            "tf": 0.017543859649122806
+                                                            "tf": 0.01639344262295082
                                                           }
                                                         }
                                                       }
@@ -22213,7 +22286,7 @@
             "docs": {},
             "ガ": {
               "docs": {
-                "./": { "ref": "./", "tf": 0.017543859649122806 },
+                "./": { "ref": "./", "tf": 0.01639344262295082 },
                 "prerequisite/beginner.html": {
                   "ref": "prerequisite/beginner.html",
                   "tf": 0.02040816326530612
@@ -22271,7 +22344,7 @@
                                                 "docs": {
                                                   "./": {
                                                     "ref": "./",
-                                                    "tf": 0.017543859649122806
+                                                    "tf": 0.01639344262295082
                                                   }
                                                 }
                                               }
@@ -23110,9 +23183,7 @@
         },
         "中": {
           "docs": {},
-          "級": {
-            "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
-          }
+          "級": { "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } } }
         },
         "事": {
           "docs": {},
@@ -23144,7 +23215,7 @@
                                     "docs": {
                                       "./": {
                                         "ref": "./",
-                                        "tf": 0.017543859649122806
+                                        "tf": 0.01639344262295082
                                       }
                                     }
                                   }
@@ -23192,7 +23263,7 @@
                           "docs": {},
                           "ツ": {
                             "docs": {
-                              "./": { "ref": "./", "tf": 0.017543859649122806 },
+                              "./": { "ref": "./", "tf": 0.01639344262295082 },
                               "intro/curriculum.html": {
                                 "ref": "intro/curriculum.html",
                                 "tf": 0.017857142857142856
@@ -23217,7 +23288,7 @@
           "日": {
             "docs": {},
             "は": {
-              "docs": { "./": { "ref": "./", "tf": 0.017543859649122806 } }
+              "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } }
             }
           }
         },
@@ -23232,9 +23303,7 @@
                 "ト": {
                   "docs": {},
                   ":": {
-                    "docs": {
-                      "./": { "ref": "./", "tf": 0.017543859649122806 }
-                    }
+                    "docs": { "./": { "ref": "./", "tf": 0.01639344262295082 } }
                   }
                 }
               }
@@ -23251,7 +23320,7 @@
                 "docs": {},
                 "ル": {
                   "docs": {
-                    "./": { "ref": "./", "tf": 0.017543859649122806 },
+                    "./": { "ref": "./", "tf": 0.01639344262295082 },
                     "intro/curriculum.html": {
                       "ref": "intro/curriculum.html",
                       "tf": 0.017857142857142856
@@ -23301,7 +23370,7 @@
                                                         "docs": {
                                                           "./": {
                                                             "ref": "./",
-                                                            "tf": 0.017543859649122806
+                                                            "tf": 0.01639344262295082
                                                           }
                                                         }
                                                       }
@@ -23358,7 +23427,7 @@
                                           "docs": {
                                             "./": {
                                               "ref": "./",
-                                              "tf": 0.017543859649122806
+                                              "tf": 0.01639344262295082
                                             }
                                           }
                                         }
@@ -23388,7 +23457,7 @@
                       "docs": {},
                       "ル": {
                         "docs": {
-                          "./": { "ref": "./", "tf": 0.017543859649122806 }
+                          "./": { "ref": "./", "tf": 0.01639344262295082 }
                         },
                         "の": {
                           "docs": {},
@@ -32031,65 +32100,6 @@
             "prerequisite/salesforce-ide.html": {
               "ref": "prerequisite/salesforce-ide.html",
               "tf": 0.0297029702970297
-            }
-          }
-        },
-        "g": {
-          "docs": {},
-          "o": {
-            "docs": {},
-            "o": {
-              "docs": {},
-              "g": {
-                "docs": {},
-                "l": {
-                  "docs": {
-                    "prerequisite/developer-edition.html": {
-                      "ref": "prerequisite/developer-edition.html",
-                      "tf": 0.03225806451612903
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "i": {
-            "docs": {},
-            "t": {
-              "docs": {
-                "prerequisite/vs-code-extensions.html": {
-                  "ref": "prerequisite/vs-code-extensions.html",
-                  "tf": 0.018867924528301886
-                }
-              },
-              "l": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "n": {
-                    "docs": {
-                      "prerequisite/vs-code-extensions.html": {
-                        "ref": "prerequisite/vs-code-extensions.html",
-                        "tf": 0.009433962264150943
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "u": {
-            "docs": {},
-            "i": {
-              "docs": {},
-              "d": {
-                "docs": {
-                  "next-step/": {
-                    "ref": "next-step/",
-                    "tf": 0.015873015873015872
-                  }
-                }
-              }
             }
           }
         },
@@ -44468,7 +44478,7 @@
           }
         }
       },
-      "length": 2112
+      "length": 2114
     },
     "corpusTokens": [
       "!hasslaexpirationdate)",
@@ -44583,7 +44593,6 @@
       "2",
       "2.",
       "2011",
-      "2019",
       "2020",
       "3",
       "3.",
@@ -44705,6 +44714,7 @@
       "app/main/default/labels/customlabels.label",
       "app/main/default/trigg",
       "app/test/default/class",
+      "architect",
       "asc",
       "author",
       "autom",
@@ -44761,7 +44771,7 @@
       "catch",
       "cd",
       "certif",
-      "champion,",
+      "certifi",
       "chrome",
       "class",
       "cli",
@@ -44838,7 +44848,6 @@
       "e.setmessage(errormessage);",
       "e;",
       "edit",
-      "einstein",
       "error",
       "errormessag",
       "eslint",
@@ -44893,6 +44902,7 @@
       "git",
       "gitlen",
       "googl",
+      "group",
       "guid",
       "handler",
       "handler)",
@@ -44937,11 +44947,12 @@
       "invokeupdate()",
       "ishigh",
       "ja",
-      "japan",
+      "japan,",
       "java",
       "json",
       "l",
       "larg",
+      "lead:",
       "learning!!",
       "lifestyl",
       "lightn",
@@ -44961,10 +44972,10 @@
       "logic",
       "low",
       "lt",
-      "ltd,",
       "lv.",
       "maco",
       "manag",
+      "manager,",
       "medium",
       "messag",
       "message,",
@@ -45010,7 +45021,7 @@
       "onbeforeinsert(fat_commontriggerhandl",
       "onbeforeupdate()",
       "onbeforeupdate(fat_commontriggerhandl",
-      "online＃01",
+      "online＃06",
       "opportun",
       "opportunities)",
       "opportunities,",
@@ -45168,7 +45179,8 @@
       "t",
       "takahito",
       "tech",
-      "technology.connpass.com/event/185277/",
+      "technic",
+      "technology.connpass.com/event/270716/",
       "test",
       "test.starttest();",
       "test.stoptest();",
@@ -45645,7 +45657,7 @@
       "url": "./",
       "title": "TOP",
       "keywords": "",
-      "body": "Apex トリガ 中級\nApex トリガの中級レベルのチュートリアルです。\nテストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。\n\n\nSalesforce Wednesday Online＃01 へご参加いただくみなさまへ\n\n申込サイト: https://accenture-technology.connpass.com/event/185277/\n\n当日は Warm-up からスタートします。\n初級者向けコンテンツ や 開発ツール を実施する時間はありませんので、\n事前に予習してきてください。\n開発ツールのセットアップが終わっていないかたは、 開発者コンソール をご利用ください。\n\nAcknowledgment\n\nflexible-apex-trigger\nSFDC trigger framework\nAdvanced Logging with Platform Events\n\nAuthor\nTakahito Miyamoto @takahito0508\n\nAccenture Japan Ltd, 2011-\nSalesforce Einstein Champion, 2019-\nSalesforce MVP, 2020-\nTech Blog\nLifestyle Blog\n\n"
+      "body": "Apex トリガ 中級\nApex トリガの中級レベルのチュートリアルです。\nテストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。\n\n\nSalesforce Wednesday Online＃06 へご参加いただくみなさまへ\n\n申込サイト: https://accenture-technology.connpass.com/event/270716/\n\n当日は Warm-up からスタートします。\n初級者向けコンテンツ や 開発ツール を実施する時間はありませんので、\n事前に予習してきてください。\n開発ツールのセットアップが終わっていないかたは、 開発者コンソール をご利用ください。\n\nAcknowledgment\n\nflexible-apex-trigger\nSFDC trigger framework\nAdvanced Logging with Platform Events\n\nAuthor\nTakahito Miyamoto @takahito0508\n\nManager, Accenture Japan, 2011-\nSalesforce MVP, 2020-\nSalesforce Certified Technical Architect\nLead: Salesforce Architect Group\nTech Blog\nLifestyle Blog\n\n"
     },
     "intro/common-values.html": {
       "url": "intro/common-values.html",
