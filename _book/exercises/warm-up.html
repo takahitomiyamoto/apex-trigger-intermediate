@@ -2,18 +2,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Warm-up · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="generator" content="HonKit 3.6.1" />
+    <meta name="generator" content="HonKit 4.0.4" />
     <meta name="author" content="Takahito Miyamoto" />
 
     <link rel="stylesheet" href="../gitbook/style.css" />
 
     <link
       rel="stylesheet"
-      href="../gitbook/gitbook-plugin-highlight/website.css"
+      href="../gitbook/@honkit/honkit-plugin-highlight/website.css"
     />
 
     <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css" />
@@ -46,7 +45,7 @@
     <link rel="prev" href="../prerequisite/nodejs.html" />
   </head>
   <body>
-    <div class="book">
+    <div class="book honkit-cloak">
       <div class="book-summary">
         <div id="book-search-input" role="search">
           <input type="text" placeholder="検索ワードを入力" />
@@ -301,59 +300,32 @@
               <div id="book-search-results">
                 <div class="search-noresults">
                   <section class="normal markdown-section">
-                    <h1
-                      id="warm-up--&#x30B7;&#x30F3;&#x30D7;&#x30EB;&#x306A;-apex-&#x30C8;&#x30EA;&#x30AC;&#x3092;&#x66F8;&#x3044;&#x3066;&#x307F;&#x3088;&#x3046;"
-                    >
-                      Warm-up : &#x30B7;&#x30F3;&#x30D7;&#x30EB;&#x306A; Apex
-                      &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x66F8;&#x3044;&#x3066;&#x307F;&#x3088;&#x3046;
+                    <h1 id="warm-up--シンプルな-apex-トリガを書いてみよう">
+                      Warm-up : シンプルな Apex トリガを書いてみよう
                     </h1>
-                    <p>
-                      &#x307E;&#x305A;&#x306F;&#x3001;&#x30B7;&#x30F3;&#x30D7;&#x30EB;&#x306A;
-                      Apex
-                      &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x66F8;&#x3044;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
-                    </p>
-                    <h2 id="&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x8981;&#x4EF6;">
-                      &#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x8981;&#x4EF6;
-                    </h2>
+                    <p>まずは、シンプルな Apex トリガを書いてみましょう。</p>
+                    <h2 id="ビジネス要件">ビジネス要件</h2>
                     <ul>
                       <li>
-                        &#x3053;&#x308C;&#x304B;&#x3089;&#x53D6;&#x5F15;&#x5148;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306B;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F55;&#x4EF6;&#x304B;&#x4F5C;&#x6210;&#x3057;&#x3088;&#x3046;&#x3068;&#x8003;&#x3048;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3072;&#x3068;&#x76EE;&#x3067;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x3067;&#x3042;&#x308B;&#x3053;&#x3068;&#x304C;&#x308F;&#x304B;&#x308B;&#x3088;&#x3046;&#x306B;&#x3001;&#x53D6;&#x5F15;&#x5148;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x30BF;&#x30A4;&#x30DF;&#x30F3;&#x30B0;&#x3067;&#x53D6;&#x5F15;&#x5148;&#x306E;&#x540D;&#x524D;&#x306E;&#x5148;&#x982D;&#x306B;&#x7279;&#x5B9A;&#x306E;&#x6587;&#x5B57;&#x5217;&#x3092;&#x81EA;&#x52D5;&#x4ED8;&#x4E0E;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                        これから取引先オブジェクトにサンプルデータを何件か作成しようと考えています。ひと目でサンプルデータであることがわかるように、取引先レコードを新規作成するタイミングで取引先の名前の先頭に特定の文字列を自動付与してください。
                       </li>
                     </ul>
-                    <h2
-                      id="&#x30A2;&#x30FC;&#x30AD;&#x30C6;&#x30AF;&#x30C1;&#x30E3;&#x8981;&#x4EF6;"
-                    >
-                      &#x30A2;&#x30FC;&#x30AD;&#x30C6;&#x30AF;&#x30C1;&#x30E3;&#x8981;&#x4EF6;
-                    </h2>
+                    <h2 id="アーキテクチャ要件">アーキテクチャ要件</h2>
                     <ul>
-                      <li>
-                        Apex
-                        &#x30C8;&#x30EA;&#x30AC;&#x306E;&#x307F;&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
-                      </li>
-                      <li>
-                        Apex
-                        &#x30AF;&#x30E9;&#x30B9;&#x306A;&#x3069;&#x4ED6;&#x306E;&#x8CC7;&#x6E90;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;&#x3067;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
-                      </li>
+                      <li>Apex トリガのみで実装してください。</li>
+                      <li>Apex クラスなど他の資源を使用しないでください。</li>
                     </ul>
-                    <h2 id="&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x8981;&#x4EF6;">
-                      &#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x8981;&#x4EF6;
-                    </h2>
-                    <h3 id="apex-&#x30C8;&#x30EA;&#x30AC;">
-                      Apex &#x30C8;&#x30EA;&#x30AC;
-                    </h3>
+                    <h2 id="システム要件">システム要件</h2>
+                    <h3 id="apex-トリガ">Apex トリガ</h3>
                     <table>
                       <thead>
                         <tr>
+                          <th style="text-align: left">トリガ名</th>
+                          <th style="text-align: left">対象オブジェクト</th>
                           <th style="text-align: left">
-                            &#x30C8;&#x30EA;&#x30AC;&#x540D;
+                            複数件レコードの一括処理
                           </th>
-                          <th style="text-align: left">
-                            &#x5BFE;&#x8C61;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;
-                          </th>
-                          <th style="text-align: left">
-                            &#x8907;&#x6570;&#x4EF6;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x4E00;&#x62EC;&#x51E6;&#x7406;
-                          </th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -361,9 +333,7 @@
                           <td style="text-align: left">
                             <code>AccountTrigger</code>
                           </td>
-                          <td style="text-align: left">
-                            &#x53D6;&#x5F15;&#x5148;
-                          </td>
+                          <td style="text-align: left">取引先</td>
                           <td style="text-align: left">Yes</td>
                           <td style="text-align: left">-</td>
                         </tr>
@@ -373,78 +343,50 @@
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x8D77;&#x52D5;&#x6761;&#x4EF6;
-                          </th>
-                          <th style="text-align: left">
-                            &#x30A2;&#x30AF;&#x30B7;&#x30E7;&#x30F3;
-                          </th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">起動条件</th>
+                          <th style="text-align: left">アクション</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
+                          <td style="text-align: left">新規作成する前</td>
                           <td style="text-align: left">
-                            &#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x524D;
-                          </td>
-                          <td style="text-align: left">
-                            <a href="#warm-up-1"
-                              >(1)
-                              &#x9805;&#x76EE;&#x81EA;&#x52D5;&#x66F4;&#x65B0;</a
-                            >
+                            <a href="#warm-up-1">(1) 項目自動更新</a>
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
                       </tbody>
                     </table>
                     <p><a id="warm-up-1"></a></p>
-                    <h5 id="1-&#x9805;&#x76EE;&#x81EA;&#x52D5;&#x66F4;&#x65B0;">
-                      (1) &#x9805;&#x76EE;&#x81EA;&#x52D5;&#x66F4;&#x65B0;
-                    </h5>
-                    <h6 id="&#x66F4;&#x65B0;&#x6761;&#x4EF6;">
-                      &#x66F4;&#x65B0;&#x6761;&#x4EF6;
-                    </h6>
-                    <p>&#x306A;&#x3057;</p>
-                    <h6
-                      id="&#x66F4;&#x65B0;&#x5BFE;&#x8C61;&#x306E;&#x9805;&#x76EE;"
-                    >
-                      &#x66F4;&#x65B0;&#x5BFE;&#x8C61;&#x306E;&#x9805;&#x76EE;
-                    </h6>
+                    <h5 id="1-項目自動更新">(1) 項目自動更新</h5>
+                    <h6 id="更新条件">更新条件</h6>
+                    <p>なし</p>
+                    <h6 id="更新対象の項目">更新対象の項目</h6>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;
-                          </th>
-                          <th style="text-align: left">
-                            &#x9805;&#x76EE;&#x540D;
-                          </th>
-                          <th style="text-align: left">&#x5024;</th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">表示ラベル</th>
+                          <th style="text-align: left">項目名</th>
+                          <th style="text-align: left">値</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td style="text-align: left">
-                            &#x53D6;&#x5F15;&#x5148;&#x540D;
-                          </td>
+                          <td style="text-align: left">取引先名</td>
                           <td style="text-align: left"><code>Name</code></td>
                           <td style="text-align: left">
-                            <code>[&#x30B5;&#x30F3;&#x30D7;&#x30EB;]</code> +
-                            (&#x534A;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;) +
-                            &#x5143;&#x306E;&#x5165;&#x529B;&#x5024;
+                            <code>[サンプル]</code> + (半角スペース) +
+                            元の入力値
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
                       </tbody>
                     </table>
-                    <h2 id="&#x89E3;&#x7B54;">&#x89E3;&#x7B54;</h2>
+                    <h2 id="解答">解答</h2>
                     <blockquote>
-                      <p>
-                        <a href="warm-up-answer.html"
-                          >&#x3053;&#x3061;&#x3089;</a
-                        >
-                      </p>
+                      <p><a href="warm-up-answer.html">こちら</a></p>
                     </blockquote>
                   </section>
                 </div>
@@ -508,6 +450,16 @@
                 ref: 'prerequisite/nodejs.md',
                 articles: []
               },
+              articles: [
+                {
+                  title: 'Warm-up の解答',
+                  level: '3.1.1',
+                  depth: 2,
+                  path: 'exercises/warm-up-answer.md',
+                  ref: 'exercises/warm-up-answer.md',
+                  articles: []
+                }
+              ],
               dir: 'ltr'
             },
             config: {
@@ -578,7 +530,7 @@
               mtime: '2020-09-08T12:55:32.139Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-08T12:55:35.544Z' },
+            gitbook: { version: '4.0.4', time: '2023-01-26T09:51:30.661Z' },
             basePath: '..',
             book: { language: '' }
           });
@@ -586,6 +538,50 @@
       </script>
     </div>
 
+    <noscript>
+      <style>
+        .honkit-cloak {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <script>
+      // Restore sidebar state as critical path for prevent layout shift
+      function __init__getSidebarState(defaultValue) {
+        var baseKey = '';
+        var key = baseKey + ':sidebar';
+        try {
+          var value = localStorage[key];
+          if (value === undefined) {
+            return defaultValue;
+          }
+          var parsed = JSON.parse(value);
+          return parsed == null ? defaultValue : parsed;
+        } catch (e) {
+          return defaultValue;
+        }
+      }
+      function __init__restoreLastSidebarState() {
+        var isMobile = window.matchMedia('(max-width: 600px)').matches;
+        if (isMobile) {
+          // Init last state if not mobile
+          return;
+        }
+        var sidebarState = __init__getSidebarState(true);
+        var book = document.querySelector('.book');
+        // Show sidebar if it enabled
+        if (sidebarState && book) {
+          book.classList.add('without-animation', 'with-summary');
+        }
+      }
+
+      try {
+        __init__restoreLastSidebarState();
+      } finally {
+        var book = document.querySelector('.book');
+        book.classList.remove('honkit-cloak');
+      }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
 

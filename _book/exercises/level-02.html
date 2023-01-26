@@ -2,18 +2,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Lv. 2 · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="generator" content="HonKit 3.6.1" />
+    <meta name="generator" content="HonKit 4.0.4" />
     <meta name="author" content="Takahito Miyamoto" />
 
     <link rel="stylesheet" href="../gitbook/style.css" />
 
     <link
       rel="stylesheet"
-      href="../gitbook/gitbook-plugin-highlight/website.css"
+      href="../gitbook/@honkit/honkit-plugin-highlight/website.css"
     />
 
     <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css" />
@@ -46,7 +45,7 @@
     <link rel="prev" href="level-01-answer.html" />
   </head>
   <body>
-    <div class="book">
+    <div class="book honkit-cloak">
       <div class="book-summary">
         <div id="book-search-input" role="search">
           <input type="text" placeholder="検索ワードを入力" />
@@ -301,34 +300,25 @@
               <div id="book-search-results">
                 <div class="search-noresults">
                   <section class="normal markdown-section">
-                    <h1
-                      id="lv-2--&#x30C8;&#x30EA;&#x30AC;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3092;&#x5C0E;&#x5165;&#x3057;&#x3066;&#x307F;&#x3088;&#x3046;"
-                    >
-                      Lv. 2 :
-                      &#x30C8;&#x30EA;&#x30AC;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3092;&#x5C0E;&#x5165;&#x3057;&#x3066;&#x307F;&#x3088;&#x3046;
+                    <h1 id="lv-2--トリガフレームワークを導入してみよう">
+                      Lv. 2 : トリガフレームワークを導入してみよう
                     </h1>
                     <p>
-                      &#x3060;&#x3093;&#x3060;&#x3093;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x304C;&#x8907;&#x96D1;&#x306B;&#x306A;&#x3063;&#x3066;&#x304D;&#x307E;&#x3057;&#x305F;&#x3002;
-                      &#x307E;&#x305F;&#x3001;&#x540C;&#x3058;&#x30B3;&#x30FC;&#x30C9;&#x304C;&#x91CD;&#x8907;&#x3057;&#x3066;&#x5B58;&#x5728;&#x3057;&#x3066;&#x3044;&#x308B;&#x90E8;&#x5206;&#x3082;&#x6C17;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x306D;&#x3002;
-                      &#x3053;&#x306E;&#x307E;&#x307E;&#x7D9A;&#x3051;&#x3066;&#x3082;&#x826F;&#x3044;&#x306E;&#x3067;&#x3059;&#x304C;&#x3001;&#x305D;&#x308D;&#x305D;&#x308D;&#x672C;&#x984C;&#x306B;&#x5165;&#x308A;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                      だんだんロジックが複雑になってきました。
+                      また、同じコードが重複して存在している部分も気になりますね。
+                      このまま続けても良いのですが、そろそろ本題に入りましょう。
                     </p>
                     <p>
                       Apex
-                      &#x30C8;&#x30EA;&#x30AC;&#x306E;&#x67D4;&#x8EDF;&#x6027;&#x30FB;&#x53EF;&#x8AAD;&#x6027;&#x3092;&#x9AD8;&#x3081;&#x308B;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3092;&#x5C0E;&#x5165;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x4F55;&#x304C;&#x5B09;&#x3057;&#x3044;&#x306E;&#x304B;&#x3092;&#x5B9F;&#x6226;&#x3067;&#x5B66;&#x3093;&#x3067;&#x3044;&#x304D;&#x307E;&#x3059;&#x3002;
+                      トリガの柔軟性・可読性を高めるフレームワークを導入することで何が嬉しいのかを実戦で学んでいきます。
                     </p>
-                    <h2 id="&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x8981;&#x4EF6;">
-                      &#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x8981;&#x4EF6;
-                    </h2>
+                    <h2 id="ビジネス要件">ビジネス要件</h2>
                     <ul>
                       <li>
-                        &#x5C06;&#x6765;&#x7684;&#x306B;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x3078;&#x306E;&#x5909;&#x66F4;&#x8981;&#x6C42;&#x304C;&#x983B;&#x7E41;&#x306B;&#x767A;&#x751F;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x4E88;&#x60F3;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x65E2;&#x5B58;&#x306E;&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x3092;&#x4FDD;&#x3061;&#x306A;&#x304C;&#x3089;&#x3001;&#x65B0;&#x898F;&#x306E;&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3084;&#x3059;&#x304F;&#x3001;&#x30C6;&#x30B9;&#x30C8;&#x3082;&#x3057;&#x3084;&#x3059;&#x3044;&#x8A2D;&#x8A08;&#x65B9;&#x91DD;&#x3078;&#x6539;&#x3081;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                        将来的にシステムへの変更要求が頻繁に発生することが予想されています。既存のビジネスロジックを保ちながら、新規のビジネスロジックを追加しやすく、テストもしやすい設計方針へ改めてください。
                       </li>
                     </ul>
-                    <h2
-                      id="&#x30A2;&#x30FC;&#x30AD;&#x30C6;&#x30AF;&#x30C1;&#x30E3;&#x8981;&#x4EF6;"
-                    >
-                      &#x30A2;&#x30FC;&#x30AD;&#x30C6;&#x30AF;&#x30C1;&#x30E3;&#x8981;&#x4EF6;
-                    </h2>
+                    <h2 id="アーキテクチャ要件">アーキテクチャ要件</h2>
                     <ul>
                       <li>
                         <a
@@ -336,39 +326,28 @@
                           target="_blank"
                           >Flexible Apex Trigger</a
                         >
-                        &#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                        を利用してください。
                       </li>
                       <li>
-                        Apex
-                        &#x30C8;&#x30EA;&#x30AC;&#x5185;&#x306E;&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x306F;&#x3059;&#x3079;&#x3066;&#x524A;&#x9664;&#x3057;&#x3001;&#x4EE3;&#x308F;&#x308A;&#x306B;
-                        Apex
-                        &#x30AF;&#x30E9;&#x30B9;&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                        Apex トリガ内のビジネスロジックはすべて削除し、代わりに
+                        Apex クラスで実装してください。
                       </li>
                       <li>
-                        &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x5404;
-                        Apex
-                        &#x30AF;&#x30E9;&#x30B9;&#x306E;&#x6709;&#x52B9;&#x5316;&#x30FB;&#x7121;&#x52B9;&#x5316;&#x3092;&#x5236;&#x5FA1;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                        カスタムメタデータ型を利用して各 Apex
+                        クラスの有効化・無効化を制御できるようにしてください。
                       </li>
                     </ul>
-                    <h2 id="&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x8981;&#x4EF6;">
-                      &#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x8981;&#x4EF6;
-                    </h2>
-                    <h3 id="apex-&#x30C8;&#x30EA;&#x30AC;">
-                      Apex &#x30C8;&#x30EA;&#x30AC;
-                    </h3>
+                    <h2 id="システム要件">システム要件</h2>
+                    <h3 id="apex-トリガ">Apex トリガ</h3>
                     <table>
                       <thead>
                         <tr>
+                          <th style="text-align: left">トリガ名</th>
+                          <th style="text-align: left">対象オブジェクト</th>
                           <th style="text-align: left">
-                            &#x30C8;&#x30EA;&#x30AC;&#x540D;
+                            複数件レコードの一括処理
                           </th>
-                          <th style="text-align: left">
-                            &#x5BFE;&#x8C61;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;
-                          </th>
-                          <th style="text-align: left">
-                            &#x8907;&#x6570;&#x4EF6;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x4E00;&#x62EC;&#x51E6;&#x7406;
-                          </th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -376,28 +355,20 @@
                           <td style="text-align: left">
                             <code>AccountTrigger</code>
                           </td>
-                          <td style="text-align: left">
-                            &#x53D6;&#x5F15;&#x5148;
-                          </td>
+                          <td style="text-align: left">取引先</td>
                           <td style="text-align: left">Yes</td>
                           <td style="text-align: left">-</td>
                         </tr>
                       </tbody>
                     </table>
-                    <h3 id="apex-&#x30AF;&#x30E9;&#x30B9;">
-                      Apex &#x30AF;&#x30E9;&#x30B9;
-                    </h3>
+                    <h3 id="apex-クラス">Apex クラス</h3>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x30AF;&#x30E9;&#x30B9;&#x4FEE;&#x98FE;&#x5B50;
-                          </th>
-                          <th style="text-align: left">
-                            &#x30AF;&#x30E9;&#x30B9;&#x540D;
-                          </th>
-                          <th style="text-align: left">&#x7D99;&#x627F;</th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">クラス修飾子</th>
+                          <th style="text-align: left">クラス名</th>
+                          <th style="text-align: left">継承</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -419,14 +390,10 @@
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x4FEE;&#x98FE;&#x5B50;&#x3068;&#x578B;
-                          </th>
-                          <th style="text-align: left">
-                            &#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x540D;
-                          </th>
-                          <th style="text-align: left">&#x8AAC;&#x660E;</th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">アクセス修飾子と型</th>
+                          <th style="text-align: left">メソッド名</th>
+                          <th style="text-align: left">説明</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -439,8 +406,7 @@
                           </td>
                           <td style="text-align: left">
                             <a href="warm-up.html#warm-up-1"
-                              >(1)
-                              &#x9805;&#x76EE;&#x81EA;&#x52D5;&#x66F4;&#x65B0;</a
+                              >(1) 項目自動更新</a
                             >
                           </td>
                           <td style="text-align: left">
@@ -456,8 +422,7 @@
                           </td>
                           <td style="text-align: left">
                             <a href="level-01.html#level-01-2"
-                              >(2)
-                              &#x9805;&#x76EE;&#x81EA;&#x52D5;&#x66F4;&#x65B0;</a
+                              >(2) 項目自動更新</a
                             >
                           </td>
                           <td style="text-align: left">
@@ -468,28 +433,20 @@
                     </table>
                     <ul>
                       <li>
-                        &#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x524D;&#x306B;
-                        <code>addPrefixToName</code> &#x304A;&#x3088;&#x3073;
-                        <code>setCustomerPriority</code
-                        >&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;
+                        新規作成する前に <code>addPrefixToName</code> および
+                        <code>setCustomerPriority</code>を実行する
                       </li>
                       <li>
-                        &#x66F4;&#x65B0;&#x3059;&#x308B;&#x524D;&#x306B;
-                        <code>setCustomerPriority</code
-                        >&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;
+                        更新する前に <code>setCustomerPriority</code>を実行する
                       </li>
                     </ul>
-                    <h3
-                      id="&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;"
-                    >
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;
-                    </h3>
+                    <h3 id="カスタムメタデータ型">カスタムメタデータ型</h3>
                     <h4 id="fattriggerobserver">FAT_TriggerObserver</h4>
                     <table>
                       <thead>
                         <tr>
                           <th style="text-align: left">
-                            &#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;<br />&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x540D;<br />Apex
+                            表示ラベル<br />カスタムメタデータレコード名<br />Apex
                             Class
                           </th>
                           <th style="text-align: left">sObject</th>
@@ -514,13 +471,9 @@
                         </tr>
                       </tbody>
                     </table>
-                    <h2 id="&#x89E3;&#x7B54;">&#x89E3;&#x7B54;</h2>
+                    <h2 id="解答">解答</h2>
                     <blockquote>
-                      <p>
-                        <a href="level-02-answer.html"
-                          >&#x3053;&#x3061;&#x3089;</a
-                        >
-                      </p>
+                      <p><a href="level-02-answer.html">こちら</a></p>
                     </blockquote>
                   </section>
                 </div>
@@ -584,6 +537,16 @@
                 ref: 'exercises/level-01-answer.md',
                 articles: []
               },
+              articles: [
+                {
+                  title: 'Lv. 2 の解答',
+                  level: '3.3.1',
+                  depth: 2,
+                  path: 'exercises/level-02-answer.md',
+                  ref: 'exercises/level-02-answer.md',
+                  articles: []
+                }
+              ],
               dir: 'ltr'
             },
             config: {
@@ -654,7 +617,7 @@
               mtime: '2020-09-08T12:42:23.434Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-08T12:55:35.544Z' },
+            gitbook: { version: '4.0.4', time: '2023-01-26T09:51:30.661Z' },
             basePath: '..',
             book: { language: '' }
           });
@@ -662,6 +625,50 @@
       </script>
     </div>
 
+    <noscript>
+      <style>
+        .honkit-cloak {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <script>
+      // Restore sidebar state as critical path for prevent layout shift
+      function __init__getSidebarState(defaultValue) {
+        var baseKey = '';
+        var key = baseKey + ':sidebar';
+        try {
+          var value = localStorage[key];
+          if (value === undefined) {
+            return defaultValue;
+          }
+          var parsed = JSON.parse(value);
+          return parsed == null ? defaultValue : parsed;
+        } catch (e) {
+          return defaultValue;
+        }
+      }
+      function __init__restoreLastSidebarState() {
+        var isMobile = window.matchMedia('(max-width: 600px)').matches;
+        if (isMobile) {
+          // Init last state if not mobile
+          return;
+        }
+        var sidebarState = __init__getSidebarState(true);
+        var book = document.querySelector('.book');
+        // Show sidebar if it enabled
+        if (sidebarState && book) {
+          book.classList.add('without-animation', 'with-summary');
+        }
+      }
+
+      try {
+        __init__restoreLastSidebarState();
+      } finally {
+        var book = document.querySelector('.book');
+        book.classList.remove('honkit-cloak');
+      }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
 

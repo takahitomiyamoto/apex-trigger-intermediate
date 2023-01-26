@@ -2,18 +2,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Lv. 4 · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="generator" content="HonKit 3.6.1" />
+    <meta name="generator" content="HonKit 4.0.4" />
     <meta name="author" content="Takahito Miyamoto" />
 
     <link rel="stylesheet" href="../gitbook/style.css" />
 
     <link
       rel="stylesheet"
-      href="../gitbook/gitbook-plugin-highlight/website.css"
+      href="../gitbook/@honkit/honkit-plugin-highlight/website.css"
     />
 
     <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css" />
@@ -46,7 +45,7 @@
     <link rel="prev" href="level-03-answer.html" />
   </head>
   <body>
-    <div class="book">
+    <div class="book honkit-cloak">
       <div class="book-summary">
         <div id="book-search-input" role="search">
           <input type="text" placeholder="検索ワードを入力" />
@@ -301,11 +300,8 @@
               <div id="book-search-results">
                 <div class="search-noresults">
                   <section class="normal markdown-section">
-                    <h1
-                      id="lv-4--&#x65E2;&#x5B58;&#x306E;-apex-&#x30C8;&#x30EA;&#x30AC;&#x306E;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x3092;&#x5909;&#x66F4;&#x3057;&#x3066;&#x307F;&#x3088;&#x3046;"
-                    >
-                      Lv. 4 : &#x65E2;&#x5B58;&#x306E; Apex
-                      &#x30C8;&#x30EA;&#x30AC;&#x306E;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x3092;&#x5909;&#x66F4;&#x3057;&#x3066;&#x307F;&#x3088;&#x3046;
+                    <h1 id="lv-4--既存の-apex-トリガのロジックを変更してみよう">
+                      Lv. 4 : 既存の Apex トリガのロジックを変更してみよう
                     </h1>
                     <p>
                       <a
@@ -313,26 +309,20 @@
                         target="_blank"
                         >Flexible Apex Trigger</a
                       >
-                      &#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x3001;&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x3092;&#x5909;&#x66F4;&#x3057;&#x3084;&#x3059;&#x304F;&#x306A;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3082;&#x3061;&#x308D;&#x3093;&#x30C6;&#x30B9;&#x30C8;&#x3082;&#x66F8;&#x304D;&#x3084;&#x3059;&#x304F;&#x306A;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x5B9F;&#x969B;&#x306B;&#x4F53;&#x611F;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                      を利用することで、ビジネスロジックを変更しやすくなっています。もちろんテストも書きやすくなっています。実際に体感してみましょう。
                     </p>
-                    <h2 id="&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x8981;&#x4EF6;">
-                      &#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x8981;&#x4EF6;
-                    </h2>
+                    <h2 id="ビジネス要件">ビジネス要件</h2>
                     <ul>
                       <li>
-                        &#x3053;&#x308C;&#x307E;&#x3067;&#x306F;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;&#x304A;&#x3088;&#x3073;&#x66F4;&#x65B0;&#x3059;&#x308B;&#x30BF;&#x30A4;&#x30DF;&#x30F3;&#x30B0;&#x3067;&#x9805;&#x76EE;&#x81EA;&#x52D5;&#x66F4;&#x65B0;&#x3092;&#x3057;&#x3066;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;&#x3053;&#x308C;&#x304B;&#x3089;&#x306F;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x30BF;&#x30A4;&#x30DF;&#x30F3;&#x30B0;&#x3067;&#x4E00;&#x6642;&#x7684;&#x306B;&#x305D;&#x306E;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x3092;&#x505C;&#x6B62;&#x3057;&#x305F;&#x3044;&#x3068;&#x8003;&#x3048;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;
+                        これまでは、データを作成および更新するタイミングで項目自動更新をしていました。これからは、データを作成するタイミングで一時的にそのロジックを停止したいと考えています。
                       </li>
                       <li>
-                        &#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;&#x304A;&#x3088;&#x3073;&#x66F4;&#x65B0;&#x3059;&#x308B;&#x30BF;&#x30A4;&#x30DF;&#x30F3;&#x30B0;&#x3067;&#x5165;&#x529B;&#x898F;&#x5247;&#x3092;&#x304B;&#x3051;&#x305F;&#x3044;&#x3068;&#x8003;&#x3048;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;SLA
-                        &#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x3001;SLA
-                        &#x306E;&#x6709;&#x52B9;&#x671F;&#x9650;&#x304A;&#x3088;&#x3073;&#x30B7;&#x30EA;&#x30A2;&#x30EB;&#x30CA;&#x30F3;&#x30D0;&#x30FC;&#x304C;&#x5165;&#x529B;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3051;&#x308C;&#x3070;&#x306A;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;&#x5165;&#x529B;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x3001;&#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x8868;&#x793A;&#x3057;&#x3066;&#x4FDD;&#x5B58;&#x3067;&#x304D;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                        データを作成および更新するタイミングで入力規則をかけたいと考えています。SLA
+                        が設定されている場合、SLA
+                        の有効期限およびシリアルナンバーが入力されていなければなりません。入力されていない場合、エラーメッセージを表示して保存できないようにしてください。
                       </li>
                     </ul>
-                    <h2
-                      id="&#x30A2;&#x30FC;&#x30AD;&#x30C6;&#x30AF;&#x30C1;&#x30E3;&#x8981;&#x4EF6;"
-                    >
-                      &#x30A2;&#x30FC;&#x30AD;&#x30C6;&#x30AF;&#x30C1;&#x30E3;&#x8981;&#x4EF6;
-                    </h2>
+                    <h2 id="アーキテクチャ要件">アーキテクチャ要件</h2>
                     <ul>
                       <li>
                         <a
@@ -340,36 +330,25 @@
                           target="_blank"
                           >Flexible Apex Trigger</a
                         >
-                        &#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                        を利用してください。
+                      </li>
+                      <li>入力規則は Apex トリガで実装してください。</li>
+                      <li>
+                        エラーメッセージはカスタム表示ラベルに定義してください。
                       </li>
                       <li>
-                        &#x5165;&#x529B;&#x898F;&#x5247;&#x306F; Apex
-                        &#x30C8;&#x30EA;&#x30AC;&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
-                      </li>
-                      <li>
-                        &#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306F;&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x306B;&#x5B9A;&#x7FA9;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
-                      </li>
-                      <li>
-                        &#x3059;&#x3079;&#x3066;&#x306E;&#x30C6;&#x30B9;&#x30C8;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x5185;&#x3067;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                        すべてのテストデータはテストクラス内で作成してください。
                       </li>
                     </ul>
-                    <h2 id="&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x8981;&#x4EF6;">
-                      &#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x8981;&#x4EF6;
-                    </h2>
-                    <h3 id="apex-&#x30AF;&#x30E9;&#x30B9;">
-                      Apex &#x30AF;&#x30E9;&#x30B9;
-                    </h3>
+                    <h2 id="システム要件">システム要件</h2>
+                    <h3 id="apex-クラス">Apex クラス</h3>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x30AF;&#x30E9;&#x30B9;&#x4FEE;&#x98FE;&#x5B50;
-                          </th>
-                          <th style="text-align: left">
-                            &#x30AF;&#x30E9;&#x30B9;&#x540D;
-                          </th>
-                          <th style="text-align: left">&#x7D99;&#x627F;</th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">クラス修飾子</th>
+                          <th style="text-align: left">クラス名</th>
+                          <th style="text-align: left">継承</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -393,14 +372,10 @@
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x4FEE;&#x98FE;&#x5B50;&#x3068;&#x578B;
-                          </th>
-                          <th style="text-align: left">
-                            &#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x540D;
-                          </th>
-                          <th style="text-align: left">&#x8AAC;&#x660E;</th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">アクセス修飾子と型</th>
+                          <th style="text-align: left">メソッド名</th>
+                          <th style="text-align: left">説明</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -412,9 +387,7 @@
                             <code>validateSLA</code>
                           </td>
                           <td style="text-align: left">
-                            <a href="#level-04-1"
-                              >(1) &#x5165;&#x529B;&#x898F;&#x5247;</a
-                            >
+                            <a href="#level-04-1">(1) 入力規則</a>
                           </td>
                           <td style="text-align: left">
                             <code>@TestVisible</code>
@@ -424,52 +397,30 @@
                     </table>
                     <ul>
                       <li>
-                        &#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x524D;&#x306B;
-                        <code>validateSLA</code>
-                        &#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;
+                        新規作成する前に <code>validateSLA</code> を実行する
                       </li>
-                      <li>
-                        &#x66F4;&#x65B0;&#x3059;&#x308B;&#x524D;&#x306B;
-                        <code>validateSLA</code
-                        >&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;
-                      </li>
+                      <li>更新する前に <code>validateSLA</code>を実行する</li>
                     </ul>
                     <p><a id="level-04-1"></a></p>
-                    <h5 id="1-&#x5165;&#x529B;&#x898F;&#x5247;">
-                      (1) &#x5165;&#x529B;&#x898F;&#x5247;
-                    </h5>
-                    <h6 id="&#x30A8;&#x30E9;&#x30FC;&#x6761;&#x4EF6;">
-                      &#x30A8;&#x30E9;&#x30FC;&#x6761;&#x4EF6;
-                    </h6>
-                    <p>
-                      &#x6B21;&#x306E;&#x3044;&#x305A;&#x308C;&#x304B;&#x306E;&#x6761;&#x4EF6;&#x3092;&#x6E80;&#x305F;&#x3059;&#x5834;&#x5408;:
-                    </p>
+                    <h5 id="1-入力規則">(1) 入力規則</h5>
+                    <h6 id="エラー条件">エラー条件</h6>
+                    <p>次のいずれかの条件を満たす場合:</p>
                     <ol>
                       <li>
-                        SLA &#x304C;
-                        <code>null</code>
-                        &#x3067;&#x306A;&#x3044;&#x3001;&#x304B;&#x3064; SLA
-                        Expiration Date &#x304C;
-                        <code>null</code> &#x3067;&#x3042;&#x308B;
+                        SLA が <code>null</code> でない、かつ SLA Expiration
+                        Date が <code>null</code> である
                       </li>
                       <li>
-                        SLA &#x304C;
-                        <code>null</code>
-                        &#x3067;&#x306A;&#x3044;&#x3001;&#x304B;&#x3064; SLA
-                        Serial Number &#x304C;
-                        <code>null</code> &#x3067;&#x3042;&#x308B;
+                        SLA が <code>null</code> でない、かつ SLA Serial Number
+                        が <code>null</code> である
                       </li>
                     </ol>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;
-                          </th>
-                          <th style="text-align: left">
-                            &#x9805;&#x76EE;&#x540D;
-                          </th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">表示ラベル</th>
+                          <th style="text-align: left">項目名</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -494,66 +445,46 @@
                         </tr>
                       </tbody>
                     </table>
-                    <h6
-                      id="&#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;"
-                    >
-                      &#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;
-                    </h6>
+                    <h6 id="エラーメッセージ">エラーメッセージ</h6>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;
-                          </th>
-                          <th style="text-align: left">
-                            &#x30A8;&#x30E9;&#x30FC;&#x8868;&#x793A;&#x5834;&#x6240;
-                          </th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">エラーメッセージ</th>
+                          <th style="text-align: left">エラー表示場所</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td style="text-align: left">
                             SLA
-                            &#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x6709;&#x52B9;&#x671F;&#x9650;&#x3082;&#x5165;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                            が設定されている場合は有効期限も入力してください。
                           </td>
                           <td style="text-align: left">SLA Expiration Date</td>
                           <td style="text-align: left">
-                            SLA Expiration Date &#x304C;
-                            <code>null</code>
-                            &#x3067;&#x3042;&#x308B;&#x5834;&#x5408;
+                            SLA Expiration Date が <code>null</code> である場合
                           </td>
                         </tr>
                         <tr>
                           <td style="text-align: left">
                             SLA
-                            &#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x30B7;&#x30EA;&#x30A2;&#x30EB;&#x30CA;&#x30F3;&#x30D0;&#x30FC;&#x3082;&#x5165;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                            が設定されている場合はシリアルナンバーも入力してください。
                           </td>
                           <td style="text-align: left">SLA Serial Number</td>
                           <td style="text-align: left">
-                            SLA Serial Number &#x304C;
-                            <code>null</code>
-                            &#x3067;&#x3042;&#x308B;&#x5834;&#x5408;
+                            SLA Serial Number が <code>null</code> である場合
                           </td>
                         </tr>
                       </tbody>
                     </table>
-                    <h3
-                      id="apex-&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;"
-                    >
-                      Apex &#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;
-                    </h3>
+                    <h3 id="apex-テストクラス">Apex テストクラス</h3>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x30AF;&#x30E9;&#x30B9;&#x4FEE;&#x98FE;&#x5B50;
-                          </th>
-                          <th style="text-align: left">
-                            &#x30AF;&#x30E9;&#x30B9;&#x540D;
-                          </th>
-                          <th style="text-align: left">&#x7528;&#x9014;</th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">クラス修飾子</th>
+                          <th style="text-align: left">クラス名</th>
+                          <th style="text-align: left">用途</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -564,30 +495,20 @@
                           </td>
                           <td style="text-align: left">
                             <code>AccountTriggerValidation.cls</code>
-                            &#x306B;&#x5BFE;&#x3059;&#x308B;&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;
+                            に対するテストクラス
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
                       </tbody>
                     </table>
-                    <h3
-                      id="&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;"
-                    >
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;
-                    </h3>
+                    <h3 id="カスタム表示ラベル">カスタム表示ラベル</h3>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x30AB;&#x30C6;&#x30B4;&#x30EA;
-                          </th>
-                          <th style="text-align: left">
-                            &#x30A8;&#x30E9;&#x30FC; ID
-                          </th>
-                          <th style="text-align: left">
-                            &#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;
-                          </th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">カテゴリ</th>
+                          <th style="text-align: left">エラー ID</th>
+                          <th style="text-align: left">エラーメッセージ</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -598,7 +519,7 @@
                           </td>
                           <td style="text-align: left">
                             SLA
-                            &#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x6709;&#x52B9;&#x671F;&#x9650;&#x3082;&#x5165;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                            が設定されている場合は有効期限も入力してください。
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
@@ -609,23 +530,19 @@
                           </td>
                           <td style="text-align: left">
                             SLA
-                            &#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x30B7;&#x30EA;&#x30A2;&#x30EB;&#x30CA;&#x30F3;&#x30D0;&#x30FC;&#x3082;&#x5165;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                            が設定されている場合はシリアルナンバーも入力してください。
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
                       </tbody>
                     </table>
-                    <h3
-                      id="&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;"
-                    >
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;
-                    </h3>
+                    <h3 id="カスタムメタデータ型">カスタムメタデータ型</h3>
                     <h4 id="fattriggerobserver">FAT_TriggerObserver</h4>
                     <table>
                       <thead>
                         <tr>
                           <th style="text-align: left">
-                            &#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;<br />&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x540D;<br />Apex
+                            表示ラベル<br />カスタムメタデータレコード名<br />Apex
                             Class
                           </th>
                           <th style="text-align: left">sObject</th>
@@ -661,13 +578,9 @@
                         </tr>
                       </tbody>
                     </table>
-                    <h2 id="&#x89E3;&#x7B54;">&#x89E3;&#x7B54;</h2>
+                    <h2 id="解答">解答</h2>
                     <blockquote>
-                      <p>
-                        <a href="level-04-answer.html"
-                          >&#x3053;&#x3061;&#x3089;</a
-                        >
-                      </p>
+                      <p><a href="level-04-answer.html">こちら</a></p>
                     </blockquote>
                   </section>
                 </div>
@@ -731,6 +644,16 @@
                 ref: 'exercises/level-03-answer.md',
                 articles: []
               },
+              articles: [
+                {
+                  title: 'Lv. 4 の解答',
+                  level: '3.5.1',
+                  depth: 2,
+                  path: 'exercises/level-04-answer.md',
+                  ref: 'exercises/level-04-answer.md',
+                  articles: []
+                }
+              ],
               dir: 'ltr'
             },
             config: {
@@ -801,7 +724,7 @@
               mtime: '2020-09-08T12:44:30.274Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-08T12:55:35.544Z' },
+            gitbook: { version: '4.0.4', time: '2023-01-26T09:51:30.661Z' },
             basePath: '..',
             book: { language: '' }
           });
@@ -809,6 +732,50 @@
       </script>
     </div>
 
+    <noscript>
+      <style>
+        .honkit-cloak {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <script>
+      // Restore sidebar state as critical path for prevent layout shift
+      function __init__getSidebarState(defaultValue) {
+        var baseKey = '';
+        var key = baseKey + ':sidebar';
+        try {
+          var value = localStorage[key];
+          if (value === undefined) {
+            return defaultValue;
+          }
+          var parsed = JSON.parse(value);
+          return parsed == null ? defaultValue : parsed;
+        } catch (e) {
+          return defaultValue;
+        }
+      }
+      function __init__restoreLastSidebarState() {
+        var isMobile = window.matchMedia('(max-width: 600px)').matches;
+        if (isMobile) {
+          // Init last state if not mobile
+          return;
+        }
+        var sidebarState = __init__getSidebarState(true);
+        var book = document.querySelector('.book');
+        // Show sidebar if it enabled
+        if (sidebarState && book) {
+          book.classList.add('without-animation', 'with-summary');
+        }
+      }
+
+      try {
+        __init__restoreLastSidebarState();
+      } finally {
+        var book = document.querySelector('.book');
+        book.classList.remove('honkit-cloak');
+      }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
 

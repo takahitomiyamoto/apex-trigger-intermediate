@@ -2,18 +2,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Lv. 5 の解答 · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="generator" content="HonKit 3.6.1" />
+    <meta name="generator" content="HonKit 4.0.4" />
     <meta name="author" content="Takahito Miyamoto" />
 
     <link rel="stylesheet" href="../gitbook/style.css" />
 
     <link
       rel="stylesheet"
-      href="../gitbook/gitbook-plugin-highlight/website.css"
+      href="../gitbook/@honkit/honkit-plugin-highlight/website.css"
     />
 
     <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css" />
@@ -46,7 +45,7 @@
     <link rel="prev" href="level-05.html" />
   </head>
   <body>
-    <div class="book">
+    <div class="book honkit-cloak">
       <div class="book-summary">
         <div id="book-search-input" role="search">
           <input type="text" placeholder="検索ワードを入力" />
@@ -297,20 +296,12 @@
               <div id="book-search-results">
                 <div class="search-noresults">
                   <section class="normal markdown-section">
-                    <h1 id="lv-5-&#x306E;&#x89E3;&#x7B54;">
-                      Lv. 5 &#x306E;&#x89E3;&#x7B54;
-                    </h1>
+                    <h1 id="lv-5-の解答">Lv. 5 の解答</h1>
                     <hr />
-                    <h2 id="&#x30A2;&#x30A6;&#x30C8;&#x30E9;&#x30A4;&#x30F3;">
-                      &#x30A2;&#x30A6;&#x30C8;&#x30E9;&#x30A4;&#x30F3;
-                    </h2>
+                    <h2 id="アウトライン">アウトライン</h2>
                     <ul>
                       <li>
-                        <a
-                          href="#1-apex-&#x30C8;&#x30EA;&#x30AC;&#x3092;&#x4F5C;&#x6210;"
-                          >1. Apex
-                          &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x4F5C;&#x6210;</a
-                        >
+                        <a href="#1-apex-トリガを作成">1. Apex トリガを作成</a>
                         <ul>
                           <li>
                             <a href="#opportunitytriggertrigger"
@@ -325,10 +316,8 @@
                         </ul>
                       </li>
                       <li>
-                        <a
-                          href="#2-&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x3092;&#x8FFD;&#x52A0;"
-                          >2.
-                          &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x3092;&#x8FFD;&#x52A0;</a
+                        <a href="#2-カスタム表示ラベルを追加"
+                          >2. カスタム表示ラベルを追加</a
                         >
                         <ul>
                           <li>
@@ -339,11 +328,7 @@
                         </ul>
                       </li>
                       <li>
-                        <a
-                          href="#3-apex-&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;"
-                          >3. Apex
-                          &#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;</a
-                        >
+                        <a href="#3-apex-クラスを作成">3. Apex クラスを作成</a>
                         <ul>
                           <li>
                             <a href="#opportunitytriggervalidationcls"
@@ -358,10 +343,8 @@
                         </ul>
                       </li>
                       <li>
-                        <a
-                          href="#4-&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x4F5C;&#x6210;"
-                          >4.
-                          &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x4F5C;&#x6210;</a
+                        <a href="#4-カスタムメタデータ型を作成"
+                          >4. カスタムメタデータ型を作成</a
                         >
                         <ul>
                           <li>
@@ -379,10 +362,8 @@
                         </ul>
                       </li>
                       <li>
-                        <a
-                          href="#5-apex-&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;"
-                          >5. Apex
-                          &#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;</a
+                        <a href="#5-apex-テストクラスを作成"
+                          >5. Apex テストクラスを作成</a
                         >
                         <ul>
                           <li>
@@ -417,19 +398,12 @@
                       </li>
                     </ul>
                     <hr />
-                    <h2
-                      id="1-apex-&#x30C8;&#x30EA;&#x30AC;&#x3092;&#x4F5C;&#x6210;"
-                    >
-                      1. Apex &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x4F5C;&#x6210;
-                    </h2>
-                    <p>
-                      1-1. Apex
-                      &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <h2 id="1-apex-トリガを作成">1. Apex トリガを作成</h2>
+                    <p>1-1. Apex トリガを作成します。</p>
                     <h3 id="opportunitytriggertrigger">
                       OpportunityTrigger.trigger
                     </h3>
-                    <pre><code class="lang-sh">sfdx force:apex:trigger:create <span class="hljs-_">-d</span> force-app/main/default/triggers <span class="hljs-_">-e</span> <span class="hljs-string">&quot;before insert,before update,before delete,after insert,after update,after delete,after undelete&quot;</span> -n OpportunityTrigger <span class="hljs-_">-s</span> Opportunity -t ApexTrigger
+                    <pre><code class="lang-sh">sfdx force:apex:trigger:create -d force-app/main/default/triggers -e <span class="hljs-string">&quot;before insert,before update,before delete,after insert,after update,after delete,after undelete&quot;</span> -n OpportunityTrigger -s Opportunity -t ApexTrigger
 </code></pre>
                     <p><strong>OpportunityTrigger.trigger</strong></p>
                     <pre><code class="lang-java"><span class="hljs-function">trigger OpportunityTrigger on <span class="hljs-title">Opportunity</span><span class="hljs-params">(
@@ -448,7 +422,7 @@
 }
 </code></pre>
                     <h3 id="casetriggertrigger">CaseTrigger.trigger</h3>
-                    <pre><code class="lang-sh">sfdx force:apex:trigger:create <span class="hljs-_">-d</span> force-app/main/default/triggers <span class="hljs-_">-e</span> <span class="hljs-string">&quot;before insert,before update,before delete,after insert,after update,after delete,after undelete&quot;</span> -n CaseTrigger <span class="hljs-_">-s</span> Case -t ApexTrigger
+                    <pre><code class="lang-sh">sfdx force:apex:trigger:create -d force-app/main/default/triggers -e <span class="hljs-string">&quot;before insert,before update,before delete,after insert,after update,after delete,after undelete&quot;</span> -n CaseTrigger -s Case -t ApexTrigger
 </code></pre>
                     <p><strong>CaseTrigger.trigger</strong></p>
                     <pre><code class="lang-java"><span class="hljs-function">trigger CaseTrigger on <span class="hljs-title">Case</span><span class="hljs-params">(
@@ -466,29 +440,17 @@
   handler.invoke();
 }
 </code></pre>
-                    <p>
-                      1-2.
-                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>1-2. コードをフォーマットします。</p>
                     <pre><code class="lang-sh">yarn prettier
 </code></pre>
-                    <p>
-                      1-3.
-                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>1-3. スクラッチ組織へプッシュします。</p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
 </code></pre>
                     <hr />
-                    <h2
-                      id="2-&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x3092;&#x8FFD;&#x52A0;"
-                    >
-                      2.
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x3092;&#x8FFD;&#x52A0;
+                    <h2 id="2-カスタム表示ラベルを追加">
+                      2. カスタム表示ラベルを追加
                     </h2>
-                    <p>
-                      2-1.
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>2-1. カスタム表示ラベルを追加します。</p>
                     <h3 id="customlabelslabels-metaxml">
                       CustomLabels.labels-meta.xml
                     </h3>
@@ -496,7 +458,7 @@
                       <li>CLOSED_WON_CANNOT_BE_DELETED</li>
                       <li>HIGH_CASE_IS_CREATED</li>
                     </ul>
-                    <pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span> <span class="hljs-meta">?&gt;</span></span>
+                    <pre><code class="lang-xml"><span class="hljs-meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">CustomLabels</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://soap.sforce.com/2006/04/metadata&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">labels</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">fullName</span>&gt;</span>SLA_EXPIRATION_DATE_REQUIRED<span class="hljs-tag">&lt;/<span class="hljs-name">fullName</span>&gt;</span>
@@ -504,7 +466,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">language</span>&gt;</span>ja<span class="hljs-tag">&lt;/<span class="hljs-name">language</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">protected</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">protected</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">shortDescription</span>&gt;</span>SLA_EXPIRATION_DATE_REQUIRED<span class="hljs-tag">&lt;/<span class="hljs-name">shortDescription</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>SLA &#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x6709;&#x52B9;&#x671F;&#x9650;&#x3082;&#x5165;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>SLA が設定されている場合は有効期限も入力してください。<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">labels</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">labels</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">fullName</span>&gt;</span>SLA_SERIAL_NUMBER_REQUIRED<span class="hljs-tag">&lt;/<span class="hljs-name">fullName</span>&gt;</span>
@@ -513,7 +475,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">protected</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">protected</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">shortDescription</span>&gt;</span>SLA_SERIAL_NUMBER_REQUIRED<span class="hljs-tag">&lt;/<span class="hljs-name">shortDescription</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">value</span>
-    &gt;</span>SLA &#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x30B7;&#x30EA;&#x30A2;&#x30EB;&#x30CA;&#x30F3;&#x30D0;&#x30FC;&#x3082;&#x5165;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    &gt;</span>SLA が設定されている場合はシリアルナンバーも入力してください。<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">labels</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">labels</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">fullName</span>&gt;</span>CLOSED_WON_CANNOT_BE_DELETED<span class="hljs-tag">&lt;/<span class="hljs-name">fullName</span>&gt;</span>
@@ -521,7 +483,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">language</span>&gt;</span>ja<span class="hljs-tag">&lt;/<span class="hljs-name">language</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">protected</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">protected</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">shortDescription</span>&gt;</span>CLOSED_WON_CANNOT_BE_DELETED<span class="hljs-tag">&lt;/<span class="hljs-name">shortDescription</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>&#x6210;&#x7D04;&#x6E08;&#x307F;&#x306E;&#x5546;&#x8AC7;&#x306F;&#x524A;&#x9664;&#x3067;&#x304D;&#x307E;&#x305B;&#x3093;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>成約済みの商談は削除できません。<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">labels</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">labels</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">fullName</span>&gt;</span>HIGH_CASE_IS_CREATED<span class="hljs-tag">&lt;/<span class="hljs-name">fullName</span>&gt;</span>
@@ -529,39 +491,26 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">language</span>&gt;</span>ja<span class="hljs-tag">&lt;/<span class="hljs-name">language</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">protected</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">protected</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">shortDescription</span>&gt;</span>HIGH_CASE_IS_CREATED<span class="hljs-tag">&lt;/<span class="hljs-name">shortDescription</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>&#x512A;&#x5148;&#x5EA6;&#x306E;&#x9AD8;&#x3044;&#x30B1;&#x30FC;&#x30B9;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#xFF01;<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>優先度の高いケースが作成されました！<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">labels</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">CustomLabels</span>&gt;</span>
 </code></pre>
-                    <p>
-                      2-2.
-                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>2-2. コードをフォーマットします。</p>
                     <pre><code class="lang-sh">yarn prettier
 </code></pre>
-                    <p>
-                      2-3.
-                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>2-3. スクラッチ組織へプッシュします。</p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
 </code></pre>
                     <hr />
-                    <h2
-                      id="3-apex-&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;"
-                    >
-                      3. Apex &#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;
-                    </h2>
-                    <p>
-                      3-1. Apex
-                      &#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <h2 id="3-apex-クラスを作成">3. Apex クラスを作成</h2>
+                    <p>3-1. Apex クラスを作成します。</p>
                     <h3 id="opportunitytriggervalidationcls">
                       OpportunityTriggerValidation.cls
                     </h3>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/main/default/classes -n OpportunityTriggerValidation -t DefaultApexClass
+                    <pre><code class="lang-sh">sfdx force:apex:class:create -d force-app/main/default/classes -n OpportunityTriggerValidation -t DefaultApexClass
 </code></pre>
                     <p><strong>OpportunityTriggerValidation.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings(&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;)</span>
 <span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OpportunityTriggerValidation</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String CLOSED_WON_CANNOT_BE_DELETED = System.Label.CLOSED_WON_CANNOT_BE_DELETED;
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String CLOSED_WON = <span class="hljs-string">&apos;Closed Won&apos;</span>;
@@ -619,10 +568,10 @@
 }
 </code></pre>
                     <h3 id="casetriggerservicecls">CaseTriggerService.cls</h3>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/main/default/classes -n CaseTriggerService -t DefaultApexClass
+                    <pre><code class="lang-sh">sfdx force:apex:class:create -d force-app/main/default/classes -n CaseTriggerService -t DefaultApexClass
 </code></pre>
                     <p><strong>CaseTriggerService.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings(&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;)</span>
 <span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CaseTriggerService</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String HIGH_CASE_IS_CREATED = System.Label.HIGH_CASE_IS_CREATED;
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PRIORITY_HIGH = <span class="hljs-string">&apos;High&apos;</span>;
@@ -676,24 +625,15 @@
   }
 }
 </code></pre>
-                    <p>
-                      3-2.
-                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>3-2. コードをフォーマットします。</p>
                     <pre><code class="lang-sh">yarn prettier
 </code></pre>
-                    <p>
-                      3-3.
-                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>3-3. スクラッチ組織へプッシュします。</p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
 </code></pre>
                     <hr />
-                    <h2
-                      id="4-&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x4F5C;&#x6210;"
-                    >
-                      4.
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x4F5C;&#x6210;
+                    <h2 id="4-カスタムメタデータ型を作成">
+                      4. カスタムメタデータ型を作成
                     </h2>
                     <h3
                       id="fattriggerobserveropportunitytriggervalidationmd-metaxml"
@@ -705,14 +645,14 @@
                       <code
                         >FAT_TriggerObserver.AccountTriggerService.md-meta.xml</code
                       >
-                      &#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3057;&#x3066;&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+                      をコピーしてカスタムメタデータ型を作成します。
                     </p>
                     <p>
                       <strong
                         >FAT_TriggerObserver.OpportunityTriggerValidation.md-meta.xml</strong
                       >
                     </p>
-                    <pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span> <span class="hljs-meta">?&gt;</span></span>
+                    <pre><code class="lang-xml"><span class="hljs-meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">CustomMetadata</span>
   <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://soap.sforce.com/2006/04/metadata&quot;</span>
   <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
@@ -770,14 +710,14 @@
                       <code
                         >FAT_TriggerObserver.AccountTriggerService.md-meta.xml</code
                       >
-                      &#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3057;&#x3066;&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+                      をコピーしてカスタムメタデータ型を作成します。
                     </p>
                     <p>
                       <strong
                         >FAT_TriggerObserver.CaseTriggerService.md-meta.xml</strong
                       >
                     </p>
-                    <pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span> <span class="hljs-meta">?&gt;</span></span>
+                    <pre><code class="lang-xml"><span class="hljs-meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">CustomMetadata</span>
   <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://soap.sforce.com/2006/04/metadata&quot;</span>
   <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
@@ -827,36 +767,24 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">CustomMetadata</span>&gt;</span>
 </code></pre>
-                    <p>
-                      4-3.
-                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>4-3. コードをフォーマットします。</p>
                     <pre><code class="lang-sh">yarn prettier
 </code></pre>
-                    <p>
-                      4-4.
-                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>4-4. スクラッチ組織へプッシュします。</p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
 </code></pre>
                     <hr />
-                    <h2
-                      id="5-apex-&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;"
-                    >
-                      5. Apex
-                      &#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;
+                    <h2 id="5-apex-テストクラスを作成">
+                      5. Apex テストクラスを作成
                     </h2>
-                    <p>
-                      5-1. Apex
-                      &#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>5-1. Apex テストクラスを作成します。</p>
                     <h3 id="opportunitytriggervalidationtestcls">
                       OpportunityTriggerValidationTest.cls
                     </h3>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTriggerValidationTest -t ApexUnitTest
+                    <pre><code class="lang-sh">sfdx force:apex:class:create -d force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTriggerValidationTest -t ApexUnitTest
 </code></pre>
                     <p><strong>OpportunityTriggerValidationTest.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@isTest(SeeAllData=false)</span>
 <span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OpportunityTriggerValidationTest</span> </span>{
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String CLOSED_WON_CANNOT_BE_DELETED = System.Label.CLOSED_WON_CANNOT_BE_DELETED;
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String CLOSED_WON = <span class="hljs-string">&apos;Closed Won&apos;</span>;
@@ -962,11 +890,11 @@
                     <h3 id="opportunitytestutilscls">
                       OpportunityTestUtils.cls
                     </h3>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTestUtils -t ApexUnitTest
+                    <pre><code class="lang-sh">sfdx force:apex:class:create -d force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTestUtils -t ApexUnitTest
 </code></pre>
                     <p><strong>OpportunityTestUtils.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.ApexDoc&apos;</span>)
-<span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings(&apos;PMD.ApexDoc&apos;)</span>
+<span class="hljs-meta">@isTest(SeeAllData=false)</span>
 <span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OpportunityTestUtils</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Opportunity&gt; <span class="hljs-title">createNormalOpportunities</span><span class="hljs-params">()</span> </span>{
     List&lt;Opportunity&gt; opportunities = <span class="hljs-keyword">new</span> List&lt;Opportunity&gt;();
@@ -1012,10 +940,10 @@
                     <h3 id="opportunitytriggertestcls">
                       OpportunityTriggerTest.cls
                     </h3>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTriggerTest -t ApexUnitTest
+                    <pre><code class="lang-sh">sfdx force:apex:class:create -d force-app/<span class="hljs-built_in">test</span>/default/classes -n OpportunityTriggerTest -t ApexUnitTest
 </code></pre>
                     <p><strong>OpportunityTriggerTest.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@isTest(SeeAllData=false)</span>
 <span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OpportunityTriggerTest</span> </span>{
   <span class="hljs-meta">@testSetup</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
@@ -1038,10 +966,10 @@
                     <h3 id="casetriggerservicetestcls">
                       CaseTriggerServiceTest.cls
                     </h3>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTriggerServiceTest -t ApexUnitTest
+                    <pre><code class="lang-sh">sfdx force:apex:class:create -d force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTriggerServiceTest -t ApexUnitTest
 </code></pre>
                     <p><strong>CaseTriggerServiceTest.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@isTest(SeeAllData=false)</span>
 <span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CaseTriggerServiceTest</span> </span>{
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> CaseTriggerService service = <span class="hljs-keyword">new</span> CaseTriggerService();
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> FAT_CommonTriggerHandler handler = FAT_CommonTriggerHandler.create(
@@ -1132,11 +1060,11 @@
 }
 </code></pre>
                     <h3 id="casetestutilscls">CaseTestUtils.cls</h3>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTestUtils -t ApexUnitTest
+                    <pre><code class="lang-sh">sfdx force:apex:class:create -d force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTestUtils -t ApexUnitTest
 </code></pre>
                     <p><strong>CaseTestUtils.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.ApexDoc&apos;</span>)
-<span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings(&apos;PMD.ApexDoc&apos;)</span>
+<span class="hljs-meta">@isTest(SeeAllData=false)</span>
 <span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CaseTestUtils</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Case&gt; <span class="hljs-title">createNormalCases</span><span class="hljs-params">()</span> </span>{
     List&lt;Case&gt; cases = <span class="hljs-keyword">new</span> List&lt;Case&gt;();
@@ -1177,10 +1105,10 @@
 }
 </code></pre>
                     <h3 id="casetriggertestcls">CaseTriggerTest.cls</h3>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTriggerTest -t ApexUnitTest
+                    <pre><code class="lang-sh">sfdx force:apex:class:create -d force-app/<span class="hljs-built_in">test</span>/default/classes -n CaseTriggerTest -t ApexUnitTest
 </code></pre>
                     <p><strong>CaseTriggerTest.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@isTest(SeeAllData=false)</span>
 <span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CaseTriggerTest</span> </span>{
   <span class="hljs-meta">@testSetup</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
@@ -1200,29 +1128,23 @@
   }
 }
 </code></pre>
-                    <p>
-                      5-2.
-                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>5-2. コードをフォーマットします。</p>
                     <pre><code class="lang-sh">yarn prettier
 </code></pre>
-                    <p>
-                      5-3.
-                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>5-3. スクラッチ組織へプッシュします。</p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
 </code></pre>
                     <p>
                       5-4. Apex
-                      &#x30C6;&#x30B9;&#x30C8;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x73FE;&#x5728;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30FC;&#x7387;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;
+                      テストを実行して現在のコードカバー率を確認します。
                     </p>
                     <pre><code class="lang-sh"><span class="hljs-built_in">export</span> SFDX_IMPROVED_CODE_COVERAGE=<span class="hljs-string">&quot;true&quot;</span>
 
-sfdx force:apex:<span class="hljs-built_in">test</span>:run -c <span class="hljs-_">-l</span> RunLocalTests -r human -u demo
+sfdx force:apex:<span class="hljs-built_in">test</span>:run -c -l RunLocalTests -r human -u demo
 </code></pre>
                     <pre><code class="lang-sh">=== Apex Code Coverage
 ID                  NAME                           % COVERED  UNCOVERED LINES
-&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+──────────────────  ─────────────────────────────  ─────────  ───────────────
 01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
 01p0l0000027mMpAAI  FAT_CommonLogger               100%
 01p0l0000027mMqAAI  FAT_CommonLoggerConstants      100%
@@ -1243,7 +1165,7 @@ ID                  NAME                           % COVERED  UNCOVERED LINES
 
 === Test Summary
 NAME                 VALUE
-&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+───────────────────  ───────────────────────────────────────────────────────────
 Outcome              Passed
 Tests Ran            85
 Passing              85
@@ -1254,18 +1176,12 @@ Fail Rate            0%
 Test Run Coverage    100%
 Org Wide Coverage    100%
 </code></pre>
+                    <p>コードカバー率は 100%になっています！</p>
                     <p>
-                      &#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30FC;&#x7387;&#x306F;
-                      100%&#x306B;&#x306A;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF01;
+                      動作確認してみましょう。商談画面を開いて、想定通りの挙動かどうかを確認しましょう。
+                      また、ケース画面を開いて、想定通りの挙動かどうかを確認しましょう。
                     </p>
-                    <p>
-                      &#x52D5;&#x4F5C;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x5546;&#x8AC7;&#x753B;&#x9762;&#x3092;&#x958B;&#x3044;&#x3066;&#x3001;&#x60F3;&#x5B9A;&#x901A;&#x308A;&#x306E;&#x6319;&#x52D5;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
-                      &#x307E;&#x305F;&#x3001;&#x30B1;&#x30FC;&#x30B9;&#x753B;&#x9762;&#x3092;&#x958B;&#x3044;&#x3066;&#x3001;&#x60F3;&#x5B9A;&#x901A;&#x308A;&#x306E;&#x6319;&#x52D5;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
-                    </p>
-                    <p>
-                      ...
-                      &#x3044;&#x304B;&#x304C;&#x3067;&#x3057;&#x305F;&#x304B;&#xFF1F;
-                    </p>
+                    <p>... いかがでしたか？</p>
                   </section>
                 </div>
                 <div class="search-results">
@@ -1407,7 +1323,7 @@ Org Wide Coverage    100%
               mtime: '2020-09-07T12:22:41.913Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-08T12:55:35.544Z' },
+            gitbook: { version: '4.0.4', time: '2023-01-26T09:51:30.661Z' },
             basePath: '..',
             book: { language: '' }
           });
@@ -1415,6 +1331,50 @@ Org Wide Coverage    100%
       </script>
     </div>
 
+    <noscript>
+      <style>
+        .honkit-cloak {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <script>
+      // Restore sidebar state as critical path for prevent layout shift
+      function __init__getSidebarState(defaultValue) {
+        var baseKey = '';
+        var key = baseKey + ':sidebar';
+        try {
+          var value = localStorage[key];
+          if (value === undefined) {
+            return defaultValue;
+          }
+          var parsed = JSON.parse(value);
+          return parsed == null ? defaultValue : parsed;
+        } catch (e) {
+          return defaultValue;
+        }
+      }
+      function __init__restoreLastSidebarState() {
+        var isMobile = window.matchMedia('(max-width: 600px)').matches;
+        if (isMobile) {
+          // Init last state if not mobile
+          return;
+        }
+        var sidebarState = __init__getSidebarState(true);
+        var book = document.querySelector('.book');
+        // Show sidebar if it enabled
+        if (sidebarState && book) {
+          book.classList.add('without-animation', 'with-summary');
+        }
+      }
+
+      try {
+        __init__restoreLastSidebarState();
+      } finally {
+        var book = document.querySelector('.book');
+        book.classList.remove('honkit-cloak');
+      }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
 
