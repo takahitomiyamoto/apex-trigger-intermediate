@@ -31,20 +31,6 @@ $Env:SFDX_IMPROVED_CODE_COVERAGE
 ```
 
 ```sh
-=== Apex Code Coverage
-ID                  NAME                           % COVERED  UNCOVERED LINES
-──────────────────  ─────────────────────────────  ─────────  ───────────────────────────────────────────────
-01p1m000000dNwKAAU  FAT_CommonConstants            NaN%
-01p1m000000dNwLAAU  FAT_CommonError                100%
-01p1m000000dNwNAAU  FAT_CommonLogger               100%
-01p1m000000dNwOAAU  FAT_CommonLoggerConstants      100%
-01p1m000000dNwPAAU  FAT_CommonLoggerHelper         100%
-01p1m000000dNwTAAU  FAT_CommonTriggerHandler       88%        160,190,193,196,199,200,203,204,207,208,216,217
-01p1m000000dNwVAAU  FAT_CommonTriggerHelper        100%
-01p1m000000dNwYAAU  FAT_CommonUtils                100%
-01q1m000000EAWXAA4  FAT_LoggerEventTrigger         100%
-01p1m000000dNwbAAE  FAT_LoggerEventTriggerService  100%
-
 === Test Summary
 NAME                 VALUE
 ───────────────────  ─────────────────────────────────────────────────────────
@@ -57,6 +43,9 @@ Pass Rate            100%
 Fail Rate            0%
 Test Run Coverage    96%
 Org Wide Coverage    90%
+
+(...以下省略...)
+
 ```
 
 ### AccountTriggerServiceTest.cls
@@ -237,21 +226,6 @@ sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 ```
 
 ```sh
-=== Apex Code Coverage
-ID                  NAME                           % COVERED  UNCOVERED LINES
-──────────────────  ─────────────────────────────  ─────────  ───────────────────────────────────────────────
-01p1m000000dNwKAAU  FAT_CommonConstants            NaN%
-01p1m000000dNwLAAU  FAT_CommonError                100%
-01p1m000000dNwNAAU  FAT_CommonLogger               100%
-01p1m000000dNwOAAU  FAT_CommonLoggerConstants      100%
-01p1m000000dNwPAAU  FAT_CommonLoggerHelper         100%
-01p1m000000dNwTAAU  FAT_CommonTriggerHandler       88%        160,190,193,196,199,200,203,204,207,208,216,217
-01p1m000000dNwVAAU  FAT_CommonTriggerHelper        100%
-01p1m000000dNwYAAU  FAT_CommonUtils                100%
-01q1m000000EAWXAA4  FAT_LoggerEventTrigger         100%
-01p1m000000dNwbAAE  FAT_LoggerEventTriggerService  100%
-01p1m000000dO0mAAE  AccountTriggerService          100%
-
 === Test Summary
 NAME                 VALUE
 ───────────────────  ─────────────────────────────────────────────────────────
@@ -264,6 +238,9 @@ Pass Rate            100%
 Fail Rate            0%
 Test Run Coverage    97%
 Org Wide Coverage    96%
+
+(...以下省略...)
+
 ```
 
 ---
@@ -410,22 +387,6 @@ sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 ```
 
 ```sh
-=== Apex Code Coverage
-ID                  NAME                           % COVERED  UNCOVERED LINES
-──────────────────  ─────────────────────────────  ─────────  ───────────────
-01p1m000000dNwKAAU  FAT_CommonConstants            NaN%
-01p1m000000dNwLAAU  FAT_CommonError                100%
-01p1m000000dNwYAAU  FAT_CommonUtils                100%
-01p1m000000dNwOAAU  FAT_CommonLoggerConstants      100%
-01p1m000000dNwNAAU  FAT_CommonLogger               100%
-01p1m000000dNwPAAU  FAT_CommonLoggerHelper         100%
-01p1m000000dNwTAAU  FAT_CommonTriggerHandler       98%        216,217
-01p1m000000dNwVAAU  FAT_CommonTriggerHelper        100%
-01q1m000000EAWXAA4  FAT_LoggerEventTrigger         100%
-01p1m000000dNwbAAE  FAT_LoggerEventTriggerService  100%
-01q1m000000E9UvAAK  AccountTrigger                 100%
-01p1m000000dO0mAAE  AccountTriggerService          100%
-
 === Test Summary
 NAME                 VALUE
 ───────────────────  ─────────────────────────────────────────────────────────
@@ -438,6 +399,9 @@ Pass Rate            100%
 Fail Rate            0%
 Test Run Coverage    99%
 Org Wide Coverage    99%
+
+(...以下省略...)
+
 ```
 
 コードカバー率 100%まであと 1%です。後ほど対応しましょう。

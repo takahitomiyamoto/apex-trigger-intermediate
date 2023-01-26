@@ -4,24 +4,26 @@
 
 ## アウトライン
 
-- [1. Apex トリガを作成](#1-apex-トリガを作成)
-  - [OpportunityTrigger.trigger](#opportunitytriggertrigger)
-  - [CaseTrigger.trigger](#casetriggertrigger)
-- [2. カスタム表示ラベルを追加](#2-カスタム表示ラベルを追加)
-  - [CustomLabels.labels-meta.xml](#customlabelslabels-metaxml)
-- [3. Apex クラスを作成](#3-apex-クラスを作成)
-  - [OpportunityTriggerValidation.cls](#opportunitytriggervalidationcls)
-  - [CaseTriggerService.cls](#casetriggerservicecls)
-- [4. カスタムメタデータ型を作成](#4-カスタムメタデータ型を作成)
-  - [FAT_TriggerObserver.OpportunityTriggerValidation.md-meta.xml](#fattriggerobserveropportunitytriggervalidationmd-metaxml)
-  - [FAT_TriggerObserver.CaseTriggerService.md-meta.xml](#fattriggerobservercasetriggerservicemd-metaxml)
-- [5. Apex テストクラスを作成](#5-apex-テストクラスを作成)
-  - [OpportunityTriggerValidationTest.cls](#opportunitytriggervalidationtestcls)
-  - [OpportunityTestUtils.cls](#opportunitytestutilscls)
-  - [OpportunityTriggerTest.cls](#opportunitytriggertestcls)
-  - [CaseTriggerServiceTest.cls](#casetriggerservicetestcls)
-  - [CaseTestUtils.cls](#casetestutilscls)
-  - [CaseTriggerTest.cls](#casetriggertestcls)
+- [Lv. 5 の解答](#lv-5-の解答)
+  - [アウトライン](#アウトライン)
+  - [1. Apex トリガを作成](#1-apex-トリガを作成)
+    - [OpportunityTrigger.trigger](#opportunitytriggertrigger)
+    - [CaseTrigger.trigger](#casetriggertrigger)
+  - [2. カスタム表示ラベルを追加](#2-カスタム表示ラベルを追加)
+    - [CustomLabels.labels-meta.xml](#customlabelslabels-metaxml)
+  - [3. Apex クラスを作成](#3-apex-クラスを作成)
+    - [OpportunityTriggerValidation.cls](#opportunitytriggervalidationcls)
+    - [CaseTriggerService.cls](#casetriggerservicecls)
+  - [4. カスタムメタデータ型を作成](#4-カスタムメタデータ型を作成)
+    - [FAT_TriggerObserver.OpportunityTriggerValidation.md-meta.xml](#fat_triggerobserveropportunitytriggervalidationmd-metaxml)
+    - [FAT_TriggerObserver.CaseTriggerService.md-meta.xml](#fat_triggerobservercasetriggerservicemd-metaxml)
+  - [5. Apex テストクラスを作成](#5-apex-テストクラスを作成)
+    - [OpportunityTriggerValidationTest.cls](#opportunitytriggervalidationtestcls)
+    - [OpportunityTestUtils.cls](#opportunitytestutilscls)
+    - [OpportunityTriggerTest.cls](#opportunitytriggertestcls)
+    - [CaseTriggerServiceTest.cls](#casetriggerservicetestcls)
+    - [CaseTestUtils.cls](#casetestutilscls)
+    - [CaseTriggerTest.cls](#casetriggertestcls)
 
 ---
 
@@ -839,27 +841,6 @@ sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 ```
 
 ```sh
-=== Apex Code Coverage
-ID                  NAME                           % COVERED  UNCOVERED LINES
-──────────────────  ─────────────────────────────  ─────────  ───────────────
-01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
-01p0l0000027mMpAAI  FAT_CommonLogger               100%
-01p0l0000027mMqAAI  FAT_CommonLoggerConstants      100%
-01p0l0000027mMrAAI  FAT_CommonLoggerHelper         100%
-01p0l0000027mMnAAI  FAT_CommonError                100%
-01p0l0000027mMvAAI  FAT_CommonTriggerHandler       100%
-01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
-01p0l0000027mN0AAI  FAT_CommonUtils                100%
-01q0l000000HcL0AAK  FAT_LoggerEventTrigger         100%
-01p0l0000027mN3AAI  FAT_LoggerEventTriggerService  100%
-01q0l000000HcL5AAK  AccountTrigger                 100%
-01p0l0000027mN7AAI  AccountTriggerService          100%
-01p0l0000027mNAAAY  AccountTriggerValidation       100%
-01q0l000000HctXAAS  CaseTrigger                    100%
-01p0l0000027ppJAAQ  CaseTriggerService             100%
-01q0l000000HctYAAS  OpportunityTrigger             100%
-01p0l0000027ppLAAQ  OpportunityTriggerValidation   100%
-
 === Test Summary
 NAME                 VALUE
 ───────────────────  ───────────────────────────────────────────────────────────
@@ -872,6 +853,9 @@ Pass Rate            100%
 Fail Rate            0%
 Test Run Coverage    100%
 Org Wide Coverage    100%
+
+(...以下省略...)
+
 ```
 
 コードカバー率は 100%になっています！

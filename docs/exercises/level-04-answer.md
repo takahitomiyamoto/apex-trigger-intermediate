@@ -4,18 +4,20 @@
 
 ## アウトライン
 
-- [1. カスタムメタデータ型の変更・追加](#1-カスタムメタデータ型の変更・追加)
-  - [FAT_TriggerObserver.AccountTriggerService.md-meta.xml](#fattriggerobserveraccounttriggerservicemd-metaxml)
-  - [FAT_TriggerObserver.AccountTriggerValidation.md-meta.xml](#fattriggerobserveraccounttriggervalidationmd-metaxml)
-- [2. カスタム表示ラベルを追加](#2-カスタム表示ラベルを追加)
-  - [CustomLabels.labels-meta.xml](#customlabelslabels-metaxml)
-- [3. Apex クラスを作成](#3-apex-クラスを作成)
-  - [AccountTriggerValidation.cls](#accounttriggervalidationcls)
-- [4. Apex テストクラスを作成](#4-apex-テストクラスを作成)
-  - [AccountTriggerValidationTest.cls](#accounttriggervalidationtestcls)
-- [5. Apex テストクラスを変更](#5-apex-テストクラスを変更)
-  - [AccountTestUtils.cls](#accounttestutilscls)
-  - [AccountTriggerTest.cls](#accounttriggertestcls)
+- [Lv. 4 の解答](#lv-4-の解答)
+  - [アウトライン](#アウトライン)
+  - [1. カスタムメタデータ型の変更・追加](#1-カスタムメタデータ型の変更追加)
+    - [FAT_TriggerObserver.AccountTriggerService.md-meta.xml](#fat_triggerobserveraccounttriggerservicemd-metaxml)
+    - [FAT_TriggerObserver.AccountTriggerValidation.md-meta.xml](#fat_triggerobserveraccounttriggervalidationmd-metaxml)
+  - [2. カスタム表示ラベルを追加](#2-カスタム表示ラベルを追加)
+    - [CustomLabels.labels-meta.xml](#customlabelslabels-metaxml)
+  - [3. Apex クラスを作成](#3-apex-クラスを作成)
+    - [AccountTriggerValidation.cls](#accounttriggervalidationcls)
+  - [4. Apex テストクラスを作成](#4-apex-テストクラスを作成)
+    - [AccountTriggerValidationTest.cls](#accounttriggervalidationtestcls)
+  - [5. Apex テストクラスを変更](#5-apex-テストクラスを変更)
+    - [AccountTestUtils.cls](#accounttestutilscls)
+    - [AccountTriggerTest.cls](#accounttriggertestcls)
 
 ---
 
@@ -435,23 +437,6 @@ sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 ```
 
 ```sh
-=== Apex Code Coverage
-ID                  NAME                           % COVERED  UNCOVERED LINES
-──────────────────  ─────────────────────────────  ─────────  ───────────────────────────────────
-01p1m000000dNwKAAU  FAT_CommonConstants            NaN%
-01p1m000000dNwLAAU  FAT_CommonError                100%
-01p1m000000dNwYAAU  FAT_CommonUtils                100%
-01p1m000000dNwOAAU  FAT_CommonLoggerConstants      100%
-01p1m000000dNwNAAU  FAT_CommonLogger               100%
-01p1m000000dNwPAAU  FAT_CommonLoggerHelper         100%
-01q1m000000EAWXAA4  FAT_LoggerEventTrigger         100%
-01p1m000000dNwbAAE  FAT_LoggerEventTriggerService  100%
-01p1m000000dNwTAAU  FAT_CommonTriggerHandler       98%        216,217
-01p1m000000dNwVAAU  FAT_CommonTriggerHelper        100%
-01q1m000000E9UvAAK  AccountTrigger                 100%
-01p1m000000dO0mAAE  AccountTriggerService          100%
-01p1m000000dWaeAAE  AccountTriggerValidation       60%        21,22,25,26,31,32,33,46,49,52,55,58
-
 === Test Summary
 NAME                 VALUE
 ───────────────────  ─────────────────────────────────────────────────────────
@@ -464,6 +449,9 @@ Pass Rate            100%
 Fail Rate            0%
 Test Run Coverage    96%
 Org Wide Coverage    96%
+
+(...以下省略...)
+
 ```
 
 ### AccountTriggerValidationTest.cls
@@ -638,23 +626,6 @@ sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 ```
 
 ```sh
-=== Apex Code Coverage
-ID                  NAME                           % COVERED  UNCOVERED LINES
-──────────────────  ─────────────────────────────  ─────────  ───────────────
-01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
-01p0l0000027mMnAAI  FAT_CommonError                100%
-01p0l0000027mMpAAI  FAT_CommonLogger               100%
-01p0l0000027mMqAAI  FAT_CommonLoggerConstants      100%
-01p0l0000027mMrAAI  FAT_CommonLoggerHelper         100%
-01p0l0000027mMvAAI  FAT_CommonTriggerHandler       98%        216,217
-01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
-01p0l0000027mN0AAI  FAT_CommonUtils                100%
-01q0l000000HcL0AAK  FAT_LoggerEventTrigger         100%
-01p0l0000027mN3AAI  FAT_LoggerEventTriggerService  100%
-01q0l000000HcL5AAK  AccountTrigger                 100%
-01p0l0000027mN7AAI  AccountTriggerService          100%
-01p0l0000027mNAAAY  AccountTriggerValidation       100%
-
 === Test Summary
 NAME                 VALUE
 ───────────────────  ────────────────────────────────────────────────────────────
@@ -667,6 +638,9 @@ Pass Rate            100%
 Fail Rate            0%
 Test Run Coverage    99%
 Org Wide Coverage    99%
+
+(...以下省略...)
+
 ```
 
 ---
@@ -806,23 +780,6 @@ sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 ```
 
 ```sh
-=== Apex Code Coverage
-ID                  NAME                           % COVERED  UNCOVERED LINES
-──────────────────  ─────────────────────────────  ─────────  ───────────────
-01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
-01p0l0000027mMnAAI  FAT_CommonError                100%
-01p0l0000027mMpAAI  FAT_CommonLogger               100%
-01p0l0000027mMqAAI  FAT_CommonLoggerConstants      100%
-01p0l0000027mMrAAI  FAT_CommonLoggerHelper         100%
-01p0l0000027mMvAAI  FAT_CommonTriggerHandler       100%
-01p0l0000027mMxAAI  FAT_CommonTriggerHelper        100%
-01p0l0000027mN0AAI  FAT_CommonUtils                100%
-01q0l000000HcL0AAK  FAT_LoggerEventTrigger         100%
-01p0l0000027mN3AAI  FAT_LoggerEventTriggerService  100%
-01q0l000000HcL5AAK  AccountTrigger                 100%
-01p0l0000027mN7AAI  AccountTriggerService          100%
-01p0l0000027mNAAAY  AccountTriggerValidation       100%
-
 === Test Summary
 NAME                 VALUE
 ───────────────────  ────────────────────────────────────────────────────────────
@@ -835,6 +792,9 @@ Pass Rate            100%
 Fail Rate            0%
 Test Run Coverage    100%
 Org Wide Coverage    100%
+
+(...以下省略...)
+
 ```
 
 コードカバー率が 100%になりました！
