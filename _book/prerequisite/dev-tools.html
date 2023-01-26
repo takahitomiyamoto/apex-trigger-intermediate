@@ -2,18 +2,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>開発ツール · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="generator" content="HonKit 3.6.1" />
+    <meta name="generator" content="HonKit 4.0.4" />
     <meta name="author" content="Takahito Miyamoto" />
 
     <link rel="stylesheet" href="../gitbook/style.css" />
 
     <link
       rel="stylesheet"
-      href="../gitbook/gitbook-plugin-highlight/website.css"
+      href="../gitbook/@honkit/honkit-plugin-highlight/website.css"
     />
 
     <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css" />
@@ -46,7 +45,7 @@
     <link rel="prev" href="beginner.html" />
   </head>
   <body>
-    <div class="book">
+    <div class="book honkit-cloak">
       <div class="book-summary">
         <div id="book-search-input" role="search">
           <input type="text" placeholder="検索ワードを入力" />
@@ -301,11 +300,9 @@
               <div id="book-search-results">
                 <div class="search-noresults">
                   <section class="normal markdown-section">
-                    <h1 id="&#x958B;&#x767A;&#x30C4;&#x30FC;&#x30EB;">
-                      &#x958B;&#x767A;&#x30C4;&#x30FC;&#x30EB;
-                    </h1>
+                    <h1 id="開発ツール">開発ツール</h1>
                     <p>
-                      &#x5B9F;&#x306F;&#x3001;&#x6700;&#x521D;&#x306E;&#x96E3;&#x95A2;&#x306F;&#x3053;&#x3053;&#x306B;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x3053;&#x3053;&#x3067;&#x632B;&#x6298;&#x3059;&#x308B;&#x304B;&#x305F;&#x304C;&#x591A;&#x3044;&#x3067;&#x3059;&#x306E;&#x3067;&#x3001;&#x3058;&#x3063;&#x304F;&#x308A;&#x53D6;&#x308A;&#x7D44;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                      実は、最初の難関はここにあります。ここで挫折するかたが多いですので、じっくり取り組みましょう。
                     </p>
                     <ol>
                       <li>
@@ -392,6 +389,56 @@
                 ref: 'prerequisite/beginner.md',
                 articles: []
               },
+              articles: [
+                {
+                  title: 'Developer Edition',
+                  level: '2.2.1',
+                  depth: 2,
+                  path: 'prerequisite/developer-edition.md',
+                  ref: 'prerequisite/developer-edition.md',
+                  articles: []
+                },
+                {
+                  title: 'Dev Hub',
+                  level: '2.2.2',
+                  depth: 2,
+                  path: 'prerequisite/dev-hub.md',
+                  ref: 'prerequisite/dev-hub.md',
+                  articles: []
+                },
+                {
+                  title: 'Salesforce IDE',
+                  level: '2.2.3',
+                  depth: 2,
+                  path: 'prerequisite/salesforce-ide.md',
+                  ref: 'prerequisite/salesforce-ide.md',
+                  articles: []
+                },
+                {
+                  title: 'VS Code Extensions',
+                  level: '2.2.4',
+                  depth: 2,
+                  path: 'prerequisite/vs-code-extensions.md',
+                  ref: 'prerequisite/vs-code-extensions.md',
+                  articles: []
+                },
+                {
+                  title: 'Java',
+                  level: '2.2.5',
+                  depth: 2,
+                  path: 'prerequisite/java.md',
+                  ref: 'prerequisite/java.md',
+                  articles: []
+                },
+                {
+                  title: 'Node.js & Yarn',
+                  level: '2.2.6',
+                  depth: 2,
+                  path: 'prerequisite/nodejs.md',
+                  ref: 'prerequisite/nodejs.md',
+                  articles: []
+                }
+              ],
               dir: 'ltr'
             },
             config: {
@@ -462,7 +509,7 @@
               mtime: '2020-08-23T10:11:30.811Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-08T12:55:35.544Z' },
+            gitbook: { version: '4.0.4', time: '2023-01-26T10:33:27.820Z' },
             basePath: '..',
             book: { language: '' }
           });
@@ -470,6 +517,50 @@
       </script>
     </div>
 
+    <noscript>
+      <style>
+        .honkit-cloak {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <script>
+      // Restore sidebar state as critical path for prevent layout shift
+      function __init__getSidebarState(defaultValue) {
+        var baseKey = '';
+        var key = baseKey + ':sidebar';
+        try {
+          var value = localStorage[key];
+          if (value === undefined) {
+            return defaultValue;
+          }
+          var parsed = JSON.parse(value);
+          return parsed == null ? defaultValue : parsed;
+        } catch (e) {
+          return defaultValue;
+        }
+      }
+      function __init__restoreLastSidebarState() {
+        var isMobile = window.matchMedia('(max-width: 600px)').matches;
+        if (isMobile) {
+          // Init last state if not mobile
+          return;
+        }
+        var sidebarState = __init__getSidebarState(true);
+        var book = document.querySelector('.book');
+        // Show sidebar if it enabled
+        if (sidebarState && book) {
+          book.classList.add('without-animation', 'with-summary');
+        }
+      }
+
+      try {
+        __init__restoreLastSidebarState();
+      } finally {
+        var book = document.querySelector('.book');
+        book.classList.remove('honkit-cloak');
+      }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
 

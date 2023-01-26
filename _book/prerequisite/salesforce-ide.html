@@ -2,18 +2,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Salesforce IDE · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="generator" content="HonKit 3.6.1" />
+    <meta name="generator" content="HonKit 4.0.4" />
     <meta name="author" content="Takahito Miyamoto" />
 
     <link rel="stylesheet" href="../gitbook/style.css" />
 
     <link
       rel="stylesheet"
-      href="../gitbook/gitbook-plugin-highlight/website.css"
+      href="../gitbook/@honkit/honkit-plugin-highlight/website.css"
     />
 
     <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css" />
@@ -46,7 +45,7 @@
     <link rel="prev" href="dev-hub.html" />
   </head>
   <body>
-    <div class="book">
+    <div class="book honkit-cloak">
       <div class="book-summary">
         <div id="book-search-input" role="search">
           <input type="text" placeholder="検索ワードを入力" />
@@ -298,166 +297,129 @@
                 <div class="search-noresults">
                   <section class="normal markdown-section">
                     <h1 id="salesforce-ide">Salesforce IDE</h1>
-                    <h2
-                      id="visual-studio-code-&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;"
-                    >
-                      Visual Studio Code
-                      &#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;
+                    <h2 id="visual-studio-code-のインストール">
+                      Visual Studio Code のインストール
                     </h2>
                     <p>
-                      &#x6B21;&#x306E;&#x5358;&#x5143;&#x3092;&#x901A;&#x3057;&#x3066;&#x3001;Salesforce
-                      &#x306E;
-                      IDE&#xFF08;&#x7D71;&#x5408;&#x958B;&#x767A;&#x74B0;&#x5883;&#xFF09;&#x3068;&#x3057;&#x3066;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;
-                      Visual Studio Code&#xFF08;VS
-                      Code&#xFF09;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                      次の単元を通して、Salesforce の
+                      IDE（統合開発環境）として利用できる Visual Studio Code（VS
+                      Code）をインストールしましょう。
                     </p>
                     <ul>
                       <li>
                         <a
                           href="https://trailhead.salesforce.com/ja/content/learn/projects/quickstart-vscode-salesforce/start-vscode"
                           target="_blank"
-                          >Visual Studio Code
-                          &#x306E;&#x4F7F;&#x7528;&#x958B;&#x59CB;</a
+                          >Visual Studio Code の使用開始</a
                         >
                       </li>
                     </ul>
                     <p>
-                      &#x6700;&#x5F8C;&#x306B;&#x300C;&#x30B9;&#x30C6;&#x30C3;&#x30D7;&#x3092;&#x78BA;&#x8A8D;&#x300D;&#x306E;&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x304C;&#x3042;&#x308B;&#x306E;&#x3067;&#x3001;&#x5F8C;&#x7D9A;&#x306E;&#x624B;&#x9806;&#x3067;&#x4F7F;&#x3046;&#x305F;&#x3081;&#x306B;
-                      Trailhead Playground
-                      &#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                      最後に「ステップを確認」のセクションがあるので、後続の手順で使うために
+                      Trailhead Playground を作成しておきましょう。
                     </p>
                     <h2
-                      id="salesforce-cli-&#x3068;-salesforce-extension-pack-&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;"
+                      id="salesforce-cli-と-salesforce-extension-pack-のインストール"
                     >
-                      Salesforce CLI &#x3068; Salesforce Extension Pack
-                      &#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;
+                      Salesforce CLI と Salesforce Extension Pack のインストール
                     </h2>
                     <p>
-                      &#x6B21;&#x306E;&#x5358;&#x5143;&#x3092;&#x901A;&#x3057;&#x3066;&#x3001;Salesforce
-                      CLI &#x3068; Salesforce Extension Pack
-                      &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                      次の単元を通して、Salesforce CLI と Salesforce Extension
+                      Pack をインストールしましょう。
                     </p>
                     <ul>
                       <li>
                         <a
                           href="https://trailhead.salesforce.com/ja/content/learn/projects/quickstart-vscode-salesforce/vscode-salesforce-ready"
                           target="_blank"
-                          >Visual Studio Code &#x306E; Salesforce
-                          &#x5BFE;&#x5FDC;</a
+                          >Visual Studio Code の Salesforce 対応</a
                         >
                       </li>
                     </ul>
                     <p>
-                      &#x9032;&#x3081;&#x3066;&#x3044;&#x308B;&#x3046;&#x3061;&#x306B;
-                      Trailhead Playground
-                      &#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x624B;&#x9806;&#x304C;&#x51FA;&#x3066;&#x304D;&#x307E;&#x3059;&#x304C;&#x3001;&#x524D;&#x306E;&#x5358;&#x5143;&#x3067;&#x4F5C;&#x6210;&#x6E08;&#x307F;&#x306E;&#x3082;&#x306E;&#x3092;&#x8D77;&#x52D5;&#x3057;&#x3066;&#x9032;&#x3081;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
-                      &#x307E;&#x3060;&#x4F5C;&#x6210;&#x4E2D;&#x306E;&#x5834;&#x5408;&#x306F;&#x3057;&#x3070;&#x3089;&#x304F;&#x5F85;&#x3063;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                      進めているうちに Trailhead Playground
+                      を作成する手順が出てきますが、前の単元で作成済みのものを起動して進めてください。
+                      まだ作成中の場合はしばらく待ってください。
                     </p>
-                    <h2
-                      id="trailhead-playground-&#x306E;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x30EA;&#x30BB;&#x30C3;&#x30C8;"
-                    >
-                      Trailhead Playground
-                      &#x306E;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x30EA;&#x30BB;&#x30C3;&#x30C8;
+                    <h2 id="trailhead-playground-のログインパスワードリセット">
+                      Trailhead Playground のログインパスワードリセット
                     </h2>
                     <p>
-                      Trailhead &#x30B5;&#x30A4;&#x30C8;&#x304B;&#x3089;
-                      Trailhead Playground
-                      &#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x969B;&#x306B;&#x306F;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x304C;&#x4E0D;&#x8981;&#x3067;&#x3059;&#x3002;
-                      &#x3057;&#x304B;&#x3057;&#x3001;Trailhead
-                      &#x30B5;&#x30A4;&#x30C8;&#x4EE5;&#x5916;&#x304B;&#x3089;
-                      Trailhead Playground
-                      &#x3078;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#x306B;&#x306F;&#x3001;&#x30ED;&#x30B0;&#x30A4;&#x30F3;
-                      ID
-                      &#x3068;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x304C;&#x5FC5;&#x8981;&#x3067;&#x3059;&#x3002;
+                      Trailhead サイトから Trailhead Playground
+                      を起動する際にはログインパスワードが不要です。
+                      しかし、Trailhead サイト以外から Trailhead Playground
+                      へログインしたい場合には、ログイン ID
+                      とパスワードが必要です。
                     </p>
                     <ol>
                       <li>
                         <p>
-                          Trailhead &#x30B5;&#x30A4;&#x30C8;&#x304B;&#x3089;
-                          Trailhead Playground
-                          &#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3002;
+                          Trailhead サイトから Trailhead Playground を起動する。
+                        </p>
+                      </li>
+                      <li><p>歯車アイコン &gt; 「設定」をクリックする。</p></li>
+                      <li>
+                        <p>
+                          左のペインで、「ユーザ」 &gt;
+                          「ユーザ」をクリックする。
                         </p>
                       </li>
                       <li>
                         <p>
-                          &#x6B6F;&#x8ECA;&#x30A2;&#x30A4;&#x30B3;&#x30F3; &gt;
-                          &#x300C;&#x8A2D;&#x5B9A;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+                          自分の氏名と同じユーザを探して、「ユーザ名」の値を手元にメモしておく。
                         </p>
                       </li>
                       <li>
                         <p>
-                          &#x5DE6;&#x306E;&#x30DA;&#x30A4;&#x30F3;&#x3067;&#x3001;&#x300C;&#x30E6;&#x30FC;&#x30B6;&#x300D;
-                          &gt;
-                          &#x300C;&#x30E6;&#x30FC;&#x30B6;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+                          自分の氏名と同じユーザのチェックボックスをチェックし、「パスワードをリセット」をクリックする。
+                        </p>
+                      </li>
+                      <li><p>ポップアップ画面の「OK」をクリックする。</p></li>
+                      <li>
+                        <p>
+                          件名「Your Developer Edition
+                          パスワードのリセット完了」のメールを開いて、本文のリンクをクリックする。
                         </p>
                       </li>
                       <li>
                         <p>
-                          &#x81EA;&#x5206;&#x306E;&#x6C0F;&#x540D;&#x3068;&#x540C;&#x3058;&#x30E6;&#x30FC;&#x30B6;&#x3092;&#x63A2;&#x3057;&#x3066;&#x3001;&#x300C;&#x30E6;&#x30FC;&#x30B6;&#x540D;&#x300D;&#x306E;&#x5024;&#x3092;&#x624B;&#x5143;&#x306B;&#x30E1;&#x30E2;&#x3057;&#x3066;&#x304A;&#x304F;&#x3002;
+                          件名「Salesforce で ID
+                          を確認」のメールに記載されている確認コードを入力して「検証」をクリックする。
                         </p>
                       </li>
                       <li>
                         <p>
-                          &#x81EA;&#x5206;&#x306E;&#x6C0F;&#x540D;&#x3068;&#x540C;&#x3058;&#x30E6;&#x30FC;&#x30B6;&#x306E;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x3092;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3057;&#x3001;&#x300C;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x30EA;&#x30BB;&#x30C3;&#x30C8;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+                          好きなパスワードを設定して「パスワードを変更」をクリックする。パスワードは手元にメモしておく。
                         </p>
                       </li>
                       <li>
                         <p>
-                          &#x30DD;&#x30C3;&#x30D7;&#x30A2;&#x30C3;&#x30D7;&#x753B;&#x9762;&#x306E;&#x300C;OK&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                          &#x4EF6;&#x540D;&#x300C;Your Developer Edition
-                          &#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x306E;&#x30EA;&#x30BB;&#x30C3;&#x30C8;&#x5B8C;&#x4E86;&#x300D;&#x306E;&#x30E1;&#x30FC;&#x30EB;&#x3092;&#x958B;&#x3044;&#x3066;&#x3001;&#x672C;&#x6587;&#x306E;&#x30EA;&#x30F3;&#x30AF;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                          &#x4EF6;&#x540D;&#x300C;Salesforce &#x3067; ID
-                          &#x3092;&#x78BA;&#x8A8D;&#x300D;&#x306E;&#x30E1;&#x30FC;&#x30EB;&#x306B;&#x8A18;&#x8F09;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x78BA;&#x8A8D;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x300C;&#x691C;&#x8A3C;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                          &#x597D;&#x304D;&#x306A;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x3066;&#x300C;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x5909;&#x66F4;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x306F;&#x624B;&#x5143;&#x306B;&#x30E1;&#x30E2;&#x3057;&#x3066;&#x304A;&#x304F;&#x3002;
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                          &#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3067;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x3067;&#x304D;&#x308B;&#x304B;&#x3069;&#x3046;&#x304B;&#x78BA;&#x304B;&#x3081;&#x308B;&#x3002;
+                          設定したパスワードでログインできるかどうか確かめる。
                         </p>
                         <ul>
                           <li>
-                            &#x30A2;&#x30B9;&#x30C8;&#x30ED;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;
-                            &gt;
-                            &#x300C;&#x30ED;&#x30B0;&#x30A2;&#x30A6;&#x30C8;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+                            アストロのアイコン &gt;
+                            「ログアウト」をクリックする。
                           </li>
                           <li>
-                            &#x30E1;&#x30E2;&#x3057;&#x305F;&#x30E6;&#x30FC;&#x30B6;&#x540D;&#x3068;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x300C;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+                            メモしたユーザ名とパスワードを入力して「ログイン」をクリックする。
                           </li>
                           <li>
-                            &#x300C;&#x643A;&#x5E2F;&#x96FB;&#x8A71;&#x3092;&#x767B;&#x9332;&#x300D;&#x753B;&#x9762;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x300C;&#x96FB;&#x8A71;&#x3092;&#x767B;&#x9332;&#x3057;&#x307E;&#x305B;&#x3093;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+                            「携帯電話を登録」画面が表示された場合は、「電話を登録しません」をクリックする。
                           </li>
                         </ul>
                       </li>
                     </ol>
-                    <h2
-                      id="salesforce-ide-&#x306E;&#x52D5;&#x4F5C;&#x78BA;&#x8A8D;"
-                    >
-                      Salesforce IDE &#x306E;&#x52D5;&#x4F5C;&#x78BA;&#x8A8D;
+                    <h2 id="salesforce-ide-の動作確認">
+                      Salesforce IDE の動作確認
                     </h2>
-                    <p>
-                      &#x6B21;&#x306E;&#x5358;&#x5143;&#x3092;&#x901A;&#x3057;&#x3066;&#x3001;IDE
-                      &#x306E;&#x52D5;&#x4F5C;&#x78BA;&#x8A8D;&#x3092;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
-                    </p>
+                    <p>次の単元を通して、IDE の動作確認をしてみましょう。</p>
                     <ul>
                       <li>
                         <a
                           href="https://trailhead.salesforce.com/ja/content/learn/projects/quickstart-vscode-salesforce/use-vscode-for-salesforce"
                           target="_blank"
-                          >Salesforce &#x958B;&#x767A;&#x3067;&#x306E; Visual
-                          Studio Code &#x306E;&#x4F7F;&#x7528;</a
+                          >Salesforce 開発での Visual Studio Code の使用</a
                         >
                       </li>
                     </ul>
@@ -593,7 +555,7 @@
               mtime: '2020-08-23T10:14:14.321Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-08T12:55:35.544Z' },
+            gitbook: { version: '4.0.4', time: '2023-01-26T10:33:27.820Z' },
             basePath: '..',
             book: { language: '' }
           });
@@ -601,6 +563,50 @@
       </script>
     </div>
 
+    <noscript>
+      <style>
+        .honkit-cloak {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <script>
+      // Restore sidebar state as critical path for prevent layout shift
+      function __init__getSidebarState(defaultValue) {
+        var baseKey = '';
+        var key = baseKey + ':sidebar';
+        try {
+          var value = localStorage[key];
+          if (value === undefined) {
+            return defaultValue;
+          }
+          var parsed = JSON.parse(value);
+          return parsed == null ? defaultValue : parsed;
+        } catch (e) {
+          return defaultValue;
+        }
+      }
+      function __init__restoreLastSidebarState() {
+        var isMobile = window.matchMedia('(max-width: 600px)').matches;
+        if (isMobile) {
+          // Init last state if not mobile
+          return;
+        }
+        var sidebarState = __init__getSidebarState(true);
+        var book = document.querySelector('.book');
+        // Show sidebar if it enabled
+        if (sidebarState && book) {
+          book.classList.add('without-animation', 'with-summary');
+        }
+      }
+
+      try {
+        __init__restoreLastSidebarState();
+      } finally {
+        var book = document.querySelector('.book');
+        book.classList.remove('honkit-cloak');
+      }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
 

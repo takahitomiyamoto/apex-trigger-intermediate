@@ -2,18 +2,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Dev Hub · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="generator" content="HonKit 3.6.1" />
+    <meta name="generator" content="HonKit 4.0.4" />
     <meta name="author" content="Takahito Miyamoto" />
 
     <link rel="stylesheet" href="../gitbook/style.css" />
 
     <link
       rel="stylesheet"
-      href="../gitbook/gitbook-plugin-highlight/website.css"
+      href="../gitbook/@honkit/honkit-plugin-highlight/website.css"
     />
 
     <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css" />
@@ -46,7 +45,7 @@
     <link rel="prev" href="developer-edition.html" />
   </head>
   <body>
-    <div class="book">
+    <div class="book honkit-cloak">
       <div class="book-summary">
         <div id="book-search-input" role="search">
           <input type="text" placeholder="検索ワードを入力" />
@@ -303,18 +302,17 @@
                   <section class="normal markdown-section">
                     <h1 id="dev-hub">Dev Hub</h1>
                     <p>
-                      &#x6F14;&#x7FD2;&#x554F;&#x984C;&#x3092;&#x9032;&#x3081;&#x308B;&#x3046;&#x3048;&#x3067;&#x3001;&#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x3068;&#x4FBF;&#x5229;&#x3067;&#x3059;&#x3002;
-                      Developer Edition &#x7D44;&#x7E54;&#x4E0A;&#x3067; Dev Hub
-                      &#x3092;&#x6709;&#x52B9;&#x5316;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
-                      &#x65E2;&#x306B; Dev Hub
-                      &#x3092;&#x6709;&#x52B9;&#x5316;&#x3057;&#x3066;&#x3042;&#x308B;&#x7D44;&#x7E54;&#x3092;&#x6301;&#x3063;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x6B21;&#x306E;&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x3078;&#x3002;
+                      演習問題を進めるうえで、スクラッチ組織を利用すると便利です。
+                      Developer Edition 組織上で Dev Hub を有効化しましょう。
+                      既に Dev Hub
+                      を有効化してある組織を持っている場合は、次のセクションへ。
                     </p>
                     <ul>
                       <li>
                         <a
                           href="https://trailhead.salesforce.com/ja/content/learn/modules/sfdx_app_dev/sfdx_app_dev_setup_dx"
                           target="_blank"
-                          >Dev Hub &#x306E;&#x6709;&#x52B9;&#x5316;</a
+                          >Dev Hub の有効化</a
                         >
                       </li>
                     </ul>
@@ -450,7 +448,7 @@
               mtime: '2020-08-26T11:32:59.601Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-08T12:55:35.544Z' },
+            gitbook: { version: '4.0.4', time: '2023-01-26T10:33:27.820Z' },
             basePath: '..',
             book: { language: '' }
           });
@@ -458,6 +456,50 @@
       </script>
     </div>
 
+    <noscript>
+      <style>
+        .honkit-cloak {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <script>
+      // Restore sidebar state as critical path for prevent layout shift
+      function __init__getSidebarState(defaultValue) {
+        var baseKey = '';
+        var key = baseKey + ':sidebar';
+        try {
+          var value = localStorage[key];
+          if (value === undefined) {
+            return defaultValue;
+          }
+          var parsed = JSON.parse(value);
+          return parsed == null ? defaultValue : parsed;
+        } catch (e) {
+          return defaultValue;
+        }
+      }
+      function __init__restoreLastSidebarState() {
+        var isMobile = window.matchMedia('(max-width: 600px)').matches;
+        if (isMobile) {
+          // Init last state if not mobile
+          return;
+        }
+        var sidebarState = __init__getSidebarState(true);
+        var book = document.querySelector('.book');
+        // Show sidebar if it enabled
+        if (sidebarState && book) {
+          book.classList.add('without-animation', 'with-summary');
+        }
+      }
+
+      try {
+        __init__restoreLastSidebarState();
+      } finally {
+        var book = document.querySelector('.book');
+        book.classList.remove('honkit-cloak');
+      }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
 

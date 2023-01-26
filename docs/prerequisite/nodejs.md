@@ -23,7 +23,7 @@ yarn -v
 
 ## 設定
 
-「VSCodeQuickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。
+「VSCodeQuickstart」プロジェクトのルートに存在している `package.json` を次のファイルで上書きしましょう。
 
 > [package.json](https://github.com/takahitomiyamoto/flexible-apex-trigger/blob/master/package.json)
 

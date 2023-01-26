@@ -2,18 +2,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Java · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="generator" content="HonKit 3.6.1" />
+    <meta name="generator" content="HonKit 4.0.4" />
     <meta name="author" content="Takahito Miyamoto" />
 
     <link rel="stylesheet" href="../gitbook/style.css" />
 
     <link
       rel="stylesheet"
-      href="../gitbook/gitbook-plugin-highlight/website.css"
+      href="../gitbook/@honkit/honkit-plugin-highlight/website.css"
     />
 
     <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css" />
@@ -46,7 +45,7 @@
     <link rel="prev" href="vs-code-extensions.html" />
   </head>
   <body>
-    <div class="book">
+    <div class="book honkit-cloak">
       <div class="book-summary">
         <div id="book-search-input" role="search">
           <input type="text" placeholder="検索ワードを入力" />
@@ -303,23 +302,19 @@
                   <section class="normal markdown-section">
                     <h1 id="java">Java</h1>
                     <p>
-                      Apex
-                      &#x30B3;&#x30FC;&#x30C9;&#x306E;&#x5165;&#x529B;&#x88DC;&#x5B8C;&#x306A;&#x3069;&#x3001;Apex
-                      &#x306B;&#x95A2;&#x3059;&#x308B;&#x62E1;&#x5F35;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x3046;&#x305F;&#x3081;&#x306B;&#x306F;&#x3001;Java
-                      &#x306E; Runtime &#x306E;&#x30D1;&#x30B9;&#x3092;
-                      settings.json &#x306E; salesforcedx-vscode-apex.java.home
-                      &#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;
-                      &#x307E;&#x3060; Java
-                      &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;
-                      Zulu
-                      &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                      Apex コードの入力補完など、Apex
+                      に関する拡張機能を使うためには、Java の Runtime のパスを
+                      settings.json の salesforcedx-vscode-apex.java.home
+                      に設定する必要があります。 まだ Java
+                      をインストールしていない場合は Zulu
+                      をインストールしましょう。
                     </p>
                     <ul>
                       <li>
                         <a
-                          href="https://developer.salesforce.com/tools/vscode/ja/getting-started/java-setup/#zulu"
+                          href="https://developer.salesforce.com/tools/vscode/ja/vscode-desktop/java-setup#zulu"
                           target="_blank"
-                          >&#x624B;&#x9806;</a
+                          >手順</a
                         >
                       </li>
                     </ul>
@@ -452,10 +447,10 @@
             },
             file: {
               path: 'prerequisite/java.md',
-              mtime: '2020-08-23T10:08:31.458Z',
+              mtime: '2023-01-26T09:43:24.239Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-08T12:55:35.544Z' },
+            gitbook: { version: '4.0.4', time: '2023-01-26T10:33:27.820Z' },
             basePath: '..',
             book: { language: '' }
           });
@@ -463,6 +458,50 @@
       </script>
     </div>
 
+    <noscript>
+      <style>
+        .honkit-cloak {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <script>
+      // Restore sidebar state as critical path for prevent layout shift
+      function __init__getSidebarState(defaultValue) {
+        var baseKey = '';
+        var key = baseKey + ':sidebar';
+        try {
+          var value = localStorage[key];
+          if (value === undefined) {
+            return defaultValue;
+          }
+          var parsed = JSON.parse(value);
+          return parsed == null ? defaultValue : parsed;
+        } catch (e) {
+          return defaultValue;
+        }
+      }
+      function __init__restoreLastSidebarState() {
+        var isMobile = window.matchMedia('(max-width: 600px)').matches;
+        if (isMobile) {
+          // Init last state if not mobile
+          return;
+        }
+        var sidebarState = __init__getSidebarState(true);
+        var book = document.querySelector('.book');
+        // Show sidebar if it enabled
+        if (sidebarState && book) {
+          book.classList.add('without-animation', 'with-summary');
+        }
+      }
+
+      try {
+        __init__restoreLastSidebarState();
+      } finally {
+        var book = document.querySelector('.book');
+        book.classList.remove('honkit-cloak');
+      }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
 

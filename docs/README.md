@@ -8,9 +8,9 @@ Apex トリガの中級レベルのチュートリアルです。
 
 ---
 
-### <u>Salesforce Wednesday Online＃01 へご参加いただくみなさまへ</u>
+### <u>Salesforce Wednesday Online＃06 へご参加いただくみなさまへ</u>
 
-> **申込サイト:** https://accenture-technology.connpass.com/event/185277/
+> **申込サイト:** https://accenture-technology.connpass.com/event/270716/
 
 当日は [Warm-up](exercises/warm-up) からスタートします。
 [初級者向けコンテンツ](prerequisite/beginner.md) や [開発ツール](prerequisite/dev-tools.md) を実施する時間はありませんので、
@@ -30,8 +30,9 @@ Apex トリガの中級レベルのチュートリアルです。
 
 Takahito Miyamoto [@takahito0508](https://twitter.com/takahito0508)
 
-- Accenture Japan Ltd, 2011-
-- Salesforce Einstein Champion, 2019-
+- Manager, Accenture Japan, 2011-
 - Salesforce MVP, 2020-
+- Salesforce Certified Technical Architect
+- Lead: [Salesforce Architect Group](https://trailblazercommunitygroups.com/salesforce-architect-group-tokyo-japan/)
 - [Tech Blog](https://qiita.com/takahito0508)
 - [Lifestyle Blog](https://medium.com/takahitomiyamoto)

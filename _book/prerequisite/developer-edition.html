@@ -2,18 +2,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Developer Edition · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="generator" content="HonKit 3.6.1" />
+    <meta name="generator" content="HonKit 4.0.4" />
     <meta name="author" content="Takahito Miyamoto" />
 
     <link rel="stylesheet" href="../gitbook/style.css" />
 
     <link
       rel="stylesheet"
-      href="../gitbook/gitbook-plugin-highlight/website.css"
+      href="../gitbook/@honkit/honkit-plugin-highlight/website.css"
     />
 
     <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css" />
@@ -46,7 +45,7 @@
     <link rel="prev" href="dev-tools.html" />
   </head>
   <body>
-    <div class="book">
+    <div class="book honkit-cloak">
       <div class="book-summary">
         <div id="book-search-input" role="search">
           <input type="text" placeholder="検索ワードを入力" />
@@ -299,18 +298,16 @@
                   <section class="normal markdown-section">
                     <h1 id="developer-edition">Developer Edition</h1>
                     <p>
-                      &#x307E;&#x305A;&#x3001;Salesforce
-                      &#x306E;&#x7121;&#x6599;&#x306E;&#x958B;&#x767A;&#x74B0;&#x5883;&#x3092;&#x5165;&#x624B;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x3053;&#x308C;&#x3092;&#x4F7F;&#x3063;&#x3066;
-                      Trailhead
-                      &#x306B;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x3057;&#x307E;&#x3059;&#x3002;
-                      &#x3059;&#x3067;&#x306B;&#x6301;&#x3063;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x6B21;&#x306E;&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x3078;&#x3002;
+                      まず、Salesforce
+                      の無料の開発環境を入手しましょう。これを使って Trailhead
+                      にログインします。
+                      すでに持っている場合は、次のセクションへ。
                     </p>
                     <ol>
                       <li>
                         <p>
-                          Google Chrome &#x307E;&#x305F;&#x306F; Firefox
-                          &#x3092;&#x958B;&#x304F;&#x3002;&#xFF08;Internet
-                          Explorer &#x306F;&#x975E;&#x63A8;&#x5968;&#xFF09;
+                          Google Chrome または Firefox を開く。（Internet
+                          Explorer は非推奨）
                         </p>
                       </li>
                       <li>
@@ -320,49 +317,33 @@
                             target="_blank"
                             >https://developer.salesforce.com/signup</a
                           >
-                          &#x3078;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3059;&#x308B;&#x3002;
+                          へアクセスする。
+                        </p>
+                      </li>
+                      <li><p>必要な情報を入力してサインアップする。</p></li>
+                      <li>
+                        <p>
+                          件名「Salesforce へようこそ:
+                          アカウントを確認してください」のメールを開いて「アカウントを確認」をクリックする。
                         </p>
                       </li>
                       <li>
                         <p>
-                          &#x5FC5;&#x8981;&#x306A;&#x60C5;&#x5831;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x30B5;&#x30A4;&#x30F3;&#x30A2;&#x30C3;&#x30D7;&#x3059;&#x308B;&#x3002;
+                          好きなパスワードと秘密の質問を設定して「パスワードを変更」をクリックする。
                         </p>
                       </li>
+                      <li><p>歯車アイコン &gt; 「設定」をクリックする。</p></li>
                       <li>
                         <p>
-                          &#x4EF6;&#x540D;&#x300C;Salesforce
-                          &#x3078;&#x3088;&#x3046;&#x3053;&#x305D;:
-                          &#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x300D;&#x306E;&#x30E1;&#x30FC;&#x30EB;&#x3092;&#x958B;&#x3044;&#x3066;&#x300C;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x78BA;&#x8A8D;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+                          左のペインで、「会社の設定」 &gt;
+                          「組織情報」をクリックする。
                         </p>
                       </li>
+                      <li><p>「編集」をクリックする。</p></li>
                       <li>
                         <p>
-                          &#x597D;&#x304D;&#x306A;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3068;&#x79D8;&#x5BC6;&#x306E;&#x8CEA;&#x554F;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x3066;&#x300C;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x5909;&#x66F4;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                          &#x6B6F;&#x8ECA;&#x30A2;&#x30A4;&#x30B3;&#x30F3; &gt;
-                          &#x300C;&#x8A2D;&#x5B9A;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                          &#x5DE6;&#x306E;&#x30DA;&#x30A4;&#x30F3;&#x3067;&#x3001;&#x300C;&#x4F1A;&#x793E;&#x306E;&#x8A2D;&#x5B9A;&#x300D;
-                          &gt;
-                          &#x300C;&#x7D44;&#x7E54;&#x60C5;&#x5831;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                          &#x300C;&#x7DE8;&#x96C6;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                          &#x300C;&#x8A00;&#x8A9E;&#x306E;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x300D;&#x3092;
-                          &quot;&#x82F1;&#x8A9E;&quot;
-                          &#x306B;&#x5909;&#x66F4;&#x3057;&#x3066;&#x300C;&#x4FDD;&#x5B58;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+                          「言語のデフォルト値」を &quot;英語&quot;
+                          に変更して「保存」をクリックする。
                         </p>
                       </li>
                     </ol>
@@ -547,7 +528,7 @@
               mtime: '2020-08-23T10:13:28.296Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-08T12:55:35.544Z' },
+            gitbook: { version: '4.0.4', time: '2023-01-26T10:33:27.820Z' },
             basePath: '..',
             book: { language: '' }
           });
@@ -555,6 +536,50 @@
       </script>
     </div>
 
+    <noscript>
+      <style>
+        .honkit-cloak {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <script>
+      // Restore sidebar state as critical path for prevent layout shift
+      function __init__getSidebarState(defaultValue) {
+        var baseKey = '';
+        var key = baseKey + ':sidebar';
+        try {
+          var value = localStorage[key];
+          if (value === undefined) {
+            return defaultValue;
+          }
+          var parsed = JSON.parse(value);
+          return parsed == null ? defaultValue : parsed;
+        } catch (e) {
+          return defaultValue;
+        }
+      }
+      function __init__restoreLastSidebarState() {
+        var isMobile = window.matchMedia('(max-width: 600px)').matches;
+        if (isMobile) {
+          // Init last state if not mobile
+          return;
+        }
+        var sidebarState = __init__getSidebarState(true);
+        var book = document.querySelector('.book');
+        // Show sidebar if it enabled
+        if (sidebarState && book) {
+          book.classList.add('without-animation', 'with-summary');
+        }
+      }
+
+      try {
+        __init__restoreLastSidebarState();
+      } finally {
+        var book = document.querySelector('.book');
+        book.classList.remove('honkit-cloak');
+      }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
 

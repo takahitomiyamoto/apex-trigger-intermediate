@@ -2,18 +2,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Node.js & Yarn · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="generator" content="HonKit 3.6.1" />
+    <meta name="generator" content="HonKit 4.0.4" />
     <meta name="author" content="Takahito Miyamoto" />
 
     <link rel="stylesheet" href="../gitbook/style.css" />
 
     <link
       rel="stylesheet"
-      href="../gitbook/gitbook-plugin-highlight/website.css"
+      href="../gitbook/@honkit/honkit-plugin-highlight/website.css"
     />
 
     <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css" />
@@ -46,7 +45,7 @@
     <link rel="prev" href="java.html" />
   </head>
   <body>
-    <div class="book">
+    <div class="book honkit-cloak">
       <div class="book-summary">
         <div id="book-search-input" role="search">
           <input type="text" placeholder="検索ワードを入力" />
@@ -302,17 +301,13 @@
                 <div class="search-noresults">
                   <section class="normal markdown-section">
                     <h1 id="nodejs--yarn">Node.js &amp; Yarn</h1>
-                    <h2 id="&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">
-                      &#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;
-                    </h2>
+                    <h2 id="インストール">インストール</h2>
                     <p>
                       Prettier
-                      &#x306E;&#x4E00;&#x62EC;&#x5B9F;&#x884C;&#x306A;&#x3069;&#x5404;&#x7A2E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x3001;Node.js
-                      &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
-                      &#x6B21;&#x306E; URL
-                      &#x304B;&#x3089;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30E9;&#x30FC;&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x57FA;&#x672C;&#x7684;&#x306B;
-                      LTS
-                      &#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x3067;&#x5341;&#x5206;&#x3067;&#x3059;&#x3002;
+                      の一括実行など各種コマンドを実行するために、Node.js
+                      をインストールしましょう。 次の URL
+                      からインストーラーをダウンロードしてください。基本的に LTS
+                      バージョンで十分です。
                     </p>
                     <ul>
                       <li>
@@ -331,21 +326,22 @@
                       </li>
                     </ul>
                     <p>
-                      &#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30E9;&#x30FC;&#x3092;&#x30C0;&#x30D6;&#x30EB;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x306E;&#x307E;&#x307E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3092;&#x5B8C;&#x4E86;&#x3055;&#x305B;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                      インストーラーをダブルクリックし、デフォルトのままインストールを完了させてください。
                     </p>
-                    <h2 id="&#x78BA;&#x8A8D;">&#x78BA;&#x8A8D;</h2>
+                    <h2 id="確認">確認</h2>
                     <p>
-                      &#x6B21;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3067;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x304C;&#x6B63;&#x5E38;&#x306B;&#x5B8C;&#x4E86;&#x3057;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
-                      &#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308C;&#x3070;
-                      OK &#x3067;&#x3059;&#x3002;
+                      次のコマンドでインストールが正常に完了していることを確認しましょう。
+                      バージョンが表示されれば OK です。
                     </p>
                     <pre><code class="lang-sh">node -v
 npm -v
 yarn -v
 </code></pre>
-                    <h2 id="&#x8A2D;&#x5B9A;">&#x8A2D;&#x5B9A;</h2>
+                    <h2 id="設定">設定</h2>
                     <p>
-                      &#x300C;VSCodeQuickstart&#x300D;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x30EB;&#x30FC;&#x30C8;&#x306B;&#x306F;&#x5B58;&#x5728;&#x3057;&#x3066;&#x3044;&#x306A;&#x3044;&#x306E;&#x3067;&#x3001;&#x6B21;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                      「VSCodeQuickstart」プロジェクトのルートに存在している
+                      <code>package.json</code>
+                      を次のファイルで上書きしましょう。
                     </p>
                     <blockquote>
                       <p>
@@ -356,15 +352,12 @@ yarn -v
                         >
                       </p>
                     </blockquote>
-                    <h2
-                      id="npm-&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;"
-                    >
-                      npm
-                      &#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;
+                    <h2 id="npm-パッケージのインストール">
+                      npm パッケージのインストール
                     </h2>
                     <p>
-                      &#x4EE5;&#x4E0B;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x3001;npm
-                      &#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                      以下のコマンドを実行して、npm
+                      パッケージをインストールしましょう。
                     </p>
                     <pre><code class="lang-sh">yarn install
 </code></pre>
@@ -506,10 +499,10 @@ yarn -v
             },
             file: {
               path: 'prerequisite/nodejs.md',
-              mtime: '2020-08-26T12:20:56.432Z',
+              mtime: '2023-01-26T10:02:14.374Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-08T12:55:35.544Z' },
+            gitbook: { version: '4.0.4', time: '2023-01-26T10:33:27.820Z' },
             basePath: '..',
             book: { language: '' }
           });
@@ -517,6 +510,50 @@ yarn -v
       </script>
     </div>
 
+    <noscript>
+      <style>
+        .honkit-cloak {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <script>
+      // Restore sidebar state as critical path for prevent layout shift
+      function __init__getSidebarState(defaultValue) {
+        var baseKey = '';
+        var key = baseKey + ':sidebar';
+        try {
+          var value = localStorage[key];
+          if (value === undefined) {
+            return defaultValue;
+          }
+          var parsed = JSON.parse(value);
+          return parsed == null ? defaultValue : parsed;
+        } catch (e) {
+          return defaultValue;
+        }
+      }
+      function __init__restoreLastSidebarState() {
+        var isMobile = window.matchMedia('(max-width: 600px)').matches;
+        if (isMobile) {
+          // Init last state if not mobile
+          return;
+        }
+        var sidebarState = __init__getSidebarState(true);
+        var book = document.querySelector('.book');
+        // Show sidebar if it enabled
+        if (sidebarState && book) {
+          book.classList.add('without-animation', 'with-summary');
+        }
+      }
+
+      try {
+        __init__restoreLastSidebarState();
+      } finally {
+        var book = document.querySelector('.book');
+        book.classList.remove('honkit-cloak');
+      }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
 
