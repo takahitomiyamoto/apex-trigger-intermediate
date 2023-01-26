@@ -4,8 +4,10 @@
 
 ## アウトライン
 
-- [1. Apex トリガを作成](#1-apex-トリガを作成)
-  - [AccountTrigger.trigger](#accounttriggertrigger)
+- [Warm-up の解答](#warm-up-の解答)
+  - [アウトライン](#アウトライン)
+  - [1. Apex トリガを作成](#1-apex-トリガを作成)
+    - [AccountTrigger.trigger](#accounttriggertrigger)
 
 ---
 
@@ -27,6 +29,20 @@ sfdx force:org:create -a demo -d 7 -f config/project-scratch-def.json -s -t scra
 
 ```sh
 sfdx force:apex:trigger:create -d force-app/main/default/triggers -e "before insert" -n AccountTrigger -s Account -t ApexTrigger
+```
+
+なお、次のエラーが発生したことがあります。
+
+> ERROR running force:apex:trigger:create:  Invalid version: "1.0.9.0"
+
+その場合は、次のコマンドを実行してみてください。
+
+```sh
+cd ..
+
+sfdx force:apex:trigger:create -d VSCodeQuickstart/force-app/main/default/triggers -e "before insert" -n AccountTrigger -s Account -t ApexTrigger
+
+cd VSCodeQuickstart
 ```
 
 **AccountTrigger.trigger**

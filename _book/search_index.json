@@ -385,11 +385,12 @@
           "url",
           "v",
           "yarn",
-          "「vscodequickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。",
+          "「vscodequickstart」プロジェクトのルートに存在している",
           "からインストーラーをダウンロードしてください。基本的に",
           "です。",
           "の一括実行など各種コマンドを実行するために、node.j",
           "をインストールしましょう。",
+          "を次のファイルで上書きしましょう。",
           "インストーラーをダブルクリックし、デフォルトのままインストールを完了させてください。",
           "インストール",
           "バージョンが表示されれば",
@@ -13625,7 +13626,7 @@
             "docs": {
               "prerequisite/nodejs.html": {
                 "ref": "prerequisite/nodejs.html",
-                "tf": 0.02857142857142857
+                "tf": 0.02702702702702703
               }
             },
             "d": {
@@ -14900,7 +14901,7 @@
             "docs": {
               "prerequisite/nodejs.html": {
                 "ref": "prerequisite/nodejs.html",
-                "tf": 0.02857142857142857
+                "tf": 0.02702702702702703
               }
             }
           },
@@ -16255,7 +16256,7 @@
                           },
                           "prerequisite/nodejs.html": {
                             "ref": "prerequisite/nodejs.html",
-                            "tf": 0.02857142857142857
+                            "tf": 0.02702702702702703
                           },
                           "exercises/warm-up-answer.html": {
                             "ref": "exercises/warm-up-answer.html",
@@ -16585,7 +16586,7 @@
                                 "docs": {
                                   "prerequisite/nodejs.html": {
                                     "ref": "prerequisite/nodejs.html",
-                                    "tf": 0.02857142857142857
+                                    "tf": 0.05405405405405406
                                   }
                                 }
                               }
@@ -21371,7 +21372,7 @@
               "docs": {
                 "prerequisite/nodejs.html": {
                   "ref": "prerequisite/nodejs.html",
-                  "tf": 0.02857142857142857
+                  "tf": 0.02702702702702703
                 }
               }
             }
@@ -21609,7 +21610,7 @@
                                                               "docs": {
                                                                 "prerequisite/nodejs.html": {
                                                                   "ref": "prerequisite/nodejs.html",
-                                                                  "tf": 0.02857142857142857
+                                                                  "tf": 0.02702702702702703
                                                                 }
                                                               }
                                                             }
@@ -22275,7 +22276,7 @@
                                     },
                                     "prerequisite/nodejs.html": {
                                       "ref": "prerequisite/nodejs.html",
-                                      "tf": 0.02857142857142857
+                                      "tf": 0.02702702702702703
                                     }
                                   }
                                 }
@@ -22794,6 +22795,59 @@
                                       "prerequisite/vs-code-extensions.html": {
                                         "ref": "prerequisite/vs-code-extensions.html",
                                         "tf": 0.009433962264150943
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "次": {
+            "docs": {},
+            "の": {
+              "docs": {},
+              "フ": {
+                "docs": {},
+                "ァ": {
+                  "docs": {},
+                  "イ": {
+                    "docs": {},
+                    "ル": {
+                      "docs": {},
+                      "で": {
+                        "docs": {},
+                        "上": {
+                          "docs": {},
+                          "書": {
+                            "docs": {},
+                            "き": {
+                              "docs": {},
+                              "し": {
+                                "docs": {},
+                                "ま": {
+                                  "docs": {},
+                                  "し": {
+                                    "docs": {},
+                                    "ょ": {
+                                      "docs": {},
+                                      "う": {
+                                        "docs": {},
+                                        "。": {
+                                          "docs": {
+                                            "prerequisite/nodejs.html": {
+                                              "ref": "prerequisite/nodejs.html",
+                                              "tf": 0.02702702702702703
+                                            }
+                                          }
+                                        }
                                       }
                                     }
                                   }
@@ -25066,7 +25120,7 @@
           "docs": {
             "prerequisite/nodejs.html": {
               "ref": "prerequisite/nodejs.html",
-              "tf": 0.08571428571428572
+              "tf": 0.08108108108108109
             },
             "exercises/warm-up-answer.html": {
               "ref": "exercises/warm-up-answer.html",
@@ -27016,7 +27070,7 @@
               "docs": {
                 "prerequisite/nodejs.html": {
                   "ref": "prerequisite/nodejs.html",
-                  "tf": 0.02857142857142857
+                  "tf": 0.02702702702702703
                 }
               }
             }
@@ -27808,7 +27862,7 @@
             "docs": {
               "prerequisite/nodejs.html": {
                 "ref": "prerequisite/nodejs.html",
-                "tf": 0.02857142857142857
+                "tf": 0.02702702702702703
               }
             },
             "ス": {
@@ -28012,7 +28066,7 @@
                                                                             "docs": {
                                                                               "prerequisite/nodejs.html": {
                                                                                 "ref": "prerequisite/nodejs.html",
-                                                                                "tf": 0.02857142857142857
+                                                                                "tf": 0.02702702702702703
                                                                               }
                                                                             }
                                                                           }
@@ -30262,7 +30316,7 @@
                                                                 "docs": {
                                                                   "prerequisite/nodejs.html": {
                                                                     "ref": "prerequisite/nodejs.html",
-                                                                    "tf": 0.02857142857142857
+                                                                    "tf": 0.02702702702702703
                                                                   }
                                                                 }
                                                               }
@@ -31674,7 +31728,7 @@
             },
             "prerequisite/nodejs.html": {
               "ref": "prerequisite/nodejs.html",
-              "tf": 3.3619047619047615
+              "tf": 3.3603603603603602
             }
           },
           "&": {
@@ -31804,7 +31858,7 @@
                     "docs": {
                       "prerequisite/nodejs.html": {
                         "ref": "prerequisite/nodejs.html",
-                        "tf": 0.02857142857142857
+                        "tf": 0.02702702702702703
                       }
                     }
                   }
@@ -32294,7 +32348,7 @@
                 "docs": {
                   "prerequisite/nodejs.html": {
                     "ref": "prerequisite/nodejs.html",
-                    "tf": 0.02857142857142857
+                    "tf": 0.02702702702702703
                   }
                 },
                 ".": {
@@ -32307,7 +32361,7 @@
                       },
                       "prerequisite/nodejs.html": {
                         "ref": "prerequisite/nodejs.html",
-                        "tf": 3.39047619047619
+                        "tf": 3.387387387387387
                       }
                     }
                   }
@@ -32340,7 +32394,7 @@
               "docs": {
                 "prerequisite/nodejs.html": {
                   "ref": "prerequisite/nodejs.html",
-                  "tf": 0.05714285714285714
+                  "tf": 0.05405405405405406
                 }
               }
             }
@@ -32592,7 +32646,7 @@
                   },
                   "prerequisite/nodejs.html": {
                     "ref": "prerequisite/nodejs.html",
-                    "tf": 3.4476190476190474
+                    "tf": 3.441441441441441
                   },
                   "exercises/warm-up-answer.html": {
                     "ref": "exercises/warm-up-answer.html",
@@ -33953,10 +34007,6 @@
                                                                                                                             "prerequisite/vs-code-extensions.html": {
                                                                                                                               "ref": "prerequisite/vs-code-extensions.html",
                                                                                                                               "tf": 0.018867924528301886
-                                                                                                                            },
-                                                                                                                            "prerequisite/nodejs.html": {
-                                                                                                                              "ref": "prerequisite/nodejs.html",
-                                                                                                                              "tf": 0.02857142857142857
                                                                                                                             }
                                                                                                                           }
                                                                                                                         }
@@ -34077,6 +34127,29 @@
                                                                                       }
                                                                                     }
                                                                                   }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "存": {
+                                                                    "docs": {},
+                                                                    "在": {
+                                                                      "docs": {},
+                                                                      "し": {
+                                                                        "docs": {},
+                                                                        "て": {
+                                                                          "docs": {},
+                                                                          "い": {
+                                                                            "docs": {},
+                                                                            "る": {
+                                                                              "docs": {
+                                                                                "prerequisite/nodejs.html": {
+                                                                                  "ref": "prerequisite/nodejs.html",
+                                                                                  "tf": 0.02702702702702703
                                                                                 }
                                                                               }
                                                                             }
@@ -35675,7 +35748,7 @@
                                 "docs": {
                                   "prerequisite/nodejs.html": {
                                     "ref": "prerequisite/nodejs.html",
-                                    "tf": 0.02857142857142857
+                                    "tf": 0.02702702702702703
                                   }
                                 }
                               }
@@ -35713,7 +35786,7 @@
                                             "docs": {
                                               "prerequisite/nodejs.html": {
                                                 "ref": "prerequisite/nodejs.html",
-                                                "tf": 0.02857142857142857
+                                                "tf": 0.02702702702702703
                                               }
                                             }
                                           }
@@ -36323,7 +36396,7 @@
               },
               "prerequisite/nodejs.html": {
                 "ref": "prerequisite/nodejs.html",
-                "tf": 0.02857142857142857
+                "tf": 0.02702702702702703
               }
             },
             "し": {
@@ -37268,7 +37341,7 @@
                     "docs": {
                       "prerequisite/nodejs.html": {
                         "ref": "prerequisite/nodejs.html",
-                        "tf": 0.02857142857142857
+                        "tf": 0.02702702702702703
                       }
                     },
                     "し": {
@@ -37416,7 +37489,7 @@
                                                                                             "docs": {
                                                                                               "prerequisite/nodejs.html": {
                                                                                                 "ref": "prerequisite/nodejs.html",
-                                                                                                "tf": 0.02857142857142857
+                                                                                                "tf": 0.02702702702702703
                                                                                               }
                                                                                             }
                                                                                           }
@@ -37772,7 +37845,7 @@
                                         "docs": {
                                           "prerequisite/nodejs.html": {
                                             "ref": "prerequisite/nodejs.html",
-                                            "tf": 0.02857142857142857
+                                            "tf": 0.02702702702702703
                                           }
                                         }
                                       }
@@ -37949,7 +38022,7 @@
                                 "docs": {
                                   "prerequisite/nodejs.html": {
                                     "ref": "prerequisite/nodejs.html",
-                                    "tf": 0.02857142857142857
+                                    "tf": 0.02702702702702703
                                   }
                                 }
                               }
@@ -37973,7 +38046,7 @@
                               "docs": {
                                 "prerequisite/nodejs.html": {
                                   "ref": "prerequisite/nodejs.html",
-                                  "tf": 0.02857142857142857
+                                  "tf": 0.02702702702702703
                                 }
                               }
                             }
@@ -37993,7 +38066,7 @@
             "docs": {
               "prerequisite/nodejs.html": {
                 "ref": "prerequisite/nodejs.html",
-                "tf": 0.02857142857142857
+                "tf": 0.02702702702702703
               }
             }
           }
@@ -45470,7 +45543,7 @@
           }
         }
       },
-      "length": 2219
+      "length": 2220
     },
     "corpusTokens": [
       "!hasslaexpirationdate)",
@@ -46307,6 +46380,7 @@
       "───────────────────────────────────────────────────────────",
       "────────────────────────────────────────────────────────────",
       "「vscodequickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。",
+      "「vscodequickstart」プロジェクトのルートに存在している",
       "「vscodequickstart」プロジェクトのルートに既に自動生成されているファイルの中身を以下で置き換えましょう。",
       "「ユーザ」をクリックする。",
       "「ログアウト」をクリックする。",
@@ -46421,6 +46495,7 @@
       "を実装します。",
       "を有効化してある組織を持っている場合は、次のセクションへ。",
       "を有効化しましょう。",
+      "を次のファイルで上書きしましょう。",
       "を確認」のメールに記載されている確認コードを入力して「検証」をクリックする。",
       "を貼り付けて保存しましょう。",
       "を起動する。",
@@ -46745,7 +46820,7 @@
       "url": "prerequisite/nodejs.html",
       "title": "Node.js & Yarn",
       "keywords": "",
-      "body": "Node.js & Yarn\nインストール\nPrettier の一括実行など各種コマンドを実行するために、Node.js をインストールしましょう。\n次の URL からインストーラーをダウンロードしてください。基本的に LTS バージョンで十分です。\n\nNode.js\nYarn\n\nインストーラーをダブルクリックし、デフォルトのままインストールを完了させてください。\n確認\n次のコマンドでインストールが正常に完了していることを確認しましょう。\nバージョンが表示されれば OK です。\nnode -v\nnpm -v\nyarn -v\n\n設定\n「VSCodeQuickstart」プロジェクトのルートには存在していないので、次のファイルを新規作成しましょう。\n\npackage.json\n\nnpm パッケージのインストール\n以下のコマンドを実行して、npm パッケージをインストールしましょう。\nyarn install\n\n"
+      "body": "Node.js & Yarn\nインストール\nPrettier の一括実行など各種コマンドを実行するために、Node.js をインストールしましょう。\n次の URL からインストーラーをダウンロードしてください。基本的に LTS バージョンで十分です。\n\nNode.js\nYarn\n\nインストーラーをダブルクリックし、デフォルトのままインストールを完了させてください。\n確認\n次のコマンドでインストールが正常に完了していることを確認しましょう。\nバージョンが表示されれば OK です。\nnode -v\nnpm -v\nyarn -v\n\n設定\n「VSCodeQuickstart」プロジェクトのルートに存在している package.json を次のファイルで上書きしましょう。\n\npackage.json\n\nnpm パッケージのインストール\n以下のコマンドを実行して、npm パッケージをインストールしましょう。\nyarn install\n\n"
     },
     "exercises/warm-up.html": {
       "url": "exercises/warm-up.html",
