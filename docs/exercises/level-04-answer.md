@@ -429,7 +429,7 @@ sfdx force:source:push -u demo
 4-1. Apex テストを実行して現在のコードカバー率を確認します。
 
 ```sh
-export SFDX_IMPROVED_CODE_COVERAGE="true"
+$Env:SFDX_IMPROVED_CODE_COVERAGE = "true"
 
 sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 ```
@@ -632,7 +632,7 @@ sfdx force:source:push -u demo
 4-5. Apex テストを実行して現在のコードカバー率を確認します。
 
 ```sh
-export SFDX_IMPROVED_CODE_COVERAGE="true"
+$Env:SFDX_IMPROVED_CODE_COVERAGE = "true"
 
 sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 ```
@@ -800,7 +800,7 @@ sfdx force:source:push -u demo
 5-5. Apex テストを実行して現在のコードカバー率を確認します。
 
 ```sh
-export SFDX_IMPROVED_CODE_COVERAGE="true"
+$Env:SFDX_IMPROVED_CODE_COVERAGE = "true"
 
 sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 ```

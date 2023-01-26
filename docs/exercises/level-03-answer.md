@@ -4,11 +4,13 @@
 
 ## アウトライン
 
-- [1. Apex テストクラスを作成](#1-apex-テストクラスを作成)
-  - [AccountTriggerServiceTest.cls](#accounttriggerservicetestcls)
-- [2. Apex テストクラスを作成](#2-apex-テストクラスを作成)
-  - [AccountTestUtils.cls](#accounttestutilscls)
-  - [AccountTriggerTest.cls](#accounttriggertestcls)
+- [Lv. 3 の解答](#lv-3-の解答)
+  - [アウトライン](#アウトライン)
+  - [1. Apex テストクラスを作成](#1-apex-テストクラスを作成)
+    - [AccountTriggerServiceTest.cls](#accounttriggerservicetestcls)
+  - [2. Apex テストクラスを作成](#2-apex-テストクラスを作成)
+    - [AccountTestUtils.cls](#accounttestutilscls)
+    - [AccountTriggerTest.cls](#accounttriggertestcls)
 
 ---
 
@@ -17,9 +19,15 @@
 1-1. Apex テストを実行して現在のコードカバー率を確認します。
 
 ```sh
-export SFDX_IMPROVED_CODE_COVERAGE="true"
+$Env:SFDX_IMPROVED_CODE_COVERAGE = "true"
 
 sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
+```
+
+なお、環境変数 `SFDX_IMPROVED_CODE_COVERAGE` に対して `true` が設定されているかどうかを確認したい場合は、次のコマンドを実行してみてください。
+
+```sh
+$Env:SFDX_IMPROVED_CODE_COVERAGE
 ```
 
 ```sh
@@ -223,7 +231,7 @@ sfdx force:source:push -u demo
 1-5. Apex テストを実行して現在のコードカバー率を確認します。
 
 ```sh
-export SFDX_IMPROVED_CODE_COVERAGE="true"
+$Env:SFDX_IMPROVED_CODE_COVERAGE = "true"
 
 sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 ```
@@ -396,7 +404,7 @@ sfdx force:source:push -u demo
 2-5. Apex テストを実行して現在のコードカバー率を確認します。
 
 ```sh
-export SFDX_IMPROVED_CODE_COVERAGE="true"
+$Env:SFDX_IMPROVED_CODE_COVERAGE = "true"
 
 sfdx force:apex:test:run -c -l RunLocalTests -r human -u demo
 ```
