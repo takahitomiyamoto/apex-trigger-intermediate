@@ -10,8 +10,6 @@
 
 ## Trailhead
 
-- [プラットフォーム開発の基礎](https://trailhead.salesforce.com/ja/content/learn/modules/platform_dev_basics)
-
 - [クイックスタート: Salesforce 開発のための Visual Studio Code](https://trailhead.salesforce.com/ja/content/learn/projects/quickstart-vscode-salesforce)
 
 - [クイックスタート: Apex](https://trailhead.salesforce.com/ja/content/learn/projects/quickstart-apex)
