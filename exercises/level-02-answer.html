@@ -2,18 +2,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Lv. 2 の解答 · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="generator" content="HonKit 3.6.1" />
+    <meta name="generator" content="HonKit 4.0.4" />
     <meta name="author" content="Takahito Miyamoto" />
 
     <link rel="stylesheet" href="../gitbook/style.css" />
 
     <link
       rel="stylesheet"
-      href="../gitbook/gitbook-plugin-highlight/website.css"
+      href="../gitbook/@honkit/honkit-plugin-highlight/website.css"
     />
 
     <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css" />
@@ -46,7 +45,7 @@
     <link rel="prev" href="level-02.html" />
   </head>
   <body>
-    <div class="book">
+    <div class="book honkit-cloak">
       <div class="book-summary">
         <div id="book-search-input" role="search">
           <input type="text" placeholder="検索ワードを入力" />
@@ -297,19 +296,13 @@
               <div id="book-search-results">
                 <div class="search-noresults">
                   <section class="normal markdown-section">
-                    <h1 id="lv-2-&#x306E;&#x89E3;&#x7B54;">
-                      Lv. 2 &#x306E;&#x89E3;&#x7B54;
-                    </h1>
+                    <h1 id="lv-2-の解答">Lv. 2 の解答</h1>
                     <hr />
-                    <h2 id="&#x30A2;&#x30A6;&#x30C8;&#x30E9;&#x30A4;&#x30F3;">
-                      &#x30A2;&#x30A6;&#x30C8;&#x30E9;&#x30A4;&#x30F3;
-                    </h2>
+                    <h2 id="アウトライン">アウトライン</h2>
                     <ul>
                       <li>
-                        <a
-                          href="#1-&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;"
-                          >1.
-                          &#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</a
+                        <a href="#1-フレームワークをインストール"
+                          >1. フレームワークをインストール</a
                         >
                         <ul>
                           <li>
@@ -320,11 +313,7 @@
                         </ul>
                       </li>
                       <li>
-                        <a
-                          href="#2-apex-&#x30C8;&#x30EA;&#x30AC;&#x3092;&#x5909;&#x66F4;"
-                          >2. Apex
-                          &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x5909;&#x66F4;</a
-                        >
+                        <a href="#2-apex-トリガを変更">2. Apex トリガを変更</a>
                         <ul>
                           <li>
                             <a href="#accounttriggertrigger"
@@ -334,11 +323,7 @@
                         </ul>
                       </li>
                       <li>
-                        <a
-                          href="#3-apex-&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;"
-                          >3. Apex
-                          &#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;</a
-                        >
+                        <a href="#3-apex-クラスを作成">3. Apex クラスを作成</a>
                         <ul>
                           <li>
                             <a href="#accounttriggerservicecls"
@@ -348,10 +333,8 @@
                         </ul>
                       </li>
                       <li>
-                        <a
-                          href="#4-&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x8FFD;&#x52A0;"
-                          >4.
-                          &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x8FFD;&#x52A0;</a
+                        <a href="#4-カスタムメタデータ型を追加"
+                          >4. カスタムメタデータ型を追加</a
                         >
                         <ul>
                           <li>
@@ -364,16 +347,12 @@
                       </li>
                     </ul>
                     <hr />
-                    <h2
-                      id="1-&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;"
-                    >
-                      1.
-                      &#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;
+                    <h2 id="1-フレームワークをインストール">
+                      1. フレームワークをインストール
                     </h2>
                     <p>
-                      1-1. <code>sfdx-project.json</code> &#x306B;
-                      <code>packageAliases</code>
-                      &#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
+                      1-1. <code>sfdx-project.json</code> に
+                      <code>packageAliases</code> を追加します。
                     </p>
                     <p><strong>sfdx-project.json</strong></p>
                     <pre><code class="lang-json">{
@@ -395,24 +374,19 @@
                     <p>
                       1-2.
                       <code>flexible-apex-trigger@1.0.6.0</code>
-                      &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3059;&#x3002;
+                      をインストールします。
                     </p>
-                    <pre><code class="lang-sh">sfdx force:package:install -p flexible-apex-trigger@1.0.6.0 <span class="hljs-_">-s</span> AllUsers -u demo
+                    <pre><code class="lang-sh">sfdx force:package:install -p flexible-apex-trigger@1.0.6.0 -s AllUsers -u demo
 sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
 </code></pre>
-                    <h2
-                      id="2-apex-&#x30C8;&#x30EA;&#x30AC;&#x3092;&#x5909;&#x66F4;"
-                    >
-                      2. Apex &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x5909;&#x66F4;
-                    </h2>
+                    <h2 id="2-apex-トリガを変更">2. Apex トリガを変更</h2>
                     <h3 id="accounttriggertrigger">AccountTrigger.trigger</h3>
                     <p>
                       2-1.
                       <a href="level-01-answer.html#accounttriggertrigger"
                         >Lv. 1</a
                       >
-                      &#x3067;&#x5909;&#x66F4;&#x3057;&#x305F; Apex
-                      &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x66F4;&#x306B;&#x5909;&#x66F4;&#x3057;&#x307E;&#x3059;&#x3002;
+                      で変更した Apex トリガを更に変更します。
                     </p>
                     <p><strong>AccountTrigger.trigger</strong></p>
                     <pre><code class="lang-java"><span class="hljs-function">trigger AccountTrigger on <span class="hljs-title">Account</span><span class="hljs-params">(before insert, before update)</span> </span>{
@@ -420,27 +394,16 @@ sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
   handler.invoke();
 }
 </code></pre>
-                    <h2
-                      id="3-apex-&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;"
-                    >
-                      3. Apex &#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;
-                    </h2>
+                    <h2 id="3-apex-クラスを作成">3. Apex クラスを作成</h2>
                     <h3 id="accounttriggerservicecls">
                       AccountTriggerService.cls
                     </h3>
-                    <p>
-                      3-1. Apex
-                      &#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/main/default/classes -n AccountTriggerService -t DefaultApexClass
+                    <p>3-1. Apex クラスを作成します。</p>
+                    <pre><code class="lang-sh">sfdx force:apex:class:create -d force-app/main/default/classes -n AccountTriggerService -t DefaultApexClass
 </code></pre>
-                    <p>
-                      3-2.
-                      <code>FAT_ITriggerObserver</code>
-                      &#x3092;&#x5B9F;&#x88C5;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>3-2. <code>FAT_ITriggerObserver</code> を実装します。</p>
                     <p><strong>AccountTriggerService.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings(&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;)</span>
 <span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerService</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeInsert</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
   }
@@ -465,17 +428,16 @@ sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
 }
 </code></pre>
                     <p>
-                      3-3. <code>addPrefixToName</code> &#x304A;&#x3088;&#x3073;
-                      <code>setCustomerPriority</code>
-                      &#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
+                      3-3. <code>addPrefixToName</code> および
+                      <code>setCustomerPriority</code> を追加します。
                     </p>
                     <p><strong>AccountTriggerService.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings(&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;)</span>
 <span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerService</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
   <span class="hljs-meta">@TestVisible</span>
   <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addPrefixToName</span><span class="hljs-params">(List&lt;Account&gt; accounts)</span> </span>{
     <span class="hljs-keyword">for</span> (Account account : accounts) {
-      account.Name = <span class="hljs-string">&apos;[&#x30B5;&#x30F3;&#x30D7;&#x30EB;] &apos;</span> + account.Name;
+      account.Name = <span class="hljs-string">&apos;[サンプル] &apos;</span> + account.Name;
     }
   }
 
@@ -523,23 +485,21 @@ sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
 }
 </code></pre>
                     <p>
-                      3-4. <code>onBeforeInsert</code> &#x304B;&#x3089;
-                      <code>addPrefixToName</code> &#x304A;&#x3088;&#x3073;
-                      <code>setCustomerPriority</code>
-                      &#x3092;&#x547C;&#x3073;&#x51FA;&#x3057;&#x3001;<code
+                      3-4. <code>onBeforeInsert</code> から
+                      <code>addPrefixToName</code> および
+                      <code>setCustomerPriority</code> を呼び出し、<code
                         >onBeforeUpdate</code
                       >
-                      &#x304B;&#x3089;
-                      <code>setCustomerPriority</code>
-                      &#x3092;&#x547C;&#x3073;&#x51FA;&#x3059;&#x3088;&#x3046;&#x306B;&#x3057;&#x307E;&#x3059;&#x3002;
+                      から
+                      <code>setCustomerPriority</code> を呼び出すようにします。
                     </p>
                     <p><strong>AccountTriggerService.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings(&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;)</span>
 <span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerService</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
   <span class="hljs-meta">@TestVisible</span>
   <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addPrefixToName</span><span class="hljs-params">(List&lt;Account&gt; accounts)</span> </span>{
     <span class="hljs-keyword">for</span> (Account account : accounts) {
-      account.Name = <span class="hljs-string">&apos;[&#x30B5;&#x30F3;&#x30D7;&#x30EB;] &apos;</span> + account.Name;
+      account.Name = <span class="hljs-string">&apos;[サンプル] &apos;</span> + account.Name;
     }
   }
 
@@ -589,40 +549,28 @@ sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
   }
 }
 </code></pre>
-                    <p>
-                      3-5.
-                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>3-5. コードをフォーマットします。</p>
                     <pre><code class="lang-sh">yarn prettier
 </code></pre>
-                    <p>
-                      3-6.
-                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>3-6. スクラッチ組織へプッシュします。</p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
 </code></pre>
                     <hr />
-                    <h2
-                      id="4-&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x8FFD;&#x52A0;"
-                    >
-                      4.
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x8FFD;&#x52A0;
+                    <h2 id="4-カスタムメタデータ型を追加">
+                      4. カスタムメタデータ型を追加
                     </h2>
                     <h3 id="fattriggerobserveraccounttriggerservicemd-metaxml">
                       FAT_TriggerObserver.AccountTriggerService.md-meta.xml
                     </h3>
                     <p>
                       4-1.
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x306B;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x3001;&#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3092;&#x958B;&#x304D;&#x307E;&#x3059;&#x3002;
+                      カスタムメタデータ型にレコードを追加するために、スクラッチ組織を開きます。
                     </p>
                     <pre><code class="lang-sh">sfdx force:org:open -u demo -p lightning/setup/CustomMetadata/home
 </code></pre>
                     <p>
-                      4-2. <code>FAT_TriggerObserver</code> &#x306E;
-                      <code
-                        >&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x7BA1;&#x7406;</code
-                      >
-                      &#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;
+                      4-2. <code>FAT_TriggerObserver</code> の
+                      <code>レコードの管理</code> をクリックします。
                     </p>
                     <p>
                       <img
@@ -630,11 +578,7 @@ sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
                         alt="customMetadata"
                       />
                     </p>
-                    <p>
-                      4-3.
-                      <code>&#x65B0;&#x898F;</code>
-                      &#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>4-3. <code>新規</code> をクリックします。</p>
                     <p>
                       <img
                         src="../images/level-02-answer-02.png"
@@ -642,10 +586,7 @@ sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
                       />
                     </p>
                     <p>
-                      4-4.
-                      &#x60C5;&#x5831;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;
-                      <code>&#x4FDD;&#x5B58;</code>
-                      &#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;
+                      4-4. 情報を入力して <code>保存</code> をクリックします。
                     </p>
                     <p>
                       <img
@@ -653,21 +594,15 @@ sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
                         alt="customMetadata"
                       />
                     </p>
-                    <p>
-                      4-5.
-                      &#x53D6;&#x5F15;&#x5148;&#x753B;&#x9762;&#x3092;&#x958B;&#x304D;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>4-5. 取引先画面を開きます。</p>
                     <pre><code class="lang-sh">sfdx force:org:open -u demo -p lightning/o/Account/list
 </code></pre>
                     <p>
                       4-6.
-                      &#x65B0;&#x898F;&#x30DC;&#x30BF;&#x30F3;&#x304B;&#x3089;&#x53D6;&#x5F15;&#x5148;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3057;&#x3001;&#x60F3;&#x5B9A;&#x901A;&#x308A;&#x306E;&#x6319;&#x52D5;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
-                      &#x307E;&#x305F;&#x3001;&#x305D;&#x306E;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x66F4;&#x65B0;&#x3057;&#x3001;&#x60F3;&#x5B9A;&#x901A;&#x308A;&#x306E;&#x6319;&#x52D5;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                      新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。
+                      また、そのレコードを更新し、想定通りの挙動かどうかを確認しましょう。
                     </p>
-                    <p>
-                      ...
-                      &#x3044;&#x304B;&#x304C;&#x3067;&#x3057;&#x305F;&#x304B;&#xFF1F;
-                    </p>
+                    <p>... いかがでしたか？</p>
                   </section>
                 </div>
                 <div class="search-results">
@@ -818,7 +753,7 @@ sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
               mtime: '2020-09-07T12:22:51.110Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-08T12:55:35.544Z' },
+            gitbook: { version: '4.0.4', time: '2023-01-26T09:51:30.661Z' },
             basePath: '..',
             book: { language: '' }
           });
@@ -826,6 +761,50 @@ sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u demo
       </script>
     </div>
 
+    <noscript>
+      <style>
+        .honkit-cloak {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <script>
+      // Restore sidebar state as critical path for prevent layout shift
+      function __init__getSidebarState(defaultValue) {
+        var baseKey = '';
+        var key = baseKey + ':sidebar';
+        try {
+          var value = localStorage[key];
+          if (value === undefined) {
+            return defaultValue;
+          }
+          var parsed = JSON.parse(value);
+          return parsed == null ? defaultValue : parsed;
+        } catch (e) {
+          return defaultValue;
+        }
+      }
+      function __init__restoreLastSidebarState() {
+        var isMobile = window.matchMedia('(max-width: 600px)').matches;
+        if (isMobile) {
+          // Init last state if not mobile
+          return;
+        }
+        var sidebarState = __init__getSidebarState(true);
+        var book = document.querySelector('.book');
+        // Show sidebar if it enabled
+        if (sidebarState && book) {
+          book.classList.add('without-animation', 'with-summary');
+        }
+      }
+
+      try {
+        __init__restoreLastSidebarState();
+      } finally {
+        var book = document.querySelector('.book');
+        book.classList.remove('honkit-cloak');
+      }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
 

@@ -2,18 +2,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Lv. 4 の解答 · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="generator" content="HonKit 3.6.1" />
+    <meta name="generator" content="HonKit 4.0.4" />
     <meta name="author" content="Takahito Miyamoto" />
 
     <link rel="stylesheet" href="../gitbook/style.css" />
 
     <link
       rel="stylesheet"
-      href="../gitbook/gitbook-plugin-highlight/website.css"
+      href="../gitbook/@honkit/honkit-plugin-highlight/website.css"
     />
 
     <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css" />
@@ -46,7 +45,7 @@
     <link rel="prev" href="level-04.html" />
   </head>
   <body>
-    <div class="book">
+    <div class="book honkit-cloak">
       <div class="book-summary">
         <div id="book-search-input" role="search">
           <input type="text" placeholder="検索ワードを入力" />
@@ -297,19 +296,13 @@
               <div id="book-search-results">
                 <div class="search-noresults">
                   <section class="normal markdown-section">
-                    <h1 id="lv-4-&#x306E;&#x89E3;&#x7B54;">
-                      Lv. 4 &#x306E;&#x89E3;&#x7B54;
-                    </h1>
+                    <h1 id="lv-4-の解答">Lv. 4 の解答</h1>
                     <hr />
-                    <h2 id="&#x30A2;&#x30A6;&#x30C8;&#x30E9;&#x30A4;&#x30F3;">
-                      &#x30A2;&#x30A6;&#x30C8;&#x30E9;&#x30A4;&#x30F3;
-                    </h2>
+                    <h2 id="アウトライン">アウトライン</h2>
                     <ul>
                       <li>
-                        <a
-                          href="#1-&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x306E;&#x5909;&#x66F4;&#x30FB;&#x8FFD;&#x52A0;"
-                          >1.
-                          &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x306E;&#x5909;&#x66F4;&#x30FB;&#x8FFD;&#x52A0;</a
+                        <a href="#1-カスタムメタデータ型の変更・追加"
+                          >1. カスタムメタデータ型の変更・追加</a
                         >
                         <ul>
                           <li>
@@ -327,10 +320,8 @@
                         </ul>
                       </li>
                       <li>
-                        <a
-                          href="#2-&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x3092;&#x8FFD;&#x52A0;"
-                          >2.
-                          &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x3092;&#x8FFD;&#x52A0;</a
+                        <a href="#2-カスタム表示ラベルを追加"
+                          >2. カスタム表示ラベルを追加</a
                         >
                         <ul>
                           <li>
@@ -341,11 +332,7 @@
                         </ul>
                       </li>
                       <li>
-                        <a
-                          href="#3-apex-&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;"
-                          >3. Apex
-                          &#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;</a
-                        >
+                        <a href="#3-apex-クラスを作成">3. Apex クラスを作成</a>
                         <ul>
                           <li>
                             <a href="#accounttriggervalidationcls"
@@ -355,10 +342,8 @@
                         </ul>
                       </li>
                       <li>
-                        <a
-                          href="#4-apex-&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;"
-                          >4. Apex
-                          &#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;</a
+                        <a href="#4-apex-テストクラスを作成"
+                          >4. Apex テストクラスを作成</a
                         >
                         <ul>
                           <li>
@@ -369,10 +354,8 @@
                         </ul>
                       </li>
                       <li>
-                        <a
-                          href="#5-apex-&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x5909;&#x66F4;"
-                          >5. Apex
-                          &#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x5909;&#x66F4;</a
+                        <a href="#5-apex-テストクラスを変更"
+                          >5. Apex テストクラスを変更</a
                         >
                         <ul>
                           <li>
@@ -389,16 +372,13 @@
                       </li>
                     </ul>
                     <hr />
-                    <h2
-                      id="1-&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x306E;&#x5909;&#x66F4;&#x30FB;&#x8FFD;&#x52A0;"
-                    >
-                      1.
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x306E;&#x5909;&#x66F4;&#x30FB;&#x8FFD;&#x52A0;
+                    <h2 id="1-カスタムメタデータ型の変更・追加">
+                      1. カスタムメタデータ型の変更・追加
                     </h2>
                     <p>
                       1-1.
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x306E;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x4FEE;&#x6B63;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x3001;&#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x304B;&#x3089;
-                      pull &#x3057;&#x307E;&#x3059;&#x3002;
+                      カスタムメタデータ型のレコードを修正するために、スクラッチ組織から
+                      pull します。
                     </p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:pull -u demo
 </code></pre>
@@ -410,14 +390,14 @@
                       <code
                         >force-app/main/default/customMetadata/FAT_TriggerObserver.AccountTriggerService.md-meta.xml</code
                       >
-                      &#x3092;&#x958B;&#x3044;&#x3066;<code>BeforeInsert__c</code>&#x306E;&#x5024;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3059;&#x3002;
+                      を開いて<code>BeforeInsert__c</code>の値を修正します。
                     </p>
                     <p>
                       <strong
                         >FAT_TriggerObserver.AccountTriggerService.md-meta.xml</strong
                       >
                     </p>
-                    <pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span> <span class="hljs-meta">?&gt;</span></span>
+                    <pre><code class="lang-xml"><span class="hljs-meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">CustomMetadata</span>
   <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://soap.sforce.com/2006/04/metadata&quot;</span>
   <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
@@ -477,14 +457,14 @@
                       <code
                         >FAT_TriggerObserver.AccountTriggerService.md-meta.xml</code
                       >
-                      &#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3057;&#x3066;&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+                      をコピーしてカスタムメタデータ型を作成します。
                     </p>
                     <p>
                       <strong
                         >FAT_TriggerObserver.AccountTriggerValidation.md-meta.xml</strong
                       >
                     </p>
-                    <pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span> <span class="hljs-meta">?&gt;</span></span>
+                    <pre><code class="lang-xml"><span class="hljs-meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">CustomMetadata</span>
   <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://soap.sforce.com/2006/04/metadata&quot;</span>
   <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
@@ -534,16 +514,10 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">values</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">CustomMetadata</span>&gt;</span>
 </code></pre>
-                    <p>
-                      1-4.
-                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>1-4. コードをフォーマットします。</p>
                     <pre><code class="lang-sh">yarn prettier
 </code></pre>
-                    <p>
-                      1-5.
-                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>1-5. スクラッチ組織へプッシュします。</p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
 </code></pre>
                     <p>
@@ -553,24 +527,18 @@
                       />
                     </p>
                     <hr />
-                    <h2
-                      id="2-&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x3092;&#x8FFD;&#x52A0;"
-                    >
-                      2.
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x3092;&#x8FFD;&#x52A0;
+                    <h2 id="2-カスタム表示ラベルを追加">
+                      2. カスタム表示ラベルを追加
                     </h2>
                     <p>
                       2-1.
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x306B;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x3001;&#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3092;&#x958B;&#x304D;&#x307E;&#x3059;&#x3002;
+                      カスタム表示ラベルにレコードを追加するために、スクラッチ組織を開きます。
                     </p>
                     <pre><code class="lang-sh">sfdx force:org:open -u demo -p lightning/setup/ExternalStrings/home
 </code></pre>
                     <p>
                       2-2.
-                      <code
-                        >&#x65B0;&#x898F;&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;</code
-                      >
-                      &#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;
+                      <code>新規カスタム表示ラベル</code> をクリックします。
                     </p>
                     <p>
                       <img
@@ -579,57 +547,46 @@
                       />
                     </p>
                     <p>
-                      2-3.
-                      &#x60C5;&#x5831;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;
-                      <code>&#x4FDD;&#x5B58;</code>
-                      &#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;
+                      2-3. 情報を入力して <code>保存</code> をクリックします。
                     </p>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x9805;&#x76EE;&#x540D;
-                          </th>
-                          <th style="text-align: left">&#x5024;</th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">項目名</th>
+                          <th style="text-align: left">値</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td style="text-align: left">
-                            &#x7C21;&#x5358;&#x306A;&#x8AAC;&#x660E;
-                          </td>
+                          <td style="text-align: left">簡単な説明</td>
                           <td style="text-align: left">
                             SLA_EXPIRATION_DATE_REQUIRED
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
                         <tr>
-                          <td style="text-align: left">&#x540D;&#x524D;</td>
+                          <td style="text-align: left">名前</td>
                           <td style="text-align: left">
                             SLA_EXPIRATION_DATE_REQUIRED
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
                         <tr>
-                          <td style="text-align: left">
-                            &#x4FDD;&#x8B77;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;
-                          </td>
+                          <td style="text-align: left">保護コンポーネント</td>
                           <td style="text-align: left">No</td>
                           <td style="text-align: left">-</td>
                         </tr>
                         <tr>
-                          <td style="text-align: left">
-                            &#x30AB;&#x30C6;&#x30B4;&#x30EA;
-                          </td>
+                          <td style="text-align: left">カテゴリ</td>
                           <td style="text-align: left">ERROR</td>
                           <td style="text-align: left">-</td>
                         </tr>
                         <tr>
-                          <td style="text-align: left">&#x5024;</td>
+                          <td style="text-align: left">値</td>
                           <td style="text-align: left">
                             SLA
-                            &#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x6709;&#x52B9;&#x671F;&#x9650;&#x3082;&#x5165;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                            が設定されている場合は有効期限も入力してください。
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
@@ -643,8 +600,8 @@
                     </p>
                     <p>
                       2-4.
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x306E;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x3001;&#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x304B;&#x3089;
-                      pull &#x3057;&#x307E;&#x3059;&#x3002;
+                      カスタム表示ラベルのレコードを追加するために、スクラッチ組織から
+                      pull します。
                     </p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:pull -u demo
 </code></pre>
@@ -656,13 +613,13 @@
                       <code
                         >force-app/main/default/labels/CustomLabels.labels-meta.xml</code
                       >
-                      &#x3092;&#x958B;&#x3044;&#x3066;&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
+                      を開いてカスタム表示ラベルを追加します。
                     </p>
                     <p><strong>CustomLabels.labels-meta.xml</strong></p>
                     <ul>
                       <li>SLA_SERIAL_NUMBER_REQUIRED</li>
                     </ul>
-                    <pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span> <span class="hljs-meta">?&gt;</span></span>
+                    <pre><code class="lang-xml"><span class="hljs-meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">CustomLabels</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://soap.sforce.com/2006/04/metadata&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">labels</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">fullName</span>&gt;</span>SLA_EXPIRATION_DATE_REQUIRED<span class="hljs-tag">&lt;/<span class="hljs-name">fullName</span>&gt;</span>
@@ -670,7 +627,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">language</span>&gt;</span>ja<span class="hljs-tag">&lt;/<span class="hljs-name">language</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">protected</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">protected</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">shortDescription</span>&gt;</span>SLA_EXPIRATION_DATE_REQUIRED<span class="hljs-tag">&lt;/<span class="hljs-name">shortDescription</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>SLA &#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x6709;&#x52B9;&#x671F;&#x9650;&#x3082;&#x5165;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>SLA が設定されている場合は有効期限も入力してください。<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">labels</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">labels</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">fullName</span>&gt;</span>SLA_SERIAL_NUMBER_REQUIRED<span class="hljs-tag">&lt;/<span class="hljs-name">fullName</span>&gt;</span>
@@ -679,20 +636,14 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">protected</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">protected</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">shortDescription</span>&gt;</span>SLA_SERIAL_NUMBER_REQUIRED<span class="hljs-tag">&lt;/<span class="hljs-name">shortDescription</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">value</span>
-    &gt;</span>SLA &#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x30B7;&#x30EA;&#x30A2;&#x30EB;&#x30CA;&#x30F3;&#x30D0;&#x30FC;&#x3082;&#x5165;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+    &gt;</span>SLA が設定されている場合はシリアルナンバーも入力してください。<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">labels</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">CustomLabels</span>&gt;</span>
 </code></pre>
-                    <p>
-                      2-6.
-                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>2-6. コードをフォーマットします。</p>
                     <pre><code class="lang-sh">yarn prettier
 </code></pre>
-                    <p>
-                      2-7.
-                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>2-7. スクラッチ組織へプッシュします。</p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
 </code></pre>
                     <p>
@@ -702,27 +653,16 @@
                       />
                     </p>
                     <hr />
-                    <h2
-                      id="3-apex-&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;"
-                    >
-                      3. Apex &#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;
-                    </h2>
-                    <p>
-                      3-1. Apex
-                      &#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <h2 id="3-apex-クラスを作成">3. Apex クラスを作成</h2>
+                    <p>3-1. Apex クラスを作成します。</p>
                     <h3 id="accounttriggervalidationcls">
                       AccountTriggerValidation.cls
                     </h3>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/main/default/classes -n AccountTriggerValidation -t DefaultApexClass
+                    <pre><code class="lang-sh">sfdx force:apex:class:create -d force-app/main/default/classes -n AccountTriggerValidation -t DefaultApexClass
 </code></pre>
-                    <p>
-                      3-2.
-                      <code>FAT_ITriggerObserver</code>
-                      &#x3092;&#x5B9F;&#x88C5;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>3-2. <code>FAT_ITriggerObserver</code> を実装します。</p>
                     <p><strong>AccountTriggerValidation.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings(&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;)</span>
 <span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerValidation</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBeforeInsert</span><span class="hljs-params">(FAT_CommonTriggerHandler handler)</span> </span>{
   }
@@ -746,13 +686,9 @@
   }
 }
 </code></pre>
-                    <p>
-                      3-3.
-                      <code>validateSLA</code>
-                      &#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>3-3. <code>validateSLA</code> を追加します。</p>
                     <p><strong>AccountTriggerValidation.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings(&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;)</span>
 <span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerValidation</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SLA_EXPIRATION_DATE_REQUIRED = System.Label.SLA_EXPIRATION_DATE_REQUIRED;
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SLA_SERIAL_NUMBER_REQUIRED = System.Label.SLA_SERIAL_NUMBER_REQUIRED;
@@ -813,17 +749,14 @@
 }
 </code></pre>
                     <p>
-                      3-4. <code>onBeforeInsert</code> &#x304B;&#x3089;
-                      <code>validateSLA</code>
-                      &#x3092;&#x547C;&#x3073;&#x51FA;&#x3057;&#x3001;<code
+                      3-4. <code>onBeforeInsert</code> から
+                      <code>validateSLA</code> を呼び出し、<code
                         >onBeforeUpdate</code
                       >
-                      &#x304B;&#x3089;
-                      <code>validateSLA</code>
-                      &#x3092;&#x547C;&#x3073;&#x51FA;&#x3059;&#x3088;&#x3046;&#x306B;&#x3057;&#x307E;&#x3059;&#x3002;
+                      から <code>validateSLA</code> を呼び出すようにします。
                     </p>
                     <p><strong>AccountTriggerValidation.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings(&apos;PMD.EmptyStatementBlock,PMD.ApexDoc&apos;)</span>
 <span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerValidation</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FAT_ITriggerObserver</span> </span>{
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SLA_EXPIRATION_DATE_REQUIRED = System.Label.SLA_EXPIRATION_DATE_REQUIRED;
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SLA_SERIAL_NUMBER_REQUIRED = System.Label.SLA_SERIAL_NUMBER_REQUIRED;
@@ -885,36 +818,27 @@
   }
 }
 </code></pre>
-                    <p>
-                      3-5.
-                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>3-5. コードをフォーマットします。</p>
                     <pre><code class="lang-sh">yarn prettier
 </code></pre>
-                    <p>
-                      3-6.
-                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>3-6. スクラッチ組織へプッシュします。</p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
 </code></pre>
                     <hr />
-                    <h2
-                      id="4-apex-&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;"
-                    >
-                      4. Apex
-                      &#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;
+                    <h2 id="4-apex-テストクラスを作成">
+                      4. Apex テストクラスを作成
                     </h2>
                     <p>
                       4-1. Apex
-                      &#x30C6;&#x30B9;&#x30C8;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x73FE;&#x5728;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30FC;&#x7387;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;
+                      テストを実行して現在のコードカバー率を確認します。
                     </p>
                     <pre><code class="lang-sh"><span class="hljs-built_in">export</span> SFDX_IMPROVED_CODE_COVERAGE=<span class="hljs-string">&quot;true&quot;</span>
 
-sfdx force:apex:<span class="hljs-built_in">test</span>:run -c <span class="hljs-_">-l</span> RunLocalTests -r human -u demo
+sfdx force:apex:<span class="hljs-built_in">test</span>:run -c -l RunLocalTests -r human -u demo
 </code></pre>
                     <pre><code class="lang-sh">=== Apex Code Coverage
 ID                  NAME                           % COVERED  UNCOVERED LINES
-&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+──────────────────  ─────────────────────────────  ─────────  ───────────────────────────────────
 01p1m000000dNwKAAU  FAT_CommonConstants            NaN%
 01p1m000000dNwLAAU  FAT_CommonError                100%
 01p1m000000dNwYAAU  FAT_CommonUtils                100%
@@ -931,7 +855,7 @@ ID                  NAME                           % COVERED  UNCOVERED LINES
 
 === Test Summary
 NAME                 VALUE
-&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+───────────────────  ─────────────────────────────────────────────────────────
 Outcome              Passed
 Tests Ran            58
 Passing              58
@@ -946,15 +870,13 @@ Org Wide Coverage    96%
                       AccountTriggerValidationTest.cls
                     </h3>
                     <p>
-                      4-2.
-                      <code>AccountTriggerValidationTest.cls</code> &#x306E;
-                      Apex
-                      &#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+                      4-2. <code>AccountTriggerValidationTest.cls</code> の Apex
+                      テストクラスを作成します。
                     </p>
-                    <pre><code class="lang-sh">sfdx force:apex:class:create <span class="hljs-_">-d</span> force-app/<span class="hljs-built_in">test</span>/default/classes -n AccountTriggerValidationTest -t ApexUnitTest
+                    <pre><code class="lang-sh">sfdx force:apex:class:create -d force-app/<span class="hljs-built_in">test</span>/default/classes -n AccountTriggerValidationTest -t ApexUnitTest
 </code></pre>
                     <p><strong>AccountTriggerValidationTest.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@isTest(SeeAllData=false)</span>
 <span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerValidationTest</span> </span>{
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SLA_EXPIRATION_DATE_REQUIRED = System.Label.SLA_EXPIRATION_DATE_REQUIRED;
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SLA_SERIAL_NUMBER_REQUIRED = System.Label.SLA_SERIAL_NUMBER_REQUIRED;
@@ -1093,29 +1015,23 @@ Org Wide Coverage    96%
   }
 }
 </code></pre>
-                    <p>
-                      4-3.
-                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>4-3. コードをフォーマットします。</p>
                     <pre><code class="lang-sh">yarn prettier
 </code></pre>
-                    <p>
-                      4-4.
-                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>4-4. スクラッチ組織へプッシュします。</p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
 </code></pre>
                     <p>
                       4-5. Apex
-                      &#x30C6;&#x30B9;&#x30C8;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x73FE;&#x5728;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30FC;&#x7387;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;
+                      テストを実行して現在のコードカバー率を確認します。
                     </p>
                     <pre><code class="lang-sh"><span class="hljs-built_in">export</span> SFDX_IMPROVED_CODE_COVERAGE=<span class="hljs-string">&quot;true&quot;</span>
 
-sfdx force:apex:<span class="hljs-built_in">test</span>:run -c <span class="hljs-_">-l</span> RunLocalTests -r human -u demo
+sfdx force:apex:<span class="hljs-built_in">test</span>:run -c -l RunLocalTests -r human -u demo
 </code></pre>
                     <pre><code class="lang-sh">=== Apex Code Coverage
 ID                  NAME                           % COVERED  UNCOVERED LINES
-&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+──────────────────  ─────────────────────────────  ─────────  ───────────────
 01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
 01p0l0000027mMnAAI  FAT_CommonError                100%
 01p0l0000027mMpAAI  FAT_CommonLogger               100%
@@ -1132,7 +1048,7 @@ ID                  NAME                           % COVERED  UNCOVERED LINES
 
 === Test Summary
 NAME                 VALUE
-&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+───────────────────  ────────────────────────────────────────────────────────────
 Outcome              Passed
 Tests Ran            65
 Passing              65
@@ -1144,21 +1060,17 @@ Test Run Coverage    99%
 Org Wide Coverage    99%
 </code></pre>
                     <hr />
-                    <h2
-                      id="5-apex-&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x5909;&#x66F4;"
-                    >
-                      5. Apex
-                      &#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x5909;&#x66F4;
+                    <h2 id="5-apex-テストクラスを変更">
+                      5. Apex テストクラスを変更
                     </h2>
                     <h3 id="accounttestutilscls">AccountTestUtils.cls</h3>
                     <p>
-                      5-1. <code>AccountTestUtils.cls</code> &#x306B;
-                      <code>createAbnormalAccounts</code>
-                      &#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
+                      5-1. <code>AccountTestUtils.cls</code> に
+                      <code>createAbnormalAccounts</code> を追加します。
                     </p>
                     <p><strong>AccountTestUtils.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&apos;PMD.ApexDoc&apos;</span>)
-<span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@SuppressWarnings(&apos;PMD.ApexDoc&apos;)</span>
+<span class="hljs-meta">@isTest(SeeAllData=false)</span>
 <span class="hljs-keyword">public</span> with sharing <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTestUtils</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Account&gt; <span class="hljs-title">createNormalAccounts</span><span class="hljs-params">()</span> </span>{
     List&lt;Account&gt; accounts = <span class="hljs-keyword">new</span> List&lt;Account&gt;();
@@ -1212,12 +1124,11 @@ Org Wide Coverage    99%
 </code></pre>
                     <h3 id="accounttriggertestcls">AccountTriggerTest.cls</h3>
                     <p>
-                      5-2. <code>AccountTriggerTest.cls</code> &#x306E;
-                      <code>invokeException</code>
-                      &#x306B;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
+                      5-2. <code>AccountTriggerTest.cls</code> の
+                      <code>invokeException</code> にコードを追加します。
                     </p>
                     <p><strong>AccountTriggerTest.cls</strong></p>
-                    <pre><code class="lang-java"><span class="hljs-meta">@isTest</span>(SeeAllData=<span class="hljs-keyword">false</span>)
+                    <pre><code class="lang-java"><span class="hljs-meta">@isTest(SeeAllData=false)</span>
 <span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTriggerTest</span> </span>{
   <span class="hljs-meta">@testSetup</span>
   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
@@ -1260,29 +1171,23 @@ Org Wide Coverage    99%
   }
 }
 </code></pre>
-                    <p>
-                      5-3.
-                      &#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>5-3. コードをフォーマットします。</p>
                     <pre><code class="lang-sh">yarn prettier
 </code></pre>
-                    <p>
-                      5-4.
-                      &#x30B9;&#x30AF;&#x30E9;&#x30C3;&#x30C1;&#x7D44;&#x7E54;&#x3078;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x307E;&#x3059;&#x3002;
-                    </p>
+                    <p>5-4. スクラッチ組織へプッシュします。</p>
                     <pre><code class="lang-sh">sfdx force:<span class="hljs-built_in">source</span>:push -u demo
 </code></pre>
                     <p>
                       5-5. Apex
-                      &#x30C6;&#x30B9;&#x30C8;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x73FE;&#x5728;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30FC;&#x7387;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;
+                      テストを実行して現在のコードカバー率を確認します。
                     </p>
                     <pre><code class="lang-sh"><span class="hljs-built_in">export</span> SFDX_IMPROVED_CODE_COVERAGE=<span class="hljs-string">&quot;true&quot;</span>
 
-sfdx force:apex:<span class="hljs-built_in">test</span>:run -c <span class="hljs-_">-l</span> RunLocalTests -r human -u demo
+sfdx force:apex:<span class="hljs-built_in">test</span>:run -c -l RunLocalTests -r human -u demo
 </code></pre>
                     <pre><code class="lang-sh">=== Apex Code Coverage
 ID                  NAME                           % COVERED  UNCOVERED LINES
-&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+──────────────────  ─────────────────────────────  ─────────  ───────────────
 01p0l0000027mMmAAI  FAT_CommonConstants            NaN%
 01p0l0000027mMnAAI  FAT_CommonError                100%
 01p0l0000027mMpAAI  FAT_CommonLogger               100%
@@ -1299,7 +1204,7 @@ ID                  NAME                           % COVERED  UNCOVERED LINES
 
 === Test Summary
 NAME                 VALUE
-&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+───────────────────  ────────────────────────────────────────────────────────────
 Outcome              Passed
 Tests Ran            65
 Passing              65
@@ -1310,18 +1215,12 @@ Fail Rate            0%
 Test Run Coverage    100%
 Org Wide Coverage    100%
 </code></pre>
+                    <p>コードカバー率が 100%になりました！</p>
                     <p>
-                      &#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30FC;&#x7387;&#x304C;
-                      100%&#x306B;&#x306A;&#x308A;&#x307E;&#x3057;&#x305F;&#xFF01;
+                      入力規則の動作確認もしてみましょう。取引先画面を開いて、新規ボタンから取引先レコードを新規作成し、想定通りの挙動かどうかを確認しましょう。
+                      また、そのレコードを更新し、想定通りの挙動かどうかを確認しましょう。
                     </p>
-                    <p>
-                      &#x5165;&#x529B;&#x898F;&#x5247;&#x306E;&#x52D5;&#x4F5C;&#x78BA;&#x8A8D;&#x3082;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x53D6;&#x5F15;&#x5148;&#x753B;&#x9762;&#x3092;&#x958B;&#x3044;&#x3066;&#x3001;&#x65B0;&#x898F;&#x30DC;&#x30BF;&#x30F3;&#x304B;&#x3089;&#x53D6;&#x5F15;&#x5148;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3057;&#x3001;&#x60F3;&#x5B9A;&#x901A;&#x308A;&#x306E;&#x6319;&#x52D5;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
-                      &#x307E;&#x305F;&#x3001;&#x305D;&#x306E;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x66F4;&#x65B0;&#x3057;&#x3001;&#x60F3;&#x5B9A;&#x901A;&#x308A;&#x306E;&#x6319;&#x52D5;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
-                    </p>
-                    <p>
-                      ...
-                      &#x3044;&#x304B;&#x304C;&#x3067;&#x3057;&#x305F;&#x304B;&#xFF1F;
-                    </p>
+                    <p>... いかがでしたか？</p>
                   </section>
                 </div>
                 <div class="search-results">
@@ -1472,7 +1371,7 @@ Org Wide Coverage    100%
               mtime: '2020-09-07T12:22:45.089Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-08T12:55:35.544Z' },
+            gitbook: { version: '4.0.4', time: '2023-01-26T09:51:30.661Z' },
             basePath: '..',
             book: { language: '' }
           });
@@ -1480,6 +1379,50 @@ Org Wide Coverage    100%
       </script>
     </div>
 
+    <noscript>
+      <style>
+        .honkit-cloak {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <script>
+      // Restore sidebar state as critical path for prevent layout shift
+      function __init__getSidebarState(defaultValue) {
+        var baseKey = '';
+        var key = baseKey + ':sidebar';
+        try {
+          var value = localStorage[key];
+          if (value === undefined) {
+            return defaultValue;
+          }
+          var parsed = JSON.parse(value);
+          return parsed == null ? defaultValue : parsed;
+        } catch (e) {
+          return defaultValue;
+        }
+      }
+      function __init__restoreLastSidebarState() {
+        var isMobile = window.matchMedia('(max-width: 600px)').matches;
+        if (isMobile) {
+          // Init last state if not mobile
+          return;
+        }
+        var sidebarState = __init__getSidebarState(true);
+        var book = document.querySelector('.book');
+        // Show sidebar if it enabled
+        if (sidebarState && book) {
+          book.classList.add('without-animation', 'with-summary');
+        }
+      }
+
+      try {
+        __init__restoreLastSidebarState();
+      } finally {
+        var book = document.querySelector('.book');
+        book.classList.remove('honkit-cloak');
+      }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
 

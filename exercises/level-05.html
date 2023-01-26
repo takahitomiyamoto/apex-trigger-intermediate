@@ -2,18 +2,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Lv. 5 · Apex Trigger Intermediate</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="generator" content="HonKit 3.6.1" />
+    <meta name="generator" content="HonKit 4.0.4" />
     <meta name="author" content="Takahito Miyamoto" />
 
     <link rel="stylesheet" href="../gitbook/style.css" />
 
     <link
       rel="stylesheet"
-      href="../gitbook/gitbook-plugin-highlight/website.css"
+      href="../gitbook/@honkit/honkit-plugin-highlight/website.css"
     />
 
     <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css" />
@@ -46,7 +45,7 @@
     <link rel="prev" href="level-04-answer.html" />
   </head>
   <body>
-    <div class="book">
+    <div class="book honkit-cloak">
       <div class="book-summary">
         <div id="book-search-input" role="search">
           <input type="text" placeholder="検索ワードを入力" />
@@ -301,11 +300,8 @@
               <div id="book-search-results">
                 <div class="search-noresults">
                   <section class="normal markdown-section">
-                    <h1
-                      id="lv-5--&#x65B0;&#x898F;&#x306B;-apex-&#x30C8;&#x30EA;&#x30AC;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x307F;&#x3088;&#x3046;"
-                    >
-                      Lv. 5 : &#x65B0;&#x898F;&#x306B; Apex
-                      &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x307F;&#x3088;&#x3046;
+                    <h1 id="lv-5--新規に-apex-トリガを追加してみよう">
+                      Lv. 5 : 新規に Apex トリガを追加してみよう
                     </h1>
                     <p>
                       <a
@@ -313,27 +309,20 @@
                         target="_blank"
                         >Flexible Apex Trigger</a
                       >
-                      &#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x3001;Apex
-                      &#x30C8;&#x30EA;&#x30AC;&#x3092;&#x91CF;&#x7523;&#x3057;&#x3084;&#x3059;&#x304F;&#x306A;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;
-                      &#x5B9F;&#x969B;&#x306B;&#x4F53;&#x611F;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+                      を利用することで、Apex トリガを量産しやすくなっています。
+                      実際に体感してみましょう。
                     </p>
-                    <h2 id="&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x8981;&#x4EF6;">
-                      &#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x8981;&#x4EF6;
-                    </h2>
+                    <h2 id="ビジネス要件">ビジネス要件</h2>
                     <ul>
                       <li>
-                        &#x58F2;&#x4E0A;&#x3068;&#x3057;&#x3066;&#x8A08;&#x4E0A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5546;&#x8AC7;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AA4;&#x3063;&#x3066;&#x524A;&#x9664;&#x3067;&#x304D;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;&#x3057;&#x305F;&#x3044;&#x3068;&#x8003;&#x3048;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x6210;&#x7D04;&#x6E08;&#x307F;&#x306E;&#x5834;&#x5408;&#x3001;&#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x8868;&#x793A;&#x3057;&#x3066;&#x524A;&#x9664;&#x3067;&#x304D;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                        売上として計上されている商談データを誤って削除できないようにしたいと考えています。成約済みの場合、エラーメッセージを表示して削除できないようにしてください。
                       </li>
                       <li>
-                        &#x91CD;&#x8981;&#x306A;&#x30B1;&#x30FC;&#x30B9;&#x304C;&#x8D77;&#x7968;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306B;&#x898B;&#x9003;&#x3057;&#x306B;&#x304F;&#x304F;&#x3057;&#x305F;&#x3044;&#x3068;&#x8003;&#x3048;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x91CD;&#x8981;&#x5EA6;&#x304C;&#x9AD8;&#x3044;&#x30B1;&#x30FC;&#x30B9;&#x304C;&#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306B;&#x3001;Chatter
-                        &#x30D5;&#x30A3;&#x30FC;&#x30C9;&#x306B;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x304C;&#x81EA;&#x52D5;&#x6295;&#x7A3F;&#x3055;&#x308C;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                        重要なケースが起票された場合に見逃しにくくしたいと考えています。重要度が高いケースが新規作成された場合に、Chatter
+                        フィードにメッセージが自動投稿されるようにしてください。
                       </li>
                     </ul>
-                    <h2
-                      id="&#x30A2;&#x30FC;&#x30AD;&#x30C6;&#x30AF;&#x30C1;&#x30E3;&#x8981;&#x4EF6;"
-                    >
-                      &#x30A2;&#x30FC;&#x30AD;&#x30C6;&#x30AF;&#x30C1;&#x30E3;&#x8981;&#x4EF6;
-                    </h2>
+                    <h2 id="アーキテクチャ要件">アーキテクチャ要件</h2>
                     <ul>
                       <li>
                         <a
@@ -341,34 +330,26 @@
                           target="_blank"
                           >Flexible Apex Trigger</a
                         >
-                        &#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                        を利用してください。
                       </li>
                       <li>
-                        &#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306F;&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;&#x306B;&#x5B9A;&#x7FA9;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                        エラーメッセージはカスタム表示ラベルに定義してください。
                       </li>
                       <li>
-                        &#x3059;&#x3079;&#x3066;&#x306E;&#x30C6;&#x30B9;&#x30C8;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;&#x5185;&#x3067;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+                        すべてのテストデータはテストクラス内で作成してください。
                       </li>
                     </ul>
-                    <h2 id="&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x8981;&#x4EF6;">
-                      &#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x8981;&#x4EF6;
-                    </h2>
-                    <h3 id="apex-&#x30C8;&#x30EA;&#x30AC;">
-                      Apex &#x30C8;&#x30EA;&#x30AC;
-                    </h3>
+                    <h2 id="システム要件">システム要件</h2>
+                    <h3 id="apex-トリガ">Apex トリガ</h3>
                     <table>
                       <thead>
                         <tr>
+                          <th style="text-align: left">トリガ名</th>
+                          <th style="text-align: left">対象オブジェクト</th>
                           <th style="text-align: left">
-                            &#x30C8;&#x30EA;&#x30AC;&#x540D;
+                            複数件レコードの一括処理
                           </th>
-                          <th style="text-align: left">
-                            &#x5BFE;&#x8C61;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;
-                          </th>
-                          <th style="text-align: left">
-                            &#x8907;&#x6570;&#x4EF6;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x4E00;&#x62EC;&#x51E6;&#x7406;
-                          </th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -376,7 +357,7 @@
                           <td style="text-align: left">
                             <code>OpportunityTrigger</code>
                           </td>
-                          <td style="text-align: left">&#x5546;&#x8AC7;</td>
+                          <td style="text-align: left">商談</td>
                           <td style="text-align: left">Yes</td>
                           <td style="text-align: left">-</td>
                         </tr>
@@ -384,28 +365,20 @@
                           <td style="text-align: left">
                             <code>CaseTrigger</code>
                           </td>
-                          <td style="text-align: left">
-                            &#x30B1;&#x30FC;&#x30B9;
-                          </td>
+                          <td style="text-align: left">ケース</td>
                           <td style="text-align: left">Yes</td>
                           <td style="text-align: left">-</td>
                         </tr>
                       </tbody>
                     </table>
-                    <h3 id="apex-&#x30AF;&#x30E9;&#x30B9;">
-                      Apex &#x30AF;&#x30E9;&#x30B9;
-                    </h3>
+                    <h3 id="apex-クラス">Apex クラス</h3>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x30AF;&#x30E9;&#x30B9;&#x4FEE;&#x98FE;&#x5B50;
-                          </th>
-                          <th style="text-align: left">
-                            &#x30AF;&#x30E9;&#x30B9;&#x540D;
-                          </th>
-                          <th style="text-align: left">&#x7D99;&#x627F;</th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">クラス修飾子</th>
+                          <th style="text-align: left">クラス名</th>
+                          <th style="text-align: left">継承</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -441,14 +414,10 @@
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x4FEE;&#x98FE;&#x5B50;&#x3068;&#x578B;
-                          </th>
-                          <th style="text-align: left">
-                            &#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x540D;
-                          </th>
-                          <th style="text-align: left">&#x8AAC;&#x660E;</th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">アクセス修飾子と型</th>
+                          <th style="text-align: left">メソッド名</th>
+                          <th style="text-align: left">説明</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -460,10 +429,7 @@
                             <code>preventDeletion</code>
                           </td>
                           <td style="text-align: left">
-                            <a href="#level-05-1"
-                              >(1)
-                              &#x524A;&#x9664;&#x9632;&#x6B62;&#x30A2;&#x30AF;&#x30B7;&#x30E7;&#x30F3;</a
-                            >
+                            <a href="#level-05-1">(1) 削除防止アクション</a>
                           </td>
                           <td style="text-align: left">
                             <code>@TestVisible</code>
@@ -473,23 +439,17 @@
                     </table>
                     <ul>
                       <li>
-                        &#x524A;&#x9664;&#x3059;&#x308B;&#x524D;&#x306B;
-                        <code>preventDeletion</code>
-                        &#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;
+                        削除する前に <code>preventDeletion</code> を実行する
                       </li>
                     </ul>
                     <h4 id="casetriggerservice">CaseTriggerService</h4>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x4FEE;&#x98FE;&#x5B50;&#x3068;&#x578B;
-                          </th>
-                          <th style="text-align: left">
-                            &#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x540D;
-                          </th>
-                          <th style="text-align: left">&#x8AAC;&#x660E;</th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">アクセス修飾子と型</th>
+                          <th style="text-align: left">メソッド名</th>
+                          <th style="text-align: left">説明</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -501,10 +461,7 @@
                             <code>postFeedItems</code>
                           </td>
                           <td style="text-align: left">
-                            <a href="#level-05-2"
-                              >(2)
-                              &#x30D5;&#x30A3;&#x30FC;&#x30C9;&#x6295;&#x7A3F;&#x30A2;&#x30AF;&#x30B7;&#x30E7;&#x30F3;</a
-                            >
+                            <a href="#level-05-2">(2) フィード投稿アクション</a>
                           </td>
                           <td style="text-align: left">
                             <code>@TestVisible</code>
@@ -514,47 +471,27 @@
                     </table>
                     <ul>
                       <li>
-                        &#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x5F8C;&#x306B;
-                        <code>postFeedItems</code>
-                        &#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;
+                        新規作成した後に <code>postFeedItems</code> を実行する
                       </li>
                     </ul>
                     <p><a id="level-05-1"></a></p>
-                    <h5
-                      id="1-&#x524A;&#x9664;&#x9632;&#x6B62;&#x30A2;&#x30AF;&#x30B7;&#x30E7;&#x30F3;"
-                    >
-                      (1)
-                      &#x524A;&#x9664;&#x9632;&#x6B62;&#x30A2;&#x30AF;&#x30B7;&#x30E7;&#x30F3;
-                    </h5>
-                    <h6 id="&#x8D77;&#x52D5;&#x6761;&#x4EF6;">
-                      &#x8D77;&#x52D5;&#x6761;&#x4EF6;
-                    </h6>
-                    <p>
-                      &#x6B21;&#x306E;&#x6761;&#x4EF6;&#x3092;&#x6E80;&#x305F;&#x3059;&#x5834;&#x5408;:
-                    </p>
+                    <h5 id="1-削除防止アクション">(1) 削除防止アクション</h5>
+                    <h6 id="起動条件">起動条件</h6>
+                    <p>次の条件を満たす場合:</p>
                     <ul>
-                      <li>
-                        &#x30D5;&#x30A7;&#x30FC;&#x30BA;&#x304C;
-                        <code>Closed Won</code> &#x3067;&#x3042;&#x308B;
-                      </li>
+                      <li>フェーズが <code>Closed Won</code> である</li>
                     </ul>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;
-                          </th>
-                          <th style="text-align: left">
-                            &#x9805;&#x76EE;&#x540D;
-                          </th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">表示ラベル</th>
+                          <th style="text-align: left">項目名</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td style="text-align: left">
-                            &#x30D5;&#x30A7;&#x30FC;&#x30BA;
-                          </td>
+                          <td style="text-align: left">フェーズ</td>
                           <td style="text-align: left">
                             <code>StageName</code>
                           </td>
@@ -562,71 +499,45 @@
                         </tr>
                       </tbody>
                     </table>
-                    <h6
-                      id="&#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;"
-                    >
-                      &#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;
-                    </h6>
+                    <h6 id="エラーメッセージ">エラーメッセージ</h6>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;
-                          </th>
-                          <th style="text-align: left">
-                            &#x30A8;&#x30E9;&#x30FC;&#x8868;&#x793A;&#x5834;&#x6240;
-                          </th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">エラーメッセージ</th>
+                          <th style="text-align: left">エラー表示場所</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td style="text-align: left">
-                            &#x6210;&#x7D04;&#x6E08;&#x307F;&#x306E;&#x5546;&#x8AC7;&#x306F;&#x524A;&#x9664;&#x3067;&#x304D;&#x307E;&#x305B;&#x3093;&#x3002;
+                            成約済みの商談は削除できません。
                           </td>
-                          <td style="text-align: left">
-                            &#x30D5;&#x30A7;&#x30FC;&#x30BA;
-                          </td>
+                          <td style="text-align: left">フェーズ</td>
                           <td style="text-align: left">-</td>
                         </tr>
                       </tbody>
                     </table>
                     <p><a id="level-05-2"></a></p>
-                    <h5
-                      id="2-&#x30D5;&#x30A3;&#x30FC;&#x30C9;&#x6295;&#x7A3F;&#x30A2;&#x30AF;&#x30B7;&#x30E7;&#x30F3;"
-                    >
-                      (2)
-                      &#x30D5;&#x30A3;&#x30FC;&#x30C9;&#x6295;&#x7A3F;&#x30A2;&#x30AF;&#x30B7;&#x30E7;&#x30F3;
+                    <h5 id="2-フィード投稿アクション">
+                      (2) フィード投稿アクション
                     </h5>
-                    <h6 id="&#x8D77;&#x52D5;&#x6761;&#x4EF6;">
-                      &#x8D77;&#x52D5;&#x6761;&#x4EF6;
-                    </h6>
-                    <p>
-                      &#x6B21;&#x306E;&#x6761;&#x4EF6;&#x3092;&#x6E80;&#x305F;&#x3059;&#x5834;&#x5408;:
-                    </p>
+                    <h6 id="起動条件">起動条件</h6>
+                    <p>次の条件を満たす場合:</p>
                     <ul>
-                      <li>
-                        &#x512A;&#x5148;&#x5EA6;&#x304C;
-                        <code>High</code> &#x3067;&#x3042;&#x308B;
-                      </li>
+                      <li>優先度が <code>High</code> である</li>
                     </ul>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;
-                          </th>
-                          <th style="text-align: left">
-                            &#x9805;&#x76EE;&#x540D;
-                          </th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">表示ラベル</th>
+                          <th style="text-align: left">項目名</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td style="text-align: left">
-                            &#x512A;&#x5148;&#x5EA6;
-                          </td>
+                          <td style="text-align: left">優先度</td>
                           <td style="text-align: left">
                             <code>Priority</code>
                           </td>
@@ -634,51 +545,35 @@
                         </tr>
                       </tbody>
                     </table>
-                    <h6
-                      id="&#x6295;&#x7A3F;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;"
-                    >
-                      &#x6295;&#x7A3F;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;
-                    </h6>
+                    <h6 id="投稿メッセージ">投稿メッセージ</h6>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x6295;&#x7A3F;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;
-                          </th>
-                          <th style="text-align: left">
-                            &#x6295;&#x7A3F;&#x5834;&#x6240;
-                          </th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">投稿メッセージ</th>
+                          <th style="text-align: left">投稿場所</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td style="text-align: left">
-                            &#x512A;&#x5148;&#x5EA6;&#x306E;&#x9AD8;&#x3044;&#x30B1;&#x30FC;&#x30B9;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#xFF01;
+                            優先度の高いケースが作成されました！
                           </td>
                           <td style="text-align: left">
-                            &#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30B1;&#x30FC;&#x30B9;&#x306E;&#x30D5;&#x30A3;&#x30FC;&#x30C9;&#x6B04;
+                            新規作成したケースのフィード欄
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
                       </tbody>
                     </table>
-                    <h3
-                      id="apex-&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;"
-                    >
-                      Apex &#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;
-                    </h3>
+                    <h3 id="apex-テストクラス">Apex テストクラス</h3>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x30AF;&#x30E9;&#x30B9;&#x4FEE;&#x98FE;&#x5B50;
-                          </th>
-                          <th style="text-align: left">
-                            &#x30AF;&#x30E9;&#x30B9;&#x540D;
-                          </th>
-                          <th style="text-align: left">&#x7528;&#x9014;</th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">クラス修飾子</th>
+                          <th style="text-align: left">クラス名</th>
+                          <th style="text-align: left">用途</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -689,7 +584,7 @@
                           </td>
                           <td style="text-align: left">
                             <code>OpportunityTriggerValidation.cls</code>
-                            &#x306B;&#x5BFE;&#x3059;&#x308B;&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;
+                            に対するテストクラス
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
@@ -702,7 +597,7 @@
                           </td>
                           <td style="text-align: left">
                             <code>OpportunityTriggerTest.cls</code>
-                            &#x3067;&#x5229;&#x7528;&#x3059;&#x308B;&#x30C6;&#x30B9;&#x30C8;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x6E96;&#x5099;&#x3059;&#x308B;&#x30AF;&#x30E9;&#x30B9;
+                            で利用するテストメソッドを準備するクラス
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
@@ -713,7 +608,7 @@
                           </td>
                           <td style="text-align: left">
                             <code>OpportunityTrigger.trigger</code>
-                            &#x306B;&#x5BFE;&#x3059;&#x308B;&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;
+                            に対するテストクラス
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
@@ -724,7 +619,7 @@
                           </td>
                           <td style="text-align: left">
                             <code>CaseTriggerService.cls</code>
-                            &#x306B;&#x5BFE;&#x3059;&#x308B;&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;
+                            に対するテストクラス
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
@@ -737,7 +632,7 @@
                           </td>
                           <td style="text-align: left">
                             <code>CaseTriggerTest.cls</code>
-                            &#x3067;&#x5229;&#x7528;&#x3059;&#x308B;&#x30C6;&#x30B9;&#x30C8;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x6E96;&#x5099;&#x3059;&#x308B;&#x30AF;&#x30E9;&#x30B9;
+                            で利用するテストメソッドを準備するクラス
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
@@ -748,30 +643,20 @@
                           </td>
                           <td style="text-align: left">
                             <code>CaseTrigger.trigger</code>
-                            &#x306B;&#x5BFE;&#x3059;&#x308B;&#x30C6;&#x30B9;&#x30C8;&#x30AF;&#x30E9;&#x30B9;
+                            に対するテストクラス
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
                       </tbody>
                     </table>
-                    <h3
-                      id="&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;"
-                    >
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;
-                    </h3>
+                    <h3 id="カスタム表示ラベル">カスタム表示ラベル</h3>
                     <table>
                       <thead>
                         <tr>
-                          <th style="text-align: left">
-                            &#x30AB;&#x30C6;&#x30B4;&#x30EA;
-                          </th>
-                          <th style="text-align: left">
-                            &#x30A8;&#x30E9;&#x30FC; ID
-                          </th>
-                          <th style="text-align: left">
-                            &#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;
-                          </th>
-                          <th style="text-align: left">&#x5099;&#x8003;</th>
+                          <th style="text-align: left">カテゴリ</th>
+                          <th style="text-align: left">エラー ID</th>
+                          <th style="text-align: left">エラーメッセージ</th>
+                          <th style="text-align: left">備考</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -781,7 +666,7 @@
                             <code>CLOSED_WON_CANNOT_BE_DELETED</code>
                           </td>
                           <td style="text-align: left">
-                            &#x6210;&#x7D04;&#x6E08;&#x307F;&#x306E;&#x5546;&#x8AC7;&#x306F;&#x524A;&#x9664;&#x3067;&#x304D;&#x307E;&#x305B;&#x3093;&#x3002;
+                            成約済みの商談は削除できません。
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
@@ -791,23 +676,19 @@
                             <code>HIGH_CASE_IS_CREATED</code>
                           </td>
                           <td style="text-align: left">
-                            &#x512A;&#x5148;&#x5EA6;&#x306E;&#x9AD8;&#x3044;&#x30B1;&#x30FC;&#x30B9;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#xFF01;
+                            優先度の高いケースが作成されました！
                           </td>
                           <td style="text-align: left">-</td>
                         </tr>
                       </tbody>
                     </table>
-                    <h3
-                      id="&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;"
-                    >
-                      &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x578B;
-                    </h3>
+                    <h3 id="カスタムメタデータ型">カスタムメタデータ型</h3>
                     <h4 id="fattriggerobserver">FAT_TriggerObserver</h4>
                     <table>
                       <thead>
                         <tr>
                           <th style="text-align: left">
-                            &#x8868;&#x793A;&#x30E9;&#x30D9;&#x30EB;<br />&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30E1;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x540D;<br />Apex
+                            表示ラベル<br />カスタムメタデータレコード名<br />Apex
                             Class
                           </th>
                           <th style="text-align: left">sObject</th>
@@ -843,13 +724,9 @@
                         </tr>
                       </tbody>
                     </table>
-                    <h2 id="&#x89E3;&#x7B54;">&#x89E3;&#x7B54;</h2>
+                    <h2 id="解答">解答</h2>
                     <blockquote>
-                      <p>
-                        <a href="level-05-answer.html"
-                          >&#x3053;&#x3061;&#x3089;</a
-                        >
-                      </p>
+                      <p><a href="level-05-answer.html">こちら</a></p>
                     </blockquote>
                   </section>
                 </div>
@@ -913,6 +790,16 @@
                 ref: 'exercises/level-04-answer.md',
                 articles: []
               },
+              articles: [
+                {
+                  title: 'Lv. 5 の解答',
+                  level: '3.6.1',
+                  depth: 2,
+                  path: 'exercises/level-05-answer.md',
+                  ref: 'exercises/level-05-answer.md',
+                  articles: []
+                }
+              ],
               dir: 'ltr'
             },
             config: {
@@ -983,7 +870,7 @@
               mtime: '2020-09-08T12:45:42.556Z',
               type: 'markdown'
             },
-            gitbook: { version: '3.6.1', time: '2020-09-08T12:55:35.544Z' },
+            gitbook: { version: '4.0.4', time: '2023-01-26T09:51:30.661Z' },
             basePath: '..',
             book: { language: '' }
           });
@@ -991,6 +878,50 @@
       </script>
     </div>
 
+    <noscript>
+      <style>
+        .honkit-cloak {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <script>
+      // Restore sidebar state as critical path for prevent layout shift
+      function __init__getSidebarState(defaultValue) {
+        var baseKey = '';
+        var key = baseKey + ':sidebar';
+        try {
+          var value = localStorage[key];
+          if (value === undefined) {
+            return defaultValue;
+          }
+          var parsed = JSON.parse(value);
+          return parsed == null ? defaultValue : parsed;
+        } catch (e) {
+          return defaultValue;
+        }
+      }
+      function __init__restoreLastSidebarState() {
+        var isMobile = window.matchMedia('(max-width: 600px)').matches;
+        if (isMobile) {
+          // Init last state if not mobile
+          return;
+        }
+        var sidebarState = __init__getSidebarState(true);
+        var book = document.querySelector('.book');
+        // Show sidebar if it enabled
+        if (sidebarState && book) {
+          book.classList.add('without-animation', 'with-summary');
+        }
+      }
+
+      try {
+        __init__restoreLastSidebarState();
+      } finally {
+        var book = document.querySelector('.book');
+        book.classList.remove('honkit-cloak');
+      }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
 
